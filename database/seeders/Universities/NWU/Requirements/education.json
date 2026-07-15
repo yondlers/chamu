@@ -1,0 +1,523 @@
+{
+    "faculty": "Faculty of Education",
+    "university": "North-West University",
+    "source": "NWU 2027 Grade 12 Prospectus",
+    "qualifications": [
+        {
+            "name": "Bachelor of Education in Early Childhood Care and Education (ECCE)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Early Childhood Care and Education.",
+                "Campuses: Distance.",
+                "Additional NWU requirements: National Senior Certificate with endorsement for bachelor's studies and appropriate subject combinations and performance levels as per Government Gazette 31231 (2008); Language of instruction: Home Language and First Additional Language level 4 (50-59%); To register First Additional Language as Language of Learning and Teaching, level 5 (60-69%) is required for the First Additional Language; Languages available as Language of Learning and Teaching: Afrikaans, English, isiXhosa, Sesotho or Setswana; Languages available as Language of Conversational Competence: Afrikaans, isiXhosa, Sesotho and Setswana; Language of Learning and Teaching and Language of Conversational Competence may not be the same language; Clearance certificate in terms of the Children's Act, Act 38 of 2005; Basic computer literacy skills, access to a computer and sufficient Wi-Fi."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Foundation Phase (Foundation Phase (Grade R-3))",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Foundation Phase (Grade R-3).",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: MC: English/Setswana as Home Language AND English/Setswana as First Additional Language; PC: Afrikaans/English/Sesotho/Setswana as Home Language AND Afrikaans/English/Setswana as First Additional Language; VC: Afrikaans/English/IsiZulu/Sesotho as Home Language AND Afrikaans/English/IsiZulu/Sesotho as First Additional Language; Distance: Afrikaans/English/IsiZulu/Sepedi/Sesotho/Setswana as Home Language AND Afrikaans/English/Setswana as First Additional Language."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Intermediate Phase (Mathematics, Science and Technology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Mathematics, Science and Technology.",
+                "Campuses: Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: PC: Afrikaans/Sesotho/Setswana as Home Language AND English as First Additional Language; VC: Afrikaans/English/IsiZulu/Sesotho as Home Language AND Afrikaans/English/IsiZulu/Sesotho as First Additional Language."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Intermediate Phase (Life Skills and Social Sciences)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Life Skills and Social Sciences.",
+                "Campuses: Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: PC: Afrikaans/Sesotho/Setswana as Home Language AND English as First Additional Language; VC: Afrikaans/English/IsiZulu/Sesotho as Home Language AND Afrikaans/English/IsiZulu/Sesotho as First Additional Language; Distance: Afrikaans/IsiZulu/Sepedi/Sesotho/Setswana as Home Language AND English as First Additional Language."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Economics / History / Business Studies)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Economics / History / Business Studies.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Geography)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Geography.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (English)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: English.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: Home Language / First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Physical Sciences)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Physical Sciences.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Accounting)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Accounting.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Mathematics)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Mathematics.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Afrikaans)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Afrikaans.",
+                "Campuses: Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Life Sciences)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Life Sciences.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Life Orientation)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Life Orientation.",
+                "Campuses: Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Engineering, Graphics and Design)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Engineering, Graphics and Design.",
+                "Campuses: Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Computer Application Technology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Computer Application Technology.",
+                "Campuses: Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Sesotho)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Sesotho.",
+                "Campuses: Potchefstroom, Vanderbijlpark, Distance.",
+                "Additional NWU requirements: First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Mechanical Technology / Civil Technology / Electrical Technology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Mechanical Technology / Civil Technology / Electrical Technology.",
+                "Campuses: Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4; Recommended: level 3 (40-49%) in Physical/Technical Sciences and any Technology subject; Students who do not meet minimum requirements may be allowed entry on condition that they pass bridging modules MTEC 111 and MTEC 121 during the first two years of study."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Setswana)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Setswana.",
+                "Campuses: Mahikeng, Potchefstroom, Distance.",
+                "Additional NWU requirements: First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Setswana Home Language or Setswana First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Information Technology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Information Technology.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Art)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Art.",
+                "Campuses: Potchefstroom, Distance.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (BEd) in Senior and Further Education and Training (Mathematical Literacy)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Mathematical Literacy.",
+                "Campuses: Vanderbijlpark.",
+                "Additional NWU requirements: Home Language AND First Additional Language level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Home Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

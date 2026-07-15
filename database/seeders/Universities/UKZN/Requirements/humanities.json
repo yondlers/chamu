@@ -1,0 +1,1254 @@
+{
+    "faculty": "College of Humanities",
+    "university": "University of KwaZulu-Natal",
+    "source": "Undergraduate Degree Requirements Guide",
+    "qualifications": [
+        {
+            "name": "B Ed Foundation Phase",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-E-BFP.",
+                "Campuses: Edgewood.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Two subjects at level 3."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "isiZulu Home Language or isiZulu First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Ed Intermediate Phase",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-E-BIS.",
+                "Campuses: Edgewood.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Level 5 in any two of: Mathematics, Dramatic Arts, Geography, History, Mathematical Literacy, Information Technology, Life Sciences, Physical Sciences."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Ed Senior Phase/Further Education and Training",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-E-FET.",
+                "Campuses: Edgewood.",
+                "APS range: 48-30.",
+                "Additional UKZN requirements: NSC Degree; Subjects include: isiZulu, History, Accounting, Information Technology, Life Sciences and Physical Sciences."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA General Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-BA2, KN-P-BA2.",
+                "Campuses: Howard College, Pietermaritzburg.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Auditions required for music programmes."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA Cultural and Heritage Tourism",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-ABT.",
+                "Campuses: Howard College.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Auditions required for music programmes."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA Music",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-BAM.",
+                "Campuses: Howard College.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Auditions required for music programmes."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA Music and Drama Performance",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KH-H-BAP.",
+                "Campuses: Howard College.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Auditions required for music programmes."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Soc Sc General Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-SO2, KN-P-SO2.",
+                "Campuses: Howard College, Pietermaritzburg.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Auditions required for music programmes."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Soc Sc Geography and Environmental Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-SGE, KN-P-SGE.",
+                "Campuses: Howard College, Pietermaritzburg.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Auditions required for music programmes."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Humanities Extended Curriculum Programme",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4.0,
+            "aps_required": 20,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-H-SO4, KN-P-SO4.",
+                "Campuses: Howard College, Pietermaritzburg.",
+                "APS range: 20/27.",
+                "Additional UKZN requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Music",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-BM1.",
+                "Campuses: Howard College.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree; Audition."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma Jazz and Popular Music",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-DMJ.",
+                "Campuses: Howard College.",
+                "Additional UKZN requirements: NSC Diploma; English; Three subjects; Audition."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Diploma Music Performance or African Music and Dance or Opera or Choral Studies",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-DMP.",
+                "Campuses: Howard College.",
+                "Additional UKZN requirements: NSC Diploma; English; Three subjects; Audition."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "B Social Work",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-H-BSX.",
+                "Campuses: Howard College.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA Philosophy, Politics and Law",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-H-ABP, KN-P-ABP.",
+                "Campuses: Howard College, Pietermaritzburg.",
+                "APS range: 48-30.",
+                "Additional UKZN requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA International Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-P-ABI.",
+                "Campuses: Pietermaritzburg.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA Visual Art",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-P-AAV.",
+                "Campuses: Pietermaritzburg.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Soc Sc Government, Business and Ethics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-P-SOG.",
+                "Campuses: Pietermaritzburg.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Theology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "CAO codes: KN-P-BTH.",
+                "Campuses: Pietermaritzburg.",
+                "APS range: 48-28.",
+                "Additional UKZN requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Music Foundation Programme",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1.0,
+            "aps_required": null,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-MFP.",
+                "Campuses: Howard College.",
+                "This is not an access programme and does not lead to degree studies.",
+                "Additional UKZN requirements: NSC; Audition."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "B Architectural Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": true,
+            "notes": [
+                "CAO codes: KN-H-BAR.",
+                "Campuses: Howard College.",
+                "APS range: 48-30.",
+                "Additional UKZN requirements: NSC Degree; Deserving applicants may be requested to submit a portfolio of creative work, write an essay and complete a questionnaire."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "History",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Music",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Religion Studies",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1203 @@
+{
+    "faculty": "Science",
+    "university": "University of Johannesburg",
+    "source": "2026 Undergraduate Prospectus",
+    "qualifications": [
+        {
+            "name": "Bachelor of Science in Information Technology - Information Technology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2I01Q.",
+                "Qualification group: Bachelor of Science in Information Technology.",
+                "Campus: APK.",
+                "Career paths: Systems Analyst, Network Manager, Programmer, Web Developer, Web Master, Database Administrator, Software Engineer, Computer Graphics Designer, Information Technology Manager, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Physical Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Information Technology - Computer Science and Informatics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2I02Q.",
+                "Qualification group: Bachelor of Science in Information Technology.",
+                "Campus: APK.",
+                "Career paths: Systems Analyst, Network Manager, Programmer, Web Developer, Web Master, Database Administrator, Software Engineer, Computer Graphics Designer, Information Technology Manager, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Physical Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Information Technology - Computer Science and Informatics specialising in Artificial Intelligence",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 34,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2I04Q.",
+                "Qualification group: Bachelor of Science in Information Technology.",
+                "Campus: APK.",
+                "Career paths: Security Architect, Knowledge Manager, Cyber Crime Investigator, All-Source Analyst, IT Investment or Portfolio Manager, Systems Analyst, Network Manager, Programmer, Web Developer, Web Master, Database Administrator, Software Engineer, Computer Graphics Designer, Information Technology Manager, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Physical Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 7
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Biochemistry and Botany",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L10Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Analyst, Technologist, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Botany and Chemistry",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L11Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Biologist, Botanist, Ecologist, Nature Conservation Scientist, Forensic Scientist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Botany and Zoology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L12Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Biologist, Nature Conservationist, Environmentalist, Ethno-Botanist, Ecologist, Entomologist, Pathologist, Parasitologist, Geneticist, Food Technologist, Zoologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Zoology and Biochemistry",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L13Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Zoologist, Biochemist, Nature Conservationist, Environmentalist, Ecologist, Entomologist, Pathologist, Geneticist, Food Technologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Zoology and Chemistry",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L14Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Zoologist, Chemical Technologist, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Zoology and Environmental Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L15Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Geo-Zoologist, Population Geneticist, Environmental Ecologist, Environmental Specialist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Zoology and Geography",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L16Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Geo-Zoologist, Population Geneticist, Environmental Ecologist, Environmental Specialist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Zoology and Physiology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L17Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Zoologist, Forensic Pathologist, Geneticist, Parasitologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Physiology and Biochemistry",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L18Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Biochemist, Researcher, Forensic Analyst, Biotechnologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Physiology and Psychology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L26Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Psychologist, Forensic Pathologist, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Geography and Environmental Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L20Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Location Analyst, Town Planner, Geo-Information Specialist, Environmental Rehabilitation Manager, Geomorphologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Geology and Environmental Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L24Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Geographer, Geologist, Mineralogist, Regional Planner, Site Analyst, GIS Specialist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences - Geology and Geography",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2L25Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences.",
+                "Campus: APK.",
+                "Career paths: Geographer, Geologist, Mineralogist, Regional Planner, Site Analyst, Geographical Information Specialist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Mathematical Sciences - Applied Mathematics and Computer Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2M40Q.",
+                "Qualification group: Bachelor of Science in Mathematical Sciences.",
+                "Campus: APK.",
+                "Career paths: Computer Programmer, Systems Analyst, Mathematical Modulator.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Mathematical Sciences - Applied Mathematics and Mathematical Statistics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2M41Q.",
+                "Qualification group: Bachelor of Science in Mathematical Sciences.",
+                "Campus: APK.",
+                "Career paths: Mathematician, Data Compiler, Data Interpreter, Biometrician.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Mathematical Sciences - Computational Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 33,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2M43Q.",
+                "Qualification group: Bachelor of Science in Mathematical Sciences.",
+                "Campus: APK.",
+                "Career paths: Software Specialist in high-tech industry, Designer of medical monitors.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 7
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Mathematical Sciences - Actuarial Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 33,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2M52Q.",
+                "Qualification group: Bachelor of Science in Mathematical Sciences.",
+                "Campus: APK.",
+                "Career paths: Actuary, Actuarial Analyst, Quantitative Analyst, Risk Manager, Investment Manager, Credit Ratings Analyst, Statistician, Academic.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Physical Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 7
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Biochemistry and Chemistry",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P70Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Scientist in food and water sectors, Scientist in biomedical sectors, Scientist in biotechnological sectors, Scientist in agricultural sectors.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Chemistry and Mathematics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P71Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Chemist, Researcher, Technologist, Problem Solver.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Chemistry and Physics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P72Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Physicist, Researcher, Chemistry Technologist, Forensic Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Geology and Chemistry",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P81Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Geochemist, Geologist, Forensic Scientist, Exploration Expert.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Geology and Mathematics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P82Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Geomathematician, Geologist, Problem Analyst.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Geology and Physics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P83Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Physicist, Geophysicist, Geohydrologist, Geologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Physics and Applied Mathematics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P77Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Problem Solver, Researcher in Astronomy and Energy Sources.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences - Physics and Mathematics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2P78Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences.",
+                "Campus: APK.",
+                "Career paths: Problem Solver, Researcher in Astronomy and Energy Sources.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Information Technology Extended - Computer Science and Informatics",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E01Q.",
+                "Qualification group: Bachelor of Science in Information Technology Extended.",
+                "Campus: APK.",
+                "Career paths: Systems Analyst, Network Manager, Programmer, Web Developer, Web Master, Database Administrator, Software Engineer, Computer Graphics Designer, Information Technology Manager, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Physical Science not applicable; Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences Extended - Biochemistry and Botany",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E10Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences Extended.",
+                "Campus: APK.",
+                "Career paths: Analyst, Technologist, Researcher.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences Extended - Botany and Chemistry",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E11Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences Extended.",
+                "Campus: APK.",
+                "Career paths: Biologist, Botanist, Ecologist, Nature Conservation Scientist, Forensic Scientist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Life and Environmental Sciences Extended - Geography and Environmental Management",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E13Q.",
+                "Qualification group: Bachelor of Science in Life and Environmental Sciences Extended.",
+                "Campus: APK.",
+                "Career paths: Location Analyst, Town Planner, Geo-Information Specialist, Environmental Rehabilitation Manager, Geomorphologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Mathematical Sciences Extended - Applied Mathematics and Computer Science",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E40Q.",
+                "Qualification group: Bachelor of Science in Mathematical Sciences Extended.",
+                "Campus: APK.",
+                "Career paths: Computer Programmer, Systems Analyst, Mathematical Modulator.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences Extended - Biochemistry and Chemistry",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E70Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences Extended.",
+                "Campus: APK.",
+                "Career paths: Scientist in food and water sectors, Scientist in biomedical, biotechnological and agricultural sectors.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences Extended - Chemistry and Mathematics",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E71Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences Extended.",
+                "Campus: APK.",
+                "Career paths: Chemist, Researcher, Technologist, Problem Solver.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physical Sciences Extended - Physics and Mathematics",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": null,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B2E74Q.",
+                "Qualification group: Bachelor of Science in Physical Sciences Extended.",
+                "Campus: APK.",
+                "Career paths: Problem Solver, Researcher in Astronomy and Energy Sources.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Analytical Chemistry",
+            "qualification_type": "Diploma",
+            "duration_years": null,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D2ACXQ.",
+                "Qualification group: Diploma Programmes.",
+                "Campus: DFC.",
+                "Career paths: Analytical Chemist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Life Science not applicable; Technical Mathematics accepted; Technical Science not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Biotechnology",
+            "qualification_type": "Diploma",
+            "duration_years": null,
+            "aps_required": 23,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D2BTEQ.",
+                "Qualification group: Diploma Programmes.",
+                "Campus: DFC.",
+                "Career paths: Biotechnologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Technical Mathematics accepted; Technical Science not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Food Technology",
+            "qualification_type": "Diploma",
+            "duration_years": null,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D2FTEQ.",
+                "Qualification group: Diploma Programmes.",
+                "Campus: DFC.",
+                "Career paths: Food Technologist.",
+                "Faculty notes: Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; All minimum entrance requirements for the Faculty of Science are subject to change; Technical Mathematics and Technical Science are not accepted for degree programmes in the Faculty of Science; Technical Mathematics is accepted for diploma programmes in the Faculty of Science; Technical Science is not accepted for diploma programmes in the Faculty of Science.",
+                "Additional UJ requirements: Technical Mathematics accepted; Technical Science not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 3
+                }
+            ]
+        }
+    ]
+}

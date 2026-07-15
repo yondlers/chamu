@@ -1,0 +1,289 @@
+{
+    "faculty": "Art, Design and Architecture",
+    "university": "University of Johannesburg",
+    "source": "2026 Undergraduate Prospectus",
+    "qualifications": [
+        {
+            "name": "B Architecture",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B8BA3Q.",
+                "Campus: APB.",
+                "Career paths: Architectural professionals, Design of built environments, Technological resolution and management of building design and construction.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Mathematical Literacy not accepted; Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BA Communication Design",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B8CD2Q.",
+                "Campus: APB.",
+                "Career paths: Communication Designer, Poster design, Book and magazine design, Corporate identity design, Packaging design, Website design.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA Digital Media Design",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B8DM3Q.",
+                "Campus: APB.",
+                "Career paths: Interaction Designer, User Experience Designer, User Interface Designer, Service Designer, Music Video Designer, Multimedia Animator, Motion Graphics Designer, Information Designer, Video Editor, Video Compositor, Digital Photographer, Digital Media Consultant, Creative Director.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA Industrial Design",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B8ID1Q.",
+                "Campus: APB.",
+                "Career paths: Industrial Designer, Product Designer, Furniture Designer, Consumer Product Designer.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BA Interior Design",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B8BA6Q.",
+                "Campus: APB.",
+                "Career paths: Interior Designer, Spatial Designer, Interior Space Planner.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BA Fashion Design",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B8FD1Q.",
+                "Campus: APB.",
+                "Career paths: Fashion Designer, Fashion Entrepreneur, Pattern Engineer, Fashion Buyer, Fashion Stylist.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BA Visual Art",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B8BA7Q.",
+                "Campus: APB.",
+                "Career paths: Professional Artist, Art Educator, Art Gallery or Museum Curator, Art Consultant, Arts Writer, Art Critic, Researcher, Journalist, Printmaker, Visual Events Manager.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Architecture",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D8AT1Q.",
+                "Campus: APB.",
+                "Career paths: Architectural Practitioner, Simple building design, Technological detailing.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Mathematical Literacy not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Fashion Production",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D8FP1Q.",
+                "Campus: APB.",
+                "Career paths: Fashion Production Graduate, Clothing Manufacturing, Retail, Quality Assurance.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject.",
+                "Additional UJ requirements: Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Jewellery Design and Manufacture",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 20,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D8JD1Q.",
+                "Campus: APB.",
+                "Career paths: Jewellery Designer, Jewellery Manufacturer, Commercial Jewellery Production, Contemporary Jewellery Manufacturing.",
+                "NCV admission summary: NCV admission summary: Degree: NCV level 4 issued by the Council for General and Further Education and Training, At least 70% for 5 of the 7 subjects, At least 70% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 70% in Mathematics as a fundamental subject; Diploma: NCV level 4 issued by the Council for General and Further Education and Training, At least 60% for 5 of the 7 subjects, At least 60% in English as Language of Teaching and Learning or First Additional Language, plus one additional language, At least 60% in Mathematics or 70% in Mathematical Literacy as a fundamental subject."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        }
+    ]
+}

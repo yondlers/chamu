@@ -1,0 +1,869 @@
+{
+    "faculty": "Faculty of Humanities",
+    "university": "Tshwane University of Technology",
+    "default_application_closing_month": "July",
+    "default_application_closing_day": 31,
+    "qualifications": [
+        {
+            "name": "Bachelor of Education (Foundation Phase Teaching)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 25,
+            "subject_requirements": [
+                {
+                    "subject": "Home language offered in the programme",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Intermediate Phase Teaching)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 25,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Any other home language offered in the programme",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences and Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "History and Geography",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Agriculture)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Agricultural Technology",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Consumer Sciences)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Hospitality Studies",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Tourism",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Economic and Management Sciences)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Accounting",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Information Technology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Information Technology",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Mathematics)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics and Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematics and Physical Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Physical Education)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Sciences)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Technology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Civil Technology",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Electrical Technology",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mechanical Technology",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Engineering Graphics and Design",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Adult and Community Education and Training) (Specialisation in Civil Technology)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Engineering Graphics and Design",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Civil Technology",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Adult and Community Education and Training) (Specialisation in Consumer Sciences)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Adult and Community Education and Training) (Specialisation in Electrical and Mechanical)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Correctional and Rehabilitation Studies)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve South"
+            ],
+            "application_closing_month": "June",
+            "application_closing_day": 15,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Integrated Communication)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Engineering Mathematics N3",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ],
+            "notes": [
+                "Preference is given to applicants with English level 5 or higher.",
+                "APS 20 applies when Mathematics, Technical Mathematics or Engineering Mathematics N3 is offered.",
+                "APS 21 applies when Mathematical Literacy is offered."
+            ]
+        },
+        {
+            "name": "Diploma (Journalism)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English",
+                    "minimum_level": 4
+                }
+            ],
+            "recommended_subjects": [
+                "Geography",
+                "History",
+                "Third Language",
+                "Any Art-related Subject"
+            ]
+        },
+        {
+            "name": "Diploma (Language Practice)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "recommended_subjects": [
+                "Xitsonga",
+                "Sepedi",
+                "Setswana",
+                "isiZulu",
+                "isiXhosa",
+                "Afrikaans",
+                "Any additional language"
+            ]
+        },
+        {
+            "name": "Diploma (Law)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Pretoria"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Legal Support)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Pretoria"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Policing)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve South"
+            ],
+            "application_closing_month": "June",
+            "application_closing_day": 15,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ],
+            "notes": [
+                "Medical fitness may be required.",
+                "Additional selection processes may apply."
+            ]
+        },
+        {
+            "name": "Diploma (Public Affairs)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve South"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Public Management)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve South"
+            ],
+            "application_closing_month": "July",
+            "application_closing_day": 31,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma (Safety Management)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "other_campuses": [
+                "Soshanguve South"
+            ],
+            "application_closing_month": "June",
+            "application_closing_day": 15,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate (Contact Centre Management)",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "other_campuses": [
+                "Soshanguve North"
+            ],
+            "application_closing_month": "September",
+            "application_closing_day": 30,
+            "aps_required": 18,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate (Public Administration)",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "other_campuses": [
+                "Soshanguve South"
+            ],
+            "application_closing_month": "September",
+            "application_closing_day": 30,
+            "aps_required": 18,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        }
+    ]
+}

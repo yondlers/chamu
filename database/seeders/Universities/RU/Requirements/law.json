@@ -1,0 +1,58 @@
+{
+    "faculty": "Law",
+    "university": "Rhodes University",
+    "source": "RU Ready! Rhodes University Undergraduate Prospectus 2026",
+    "admission_score_type": "Rhodes points / APS-style score",
+    "qualifications": [
+        {
+            "name": "Bachelor of Law",
+            "qualification_type": "Bachelor",
+            "abbreviation": "LLB",
+            "duration_years": 4,
+            "admission_score_required": 45,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Source: RU Ready! Rhodes University Undergraduate Prospectus 2026.",
+                "Admission score type: Rhodes points / APS-style score.",
+                "Provisional offer score: 45+.",
+                "Dean's discretion range: 40-44.",
+                "No NBT requirement is shown in this table.",
+                "The faculty admits a limited number of students directly into LLB1.",
+                "Most students who wish to pursue legal studies first register for a general degree in another faculty.",
+                "The LLB may be completed as a four-year, two-year, or three-year programme, depending on the route.",
+                "Focus: Law."
+            ],
+            "source_url": "https://www.ru.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6,
+                            "note": "Original subject requirement: English First Additional Language: Level 6, 70-79%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ],
+            "aps_required": 45
+        }
+    ]
+}

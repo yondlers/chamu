@@ -1,0 +1,115 @@
+{
+    "faculty": "Faculty of Health Sciences",
+    "university": "University of Venda",
+    "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+    "qualifications": [
+        {
+            "name": "Bachelor of Nursing",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 36,
+            "selection_programme": true,
+            "notes": [
+                "Programme code(s): SHBBN.",
+                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
+                "Additional UNIVEN requirements: NSC 36; Adequate achievement in Life Sciences; Adequate achievement in Mathematics; Adequate achievement in English; Adequate achievement in Physical Sciences; Life Orientation excluded from APS; Selection test required; Physical assessment required."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "BSc in Nutrition",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 34,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): SHBBSN.",
+                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
+                "Additional UNIVEN requirements: NSC 34; Adequate achievement in Life Sciences; Adequate achievement in English; Adequate achievement in Mathematics; Adequate achievement in Physical Sciences or Agricultural Sciences."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "BSc in Biokinetics",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 34,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): SHBBSB.",
+                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
+                "Additional UNIVEN requirements: NSC 34; Adequate achievement in Life Sciences; Adequate achievement in English; Adequate achievement in Mathematics; Adequate achievement in Physical Sciences."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "BSc in Sports and Exercise Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 34,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): SHBSES.",
+                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
+                "Additional UNIVEN requirements: NSC 34; Adequate achievement in Life Sciences; Adequate achievement in English; Adequate achievement in Physical Sciences."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "BSc in Recreation and Leisure Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 34,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): SHBRLS.",
+                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
+                "Additional UNIVEN requirements: NSC 34; Adequate achievement in English."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Psychology",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 36,
+            "selection_programme": true,
+            "notes": [
+                "Programme code(s): SHBBP.",
+                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
+                "Additional UNIVEN requirements: NSC 36; Adequate achievement in English; Selection test required."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Diploma in Nursing",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": true,
+            "notes": [
+                "Programme code(s): SHDPN.",
+                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
+                "Additional UNIVEN requirements: NSC 28; Life Orientation excluded from APS; Selection test required; Physical assessment required."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

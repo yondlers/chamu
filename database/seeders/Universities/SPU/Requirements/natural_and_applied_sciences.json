@@ -1,0 +1,140 @@
+{
+    "faculty": "School of Natural and Applied Sciences",
+    "university": "Sol Plaatje University",
+    "source": "SPU Prospectus 2023",
+    "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+    "admission_score_type": "SPU APS",
+    "qualifications": [
+        {
+            "name": "Bachelor of Science",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BSc",
+            "duration_years": 3,
+            "aps_required": 30,
+            "admission_score_required": 30,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Bachelor's Degree requirement.",
+                "Mathematical Literacy is not acceptable."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Data Science",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BSc Data Science",
+            "duration_years": 3,
+            "aps_required": 30,
+            "admission_score_required": 30,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Bachelor's Degree requirement.",
+                "Mathematical Literacy is not acceptable."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communication Technology (Applications Development)",
+            "qualification_type": "Diploma",
+            "abbreviation": "Dip ICT Applications Development",
+            "duration_years": 3,
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "Specialisation: Applications Development.",
+                "SPU source pass type: NSC pass with Diploma requirement."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Diploma in Information and Communication Technology in Applications Development",
+            "qualification_type": "Advanced Diploma",
+            "abbreviation": "AdvDip ICT Applications Development",
+            "duration_years": 1,
+            "aps_required": null,
+            "admission_score_required": null,
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "Requires a three-year Diploma in Information and Communication Technology or equivalent at NQF Level 6 in the same field of study.",
+                "Requires an average of at least 60% in third-year exit modules of the NQF Level 6 qualification.",
+                "Recognition of Prior Learning may be applied where applicants do not meet minimum admission requirements."
+            ],
+            "subject_requirements": []
+        }
+    ]
+}

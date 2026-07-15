@@ -1,0 +1,279 @@
+{
+    "faculty": "Health Sciences",
+    "university": "University of Cape Town",
+    "source": "2024 Guidelines for Admission for Holders of National Senior Certificate",
+    "admission_score_type": "FPS/WPS",
+    "qualifications": [
+        {
+            "name": "Bachelor of Medicine and Bachelor of Surgery",
+            "qualification_type": "Bachelor",
+            "abbreviation": "MBChB",
+            "admission_score_required": 644.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "For Health Sciences, FPS is calculated out of 900 by adding APS and NBT scores.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are placed in notes, not in curriculum subject requirements.",
+                "For some Health Sciences programmes, Band C applies to South African applicants in redress categories 1 and 2, with possible consideration for redress categories 3 and 4 if targets are not met.",
+                "Eligible applicant group: Only South African applicants in redress categories 1 and 2.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 644 FPS or above.",
+                "Notes: NBT scores of Intermediate for AL, QL and Mathematics are required for possible admission.; Probable admission: 807 WPS or above.; Guaranteed admission: 810 FPS or above..",
+                "Additional subject or selection requirements: Next_3_best_subjects_excluding_Life_Orientation: 70% or above."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 70.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 70.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Occupational Therapy",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 565.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "For Health Sciences, FPS is calculated out of 900 by adding APS and NBT scores.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are placed in notes, not in curriculum subject requirements.",
+                "For some Health Sciences programmes, Band C applies to South African applicants in redress categories 1 and 2, with possible consideration for redress categories 3 and 4 if targets are not met.",
+                "Eligible applicant group: South African applicants in redress categories 1 and 2; redress categories 3 and 4 may be considered if faculty targets are not met.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 565 FPS for redress 1; 580 FPS for redress 2; 670 FPS for redress 3 and 4.",
+                "Minimum scores by redress category: redress_1: 565; redress_2: 580; redress_3_and_4: 670.",
+                "Notes: NBT scores of Intermediate for AL, QL and Mathematics are required; applicants taking Mathematical Literacy are exempted from the NBT Mathematics Test.; A Mathematics NBT equivalence score is calculated for Mathematical Literacy applicants using: NBT Quantitative Literacy score minus 20 points = NBT Mathematics result.; Probable admission: 782 WPS or above.; Guaranteed admission: 730 FPS or above..",
+                "Additional subject or selection requirements: Next_3_best_subjects_excluding_Life_Orientation: 60% or above."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 60.0
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 70.0
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physiotherapy",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 580.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "For Health Sciences, FPS is calculated out of 900 by adding APS and NBT scores.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are placed in notes, not in curriculum subject requirements.",
+                "For some Health Sciences programmes, Band C applies to South African applicants in redress categories 1 and 2, with possible consideration for redress categories 3 and 4 if targets are not met.",
+                "Eligible applicant group: South African applicants in redress categories 1 and 2; redress categories 3 and 4 may be considered if faculty targets are not met.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 580 FPS or above for redress 1; 610 FPS or above for redress 2; 680 FPS or above for redress 3 and 4.",
+                "Minimum scores by redress category: redress_1: 580; redress_2: 610; redress_3_and_4: 680.",
+                "Notes: NBT scores of Intermediate for AL, QL and Mathematics are required.; Probable admission: 797 WPS or above.; Guaranteed admission: 730 FPS or above..",
+                "Additional subject or selection requirements: Next_3_best_subjects_excluding_Life_Orientation: 60% or above."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60.0
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Speech-Language Pathology",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 510.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "For Health Sciences, FPS is calculated out of 900 by adding APS and NBT scores.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are placed in notes, not in curriculum subject requirements.",
+                "For some Health Sciences programmes, Band C applies to South African applicants in redress categories 1 and 2, with possible consideration for redress categories 3 and 4 if targets are not met.",
+                "Eligible applicant group: South African applicants in redress categories 1 and 2; redress categories 3 and 4 may be considered if faculty targets are not met.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 510 FPS for redress 1; 515 FPS for redress 2; 600 FPS for redress 3 and 4.",
+                "Minimum scores by redress category: redress_1: 510; redress_2: 515; redress_3_and_4: 600.",
+                "Notes: NBT scores of Intermediate for AL, QL and Mathematics are required; applicants taking Mathematical Literacy are exempted from the NBT Mathematics Test.; A Mathematics NBT equivalence score is calculated for Mathematical Literacy applicants using: NBT Quantitative Literacy score minus 20 points = NBT Mathematics result.; Probable admission: 670 WPS or above.; Guaranteed admission: 715 FPS or above..",
+                "Additional subject or selection requirements: Next_3_best_subjects_excluding_Life_Orientation: 60% or above."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 60.0
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 70.0
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Audiology",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 550.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "For Health Sciences, FPS is calculated out of 900 by adding APS and NBT scores.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are placed in notes, not in curriculum subject requirements.",
+                "For some Health Sciences programmes, Band C applies to South African applicants in redress categories 1 and 2, with possible consideration for redress categories 3 and 4 if targets are not met.",
+                "Eligible applicant group: South African applicants in redress categories 1 and 2; redress categories 3 and 4 may be considered if faculty targets are not met.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 550 FPS for redress 1; 565 FPS for redress 2; 610 FPS for redress 3 and 4.",
+                "Minimum scores by redress category: redress_1: 550; redress_2: 565; redress_3_and_4: 610.",
+                "Notes: NBT scores of Intermediate for AL, QL and Mathematics are required; applicants taking Mathematical Literacy are exempted from the NBT Mathematics Test.; A Mathematics NBT equivalence score is calculated for Mathematical Literacy applicants using: NBT Quantitative Literacy score minus 20 points = NBT Mathematics result.; Probable admission: 710 WPS or above.; Guaranteed admission: 720 FPS or above..",
+                "Additional subject or selection requirements: Next_3_best_subjects_excluding_Life_Orientation: 60% or above; Minimum_APS: 340."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 60.0
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 70.0
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_mark": 65.0
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_mark": 65.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

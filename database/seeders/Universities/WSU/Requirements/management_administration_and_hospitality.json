@@ -1,0 +1,949 @@
+{
+    "faculty": "Management, Administration and Hospitality",
+    "university": "Walter Sisulu University",
+    "source": "2026 Undergraduate Information Brochure & Admission Requirements",
+    "admission_score_type": "APS",
+    "qualifications": [
+        {
+            "name": "Higher Certificate in Versatile Broadcasting",
+            "qualification_type": "Higher Certificate",
+            "aps_required": 18,
+            "admission_score_required": 18,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61001."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Other Language",
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Any other language: Level 3, 40-49%."
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Any two additional subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Administrative Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61002."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "label": "Any two additional subjects: Level 4, 50-59%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Hospitality Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61003."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3,
+                    "label": "Any three relevant school subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Human Resources Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61004.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Any two school subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Human Resources Management (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "admission_score_required": 20,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61005.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Any two school subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Journalism",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61006."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Other Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other language: Level 4, 50-59%."
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "label": "Any two additional subjects: Level 4, 50-59%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Local Government Finance",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61007.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Accounting: Level 3, 40-49% OR Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Local Government Finance (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "admission_score_required": 20,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61008.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Accounting: Level 2, 30-39% OR Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 3, 40-49%."
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61009.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Accounting: Level 3, 40-49%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "admission_score_required": 20,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61010.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Accounting: Level 2, 30-39%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 3, 40-49%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Marketing Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61011."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Any other two subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Policing",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61012."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 3,
+                    "label": "Any other four subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Office Management and Technology",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61013.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "label": "Any other two subjects: Level 4, 50-59%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Office Management and Technology (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 19,
+            "admission_score_required": 19,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61014.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Any other two subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61015."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 3,
+                    "label": "Any other four subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Relations Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61016.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Other Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other language: Level 4, 50-59%."
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "label": "Any other two subjects: Level 4, 50-59%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Relations Management (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 19,
+            "admission_score_required": 19,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61017.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Other Language",
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Any other language: Level 3, 40-49%."
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Any other two subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Small Business Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61018."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Accounting: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Accounting",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Accounting: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Accounting: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Any other two subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Sport Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61019."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3,
+                    "label": "Any other three subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Tourism Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61020."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3,
+                    "label": "Any three relevant school subjects: Level 3, 40-49%"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Administration",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W61029."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 4,
+                    "label": "Any other four subjects: Level 4, 50-59%"
+                }
+            ]
+        }
+    ]
+}

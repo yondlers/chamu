@@ -1,0 +1,479 @@
+{
+    "faculty": "Science",
+    "university": "Stellenbosch University",
+    "source": "Admission Requirements for Undergraduate Programmes 2025",
+    "qualifications": [
+        {
+            "name": "BSc in Biodiversity and Ecology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Biological Sciences.",
+                "Similar programmes: BSc with focal area Biomathematics; BSc in Conservation Ecology; BScAgric in Plant and Soil Sciences; BScAgric in Animal Production Systems.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BSc in Human Life Sciences",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Biological Sciences.",
+                "Focal areas: Biology; Biology with Psychology.",
+                "Similar programmes: BSc in Molecular Biology and Biotechnology; BSc with focal area Applied Medicinal Chemistry; BSc with focal area Biomedical Mathematical Sciences.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}.",
+                "Additional Stellenbosch requirements: Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in Molecular Biology and Biotechnology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Biological Sciences.",
+                "Similar programmes: BSc in Human Life Sciences; BSc in Chemistry; BSc with focal area Applied Medicinal Chemistry; BSc with focal area Bioinformatics; BScAgric in Viticulture and Oenology.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}.",
+                "Additional Stellenbosch requirements: Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in Sport Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Biological Sciences.",
+                "Similar programmes: BA in Sport Science; BSc in Human Life Sciences; BSc in Physiotherapy.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BSc in Chemistry",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Physical Sciences.",
+                "Focal areas: Chemistry and Polymer Science; Chemical Biology; Materials Technology.",
+                "Similar programmes: BSc in Molecular Biology and Biotechnology; BSc with focal area Applied Medicinal Chemistry; BSc in Earth Science; BSc in Food Science.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                }
+            ]
+        },
+        {
+            "name": "BSc in Earth Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Physical Sciences.",
+                "Focal areas: Applied Earth Science; Geo-environmental Science.",
+                "Similar programmes: BSc in Biodiversity and Ecology; BSc in Chemistry; BScAgric in Plant and Soil Sciences.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}.",
+                "Additional Stellenbosch requirements: Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in GeoInformatics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Physical Sciences.",
+                "Similar programmes: BSc in Earth Science; BSc in Computer Science; BA in Development and the Environment.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}.",
+                "Additional Stellenbosch requirements: Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in Physics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Physical Sciences.",
+                "Focal areas: Laser Physics, Nuclear Physics, Radiation and Health Physics; Laser Physics Biological; Theoretical Physics.",
+                "Similar programmes: BSc in Chemistry; BSc in Mathematical Sciences with focal area Applied Mathematics.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                }
+            ]
+        },
+        {
+            "name": "BSc in Mathematical Sciences",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Mathematical Sciences.",
+                "Focal areas: Applied Mathematics; Mathematics; Operations Research.",
+                "Similar programmes: BSc in Computer Science; BEng; BSc in Physics; BCom in Mathematical Sciences.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                }
+            ]
+        },
+        {
+            "name": "BSc in Computer Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Mathematical Sciences.",
+                "Focal areas: General Computer Science; Computer Systems; Data Science.",
+                "Similar programmes: BSc in Mathematical Sciences; BEng; BSc in Physics; BSc in GeoInformatics; BSc with focal area Bioinformatics and Computational Biology; BCom in Mathematical Sciences; BDatSci.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                }
+            ]
+        },
+        {
+            "name": "BSc",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 65.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Interdisciplinary Programmes.",
+                "Focal areas: Biomedical Mathematical Sciences; Applied Medicinal Chemistry; Bioinformatics and Computational Biology; Biomathematics.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Data Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 80.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Programme group: Interdisciplinary Programmes.",
+                "Abbreviation: BDatSci.",
+                "Focal areas: Computer Science; Applied Mathematics; Statistical Physics.",
+                "Similar programmes: BSc in Computer Science; BEng; BSc in Physics; BSc in Mathematical Sciences; BSc with focal area Bioinformatics and Computational Biology; BSc with focal area Biomedical Mathematical Sciences; BCom in Mathematical Sciences.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Selection mark formula: formula: [(Mathematics x 2) + 5 other subjects] / 7; notes: [\"At least one of the five other subjects must be English or Afrikaans\", \"Life Orientation is excluded\"].",
+                "General mathematics note: description: The Mathematics requirement depends on first-year university subject choices; rules: [{\"condition\": \"If Mathematics and Physics are taken as first-year subjects\", \"requirement\": \"Mathematics: 70%\"}, {\"condition\": \"If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects\", \"requirement\": \"Mathematics: 60%\"}].",
+                "Extended curriculum information: {\"available\": true, \"description\": \"BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum\", \"minimum_consideration_rules\": {\"biological_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 55%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 60%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}], \"physical_and_mathematical_sciences\": [{\"combination\": 1, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"60%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 2, \"Mathematics\": \"At least 65%\", \"Physical_Sciences\": \"At least 50%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}, {\"combination\": 3, \"Mathematics\": \"At least 70%\", \"Physical_Sciences\": \"At least 45%\", \"Aggregated_Average_Required\": \"65%\", \"aggregate_note\": \"Excluding Life Orientation\"}]}}."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 7
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

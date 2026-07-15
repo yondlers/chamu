@@ -1,0 +1,108 @@
+{
+    "faculty": "Science",
+    "university": "Rhodes University",
+    "source": "RU Ready! Rhodes University Undergraduate Prospectus 2026",
+    "admission_score_type": "Rhodes points / APS-style score",
+    "qualifications": [
+        {
+            "name": "Bachelor of Science",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BSc",
+            "duration_years": 3,
+            "admission_score_required": 45,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: RU Ready! Rhodes University Undergraduate Prospectus 2026.",
+                "Admission score type: Rhodes points / APS-style score.",
+                "Provisional offer score: 45+.",
+                "Dean's discretion range: 39-44.",
+                "No NBT requirement is shown in this table.",
+                "The BSc is described as flexible, allowing subject combinations within timetable limits.",
+                "Students may combine Science majors with subjects from Commerce, Humanities and Law where permitted.",
+                "Fields: Biological Sciences, Computational Sciences, Earth Sciences, Life Sciences."
+            ],
+            "source_url": "https://www.ru.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 60,
+                            "note": "Original subject requirement: English Home Language: 60%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 65,
+                            "note": "Original subject requirement: English First Additional Language: 65%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Life Sciences: Level 5, 60-69% OR Mathematics: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Life Sciences: Level 5, 60-69% OR Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Physical Science: Level 5, 60-69%."
+                }
+            ],
+            "aps_required": 45
+        },
+        {
+            "name": "Bachelor of Information Systems",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BScInfoSys",
+            "duration_years": 3,
+            "admission_score_required": 45,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: RU Ready! Rhodes University Undergraduate Prospectus 2026.",
+                "Admission score type: Rhodes points / APS-style score.",
+                "Provisional offer score: 45+.",
+                "Dean's discretion range: 40-44.",
+                "No NBT requirement is shown in this table.",
+                "Fields: Computer Science, Economics Management, Information Systems."
+            ],
+            "source_url": "https://www.ru.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Physical Science: Level 5, 60-69%."
+                }
+            ],
+            "aps_required": 45
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "faculty": "Law",
+    "university": "The IIE's Varsity College",
+    "source": "The IIE Institutional Prospectus 2026",
+    "admission_score_type": "Pass type + subject percentage requirements",
+    "qualifications": [
+        {
+            "name": "Higher Certificate in Legal Studies",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 40%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English: 40%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English: 40%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Law",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 60%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: 60%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: 60%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Law",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%, Mathematics 30%, Mathematical Literacy or Technical Mathematics 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 30%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Laws",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 60%, Mathematics 50%, Mathematical Literacy or Technical Mathematics 60%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: 60%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: 60%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

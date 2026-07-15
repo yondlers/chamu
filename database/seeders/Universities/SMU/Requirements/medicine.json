@@ -1,0 +1,100 @@
+{
+    "faculty": "School of Medicine",
+    "university": "Sefako Makgatho Health Sciences University",
+    "source": "SMU 2025/2026 Prospectus",
+    "qualifications": [
+        {
+            "name": "Bachelor of Medicine and Bachelor of Surgery",
+            "qualification_type": "Bachelor",
+            "abbreviation": "MBChB",
+            "duration_years": 6,
+            "aps_required": 38,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Maximum published duration: 8 years.",
+                "Admission is highly competitive.",
+                "Meeting the minimum requirements does not guarantee admission.",
+                "Applicants may be admitted at a higher level than the published minimum requirements.",
+                "Requires one additional NSC subject at Level 5 and one additional NSC subject at Level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 6
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Medicine and Bachelor of Surgery Extended Curriculum Programme",
+            "qualification_type": "Extended Bachelor Degree",
+            "abbreviation": "MBChB-ECP",
+            "duration_years": 7,
+            "aps_required": 32,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "The extended curriculum route has a one-year foundation programme followed by the mainstream MBChB.",
+                "Reserved for South African Black learners from Quintile 1 and Quintile 2 schools.",
+                "Applicant must not previously have participated in tertiary education.",
+                "Applicant must have been unable to obtain admission into the mainstream six-year MBChB programme.",
+                "Only approximately 50 spaces are available on a competitive basis.",
+                "Requires two additional NSC subjects at Level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,223 @@
+{
+    "faculty": "School of Science and Technology",
+    "university": "Sefako Makgatho Health Sciences University",
+    "source": "SMU 2025/2026 Prospectus",
+    "qualifications": [
+        {
+            "name": "Diploma in Emergency Medical Care",
+            "qualification_type": "Diploma",
+            "abbreviation": "DIP EMC",
+            "duration_years": 2,
+            "aps_required": 18,
+            "minimum_pass_type": "diploma",
+            "selection_programme": true,
+            "notes": [
+                "Requires a Diploma endorsement.",
+                "Applicant must pass a medical fitness evaluation.",
+                "Applicant must pass a physical fitness evaluation.",
+                "Requires two additional NSC subjects at Level 3."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Emergency Medical Care",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HCERT EMC",
+            "duration_years": 1,
+            "aps_required": 15,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": true,
+            "notes": [
+                "Requires a Higher Certificate endorsement.",
+                "Applicant must pass a medical fitness evaluation.",
+                "Applicant must pass a physical fitness evaluation.",
+                "Requires two additional NSC subjects at Level 3."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Diagnostic Radiography",
+            "qualification_type": "Bachelor",
+            "abbreviation": "B RAD",
+            "duration_years": 4,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Maximum published duration: 6 years.",
+                "Applicant must have an NSC qualifying them for degree studies.",
+                "Applicant must also meet the general university admission criteria.",
+                "Published minimum core-subject APS: 16.",
+                "Published remaining subject points: 6.",
+                "The provided table does not display a total minimum APS for this programme."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BSc",
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Fields of study mentioned: Chemistry and Chemical Technology; Biochemistry and Chemical Technology.",
+                "The prospectus does not display a total minimum APS for this programme in the provided table.",
+                "Requires two additional NSC subjects at Level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science Extended Curriculum Programme",
+            "qualification_type": "Extended Bachelor Degree",
+            "abbreviation": "BSc-ECP",
+            "duration_years": 4,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "The extended curriculum programme runs over four years.",
+                "Fields of study mentioned: Chemistry and Chemical Technology; Biochemistry and Chemical Technology.",
+                "The prospectus does not display a total minimum APS for this programme in the provided table.",
+                "Requires two additional NSC subjects at Level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

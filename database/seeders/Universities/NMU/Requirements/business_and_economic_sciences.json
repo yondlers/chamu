@@ -1,0 +1,1849 @@
+{
+    "faculty": "Business and Economic Sciences",
+    "university": "Nelson Mandela University",
+    "source": "2026 MandelaUni Undergraduate Guide",
+    "admission_score_type": "Applicant Score (AS)",
+    "qualifications": [
+        {
+            "name": "Diploma in Accountancy",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Alternative access: Higher Certificate in Accountancy or equivalent, completed in minimum time with more than 50% for all modules.",
+                "AS variants: Mathematics: 350 with 45%+; Technical Mathematics: 350 with 45%+; Mathematical Literacy: 365 with 65%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 45,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 45%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 45,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 45%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematical Literacy: 65%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 350,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 65,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Economics",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Alternative access: Higher Certificate in Business Studies or equivalent, completed in minimum time with more than 50% for all modules.",
+                "AS variants: Mathematics: 330 with 40%+; Technical Mathematics: 330 with 40%+; Mathematical Literacy: 345 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematical Literacy: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Economics (Extended Curriculum)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 310,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 310 with 35%+; Technical Mathematics: 310 with 35%+; Mathematical Literacy: 325 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 325,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Human Resource Management",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 330 with 35%+; Technical Mathematics: 330 with 35%+; Mathematical Literacy: 345 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 330,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Human Resource Management (Extended Curriculum)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 310,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 310 with 30%+; Technical Mathematics: 310 with 30%+; Mathematical Literacy: 325 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 30%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 30%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "admission_score_required": 310,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 30,
+                    "admission_score_required": 310,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "admission_score_required": 325,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Inventory and Stores Management",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 290,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "May articulate to Diploma in Logistics if the student obtains an average of 60% for all first-year subjects.",
+                "AS variants: Mathematics: 290 with 30%+; Technical Mathematics: 290 with 30%+; Mathematical Literacy: 305 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 30%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 30%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "admission_score_required": 290,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 30,
+                    "admission_score_required": 290,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "admission_score_required": 305,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Logistics",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Alternative access: Higher Certificate in Business Studies or equivalent, completed in minimum time with more than 50% for all modules.",
+                "AS variants: Mathematics: 330 with 40%+; Technical Mathematics: 330 with 40%+; Mathematical Literacy: 345 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematical Literacy: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Logistics (Extended Curriculum)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 310,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 310 with 35%+; Technical Mathematics: 310 with 35%+; Mathematical Literacy: 325 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 325,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 330 with 40%+; Technical Mathematics: 330 with 40%+; Mathematical Literacy: 345 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematical Literacy: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management (Extended Curriculum)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 310,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 310 with 35%+; Technical Mathematics: 310 with 35%+; Mathematical Literacy: 325 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 325,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Marketing",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 330 with 40%+; Technical Mathematics: 330 with 40%+; Mathematical Literacy: 345 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematical Literacy: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Marketing (Extended Curriculum)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 310,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 310 with 35%+; Technical Mathematics: 310 with 35%+; Mathematical Literacy: 325 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 325,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Tourism Management",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 330 with 40%+; Technical Mathematics: 330 with 40%+; Mathematical Literacy: 345 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematical Literacy: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 330,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 60,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Tourism Management (Extended Curriculum)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 310,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 310 with 35%+; Technical Mathematics: 310 with 35%+; Mathematical Literacy: 325 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 35,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 35%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 325,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Economics)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Extended Curriculum - Economics)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 370,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 370 with 45%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Mathematics: 45%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 370,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Accounting)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus on a full-time basis only.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Extended Curriculum - Accounting)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 370,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 370 with 45%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Mathematics: 45%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 370,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Business Management)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Extended Curriculum - Business Management)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 370,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 370 with 45%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Mathematics: 45%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 370,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Financial Planning",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Financial Planning (Extended Curriculum)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 370,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 370 with 45%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Mathematics: 45%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 370,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Tourism)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+; Technical Mathematics: 390 with 50%+; Mathematical Literacy: 405 with 70%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 50%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematical Literacy: 70%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "admission_score_required": 405,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Extended Curriculum - Tourism)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 370,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 370 with 45%+; Technical Mathematics: 370 with 45%+; Mathematical Literacy: 385 with 65%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 45,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 45%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 45,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 45%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematical Literacy: 65%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 370,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 370,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 65,
+                    "admission_score_required": 385,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Marketing and Business Management",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Hospitality Management",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+; Technical Mathematics: 390 with 50%+; Mathematical Literacy: 405 with 70%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 50%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematical Literacy: 70%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "admission_score_required": 405,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: General (Statistics)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Accounting",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 410,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Campus notes: Also offered on the George Campus, full-time only.",
+                "AS variants: Mathematics: 410 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "admission_score_required": 410,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Computer Science and Information Systems",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Economics and Statistics",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Industrial Psychology and Human Resource Management",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: Information Systems (Business Management)",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Logistics and Transport Economics",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom in Food Service Management",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: Accounting Science (Economics or Business Management)",
+            "qualification_type": "Bachelor of Commerce in Accounting Science",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 410,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 410 with 65%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 65%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65,
+                    "admission_score_required": 410,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: Accounting Science (Law)",
+            "qualification_type": "Bachelor of Commerce in Accounting Science",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 410,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 410 with 65%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: English Home Language: 65% OR English First Additional Language: 70%."
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 65%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65,
+                    "admission_score_required": 410,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BCom: Accounting Science (Computer Science and Information Systems)",
+            "qualification_type": "Bachelor of Commerce in Accounting Science",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 410,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 410 with 65%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 65%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65,
+                    "admission_score_required": 410,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "BA in Human Resource Management",
+            "qualification_type": "Bachelor of Arts",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350 with 40%+; Technical Mathematics: 350 with 40%+; Mathematical Literacy: 365 with 70%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematical Literacy: 70%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 350,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "BA in Development Studies",
+            "qualification_type": "Bachelor of Arts",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "This course will only be offered if a minimum of 25 prospective applicants are admitted.",
+                "AS variants: Mathematics: 350 with 40%+; Technical Mathematics: 350 with 40%+; Mathematical Literacy: 365 with 70%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics or Technical Mathematics: 40%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematical Literacy: 70%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 350,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        }
+    ]
+}

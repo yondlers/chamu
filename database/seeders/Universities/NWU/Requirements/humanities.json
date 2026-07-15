@@ -1,0 +1,689 @@
+{
+    "faculty": "Faculty of Humanities",
+    "university": "North-West University",
+    "source": "NWU 2027 Grade 12 Prospectus",
+    "qualifications": [
+        {
+            "name": "Bachelor of Arts (BA) (Communication)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Communication.",
+                "School: School of Communication.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: English (HL or FAL) level 5 (60-69%)."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Graphic Design (Graphic Design with Communication)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 24,
+            "selection_programme": true,
+            "notes": [
+                "Field: Graphic Design with Communication.",
+                "School: School of Communication.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: A screening process; Submission of a photo portfolio of graphics or works of art as a skills test in practical projects; Submission of an academic record; Interview; Students must meet the minimum requirements and successfully complete the screening phase."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Public Governance (Public Administration / Politics and Public Administration / Public Administration and Social Studies / Public Administration and Geography / Public Administration and Labour Relations Management)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Field: Public Administration / Politics and Public Administration / Public Administration and Social Studies / Public Administration and Geography / Public Administration and Labour Relations Management.",
+                "School: School of Government Studies.",
+                "Campuses: Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: HL or FAL level 4 (50-59%)."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Public Governance (Policing Practice)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Field: Policing Practice.",
+                "School: School of Government Studies.",
+                "Campuses: Distance Learning only.",
+                "Additional NWU requirements: If Grade 12 was obtained before 2008, applicants must consult NWU Distance Learning Policing requirements."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Social Sciences (BSocSc) (Political Studies and International Relations)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Political Studies and International Relations.",
+                "School: School of Government Studies.",
+                "Campuses: Mahikeng.",
+                "Additional NWU requirements: Home Language level 4 (50-59%)."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Administration in Development and Management (Local Government Management)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 21,
+            "selection_programme": false,
+            "notes": [
+                "Field: Local Government Management.",
+                "School: School of Government Studies.",
+                "Campuses: Mahikeng."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Administration in Development and Management (Local Government Management)",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4,
+            "aps_required": 20,
+            "selection_programme": false,
+            "notes": [
+                "Field: Local Government Management.",
+                "School: School of Government Studies.",
+                "Campuses: Mahikeng."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Language and Literary Studies (English / Language Practice / Setswana)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: English / Language Practice / Setswana.",
+                "School: School of Languages.",
+                "Campuses: Mahikeng.",
+                "Additional NWU requirements: Setswana for non-mother-tongue speakers: no prerequisites."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "subject": "Setswana Home Language or Setswana First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Language and Literary Studies (Afrikaans and Dutch / Creative Writing / English / French / German / Language Practice / Setswana HL / Setswana SAL / South African Sign Language)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Afrikaans and Dutch / Creative Writing / English / French / German / Language Practice / Setswana HL / Setswana SAL / South African Sign Language.",
+                "School: School of Languages.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: Setswana for non-mother-tongue speakers: no prerequisites."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "subject": "Setswana Home Language or Setswana First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Language and Literary Studies (Languages / Language Practice / Language Practice and Communication)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Languages / Language Practice / Language Practice and Communication.",
+                "School: School of Languages.",
+                "Campuses: Vanderbijlpark."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Language Technology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Language Technology.",
+                "School: School of Languages.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: OR Setswana for non-mother-tongue speakers: no prerequisites."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "subject": "Setswana Home Language or Setswana First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Accounting",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Music (DM)",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 18,
+            "selection_programme": true,
+            "notes": [
+                "Field: Music.",
+                "School: School of Music.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: National Senior Certificate for diploma study; Language proficiency test; Musical aptitude test; Audition; Laptop for learning and assessment activities."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Music and Society",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 21,
+            "selection_programme": true,
+            "notes": [
+                "Field: Music and Society.",
+                "School: School of Music.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: National Senior Certificate for degree study; OR a Diploma in Music or equivalent qualification with a 60% average in the final year; Audition: practical grade 3; Theory placement test: grade 2; Language proficiency test; Laptop for learning and assessment activities."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Baccalaureus Musicae (BMus)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 24,
+            "selection_programme": true,
+            "notes": [
+                "Field: Music.",
+                "School: School of Music.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: National Senior Certificate for degree study OR a Diploma in Music; Audition: practical grade 6; Theory placement test: grade 5; Language proficiency test; Laptop for learning and assessment activities."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Philosophy (BPhil) (Philosophy, Politics and Economics)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Field: Philosophy, Politics and Economics.",
+                "School: School of Philosophy.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: HL and FAL level 4 (50-59%)."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts (BA) Humanities (Afrikaans and Dutch)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Afrikaans and Dutch.",
+                "School: School of Philosophy.",
+                "Campuses: Potchefstroom, Vanderbijlpark."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) Humanities (English)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: English.",
+                "School: School of Philosophy.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) Humanities (Setswana)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Setswana.",
+                "School: School of Philosophy.",
+                "Campuses: Mahikeng, Potchefstroom."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Setswana Home Language or Setswana First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Setswana Home Language or Setswana First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) Humanities (Sesotho)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Sesotho.",
+                "School: School of Philosophy.",
+                "Campuses: Vanderbijlpark."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) Humanities (Social Sciences and related fields)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Field: Social Sciences / Psychology / History / Geography / French / German / History of Art / Politics / Social Anthropology / Sociology / Philosophy / History and Society / Psychology and Society / Geography and Society / Politics and Society.",
+                "School: School of Philosophy.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: Applicants must take note of the language entrance requirements."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Setswana Home Language or Setswana First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Setswana Home Language or Setswana First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Social Sciences (BSocSc) (Development Studies / Geography / History / Population Studies / Psychology and Social Sciences / Social Anthropology / Sociology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "Field: Development Studies / Geography / History / Population Studies / Psychology and Social Sciences / Social Anthropology / Sociology.",
+                "School: School of Social Sciences.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: Applicants must take note of the language entrance requirements."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Setswana Home Language or Setswana First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Setswana Home Language or Setswana First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Sesotho Home Language or Sesotho First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Social Sciences (BSocSc) (Economics)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "Field: Economics.",
+                "School: School of Social Sciences.",
+                "Campuses: Mahikeng, Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: HL and FAL level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (BA) (Sociology and Geography / Sociology and Labour Relations Management)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "Field: Sociology and Geography / Sociology and Labour Relations Management.",
+                "School: School of Social Sciences.",
+                "Campuses: Potchefstroom.",
+                "Additional NWU requirements: HL and FAL level 4 (50-59%)."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts (BA) in Behavioural Sciences (Sociology and Psychology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "Field: Sociology and Psychology.",
+                "School: School of Social Sciences.",
+                "Campuses: Potchefstroom, Vanderbijlpark.",
+                "Additional NWU requirements: HL and FAL level 4 (50-59%)."
+            ],
+            "subject_requirements": []
+        }
+    ]
+}

@@ -1,0 +1,1141 @@
+{
+  "institution": "University of the Witwatersrand",
+  "abbreviation": "Wits",
+  "source": "Wits Undergraduate Minimum Admission Requirements",
+  "faculty": "Commerce, Law and Management",
+  "admission_score_type": "APS",
+  "minimum_certificate_type": "National Senior Certificate Bachelor’s degree pass",
+  "closing_date": "30 September 2026",
+  "note": "Meeting the minimum requirements does not guarantee admission; final selection depends on places, academic results and other entry requirements.",
+  "programmes": [
+    {
+      "school": "School of Business Sciences",
+      "programme_name": "Bachelor of Commerce",
+      "abbreviation": "BCom",
+      "fields": [
+        "General",
+        "Politics, Philosophy and Economics",
+        "Information Systems"
+      ],
+      "duration_years": 3,
+      "APS_Required": "38+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 35-37",
+          "English Level 6",
+          "Mathematics Level 6",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "The Wits Margo Steele School of Accountancy",
+      "programme_name": "Bachelor of Accounting Science",
+      "abbreviation": "BAccSci",
+      "duration_years": 3,
+      "APS_Required": "44+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 6",
+      "Maths_Literacy_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 39-43",
+          "English Level 6",
+          "Mathematics Level 6",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "The Wits Margo Steele School of Accountancy",
+      "programme_name": "Bachelor of Commerce in Accounting",
+      "abbreviation": "BCom Accounting",
+      "duration_years": 3,
+      "APS_Required": "38+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 35-37",
+          "English Level 6",
+          "Mathematics Level 6",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "School of Economics and Finance",
+      "programme_name": "Bachelor of Economic Science",
+      "abbreviation": "BEconSci",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 7",
+      "Maths_Literacy_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 39-41",
+          "English Level 5",
+          "Mathematics Level 7",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "School of Economics and Finance",
+      "programme_name": "Bachelor of Commerce in Financial Sciences",
+      "abbreviation": "BCom Financial Sciences",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 7",
+      "Maths_Literacy_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 39-41",
+          "English Level 5",
+          "Mathematics Level 7",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "School of Law",
+      "programme_name": "Bachelor of Commerce in Law",
+      "abbreviation": "BCom Law",
+      "duration_years": 3,
+      "APS_Required": "43+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 35-42",
+          "English Level 6",
+          "Mathematics Level 6",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "School of Law",
+      "programme_name": "Two-year LLB",
+      "duration_years": 2,
+      "qualification_type": "LLB for graduates only",
+      "APS_Required": "No matric APS calculation",
+      "English_Required": "Level 4",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "requirements": [
+        "For graduates only",
+        "Subject to assessment criteria determined by the School of Law",
+        "Subject to place availability",
+        "Wits students who have completed a BA Law or BCom Law are eligible to apply"
+      ]
+    },
+    {
+      "school": "School of Law",
+      "programme_name": "Three-year LLB",
+      "duration_years": 2,
+      "qualification_type": "LLB for graduates only",
+      "APS_Required": "No matric APS calculation",
+      "English_Required": "Level 4",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "requirements": [
+        "For graduates only",
+        "Subject to assessment criteria determined by the School of Law",
+        "Subject to place availability",
+        "Applicants with an undergraduate degree from an institution other than Wits may be required to apply for this programme",
+        "Wits students who completed an undergraduate degree without Law majors are required to apply for this programme",
+        "Applicants must have obtained an average of at least 65% for the final year of their undergraduate degree"
+      ]
+    },
+    {
+      "school": "School of Law",
+      "programme_name": "Four-year LLB",
+      "duration_years": 4,
+      "APS_Required": "46+",
+      "English_Required": "Level 6",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": "Level 6",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-45",
+          "English Level 6",
+          "Mathematics Level 5 OR Maths Literacy Level 6",
+          "Subject to place availability"
+        ]
+      }
+    }
+  ]
+}
+
+{
+  "institution": "University of the Witwatersrand",
+  "abbreviation": "Wits",
+  "source": "Wits Undergraduate Minimum Admission Requirements",
+  "faculty": "Engineering and the Built Environment",
+  "admission_score_type": "APS",
+  "minimum_certificate_type": "National Senior Certificate Bachelor’s degree pass",
+  "closing_dates": {
+    "Bachelor of Architectural Studies": "30 June 2026",
+    "all_other_programmes": "30 September 2026"
+  },
+  "note": "Meeting the minimum requirements does not guarantee admission; final selection depends on places, academic results and other entry requirements.",
+  "programmes": [
+    {
+      "school": "School of Chemical and Metallurgical Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Chemical Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Chemical and Metallurgical Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Metallurgy and Materials Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Civil and Environmental Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Civil Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Electrical and Information Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Electrical Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Electrical and Information Engineering",
+      "programme_name": "Bachelor of Engineering Science in Biomedical Engineering",
+      "abbreviation": "BEngSc(BME)",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Electrical and Information Engineering",
+      "programme_name": "Bachelor of Engineering Science in Digital Arts",
+      "abbreviation": "BEngSc(DA)",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Mechanical, Industrial and Aeronautical Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Aeronautical Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Mechanical, Industrial and Aeronautical Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Industrial Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Mechanical, Industrial and Aeronautical Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Mechanical Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Mining Engineering",
+      "programme_name": "Bachelor of Science in Engineering in Mining Engineering",
+      "abbreviation": "BSc(Eng)",
+      "duration_years": 4,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "additional_information": [
+        "Applicants who achieve Level 6 in English, Mathematics and Physical Sciences generally stand a greater chance of being accepted",
+        "Applicants meeting the minimum requirements may be wait-listed"
+      ]
+    },
+    {
+      "school": "School of Architecture and Planning",
+      "programme_name": "Bachelor of Architectural Studies",
+      "abbreviation": "BAS",
+      "duration_years": 3,
+      "APS_Required": "34+",
+      "English_Required": "Level 4",
+      "Mathematics_Required": "Level 4",
+      "Physical_Sciences_Required": null,
+      "additional_selection_criteria": [
+        "Acceptance depends on departmental selection",
+        "Applicants must complete a written and graphic exercise",
+        "Applicants may be required to attend an interview",
+        "Applicants with a Wits APS of 30-33 may be accepted after an interview on the basis of exceptional scores",
+        "Selection is based mainly on performance in the selection exercise, interview and academics",
+        "Demographic balance may be considered where applicants score within the same range"
+      ]
+    },
+    {
+      "school": "School of Architecture and Planning",
+      "programme_name": "Bachelor of Science in Urban and Regional Planning",
+      "abbreviation": "BSc(URP)",
+      "duration_years": 3,
+      "APS_Required": "36+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-35",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "School of Construction Economics and Management",
+      "programme_name": "Bachelor of Science in Construction Studies",
+      "abbreviation": "BSc(CS)",
+      "duration_years": 3,
+      "APS_Required": "36+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-35",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "school": "School of Construction Economics and Management",
+      "programme_name": "Bachelor of Science in Property Studies",
+      "abbreviation": "BSc(PS)",
+      "duration_years": 3,
+      "APS_Required": "36+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-35",
+          "Subject to place availability"
+        ]
+      }
+    }
+  ]
+}
+
+{
+  "institution": "University of the Witwatersrand",
+  "abbreviation": "Wits",
+  "source": "Wits Undergraduate Minimum Admission Requirements",
+  "faculty": "Health Sciences",
+  "admission_score_type": "Composite Index and subject levels",
+  "minimum_certificate_type": "National Senior Certificate Bachelor’s degree pass",
+  "closing_date": "30 June 2026",
+  "selection_model": {
+    "composite_index": true,
+    "academic_results_weighting": "60%",
+    "national_benchmark_test_weighting": "40%",
+    "academic_score_subjects_used": [
+      "English",
+      "Mathematics",
+      "Best of Physical Sciences or Life Sciences",
+      "Best two other subjects"
+    ],
+    "note": "Academic score is calculated using percentages obtained, not symbols."
+  },
+  "general_notes": [
+    "All applicants, except qualifying GEMP or GEPP applicants and applicants in the final year of a degree or who have already completed a degree, must write the National Benchmark Test.",
+    "Qualifying GEMP and GEPP applicants may be invited to write the Wits Additional Placement Test.",
+    "From 2029, the Faculty may require applicants to all Health Sciences programmes to have completed both Life Sciences and Physical Sciences.",
+    "Meeting the minimum requirements does not guarantee admission; final selection depends on places, academic results and other entry requirements."
+  ],
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Health Sciences",
+      "abbreviation": "BHSci",
+      "fields": [
+        "Biomedical Sciences",
+        "Biokinetics",
+        "Health Systems Sciences"
+      ],
+      "duration_years": 3,
+      "APS_Required": null,
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 5",
+      "selection_procedures": [
+        "All Faculty of Health Sciences applicants must write the NBT by 17 August 2026 for early feedback on their application",
+        "Results from online NBTs will not be considered"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Clinical Medical Practice",
+      "abbreviation": "BCMP",
+      "duration_years": 3,
+      "APS_Required": null,
+      "English_Required": "Level 4",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": "Level 7",
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 4"
+    },
+    {
+      "programme_name": "Bachelor of Medicine and Bachelor of Surgery",
+      "abbreviation": "MBBCh",
+      "duration_years": 6,
+      "APS_Required": null,
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 5",
+      "entry_points": [
+        {
+          "entry_point": "First year",
+          "applicant_type": "Applicants currently in Grade 12"
+        },
+        {
+          "entry_point": "Third year",
+          "applicant_type": "Applicants who have completed a relevant degree through GEMP"
+        }
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Dental Science",
+      "abbreviation": "BDS",
+      "duration_years": 5,
+      "APS_Required": null,
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "Life_Sciences_Required": "Level 5",
+      "Physical_Sciences_Required": "Level 5",
+      "Life_Sciences_OR_Physical_Sciences_Required": null,
+      "additional_requirements": [
+        "Applicants must spend time observing specific procedures performed by a dentist, dental therapist or oral hygienist",
+        "Applicants must complete a job shadowing certificate of attendance",
+        "Minimum observation time is 16 hours",
+        "Only observation hours completed between 1 July 2025 and 31 July 2026 will be accepted",
+        "Applicants who fail to submit the certificate of attendance will not be considered for admission"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Oral Health Sciences",
+      "abbreviation": "BOHS",
+      "duration_years": 3,
+      "APS_Required": null,
+      "English_Required": "Level 4",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": "Level 7",
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 4",
+      "additional_requirements": [
+        "Applicants must spend time observing specific procedures performed by a dentist, dental therapist or oral hygienist",
+        "Applicants must complete a job shadowing certificate of attendance",
+        "Minimum observation time is 16 hours",
+        "Only observation hours completed between 1 July 2025 and 31 July 2026 will be accepted",
+        "Applicants who fail to submit the certificate of attendance will not be considered for admission"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Nursing",
+      "abbreviation": "BNurs",
+      "duration_years": 4,
+      "APS_Required": null,
+      "English_Required": "Level 4",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": null,
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 4"
+    },
+    {
+      "programme_name": "Bachelor of Pharmacy",
+      "abbreviation": "BPharm",
+      "duration_years": 4,
+      "APS_Required": null,
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 5"
+    },
+    {
+      "programme_name": "Bachelor of Science in Occupational Therapy",
+      "abbreviation": "BSc OT",
+      "duration_years": 4,
+      "APS_Required": null,
+      "English_Required": "Level 4",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": null,
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 4",
+      "additional_requirements": [
+        "Applicants must spend time observing an Occupational Therapist",
+        "Applicants must complete a job shadowing certificate of attendance",
+        "Minimum observation time is 16 hours",
+        "Only observation hours completed between 1 July 2025 and 31 July 2026 will be accepted",
+        "Applicants who fail to submit the certificate of attendance will not be considered for admission"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Science in Physiotherapy",
+      "abbreviation": "BSc Physiotherapy",
+      "duration_years": 4,
+      "APS_Required": null,
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Maths_Literacy_Required": null,
+      "Life_Sciences_Required": null,
+      "Physical_Sciences_Required": null,
+      "Life_Sciences_OR_Physical_Sciences_Required": "Level 5",
+      "additional_requirements": [
+        "Applicants must spend time observing a Physiotherapist",
+        "Applicants must complete a job shadowing certificate of attendance",
+        "Minimum observation time is 16 hours",
+        "Only observation hours completed between 1 July 2025 and 31 July 2026 will be accepted",
+        "Applicants who fail to submit the certificate of attendance will not be considered for admission"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "University of the Witwatersrand",
+  "abbreviation": "Wits",
+  "source": "Wits Undergraduate Minimum Admission Requirements",
+  "faculty": "Humanities",
+  "admission_score_type": "APS",
+  "minimum_certificate_type": "National Senior Certificate Bachelor’s degree pass",
+  "closing_dates": {
+    "Bachelor of Speech-Language Pathology": "30 June 2026",
+    "Bachelor of Audiology": "30 June 2026",
+    "Bachelor of Arts in Film and Television": "30 June 2026",
+    "all_other_programmes": "30 September 2026"
+  },
+  "note": "Meeting the minimum requirements does not guarantee admission; final selection depends on places, academic results and other entry requirements.",
+  "programmes": [
+    {
+      "school_or_section": "General Humanities",
+      "programme_name": "Bachelor of Arts",
+      "abbreviation": "BA",
+      "duration_years": 3,
+      "APS_Required": "36+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-35",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "General Humanities",
+      "programme_name": "Bachelor of Arts in Law",
+      "abbreviation": "BA Law",
+      "duration_years": 3,
+      "APS_Required": "43+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 3",
+      "Maths_Literacy_Required": "Level 4",
+      "Technical_Mathematics_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "Applicants who wish to take Law courses in first year must meet the admission requirements for Law",
+          "APS 40-42",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Arts",
+      "programme_name": "Bachelor of Arts in Digital Arts",
+      "duration_years": 4,
+      "APS_Required": "36+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "additional_selection_criteria": [
+        "Applicants must meet the academic entrance criteria set by the University",
+        "Applicants must successfully complete an interview, audition, portfolio or written assignment at the Wits School of Arts",
+        "Selection activities take place from May 2026",
+        "Admission depends on successfully fulfilling both academic and school-specific selection criteria"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-35",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Arts",
+      "programme_name": "Bachelor of Arts in Theatre and Performance",
+      "duration_years": 4,
+      "APS_Required": "34+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "additional_selection_criteria": [
+        "Applicants must meet the academic entrance criteria set by the University",
+        "Applicants must successfully complete an interview, audition, portfolio or written assignment at the Wits School of Arts",
+        "Selection activities take place from May 2026",
+        "Admission depends on successfully fulfilling both academic and school-specific selection criteria"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-33",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Arts",
+      "programme_name": "Bachelor of Arts in Film and Television",
+      "duration_years": 4,
+      "APS_Required": "34+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "closing_date": "30 June 2026",
+      "additional_selection_criteria": [
+        "Applicants must meet the academic entrance criteria set by the University",
+        "Applicants must successfully complete an interview, audition, portfolio or written assignment at the Wits School of Arts",
+        "Selection activities take place from May 2026",
+        "Admission depends on successfully fulfilling both academic and school-specific selection criteria"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-33",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Arts",
+      "programme_name": "Bachelor of Arts in Fine Arts",
+      "duration_years": 4,
+      "APS_Required": "34+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "additional_selection_criteria": [
+        "Applicants must meet the academic entrance criteria set by the University",
+        "Applicants must successfully complete an interview, audition, portfolio or written assignment at the Wits School of Arts",
+        "Selection activities take place from May 2026",
+        "Admission depends on successfully fulfilling both academic and school-specific selection criteria"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-33",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Arts",
+      "programme_name": "Bachelor of Music",
+      "duration_years": 4,
+      "APS_Required": "34+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "additional_selection_criteria": [
+        "Applicants must meet the academic entrance criteria set by the University",
+        "Applicants must successfully complete an interview, audition, portfolio or written assignment at the Wits School of Arts",
+        "Selection activities take place from May 2026",
+        "Admission depends on successfully fulfilling both academic and school-specific selection criteria"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-33",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Education",
+      "programme_name": "Bachelor of Education: Foundation Phase Teaching",
+      "abbreviation": "BEd Foundation Phase Teaching",
+      "duration_years": 4,
+      "APS_Required": "37+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": "Level 5",
+      "Technical_Mathematics_Required": "Level 5",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 34-36",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Education",
+      "programme_name": "Bachelor of Education: Intermediate Phase Teaching",
+      "abbreviation": "BEd Intermediate Phase Teaching",
+      "duration_years": 4,
+      "APS_Required": "37+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": "Level 5",
+      "Technical_Mathematics_Required": "Level 5",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 34-36",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "Wits School of Education",
+      "programme_name": "Bachelor of Education: Senior Phase and Further Education and Training Teaching",
+      "abbreviation": "BEd Senior Phase and FET Teaching",
+      "duration_years": 4,
+      "APS_Required": "37+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "teaching_subjects": [
+        "Physical Sciences",
+        "Life Sciences",
+        "Engineering Graphics and Design",
+        "Geography",
+        "History",
+        "IsiZulu Home Language",
+        "IsiZulu First Additional Language",
+        "Sesotho Home Language",
+        "Sesotho First Additional Language",
+        "Information Technology",
+        "Mechanical Technology Auto",
+        "Mathematics",
+        "Technical Mathematics"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 34-36",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "School of Human and Community Development",
+      "programme_name": "Bachelor of Speech-Language Pathology",
+      "duration_years": 4,
+      "APS_Required": "34+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "closing_date": "30 June 2026",
+      "additional_selection_criteria": [
+        "Applicants are required to write the NBT"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-33",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "School of Human and Community Development",
+      "programme_name": "Bachelor of Audiology",
+      "duration_years": 4,
+      "APS_Required": "34+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 4",
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "closing_date": "30 June 2026",
+      "additional_selection_criteria": [
+        "Applicants are required to write the NBT"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 30-33",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    },
+    {
+      "school_or_section": "School of Human and Community Development",
+      "programme_name": "Bachelor of Social Work",
+      "duration_years": 4,
+      "APS_Required": "36+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": null,
+      "Maths_Literacy_Required": null,
+      "Technical_Mathematics_Required": null,
+      "capacity": "Only 60 first-year places are available",
+      "selection_criteria": [
+        "Selection is based on academic merit within various school quintiles"
+      ],
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 34-35",
+          "Subject to place availability",
+          "Preference is given to higher English results"
+        ]
+      }
+    }
+  ]
+}
+
+{
+  "institution": "University of the Witwatersrand",
+  "abbreviation": "Wits",
+  "source": "Wits Undergraduate Minimum Admission Requirements",
+  "faculty": "Science",
+  "admission_score_type": "APS",
+  "minimum_certificate_type": "National Senior Certificate Bachelor’s degree pass",
+  "closing_date": "30 September 2026",
+  "national_benchmark_test": {
+    "required": true,
+    "deadline": "31 October 2026"
+  },
+  "note": "Meeting the minimum requirements does not guarantee admission; final selection depends on places, academic results and other entry requirements.",
+  "programmes": [
+    {
+      "programme_group": "General",
+      "programme_name": "Bachelor of Science",
+      "abbreviation": "BSc General",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-41",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Biological Sciences",
+      "programme_name": "Bachelor of Science in the field of Biological Sciences",
+      "duration_years": 3,
+      "APS_Required": "43+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 41-42",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Earth Sciences",
+      "programme_name": "Bachelor of Science in the fields of Geographical and Archaeological Sciences",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-41",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Earth Sciences",
+      "programme_name": "Bachelor of Science in the field of Geospatial Sciences",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-41",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Earth Sciences",
+      "programme_name": "Bachelor of Science in the field of Environmental Studies",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 5",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-41",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Earth Sciences",
+      "programme_name": "Bachelor of Science in the field of Geological Sciences",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 6",
+      "Physical_Sciences_Required": "Level 5",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-41",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Mathematical Sciences",
+      "programme_name": "Bachelor of Science in the field of Actuarial Science",
+      "duration_years": 3,
+      "APS_Required": "44+",
+      "English_Required": "Level 7",
+      "Mathematics_Required": "Level 7",
+      "Physical_Sciences_Required": "Level 7",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 44+",
+          "English Level 6",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Mathematical Sciences",
+      "programme_name": "Bachelor of Science in the field of Computational and Applied Mathematics",
+      "duration_years": 3,
+      "APS_Required": "44+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 6",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 41-43",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Mathematical Sciences",
+      "programme_name": "Bachelor of Science in the field of Computer Science",
+      "duration_years": 3,
+      "APS_Required": "44+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 6",
+      "Physical_Sciences_Required": null,
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 41-43",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Mathematical Sciences",
+      "programme_name": "Bachelor of Science in the field of Mathematical Sciences",
+      "duration_years": 3,
+      "APS_Required": "44+",
+      "English_Required": "Level 7",
+      "Mathematics_Required": "Level 7",
+      "Physical_Sciences_Required": "Level 7",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 44+",
+          "English Level 6",
+          "Mathematics Level 7",
+          "Physical Sciences Level 7",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Physical Sciences",
+      "programme_name": "Bachelor of Science in the field of Physical Sciences",
+      "field_note": "Chemistry/Physics",
+      "duration_years": 3,
+      "APS_Required": "42+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 6",
+      "Physical_Sciences_Required": "Level 5",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 44+",
+          "English Level 6",
+          "Mathematics Level 7",
+          "Physical Sciences Level 7",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Physical Sciences",
+      "programme_name": "Bachelor of Science in the field of Chemistry with Chemical Engineering",
+      "duration_years": 3,
+      "APS_Required": "43+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 6",
+      "Physical_Sciences_Required": "Level 6",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-42",
+          "Subject to place availability"
+        ]
+      }
+    },
+    {
+      "programme_group": "Physical Sciences",
+      "programme_name": "Bachelor of Science in the field of Astronomy and Astrophysics",
+      "duration_years": 3,
+      "APS_Required": "43+",
+      "English_Required": "Level 5",
+      "Mathematics_Required": "Level 6",
+      "Physical_Sciences_Required": "Level 6",
+      "waitlisting": {
+        "eligible": true,
+        "criteria": [
+          "APS 40-42",
+          "Subject to place availability"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+    "faculty": "Information and Communications Technology",
+    "university": "Walter Sisulu University",
+    "source": "2026 Undergraduate Information Brochure & Admission Requirements",
+    "admission_score_type": "APS",
+    "qualifications": [
+        {
+            "name": "Diploma in Information and Communications Technology in Applications Development",
+            "qualification_type": "Diploma",
+            "aps_required": 22,
+            "admission_score_required": 22,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60009.",
+                "Programme note: Mainstream.",
+                "APS variants: with Mathematics: 22; with Mathematical Literacy: 24."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communications Technology in Applications Development (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 18,
+            "admission_score_required": 18,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60010.",
+                "Programme note: Extended Stream.",
+                "APS variants: with Mathematics: 18; with Mathematical Literacy: 20."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "As for mainstream, with provision that applicants with an NSC achievement rating one level below the required level in one of the two required subjects may be considered"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "The one lower subject may be Mathematics or Mathematical Literacy, or English Home Language or First Additional Language"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communications Technology in Business Analysis",
+            "qualification_type": "Diploma",
+            "aps_required": 22,
+            "admission_score_required": 22,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60011.",
+                "Programme note: Mainstream.",
+                "APS variants: with Mathematics: 22; with Mathematical Literacy: 24."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communications Technology in Business Analysis (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 18,
+            "admission_score_required": 18,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60012.",
+                "Programme note: Extended Stream.",
+                "APS variants: with Mathematics: 18; with Mathematical Literacy: 20."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "As for mainstream, with provision that applicants with an NSC achievement rating one level below the required level in one of the two required subjects may be considered"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "The one lower subject may be Mathematics or Mathematical Literacy, or English Home Language or First Additional Language"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communications Technology in Communication Networks",
+            "qualification_type": "Diploma",
+            "aps_required": 22,
+            "admission_score_required": 22,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60013.",
+                "Programme note: Mainstream.",
+                "APS variants: with Mathematics: 22; with Mathematical Literacy: 24."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communications Technology in Communication Networks (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 18,
+            "admission_score_required": 18,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60014.",
+                "Programme note: Extended Stream.",
+                "APS variants: with Mathematics: 18; with Mathematical Literacy: 20."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "As for mainstream, with provision that applicants with an NSC achievement rating one level below the required level in one of the two required subjects may be considered"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "The one lower subject may be Mathematics or Mathematical Literacy, or English Home Language or First Additional Language"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communications Technology in Support Services",
+            "qualification_type": "Diploma",
+            "aps_required": 22,
+            "admission_score_required": 22,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60015.",
+                "Programme note: Mainstream.",
+                "APS variants: with Mathematics: 22; with Mathematical Literacy: 24."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49% OR Mathematical Literacy: Level 5, 60-69%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Information and Communications Technology in Support Services (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 18,
+            "admission_score_required": 18,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W60016.",
+                "Programme note: Extended Stream.",
+                "APS variants: with Mathematics: 18; with Mathematical Literacy: 20."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "As for mainstream, with provision that applicants with an NSC achievement rating one level below the required level in one of the two required subjects may be considered"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": null,
+                    "label": "The one lower subject may be Mathematics or Mathematical Literacy, or English Home Language or First Additional Language"
+                }
+            ]
+        }
+    ]
+}

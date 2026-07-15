@@ -1,0 +1,45 @@
+{
+    "faculty": "Pharmacy",
+    "university": "Rhodes University",
+    "source": "RU Ready! Rhodes University Undergraduate Prospectus 2026",
+    "admission_score_type": "Rhodes points / APS-style score",
+    "qualifications": [
+        {
+            "name": "Bachelor of Pharmacy",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BPharm",
+            "duration_years": 4,
+            "admission_score_required": 45,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: RU Ready! Rhodes University Undergraduate Prospectus 2026.",
+                "Admission score type: Rhodes points / APS-style score.",
+                "Provisional offer score: 45+.",
+                "Dean's discretion range: 40-44.",
+                "Dean's discretion subject levels: Mathematics Level 5, Life Sciences Level 5, Physical Science Level 5.",
+                "No NBT requirement is shown in this table.",
+                "The BPharm degree is registered on the NQF as a Level 8 qualification.",
+                "The curriculum is set by the South African Pharmacy Council.",
+                "Focus: Anatomy and Physiology 1, Cell Biology, Chemistry, Foundation of Pharmacy, Introduction to ICT, Mathematics 1S, Pharmaceutical Biochemistry 1."
+            ],
+            "source_url": "https://www.ru.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Physical Science: Level 6, 70-79%."
+                }
+            ],
+            "aps_required": 45
+        }
+    ]
+}

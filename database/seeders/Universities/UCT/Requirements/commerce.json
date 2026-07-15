@@ -1,0 +1,119 @@
+{
+    "faculty": "Commerce",
+    "university": "University of Cape Town",
+    "source": "2024 Guidelines for Admission for Holders of National Senior Certificate",
+    "admission_score_type": "FPS/WPS",
+    "qualifications": [
+        {
+            "name": "Bachelor of Business Science and Bachelor of Commerce - All specialisations except Actuarial Science and Computer Science",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 430.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are included in programme notes, not as curriculum subject requirements.",
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "Specialisation or stream: All specialisations except Actuarial Science and Computer Science.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission into Education Development Unit only.",
+                "Score requirement: FPS of 430 or above.",
+                "Notes: NBT scores of Upper Intermediate or above for AL and QL are required.; Probable admission: 470 WPS or above.; Guaranteed admission: 480 FPS or above.; The general minimum required for possible admission is listed as FPS of 435.."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 60.0
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Business Science and Bachelor of Commerce - Computer Science and Analytics Specialisation",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 430.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are included in programme notes, not as curriculum subject requirements.",
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "Specialisation or stream: Computer Science and Analytics Specialisation.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission into Education Development Unit only.",
+                "Score requirement: FPS of 430 or above.",
+                "Notes: NBT scores of Upper Intermediate or above for AL and QL are required.; Probable admission: 470 WPS or above.; Guaranteed admission: 480 FPS or above.; The general minimum required for possible admission is listed as FPS of 435.."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 60.0
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 70.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Business Science and Bachelor of Commerce - Actuarial Science and Quantitative Finance Qualification and Stream",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 475.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are included in programme notes, not as curriculum subject requirements.",
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "Specialisation or stream: Actuarial Science and Quantitative Finance Qualification and Stream.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission into Education Development Unit only.",
+                "Score requirement: FPS of 475 or above.",
+                "Notes: NBT scores of Upper Intermediate or above for AL and QL are required.; English First Additional Language at 80% also requires Proficient for AL and QL NBTs.; Probable admission: 525 WPS or above.; Guaranteed admission: 500 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 60.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 80.0
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 80.0
+                }
+            ]
+        }
+    ]
+}

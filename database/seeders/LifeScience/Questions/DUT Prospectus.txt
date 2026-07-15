@@ -1,0 +1,1594 @@
+{
+  "institution": "Durban University of Technology",
+  "abbreviation": "DUT",
+  "source": "DUT Student Course Guide 2026",
+  "faculty": "Accounting and Informatics",
+  "admission_score_type": "NSC Points",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Information and Communications Technology",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BIT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 4",
+        "At least three designated 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of ICT: Internet of Things",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-IoT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 4",
+        "Physical Sciences: Level 4 OR Information Technology: Level 4",
+        "Two designated 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma ICT: Applications Development",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-APD",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 6",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma ICT: Applications Development",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-I-APD",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 6",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma ICT: Applications Development",
+      "programme_note": "4 Year Foundation Programme",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-APF",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma ICT: Business Analysis",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-BUA",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 6",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma ICT: Business Analysis",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-I-BUA",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 6",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma Business and Information Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-BI3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Four 20-credit subjects at Level 3",
+        "Excluding Life Orientation",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma Business and Information Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-BI3",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Four 20-credit subjects at Level 3",
+        "Excluding Life Orientation",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Accounting",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DAT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5 OR Accounting: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Accounting",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-DAT",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5 OR Accounting: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Accounting",
+      "programme_note": "4 Year Foundation Programme",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DA4",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5 OR Accounting: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Accounting",
+      "programme_note": "4 Year Foundation Programme",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-DA4",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5 OR Accounting: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Business and Information",
+      "programme_note": "4 Year Foundation Programme",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-BI4",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Four 20-credit subjects at Level 3",
+        "Excluding Life Orientation",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Internal Auditing",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DIA",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 4 and three 20-credit subjects at Level 3",
+        "OR Mathematics: Level 3 OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Internal Auditing",
+      "programme_note": "4 Year Foundation Programme",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DI4",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 4 and three 20-credit subjects at Level 3",
+        "OR Mathematics: Level 3 OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Library and Information Studies",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-LS3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Four 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Accounting",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-MAC",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Accounting: Level 4 AND three 20-credit subjects at Level 3",
+        "OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Accounting",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-MAC",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Accounting: Level 4 AND three 20-credit subjects at Level 3",
+        "OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Taxation",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DTA",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5 OR Accounting: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Taxation",
+      "programme_note": "4 Year Foundation Programme",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DT6",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5 OR Accounting: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Durban University of Technology",
+  "abbreviation": "DUT",
+  "source": "DUT Student Course Guide 2026",
+  "faculty": "Applied Sciences",
+  "admission_score_type": "NSC Points",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Applied Science in Biotechnology",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BBT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "One 20-credit subject at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Applied Science in Food Science and Technology",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BFS",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "One 20-credit subject at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Applied Science in Industrial Chemistry",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BSY",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Applied Science in Textile Science",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-ATT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Sport Science and Management",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-SSM",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences OR Physical Sciences: Level 4",
+        "Sport Science: Level 4",
+        "Three 20-credit subjects at Level 4"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Shipping and Logistics",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-SL3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 3",
+        "Any Business Management OR Commerce subject: Level 4",
+        "Two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Analytical Chemistry",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-CH3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Physical Sciences: Level 3",
+        "Two 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Clothing Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-CLM",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Four 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Consumer Sciences in Food and Nutrition",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DFN",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "One of Accounting OR Business Studies OR Consumer Studies OR Physical Sciences OR Life Sciences: Level 3",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Nautical Science",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-NS3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Sustainable Horticulture and Landscaping",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-SHL",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Life Sciences: Level 4 OR recognised equivalent",
+        "Two 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Higher Certificate Sport Management Science",
+      "qualification_type": "Higher Certificate",
+      "cao_code": "DU-D-SMS",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 24,
+      "requirements": [
+        "NSC Higher Certificate pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics OR Physical Sciences OR Life Sciences OR Sport Science: Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Higher Certificate: Applied Sciences",
+      "qualification_type": "Higher Certificate",
+      "cao_code": "DU-D-HAS",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Higher Certificate pass",
+        "English: Level 4 AND Mathematics: Level 3 AND Physical Sciences: Level 3",
+        "OR English: Level 4 AND Technical Mathematics: Level 3 AND Technical Sciences: Level 3"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Durban University of Technology",
+  "abbreviation": "DUT",
+  "source": "DUT Student Course Guide 2026",
+  "faculty": "Arts and Design",
+  "admission_score_type": "NSC Points",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Applied Arts in Commercial Photography",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-COP",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Four recognised 20-credit subjects at Level 4"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Applied Arts in Screen Arts and Technology",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-C-SAT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 36,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language: Level 4 OR English First Additional Language: Level 5",
+        "Four 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Design in Visual Communication Design",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-C-BDV",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Four 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Education in Senior Phase and FET Teaching: Economic and Management Sciences",
+      "qualification_type": "Bachelor of Education",
+      "cao_code": "DU-I-EDE",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Accounting: Level 4",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Education in Senior Phase and Further Education and Training Teaching: Electrical Technology",
+      "qualification_type": "Bachelor of Education",
+      "cao_code": "DU-I-EET",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics OR Technical Mathematics OR Technical Sciences OR Electrical Technology: Level 4",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Education in Senior Phase and Further Education and Training Teaching: Mechanical Technology",
+      "qualification_type": "Bachelor of Education",
+      "cao_code": "DU-I-EMT",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Technical Mathematics OR Technical Sciences OR Mathematics OR Physical Sciences OR Mechanical Technology: Level 4",
+        "OR Mathematical Literacy: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Education in Senior Phase and Further Education and Training Teaching: Languages",
+      "qualification_type": "Bachelor of Education",
+      "cao_code": "DU-I-EDL",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 5",
+        "IsiZulu OR IsiXhosa: Level 5",
+        "Three 20-credit subjects at Level 4"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Education in Senior Phase and Further Education and Training Teaching: Natural Sciences",
+      "qualification_type": "Bachelor of Education",
+      "cao_code": "DU-I-EDN",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences OR Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Education in Senior Phase and Further Education and Training Teaching: Civil Technology",
+      "qualification_type": "Bachelor of Education",
+      "cao_code": "DU-I-ECT",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Technical Mathematics OR Technical Sciences OR Mathematics OR Civil Technology: Level 4",
+        "OR Mathematical Literacy: Level 5",
+        "Four 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Journalism",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-C-BJO",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 5",
+        "Another official language: Level 4",
+        "Three 20-credit subjects at Level 4"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Drama",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DR3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 24,
+      "requirements": [
+        "NSC Diploma pass",
+        "English: Level 4",
+        "Another language",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Fashion Design",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-B-DIF",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English",
+        "Four 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Fine Art",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-C-DFA",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English",
+        "Four 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Interior Design",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-C-ID3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English: Level 3",
+        "Four recognised 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Jewellery Design and Manufacture",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-C-DJM",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English",
+        "Four 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Language Practice",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DLP",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 4 OR English First Additional Language: Level 5",
+        "IsiZulu OR IsiXhosa OR Afrikaans Home Language: Level 4 OR First Additional Language: Level 5",
+        "Three 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Higher Certificate: Performing Arts Technology",
+      "qualification_type": "Higher Certificate",
+      "cao_code": "DU-D-HP2",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Higher Certificate pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematical Literacy: Level 3",
+        "Three 20-credit subjects other than Life Orientation at Level 3",
+        "Only one of the three subjects may be an additional language"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Durban University of Technology",
+  "abbreviation": "DUT",
+  "source": "DUT Student Course Guide 2026",
+  "faculty": "Engineering and the Built Environment",
+  "admission_score_type": "NSC Points",
+  "programmes": [
+    {
+      "programme_name": "Bachelor Built Environment: Urban and Regional Planning",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BUR",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language: Level 4 OR English First Additional Language: Level 5",
+        "Mathematics: Level 4",
+        "Two of the following at Level 4: Geography, History, Physical Sciences, Life Sciences",
+        "One 20-credit subject that is not a language: Level 4"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Engineering Technology in Chemical Engineering",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-ECH",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Engineering Technology in Electronic Engineering",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BGL",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Engineering Technology in Industrial Engineering",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BIE",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Engineering Technology in Mechanical Engineering",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BGM",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Engineering Technology in Power Engineering",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BGH",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of the Built Environment in Architecture",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BAT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 4",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of the Built Environment in Construction Studies",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BBU",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of the Built Environment in Geomatics",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BBE",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 4",
+        "Physical Sciences: Level 4",
+        "Two recognised 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Engineering Technology in Civil Engineering",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BNC",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Engineering Technology in Civil Engineering",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-I-DNC",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Built Environment in Construction Studies",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-I-DBE",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4 OR Technical Mathematics: Level 5",
+        "Physical Sciences: Level 4 OR Technical Sciences: Level 5",
+        "Three 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Pulp and Paper Technology",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DPP",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Physical Sciences: Level 4",
+        "Mathematics: Level 4",
+        "Two 20-credit subjects at Level 3"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Durban University of Technology",
+  "abbreviation": "DUT",
+  "source": "DUT Student Course Guide 2026",
+  "faculty": "Health Sciences",
+  "admission_score_type": "NSC Points",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Child and Youth Care",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-CYC",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Four 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Environmental Health",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-EVH",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Radiography: Diagnostic",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-RAD",
+      "campus": "DBN Campus",
+      "closing_date": "31 August 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "One 20-credit subject at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Radiography: Sonography",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-RAS",
+      "campus": "DBN Campus",
+      "closing_date": "31 August 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "One 20-credit subject at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Radiography: Therapy and Oncology",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-RTO",
+      "campus": "DBN Campus",
+      "closing_date": "31 August 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "One 20-credit subject at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Clinical Technology",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-DCT",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Emergency Medical Care",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-HS4",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 30,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Homeopathy",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-HM4",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "Two additional 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Chiropractic",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-CHI",
+      "campus": "DBN Campus",
+      "closing_date": "15 August 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "Two additional 20-credit subjects at Level 4",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Health Sciences in Medical Laboratory Science",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-D-BLS",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Mathematics: Level 4",
+        "Life Sciences: Level 4",
+        "Physical Sciences: Level 4",
+        "Two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Bachelor in Nursing",
+      "qualification_type": "Bachelor",
+      "cao_code": "DU-I-BN1",
+      "campus": "Indumiso Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 28,
+      "requirements": [
+        "NSC Degree/Bachelor's pass",
+        "English: Level 4",
+        "Life Sciences: Level 4",
+        "Mathematics: Level 4 OR Mathematical Literacy: Level 6 OR Physical Sciences: Level 4",
+        "Two additional 20-credit subjects at Level 4",
+        "Only one of the additional subjects may be an additional language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Somatology",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-ST3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Life Sciences: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5",
+        "Any two additional 20-credit subjects at Level 3",
+        "Only one of the additional subjects may be a language"
+      ]
+    },
+    {
+      "programme_name": "Higher Certificate in Dental Assisting",
+      "qualification_type": "Higher Certificate",
+      "cao_code": "DU-D-HDA",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Higher Certificate pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 5",
+        "Life Sciences OR Physical Sciences: Level 3",
+        "Two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Durban University of Technology",
+  "abbreviation": "DUT",
+  "source": "DUT Student Course Guide 2026",
+  "faculty": "Management Sciences",
+  "admission_score_type": "NSC Points",
+  "programmes": [
+    {
+      "programme_name": "Diploma in Management Sciences: Business Administration",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-MN3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Business Administration",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-MN3",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Business Law",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-BL3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Business Administration",
+      "programme_note": "Extended Curriculum Programme",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-MB5",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Human Resources",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-HR3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Human Resources",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-HR3",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Human Resources",
+      "programme_note": "Part-time",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-HRY",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Marketing",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-MK3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Operations",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-PD3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Operations",
+      "programme_note": "Part-time",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-PDY",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Public Relations and Communication Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-MP3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Public Relations and Communication Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-MP3",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Management Sciences: Retail",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-RB3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language: Level 3 OR English First Additional Language: Level 4",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Public Administration: Disaster and Risk Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-RM3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Public Administration: Local Government",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-GV3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Public Administration: Public Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-PM3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Public Administration: Public Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-PM3",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three recognised 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Public Administration: Supply Chain Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-SC3",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Public Administration: Supply Chain Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-SC3",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 4",
+        "Three 20-credit subjects at Level 3"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Catering Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-CKM",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 2 OR Mathematical Literacy: Level 3",
+        "Accounting: Level 3",
+        "Two 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Hospitality Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-HPM",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": null,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 2 OR Mathematical Literacy: Level 3 OR Accounting: Level 3",
+        "Three 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Tourism Management",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-D-DTM",
+      "campus": "DBN Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 26,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 4",
+        "Mathematics: Level 2 OR Mathematical Literacy: Level 3 OR Accounting",
+        "Three recognised 20-credit subjects at Level 3",
+        "Not more than one language"
+      ]
+    },
+    {
+      "programme_name": "Diploma in Eco Tourism",
+      "qualification_type": "Diploma",
+      "cao_code": "DU-P-ET3",
+      "campus": "PMB Campus",
+      "closing_date": "30 September 2025",
+      "NSC_Points_Required": 25,
+      "requirements": [
+        "NSC Diploma pass",
+        "English Home Language or First Additional Language: Level 3",
+        "Mathematics: Level 3 OR Mathematical Literacy: Level 3",
+        "Accounting: Level 3",
+        "Agricultural Sciences: Level 4 OR Life Sciences: Level 4",
+        "One 20-credit subject at Level 3",
+        "Not more than one language"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+[
+    {
+        "university": "University of Pretoria",
+        "abbreviation": "UP",
+        "country": "South Africa",
+        "source": "UP Application requirements for undergraduate programmes 2027",
+        "faculties": [
+            {
+                "name": "Faculty of Economic and Management Sciences",
+                "closing_month": 6,
+                "closing_day": 30,
+                "qualifications": [
+                    {
+                        "name": "Bachelor of Administration specialising in Public Administration and International Relations",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 3,
+                                "alternative_subject": "Mathematical Literacy",
+                                "alternative_minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce in Accounting Sciences",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 34,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 6
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce - Three-year programme",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce - Four-year programme",
+                        "qualification_type": "Extended Bachelor Degree",
+                        "aps_required": 26,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 3
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Investment Management",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 34,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 6
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Econometrics",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 32,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 6
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Economics",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 32,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Financial Management Sciences",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 32,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Law",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 32,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Statistics and Data Science",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 32,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Agribusiness Management",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Information Systems",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Business Management",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Supply Chain Management",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Marketing Management",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Commerce specialising in Human Resource Management",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Faculty of Education",
+                "closing_month": 6,
+                "closing_day": 30,
+                "qualifications": [
+                    {
+                        "name": "Bachelor of Education in Early Childhood Care and Education",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Education in Foundation Phase Teaching",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Education in Intermediate Phase Teaching",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Education in Senior Phase and Further Education and Training Teaching",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Higher Certificate in Sports Sciences - One-year programme",
+                        "qualification_type": "Higher Certificate",
+                        "aps_required": 20,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Higher Certificate in Sports Sciences - Two-year programme",
+                        "qualification_type": "Higher Certificate",
+                        "aps_required": 20,
+                        "is_selection_programme": true,
+                        "notes": "Part-time online programme",
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Faculty of Law",
+                "closing_month": 6,
+                "closing_day": 30,
+                "qualifications": [
+                    {
+                        "name": "Bachelor of Laws",
+                        "abbreviation": "LLB",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 35,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Faculty of Theology and Religion",
+                "closing_month": 6,
+                "closing_day": 30,
+                "qualifications": [
+                    {
+                        "name": "Bachelor of Theology",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Divinity",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Diploma in Theology",
+                        "qualification_type": "Diploma",
+                        "aps_required": 24,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Faculty of Veterinary Science",
+                "closing_month": 5,
+                "closing_day": 31,
+                "qualifications": [
+                    {
+                        "name": "Bachelor of Veterinary Science",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 35,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Veterinary Nursing",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 4,
+                                "alternative_subject": "Life Sciences",
+                                "alternative_minimum_level": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Faculty of Health Sciences",
+                "closing_month": 6,
+                "closing_day": 30,
+                "qualifications": [
+                    {
+                        "name": "Bachelor of Dental Surgery",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 35,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 6
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Oral Hygiene",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 25,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Occupational Therapy",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Physiotherapy",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Radiography in Diagnostics",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Dietetics",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Nursing Science",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Life Sciences",
+                                "minimum_level": 4
+                            }
+                        ],
+                        "notes": "Life Sciences is required, not Physical Sciences."
+                    },
+                    {
+                        "name": "Bachelor of Medicine and Surgery",
+                        "abbreviation": "MBChB",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 35,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 5
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 6
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 5
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Sports Science",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 30,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Physical Sciences",
+                                "minimum_level": 4,
+                                "alternative_subject": "Life Sciences",
+                                "alternative_minimum_level": 4
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bachelor of Clinical Medical Practice",
+                        "abbreviation": "BCMP",
+                        "qualification_type": "Bachelor Degree",
+                        "aps_required": 28,
+                        "is_selection_programme": true,
+                        "subject_requirements": [
+                            {
+                                "subject": "English Home Language or English First Additional Language",
+                                "minimum_level": 4
+                            },
+                            {
+                                "subject": "Mathematics",
+                                "minimum_level": 4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

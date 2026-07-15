@@ -1,0 +1,395 @@
+{
+    "faculty": "AgriSciences",
+    "university": "Stellenbosch University",
+    "source": "Admission Requirements for Undergraduate Programmes 2025",
+    "qualifications": [
+        {
+            "name": "BAgric in Agribusiness Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BScAgric in Agricultural Economic Analysis and Management; BCom Management Sciences with focal area Agricultural Economics.",
+                "Career opportunities: Manager in agribusiness focusing on crop or animal production; Agricultural economist at a financial institution; Feasibility studies; Business plans; Cash flow planning.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BScAgric in Agricultural Economics",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Fields of study: Agricultural Economic Analysis; Agricultural Economic Analysis and Management; Agricultural Economic Analysis and Management with Food Science; Agricultural Economics with Food Science.",
+                "Similar programmes: BCom Management Sciences with focal area Agricultural Economics.",
+                "Career opportunities: Researcher in macroeconomic analysis; Agricultural economist at a financial institution or marketing organisation; Manager or specialist in public sector or international organisations; Manager of food-processing concerns.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BAgric in Agricultural Production and Management: Elsenburg",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 55.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Fields of study: Animal Production; Cellar Management; Cellar Technology; Extension and Animal Production; Extension and Plant Production; Plant Production; Plant and Animal Production.",
+                "Notes: Offered in collaboration with the Cape Institute for Agricultural Training: Elsenburg; Students reside on the Elsenburg campus where they receive all their training.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BScAgric in Animal Production Systems",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Field of study: Animal Science.",
+                "Similar programmes: Any BScAgric programme with similar subjects; BAgric Agricultural Production and Management: Elsenburg with focal area Animal Production; BAgric Agricultural Production and Management: Elsenburg with focal area Extension and Animal Production.",
+                "Career opportunities: Consultant; Entrepreneur; Manager; Technician; Extension officer; Production manager in animal sciences; Stock farmer; Game farmer.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in Conservation Ecology",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BSc in Biodiversity and Ecology; BScFor Forestry and Natural Resources Sciences.",
+                "Career opportunities: Environmental impact assessment; Environmental monitoring; Restoration ecology; Conservation biology; Game farm management; Ecotourism; Sustainable agriculture; Forestry; Organic plant management; Community-based natural resource management; Research into conservation biology.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Data Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 80.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Abbreviation: BDatSci.",
+                "Field of study: Statistical Genetics.",
+                "Career opportunities: Statistical genetics; Population quantitative genetics; Plant breeding; Conservation genetics; Genetic epidemiology.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 7
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Afrikaans Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BSc in Food Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BSc in Dietetics; BSc in Molecular Biology and Biotechnology; BSc in Chemistry.",
+                "Career opportunities: Quality assurance; Product development; Research; Technical support; Sales; Purchasing; Production management in the food industry.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in Forestry: Forestry and Wood Sciences",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Abbreviation: BScFor.",
+                "Fields of study: {\"field_name\": \"Forestry and Natural Resources Sciences\", \"requirements\": [\"Mathematics: 60%\", \"Physical Sciences, Physics and Chemistry: 50%\"]}; {\"field_name\": \"Wood and Wood Products Sciences\", \"requirements\": [\"Mathematics: 70%\", \"Physical Sciences, Physics and Chemistry: 60%\"]}.",
+                "Similar programmes: BSc in Conservation Ecology; BScAgric Plant and Soil Sciences; BSc in Earth Science; BEng Industrial; BSc in Geoinformatics.",
+                "Career opportunities: Forestry expert; Timber grower; Environmental planner; Forest researcher; Forester; Extension officer; Consultant; Logistics manager; Tree breeder; Rural development advisor; Wood products expert; Wood scientist.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "BScAgric in Plant and Soil Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Fields of study: Crop Production Systems; Crop Production Systems with Agronomy, Agricultural Economics and Animal Science; Crop Protection and Breeding; Soil and Water Management.",
+                "Similar programmes: BScAgric Viticulture and Oenology; BSc in Molecular Biology and Biotechnology; BSc in Biodiversity and Ecology; BSc in Earth Science; BAgric Agricultural Production and Management: Elsenburg with focal area Plant Production; BAgric Agricultural Production and Management: Elsenburg with focal area Extension and Plant Production.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BScAgric in Viticulture and Oenology",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BScAgric Plant and Soil Sciences; BSc in Molecular Biology and Biotechnology; BAgric Agricultural Production and Management: Elsenburg with focal area Cellar Management; BAgric Agricultural Production and Management: Elsenburg with focal area Cellar Technology.",
+                "Career opportunities: Winemaker; Viticulturist; Researcher; Production manager; Marketer; Technician; Consultant; Entrepreneur in wine-related industries.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"description\": \"An ECP entails one extra year of study\", \"note\": \"Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes\"}."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

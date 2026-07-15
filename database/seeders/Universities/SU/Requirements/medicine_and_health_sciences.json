@@ -1,0 +1,194 @@
+{
+    "faculty": "Medicine and Health Sciences",
+    "university": "Stellenbosch University",
+    "source": "Admission Requirements for Undergraduate Programmes 2025",
+    "qualifications": [
+        {
+            "name": "MBChB",
+            "qualification_type": "Bachelor",
+            "duration_years": 6.0,
+            "aps_required": null,
+            "aggregate_average_required": 75.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Career opportunities: Independent Medical Practitioner after two-year internship and one year of community service; Registration with the Health Professions Council of South Africa.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Professional accreditation: Health Professions Council of South Africa; South African Nursing Council.",
+                "General selection notes: All applicants must meet the minimum requirements of the programme they apply for; Current Grade 12 learners and applicants who have completed school are selected on academic merit; Registered university students are considered based on academic and non-academic merits according to programme selection guidelines; Applicants with tertiary qualifications or work experience are considered based on academic and non-academic merits according to programme selection guidelines.",
+                "Additional Stellenbosch requirements: Aggregate of at least 75% for the NSC or equivalent qualification, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Nursing",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BSc in Dietetics; Bachelor of Occupational Therapy; BSc in Physiotherapy; Bachelor of Speech-Language Therapy.",
+                "Career opportunities: After one year of community service, registration with SANC as a Nurse and Midwife.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Professional accreditation: Health Professions Council of South Africa; South African Nursing Council.",
+                "General selection notes: All applicants must meet the minimum requirements of the programme they apply for; Current Grade 12 learners and applicants who have completed school are selected on academic merit; Registered university students are considered based on academic and non-academic merits according to programme selection guidelines; Applicants with tertiary qualifications or work experience are considered based on academic and non-academic merits according to programme selection guidelines.",
+                "Additional Stellenbosch requirements: Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in Dietetics",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BSc in Food Science; BSc in Molecular Biology and Biotechnology; Bachelor of Occupational Therapy; BSc in Physiotherapy.",
+                "Career opportunities: After one year of community service, registration with the HPCSA as a Dietitian.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Professional accreditation: Health Professions Council of South Africa; South African Nursing Council.",
+                "General selection notes: All applicants must meet the minimum requirements of the programme they apply for; Current Grade 12 learners and applicants who have completed school are selected on academic merit; Registered university students are considered based on academic and non-academic merits according to programme selection guidelines; Applicants with tertiary qualifications or work experience are considered based on academic and non-academic merits according to programme selection guidelines.",
+                "Additional Stellenbosch requirements: Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Occupational Therapy",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BSc in Physiotherapy; Bachelor of Nursing; BSc in Dietetics; BSc in Human Life Sciences; BA in Sport Science; BSc in Sport Science.",
+                "Career opportunities: After one year of community service, registration with the HPCSA as an Occupational Therapist.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Professional accreditation: Health Professions Council of South Africa; South African Nursing Council.",
+                "General selection notes: All applicants must meet the minimum requirements of the programme they apply for; Current Grade 12 learners and applicants who have completed school are selected on academic merit; Registered university students are considered based on academic and non-academic merits according to programme selection guidelines; Applicants with tertiary qualifications or work experience are considered based on academic and non-academic merits according to programme selection guidelines.",
+                "Additional Stellenbosch requirements: Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BSc in Physiotherapy",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BA in Sport Science; BSc in Sport Science; BSc in Human Life Sciences; Bachelor of Nursing; Bachelor of Occupational Therapy.",
+                "Career opportunities: After one year of community service, registration with the HPCSA as a Physiotherapist.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Professional accreditation: Health Professions Council of South Africa; South African Nursing Council.",
+                "General selection notes: All applicants must meet the minimum requirements of the programme they apply for; Current Grade 12 learners and applicants who have completed school are selected on academic merit; Registered university students are considered based on academic and non-academic merits according to programme selection guidelines; Applicants with tertiary qualifications or work experience are considered based on academic and non-academic merits according to programme selection guidelines.",
+                "Additional Stellenbosch requirements: Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Speech-Language Therapy",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: Bachelor of Occupational Therapy; BSc in Physiotherapy; BSc in Human Life Sciences.",
+                "Career opportunities: After one year of community service, registration with the HPCSA as a Speech-Language Therapist.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Professional accreditation: Health Professions Council of South Africa; South African Nursing Council.",
+                "General selection notes: All applicants must meet the minimum requirements of the programme they apply for; Current Grade 12 learners and applicants who have completed school are selected on academic merit; Registered university students are considered based on academic and non-academic merits according to programme selection guidelines; Applicants with tertiary qualifications or work experience are considered based on academic and non-academic merits according to programme selection guidelines.",
+                "Additional Stellenbosch requirements: Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation; At least two of the following three languages, Home Language or First Additional Language, at 60%: English, Afrikaans, or a third South African language."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

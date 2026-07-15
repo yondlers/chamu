@@ -1,0 +1,522 @@
+{
+    "faculty": "Faculty of Humanities",
+    "university": "University of Limpopo",
+    "source": "Student Prospectus 2025",
+    "qualifications": [
+        {
+            "name": "BEd (SP & FET Teaching) - Bachelor of Education in Senior Phase & FET Teaching (Languages and Life Orientation)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "School: Education.",
+                "Stream: Languages and Life Orientation.",
+                "Possible careers: Life Orientation Teacher, Language Teacher, Research Assistant, Laboratory Assistant.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BEd (SP & FET Teaching) - Bachelor of Education in Senior Phase & FET Teaching (Languages and Social Sciences)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "School: Education.",
+                "Stream: Languages and Social Sciences.",
+                "Possible careers: Social Science Teacher, Language Teacher, Research Assistant, Laboratory Assistant.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Language level 4 (50-59%); Additional subjects to contribute to minimum APS total.",
+                "English level 4 is required to major in English."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "BEd (SP & FET Teaching) - Bachelor of Education in Senior Phase & FET Teaching (Economics and Management Studies)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "School: Education.",
+                "Stream: Economics and Management Studies.",
+                "Possible careers: Accounting Teacher, Business Economics Teacher, Economics Teacher, Research Assistant, Laboratory Assistant.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Accounting",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd (SP & FET Teaching) - Bachelor of Education in Senior Phase & FET Teaching (Mathematics, Science and Technology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "School: Education.",
+                "Stream: Mathematics, Science and Technology.",
+                "Possible careers: Mathematics Teacher, Life Sciences Teacher, Technology Teacher, Physical Sciences Teacher, Research Assistant, Laboratory Assistant.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd (FP Teaching) - Bachelor of Education in Foundation Phase Teaching",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "School: Education.",
+                "Stream: Foundation Phase Teaching.",
+                "Possible careers: Teaching Foundation Phase, Curriculum Advisor, Principalship, Community Consultant.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: First Language level 4 (50-59%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Criminology and Psychology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 23,
+            "selection_programme": false,
+            "notes": [
+                "School: Social Sciences.",
+                "Stream: Criminology and Psychology.",
+                "Possible careers: Psychometrist, Trauma Counsellor, Employee Assistance Practitioner, Guidance Counsellor, Criminologist, Police, Crime Scene Expert, Correctional Officer, Metro Police, Private Investigator.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional Language level 4 (50-59%); Three additional subjects at level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Cultural Studies)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 23,
+            "selection_programme": false,
+            "notes": [
+                "School: Social Sciences.",
+                "Stream: Cultural Studies.",
+                "Possible careers: Development Officer, Cultural Officer, Heritage Officer, Museum Curator, Records Officer, Knowledge Management Officer, Community Officer.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: If an African Language is chosen as an elective, the additional language should be Northern Sotho, Tshivenda or Xitsonga; Three additional subjects at level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Sociology and Anthropology)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 23,
+            "selection_programme": false,
+            "notes": [
+                "School: Social Sciences.",
+                "Stream: Sociology and Anthropology.",
+                "Possible careers: Labour Relations Specialist, Social Policy Analyst, Community Development Officer, Outreach Coordinator, Research Officer, Population Analyst.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional Language level 4 (50-59%); Three additional subjects at level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Political Studies)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Social Sciences.",
+                "Stream: Political Studies.",
+                "Possible careers: Political Analyst, Politician.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BPsych - Bachelor of Psychology",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 23,
+            "selection_programme": true,
+            "notes": [
+                "School: Social Sciences.",
+                "Possible careers: Psychometrist, Trauma Counsellor, Employee Assistance Practitioner, Guidance Counsellor.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional Language level 4 (50-59%); Three additional subjects at level 4 (50-59%); Selection test required."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Criminology and Psychology Extended Curriculum Programme)",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 22,
+            "selection_programme": false,
+            "notes": [
+                "School: Social Sciences.",
+                "Stream: Criminology and Psychology Extended Curriculum Programme.",
+                "Possible careers: Psychometrist, Trauma Counsellor, Employee Assistance Practitioner, Guidance Counsellor, Criminologist, Police, Crime Scene Expert, Correctional Officer, Metro Police, Private Investigator.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional Language level 4 (50-59%); Three additional subjects at level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BSW - Bachelor of Social Work",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 23,
+            "selection_programme": true,
+            "notes": [
+                "School: Social Sciences.",
+                "Possible careers: Social Worker, Counsellor, Employee Assistance Practitioner.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Additional Language level 4 (50-59%); Three additional subjects at level 4 (50-59%); Selection test required."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Languages)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Stream: Languages.",
+                "Possible careers: Language Practitioner.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Another language: Northern Sotho, Tshivenda or Xitsonga level 5 (60-69%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Translation and Linguistics)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Stream: Translation and Linguistics.",
+                "Possible careers: Language Practitioner, Interpreter, Translator.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Another language: Northern Sotho, Tshivenda or Xitsonga level 5 (60-69%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Performing Arts)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Stream: Performing Arts.",
+                "Possible careers: Performing Artist, Dramatist, Script Writer.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Another language: Northern Sotho, Tshivenda or Xitsonga level 5 (60-69%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BInfSt - Bachelor of Information Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Possible careers: Indexer, Abstracter, Information Consultant, Information Analyst, Information Specialist, Librarian.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Another language: Northern Sotho, Tshivenda or Xitsonga level 5 (60-69%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA - Bachelor of Arts (Contemporary English and Multilingual Studies)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Stream: Contemporary English and Multilingual Studies.",
+                "Possible careers: Bilingual Expert, Translator, Interpreter.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Northern Sotho level 5 (60-69%); English and Northern Sotho only; Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA (Communication Studies) - Bachelor of Arts in Communication Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Possible careers: Public Relations Officer, Communications Practitioner, Marketing Manager, Sales Promoter.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Another language: Northern Sotho, Tshivenda or Xitsonga level 5 (60-69%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA (Media Studies) - Bachelor of Arts in Media Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Possible careers: Radio Broadcasting, Newspaper and Magazine Editor, Journalist, Radio and Film Producer, Marketing Manager, Radio and TV Announcer, Information Technologist, Media Economist.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Another language: Northern Sotho, Tshivenda or Xitsonga level 5 (60-69%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA (Media Studies) - Bachelor of Arts in Media Studies Extended Curriculum Programme",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4,
+            "aps_required": 23,
+            "selection_programme": false,
+            "notes": [
+                "School: Language and Communication Studies.",
+                "Possible careers: Radio Broadcasting, Newspaper and Magazine Editor, Journalist, Radio and Film Producer, Marketing Manager, Radio and TV Announcer, Information Technologist, Media Economist.",
+                "General admission notes: Life Orientation must have an achievement level of at least 3; English as the language of learning and teaching must have an achievement level of at least 3; Life Orientation is not used in the APS calculation; Meeting the minimum APS does not guarantee admission.",
+                "Additional UL requirements: Another language level 4 (50-59%); Additional subjects to contribute to minimum APS total."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

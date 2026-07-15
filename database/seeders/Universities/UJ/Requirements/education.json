@@ -1,0 +1,627 @@
+{
+    "faculty": "Education",
+    "university": "University of Johannesburg",
+    "source": "2026 Undergraduate Prospectus",
+    "qualifications": [
+        {
+            "name": "BEd Degree in Foundation Phase Teaching - Foundation Phase Teaching Grade R-3",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5BFPQ.",
+                "Qualification group: BEd Degree in Foundation Phase Teaching.",
+                "Campus: SWC.",
+                "Career paths: Educator focusing on primary school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Intermediate Phase Teaching - Intermediate Phase Teaching Grade 4-7",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5BITQ.",
+                "Qualification group: BEd Degree in Intermediate Phase Teaching.",
+                "Campus: SWC.",
+                "Career paths: Educator focusing on primary school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Psychology",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5LOPQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Accounting",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5BSAQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%.",
+                "Additional UJ requirements: Mathematical Literacy not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Business Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5BSBQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Economics",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5BSEQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%.",
+                "Additional UJ requirements: Mathematical Literacy not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - English",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5LAEQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Afrikaans",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5LAFQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - IsiZulu",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5LAZQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Sepedi",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5LASQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Geography",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5SGEQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Life Sciences",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5SLSQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Mathematics",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5SMMQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd Degree in Senior Phase and FET Teaching - Physical Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B5SPSQ.",
+                "Qualification group: BEd Degree in Senior Phase and FET Teaching.",
+                "Campus: APK.",
+                "Career paths: Educator focusing on high school teaching.",
+                "Faculty notes: Due to limited space, fulfilling all minimum admission requirements does not guarantee acceptance into a programme; A valid National Senior Certificate with admission for degree purposes is required; Minimum APS is 28, excluding Life Orientation; A Bachelor's degree endorsement does not guarantee admission to the BEd; Preliminary admission is based on final Grade 11 results; Final admission is based on final Grade 12 results.",
+                "NCV admission summary: NCV Level 4 issued by the Council for General and Further Education and Training; Three fundamental subjects between 60-69%, including English as language of learning and teaching; Three vocational subjects from the designated list between 70-79%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

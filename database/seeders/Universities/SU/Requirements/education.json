@@ -1,0 +1,86 @@
+{
+    "faculty": "Education",
+    "university": "Stellenbosch University",
+    "source": "Admission Requirements for Undergraduate Programmes 2025",
+    "qualifications": [
+        {
+            "name": "BEd Foundation Phase Education",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Career opportunities: Teacher for Grades R to 3; Language practitioner, editor or proofreader after further language-related study.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "General admission and selection: Aggregated_Average_Required: 60%; aggregate_note: Excluding Life Orientation; requirements: [\"Mathematics: 40% OR Mathematical Literacy: 60%\"]; language_requirements: [{\"learner_language_background\": \"Learners who were taught in English\", \"requirements\": [\"English Home Language: 60%\", \"Afrikaans OR isiXhosa, Home Language or First Additional Language: 50%\"]}, {\"learner_language_background\": \"Learners who were taught in Afrikaans\", \"requirements\": [\"Afrikaans Home Language: 60%\", \"English OR isiXhosa, Home Language or First Additional Language: 50%\"]}, {\"learner_language_background\": \"Learners who were taught in isiXhosa\", \"requirements\": [\"IsiXhosa Home Language: 60%\", \"English OR Afrikaans, Home Language or First Additional Language: 50%\"]}].",
+                "Additional Stellenbosch requirements: Must meet the applicable language requirements based on language of teaching background."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BEd Intermediate Phase Education",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Career opportunities: Primary school teacher for Grades 4 to 7; Teacher with competence in two intermediate school subjects and two languages; Language practitioner, editor or proofreader after further language-related study.",
+                "Notes: Choose one or preferably two subjects as teaching modules; All teaching modules are not available every year; A minimum number of students per teaching module is required.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "General admission and selection: Aggregated_Average_Required: 60%; aggregate_note: Excluding Life Orientation; requirements: [\"Mathematics: 40% OR Mathematical Literacy: 60%\"]; language_requirements: [{\"learner_language_background\": \"Learners who were taught in English\", \"requirements\": [\"English Home Language: 60%\", \"Afrikaans OR isiXhosa, Home Language or First Additional Language: 50%\"]}, {\"learner_language_background\": \"Learners who were taught in Afrikaans\", \"requirements\": [\"Afrikaans Home Language: 60%\", \"English OR isiXhosa, Home Language or First Additional Language: 50%\"]}, {\"learner_language_background\": \"Learners who were taught in isiXhosa\", \"requirements\": [\"IsiXhosa Home Language: 60%\", \"English OR Afrikaans, Home Language or First Additional Language: 50%\"]}].",
+                "Additional Stellenbosch requirements: Must meet the applicable language requirements based on language of teaching background; Further requirements depend on the school subjects the applicant wants to teach."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Postgraduate Certificate in Education",
+            "qualification_type": "Postgraduate Diploma",
+            "duration_years": 1.0,
+            "aps_required": null,
+            "aggregate_average_required": null,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Requires a prior degree rather than NSC aggregate average.",
+                "Abbreviation: PGCE.",
+                "Career opportunities: High school teacher in two subjects; High school teacher in one subject with additional study in that subject; Remedial teacher after further study; Educational Psychology pathway after further study.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "General admission and selection: Aggregated_Average_Required: 60%; aggregate_note: Excluding Life Orientation; requirements: [\"Mathematics: 40% OR Mathematical Literacy: 60%\"]; language_requirements: [{\"learner_language_background\": \"Learners who were taught in English\", \"requirements\": [\"English Home Language: 60%\", \"Afrikaans OR isiXhosa, Home Language or First Additional Language: 50%\"]}, {\"learner_language_background\": \"Learners who were taught in Afrikaans\", \"requirements\": [\"Afrikaans Home Language: 60%\", \"English OR isiXhosa, Home Language or First Additional Language: 50%\"]}, {\"learner_language_background\": \"Learners who were taught in isiXhosa\", \"requirements\": [\"IsiXhosa Home Language: 60%\", \"English OR Afrikaans, Home Language or First Additional Language: 50%\"]}].",
+                "Additional Stellenbosch requirements: A degree from one of the other faculties with one or two school subjects; For PGCE teaching modules and their requirements, consult the Faculty of Education Calendar."
+            ],
+            "subject_requirements": []
+        }
+    ]
+}
