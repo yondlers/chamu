@@ -3,8 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\Province;
-use App\Helpers\LookUp;
 
 return new class extends Migration
 {
@@ -18,17 +16,13 @@ return new class extends Migration
 
             $table->boolean('active')->default(true);
             $table->string('name');
+            $table->string('code')->nullable();
             $table->foreignId('country_id')->nullable()->constrained('countries')->onDelete('cascade');
 
             $table->timestamps();
-        });
 
-        foreach (LookUp::PROVINCES_OPTIONS as $province) {
-            Province::updateOrCreate(
-                ['id' => $province['id']],
-                $province
-            );
-        }
+            $table->unique(['country_id', 'name']);
+        });
     }
 
     /**

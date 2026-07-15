@@ -3,8 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Helpers\LookUp;
-use App\Models\Gender;
 
 return new class extends Migration
 {
@@ -21,13 +19,6 @@ return new class extends Migration
 
             $table->timestamps();
         });
-
-        foreach (LookUp::GENDERS_OPTIONS as $gender) {
-            Gender::updateOrCreate(
-                ['id' => $gender['id']],
-                $gender
-            );
-        }
     }
 
     /**

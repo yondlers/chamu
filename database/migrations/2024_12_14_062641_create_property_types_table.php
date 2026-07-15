@@ -3,9 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Helpers\LookUp;
-use App\Models\PropertyType;
-
 
 return new class extends Migration
 {
@@ -21,13 +18,6 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->timestamps();
         });
-
-        foreach (LookUp::PROPERTY_TYPES as $property_type) {
-            PropertyType::updateOrCreate(
-                ['id' => $property_type['id']],
-                $property_type
-            );
-        }
     }
 
     /**

@@ -3,8 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\City;
-use App\Helpers\LookUp;
 
 return new class extends Migration
 {
@@ -22,13 +20,6 @@ return new class extends Migration
 
             $table->timestamps();
         });
-
-        foreach (LookUp::CITIES_OPTIONS as $city) {
-            City::updateOrCreate(
-                ['id' => $city['id']],
-                $city
-            );
-        }
     }
 
     /**

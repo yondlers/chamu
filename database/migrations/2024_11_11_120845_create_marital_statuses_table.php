@@ -3,8 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Helpers\LookUp;
-use App\Models\MaritalStatus;
 
 return new class extends Migration
 {
@@ -19,13 +17,6 @@ return new class extends Migration
             $table->string('name');
             $table->timestamps();
         });
-        
-        foreach (LookUp::MARITAL_STATUS as $martial_status) {
-            MaritalStatus::updateOrCreate(
-                ['id' => $martial_status['id']],
-                $martial_status
-            );
-        }
     }
 
     /**

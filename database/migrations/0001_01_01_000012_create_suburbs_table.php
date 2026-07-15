@@ -3,8 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\Suburb;
-use App\Helpers\LookUp;
 
 return new class extends Migration
 {
@@ -22,13 +20,6 @@ return new class extends Migration
 
             $table->timestamps();
         });
-
-        foreach (LookUp::SUBURB_OPTIONS as $suburb) {
-            Suburb::updateOrCreate(
-                ['id' => $suburb['id']],
-                $suburb
-            );
-        }
     }
 
     /**
@@ -36,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('subrubs');
+        Schema::dropIfExists('suburbs');
     }
 };

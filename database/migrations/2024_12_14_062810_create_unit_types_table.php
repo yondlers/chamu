@@ -3,9 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Helpers\LookUp;
-use App\Models\UnitType;
-
 
 return new class extends Migration
 {
@@ -22,13 +19,6 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->timestamps();
         });
-
-        foreach (LookUp::UNIT_TYPES as $unit_type) {
-            UnitType::updateOrCreate(
-                ['id' => $unit_type['id']],
-                $unit_type
-            );
-        }
     }
 
     /**

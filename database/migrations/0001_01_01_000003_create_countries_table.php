@@ -3,9 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\Country;
-use App\Helpers\LookUp;
-
 
 return new class extends Migration
 {
@@ -17,17 +14,10 @@ return new class extends Migration
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('nationality');
+            $table->string('nationality')->nullable();
 
             $table->timestamps();
         });
-
-        foreach (LookUp::COUNTRIES_OPTIONS as $country) {
-            Country::updateOrCreate(
-                ['id' => $country['id']],
-                $country
-            );
-        }
     }
 
     /**

@@ -11,15 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('provinces', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('country_id')->constrained()->cascadeOnDelete();
-            $table->string('name');
-            $table->string('code')->nullable();
-            $table->timestamps();
-
-            $table->unique(['country_id', 'name']);
-        });
+        //
     }
 
     /**
@@ -27,6 +19,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('provinces');
+        //
     }
 };
