@@ -10,7 +10,7 @@ class RegisterTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_new_user_can_register_and_is_redirected_to_dashboard(): void
+    public function test_new_user_can_register_and_is_redirected_to_subject_setup(): void
     {
         $lookups = $this->createSignupLookups();
 
@@ -26,7 +26,7 @@ class RegisterTest extends TestCase
             'grade_id' => $lookups['grade_id'],
         ]);
 
-        $response->assertRedirect(route('dashboard.index'));
+        $response->assertRedirect(route('subjects.index'));
         $this->assertAuthenticated();
 
         $this->assertDatabaseHas('users', [

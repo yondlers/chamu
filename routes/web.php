@@ -67,11 +67,13 @@ Route::get('/', function () {
                 ->where('user_id', $user->id)
                 ->where('grade_id', $defaultGrade->id)
                 ->pluck('subject_id')
-                ->all();
+                ->map(fn ($id) => (int) $id);
 
-            $subjects = $subjects
-                ->whereIn('id', $preferredSubjectIds)
-                ->values();
+            if ($preferredSubjectIds->isNotEmpty()) {
+                $subjects = $subjects
+                    ->whereIn('id', $preferredSubjectIds->all())
+                    ->values();
+            }
         }
     }
 
@@ -155,13 +157,13 @@ Route::get('/content', function (Request $request) {
             ->first();
 
         if ($user !== null && $subject !== null && Schema::hasTable('user_subject_preferences')) {
-            $hasPreference = DB::table('user_subject_preferences')
+            $preferredSubjectIds = DB::table('user_subject_preferences')
                 ->where('user_id', $user->id)
                 ->where('grade_id', $gradeId)
-                ->where('subject_id', $subject->id)
-                ->exists();
+                ->pluck('subject_id')
+                ->map(fn ($id) => (int) $id);
 
-            if (! $hasPreference) {
+            if ($preferredSubjectIds->isNotEmpty() && ! $preferredSubjectIds->contains((int) $subject->id)) {
                 $subject = null;
             }
         }
@@ -1021,7 +1023,9 @@ Route::middleware('guest')->group(function () {
         Auth::login($user);
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard.index'));
+        return redirect()
+            ->route('subjects.index')
+            ->with('status', 'Select your subjects to personalize Chamu.');
     })->name('register.store');
 });
 
