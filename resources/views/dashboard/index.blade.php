@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'Dashboard · Matric Hub')
+@section('title', 'Dashboard · Chamu')
 
 @section('content')
     <main class="max-w-6xl mx-auto px-5 lg:px-8 py-8">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-8">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">Your three paths</p>
+                <p class="text-sm font-semibold text-[#01225E]">Your three paths</p>
                 <h1 class="mt-1 text-3xl font-bold">Welcome back, {{ $user->first_name }}</h1>
                 <p class="mt-2 text-neutral-500">Learn, APS, and Funding are the main journeys. Subjects, marks, and progress keep those journeys personal.</p>
             </div>
             <div class="flex flex-wrap gap-2">
-                <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2 font-semibold text-white">
+                <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 font-semibold text-white">
                     APS <i data-lucide="target" style="width:16px;height:16px;"></i>
                 </a>
                 <a href="{{ route('funding.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
@@ -22,7 +22,7 @@
 
         <section class="mb-6 grid gap-4 md:grid-cols-3">
             <a href="{{ route('learn.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
-                <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-[#E8425B]">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-[#01225E]">
                     <i data-lucide="book-open" style="width:20px;height:20px;"></i>
                 </span>
                 <h2 class="mt-4 text-lg font-bold">Learn</h2>
@@ -111,7 +111,7 @@
                 <div class="mt-5 rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-6 text-center">
                     <p class="font-bold">No APS history yet</p>
                     <p class="mt-1 text-sm text-neutral-500">Add marks for your terms and your APS trend will appear here.</p>
-                    <a href="{{ route('marks.index') }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2.5 text-sm font-semibold text-white">
+                    <a href="{{ route('marks.index') }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
                         Add marks <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                     </a>
                 </div>
@@ -137,12 +137,12 @@
                         <line x1="{{ $chartPaddingLeft }}" y1="{{ $chartPaddingTop }}" x2="{{ $chartPaddingLeft }}" y2="{{ $chartPaddingTop + $plotHeight }}" stroke="#d4d4d4" stroke-width="1.5"></line>
                         <line x1="{{ $chartPaddingLeft }}" y1="{{ $chartPaddingTop + $plotHeight }}" x2="{{ $chartWidth - $chartPaddingRight }}" y2="{{ $chartPaddingTop + $plotHeight }}" stroke="#d4d4d4" stroke-width="1.5"></line>
 
-                        <polyline points="{{ $polylinePoints }}" fill="none" stroke="#E8425B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                        <polyline points="{{ $polylinePoints }}" fill="none" stroke="#01225E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
 
                         @foreach ($chartPoints as $point)
                             <g>
                                 <line x1="{{ $point['x'] }}" y1="{{ $chartPaddingTop + $plotHeight }}" x2="{{ $point['x'] }}" y2="{{ $point['y'] }}" stroke="#f3c2ca" stroke-width="1" stroke-dasharray="4 5"></line>
-                                <circle cx="{{ $point['x'] }}" cy="{{ $point['y'] }}" r="6" fill="#E8425B"></circle>
+                                <circle cx="{{ $point['x'] }}" cy="{{ $point['y'] }}" r="6" fill="#01225E"></circle>
                                 <circle cx="{{ $point['x'] }}" cy="{{ $point['y'] }}" r="3" fill="#ffffff"></circle>
                                 <text x="{{ $point['x'] }}" y="{{ $point['y'] - 12 }}" text-anchor="middle" font-size="12" font-weight="800" fill="#171717">{{ $point['aps'] }}</text>
                                 <text x="{{ $point['x'] }}" y="{{ $chartPaddingTop + $plotHeight + 24 }}" text-anchor="middle" font-size="12" font-weight="800" fill="#404040">{{ $point['label'] }}</text>
@@ -159,7 +159,7 @@
             <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <div class="flex items-center justify-between gap-3">
                 <h2 class="text-xl font-bold">Subjects for APS and Funding</h2>
-                    <a href="{{ route('subjects.index') }}" class="text-sm font-bold text-[#E8425B]">Edit</a>
+                    <a href="{{ route('subjects.index') }}" class="text-sm font-bold text-[#01225E]">Edit</a>
                 </div>
                 <div class="mt-4 flex flex-wrap gap-2">
                     @forelse ($selectedSubjects as $subject)
@@ -173,7 +173,7 @@
             <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <div class="flex items-center justify-between gap-3">
                     <h2 class="text-xl font-bold">Marks for matching</h2>
-                    <a href="{{ route('marks.index') }}" class="text-sm font-bold text-[#E8425B]">Update</a>
+                    <a href="{{ route('marks.index') }}" class="text-sm font-bold text-[#01225E]">Update</a>
                 </div>
                 <p class="mt-1 text-sm text-neutral-500">{{ optional($latestTerm)->name ?? 'No term marks yet' }}</p>
                 <div class="mt-4 space-y-2">

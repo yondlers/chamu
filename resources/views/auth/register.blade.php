@@ -1,18 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Sign up · Matric Hub')
+@section('title', 'Sign up · Chamu')
 
 @section('content')
     <main class="min-h-screen grid lg:grid-cols-[1fr_520px] bg-white">
-        <section class="hidden lg:flex flex-col justify-between p-10 bg-[#fff5f6] border-r border-rose-100">
+        <section class="hidden lg:flex flex-col justify-between p-10 bg-[#F3F7FC] border-r border-blue-100">
             <a href="{{ url('/') }}" class="flex items-center gap-2">
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#E8425B] text-white">
-                    <i data-lucide="graduation-cap" style="width:22px;height:22px;"></i>
-                </span>
-                <span class="font-bold text-xl">Matric Hub</span>
+                <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-10 w-10 rounded-xl object-contain">
+                <span class="font-bold text-xl">Chamu</span>
             </a>
             <div class="max-w-xl">
-                <p class="text-sm font-semibold uppercase text-[#E8425B] mb-3">Student account</p>
+                <p class="text-sm font-semibold uppercase text-[#01225E] mb-3">Student account</p>
                 <h1 class="text-5xl font-bold tracking-normal text-neutral-950">Save your grade, subjects, points, and progress.</h1>
                 <p class="mt-4 text-lg text-neutral-600">Registration uses the same curriculum and grade data seeded into the database.</p>
             </div>
@@ -22,10 +20,8 @@
         <section class="flex items-center justify-center px-5 py-10">
             <div class="w-full max-w-md">
                 <a href="{{ url('/') }}" class="lg:hidden inline-flex items-center gap-2 mb-8">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-[#E8425B] text-white">
-                        <i data-lucide="graduation-cap" style="width:22px;height:22px;"></i>
-                    </span>
-                    <span class="font-bold text-xl">Matric Hub</span>
+                    <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-10 w-10 rounded-xl object-contain">
+                    <span class="font-bold text-xl">Chamu</span>
                 </a>
 
                 <h1 class="text-3xl font-bold">Create account</h1>
@@ -36,7 +32,7 @@
 
                     <div>
                         <label for="user_type_id" class="block text-sm font-semibold mb-2">I am a</label>
-                        <select id="user_type_id" name="user_type_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                        <select id="user_type_id" name="user_type_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                             @foreach ($userTypes as $userType)
                                 <option value="{{ $userType->id }}" @selected((int) old('user_type_id') === $userType->id)>
                                     {{ $userType->name === 'pupil' ? 'Pupil' : ucfirst($userType->name) }}
@@ -51,14 +47,14 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
                             <label for="first_name" class="block text-sm font-semibold mb-2">First name</label>
-                            <input id="first_name" name="first_name" value="{{ old('first_name') }}" required autofocus class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                            <input id="first_name" name="first_name" value="{{ old('first_name') }}" required autofocus class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                             @error('first_name')
                                 <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                             @enderror
                         </div>
                         <div>
                             <label for="last_name" class="block text-sm font-semibold mb-2">Last name</label>
-                            <input id="last_name" name="last_name" value="{{ old('last_name') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                            <input id="last_name" name="last_name" value="{{ old('last_name') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                             @error('last_name')
                                 <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                             @enderror
@@ -67,7 +63,7 @@
 
                     <div>
                         <label for="username" class="block text-sm font-semibold mb-2">Username</label>
-                        <input id="username" name="username" value="{{ old('username') }}" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                        <input id="username" name="username" value="{{ old('username') }}" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                         @error('username')
                             <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                         @enderror
@@ -75,7 +71,7 @@
 
                     <div>
                         <label for="email" class="block text-sm font-semibold mb-2">Email</label>
-                        <input id="email" name="email" type="email" value="{{ old('email') }}" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                        <input id="email" name="email" type="email" value="{{ old('email') }}" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                         @error('email')
                             <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                         @enderror
@@ -84,7 +80,7 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
                             <label for="curriculum_id" class="block text-sm font-semibold mb-2">Curriculum</label>
-                            <select id="curriculum_id" name="curriculum_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                            <select id="curriculum_id" name="curriculum_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                 @foreach ($curriculums as $curriculum)
                                     <option value="{{ $curriculum->id }}" @selected((int) old('curriculum_id', optional($defaultCurriculum)->id) === $curriculum->id)>
                                         {{ $curriculum->abbreviation ?: $curriculum->name }}
@@ -97,7 +93,7 @@
                         </div>
                         <div>
                             <label for="grade_id" class="block text-sm font-semibold mb-2">Grade</label>
-                            <select id="grade_id" name="grade_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]"></select>
+                            <select id="grade_id" name="grade_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]"></select>
                             @error('grade_id')
                                 <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                             @enderror
@@ -106,7 +102,7 @@
 
                     <div>
                         <label for="province_id" class="block text-sm font-semibold mb-2">Province</label>
-                        <select id="province_id" name="province_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                        <select id="province_id" name="province_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                             <option value="">Choose province</option>
                             @foreach ($provinces as $province)
                                 <option value="{{ $province->id }}" @selected((int) old('province_id') === $province->id)>{{ $province->name }}</option>
@@ -119,7 +115,7 @@
 
                     <div>
                         <label for="password" class="block text-sm font-semibold mb-2">Password</label>
-                        <input id="password" name="password" type="password" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                        <input id="password" name="password" type="password" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                         @error('password')
                             <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                         @enderror
@@ -127,17 +123,17 @@
 
                     <div>
                         <label for="password_confirmation" class="block text-sm font-semibold mb-2">Confirm password</label>
-                        <input id="password_confirmation" name="password_confirmation" type="password" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                        <input id="password_confirmation" name="password_confirmation" type="password" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                     </div>
 
-                    <button class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3.5 font-semibold text-white hover:bg-[#d73550]">
+                    <button class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 font-semibold text-white hover:bg-[#001A48]">
                         Sign up <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
                     </button>
                 </form>
 
                 <p class="mt-6 text-sm text-neutral-600">
                     Already have an account?
-                    <a href="{{ route('login') }}" class="font-semibold text-[#E8425B]">Log in</a>
+                    <a href="{{ route('login') }}" class="font-semibold text-[#01225E]">Log in</a>
                 </p>
             </div>
         </section>

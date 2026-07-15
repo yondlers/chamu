@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Choose Subjects · Matric Hub')
+@section('title', 'Choose Subjects · Chamu')
 
 @section('content')
     @php
@@ -12,7 +12,7 @@
     <main class="max-w-4xl mx-auto px-5 lg:px-8 py-8">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">Profile setup</p>
+                <p class="text-sm font-semibold text-[#01225E]">Profile setup</p>
                 <h1 class="text-3xl font-bold mt-1">Choose your subjects</h1>
                 <p class="mt-2 text-neutral-500">Selected subjects shape your search, marks, APS score, and recommendations.</p>
             </div>
@@ -63,7 +63,7 @@
                                 type="checkbox"
                                 name="subjects[]"
                                 value="{{ $subject->id }}"
-                                class="subject-checkbox h-5 w-5 shrink-0 rounded border-neutral-300 accent-[#E8425B]"
+                                class="subject-checkbox h-5 w-5 shrink-0 rounded border-neutral-300 accent-[#01225E]"
                                 data-name="{{ $subject->name }}"
                                 data-code="{{ $subject->code ?? $subject->abbreviation ?? 'SUBJ' }}"
                                 @checked(in_array($subject->id, $selectedSubjectIds, true))
@@ -77,7 +77,7 @@
 
             <div class="flex justify-end gap-3">
                 <a href="{{ url('/') }}" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">Cancel</a>
-                <button id="save-subjects-button" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-500">
+                <button id="save-subjects-button" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-500">
                     Save subjects <i data-lucide="save" style="width:18px;height:18px;"></i>
                 </button>
             </div>
@@ -104,7 +104,7 @@
                 selected.forEach((checkbox) => {
                     const item = document.createElement('button');
                     item.type = 'button';
-                    item.className = 'inline-flex items-center gap-2 rounded-full border border-[#E8425B]/25 bg-white px-3 py-2 text-sm font-semibold text-neutral-900 shadow-sm hover:border-[#E8425B]';
+                    item.className = 'inline-flex items-center gap-2 rounded-full border border-[#01225E]/25 bg-white px-3 py-2 text-sm font-semibold text-neutral-900 shadow-sm hover:border-[#01225E]';
                     item.setAttribute('aria-label', `Remove ${checkbox.dataset.name}`);
 
                     const name = document.createElement('span');
@@ -115,7 +115,7 @@
                     code.textContent = checkbox.dataset.code;
 
                     const remove = document.createElement('span');
-                    remove.className = 'text-[#E8425B]';
+                    remove.className = 'text-[#01225E]';
                     remove.setAttribute('aria-hidden', 'true');
                     remove.textContent = 'x';
 
@@ -141,8 +141,8 @@
                 }
 
                 checkboxes.forEach((checkbox) => {
-                    checkbox.closest('.subject-row')?.classList.toggle('border-[#E8425B]', checkbox.checked);
-                    checkbox.closest('.subject-row')?.classList.toggle('bg-[#E8425B]/5', checkbox.checked);
+                    checkbox.closest('.subject-row')?.classList.toggle('border-[#01225E]', checkbox.checked);
+                    checkbox.closest('.subject-row')?.classList.toggle('bg-[#01225E]/5', checkbox.checked);
                 });
             };
 

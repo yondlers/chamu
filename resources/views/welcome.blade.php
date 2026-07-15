@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Matric Hub')
+@section('title', 'Chamu')
 
 @php
     $displaySubjects = $subjects;
@@ -9,9 +9,9 @@
 @endphp
 
 @section('content')
-    <section class="w-full border-b border-neutral-100" style="background: linear-gradient(180deg, #fff5f6 0%, #fff 72%);">
+    <section class="w-full border-b border-neutral-100" style="background: linear-gradient(180deg, #F3F7FC 0%, #fff 72%);">
         <div class="max-w-6xl mx-auto px-5 lg:px-8 pt-12 pb-8 text-center fade-in">
-            <p class="text-sm font-semibold tracking-wide uppercase mb-3 text-[#E8425B]">
+            <p class="text-sm font-semibold tracking-wide uppercase mb-3 text-[#01225E]">
                 {{ $defaultGrade->name ?? 'Grade 12' }} · {{ optional($defaultCurriculum)->abbreviation ?? 'CAPS' }}
             </p>
             @auth
@@ -83,7 +83,7 @@
                         </select>
                     </div>
                     <div class="flex items-center p-2 md:pl-1">
-                        <button id="start-learning" type="submit" class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-semibold whitespace-nowrap bg-[#E8425B] text-white shadow-sm hover:bg-[#d73550]">
+                        <button id="start-learning" type="submit" class="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl font-semibold whitespace-nowrap bg-[#01225E] text-white shadow-sm hover:bg-[#001A48]">
                             Start <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
                         </button>
                     </div>
@@ -96,12 +96,12 @@
     <main class="max-w-7xl mx-auto px-5 lg:px-8 pb-20">
         <section class="grid gap-4 pt-8 md:grid-cols-3 fade-in">
             <a href="{{ route('learn.index') }}" class="group rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
-                <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-rose-50 text-[#E8425B]">
+                <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E]">
                     <i data-lucide="book-open" style="width:22px;height:22px;"></i>
                 </span>
                 <h2 class="mt-4 text-xl font-bold">Learn</h2>
                 <p class="mt-2 text-sm text-neutral-500">Past papers, questions, notes, practice, and revision.</p>
-                <span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#E8425B]">
+                <span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#01225E]">
                     Start learning <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                 </span>
             </a>
@@ -111,7 +111,7 @@
                 </span>
                 <h2 class="mt-4 text-xl font-bold">APS</h2>
                 <p class="mt-2 text-sm text-neutral-500">Course match from your APS score or your saved subject marks.</p>
-                <span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#E8425B]">
+                <span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#01225E]">
                     Match courses <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                 </span>
             </a>
@@ -121,7 +121,7 @@
                 </span>
                 <h2 class="mt-4 text-xl font-bold">Funding</h2>
                 <p class="mt-2 text-sm text-neutral-500">Bursary match, companies, links, closing dates, and requirements.</p>
-                <span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#E8425B]">
+                <span class="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#01225E]">
                     Find funding <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                 </span>
             </a>
@@ -141,17 +141,17 @@
                 <section class="mt-8">
                     <div class="flex items-end justify-between gap-4 mb-4">
                         <div>
-                            <p class="text-sm font-semibold text-[#E8425B]">Continue quiz</p>
+                            <p class="text-sm font-semibold text-[#01225E]">Continue quiz</p>
                             <h2 class="font-bold text-2xl">Open practice sessions</h2>
                         </div>
                     </div>
                     <div class="grid md:grid-cols-3 gap-5">
                         @foreach ($pendingQuizzes as $quiz)
                             <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
-                                <span class="rounded-full bg-rose-50 px-3 py-1 text-xs font-bold text-[#E8425B]">{{ $quiz->quiz_type === 'random' ? 'Randomized' : 'Source' }}</span>
+                                <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-[#01225E]">{{ $quiz->quiz_type === 'random' ? 'Randomized' : 'Source' }}</span>
                                 <h3 class="mt-3 font-bold">{{ $quiz->title }}</h3>
                                 <p class="mt-1 text-sm text-neutral-500">{{ $quiz->subject_name }}{{ $quiz->source ? ' · ' . $quiz->source : '' }}</p>
-                                <a href="{{ route('practice.show', $quiz->id) }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2.5 text-sm font-semibold text-white">
+                                <a href="{{ route('practice.show', $quiz->id) }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
                                     Continue <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                 </a>
                             </article>
@@ -164,7 +164,7 @@
         <section class="mt-8">
             <div class="flex items-end justify-between gap-4 mb-4">
                 <div>
-                    <p class="text-sm font-semibold text-[#E8425B]">Subject library</p>
+                    <p class="text-sm font-semibold text-[#01225E]">Subject library</p>
                     <h2 class="font-bold text-2xl">Browse subjects</h2>
                 </div>
                 <button class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-neutral-200 bg-white text-sm font-semibold hover:border-neutral-300">
@@ -174,7 +174,7 @@
             <div class="flex gap-4 overflow-x-auto no-scrollbar pb-3 -mx-1 px-1">
                 @forelse ($featuredSubjects as $subject)
                     @php
-                        $colour = $subject->colour ?: '#E8425B';
+                        $colour = $subject->colour ?: '#01225E';
                         $icon = $subject->icon ?: 'book-open';
                         $progress = 25 + (crc32($subject->name) % 55);
                     @endphp
@@ -201,22 +201,22 @@
         <section class="mt-12">
             <div class="flex items-end justify-between gap-4 mb-4">
                 <div>
-                    <p class="text-sm font-semibold text-[#E8425B]">Next up</p>
+                    <p class="text-sm font-semibold text-[#01225E]">Next up</p>
                     <h2 class="font-bold text-2xl">Continue learning</h2>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 @foreach ($displaySubjects->take(3) as $subject)
                     <article class="rounded-3xl border border-neutral-200 p-6 soft-card bg-white flex flex-col relative overflow-hidden">
-                        <div class="absolute inset-x-0 top-0 h-1" style="background: {{ $subject->colour ?: '#E8425B' }};"></div>
-                        <span class="self-start px-3 py-1 rounded-full text-xs font-semibold mb-3" style="background: {{ ($subject->colour ?: '#E8425B') }}18; color: {{ $subject->colour ?: '#E8425B' }};">{{ $subject->name }}</span>
+                        <div class="absolute inset-x-0 top-0 h-1" style="background: {{ $subject->colour ?: '#01225E' }};"></div>
+                        <span class="self-start px-3 py-1 rounded-full text-xs font-semibold mb-3" style="background: {{ ($subject->colour ?: '#01225E') }}18; color: {{ $subject->colour ?: '#01225E' }};">{{ $subject->name }}</span>
                         <h3 class="font-semibold mb-4 text-[19px]">{{ $subject->name }}: Core revision</h3>
                         <ul class="space-y-2 mb-6 flex-1">
                             <li class="flex items-center gap-2 text-sm text-neutral-600"><i data-lucide="file-text" style="width:16px;height:16px;"></i><span>Learn notes</span></li>
                             <li class="flex items-center gap-2 text-sm text-neutral-600"><i data-lucide="layers" style="width:16px;height:16px;"></i><span>Flashcards</span></li>
                             <li class="flex items-center gap-2 text-sm text-neutral-600"><i data-lucide="circle-help" style="width:16px;height:16px;"></i><span>Practice questions</span></li>
                         </ul>
-                        <button data-action="Resuming {{ $subject->name }}" class="js-btn w-full py-3 rounded-xl font-semibold text-sm bg-[#E8425B] text-white hover:bg-[#d73550]">Resume</button>
+                        <button data-action="Resuming {{ $subject->name }}" class="js-btn w-full py-3 rounded-xl font-semibold text-sm bg-[#01225E] text-white hover:bg-[#001A48]">Resume</button>
                     </article>
                 @endforeach
             </div>
@@ -234,7 +234,7 @@
                         <h3 class="font-semibold mb-2 text-lg">{{ optional($firstSubject)->name ?? 'Mathematics' }} · Paper {{ $paper->number }}</h3>
                         <p class="text-sm text-neutral-500 mb-5">180 min · 150 marks</p>
                         <div class="flex gap-3">
-                            <button data-action="Starting Paper {{ $paper->number }} exam" class="js-btn flex-1 py-2.5 rounded-xl font-semibold text-sm bg-[#E8425B] text-white">Write Exam</button>
+                            <button data-action="Starting Paper {{ $paper->number }} exam" class="js-btn flex-1 py-2.5 rounded-xl font-semibold text-sm bg-[#01225E] text-white">Write Exam</button>
                             <button data-action="Random practice from Paper {{ $paper->number }}" class="js-btn flex-1 py-2.5 rounded-xl font-semibold text-sm border border-neutral-300 bg-white">Random Practice</button>
                         </div>
                     </article>
@@ -245,22 +245,22 @@
         </section>
 
         <section class="mt-12">
-            <article class="rounded-3xl p-8 soft-card border border-neutral-200 grid md:grid-cols-2 gap-8 items-center" style="background: linear-gradient(135deg, rgb(255, 241, 243) 0%, rgb(253, 236, 239) 100%);">
+            <article class="rounded-3xl p-8 soft-card border border-neutral-200 grid md:grid-cols-2 gap-8 items-center" style="background: linear-gradient(135deg, rgb(243, 247, 252) 0%, rgb(229, 237, 248) 100%);">
                 <div>
-                    <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-[#E8425B] mb-4"><i data-lucide="shuffle" style="width:24px;height:24px;"></i></span>
+                    <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-white/70 text-[#01225E] mb-4"><i data-lucide="shuffle" style="width:24px;height:24px;"></i></span>
                     <h2 class="font-bold mb-2 text-2xl">Randomized Practice</h2>
                     <p class="text-neutral-700">Get mixed questions from past papers, topics, and study notes.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-5 border border-neutral-200">
                     <div class="grid grid-cols-2 gap-3 mb-4">
                         @foreach (['10 questions', '20 questions', 'Timed mode', 'Show answers immediately'] as $option)
-                            <label class="flex items-center gap-2 p-3 rounded-xl border border-neutral-200 cursor-pointer hover:border-[#E8425B]">
-                                <input type="checkbox" class="sp-opt accent-[#E8425B]" @checked($loop->first || $loop->last)>
+                            <label class="flex items-center gap-2 p-3 rounded-xl border border-neutral-200 cursor-pointer hover:border-[#01225E]">
+                                <input type="checkbox" class="sp-opt accent-[#01225E]" @checked($loop->first || $loop->last)>
                                 <span class="text-sm font-medium">{{ $option }}</span>
                             </label>
                         @endforeach
                     </div>
-                    <button id="generate-practice" class="w-full py-3 rounded-xl font-semibold bg-[#E8425B] text-white">Generate Practice</button>
+                    <button id="generate-practice" class="w-full py-3 rounded-xl font-semibold bg-[#01225E] text-white">Generate Practice</button>
                 </div>
             </article>
         </section>
@@ -270,7 +270,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                 @foreach ($displaySubjects->take(4) as $subject)
                     <article class="rounded-3xl border border-neutral-200 p-5 soft-card bg-white flex flex-col">
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl mb-3" style="background: {{ ($subject->colour ?: '#E8425B') }}14; color: {{ $subject->colour ?: '#E8425B' }};"><i data-lucide="layers" style="width:20px;height:20px;"></i></span>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl mb-3" style="background: {{ ($subject->colour ?: '#01225E') }}14; color: {{ $subject->colour ?: '#01225E' }};"><i data-lucide="layers" style="width:20px;height:20px;"></i></span>
                         <h3 class="font-semibold mb-1">{{ $subject->name }} Key Cards</h3>
                         <p class="text-sm text-neutral-500 mb-4 flex-1">{{ 18 + (crc32($subject->name) % 24) }} cards</p>
                         <button data-action="Studying {{ $subject->name }} cards" class="js-btn w-full py-2.5 rounded-xl font-semibold text-sm bg-neutral-100">Study</button>
@@ -280,18 +280,18 @@
         </section>
 
         <section class="mt-12">
-            <article class="rounded-3xl p-8 soft-card flex flex-col md:flex-row items-center gap-6 text-center md:text-left" style="background: linear-gradient(135deg, rgb(232, 66, 91) 0%, rgb(193, 49, 84) 100%);">
+            <article class="rounded-3xl p-8 soft-card flex flex-col md:flex-row items-center gap-6 text-center md:text-left" style="background: linear-gradient(135deg, rgb(1, 34, 94) 0%, rgb(0, 26, 72) 100%);">
                 <span class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/20 text-white shrink-0"><i data-lucide="sparkles" style="width:30px;height:30px;"></i></span>
                 <div class="flex-1">
                     <h2 class="font-bold mb-1 text-2xl text-white">Stuck on a question?</h2>
-                    <p class="opacity-90 text-sm text-rose-50">Get step-by-step explanations based on CAPS and IEB.</p>
+                    <p class="opacity-90 text-sm text-blue-50">Get step-by-step explanations based on CAPS and IEB.</p>
                 </div>
-                <button id="ai-tutor" class="px-7 py-3.5 rounded-xl font-semibold whitespace-nowrap bg-white text-[#E8425B]">Ask AI Tutor</button>
+                <button id="ai-tutor" class="px-7 py-3.5 rounded-xl font-semibold whitespace-nowrap bg-white text-[#01225E]">Ask AI Tutor</button>
             </article>
         </section>
 
         <footer class="mt-14 pt-6 border-t border-neutral-200 text-center">
-            <p class="text-sm text-neutral-400">Matric Hub · Built for South African Grade 10-12 learners</p>
+            <p class="text-sm text-neutral-400">Chamu · Built for South African Grade 10-12 learners</p>
         </footer>
     </main>
 @endsection

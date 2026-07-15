@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Marks · Matric Hub')
+@section('title', 'Marks · Chamu')
 
 @section('content')
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-10">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">Results tracker</p>
+                <p class="text-sm font-semibold text-[#01225E]">Results tracker</p>
                 <h1 class="text-3xl font-bold mt-1">Add term marks</h1>
                 <p class="mt-2 text-neutral-500">Marks are saved by grade and term. APS is calculated automatically.</p>
             </div>
@@ -23,7 +23,7 @@
         <form method="GET" action="{{ route('marks.index') }}" class="mb-5 rounded-2xl border border-neutral-200 bg-white p-4">
             <label for="term_id" class="block text-sm font-semibold mb-2">Term</label>
             <div class="flex gap-3">
-                <select id="term_id" name="term_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#E8425B]">
+                <select id="term_id" name="term_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                     @foreach ($terms as $term)
                         <option value="{{ $term->id }}" @selected((int) $termId === $term->id)>{{ $term->name }}</option>
                     @endforeach
@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <p class="mb-4 rounded-xl bg-rose-50 px-4 py-3 text-sm font-semibold text-[#E8425B]">
+            <p class="mb-4 rounded-xl bg-blue-50 px-4 py-3 text-sm font-semibold text-[#01225E]">
                 Note: Life Orientation (LO) is excluded from the APS count and aggregate average.
             </p>
 
@@ -84,7 +84,7 @@
                                     <p class="text-xs text-neutral-500">{{ $subject->code ?? $subject->abbreviation ?? 'SUBJ' }}</p>
                                 </td>
                                 <td class="py-4 px-3">
-                                    <input name="marks[{{ $subject->id }}]" type="number" min="0" max="100" value="{{ $mark }}" class="mark-input w-full rounded-xl border border-neutral-300 px-3 py-2 outline-none focus:border-[#E8425B]" data-aps-target="aps-{{ $subject->id }}" data-exclude-summary="{{ $excludeFromAggregate ? '1' : '0' }}">
+                                    <input name="marks[{{ $subject->id }}]" type="number" min="0" max="100" value="{{ $mark }}" class="mark-input w-full rounded-xl border border-neutral-300 px-3 py-2 outline-none focus:border-[#01225E]" data-aps-target="aps-{{ $subject->id }}" data-exclude-summary="{{ $excludeFromAggregate ? '1' : '0' }}">
                                 </td>
                                 <td class="py-4 pl-3">
                                     <input id="aps-{{ $subject->id }}" value="{{ optional($result)->aps_score }}" readonly class="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-3 py-2 text-neutral-500">
@@ -97,7 +97,7 @@
 
             <div class="mt-6 flex justify-end gap-3">
                 <a href="{{ url('/') }}" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">Cancel</a>
-                <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]">
+                <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                     Save marks <i data-lucide="save" style="width:18px;height:18px;"></i>
                 </button>
             </div>

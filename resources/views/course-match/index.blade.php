@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Course Match · Matric Hub')
+@section('title', 'Course Match · Chamu')
 
 @section('content')
     <main class="max-w-6xl mx-auto px-5 lg:px-8 py-8">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-8">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">Admissions match</p>
+                <p class="text-sm font-semibold text-[#01225E]">Admissions match</p>
                 <h1 class="mt-1 text-3xl font-bold">Courses you qualify for</h1>
                 <p class="mt-2 text-neutral-500">Matches use your selected term marks, APS or aggregate average, and subject requirements.</p>
             </div>
@@ -64,7 +64,7 @@
                         <i data-lucide="calendar-days" style="width:14px;height:14px;"></i>
                         Marks
                     </label>
-                    <select id="term_id" name="term_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <select id="term_id" name="term_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                         @foreach ($terms as $term)
                             <option value="{{ $term->id }}" @selected((int) $termId === $term->id)>{{ $term->name }}</option>
                         @endforeach
@@ -77,7 +77,7 @@
                         University
                     </label>
                     <input type="hidden" name="university_id" value="{{ $filters['university_id'] }}" data-combobox-value>
-                    <input id="university_id_search" type="search" autocomplete="off" value="{{ $universityLabel($selectedUniversity) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 pr-10 font-semibold outline-none focus:border-[#E8425B]" data-combobox-input>
+                    <input id="university_id_search" type="search" autocomplete="off" value="{{ $universityLabel($selectedUniversity) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 pr-10 font-semibold outline-none focus:border-[#01225E]" data-combobox-input>
                     <i data-lucide="chevron-down" class="pointer-events-none absolute right-3 top-[42px] text-neutral-400" style="width:18px;height:18px;"></i>
                     <div class="absolute left-0 right-0 z-30 mt-2 hidden max-h-72 overflow-y-auto rounded-xl border border-neutral-200 bg-white p-1 shadow-xl" data-combobox-list>
                         <button type="button" class="w-full rounded-lg px-3 py-2 text-left text-sm font-semibold hover:bg-neutral-50" data-combobox-option data-value="" data-label="All universities">All universities</button>
@@ -97,7 +97,7 @@
                         Faculty
                     </label>
                     <input type="hidden" name="faculty_id" value="{{ $filters['faculty_id'] }}" data-combobox-value>
-                    <input id="faculty_id_search" type="search" autocomplete="off" value="{{ $selectedFaculty ? $selectedFaculty->university_abbreviation.' · '.$selectedFaculty->name : 'All faculties' }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 pr-10 font-semibold outline-none focus:border-[#E8425B]" data-combobox-input>
+                    <input id="faculty_id_search" type="search" autocomplete="off" value="{{ $selectedFaculty ? $selectedFaculty->university_abbreviation.' · '.$selectedFaculty->name : 'All faculties' }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 pr-10 font-semibold outline-none focus:border-[#01225E]" data-combobox-input>
                     <i data-lucide="chevron-down" class="pointer-events-none absolute right-3 top-[42px] text-neutral-400" style="width:18px;height:18px;"></i>
                     <div class="absolute left-0 right-0 z-30 mt-2 hidden max-h-72 overflow-y-auto rounded-xl border border-neutral-200 bg-white p-1 shadow-xl" data-combobox-list>
                         <button type="button" class="w-full rounded-lg px-3 py-2 text-left text-sm font-semibold hover:bg-neutral-50" data-combobox-option data-value="" data-label="All faculties">All faculties</button>
@@ -116,7 +116,7 @@
                         Qualification type
                     </label>
                     <input type="hidden" name="qualification_type_id" value="{{ $filters['qualification_type_id'] }}" data-combobox-value>
-                    <input id="qualification_type_id_search" type="search" autocomplete="off" value="{{ $selectedQualificationType ? $selectedQualificationType->name : 'All types' }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 pr-10 font-semibold outline-none focus:border-[#E8425B]" data-combobox-input>
+                    <input id="qualification_type_id_search" type="search" autocomplete="off" value="{{ $selectedQualificationType ? $selectedQualificationType->name : 'All types' }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 pr-10 font-semibold outline-none focus:border-[#01225E]" data-combobox-input>
                     <i data-lucide="chevron-down" class="pointer-events-none absolute right-3 top-[42px] text-neutral-400" style="width:18px;height:18px;"></i>
                     <div class="absolute left-0 right-0 z-30 mt-2 hidden max-h-72 overflow-y-auto rounded-xl border border-neutral-200 bg-white p-1 shadow-xl" data-combobox-list>
                         <button type="button" class="w-full rounded-lg px-3 py-2 text-left text-sm font-semibold hover:bg-neutral-50" data-combobox-option data-value="" data-label="All types">All types</button>
@@ -132,7 +132,7 @@
                         <i data-lucide="search" style="width:14px;height:14px;"></i>
                         Search
                     </label>
-                    <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Programme, university, faculty, type" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Programme, university, faculty, type" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                 </div>
 
                 <div>
@@ -140,7 +140,7 @@
                         <i data-lucide="list" style="width:14px;height:14px;"></i>
                         Per page
                     </label>
-                    <select id="per_page" name="per_page" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <select id="per_page" name="per_page" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                         @foreach ($perPageOptions as $option)
                             <option value="{{ $option }}" @selected($perPage === $option)>{{ $option }} per page</option>
                         @endforeach
@@ -148,7 +148,7 @@
                 </div>
 
                 <div class="flex items-end gap-2">
-                    <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]">
+                    <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                         Filter <i data-lucide="sliders-horizontal" style="width:18px;height:18px;"></i>
                     </button>
                 </div>
@@ -158,26 +158,26 @@
                 <div class="flex flex-col gap-3 md:flex-row md:items-center">
                     <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
                         <input type="hidden" name="hide_not_qualified" value="0">
-                        <input type="checkbox" name="hide_not_qualified" value="1" class="h-4 w-4 accent-[#E8425B]" @checked($filters['hide_not_qualified'])>
+                        <input type="checkbox" name="hide_not_qualified" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['hide_not_qualified'])>
                         You qualify
                     </label>
 
                     <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
                         <input type="hidden" name="show_almost_there" value="0">
-                        <input type="checkbox" name="show_almost_there" value="1" class="h-4 w-4 accent-[#E8425B]" @checked($filters['show_almost_there'])>
+                        <input type="checkbox" name="show_almost_there" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['show_almost_there'])>
                         Almost there
                     </label>
 
                     <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
                         <input type="hidden" name="show_not_qualified_yet" value="0">
-                        <input type="checkbox" name="show_not_qualified_yet" value="1" class="h-4 w-4 accent-[#E8425B]" @checked($filters['show_not_qualified_yet'])>
+                        <input type="checkbox" name="show_not_qualified_yet" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['show_not_qualified_yet'])>
                         Not qualified yet
                     </label>
                 </div>
 
                 <div class="flex items-center gap-3 text-sm font-semibold text-neutral-500">
                     <span>{{ $visibleMatchesCount }} of {{ $totalMatchesBeforeFilters }} shown</span>
-                    <a href="{{ route('course-match.index', ['term_id' => $termId]) }}" class="text-[#E8425B] hover:underline">Reset</a>
+                    <a href="{{ route('course-match.index', ['term_id' => $termId]) }}" class="text-[#01225E] hover:underline">Reset</a>
                 </div>
             </div>
         </form>
@@ -186,7 +186,7 @@
             <section class="rounded-2xl border border-dashed border-neutral-300 bg-white p-8 text-center">
                 <h2 class="text-xl font-bold">Add marks first</h2>
                 <p class="mt-2 text-neutral-500">Course matching needs your term marks so it can calculate APS and compare subject levels.</p>
-                <a href="{{ route('marks.index') }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white">
+                <a href="{{ route('marks.index') }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
                     Add marks <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
                 </a>
             </section>
@@ -212,7 +212,7 @@
                                 </div>
                                 <h2 class="mt-3 text-xl font-bold text-neutral-950">{{ $match->name }}</h2>
                                 <p class="mt-1 text-sm font-semibold text-neutral-500">
-                                    <a href="{{ route('universities.programmes', $match->university_id) }}" class="text-[#E8425B] hover:underline">{{ $match->university_abbreviation ?? $match->university_name }}</a>
+                                    <a href="{{ route('universities.programmes', $match->university_id) }}" class="text-[#01225E] hover:underline">{{ $match->university_abbreviation ?? $match->university_name }}</a>
                                     · {{ $match->faculty_name }} · {{ $match->qualification_type_name }}
                                 </p>
                                 @if ($match->notes)

@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Tools · Matric Hub')
+@section('title', 'Tools · Chamu')
 
 @section('content')
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-8">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-8">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">Student tools</p>
+                <p class="text-sm font-semibold text-[#01225E]">Student tools</p>
                 <h1 class="mt-1 text-3xl font-bold">Tools</h1>
-                <p class="mt-2 text-neutral-500">Simple helpers for studying without leaving Matric Hub.</p>
+                <p class="mt-2 text-neutral-500">Simple helpers for studying without leaving Chamu.</p>
             </div>
             <a href="{{ route('dashboard.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                 <i data-lucide="layout-dashboard" style="width:16px;height:16px;"></i>
@@ -19,7 +19,7 @@
         <section class="grid gap-5 lg:grid-cols-[1fr_320px]">
             <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <div class="flex items-center gap-3">
-                    <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8425B] text-white">
+                    <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#01225E] text-white">
                         <i data-lucide="calculator" style="width:22px;height:22px;"></i>
                     </span>
                     <div>
@@ -37,7 +37,7 @@
                             type="number"
                             step="any"
                             value="{{ $calculator['first_number'] }}"
-                            class="w-full rounded-xl border border-neutral-300 px-4 py-3 text-lg font-semibold outline-none focus:border-[#E8425B]"
+                            class="w-full rounded-xl border border-neutral-300 px-4 py-3 text-lg font-semibold outline-none focus:border-[#01225E]"
                             required
                         >
                     </div>
@@ -50,14 +50,14 @@
                             type="number"
                             step="any"
                             value="{{ $calculator['second_number'] }}"
-                            class="w-full rounded-xl border border-neutral-300 px-4 py-3 text-lg font-semibold outline-none focus:border-[#E8425B]"
+                            class="w-full rounded-xl border border-neutral-300 px-4 py-3 text-lg font-semibold outline-none focus:border-[#01225E]"
                             required
                         >
                     </div>
 
                     <div>
                         <label for="operation" class="mb-2 block text-xs font-bold uppercase text-neutral-500">Operation</label>
-                        <select id="operation" name="operation" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                        <select id="operation" name="operation" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                             <option value="add" @selected($calculator['operation'] === 'add')>Addition (+)</option>
                             <option value="subtract" @selected($calculator['operation'] === 'subtract')>Subtraction (-)</option>
                             <option value="multiply" @selected($calculator['operation'] === 'multiply')>Multiplication (×)</option>
@@ -66,7 +66,7 @@
                     </div>
 
                     <div class="flex items-end gap-2">
-                        <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]">
+                        <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                             Calculate <i data-lucide="equal" style="width:18px;height:18px;"></i>
                         </button>
                     </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Take Practice · Matric Hub')
+@section('title', 'Take Practice · Chamu')
 
 @section('content')
     @php
@@ -13,9 +13,9 @@
 
     <main class="max-w-3xl mx-auto px-5 lg:px-8 py-8">
         <div class="mb-6">
-            <p class="text-sm font-semibold text-[#E8425B]">{{ $quiz->title }}</p>
+            <p class="text-sm font-semibold text-[#01225E]">{{ $quiz->title }}</p>
             <div class="mt-3 h-2 overflow-hidden rounded-full bg-neutral-100">
-                <div class="h-full rounded-full bg-[#E8425B]" style="width: {{ $progressWidth }}%;"></div>
+                <div class="h-full rounded-full bg-[#01225E]" style="width: {{ $progressWidth }}%;"></div>
             </div>
             <p class="mt-2 text-sm font-semibold text-neutral-500">Question {{ $currentStep }} of {{ $totalSubQuestions }}</p>
         </div>
@@ -29,7 +29,7 @@
         <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
             <section class="rounded-2xl bg-neutral-50 p-4">
                 <div class="flex flex-wrap gap-2">
-                    <span class="rounded-full bg-rose-50 px-3 py-1 text-xs font-bold text-[#E8425B]">Main question {{ $subQuestion->question_number }}</span>
+                    <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-[#01225E]">Main question {{ $subQuestion->question_number }}</span>
                     @if ($subQuestion->answer_type)
                         <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-600">{{ $subQuestion->answer_type === 'json' ? 'Label answer' : ucfirst($subQuestion->answer_type) . ' answer' }}</span>
                     @endif
@@ -61,13 +61,13 @@
                         <div class="mt-4 space-y-3">
                             @foreach ($answerFields as $field)
                                 <label class="grid gap-2 sm:grid-cols-[4rem_1fr] sm:items-center">
-                                    <span class="text-lg font-bold text-[#E8425B]">{{ $field }}</span>
+                                    <span class="text-lg font-bold text-[#01225E]">{{ $field }}</span>
                                     <input
                                         type="text"
                                         name="answer[{{ $field }}]"
                                         required
                                         value="{{ old("answer.{$field}") }}"
-                                        class="w-full rounded-2xl border border-neutral-300 px-4 py-4 text-lg outline-none focus:border-[#E8425B]"
+                                        class="w-full rounded-2xl border border-neutral-300 px-4 py-4 text-lg outline-none focus:border-[#01225E]"
                                         placeholder="{{ $field }} - Type answer"
                                     >
                                 </label>
@@ -78,14 +78,14 @@
                             name="answer"
                             rows="{{ $subQuestion->question_type === 'paragraph' ? 5 : 3 }}"
                             required
-                            class="mt-4 w-full rounded-2xl border border-neutral-300 px-4 py-4 text-lg outline-none focus:border-[#E8425B]"
+                            class="mt-4 w-full rounded-2xl border border-neutral-300 px-4 py-4 text-lg outline-none focus:border-[#01225E]"
                             placeholder="Type your answer"
                         >{{ old('answer') }}</textarea>
                     @endif
                 </div>
 
                 <div class="mt-6 flex justify-end">
-                    <button class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white">
+                    <button class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
                         {{ $isLastStep ? 'Finish quiz' : 'Continue' }}
                         <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
                     </button>

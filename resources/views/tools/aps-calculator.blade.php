@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'APS Calculator · Matric Hub')
+@section('title', 'APS Calculator · Chamu')
 
 @section('content')
     <main class="mx-auto max-w-7xl px-5 py-8 lg:px-8">
         <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">@auth APS from your profile @else Public student tool @endauth</p>
+                <p class="text-sm font-semibold text-[#01225E]">@auth APS from your profile @else Public student tool @endauth</p>
                 <h1 class="mt-1 text-3xl font-bold">APS Calculator</h1>
                 <p class="mt-2 max-w-3xl text-neutral-500">@auth Your saved subjects and latest marks are loaded when available. @else Enter subject marks once and compare the major scoring systems side by side. @endauth</p>
             </div>
@@ -15,12 +15,12 @@
                     <a href="{{ route('marks.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                         Edit marks <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
                     </a>
-                    <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2 font-semibold text-white hover:bg-[#d73550]">
+                    <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 font-semibold text-white hover:bg-[#001A48]">
                         Course match <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                     </a>
                 </div>
             @else
-                <a href="{{ route('register') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2 font-semibold text-white hover:bg-[#d73550]">
+                <a href="{{ route('register') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 font-semibold text-white hover:bg-[#001A48]">
                     Save progress <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
                 </a>
             @endauth
@@ -61,7 +61,7 @@
                             @foreach ($rows as $index => $row)
                                 <tr data-subject-row>
                                     <td class="rounded-l-xl border border-r-0 border-neutral-200 bg-neutral-50 px-3 py-2">
-                                        <select name="subjects[{{ $index }}][subject_id]" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#E8425B]">
+                                        <select name="subjects[{{ $index }}][subject_id]" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#01225E]">
                                             <option value="">Choose subject</option>
                                             @foreach ($subjects as $subject)
                                                 <option value="{{ $subject->id }}" @selected((int) $row->subject_id === $subject->id)>{{ $subject->name }}</option>
@@ -69,7 +69,7 @@
                                         </select>
                                     </td>
                                     <td class="border-y border-neutral-200 bg-neutral-50 px-3 py-2">
-                                        <input name="subjects[{{ $index }}][mark]" type="number" min="0" max="100" step="0.1" value="{{ $row->mark === null ? '' : $formatNumber($row->mark, 1) }}" placeholder="%" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#E8425B]">
+                                        <input name="subjects[{{ $index }}][mark]" type="number" min="0" max="100" step="0.1" value="{{ $row->mark === null ? '' : $formatNumber($row->mark, 1) }}" placeholder="%" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#01225E]">
                                     </td>
                                     <td class="rounded-r-xl border border-l-0 border-neutral-200 bg-neutral-50 px-3 py-2 text-right">
                                         <button type="button" data-remove-row class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-300 bg-white text-neutral-500 hover:bg-neutral-100" title="Remove subject">
@@ -85,7 +85,7 @@
                 <template data-subject-row-template>
                     <tr data-subject-row>
                         <td class="rounded-l-xl border border-r-0 border-neutral-200 bg-neutral-50 px-3 py-2">
-                            <select data-name="subjects[__INDEX__][subject_id]" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#E8425B]">
+                            <select data-name="subjects[__INDEX__][subject_id]" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#01225E]">
                                 <option value="">Choose subject</option>
                                 @foreach ($subjects as $subject)
                                     <option value="{{ $subject->id }}">{{ $subject->name }}</option>
@@ -93,7 +93,7 @@
                             </select>
                         </td>
                         <td class="border-y border-neutral-200 bg-neutral-50 px-3 py-2">
-                            <input data-name="subjects[__INDEX__][mark]" type="number" min="0" max="100" step="0.1" placeholder="%" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#E8425B]">
+                            <input data-name="subjects[__INDEX__][mark]" type="number" min="0" max="100" step="0.1" placeholder="%" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 font-semibold outline-none focus:border-[#01225E]">
                         </td>
                         <td class="rounded-r-xl border border-l-0 border-neutral-200 bg-neutral-50 px-3 py-2 text-right">
                             <button type="button" data-remove-row class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-300 bg-white text-neutral-500 hover:bg-neutral-100" title="Remove subject">
@@ -106,24 +106,24 @@
                 <div class="mt-5 grid gap-4 border-t border-neutral-100 pt-5 md:grid-cols-4">
                     <div>
                         <label for="disadvantage_factor" class="mb-2 block text-xs font-bold uppercase text-neutral-500">UCT disadvantage factor</label>
-                        <input id="disadvantage_factor" name="disadvantage_factor" type="number" min="0" max="100" step="0.1" value="{{ $formatNumber($disadvantageFactor, 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                        <input id="disadvantage_factor" name="disadvantage_factor" type="number" min="0" max="100" step="0.1" value="{{ $formatNumber($disadvantageFactor, 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                     </div>
                     <div>
                         <label for="nbt_al" class="mb-2 block text-xs font-bold uppercase text-neutral-500">NBT AL</label>
-                        <input id="nbt_al" name="nbt_al" type="number" min="0" max="100" step="0.1" value="{{ $nbtScores['AL'] === null ? '' : $formatNumber($nbtScores['AL'], 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                        <input id="nbt_al" name="nbt_al" type="number" min="0" max="100" step="0.1" value="{{ $nbtScores['AL'] === null ? '' : $formatNumber($nbtScores['AL'], 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                     </div>
                     <div>
                         <label for="nbt_ql" class="mb-2 block text-xs font-bold uppercase text-neutral-500">NBT QL</label>
-                        <input id="nbt_ql" name="nbt_ql" type="number" min="0" max="100" step="0.1" value="{{ $nbtScores['QL'] === null ? '' : $formatNumber($nbtScores['QL'], 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                        <input id="nbt_ql" name="nbt_ql" type="number" min="0" max="100" step="0.1" value="{{ $nbtScores['QL'] === null ? '' : $formatNumber($nbtScores['QL'], 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                     </div>
                     <div>
                         <label for="nbt_mat" class="mb-2 block text-xs font-bold uppercase text-neutral-500">NBT MAT</label>
-                        <input id="nbt_mat" name="nbt_mat" type="number" min="0" max="100" step="0.1" value="{{ $nbtScores['MAT'] === null ? '' : $formatNumber($nbtScores['MAT'], 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                        <input id="nbt_mat" name="nbt_mat" type="number" min="0" max="100" step="0.1" value="{{ $nbtScores['MAT'] === null ? '' : $formatNumber($nbtScores['MAT'], 1) }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                     </div>
                 </div>
 
                 <div class="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
-                    <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]">
+                    <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                         Calculate scores <i data-lucide="calculator" style="width:18px;height:18px;"></i>
                     </button>
                     <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">

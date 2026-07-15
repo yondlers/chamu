@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', ($university->abbreviation ?: $university->name) . ' Programmes · Matric Hub')
+@section('title', ($university->abbreviation ?: $university->name) . ' Programmes · Chamu')
 
 @section('content')
     <main class="mx-auto max-w-7xl px-5 py-8 lg:px-8">
@@ -77,7 +77,7 @@
                         <i data-lucide="search" style="width:14px;height:14px;"></i>
                         Search programmes
                     </label>
-                    <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Programme, faculty, type" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Programme, faculty, type" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                 </div>
 
                 <div>
@@ -85,7 +85,7 @@
                         <i data-lucide="layers" style="width:14px;height:14px;"></i>
                         Faculty
                     </label>
-                    <select id="faculty_id" name="faculty_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <select id="faculty_id" name="faculty_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                         <option value="">All faculties</option>
                         @foreach ($faculties as $faculty)
                             <option value="{{ $faculty->id }}" @selected((int) $filters['faculty_id'] === $faculty->id)>{{ $faculty->name }}</option>
@@ -98,7 +98,7 @@
                         <i data-lucide="award" style="width:14px;height:14px;"></i>
                         Type
                     </label>
-                    <select id="qualification_type_id" name="qualification_type_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <select id="qualification_type_id" name="qualification_type_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                         <option value="">All types</option>
                         @foreach ($qualificationTypes as $type)
                             <option value="{{ $type->id }}" @selected((int) $filters['qualification_type_id'] === $type->id)>{{ $type->name }}</option>
@@ -111,7 +111,7 @@
                         <i data-lucide="list" style="width:14px;height:14px;"></i>
                         Per page
                     </label>
-                    <select id="per_page" name="per_page" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <select id="per_page" name="per_page" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                         @foreach ($perPageOptions as $option)
                             <option value="{{ $option }}" @selected($perPage === $option)>{{ $option }}</option>
                         @endforeach
@@ -119,7 +119,7 @@
                 </div>
 
                 <div class="flex items-end gap-2">
-                    <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]">
+                    <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                         Filter <i data-lucide="sliders-horizontal" style="width:18px;height:18px;"></i>
                     </button>
                 </div>
@@ -127,7 +127,7 @@
 
             <div class="mt-4 flex flex-col gap-2 border-t border-neutral-100 pt-4 text-sm font-semibold text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
                 <span>Showing {{ $qualifications->firstItem() ?? 0 }}-{{ $qualifications->lastItem() ?? 0 }} of {{ $qualifications->total() }} programmes</span>
-                <a href="{{ route('universities.programmes', $university->id) }}" class="text-[#E8425B] hover:underline">Reset filters</a>
+                <a href="{{ route('universities.programmes', $university->id) }}" class="text-[#01225E] hover:underline">Reset filters</a>
             </div>
         </form>
 
@@ -187,7 +187,7 @@
                     </div>
                     <h2 class="mt-4 text-xl font-bold">No programmes found</h2>
                     <p class="mt-2 text-neutral-500">Try a different search term or clear the filters.</p>
-                    <a href="{{ route('universities.programmes', $university->id) }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white">
+                    <a href="{{ route('universities.programmes', $university->id) }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
                         Clear filters <i data-lucide="rotate-ccw" style="width:18px;height:18px;"></i>
                     </a>
                 </section>

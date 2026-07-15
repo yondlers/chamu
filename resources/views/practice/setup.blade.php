@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Build Quiz · Matric Hub')
+@section('title', 'Build Quiz · Chamu')
 
 @section('content')
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-8">
@@ -10,7 +10,7 @@
         </a>
 
         <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-6 soft-card">
-            <p class="text-sm font-semibold text-[#E8425B]">Quiz setup</p>
+            <p class="text-sm font-semibold text-[#01225E]">Quiz setup</p>
             <h1 class="mt-1 text-3xl font-bold">{{ $subject->name }}</h1>
             <p class="mt-2 text-neutral-500">Choose the content pool, amount of questions, and optional duration before starting.</p>
         </section>
@@ -101,7 +101,7 @@
                     <label class="mb-2 block text-xs font-bold uppercase text-neutral-500">Duration minutes</label>
                     <input name="duration_minutes" type="number" min="1" max="300" value="30" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold">
                 </div>
-                <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]" @disabled($selectedAvailableCount < 1)>
+                <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]" @disabled($selectedAvailableCount < 1)>
                     Start quiz <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
                 </button>
             </div>

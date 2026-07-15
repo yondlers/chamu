@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Bursaries · Matric Hub')
+@section('title', 'Bursaries · Chamu')
 
 @section('content')
     <main class="mx-auto max-w-7xl px-5 py-8 lg:px-8">
         <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">Funding match</p>
+                <p class="text-sm font-semibold text-[#01225E]">Funding match</p>
                 <h1 class="mt-1 text-3xl font-bold">Bursaries</h1>
                 <p class="mt-2 max-w-3xl text-neutral-500">Browse funding opportunities and compare listed academic requirements against your marks when available.</p>
             </div>
@@ -15,7 +15,7 @@
                     Marks <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
                 </a>
             @else
-                <a href="{{ route('login') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2 font-semibold text-white hover:bg-[#d73550]">
+                <a href="{{ route('login') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 font-semibold text-white hover:bg-[#001A48]">
                     Match with marks <i data-lucide="log-in" style="width:16px;height:16px;"></i>
                 </a>
             @endauth
@@ -28,7 +28,7 @@
                         <i data-lucide="search" style="width:14px;height:14px;"></i>
                         Search
                     </label>
-                    <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Bursary, company, field" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Bursary, company, field" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                 </div>
 
                 <div>
@@ -36,7 +36,7 @@
                         <i data-lucide="tags" style="width:14px;height:14px;"></i>
                         Category
                     </label>
-                    <select id="category" name="category" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <select id="category" name="category" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                         <option value="">All categories</option>
                         @foreach ($categories as $category)
                             <option value="{{ $category }}" @selected($filters['category'] === $category)>{{ $category }}</option>
@@ -49,7 +49,7 @@
                         <i data-lucide="building-2" style="width:14px;height:14px;"></i>
                         Company
                     </label>
-                    <select id="company_id" name="company_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#E8425B]">
+                    <select id="company_id" name="company_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
                         <option value="">All companies</option>
                         @foreach ($companies as $company)
                             <option value="{{ $company->id }}" @selected((int) $filters['company_id'] === $company->id)>{{ $company->name }}</option>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="flex items-end">
-                    <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]">
+                    <button class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                         Filter <i data-lucide="sliders-horizontal" style="width:18px;height:18px;"></i>
                     </button>
                 </div>
@@ -66,7 +66,7 @@
 
             <div class="mt-4 flex flex-col gap-2 border-t border-neutral-100 pt-4 text-sm font-semibold text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
                 <span>{{ $bursaries->total() }} bursaries found</span>
-                <a href="{{ route('bursaries.index') }}" class="text-[#E8425B] hover:underline">Reset filters</a>
+                <a href="{{ route('bursaries.index') }}" class="text-[#01225E] hover:underline">Reset filters</a>
             </div>
         </form>
 

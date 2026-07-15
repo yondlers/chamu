@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Matric Hub')</title>
+    <title>@yield('title', 'Chamu')</title>
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,11 +23,11 @@
         .line-clamp-2 {
             display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
         }
-        .filter-select:focus-visible { outline: 2px solid #E8425B; outline-offset: 4px; border-radius: 6px; }
+        .filter-select:focus-visible { outline: 2px solid #01225E; outline-offset: 4px; border-radius: 6px; }
         .fade-in { animation: fadeUp .6s ease both; }
         @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
         #toast { transition: opacity .3s ease, transform .3s ease; }
-        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #E8425B; outline-offset: 3px; border-radius: 8px; }
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #01225E; outline-offset: 3px; border-radius: 8px; }
     </style>
     @stack('styles')
 </head>
@@ -73,10 +73,8 @@
     <header class="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/95 backdrop-blur">
         <nav class="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-5 lg:px-8">
             <a href="{{ url('/') }}" class="flex shrink-0 items-center gap-2">
-                <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#E8425B] text-white">
-                    <i data-lucide="graduation-cap" style="width:20px;height:20px;"></i>
-                </span>
-                <span class="font-bold text-lg">Matric Hub</span>
+                <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-9 w-9 rounded-xl object-contain">
+                <span class="font-bold text-lg">Chamu</span>
             </a>
 
             <div class="no-scrollbar ml-auto flex min-w-0 items-center gap-2 overflow-x-auto whitespace-nowrap pb-1">
@@ -130,7 +128,7 @@
                         <i data-lucide="log-in" style="width:16px;height:16px;"></i>
                         Log in
                     </a>
-                    <a href="{{ route('register') }}" class="{{ $navLinkBase }} {{ request()->routeIs('register') ? $navLinkActive : 'border-[#E8425B] bg-[#E8425B] text-white hover:bg-[#d73550]' }}" @if (request()->routeIs('register')) aria-current="page" @endif>
+                    <a href="{{ route('register') }}" class="{{ $navLinkBase }} {{ request()->routeIs('register') ? $navLinkActive : 'border-[#01225E] bg-[#01225E] text-white hover:bg-[#001A48]' }}" @if (request()->routeIs('register')) aria-current="page" @endif>
                         Sign up
                     </a>
                 @endauth

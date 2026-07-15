@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Practice Results · Matric Hub')
+@section('title', 'Practice Results · Chamu')
 
 @section('content')
     <main class="max-w-4xl mx-auto px-5 lg:px-8 py-10">
         <section class="rounded-2xl border border-neutral-200 bg-white p-8 soft-card">
-            <p class="text-sm font-semibold text-[#E8425B]">Quiz complete</p>
+            <p class="text-sm font-semibold text-[#01225E]">Quiz complete</p>
             <h1 class="mt-2 text-3xl font-bold">{{ $quiz->title }}</h1>
             <p class="mt-3 text-neutral-600">Score: <span class="font-bold text-neutral-950">{{ $quiz->score }}/{{ $quiz->total_marks }}</span> · {{ $quiz->percentage }}%</p>
             <p class="mt-2 text-sm text-neutral-500">This attempt is saved. You can review it again from Progress.</p>
@@ -27,7 +27,7 @@
         </section>
 
         <div class="mt-8 flex flex-wrap gap-3">
-            <a href="{{ route('progress.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white">
+            <a href="{{ route('progress.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
                 Back to Progress <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
             </a>
             <a href="{{ route('dashboard.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">

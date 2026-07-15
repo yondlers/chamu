@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'APS · Matric Hub')
+@section('title', 'APS · Chamu')
 
 @section('content')
     <main class="mx-auto max-w-7xl px-5 py-8 lg:px-8">
@@ -31,10 +31,10 @@
 
                 <form method="GET" action="{{ route('aps.index') }}" class="rounded-2xl border border-white/10 bg-white/10 p-4">
                     <label for="aps_score" class="mb-2 block text-xs font-bold uppercase text-white/60">Your APS score</label>
-                    <input id="aps_score" name="aps_score" type="number" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="e.g. 32" class="w-full rounded-xl border border-white/20 bg-white px-4 py-3 text-2xl font-bold text-neutral-950 outline-none focus:border-[#E8425B]">
+                    <input id="aps_score" name="aps_score" type="number" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="e.g. 32" class="w-full rounded-xl border border-white/20 bg-white px-4 py-3 text-2xl font-bold text-neutral-950 outline-none focus:border-[#01225E]">
                     <div class="mt-3 grid gap-3 sm:grid-cols-2">
-                        <input name="search" type="search" value="{{ $search }}" placeholder="Course keyword" class="rounded-xl border border-white/20 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#E8425B]">
-                        <select name="university_id" class="rounded-xl border border-white/20 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#E8425B]">
+                        <input name="search" type="search" value="{{ $search }}" placeholder="Course keyword" class="rounded-xl border border-white/20 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#01225E]">
+                        <select name="university_id" class="rounded-xl border border-white/20 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#01225E]">
                             <option value="">All universities</option>
                             @foreach ($universities as $university)
                                 @php
@@ -46,7 +46,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <button class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white hover:bg-[#d73550]">
+                    <button class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                         Find courses <i data-lucide="search" style="width:18px;height:18px;"></i>
                     </button>
                 </form>
@@ -64,14 +64,14 @@
                 <article class="rounded-2xl border border-dashed border-neutral-300 bg-white p-8 text-center">
                     <h2 class="text-xl font-bold">Enter an APS score</h2>
                     <p class="mt-2 text-neutral-500">You can calculate one first, or type the score you already know.</p>
-                    <a href="{{ route('aps-calculator.index') }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-5 py-3 font-semibold text-white">
+                    <a href="{{ route('aps-calculator.index') }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
                         Open calculator <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
                     </a>
                 </article>
             @else
                 <div class="flex flex-col gap-2 rounded-2xl border border-neutral-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
                     <p class="text-sm font-semibold text-neutral-600">{{ $courses->count() }} courses found for APS {{ $apsScore }}</p>
-                    <a href="{{ route('aps.index') }}" class="text-sm font-semibold text-[#E8425B] hover:underline">Reset</a>
+                    <a href="{{ route('aps.index') }}" class="text-sm font-semibold text-[#01225E] hover:underline">Reset</a>
                 </div>
 
                 @forelse ($courses as $course)

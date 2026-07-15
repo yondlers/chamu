@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Progress · Matric Hub')
+@section('title', 'Progress · Chamu')
 
 @section('content')
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-10">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
             <div>
-                <p class="text-sm font-semibold text-[#E8425B]">Your learning history</p>
+                <p class="text-sm font-semibold text-[#01225E]">Your learning history</p>
                 <h1 class="text-3xl font-bold mt-1">Progress</h1>
                 <p class="mt-2 text-neutral-500">Review completed quizzes and continue unfinished attempts.</p>
             </div>
@@ -42,7 +42,7 @@
                         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                             <div>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="rounded-full px-3 py-1 text-xs font-bold {{ $attempt->completed_at ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-[#E8425B]' }}">
+                                    <span class="rounded-full px-3 py-1 text-xs font-bold {{ $attempt->completed_at ? 'bg-emerald-50 text-emerald-700' : 'bg-blue-50 text-[#01225E]' }}">
                                         {{ $attempt->completed_at ? 'Completed' : 'In progress' }}
                                     </span>
                                     <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-600">{{ $attempt->quiz_type === 'random' ? 'Randomized' : 'Source' }}</span>
@@ -63,11 +63,11 @@
                                         <p class="font-bold">{{ $attempt->score }}/{{ $attempt->total_marks }}</p>
                                         <p class="text-sm text-neutral-500">{{ $attempt->percentage }}%</p>
                                     </div>
-                                    <a href="{{ route('practice.results', $attempt->id) }}" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2.5 text-sm font-semibold text-white">
+                                    <a href="{{ route('practice.results', $attempt->id) }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
                                         Review <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                     </a>
                                 @else
-                                    <a href="{{ route('practice.show', $attempt->id) }}" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2.5 text-sm font-semibold text-white">
+                                    <a href="{{ route('practice.show', $attempt->id) }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
                                         Continue <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                     </a>
                                 @endif
@@ -78,7 +78,7 @@
                     <div class="rounded-2xl bg-neutral-50 p-6 text-center">
                         <h3 class="font-bold">No quiz attempts yet</h3>
                         <p class="mt-2 text-sm text-neutral-500">Start a practice quiz and it will appear here.</p>
-                        <a href="{{ url('/') }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2.5 text-sm font-semibold text-white">
+                        <a href="{{ url('/') }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
                             Start learning <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                         </a>
                     </div>

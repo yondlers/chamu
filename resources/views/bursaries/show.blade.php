@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $bursary->title . ' · Matric Hub')
+@section('title', $bursary->title . ' · Chamu')
 
 @section('content')
     <main class="mx-auto max-w-6xl px-5 py-8 lg:px-8">
@@ -12,14 +12,14 @@
         <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-6 soft-card">
             <div class="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
                 <div class="min-w-0">
-                    <p class="text-sm font-semibold text-[#E8425B]">{{ $bursary->company_name ?? 'Bursary provider' }}</p>
+                    <p class="text-sm font-semibold text-[#01225E]">{{ $bursary->company_name ?? 'Bursary provider' }}</p>
                     <h1 class="mt-2 text-3xl font-bold">{{ $bursary->title }}</h1>
                     <p class="mt-2 text-neutral-500">{{ $bursary->category ?? 'Bursary' }}</p>
                     @if ($bursary->summary)
                         <p class="mt-4 rounded-xl bg-neutral-50 px-4 py-3 text-sm text-neutral-600">{{ $bursary->summary }}</p>
                     @endif
                     <div class="mt-4 flex flex-wrap gap-2">
-                        <a href="{{ $bursary->apply_url ?: $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-[#E8425B] px-4 py-2 text-sm font-semibold text-white hover:bg-[#d73550]">
+                        <a href="{{ $bursary->apply_url ?: $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 text-sm font-semibold text-white hover:bg-[#001A48]">
                             Apply link <i data-lucide="external-link" style="width:16px;height:16px;"></i>
                         </a>
                         <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
@@ -102,7 +102,7 @@
                 @if (count($bursary->eligibility_requirements) > 0)
                     <ul class="mt-4 grid gap-2 text-sm text-neutral-600">
                         @foreach ($bursary->eligibility_requirements as $requirement)
-                            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#E8425B]"></span>{{ $requirement }}</li>
+                            <li class="flex gap-2"><span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#01225E]"></span>{{ $requirement }}</li>
                         @endforeach
                     </ul>
                 @else

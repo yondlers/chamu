@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $course->name . ' · Matric Hub')
+@section('title', $course->name . ' · Chamu')
 
 @section('content')
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-8">
@@ -25,7 +25,7 @@
                             <span @class(['text-lg font-black', 'hidden' => $course->university_logo])>{{ $course->university_abbreviation ?? 'UNI' }}</span>
                         </a>
                         <div class="min-w-0">
-                            <a href="{{ route('universities.programmes', $course->university_id) }}" class="text-sm font-semibold text-[#E8425B] hover:underline">{{ $course->university_abbreviation ?? $course->university_name }}</a>
+                            <a href="{{ route('universities.programmes', $course->university_id) }}" class="text-sm font-semibold text-[#01225E] hover:underline">{{ $course->university_abbreviation ?? $course->university_name }}</a>
                             <h1 class="mt-2 text-3xl font-bold">{{ $course->name }}</h1>
                             <p class="mt-2 text-neutral-500">{{ $course->faculty_name }} · {{ $course->qualification_type_name }}</p>
                         </div>
