@@ -3,38 +3,38 @@
 @section('title', 'APS · Chamu')
 
 @section('content')
-    <main class="mx-auto max-w-7xl px-5 py-8 lg:px-8">
-        <section class="rounded-[28px] border border-neutral-200 bg-neutral-950 p-6 text-white soft-card lg:p-8">
-            <div class="grid gap-6 lg:grid-cols-[1fr_380px] lg:items-center">
-                <div>
-                    <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase text-white/70">
+    <main class="mx-auto max-w-6xl px-4 py-5 sm:px-5 sm:py-8 lg:px-8">
+        <section class="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-950 p-4 text-white soft-card sm:rounded-[28px] sm:p-6 lg:p-8">
+            <div class="grid min-w-0 gap-5 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-center">
+                <div class="min-w-0">
+                    <p class="inline-flex max-w-full items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[11px] font-bold uppercase text-white/70 sm:text-xs">
                         <i data-lucide="target" style="width:14px;height:14px;"></i>
-                        APS and course match
+                        <span class="truncate">APS and course match</span>
                     </p>
-                    <h1 class="mt-4 max-w-3xl text-4xl font-bold leading-tight">Find courses from an APS score</h1>
-                    <p class="mt-3 max-w-3xl text-white/70">Enter an APS score to browse possible programmes. Sign in when you want the full subject-aware course match using your saved marks.</p>
-                    <div class="mt-5 flex flex-wrap gap-2">
-                        <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-neutral-950 hover:bg-neutral-100">
+                    <h1 class="mt-4 max-w-3xl text-3xl font-bold leading-tight tracking-normal sm:text-4xl">Find courses from an APS score</h1>
+                    <p class="mt-3 max-w-3xl text-sm leading-6 text-white/75 sm:text-base">Enter your APS score to browse possible programmes. Sign in later for subject-aware matching with saved marks.</p>
+                    <div class="mt-5 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
+                        <a href="{{ route('aps-calculator.index') }}" class="inline-flex min-w-0 items-center justify-center gap-2 rounded-xl bg-white px-3 py-2.5 text-sm font-bold text-neutral-950 hover:bg-neutral-100 sm:px-4">
                             Calculate APS <i data-lucide="calculator" style="width:15px;height:15px;"></i>
                         </a>
                         @auth
-                            <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 text-sm font-bold text-white hover:bg-white/10">
+                            <a href="{{ route('course-match.index') }}" class="inline-flex min-w-0 items-center justify-center gap-2 rounded-xl border border-white/20 px-3 py-2.5 text-sm font-bold text-white hover:bg-white/10 sm:px-4">
                                 Full match <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
                             </a>
                         @else
-                            <a href="{{ route('register') }}" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 text-sm font-bold text-white hover:bg-white/10">
+                            <a href="{{ route('register') }}" class="inline-flex min-w-0 items-center justify-center gap-2 rounded-xl border border-white/20 px-3 py-2.5 text-sm font-bold text-white hover:bg-white/10 sm:px-4">
                                 Save my marks <i data-lucide="user-plus" style="width:15px;height:15px;"></i>
                             </a>
                         @endauth
                     </div>
                 </div>
 
-                <form method="GET" action="{{ route('aps.index') }}" class="rounded-2xl border border-white/10 bg-white/10 p-4">
-                    <label for="aps_score" class="mb-2 block text-xs font-bold uppercase text-white/60">Your APS score</label>
-                    <input id="aps_score" name="aps_score" type="number" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="e.g. 32" class="w-full rounded-xl border border-white/20 bg-white px-4 py-3 text-2xl font-bold text-neutral-950 outline-none focus:border-[#01225E]">
-                    <div class="mt-3 grid gap-3 sm:grid-cols-2">
-                        <input name="search" type="search" value="{{ $search }}" placeholder="Course keyword" class="rounded-xl border border-white/20 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#01225E]">
-                        <select name="university_id" class="rounded-xl border border-white/20 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#01225E]">
+                <form method="GET" action="{{ route('aps.index') }}" class="min-w-0 rounded-2xl border border-white/10 bg-white p-3 text-neutral-950 shadow-sm sm:p-4">
+                    <label for="aps_score" class="mb-2 block text-xs font-bold uppercase text-neutral-500">Your APS score</label>
+                    <input id="aps_score" name="aps_score" type="number" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="e.g. 32" class="w-full min-w-0 rounded-xl border border-neutral-200 bg-white px-4 py-3 text-xl font-bold text-neutral-950 outline-none focus:border-[#01225E] sm:text-2xl">
+                    <div class="mt-3 grid min-w-0 gap-3">
+                        <input name="search" type="search" value="{{ $search }}" placeholder="Course keyword" class="w-full min-w-0 rounded-xl border border-neutral-200 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#01225E]">
+                        <select name="university_id" class="w-full min-w-0 rounded-xl border border-neutral-200 bg-white px-4 py-3 font-semibold text-neutral-950 outline-none focus:border-[#01225E]">
                             <option value="">All universities</option>
                             @foreach ($universities as $university)
                                 @php
@@ -46,7 +46,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <button class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
+                    <button class="mt-3 inline-flex w-full min-w-0 items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
                         Find courses <i data-lucide="search" style="width:18px;height:18px;"></i>
                     </button>
                 </form>
@@ -54,14 +54,14 @@
         </section>
 
         @guest
-            <section class="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-semibold text-amber-800">
+            <section class="mt-4 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-semibold leading-6 text-amber-800 sm:mt-6">
                 APS alone is a starting point. Create an account to match your actual subjects, marks, subject requirements, and progress.
             </section>
         @endguest
 
-        <section class="mt-6 grid gap-4">
+        <section class="mt-4 grid gap-4 sm:mt-6">
             @if ($apsScore === null)
-                <article class="rounded-2xl border border-dashed border-neutral-300 bg-white p-8 text-center">
+                <article class="rounded-2xl border border-dashed border-neutral-300 bg-white p-6 text-center sm:p-8">
                     <h2 class="text-xl font-bold">Enter an APS score</h2>
                     <p class="mt-2 text-neutral-500">You can calculate one first, or type the score you already know.</p>
                     <a href="{{ route('aps-calculator.index') }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
