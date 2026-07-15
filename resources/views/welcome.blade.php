@@ -52,8 +52,8 @@
                     @endguest
                     <div class="flex-1 text-left px-5 py-3 rounded-2xl hover:bg-neutral-50">
                         <label for="f-subject" class="flex items-center gap-1.5 text-xs font-bold mb-1"><i data-lucide="book-open" style="width:14px;height:14px;"></i>Subject</label>
-                        <input id="f-subject-search" list="subject-options" class="filter-select" placeholder="Search subject" autocomplete="off" value="{{ optional($displaySubjects->first())->name }}">
-                        <input id="f-subject" name="subject_id" type="hidden" value="{{ optional($displaySubjects->first())->id }}">
+                        <input id="f-subject-search" list="subject-options" class="filter-select" placeholder="Search subject" autocomplete="off">
+                        <input id="f-subject" name="subject_id" type="hidden">
                         <datalist id="subject-options">
                             @foreach ($displaySubjects as $subject)
                                 <option value="{{ $subject->name }}"></option>
@@ -336,9 +336,8 @@
                 subjectOptions.appendChild(option);
             });
 
-            const first = rows[0];
-            subjectSearch.value = first ? first.name : '';
-            subjectSelect.value = first ? first.id : '';
+            subjectSearch.value = '';
+            subjectSelect.value = '';
         };
 
         const selectedSubjectRows = () => {
