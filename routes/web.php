@@ -1009,6 +1009,7 @@ Route::middleware('guest')->group(function () {
             'province_id' => $data['province_id'] ?? null,
             'curriculum_id' => $data['curriculum_id'],
             'grade_id' => $data['grade_id'] ?? null,
+            'name' => trim($data['first_name'].' '.($data['last_name'] ?? '')),
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'] ?? null,
             'username' => $data['username'],
@@ -1020,7 +1021,7 @@ Route::middleware('guest')->group(function () {
         Auth::login($user);
         $request->session()->regenerate();
 
-        return redirect('/');
+        return redirect()->intended(route('dashboard.index'));
     })->name('register.store');
 });
 

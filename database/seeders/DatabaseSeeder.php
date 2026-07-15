@@ -144,6 +144,7 @@ class DatabaseSeeder extends Seeder
                 'country_id' => $countryId,
                 'curriculum_id' => $curriculumId,
                 'grade_id' => $gradeId,
+                'name' => 'Test User',
                 'first_name' => 'Test',
                 'last_name' => 'User',
                 'username' => 'testuser',

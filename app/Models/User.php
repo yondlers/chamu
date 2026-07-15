@@ -28,6 +28,7 @@ class User extends Authenticatable
         'grade_id',
         'country_id',
         'province_id',
+        'name',
         'first_name',
         'last_name',
         'username',

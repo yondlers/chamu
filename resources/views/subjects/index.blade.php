@@ -52,7 +52,29 @@
             </section>
 
             <section class="rounded-2xl border border-neutral-200 bg-white p-3 soft-card">
-                <div class="grid gap-2">
+                <div class="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                    <label for="subject-search" class="relative block sm:max-w-sm sm:flex-1">
+                        <i data-lucide="search" class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400" style="width:18px;height:18px;"></i>
+                        <input
+                            id="subject-search"
+                            type="search"
+                            autocomplete="off"
+                            placeholder="Search subjects"
+                            class="w-full rounded-xl border border-neutral-300 bg-white py-3 pl-10 pr-10 text-sm font-semibold outline-none transition focus:border-[#01225E] focus:ring-2 focus:ring-[#01225E]/15"
+                        >
+                        <button
+                            id="subject-search-clear"
+                            type="button"
+                            class="hidden absolute right-2 top-1/2 -translate-y-1/2 rounded-lg p-2 text-neutral-400 hover:bg-neutral-100 hover:text-neutral-900"
+                            aria-label="Clear subject search"
+                        >
+                            <i data-lucide="x" style="width:16px;height:16px;"></i>
+                        </button>
+                    </label>
+                    <p id="subject-search-count" class="text-sm font-semibold text-neutral-500">{{ $subjects->count() }} subjects</p>
+                </div>
+
+                <div id="subject-list" class="grid gap-2">
                     @forelse ($subjects as $subject)
                         <label class="subject-row flex cursor-pointer items-center justify-between gap-4 rounded-xl border border-transparent px-4 py-3 transition hover:border-neutral-200 hover:bg-neutral-50">
                             <span class="min-w-0">
@@ -73,6 +95,9 @@
                         <div class="rounded-xl bg-neutral-50 px-4 py-6 text-sm text-neutral-500">No subjects found for your curriculum and grade. Update your profile first.</div>
                     @endforelse
                 </div>
+                @if ($subjects->isNotEmpty())
+                    <p id="subject-search-empty" class="hidden rounded-xl bg-neutral-50 px-4 py-6 text-sm font-semibold text-neutral-500">No subjects match your search.</p>
+                @endif
             </section>
 
             <div class="flex justify-end gap-3">
@@ -96,6 +121,16 @@
             const countText = document.getElementById('subjects-count');
             const badge = document.getElementById('subjects-minimum-badge');
             const saveButton = document.getElementById('save-subjects-button');
+            const searchInput = document.getElementById('subject-search');
+            const searchClear = document.getElementById('subject-search-clear');
+            const searchCount = document.getElementById('subject-search-count');
+            const searchEmpty = document.getElementById('subject-search-empty');
+
+            const subjectRows = checkboxes.map((checkbox) => ({
+                checkbox,
+                row: checkbox.closest('.subject-row'),
+                text: `${checkbox.dataset.name ?? ''} ${checkbox.dataset.code ?? ''}`.toLowerCase(),
+            }));
 
             const renderSelectedSubjects = () => {
                 const selected = checkboxes.filter((checkbox) => checkbox.checked);
@@ -146,7 +181,38 @@
                 });
             };
 
+            const renderSubjectSearch = () => {
+                const query = (searchInput?.value ?? '').trim().toLowerCase();
+                let visibleCount = 0;
+
+                subjectRows.forEach(({ row, text }) => {
+                    const visible = query === '' || text.includes(query);
+                    row?.classList.toggle('hidden', !visible);
+                    visibleCount += visible ? 1 : 0;
+                });
+
+                if (searchClear) {
+                    searchClear.classList.toggle('hidden', query === '');
+                }
+
+                if (searchCount) {
+                    const total = subjectRows.length;
+                    searchCount.textContent = query === ''
+                        ? `${total} ${total === 1 ? 'subject' : 'subjects'}`
+                        : `${visibleCount} of ${total} ${total === 1 ? 'subject' : 'subjects'}`;
+                }
+
+                searchEmpty?.classList.toggle('hidden', visibleCount > 0 || query === '');
+            };
+
             checkboxes.forEach((checkbox) => checkbox.addEventListener('change', renderSelectedSubjects));
+            searchInput?.addEventListener('input', renderSubjectSearch);
+            searchClear?.addEventListener('click', () => {
+                searchInput.value = '';
+                searchInput.focus();
+                renderSubjectSearch();
+            });
+
             form.addEventListener('submit', (event) => {
                 const selectedCount = checkboxes.filter((checkbox) => checkbox.checked).length;
                 if (selectedCount < minimumSubjects) {
@@ -156,6 +222,7 @@
             });
 
             renderSelectedSubjects();
+            renderSubjectSearch();
         })();
     </script>
 @endpush
