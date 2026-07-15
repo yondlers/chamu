@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Database\Seeders\LifeScience\Papers\LifeSciencePaperSeeder;
 use Database\Seeders\LifeScience\Questions\LifeScienceQuestionSeeder;
 use Database\Seeders\LifeScience\Topics\LifeScienceTopicSeeder;
@@ -34,6 +33,7 @@ use Database\Seeders\Universities\WSU\RequirementSeeder as WsuRequirementSeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -46,24 +46,34 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserTypeSeeder::class);
 
-        // User::factory(10)->create();
+        DB::table('countries')->updateOrInsert(
+            ['name' => 'South Africa'],
+            [
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        );
 
-        $countryId = DB::table('countries')->insertGetId([
-            'name' => 'South Africa',
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
+        $countryId = DB::table('countries')
+            ->where('name', 'South Africa')
+            ->value('id');
 
         $this->call(ProvinceSeeder::class);
 
-        $curriculumId = DB::table('curriculums')->insertGetId([
-            'country_id' => $countryId,
-            'name' => 'NSC (National Senior Certificate)',
-            'abbreviation' => 'CAPS',
-            'is_live' => true,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
+        DB::table('curriculums')->updateOrInsert(
+            ['abbreviation' => 'CAPS'],
+            [
+                'country_id' => $countryId,
+                'name' => 'NSC (National Senior Certificate)',
+                'is_live' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        );
+
+        $curriculumId = DB::table('curriculums')
+            ->where('abbreviation', 'CAPS')
+            ->value('id');
 
         DB::table('curriculums')->updateOrInsert(
             ['abbreviation' => 'IEB'],
@@ -127,15 +137,21 @@ class DatabaseSeeder extends Seeder
             ->where('name', 'Grade 10')
             ->value('id');
 
-        User::factory()->create([
-            'user_type_id' => $pupilUserTypeId,
-            'country_id' => $countryId,
-            'curriculum_id' => $curriculumId,
-            'grade_id' => $gradeId,
-            'first_name' => 'Test',
-            'last_name' => 'User',
-            'username' => 'testuser',
-            'email' => 'test@example.com',
-        ]);
+        DB::table('users')->updateOrInsert(
+            ['email' => 'test@example.com'],
+            [
+                'user_type_id' => $pupilUserTypeId,
+                'country_id' => $countryId,
+                'curriculum_id' => $curriculumId,
+                'grade_id' => $gradeId,
+                'first_name' => 'Test',
+                'last_name' => 'User',
+                'username' => 'testuser',
+                'password' => Hash::make('password'),
+                'email_verified_at' => now(),
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        );
     }
 }
