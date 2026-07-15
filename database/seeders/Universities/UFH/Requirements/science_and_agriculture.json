@@ -1,0 +1,1070 @@
+{
+    "faculty": "Science and Agriculture",
+    "university": "University of Fort Hare",
+    "source": "UFH Study at the University of Fort Hare 2024",
+    "qualifications": [
+        {
+            "name": "Bachelor of Science",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "ITS programme code: 40000.",
+                "SAQA ID: 19236.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 40400.",
+                "SAQA ID: 19236.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Soil Science",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Soil Science.",
+                "ITS programme code: 71522.",
+                "SAQA ID: 100997.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Soil Science (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Soil Science.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 71422.",
+                "SAQA ID: 100997.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Horticulture",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Horticulture.",
+                "ITS programme code: 71523.",
+                "SAQA ID: 100998.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Horticulture (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Horticulture.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 71423.",
+                "SAQA ID: 100998.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Crops",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Crops.",
+                "ITS programme code: 71524.",
+                "SAQA ID: 101000.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Crops (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Crops.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 71424.",
+                "SAQA ID: 101000.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Animal Production",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Animal Production.",
+                "ITS programme code: 71525.",
+                "SAQA ID: 100996.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Animal Production (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Animal Production.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 71425.",
+                "SAQA ID: 100996.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Pasture Science",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Pasture Science.",
+                "ITS programme code: 71526.",
+                "SAQA ID: 100999.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Pasture Science (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Pasture Science.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 71426.",
+                "SAQA ID: 100999.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Agricultural Economics",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Agricultural Economics.",
+                "ITS programme code: 71521.",
+                "SAQA ID: 100995.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture - Agricultural Economics (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Agricultural Economics.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 71421.",
+                "SAQA ID: 100995.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Agriculture",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "ITS programme code: 70001.",
+                "SAQA ID: 3393.",
+                "APS note: 29 with Mathematical Literacy.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Agricultural Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Agriculture (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 70401.",
+                "SAQA ID: 3393.",
+                "APS note: 28 with Mathematical Literacy.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Agricultural Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Agriculture - Agricultural Extension",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Agricultural Extension.",
+                "ITS programme code: 70002.",
+                "SAQA ID: 100994.",
+                "APS note: 29 with Mathematical Literacy.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Agricultural Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Agriculture - Agricultural Extension (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "ML means Mathematical Literacy.",
+                "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
+                "Final student selection is strictly on merit.",
+                "In the case of ties, applicants may be subjected to an aptitude test and the highest scorer gets selected.",
+                "Specialisation: Agricultural Extension.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 70402.",
+                "SAQA ID: 100994.",
+                "APS note: 28 with Mathematical Literacy.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Agricultural Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

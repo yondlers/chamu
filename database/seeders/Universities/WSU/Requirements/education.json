@@ -1,0 +1,579 @@
+{
+    "faculty": "Education",
+    "university": "Walter Sisulu University",
+    "source": "2026 Undergraduate Information Brochure & Admission Requirements",
+    "admission_score_type": "APS",
+    "qualifications": [
+        {
+            "name": "Bachelor of Education in Foundation Phase Teaching",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62006.",
+                "Original qualification type: Bachelor of Education."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "IsiXhosa Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: IsiXhosa Home Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "IsiXhosa First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: IsiXhosa Home Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Life Orientation major: Level 5, 60-69%."
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": null,
+                    "label": "Any other two additional subjects totalling 8 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Creative Arts History)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62007.",
+                "Specialisation: Creative Arts History.",
+                "Original qualification type: Bachelor of Education.",
+                "Applicants without Music at Matric will be subjected to a Music Aptitude Test."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Any African Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other African Language: Level 4, 50-59%."
+                },
+                {
+                    "subject": "History",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: History: Level 4, 50-59%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Music",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Dance Studies",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": null,
+                    "label": "Any other three additional subjects totalling 8 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Creative Arts English)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62019.",
+                "Specialisation: Creative Arts English.",
+                "Original qualification type: Bachelor of Education.",
+                "Applicants without Music at Matric will be subjected to a Music Aptitude Test."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Any African Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other African Language: Level 4, 50-59%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Music",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Dance Studies",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Music OR Dance Studies OR Dramatic Arts OR Visual Arts: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 4,
+                    "label": "Any other subject: Level 4, 50-59%"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": null,
+                    "label": "Any other three additional subjects totalling 7 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Consumer and Management Science)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62008.",
+                "Specialisation: Consumer and Management Science.",
+                "Original qualification type: Bachelor of Education."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Any African Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other African Language: Level 4, 50-59%."
+                },
+                {
+                    "type": "subject_group_count",
+                    "count": 1,
+                    "minimum_level": 4,
+                    "subjects": [
+                        "Consumer Studies",
+                        "Hospitality",
+                        "Tourism"
+                    ],
+                    "label": "One of the following at Level 4, 50-59%: Consumer Studies, Hospitality, Tourism"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": null,
+                    "label": "Any other two additional subjects totalling 10 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Economic and Management Science)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62009.",
+                "Specialisation: Economic and Management Science.",
+                "Original qualification type: Bachelor of Education."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Any African Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other African Language: Level 4, 50-59%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 2, 30-39% OR Mathematical Literacy: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Economics"
+                    ],
+                    "label": "Two of the following at Level 4, 50-59%: Accounting, Business Studies, Economics"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": null,
+                    "label": "Any other two additional subjects totalling 6 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Humanities)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62010.",
+                "Specialisation: Humanities.",
+                "Original qualification type: Bachelor of Education."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Any African Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other African Language: Level 4, 50-59%."
+                },
+                {
+                    "subject": "History",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: History: Level 4, 50-59%."
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Geography: Level 4, 50-59%."
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": null,
+                    "label": "Any other three additional subjects totalling 8 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Languages)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62011.",
+                "Specialisation: Languages.",
+                "Original qualification type: Bachelor of Education."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "IsiXhosa Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Xhosa Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "IsiXhosa First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Xhosa Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "label": "Any other two subjects: Level 4, 50-59%"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": null,
+                    "label": "Any other three additional subjects totalling 7 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Mathematics, Science and Technology)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62012.",
+                "Specialisation: Mathematics, Science and Technology.",
+                "Original qualification type: Bachelor of Education."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Any African Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other African Language: Level 4, 50-59%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count",
+                    "count": 1,
+                    "minimum_level": 4,
+                    "subjects": [
+                        "Life Sciences",
+                        "Physical Sciences"
+                    ],
+                    "label": "One of the following two subjects at Level 4, 50-59%: Life Sciences OR Physical Sciences"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": null,
+                    "label": "Any other two additional subjects totalling 8 points"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and FET Teaching (Technical and Vocational)",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "admission_score_required": 24,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W62018.",
+                "Specialisation: Technical and Vocational.",
+                "Original qualification type: Bachelor of Education."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Any African Language",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Any other African Language: Level 4, 50-59%."
+                },
+                {
+                    "type": "subject_group_count",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "subjects": [
+                        "Technical Mathematics",
+                        "Technical Sciences",
+                        "Engineering Graphics and Design",
+                        "Civil Technology",
+                        "Electrical Technology",
+                        "Mechanical Technology",
+                        "Mathematics",
+                        "Physical Sciences"
+                    ],
+                    "label": "Any two technical subjects at Level 4, 50-59% from: Technical Mathematics, Technical Sciences, Engineering Graphics and Design, Civil Technology, Electrical Technology, Mechanical Technology, Mathematics, Physical Sciences"
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": null,
+                    "label": "Any two additional subjects totalling 8 points"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+    "faculty": "Faculty of Humanities, Social Sciences and Education",
+    "university": "University of Venda",
+    "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+    "qualifications": [
+        {
+            "name": "Bachelor of Arts (Media Studies)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBAMS.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English or African Languages."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts (Development Studies)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBADS.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in History or Economics."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBBA.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Indigenous Knowledge Systems",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBIKS.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts in Language Practice",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBALP.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in African Language; Adequate achievement in English."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts in International Relations",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBAIR.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in History or Economics; Adequate achievement in English."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts, Youth in Development",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBAYD.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Theology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBBT.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; OR RPL according to University Policy."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Religious Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBARS.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; OR RPL according to University Policy."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Higher Certificate in Music",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1.0,
+            "aps_required": null,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSCHCM.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC; Adequate achievement in English."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Social Work",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): HSBBSW.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English level 4."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and Further Education and Training",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 36,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): SEBESP, SEBECP, SEBELP.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: English 50% plus two subjects at 50% from Mathematics, Physical Sciences and Life Sciences; OR English 50% plus two subjects at 50% from Accounting, Business Studies and Economics; OR English 50% plus two subjects at 50% from History, Geography, Sepedi, Tshivenda, Xitsonga, Siswati or IsiNdebele.",
+                "APS inferred as 36 from the similar UNIVEN Bachelor of Education in Foundation Phase Teaching requirement."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "minimum_level": 4,
+                    "choices": [
+                        {
+                            "label": "Mathematics, Physical Sciences and Life Sciences",
+                            "count": 2,
+                            "subjects": [
+                                "Mathematics",
+                                "Physical Sciences",
+                                "Life Sciences"
+                            ]
+                        },
+                        {
+                            "label": "Accounting, Business Studies and Economics",
+                            "count": 2,
+                            "subjects": [
+                                "Accounting",
+                                "Business Studies",
+                                "Economics"
+                            ]
+                        },
+                        {
+                            "label": "History, Geography, Sepedi, Tshivenda, Xitsonga, SiSwati or isiNdebele",
+                            "count": 2,
+                            "subjects": [
+                                "History",
+                                "Geography",
+                                "Sepedi",
+                                "Tshivenda",
+                                "Xitsonga",
+                                "SiSwati",
+                                "isiNdebele"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "admission_score_required": 36,
+            "minimum_pass_type": "bachelor"
+        },
+        {
+            "name": "Bachelor of Education in Foundation Phase Teaching",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 36,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): SEBEFP.",
+                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
+                "Additional UNIVEN requirements: National Senior Certificate with Bachelor endorsement; APS of 36 points; OR Old Senior Certificate with exemption and average symbol D Standard Grade or E Higher Grade in English for Grade 12."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

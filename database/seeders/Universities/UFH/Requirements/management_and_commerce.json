@@ -1,0 +1,292 @@
+{
+    "faculty": "Management and Commerce",
+    "university": "University of Fort Hare",
+    "source": "UFH Study at the University of Fort Hare 2024",
+    "qualifications": [
+        {
+            "name": "Bachelor of Administration in Public Administration",
+            "qualification_type": "Bachelor",
+            "aps_required": 26.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "The Selection Committee processes applications.",
+                "Applicants must meet the minimum admission requirements in the University Admissions Policy.",
+                "For all degrees, Life Orientation is capped at Level 4 for APS calculation.",
+                "Selection is based on merit.",
+                "ITS programme code: 62005.",
+                "SAQA ID: 94224.",
+                "APS note: 28 with Mathematics or Mathematical Literacy.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "The Selection Committee processes applications.",
+                "Applicants must meet the minimum admission requirements in the University Admissions Policy.",
+                "For all degrees, Life Orientation is capped at Level 4 for APS calculation.",
+                "Selection is based on merit.",
+                "ITS programme code: 60015.",
+                "SAQA ID: 115313.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "The Selection Committee processes applications.",
+                "Applicants must meet the minimum admission requirements in the University Admissions Policy.",
+                "For all degrees, Life Orientation is capped at Level 4 for APS calculation.",
+                "Selection is based on merit.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 61015.",
+                "SAQA ID: 115313.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Accounting",
+            "qualification_type": "Bachelor",
+            "aps_required": 32.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "The Selection Committee processes applications.",
+                "Applicants must meet the minimum admission requirements in the University Admissions Policy.",
+                "For all degrees, Life Orientation is capped at Level 4 for APS calculation.",
+                "Selection is based on merit.",
+                "ITS programme code: 60001.",
+                "SAQA ID: 17394.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59% and 2 subjects at Level 5, 60-69%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Accounting (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 30.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "The Selection Committee processes applications.",
+                "Applicants must meet the minimum admission requirements in the University Admissions Policy.",
+                "For all degrees, Life Orientation is capped at Level 4 for APS calculation.",
+                "Selection is based on merit.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 60006.",
+                "SAQA ID: 17394.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59% and 2 subjects at Level 5, 60-69%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Information Systems",
+            "qualification_type": "Bachelor",
+            "aps_required": 28.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "The Selection Committee processes applications.",
+                "Applicants must meet the minimum admission requirements in the University Admissions Policy.",
+                "For all degrees, Life Orientation is capped at Level 4 for APS calculation.",
+                "Selection is based on merit.",
+                "ITS programme code: 60011.",
+                "SAQA ID: 15147.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Information Systems (Extended Programme)",
+            "qualification_type": "Bachelor",
+            "aps_required": 27.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "The Selection Committee processes applications.",
+                "Applicants must meet the minimum admission requirements in the University Admissions Policy.",
+                "For all degrees, Life Orientation is capped at Level 4 for APS calculation.",
+                "Selection is based on merit.",
+                "Programme note: Extended Programme.",
+                "ITS programme code: 60101.",
+                "SAQA ID: 15147.",
+                "UFH APS excludes Life Orientation from the count.",
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

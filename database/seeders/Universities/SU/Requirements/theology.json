@@ -1,0 +1,46 @@
+{
+    "faculty": "Theology",
+    "university": "Stellenbosch University",
+    "source": "Admission Requirements for Undergraduate Programmes 2025",
+    "qualifications": [
+        {
+            "name": "BTh",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Full name: Bachelor of Theology.",
+                "Similar programmes: BDiv; Bachelor of Social Work.",
+                "Career opportunities: Youth worker; Counsellor; Community worker.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"applies_to\": [\"BTh\", \"BDiv\"], \"additional_duration\": \"1 year\", \"Aggregated_Average_Required\": \"55% to below 60%\", \"aggregate_note\": \"Excluding Life Orientation\", \"requirements\": [\"NSC aggregate of at least 55% but below 60%, excluding Life Orientation\", \"Interview with the Dean or a representative, if required\"], \"selection_notes\": [\"This is a selection programme\", \"Limited spaces are available\"]}.",
+                "Additional Stellenbosch requirements: NSC aggregate of at least 60%, excluding Life Orientation."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "BDiv",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 60.0,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Full name: Bachelor of Divinity.",
+                "Similar programmes: BTh.",
+                "Career opportunities: First step in ministerial training; Ministerial pathway in the Dutch Reformed Church; Ministerial pathway in the Uniting Reformed Church; Further denominational ministry training for Presbyterian, Anglican and Volkskerk ministry candidates.",
+                "Further study notes: To become a minister in the Dutch Reformed Church or Uniting Reformed Church, complete the BDiv and MDiv; Dutch Reformed Church candidates also need the Postgraduate Diploma in Theology: Christian Ministry.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Extended curriculum information: {\"available\": true, \"applies_to\": [\"BTh\", \"BDiv\"], \"additional_duration\": \"1 year\", \"Aggregated_Average_Required\": \"55% to below 60%\", \"aggregate_note\": \"Excluding Life Orientation\", \"requirements\": [\"NSC aggregate of at least 55% but below 60%, excluding Life Orientation\", \"Interview with the Dean or a representative, if required\"], \"selection_notes\": [\"This is a selection programme\", \"Limited spaces are available\"]}.",
+                "Additional Stellenbosch requirements: NSC aggregate of at least 60%, excluding Life Orientation."
+            ],
+            "subject_requirements": []
+        }
+    ]
+}

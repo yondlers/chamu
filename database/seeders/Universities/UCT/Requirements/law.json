@@ -1,0 +1,27 @@
+{
+    "faculty": "Law",
+    "university": "University of Cape Town",
+    "source": "2024 Guidelines for Admission for Holders of National Senior Certificate",
+    "admission_score_type": "FPS/WPS",
+    "qualifications": [
+        {
+            "name": "Undergraduate LLB",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 460.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBT requirements are placed in notes, not in curriculum subject requirements.",
+                "Curriculum: 4-year curriculum.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 460 FPS or above.",
+                "Notes: NBT scores of Proficient for Academic Literacy and Intermediate or above for Quantitative Literacy are required.; Probable admission for South African applicants: 495 WPS or above.; Guaranteed admission for South African applicants: 510 FPS or above.; International applicants with NSC: probable admission at 520 FPS or above.."
+            ]
+        }
+    ]
+}

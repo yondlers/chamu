@@ -1,0 +1,556 @@
+{
+    "faculty": "Applied Sciences",
+    "university": "Durban University of Technology",
+    "source": "DUT Student Course Guide 2026",
+    "qualifications": [
+        {
+            "name": "Bachelor of Applied Science in Biotechnology",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BBT.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Applied Science in Food Science and Technology",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BFS.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Applied Science in Industrial Chemistry",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BSY.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree pass; Two 20-credit subjects at Level 4; Not more than one language.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Bachelor of Applied Science in Textile Science",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-ATT.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Bachelor of Sport Science and Management",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-SSM.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Sport Science",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Shipping and Logistics",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-SL3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Any Business Management OR Commerce subject: Level 4; Two 20-credit subjects at Level 3; Not more than one language.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Diploma in Analytical Chemistry",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-CH3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Diploma in Clothing Management",
+            "qualification_type": "Diploma",
+            "aps_required": 18,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-CLM.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Not more than one language.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Diploma in Consumer Sciences in Food and Nutrition",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DFN.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "One of Accounting",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Business Studies",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Consumer Studies",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Diploma in Nautical Science",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-NS3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3; Not more than one language.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Diploma in Sustainable Horticulture and Landscaping",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-SHL.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 30
+        },
+        {
+            "name": "Higher Certificate Sport Management Science",
+            "qualification_type": "Higher Certificate",
+            "aps_required": 24,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-SMS.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Higher Certificate.",
+                "Additional DUT requirements: NSC Higher Certificate pass; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Sport Science",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate: Applied Sciences",
+            "qualification_type": "Higher Certificate",
+            "aps_required": 19,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-HAS.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Higher Certificate.",
+                "Additional DUT requirements: NSC Higher Certificate pass; English: Level 4 AND Mathematics: Level 3 AND Physical Sciences: Level 3; OR English: Level 4 AND Technical Mathematics: Level 3 AND Technical Sciences: Level 3.",
+                "Programme-specific APS guide: Applied Sciences minimum APS 30.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [],
+            "admission_score_required": 30
+        }
+    ]
+}

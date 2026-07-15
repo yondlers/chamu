@@ -1,0 +1,1104 @@
+{
+    "faculty": "Natural Sciences",
+    "university": "Walter Sisulu University",
+    "source": "2026 Undergraduate Information Brochure & Admission Requirements",
+    "admission_score_type": "APS",
+    "qualifications": [
+        {
+            "name": "Diploma in Analytical Chemistry",
+            "qualification_type": "Diploma",
+            "aps_required": 22,
+            "admission_score_required": 22,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64001.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Analytical Chemistry (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "admission_score_required": 20,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64002.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Consumer Sciences and Food Nutrition",
+            "qualification_type": "Diploma",
+            "aps_required": 22,
+            "admission_score_required": 22,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64004.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Consumer Sciences and Food Nutrition (Extended Stream)",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "admission_score_required": 20,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64039.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Physical Sciences: Level 3, 40-49%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Pest Management",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "admission_score_required": 21,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64005."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Mathematics: Level 3, 40-49%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Life Sciences: Level 3, 40-49%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Physical Sciences: Level 3, 30-39%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Applied Mathematics",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64007.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Applied Mathematics (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64008.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Physical Sciences: Level 3, 40-49%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Applied Statistical Science",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64009.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Applied Statistical Science (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64010.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Physical Sciences: Level 3, 40-49%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Biological Sciences",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64011.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Physical Sciences: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Life Sciences: Level 5, 60-69%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Biological Sciences (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64012.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 3,
+                    "label": "For Mathematics, Physical Sciences and Life Sciences: Level 3, 40-49% for two of the majors and Level 4, 50-59% for the third major"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Chemistry",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64013.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Physical Sciences: Level 5, 60-69%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Chemistry (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64014.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Computer Science",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64015.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Computer Science (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64016.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Physical Sciences: Level 3, 40-49%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Environmental Studies",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64017.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Life Sciences OR Agriculture OR Tourism: Level 4, 50-59%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Environmental Studies (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64018.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 3,
+                    "label": "For Mathematics, Physical Sciences and Life Sciences: Level 3, 40-49% for two of the majors and Level 4, 50-59% for the third major"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Mathematics",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64019.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Mathematics (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64020.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3,
+                            "note": "Original subject requirement: Physical Sciences: Level 3, 40-49%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Pest Management",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64021.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Life Sciences: Level 4, 50-59%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Pest Management (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64022.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 3,
+                    "label": "For Mathematics, Physical Sciences and Life Sciences: Level 3, 40-49% for two of the majors and Level 4, 50-59% for the third major"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physics",
+            "qualification_type": "Bachelor",
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64023.",
+                "Programme note: Mainstream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematics: Level 5, 60-69%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Physical Sciences: Level 5, 60-69%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Physics (Extended Stream)",
+            "qualification_type": "Bachelor",
+            "aps_required": 23,
+            "admission_score_required": 23,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 Undergraduate Information Brochure & Admission Requirements.",
+                "Admission score type: APS.",
+                "Programme code: W64024.",
+                "Programme note: Extended Stream."
+            ],
+            "source_url": "https://www.wsu.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English Home Language or First Additional Language: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Mathematics: Level 4, 50-59%."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: Physical Sciences: Level 4, 50-59%."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

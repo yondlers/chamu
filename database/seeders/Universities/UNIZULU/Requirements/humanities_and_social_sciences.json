@@ -1,0 +1,513 @@
+{
+    "faculty": "Faculty of Humanities and Social Sciences",
+    "university": "University of Zululand",
+    "closing_month": 10,
+    "closing_day": 31,
+    "source": "2026 Brochure for Undergraduate",
+    "qualifications": [
+        {
+            "name": "B A Environmental Planning and Development",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Four 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A in Intercultural Communication",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Media Studies",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 24,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Diploma; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Correctional Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "B A Industrial Sociology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Anthropology and History",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Geography and History",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Geography and Tourism",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A History and IsiZulu",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Linguistics and English",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Philosophy and Psychology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA in Psychology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Four 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "History",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "BA in Drama, Theatre and Performance",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Four 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Dramatic Arts",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Visual Arts",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Relations Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 24,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Diploma; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Development Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B A Information Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Library and Information Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Social Work",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B A Sociology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Five 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Social Sciences in Political and International Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Two 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "History",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Economics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Tourism Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Four 20-credit subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Tourism",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Tourism Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 24,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6087/6366.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Diploma; Any five subjects from: Mathematics, Mathematical Literacy, Tourism, Geography, Hospitality Studies, Business Studies or Accounting; Relevant listed subjects must be at minimum level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

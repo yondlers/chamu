@@ -1,0 +1,270 @@
+[
+  {
+    "id": 1,
+    "topic": "DNA: Code of Life",
+    "question_number": "1.1",
+    "question": "The diagram below represents a part of a molecule. Study the diagram and answer the questions that follow.",
+    "image": "image_1",
+    "hint": "The structure of DNA and RNA is important. Know the labels of each component.",
+    "difficulty": "medium",
+    "source": "SENIOR SECONDARY INTERVENTION PROGRAMME 2013",
+    "sub_questions": [
+      {
+        "sub_question_number": "1.1.1",
+        "question": "Identify the molecule in the above diagram.",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "DNA",
+          "accepted_answers": ["DNA", "dna", "Deoxyribonucleic acid"],
+          "explanation": "The molecule is DNA."
+        }
+      },
+      {
+        "sub_question_number": "1.1.2",
+        "question": "Label the parts numbered 1 and 5 respectively.",
+        "question_type": "label",
+        "answer_type": "json",
+        "answer": {
+          "correct_answer": {
+            "1": "Hydrogen bond",
+            "5": "Cytosine"
+          },
+          "accepted_answers": {
+            "1": ["Hydrogen bond", "hydrogen bond"],
+            "5": ["Cytosine", "cytosine", "C"]
+          },
+          "explanation": "Number 1 is a hydrogen bond and number 5 is cytosine."
+        }
+      },
+      {
+        "sub_question_number": "1.1.3",
+        "question": "What is the collective name for the parts numbered 2, 3 and 4?",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "Nucleotide",
+          "accepted_answers": ["Nucleotide", "nucleotide"],
+          "explanation": "A nucleotide is made up of a phosphate, sugar and nitrogenous base."
+        }
+      },
+      {
+        "sub_question_number": "1.1.4",
+        "question": "What is the significance of this molecule being able to replicate itself?",
+        "question_type": "paragraph",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "DNA produces two exact copies of itself before cell division so that identical chromatids are formed.",
+          "accepted_answers": [
+            "DNA produces two exact copies of itself",
+            "DNA replicates before cell division",
+            "Identical chromatids are formed",
+            "The chromatids are identical to the parent"
+          ],
+          "validation_rules": {
+            "keywords": ["DNA", "copies", "cell division", "identical", "chromatids"],
+            "minimum_matches": 2
+          },
+          "explanation": "DNA replication happens before cell division and produces identical chromatids."
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": "DNA: Code of Life",
+    "question_number": "1.2",
+    "question": "The following questions are based on protein synthesis.",
+    "image": "image_2",
+    "hint": "mRNA is formed from DNA during transcription. Translation converts mRNA information into amino acids.",
+    "difficulty": "medium",
+    "source": "SENIOR SECONDARY INTERVENTION PROGRAMME 2013",
+    "sub_questions": [
+      {
+        "sub_question_number": "1.2.1(a)",
+        "question": "Describe transcription.",
+        "question_type": "definition",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "The synthesis of mRNA from a DNA template by complementary matching of nitrogenous bases.",
+          "accepted_answers": [
+            "Synthesis of mRNA from DNA",
+            "mRNA is made from a DNA template",
+            "mRNA is formed by complementary matching of bases in DNA"
+          ],
+          "validation_rules": {
+            "keywords": ["mRNA", "DNA", "template", "complementary"],
+            "minimum_matches": 2
+          }
+        }
+      },
+      {
+        "sub_question_number": "1.2.1(b)",
+        "question": "Describe translation.",
+        "question_type": "definition",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "The process of converting information carried by mRNA into the correct sequence of amino acids to form a protein.",
+          "accepted_answers": [
+            "mRNA information is converted into amino acids",
+            "The correct sequence of amino acids is formed",
+            "A protein is formed from information carried by mRNA"
+          ],
+          "validation_rules": {
+            "keywords": ["mRNA", "amino acids", "protein"],
+            "minimum_matches": 2
+          }
+        }
+      },
+      {
+        "sub_question_number": "1.2.2",
+        "question": "Write down the mRNA codon sequence that reads from left to right from the DNA sequence above.",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "CAA UAC ACC",
+          "accepted_answers": ["CAA UAC ACC", "CAA-UAC-ACC", "CAA, UAC, ACC"]
+        }
+      },
+      {
+        "sub_question_number": "1.2.3",
+        "question": "Select and write down the amino acids in the correct sequence required for the mRNA base sequence shown.",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "Phenylalanine Valine Methionine",
+          "accepted_answers": [
+            "Phenylalanine Valine Methionine",
+            "phenylalanine, valine, methionine"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "DNA: Code of Life",
+    "question_number": "2",
+    "question": "The table below shows the DNA base triplets that code for different amino acids.",
+    "image": "image_3",
+    "hint": "Use the DNA triplet table and convert DNA triplets into mRNA codons.",
+    "difficulty": "medium",
+    "source": "SENIOR SECONDARY INTERVENTION PROGRAMME 2013",
+    "sub_questions": [
+      {
+        "sub_question_number": "2.1",
+        "question": "Name the process by which mRNA is formed from a DNA template.",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "Transcription",
+          "accepted_answers": ["Transcription", "transcription"]
+        }
+      },
+      {
+        "sub_question_number": "2.2",
+        "question": "How many mRNA codons would be involved in forming the portion of protein shown above?",
+        "question_type": "number",
+        "answer_type": "number",
+        "answer": {
+          "correct_answer": 5,
+          "accepted_answers": ["5", "five"]
+        }
+      },
+      {
+        "sub_question_number": "2.3",
+        "question": "Write down the sequence of the first THREE mRNA codons from left to right.",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "GCU CAU UGG",
+          "accepted_answers": ["GCU CAU UGG", "GCU-CAU-UGG", "GCU, CAU, UGG"]
+        }
+      },
+      {
+        "sub_question_number": "2.4(a)",
+        "question": "If guanine in the first base triplet is removed, explain how this would affect the structure of the protein.",
+        "question_type": "paragraph",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "The sequence of amino acids may change and a different protein may form.",
+          "accepted_answers": [
+            "The sequence of amino acids will change",
+            "A different protein could form",
+            "The structure of the protein will change"
+          ],
+          "validation_rules": {
+            "keywords": ["amino acids", "change", "different protein", "structure"],
+            "minimum_matches": 2
+          }
+        }
+      },
+      {
+        "sub_question_number": "2.4(b)",
+        "question": "Name the process that occurs when the sequence of bases in DNA changes.",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "Mutation",
+          "accepted_answers": ["Mutation", "mutation", "deletion"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "DNA: Code of Life",
+    "question_number": "3",
+    "question": "Study the diagram illustrating protein synthesis below, and answer the questions that follow.",
+    "image": "image_4",
+    "hint": "Label the diagram first, then use base-pairing rules and the amino-acid table.",
+    "difficulty": "medium",
+    "source": "SENIOR SECONDARY INTERVENTION PROGRAMME 2013",
+    "sub_questions": [
+      {
+        "sub_question_number": "3.1",
+        "question": "Label the molecules indicated by 2 and 3.",
+        "question_type": "label",
+        "answer_type": "json",
+        "answer": {
+          "correct_answer": {
+            "2": "mRNA",
+            "3": "amino acid"
+          },
+          "accepted_answers": {
+            "2": ["mRNA", "messenger RNA"],
+            "3": ["amino acid", "amino acids"]
+          }
+        }
+      },
+      {
+        "sub_question_number": "3.2",
+        "question": "Using the letters of the genetic code, write down the complementary nitrogenous bases on strand 1 of the DNA double helix, starting from the top.",
+        "question_type": "text",
+        "answer_type": "text",
+        "answer": {
+          "correct_answer": "C G U U G U A A A",
+          "accepted_answers": ["C G U U G U A A A", "C,G,U,U,G,U,A,A,A", "CGUUGUAAA"]
+        }
+      },
+      {
+        "sub_question_number": "3.3",
+        "question": "Use the table to determine which three amino acids in the diagram are represented by 4, 5 and 6.",
+        "question_type": "label",
+        "answer_type": "json",
+        "answer": {
+          "correct_answer": {
+            "4": "arginine",
+            "5": "cysteine",
+            "6": "lysine"
+          },
+          "accepted_answers": {
+            "4": ["arginine", "Arginine"],
+            "5": ["cysteine", "Cysteine"],
+            "6": ["lysine", "Lysine"]
+          }
+        }
+      }
+    ]
+  }
+]

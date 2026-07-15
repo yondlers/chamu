@@ -1,0 +1,1930 @@
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "AgriSciences",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "programmes": [
+    {
+      "programme_name": "BAgric in Agribusiness Management",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Agriculture",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 60%",
+        "Physical Sciences, Physics and Chemistry: 50%"
+      ],
+      "similar_programmes": [
+        "BScAgric in Agricultural Economic Analysis and Management",
+        "BCom Management Sciences with focal area Agricultural Economics"
+      ],
+      "career_opportunities": [
+        "Manager in agribusiness focusing on crop or animal production",
+        "Agricultural economist at a financial institution",
+        "Feasibility studies",
+        "Business plans",
+        "Cash flow planning"
+      ]
+    },
+    {
+      "programme_name": "BScAgric in Agricultural Economics",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science in Agriculture",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 60%",
+        "Physical Sciences, Physics and Chemistry: 50%"
+      ],
+      "fields_of_study": [
+        "Agricultural Economic Analysis",
+        "Agricultural Economic Analysis and Management",
+        "Agricultural Economic Analysis and Management with Food Science",
+        "Agricultural Economics with Food Science"
+      ],
+      "similar_programmes": [
+        "BCom Management Sciences with focal area Agricultural Economics"
+      ],
+      "career_opportunities": [
+        "Researcher in macroeconomic analysis",
+        "Agricultural economist at a financial institution or marketing organisation",
+        "Manager or specialist in public sector or international organisations",
+        "Manager of food-processing concerns"
+      ]
+    },
+    {
+      "programme_name": "BAgric in Agricultural Production and Management: Elsenburg",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Agriculture",
+      "Aggregated_Average_Required": "55%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 50% OR Mathematical Literacy: 60%",
+        "Physical Sciences, Physics and Chemistry: 50% OR Life Sciences: 50% OR Agricultural Sciences: 50%"
+      ],
+      "fields_of_study": [
+        "Animal Production",
+        "Cellar Management",
+        "Cellar Technology",
+        "Extension and Animal Production",
+        "Extension and Plant Production",
+        "Plant Production",
+        "Plant and Animal Production"
+      ],
+      "notes": [
+        "Offered in collaboration with the Cape Institute for Agricultural Training: Elsenburg",
+        "Students reside on the Elsenburg campus where they receive all their training"
+      ]
+    },
+    {
+      "programme_name": "BScAgric in Animal Production Systems",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science in Agriculture",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 60%",
+        "Physical Sciences, Physics and Chemistry: 50%"
+      ],
+      "field_of_study": [
+        "Animal Science"
+      ],
+      "similar_programmes": [
+        "Any BScAgric programme with similar subjects",
+        "BAgric Agricultural Production and Management: Elsenburg with focal area Animal Production",
+        "BAgric Agricultural Production and Management: Elsenburg with focal area Extension and Animal Production"
+      ],
+      "career_opportunities": [
+        "Consultant",
+        "Entrepreneur",
+        "Manager",
+        "Technician",
+        "Extension officer",
+        "Production manager in animal sciences",
+        "Stock farmer",
+        "Game farmer"
+      ]
+    },
+    {
+      "programme_name": "BSc in Conservation Ecology",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 60%",
+        "Physical Sciences, Physics and Chemistry: 50%"
+      ],
+      "similar_programmes": [
+        "BSc in Biodiversity and Ecology",
+        "BScFor Forestry and Natural Resources Sciences"
+      ],
+      "career_opportunities": [
+        "Environmental impact assessment",
+        "Environmental monitoring",
+        "Restoration ecology",
+        "Conservation biology",
+        "Game farm management",
+        "Ecotourism",
+        "Sustainable agriculture",
+        "Forestry",
+        "Organic plant management",
+        "Community-based natural resource management",
+        "Research into conservation biology"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Data Science",
+      "abbreviation": "BDatSci",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "faculty_note": "Interfaculty programme listed under AgriSciences with field of study Statistical Genetics",
+      "Aggregated_Average_Required": "80%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 80%",
+        "Afrikaans Home Language: 60% OR English Home Language: 60% OR Afrikaans First Additional Language: 75% OR English First Additional Language: 75%"
+      ],
+      "field_of_study": [
+        "Statistical Genetics"
+      ],
+      "career_opportunities": [
+        "Statistical genetics",
+        "Population quantitative genetics",
+        "Plant breeding",
+        "Conservation genetics",
+        "Genetic epidemiology"
+      ]
+    },
+    {
+      "programme_name": "BSc in Food Science",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 60%",
+        "Physical Sciences, Physics and Chemistry: 50%"
+      ],
+      "similar_programmes": [
+        "BSc in Dietetics",
+        "BSc in Molecular Biology and Biotechnology",
+        "BSc in Chemistry"
+      ],
+      "career_opportunities": [
+        "Quality assurance",
+        "Product development",
+        "Research",
+        "Technical support",
+        "Sales",
+        "Purchasing",
+        "Production management in the food industry"
+      ]
+    },
+    {
+      "programme_name": "BSc in Forestry: Forestry and Wood Sciences",
+      "abbreviation": "BScFor",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "general_requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%"
+      ],
+      "fields_of_study": [
+        {
+          "field_name": "Forestry and Natural Resources Sciences",
+          "requirements": [
+            "Mathematics: 60%",
+            "Physical Sciences, Physics and Chemistry: 50%"
+          ]
+        },
+        {
+          "field_name": "Wood and Wood Products Sciences",
+          "requirements": [
+            "Mathematics: 70%",
+            "Physical Sciences, Physics and Chemistry: 60%"
+          ]
+        }
+      ],
+      "similar_programmes": [
+        "BSc in Conservation Ecology",
+        "BScAgric Plant and Soil Sciences",
+        "BSc in Earth Science",
+        "BEng Industrial",
+        "BSc in Geoinformatics"
+      ],
+      "career_opportunities": [
+        "Forestry expert",
+        "Timber grower",
+        "Environmental planner",
+        "Forest researcher",
+        "Forester",
+        "Extension officer",
+        "Consultant",
+        "Logistics manager",
+        "Tree breeder",
+        "Rural development advisor",
+        "Wood products expert",
+        "Wood scientist"
+      ]
+    },
+    {
+      "programme_name": "BScAgric in Plant and Soil Science",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science in Agriculture",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 60%",
+        "Physical Sciences, Physics and Chemistry: 50%"
+      ],
+      "additional_requirement": [
+        "If Soil Science and Chemistry are taken as majors in Soil and Water Management, Mathematics must be 70%"
+      ],
+      "fields_of_study": [
+        "Crop Production Systems",
+        "Crop Production Systems with Agronomy, Agricultural Economics and Animal Science",
+        "Crop Protection and Breeding",
+        "Soil and Water Management"
+      ],
+      "similar_programmes": [
+        "BScAgric Viticulture and Oenology",
+        "BSc in Molecular Biology and Biotechnology",
+        "BSc in Biodiversity and Ecology",
+        "BSc in Earth Science",
+        "BAgric Agricultural Production and Management: Elsenburg with focal area Plant Production",
+        "BAgric Agricultural Production and Management: Elsenburg with focal area Extension and Plant Production"
+      ]
+    },
+    {
+      "programme_name": "BScAgric in Viticulture and Oenology",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science in Agriculture",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English OR Afrikaans, Home Language or First Additional Language: 50%",
+        "Mathematics: 60%",
+        "Physical Sciences, Physics and Chemistry: 50%"
+      ],
+      "similar_programmes": [
+        "BScAgric Plant and Soil Sciences",
+        "BSc in Molecular Biology and Biotechnology",
+        "BAgric Agricultural Production and Management: Elsenburg with focal area Cellar Management",
+        "BAgric Agricultural Production and Management: Elsenburg with focal area Cellar Technology"
+      ],
+      "career_opportunities": [
+        "Winemaker",
+        "Viticulturist",
+        "Researcher",
+        "Production manager",
+        "Marketer",
+        "Technician",
+        "Consultant",
+        "Entrepreneur in wine-related industries"
+      ]
+    }
+  ],
+  "extended_curriculum_programmes": {
+    "available": true,
+    "description": "An ECP entails one extra year of study",
+    "note": "Except for BAgric in Agricultural Production and Management offered by Elsenburg Training Institute, all the AgriSciences programmes above are also available as extended degree programmes"
+  }
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Arts and Social Sciences",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "programmes": [
+    {
+      "programme_name": "BA in Humanities",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "63%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Socio-Informatics is taken as a university subject",
+          "requirement": "Mathematics: 50% OR Mathematical Literacy: 70%"
+        }
+      ],
+      "routes": [
+        "Human Thought, Language, Culture and Art",
+        "People and Society"
+      ]
+    },
+    {
+      "programme_name": "BA in Language and Culture",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "63%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 50%"
+      ]
+    },
+    {
+      "programme_name": "BA in Development and the Environment",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "63%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Socio-Informatics is taken as a university subject",
+          "requirement": "Mathematics: 50% OR Mathematical Literacy: 70%"
+        },
+        {
+          "condition": "If Economics is taken as a university subject",
+          "requirement": "Mathematics: 60%"
+        }
+      ]
+    },
+    {
+      "programme_name": "BA in Drama and Theatre Studies",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 60%",
+        "First Additional Language: 50%"
+      ],
+      "selection_requirements": [
+        "Candidates must be available for auditions and/or interviews at the Drama Department in Stellenbosch during August"
+      ],
+      "routes": [
+        "Acting and Performance Training",
+        "Technical and Management Training"
+      ]
+    },
+    {
+      "programme_name": "BA in Human Resource Management",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "63%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%",
+        "Mathematics: 50% OR Mathematical Literacy: 70%"
+      ]
+    },
+    {
+      "programme_name": "BA in International Studies",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "63%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English Home Language: 50% OR English First Additional Language: 60%"
+      ]
+    },
+    {
+      "programme_name": "BA in Law",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "See Faculty of Law requirements",
+      "requirements": [
+        "Admission requirements are listed under the Faculty of Law"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Music",
+      "abbreviation": "BMus",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Music",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%",
+        "Practical standard in main instrument or singing equivalent to Grade VII classical music",
+        "Theoretical knowledge equivalent to Grade V theory examination"
+      ],
+      "selection_requirements": [
+        "Candidates must be available for an audition and theoretical test at the Department of Music in Stellenbosch"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Mathematics is taken as a university subject",
+          "requirement": "Mathematics: 70%"
+        }
+      ],
+      "routes": [
+        "Music Education",
+        "Musicology",
+        "Music Technology",
+        "Performance",
+        "Composition"
+      ]
+    },
+    {
+      "programme_name": "BA in Music",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%",
+        "Practical standard in main instrument or singing equivalent to Grade VII classical music",
+        "Theoretical knowledge equivalent to Grade V theory examination"
+      ],
+      "selection_requirements": [
+        "Candidates must be available for an audition and theoretical test at the Department of Music in Stellenbosch"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Mathematics is taken as a university subject",
+          "requirement": "Mathematics: 70%"
+        }
+      ]
+    },
+    {
+      "programme_name": "Diploma in Practical Music",
+      "duration": "3 years",
+      "qualification_type": "Diploma",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "No aggregate average stated; NSC subject minimums apply",
+      "requirements": [
+        "National Senior Certificate with at least 40% in each of four school subjects, excluding Life Orientation",
+        "Practical standard in main instrument or singing equivalent to Grade VII classical music",
+        "Theoretical knowledge equivalent to Grade III or IV theory examination"
+      ],
+      "selection_requirements": [
+        "Candidates must be available for an audition and theoretical test at the Department of Music in Stellenbosch"
+      ]
+    },
+    {
+      "programme_name": "Advanced Diploma in Practical Music",
+      "duration": "1 year",
+      "qualification_type": "Advanced Diploma",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "Post-school qualification required",
+      "requirements": [
+        "Diploma in Practical Music OR another music qualification approved by Senate"
+      ],
+      "selection_requirements": [
+        "Selection audition",
+        "Candidates without the necessary qualifications may be accepted on condition that they complete supplementary work"
+      ]
+    },
+    {
+      "programme_name": "Higher Certificate in Music",
+      "duration": "1 year",
+      "qualification_type": "Higher Certificate",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "No aggregate average stated; NSC plus music audition requirements apply",
+      "requirements": [
+        "National Senior Certificate",
+        "Practical standard in main instrument or singing equivalent to Grade V or VI classical music",
+        "Theoretical knowledge equivalent to Grade III or IV theory examination"
+      ],
+      "selection_requirements": [
+        "Candidates must be available for an audition"
+      ]
+    },
+    {
+      "programme_name": "BA in Political, Philosophical and Economic Studies",
+      "abbreviation": "PPE",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "63%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%",
+        "Mathematics: 60%"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Social Work",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "Aggregated_Average_Required": "63%",
+      "aggregate_note": "Excluding Life Orientation",
+      "capacity": "100 places",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 50%"
+      ]
+    },
+    {
+      "programme_name": "BA in Sport Science",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "note": "From 2025, the Division of Sport Science will no longer take in new first-year BA Sport Science students",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%",
+        "Mathematics: 40% OR Mathematical Literacy: 70%",
+        "Physical Sciences: 40% OR Life Sciences: 50%"
+      ]
+    },
+    {
+      "programme_name": "BA in Visual Arts",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Arts",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "capacity": "60 places",
+      "requirements": [
+        "Home Language: 50%",
+        "First Additional Language: 40%"
+      ],
+      "selection_requirements": [
+        "Prescribed art portfolio must be submitted by 1 September"
+      ],
+      "routes": [
+        "Fine Arts",
+        "Jewellery and Metal Design",
+        "Visual Communication Design"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Data Science",
+      "abbreviation": "BDatSci",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "faculty_note": "Interfaculty programme listed here with focal area Geoinformatics",
+      "Aggregated_Average_Required": "80%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 80%",
+        "Afrikaans Home Language: 60% OR English Home Language: 60% OR Afrikaans First Additional Language: 75% OR English First Additional Language: 75%"
+      ],
+      "focal_area": [
+        "Geoinformatics"
+      ]
+    }
+  ],
+  "extended_curriculum_programmes": {
+    "available": true,
+    "applies_to": "Programmes marked with #",
+    "duration": "4 years",
+    "note": "Students are selected for extended curriculum programmes at the discretion of the Faculty"
+  }
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Economic and Management Sciences",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "programmes": [
+    {
+      "programme_name": "Diploma in Sustainable Development",
+      "duration": "3 years",
+      "qualification_type": "Diploma",
+      "Aggregated_Average_Required": "55%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "English Home Language: 50% OR English First Additional Language: 60%",
+        "Mathematics: 50% OR Mathematical Literacy: 60%",
+        "Mathematics: 40% OR Mathematical Literacy: 50% AND Business Studies OR Economics OR Accounting: 60%"
+      ],
+      "selection_requirements": [
+        "Students are selected on academic merit",
+        "Students are selected using information provided in an application form as part of the departmental process",
+        "The number of selected students is limited",
+        "Language of instruction is English"
+      ],
+      "similar_programmes": [
+        "BA in Development and the Environment",
+        "BSc in GeoInformatics",
+        "BCom Management Sciences with focal area Public and Development Management"
+      ]
+    },
+    {
+      "programme_name": "BCom Law",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "See Faculty of Law requirements",
+      "requirements": [
+        "Admission requirements are listed under the Faculty of Law"
+      ]
+    },
+    {
+      "programme_name": "BAccLLB",
+      "duration": "5 years",
+      "qualification_type": "Bachelor of Accounting and Bachelor of Laws",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "See Faculty of Law requirements",
+      "requirements": [
+        "Admission requirements are listed under the Faculty of Law"
+      ]
+    },
+    {
+      "programme_name": "BCom Economic Sciences",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 60%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "focal_areas": [
+        "Econometrics",
+        "Economic and Management Consultation",
+        "Financial Sector",
+        "Transport Economics"
+      ],
+      "similar_programmes": [
+        "BScAgric in Agricultural Economics",
+        "BA in Political, Philosophical and Economic Studies",
+        "BCom Management Sciences",
+        "BCom Mathematical Sciences",
+        "Bachelor of Data Science with focal area Behavioural Economics"
+      ]
+    },
+    {
+      "programme_name": "BCom Management Sciences",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 60%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "focal_areas": [
+        "Agricultural Economics",
+        "Business Analytics",
+        "Entrepreneurship and Innovation",
+        "Financial Management",
+        "Financial Planning",
+        "Human Resource Management",
+        "Information Systems Management",
+        "Investment Management",
+        "Logistics and Supply Chain Management",
+        "Marketing Management",
+        "Public and Development Management"
+      ],
+      "similar_programmes": [
+        "BScAgric in Agricultural Economics",
+        "BAgric in Agribusiness Management",
+        "BA in Development and the Environment",
+        "BA in Human Resource Management",
+        "BCom Economic Sciences",
+        "BCom Mathematical Sciences",
+        "BCom International Business"
+      ]
+    },
+    {
+      "programme_name": "BCom Management Sciences Extended Curriculum Programme",
+      "abbreviation": "BCom Management Sciences ECP",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Commerce Extended Curriculum Programme",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 50%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "selection_requirements": [
+        "Applicants must meet the minimum admission requirements",
+        "Preference may be given based on socio-economic status requirements of the University's admission policy",
+        "Approximately 100 students can be accommodated each year"
+      ]
+    },
+    {
+      "programme_name": "BCom Mathematical Sciences",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 75%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "focal_areas": [
+        "Data Science",
+        "Financial Risk Management",
+        "Operations Research"
+      ],
+      "similar_programmes": [
+        "Bachelor of Data Science",
+        "BSc in Computer Science",
+        "BEng",
+        "BSc in Physics",
+        "BSc in Mathematical Sciences",
+        "BSc with focal area Bioinformatics and Computational Biology",
+        "BSc with focal area Biomedical Mathematical Sciences"
+      ]
+    },
+    {
+      "programme_name": "BCom International Business",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "80%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "English Home Language: 70% OR English First Additional Language: 80%",
+        "Any Additional Language: 70%"
+      ],
+      "selection_requirements": [
+        "Limited number of students selected using a special selection process",
+        "Strict selection programme with set criteria to progress from one academic year to the next",
+        "Third year includes an international exchange semester",
+        "Language of instruction is English"
+      ],
+      "similar_programmes": [
+        "BCom Management Sciences"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Data Science",
+      "abbreviation": "BDatSci",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "Aggregated_Average_Required": "80%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 80%",
+        "Home Language: 60%",
+        "If English is not the Home Language, English First Additional Language: 75%"
+      ],
+      "focal_areas": [
+        "Analytics and Optimisation",
+        "Behavioural Economics",
+        "Statistical Learning"
+      ],
+      "similar_programmes": [
+        "BCom Mathematical Sciences with focal area Data Science"
+      ]
+    },
+    {
+      "programme_name": "BCom Actuarial Science",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "80%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 80%",
+        "Home Language: 60%",
+        "If English is not the Home Language, English First Additional Language: 75%"
+      ],
+      "selection_requirements": [
+        "If applicants meeting the requirements exceed capacity, admission requirements are used to rank applicants",
+        "Further selection criteria may be applied if capacity is exceeded"
+      ],
+      "similar_programmes": [
+        "BCom Mathematical Sciences"
+      ]
+    },
+    {
+      "programme_name": "BCom Industrial Psychology",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 60%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "similar_programmes": [
+        "BCom Management Sciences with focal area Human Resource Management",
+        "BA degree with Psychology and Industrial Psychology up to third-year level"
+      ]
+    },
+    {
+      "programme_name": "BAcc",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Accounting",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70% OR Mathematics: 60% AND Accounting: 70%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "similar_programmes": [
+        "BCom Financial Accounting",
+        "BCom Management Accounting"
+      ]
+    },
+    {
+      "programme_name": "BCom Management Accounting",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 60%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "similar_programmes": [
+        "BAcc",
+        "BCom Financial Accounting"
+      ]
+    },
+    {
+      "programme_name": "BCom Financial Accounting",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 60%",
+        "English Home Language: 50% OR Afrikaans Home Language: 50% OR Afrikaans First Additional Language: 60% OR English First Additional Language: 60%"
+      ],
+      "similar_programmes": [
+        "BAcc",
+        "BCom Management Accounting"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Education",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "general_admission_and_selection": {
+    "Aggregated_Average_Required": "60%",
+    "aggregate_note": "Excluding Life Orientation",
+    "requirements": [
+      "Mathematics: 40% OR Mathematical Literacy: 60%"
+    ],
+    "language_requirements": [
+      {
+        "learner_language_background": "Learners who were taught in English",
+        "requirements": [
+          "English Home Language: 60%",
+          "Afrikaans OR isiXhosa, Home Language or First Additional Language: 50%"
+        ]
+      },
+      {
+        "learner_language_background": "Learners who were taught in Afrikaans",
+        "requirements": [
+          "Afrikaans Home Language: 60%",
+          "English OR isiXhosa, Home Language or First Additional Language: 50%"
+        ]
+      },
+      {
+        "learner_language_background": "Learners who were taught in isiXhosa",
+        "requirements": [
+          "IsiXhosa Home Language: 60%",
+          "English OR Afrikaans, Home Language or First Additional Language: 50%"
+        ]
+      }
+    ]
+  },
+  "programmes": [
+    {
+      "programme_name": "BEd Foundation Phase Education",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Education",
+      "phase": "Foundation Phase",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "capacity": "125 places",
+      "requirements": [
+        "Mathematics: 40% OR Mathematical Literacy: 60%",
+        "Must meet the applicable language requirements based on language of teaching background"
+      ],
+      "career_opportunities": [
+        "Teacher for Grades R to 3",
+        "Language practitioner, editor or proofreader after further language-related study"
+      ],
+      "postgraduate_studies_note": "See the Education calendar on the Stellenbosch University website"
+    },
+    {
+      "programme_name": "BEd Intermediate Phase Education",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Education",
+      "phase": "Intermediate Phase",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "capacity": "125 places",
+      "requirements": [
+        "Mathematics: 40% OR Mathematical Literacy: 60%",
+        "Must meet the applicable language requirements based on language of teaching background",
+        "Further requirements depend on the school subjects the applicant wants to teach"
+      ],
+      "compulsory_modules": [
+        "Mathematics Education is compulsory in first year"
+      ],
+      "teaching_module_options": [
+        {
+          "module": "Mathematics",
+          "additional_requirement": "Pass with 60% average in first year"
+        },
+        {
+          "module": "Life Skills",
+          "additional_requirement": null
+        },
+        {
+          "module": "Natural Sciences Education",
+          "additional_requirement": "Life Sciences: 50% OR Physical Sciences: 50%"
+        },
+        {
+          "module": "Social Sciences Education",
+          "additional_requirement": "History: 50% OR Geography: 50%"
+        }
+      ],
+      "career_opportunities": [
+        "Primary school teacher for Grades 4 to 7",
+        "Teacher with competence in two intermediate school subjects and two languages",
+        "Language practitioner, editor or proofreader after further language-related study"
+      ],
+      "notes": [
+        "Choose one or preferably two subjects as teaching modules",
+        "All teaching modules are not available every year",
+        "A minimum number of students per teaching module is required"
+      ]
+    },
+    {
+      "programme_name": "Postgraduate Certificate in Education",
+      "abbreviation": "PGCE",
+      "duration": "1 year",
+      "qualification_type": "Postgraduate Certificate",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "Requires a prior degree rather than NSC aggregate average",
+      "requirements": [
+        "A degree from one of the other faculties with one or two school subjects",
+        "For PGCE teaching modules and their requirements, consult the Faculty of Education Calendar"
+      ],
+      "career_opportunities": [
+        "High school teacher in two subjects",
+        "High school teacher in one subject with additional study in that subject",
+        "Remedial teacher after further study",
+        "Educational Psychology pathway after further study"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Engineering",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "general_admission_and_selection": {
+    "Aggregated_Average_Required": "70%",
+    "aggregate_note": "Excluding Life Orientation",
+    "requirements": [
+      "Mathematics: 70%",
+      "Physical Sciences: 60%",
+      "English Home Language: 50% with no Afrikaans requirement OR English First Additional Language: 60% with no Afrikaans requirement",
+      "English First Additional Language: 50% with Afrikaans Home Language: 50% OR English First Additional Language: 50% with Afrikaans Second Additional Language: 60%"
+    ],
+    "selection_requirements": [
+      "Applicants are subject to selection according to selection criteria",
+      "Selection mark is calculated using Grade 11 subjects for conditional selection or Grade 12 subjects for final selection",
+      "Selection mark = Mathematics percentage + Physical Sciences percentage + 6 × Matric average",
+      "Matric average is calculated from the six best Matric subjects, excluding Life Orientation",
+      "Maximum selection score is 800"
+    ]
+  },
+  "programmes": [
+    {
+      "programme_name": "BEng Chemical",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Engineering",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "Physical Sciences: 60%",
+        "Must meet Engineering language requirements"
+      ],
+      "career_opportunities": [
+        "Chemical engineer",
+        "Large-scale process operations",
+        "Production of chemicals, pharmaceutical products, fertilisers, fuels, metals and other materials",
+        "Effluent and waste processing and recycling"
+      ]
+    },
+    {
+      "programme_name": "BEng Civil",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Engineering",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "Physical Sciences: 60%",
+        "Must meet Engineering language requirements"
+      ],
+      "career_opportunities": [
+        "Civil engineer",
+        "Irrigation systems",
+        "Bridges",
+        "Dams",
+        "Harbours",
+        "Canals",
+        "Airports",
+        "Roads and streets",
+        "Pipelines",
+        "Sewerage systems",
+        "Railways",
+        "Structural engineering",
+        "Stormwater systems",
+        "Water supply systems"
+      ]
+    },
+    {
+      "programme_name": "BEng Electrical and Electronic",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Engineering",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "Physical Sciences: 60%",
+        "Must meet Engineering language requirements"
+      ],
+      "career_opportunities": [
+        "Electrical engineer",
+        "Electronic engineer",
+        "Generation, transmission and conversion of electrical energy",
+        "Robotic systems control",
+        "Computer and communication networks",
+        "Design of computers and large software systems"
+      ]
+    },
+    {
+      "programme_name": "BEng Electrical and Electronic: Data Engineering",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Engineering",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "Physical Sciences: 60%",
+        "Must meet Engineering language requirements"
+      ],
+      "career_opportunities": [
+        "Data Analyst",
+        "Data Engineer"
+      ]
+    },
+    {
+      "programme_name": "BEng Industrial",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Engineering",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "Physical Sciences: 60%",
+        "Must meet Engineering language requirements"
+      ],
+      "career_opportunities": [
+        "Industrial engineer",
+        "Manufacturing technology",
+        "Operational systems design",
+        "Quality assurance",
+        "Robotics",
+        "Engineering economics",
+        "Operations research",
+        "Industrial ergonomics",
+        "Information technology"
+      ]
+    },
+    {
+      "programme_name": "BEng Mechanical",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Engineering",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "Physical Sciences: 60%",
+        "Must meet Engineering language requirements"
+      ],
+      "career_opportunities": [
+        "Mechanical engineer",
+        "Vehicles",
+        "Aeroplanes",
+        "Vessels",
+        "Missiles",
+        "Cooling systems",
+        "Power stations",
+        "Engines",
+        "Process plants",
+        "Manufacturing industries"
+      ]
+    },
+    {
+      "programme_name": "BEng Mechatronic",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Engineering",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 70%",
+        "Physical Sciences: 60%",
+        "Must meet Engineering language requirements"
+      ],
+      "career_opportunities": [
+        "Mechatronic engineer",
+        "Mechanical-electronic integrated systems",
+        "Electronic engine control systems",
+        "Robot systems",
+        "Automated assembly lines"
+      ]
+    }
+  ],
+  "professional_accreditation": {
+    "body": "Engineering Council of South Africa",
+    "abbreviation": "ECSA",
+    "note": "BEng programmes are accredited by ECSA; after relevant practical experience, graduates may register as Professional Engineers"
+  },
+  "extended_curriculum_programmes": {
+    "available": true,
+    "duration": "5 years",
+    "applies_to": "All BEng programmes",
+    "note": "A limited number of applicants who meet the minimum requirements for the BEng ECPs will be selected",
+    "selection_basis": [
+      "Selection score",
+      "Socio-economic status",
+      "Preference may be given to candidates from underserved educational backgrounds"
+    ]
+  }
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Law",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "programmes": [
+    {
+      "programme_name": "LLB",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Laws",
+      "capacity": "120 places",
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Write the NBTs AQL before 31 July",
+        "Aggregate of at least 70% in the NSC or IEB school-leaving certificate, excluding Life Orientation",
+        "English OR Afrikaans Home Language: 60% OR Afrikaans OR English First Additional Language: 70%"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Economics is taken as a university subject",
+          "requirement": "Mathematics: 60%"
+        },
+        {
+          "condition": "If a university subject from another faculty is taken",
+          "requirement": "Applicant must meet that faculty subject's requirements"
+        }
+      ],
+      "similar_programmes": [
+        "BAccLLB",
+        "BA Law",
+        "BCom Law"
+      ],
+      "career_opportunities": [
+        "Legal practitioner",
+        "Attorney",
+        "Advocate",
+        "Judge",
+        "Public Prosecutor",
+        "Deeds Office examiner or registrar",
+        "Master of the High Court clerk or registrar",
+        "Legal advisor",
+        "Compliance manager",
+        "Mediator",
+        "Arbitrator",
+        "Public Protector",
+        "Academic lecturer",
+        "NGO work",
+        "Entrepreneur",
+        "Business manager",
+        "Journalist",
+        "National or provincial government"
+      ]
+    },
+    {
+      "programme_name": "LLB",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Laws",
+      "capacity": "50 places",
+      "Aggregated_Average_Required": null,
+      "aggregate_note": "Only available as a second bachelor's degree; selection is based on prior bachelor’s degree performance",
+      "requirements": [
+        "Any bachelor's degree from a South African university",
+        "Aggregate of at least 60% in the final year"
+      ],
+      "selection_requirements": [
+        "Only available as a second bachelor's degree",
+        "Selection is based on performance in the prior bachelor's degree"
+      ]
+    },
+    {
+      "programme_name": "BA Law",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Arts in Law",
+      "capacity": "55 places",
+      "interfaculty_programme": true,
+      "faculties_involved": [
+        "Faculty of Law",
+        "Faculty of Arts and Social Sciences"
+      ],
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Write the NBTs AQL before 31 July",
+        "Aggregate of at least 70% in the NSC or IEB school-leaving certificate, excluding Life Orientation",
+        "English OR Afrikaans Home Language: 60% OR Afrikaans OR English First Additional Language: 70%"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Economics is taken as a university subject",
+          "requirement": "Mathematics: 60%"
+        },
+        {
+          "condition": "If a university subject from another faculty is taken",
+          "requirement": "Applicant must meet that faculty subject's requirements"
+        }
+      ],
+      "similar_programmes": [
+        "LLB",
+        "BAccLLB",
+        "BCom Law"
+      ],
+      "career_opportunities": [
+        "Entry route into the two-year LLB degree",
+        "Legal practitioner pathway after completing LLB",
+        "Attorney pathway after completing LLB",
+        "Advocate pathway after completing LLB",
+        "Careers requiring understanding of languages, human behaviour and social issues"
+      ]
+    },
+    {
+      "programme_name": "BCom Law",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Commerce in Law",
+      "capacity": "80 places",
+      "interfaculty_programme": true,
+      "faculties_involved": [
+        "Faculty of Law",
+        "Faculty of Economic and Management Sciences"
+      ],
+      "Aggregated_Average_Required": "70%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Write the NBTs AQL and MAT before 31 July",
+        "Aggregate of at least 70% in the NSC or IEB school-leaving certificate, excluding Life Orientation",
+        "English OR Afrikaans Home Language: 60% OR Afrikaans OR English First Additional Language: 70%",
+        "Mathematics: 60%"
+      ],
+      "similar_programmes": [
+        "LLB",
+        "BAccLLB",
+        "BA Law"
+      ],
+      "career_opportunities": [
+        "Business world",
+        "Commercial law",
+        "Entry route into the two-year LLB degree",
+        "Legal practitioner pathway after completing LLB",
+        "Attorney pathway after completing LLB",
+        "Advocate pathway after completing LLB"
+      ]
+    },
+    {
+      "programme_name": "BAccLLB",
+      "duration": "5 years",
+      "qualification_type": "Bachelor of Accounting and Bachelor of Laws",
+      "capacity": "35 places",
+      "interfaculty_programme": true,
+      "faculties_involved": [
+        "Faculty of Law",
+        "Faculty of Economic and Management Sciences"
+      ],
+      "Aggregated_Average_Required": "80%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Write the NBTs AQL and MAT before 31 July",
+        "Aggregate of at least 80% in the NSC or IEB school-leaving certificate, excluding Life Orientation",
+        "English OR Afrikaans Home Language: 60% OR Afrikaans OR English First Additional Language: 70%",
+        "Mathematics: 70% OR Mathematics: 60% AND Accounting: 70%"
+      ],
+      "similar_programmes": [
+        "LLB",
+        "BCom Law",
+        "BA Law"
+      ],
+      "career_opportunities": [
+        "Law",
+        "Accounting",
+        "Legal profession after practical training and prescribed examinations",
+        "Chartered accountant pathway through Honours or Postgraduate Diploma in Accounting"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Medicine and Health Sciences",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "professional_accreditation": [
+    "Health Professions Council of South Africa",
+    "South African Nursing Council"
+  ],
+  "general_selection_notes": [
+    "All applicants must meet the minimum requirements of the programme they apply for",
+    "Current Grade 12 learners and applicants who have completed school are selected on academic merit",
+    "Registered university students are considered based on academic and non-academic merits according to programme selection guidelines",
+    "Applicants with tertiary qualifications or work experience are considered based on academic and non-academic merits according to programme selection guidelines"
+  ],
+  "programmes": [
+    {
+      "programme_name": "MBChB",
+      "duration": "6 years",
+      "qualification_type": "Bachelor of Medicine and Bachelor of Surgery",
+      "capacity": "Approximately 300 candidates selected annually",
+      "Aggregated_Average_Required": "75%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Aggregate of at least 75% for the NSC or equivalent qualification, excluding Life Orientation",
+        "Mathematics: 60%",
+        "Physical Sciences: 50%",
+        "Life Sciences: 50%"
+      ],
+      "career_opportunities": [
+        "Independent Medical Practitioner after two-year internship and one year of community service",
+        "Registration with the Health Professions Council of South Africa"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Nursing",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "capacity": "Approximately 50 candidates selected annually",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation",
+        "Mathematics: 40% OR Mathematical Literacy: 70%",
+        "Life Sciences: 50%"
+      ],
+      "similar_programmes": [
+        "BSc in Dietetics",
+        "Bachelor of Occupational Therapy",
+        "BSc in Physiotherapy",
+        "Bachelor of Speech-Language Therapy"
+      ],
+      "career_opportunities": [
+        "After one year of community service, registration with SANC as a Nurse and Midwife"
+      ]
+    },
+    {
+      "programme_name": "BSc in Dietetics",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science",
+      "capacity": "Approximately 35 candidates selected annually",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation",
+        "Mathematics: 50%",
+        "Physical Sciences: 50%",
+        "Life Sciences: 50%"
+      ],
+      "similar_programmes": [
+        "BSc in Food Science",
+        "BSc in Molecular Biology and Biotechnology",
+        "Bachelor of Occupational Therapy",
+        "BSc in Physiotherapy"
+      ],
+      "career_opportunities": [
+        "After one year of community service, registration with the HPCSA as a Dietitian"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Occupational Therapy",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "capacity": "Approximately 50 candidates selected annually",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation",
+        "Mathematics: 40%",
+        "Life Sciences: 50%"
+      ],
+      "similar_programmes": [
+        "BSc in Physiotherapy",
+        "Bachelor of Nursing",
+        "BSc in Dietetics",
+        "BSc in Human Life Sciences",
+        "BA in Sport Science",
+        "BSc in Sport Science"
+      ],
+      "career_opportunities": [
+        "After one year of community service, registration with the HPCSA as an Occupational Therapist"
+      ]
+    },
+    {
+      "programme_name": "BSc in Physiotherapy",
+      "duration": "4 years",
+      "qualification_type": "Bachelor of Science",
+      "capacity": "Approximately 55 candidates selected annually",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation",
+        "Mathematics: 60%",
+        "Physical Sciences: 50%"
+      ],
+      "similar_programmes": [
+        "BA in Sport Science",
+        "BSc in Sport Science",
+        "BSc in Human Life Sciences",
+        "Bachelor of Nursing",
+        "Bachelor of Occupational Therapy"
+      ],
+      "career_opportunities": [
+        "After one year of community service, registration with the HPCSA as a Physiotherapist"
+      ]
+    },
+    {
+      "programme_name": "Bachelor of Speech-Language Therapy",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "capacity": "Approximately 30 candidates selected annually",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Aggregate of at least 60% for the NSC or equivalent qualification, excluding Life Orientation",
+        "Physical Sciences OR Life Sciences: 50%",
+        "At least two of the following three languages, Home Language or First Additional Language, at 60%: English, Afrikaans, or a third South African language"
+      ],
+      "similar_programmes": [
+        "Bachelor of Occupational Therapy",
+        "BSc in Physiotherapy",
+        "BSc in Human Life Sciences"
+      ],
+      "career_opportunities": [
+        "After one year of community service, registration with the HPCSA as a Speech-Language Therapist"
+      ]
+    }
+  ]
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Science",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "selection_mark_formula": {
+    "formula": "[(Mathematics x 2) + 5 other subjects] / 7",
+    "notes": [
+      "At least one of the five other subjects must be English or Afrikaans",
+      "Life Orientation is excluded"
+    ]
+  },
+  "general_mathematics_note": {
+    "description": "The Mathematics requirement depends on first-year university subject choices",
+    "rules": [
+      {
+        "condition": "If Mathematics and Physics are taken as first-year subjects",
+        "requirement": "Mathematics: 70%"
+      },
+      {
+        "condition": "If Mathematics (Bio) and Physics (Bio) are taken as first-year subjects",
+        "requirement": "Mathematics: 60%"
+      }
+    ]
+  },
+  "programmes": [
+    {
+      "programme_group": "Biological Sciences",
+      "programme_name": "BSc in Biodiversity and Ecology",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 60%"
+      ],
+      "similar_programmes": [
+        "BSc with focal area Biomathematics",
+        "BSc in Conservation Ecology",
+        "BScAgric in Plant and Soil Sciences",
+        "BScAgric in Animal Production Systems"
+      ]
+    },
+    {
+      "programme_group": "Biological Sciences",
+      "programme_name": "BSc in Human Life Sciences",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices"
+      ],
+      "focal_areas": [
+        "Biology",
+        "Biology with Psychology"
+      ],
+      "similar_programmes": [
+        "BSc in Molecular Biology and Biotechnology",
+        "BSc with focal area Applied Medicinal Chemistry",
+        "BSc with focal area Biomedical Mathematical Sciences"
+      ]
+    },
+    {
+      "programme_group": "Biological Sciences",
+      "programme_name": "BSc in Molecular Biology and Biotechnology",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices"
+      ],
+      "similar_programmes": [
+        "BSc in Human Life Sciences",
+        "BSc in Chemistry",
+        "BSc with focal area Applied Medicinal Chemistry",
+        "BSc with focal area Bioinformatics",
+        "BScAgric in Viticulture and Oenology"
+      ]
+    },
+    {
+      "programme_group": "Biological Sciences",
+      "programme_name": "BSc in Sport Science",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 60%"
+      ],
+      "similar_programmes": [
+        "BA in Sport Science",
+        "BSc in Human Life Sciences",
+        "BSc in Physiotherapy"
+      ]
+    },
+    {
+      "programme_group": "Physical Sciences",
+      "programme_name": "BSc in Chemistry",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 70%"
+      ],
+      "focal_areas": [
+        "Chemistry and Polymer Science",
+        "Chemical Biology",
+        "Materials Technology"
+      ],
+      "similar_programmes": [
+        "BSc in Molecular Biology and Biotechnology",
+        "BSc with focal area Applied Medicinal Chemistry",
+        "BSc in Earth Science",
+        "BSc in Food Science"
+      ]
+    },
+    {
+      "programme_group": "Physical Sciences",
+      "programme_name": "BSc in Earth Science",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices"
+      ],
+      "focal_areas": [
+        "Applied Earth Science",
+        "Geo-environmental Science"
+      ],
+      "similar_programmes": [
+        "BSc in Biodiversity and Ecology",
+        "BSc in Chemistry",
+        "BScAgric in Plant and Soil Sciences"
+      ]
+    },
+    {
+      "programme_group": "Physical Sciences",
+      "programme_name": "BSc in GeoInformatics",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 60% OR 70%, depending on first-year Mathematics and Physics choices"
+      ],
+      "similar_programmes": [
+        "BSc in Earth Science",
+        "BSc in Computer Science",
+        "BA in Development and the Environment"
+      ]
+    },
+    {
+      "programme_group": "Physical Sciences",
+      "programme_name": "BSc in Physics",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Physical Sciences: 50%",
+        "Mathematics: 70%"
+      ],
+      "focal_areas": [
+        "Laser Physics, Nuclear Physics, Radiation and Health Physics",
+        "Laser Physics Biological",
+        "Theoretical Physics"
+      ],
+      "similar_programmes": [
+        "BSc in Chemistry",
+        "BSc in Mathematical Sciences with focal area Applied Mathematics"
+      ]
+    },
+    {
+      "programme_group": "Mathematical Sciences",
+      "programme_name": "BSc in Mathematical Sciences",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Mathematics: 70%"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Chemistry or Physics is taken as a compulsory or elective university subject",
+          "requirement": "Physical Sciences: 50%"
+        }
+      ],
+      "focal_areas": [
+        "Applied Mathematics",
+        "Mathematics",
+        "Operations Research"
+      ],
+      "similar_programmes": [
+        "BSc in Computer Science",
+        "BEng",
+        "BSc in Physics",
+        "BCom in Mathematical Sciences"
+      ]
+    },
+    {
+      "programme_group": "Mathematical Sciences",
+      "programme_name": "BSc in Computer Science",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Mathematics: 70%"
+      ],
+      "conditional_requirements": [
+        {
+          "condition": "If Chemistry or Physics is taken as a compulsory or elective university subject",
+          "requirement": "Physical Sciences: 50%"
+        }
+      ],
+      "focal_areas": [
+        "General Computer Science",
+        "Computer Systems",
+        "Data Science"
+      ],
+      "similar_programmes": [
+        "BSc in Mathematical Sciences",
+        "BEng",
+        "BSc in Physics",
+        "BSc in GeoInformatics",
+        "BSc with focal area Bioinformatics and Computational Biology",
+        "BCom in Mathematical Sciences",
+        "BDatSci"
+      ]
+    },
+    {
+      "programme_group": "Interdisciplinary Programmes",
+      "programme_name": "BSc",
+      "duration": "3 years",
+      "qualification_type": "Bachelor of Science",
+      "Aggregated_Average_Required": "65%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Afrikaans OR English, Home Language or First Additional Language: 50%",
+        "Mathematics: 70%",
+        "Physical Sciences: 50%"
+      ],
+      "focal_areas": [
+        "Biomedical Mathematical Sciences",
+        "Applied Medicinal Chemistry",
+        "Bioinformatics and Computational Biology",
+        "Biomathematics"
+      ]
+    },
+    {
+      "programme_group": "Interdisciplinary Programmes",
+      "programme_name": "Bachelor of Data Science",
+      "abbreviation": "BDatSci",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "Aggregated_Average_Required": "80%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "Mathematics: 80%",
+        "Afrikaans Home Language: 60% OR English Home Language: 60% OR Afrikaans First Additional Language: 75% OR English First Additional Language: 75%"
+      ],
+      "focal_areas": [
+        "Computer Science",
+        "Applied Mathematics",
+        "Statistical Physics"
+      ],
+      "similar_programmes": [
+        "BSc in Computer Science",
+        "BEng",
+        "BSc in Physics",
+        "BSc in Mathematical Sciences",
+        "BSc with focal area Bioinformatics and Computational Biology",
+        "BSc with focal area Biomedical Mathematical Sciences",
+        "BCom in Mathematical Sciences"
+      ]
+    }
+  ],
+  "extended_curriculum_programmes": {
+    "available": true,
+    "description": "BSc programmes in the biological, physical or mathematical sciences are also available as extended curriculum programmes, adding one extra year of study with a special first-year curriculum",
+    "minimum_consideration_rules": {
+      "biological_sciences": [
+        {
+          "combination": 1,
+          "Mathematics": "At least 60%",
+          "Physical_Sciences": "At least 50%",
+          "Aggregated_Average_Required": "60%",
+          "aggregate_note": "Excluding Life Orientation"
+        },
+        {
+          "combination": 2,
+          "Mathematics": "At least 55%",
+          "Physical_Sciences": "At least 50%",
+          "Aggregated_Average_Required": "65%",
+          "aggregate_note": "Excluding Life Orientation"
+        },
+        {
+          "combination": 3,
+          "Mathematics": "At least 60%",
+          "Physical_Sciences": "At least 45%",
+          "Aggregated_Average_Required": "65%",
+          "aggregate_note": "Excluding Life Orientation"
+        }
+      ],
+      "physical_and_mathematical_sciences": [
+        {
+          "combination": 1,
+          "Mathematics": "At least 70%",
+          "Physical_Sciences": "At least 50%",
+          "Aggregated_Average_Required": "60%",
+          "aggregate_note": "Excluding Life Orientation"
+        },
+        {
+          "combination": 2,
+          "Mathematics": "At least 65%",
+          "Physical_Sciences": "At least 50%",
+          "Aggregated_Average_Required": "65%",
+          "aggregate_note": "Excluding Life Orientation"
+        },
+        {
+          "combination": 3,
+          "Mathematics": "At least 70%",
+          "Physical_Sciences": "At least 45%",
+          "Aggregated_Average_Required": "65%",
+          "aggregate_note": "Excluding Life Orientation"
+        }
+      ]
+    }
+  }
+}
+
+{
+  "institution": "Stellenbosch University",
+  "source": "Admission Requirements for Undergraduate Programmes 2025",
+  "faculty": "Theology",
+  "admission_score_type": "Aggregated average",
+  "aggregate_note": "Excluding Life Orientation",
+  "programmes": [
+    {
+      "programme_name": "BTh",
+      "full_name": "Bachelor of Theology",
+      "duration": "3 years",
+      "qualification_type": "Bachelor",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "NSC aggregate of at least 60%, excluding Life Orientation"
+      ],
+      "similar_programmes": [
+        "BDiv",
+        "Bachelor of Social Work"
+      ],
+      "career_opportunities": [
+        "Youth worker",
+        "Counsellor",
+        "Community worker"
+      ]
+    },
+    {
+      "programme_name": "BDiv",
+      "full_name": "Bachelor of Divinity",
+      "duration": "4 years",
+      "qualification_type": "Bachelor",
+      "Aggregated_Average_Required": "60%",
+      "aggregate_note": "Excluding Life Orientation",
+      "requirements": [
+        "NSC aggregate of at least 60%, excluding Life Orientation"
+      ],
+      "similar_programmes": [
+        "BTh"
+      ],
+      "career_opportunities": [
+        "First step in ministerial training",
+        "Ministerial pathway in the Dutch Reformed Church",
+        "Ministerial pathway in the Uniting Reformed Church",
+        "Further denominational ministry training for Presbyterian, Anglican and Volkskerk ministry candidates"
+      ],
+      "further_study_notes": [
+        "To become a minister in the Dutch Reformed Church or Uniting Reformed Church, complete the BDiv and MDiv",
+        "Dutch Reformed Church candidates also need the Postgraduate Diploma in Theology: Christian Ministry"
+      ]
+    }
+  ],
+  "extended_curriculum_programme": {
+    "available": true,
+    "applies_to": [
+      "BTh",
+      "BDiv"
+    ],
+    "additional_duration": "1 year",
+    "Aggregated_Average_Required": "55% to below 60%",
+    "aggregate_note": "Excluding Life Orientation",
+    "requirements": [
+      "NSC aggregate of at least 55% but below 60%, excluding Life Orientation",
+      "Interview with the Dean or a representative, if required"
+    ],
+    "selection_notes": [
+      "This is a selection programme",
+      "Limited spaces are available"
+    ]
+  }
+}

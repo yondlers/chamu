@@ -1,0 +1,246 @@
+{
+    "faculty": "Law",
+    "university": "Nelson Mandela University",
+    "source": "2026 MandelaUni Undergraduate Guide",
+    "admission_score_type": "Applicant Score (AS)",
+    "qualifications": [
+        {
+            "name": "Bachelor of Arts in Law",
+            "qualification_type": "Bachelor of Arts",
+            "abbreviation": "BA Law",
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Designed as preparation for a two-year LLB after completion.",
+                "AS variants: Mathematics: 390 with 50%+; Technical Mathematics: 405 with 75%+; Mathematical Literacy: 405 with 75%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: English Home Language: 65%."
+                },
+                {
+                    "subject": "OR English First Additional Language",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: OR English First Additional Language: 70%."
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 75,
+                            "minimum_level": 6,
+                            "note": "Original subject requirement: Technical Mathematics or Mathematical Literacy: 75%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 75,
+                            "minimum_level": 6,
+                            "note": "Original subject requirement: Technical Mathematics or Mathematical Literacy: 75%."
+                        }
+                    ]
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 75,
+                    "admission_score_required": 405,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 75,
+                    "admission_score_required": 405,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Law",
+            "qualification_type": "Bachelor of Commerce",
+            "abbreviation": "BCom Law",
+            "duration_years": 3,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Designed for students combining commerce and law and can lead to a two-year LLB.",
+                "AS variants: Mathematics: 390 with 60%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: English Home Language: 65%."
+                },
+                {
+                    "subject": "OR English First Additional Language",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: OR English First Additional Language: 70%."
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Laws",
+            "qualification_type": "Bachelor of Laws",
+            "abbreviation": "LLB",
+            "duration_years": 4,
+            "admission_score_required": 390,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 390 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: English Home Language: 65%."
+                },
+                {
+                    "subject": "OR English First Additional Language",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: OR English First Additional Language: 70%."
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematics: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 390,
+                    "label": "Mathematics route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Laws (Extended Curriculum)",
+            "qualification_type": "Bachelor of Laws",
+            "abbreviation": "LLB",
+            "duration_years": 5,
+            "admission_score_required": 370,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 370 with 45%+; Technical Mathematics: 385 with 70%+; Mathematical Literacy: 385 with 70%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: English Home Language: 60%."
+                },
+                {
+                    "subject": "OR English First Additional Language",
+                    "minimum_mark": 65,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: OR English First Additional Language: 65%."
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Mathematics: 45%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 70,
+                            "minimum_level": 6,
+                            "note": "Original subject requirement: Technical Mathematics or Mathematical Literacy: 70%."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 70,
+                            "minimum_level": 6,
+                            "note": "Original subject requirement: Technical Mathematics or Mathematical Literacy: 70%."
+                        }
+                    ]
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 45,
+                    "admission_score_required": 370,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 70,
+                    "admission_score_required": 385,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "admission_score_required": 385,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        }
+    ]
+}

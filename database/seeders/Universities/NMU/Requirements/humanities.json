@@ -1,0 +1,921 @@
+{
+    "faculty": "Humanities",
+    "university": "Nelson Mandela University",
+    "source": "2026 MandelaUni Undergraduate Guide",
+    "admission_score_type": "Applicant Score (AS)",
+    "qualifications": [
+        {
+            "name": "Bachelor of Visual Arts: Fashion and Textiles (Visual Arts - Design Stream)",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BVA Fashion and Textiles",
+            "duration_years": 2,
+            "admission_score_required": null,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Admission to the desired specialisation is not guaranteed; students are advised to interview for more than one specialisation."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": []
+        },
+        {
+            "name": "Bachelor of Visual Arts: Graphic Design (Visual Arts - Design Stream)",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BVA Graphic Design",
+            "duration_years": 2,
+            "admission_score_required": null,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": []
+        },
+        {
+            "name": "Bachelor of Visual Arts: Photography (Visual Arts - Design Stream)",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BVA Photography",
+            "duration_years": 2,
+            "admission_score_required": null,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": []
+        },
+        {
+            "name": "Bachelor of Visual Arts: Fine Art (Visual Arts - Fine Art Stream)",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BVA Fine Art",
+            "duration_years": 2,
+            "admission_score_required": null,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Specialisations: Sculpture, Painting, Printmaking, Drawing, Ceramics."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": []
+        },
+        {
+            "name": "Diploma in Music (Curriculum 1 - Music and Performing Arts)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 290,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 290; Technical Mathematics: 305; Mathematical Literacy: 305."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 290,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 305,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 305,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Music (Curriculum 2 - Music and Performing Arts)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 290,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 290; Technical Mathematics: 305; Mathematical Literacy: 305."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 290,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 305,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 305,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (School Music - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350; Technical Mathematics: 365; Mathematical Literacy: 365."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (Extended Curriculum - School Music - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 5,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 330; Technical Mathematics: 345; Mathematical Literacy: 345."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (Performing Arts - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350; Technical Mathematics: 365; Mathematical Literacy: 365."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (Extended Curriculum - Performing Arts - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 5,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 330; Technical Mathematics: 345; Mathematical Literacy: 345."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (Music Technology - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350; Technical Mathematics: 365; Mathematical Literacy: 365."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (Extended Curriculum - Music Technology - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 5,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 330; Technical Mathematics: 345; Mathematical Literacy: 345."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (General - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350; Technical Mathematics: 365; Mathematical Literacy: 365."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Music (Extended Curriculum - General - Music and Performing Arts)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 5,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 330; Technical Mathematics: 345; Mathematical Literacy: 345."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": null,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Relations Management (School of Language, Media and Communication)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 330,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Applicants may also be provisionally admitted based on work experience, age and maturity at the discretion of the Head of Department.",
+                "AS variants: Mathematics: 330 with 30%+; Technical Mathematics: 345 with 50%+; Mathematical Literacy: 345 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 30%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Technical Mathematics: 50%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "admission_score_required": 330,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 345,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "admission_score_required": 345,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (School of Language, Media and Communication)",
+            "qualification_type": "Bachelor of Arts",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Major options: Anthropology, Afrikaans, Business Management, Economics, English, English Language Studies, History, French, Geography, Industrial Psychology, isiXhosa, Philosophy, Political Studies, Psychology, Public Administration, Sociology.",
+                "AS variants: Mathematics: 350 with 35%+; Technical Mathematics: 365 with 55%+; Mathematical Literacy: 365 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 35%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Technical Mathematics: 55%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Media, Communication and Culture (School of Language, Media and Communication)",
+            "qualification_type": "Bachelor of Arts",
+            "abbreviation": "BA MCC",
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350 with 35%+; Technical Mathematics: 365 with 55%+; Mathematical Literacy: 365 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 35%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Technical Mathematics: 55%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Management (School of Governmental and Social Sciences)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 310,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 310 with 35%+; Technical Mathematics: 325 with 55%+; Mathematical Literacy: 325 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 35%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Technical Mathematics: 55%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 310,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "admission_score_required": 325,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 325,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Management (Extended Curriculum - School of Governmental and Social Sciences)",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": 4,
+            "admission_score_required": 290,
+            "aps_required": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 290 with 30%+; Technical Mathematics: 305 with 50%+; Mathematical Literacy: 305 with 50%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 30%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Technical Mathematics: 50%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 50%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "admission_score_required": 290,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 50,
+                    "admission_score_required": 305,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 50,
+                    "admission_score_required": 305,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (School of Governmental and Social Sciences)",
+            "qualification_type": "Bachelor of Arts",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350 with 35%+; Technical Mathematics: 365 with 55%+; Mathematical Literacy: 365 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 35%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Technical Mathematics: 55%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Politics and Economics (School of Governmental and Social Sciences)",
+            "qualification_type": "Bachelor of Arts",
+            "abbreviation": null,
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "AS variants: Mathematics: 350 with 40%+; Technical Mathematics: 365 with 70%+; Mathematical Literacy: 365 with 70%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Mathematics: 40%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Technical Mathematics: 70%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematical Literacy: 70%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 70,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 70,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Administration in Public Administration (School of Governmental and Social Sciences)",
+            "qualification_type": "Bachelor of Administration",
+            "abbreviation": "BAdmin Public Administration",
+            "duration_years": 3,
+            "admission_score_required": 350,
+            "aps_required": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: 2026 MandelaUni Undergraduate Guide.",
+                "Admission score type: Applicant Score (AS).",
+                "AS is calculated using Nelson Mandela University applicant-score rules: three fundamentals plus the next best subjects, Life Orientation excluded unless the official quintile bonus applies.",
+                "Specialisation options: Industrial Psychology, Sociology, Business Management, Political Studies.",
+                "AS variants: Mathematics: 350 with 35%+; Technical Mathematics: 365 with 55%+; Mathematical Literacy: 365 with 55%+."
+            ],
+            "source_url": "https://www.mandela.ac.za/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "minimum_level": 2,
+                    "note": "Original subject requirement: Mathematics: 35%."
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Technical Mathematics: 55%."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Mathematical Literacy: 55%."
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 35,
+                    "admission_score_required": 350,
+                    "label": "Mathematics route"
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Technical Mathematics route"
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_mark": 55,
+                    "admission_score_required": 365,
+                    "label": "Mathematical Literacy route"
+                }
+            ]
+        }
+    ]
+}

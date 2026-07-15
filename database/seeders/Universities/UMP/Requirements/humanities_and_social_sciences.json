@@ -1,0 +1,193 @@
+{
+    "faculty": "Humanities and Social Sciences",
+    "university": "University of Mpumalanga",
+    "source": "Undergraduate Programmes",
+    "qualifications": [
+        {
+            "name": "Higher Certificate in Event Management",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1.0,
+            "aps_required": 19,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 120.",
+                "NCV requirements: NCV level 4 with recommended subjects: Business Studies, Hospitality Studies and Tourism Discipline.",
+                "Additional UMP requirements: Minimum Admission Point Score: 19 with Mathematics OR 21 with Mathematical Literacy or Technical Mathematics; Diploma or Higher Certificate endorsement; Any three additional vocational subjects at level 2."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 2
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Hospitality Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 360.",
+                "Additional UMP requirements: Minimum Admission Point Score: 24 with Mathematics OR 25 with Mathematical Literacy; Diploma endorsement; One additional language; Any other four subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Development Studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 360.",
+                "Additional UMP requirements: Minimum Admission Point Score: 32; Geography OR History plus one other Social or Commercial subject; Sciences level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Social Work",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 480.",
+                "Additional UMP requirements: Minimum Admission Point Score: 32."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts (General)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 360.",
+                "Additional UMP requirements: Minimum Admission Point Score: 28."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

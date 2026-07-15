@@ -1,0 +1,1709 @@
+{
+    "faculty": "Faculty of Science, Agriculture and Engineering",
+    "university": "University of Zululand",
+    "closing_month": 10,
+    "closing_day": 31,
+    "source": "2026 Brochure for Undergraduate",
+    "qualifications": [
+        {
+            "name": "B Consumer Science: Extension and Rural Development",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Consumer Science: Hospitality and Tourism",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Eng Electrical Engineering",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 30,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "B Eng Electrical Engineering and Computer Engineering",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 30,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "B Eng Mechanical Engineering",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 30,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "B Eng Mechatronic Engineering",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 30,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "B Nursing Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 30,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Agric: Agronomy",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Agric: Animal Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Agricultural Economics: Agribusiness Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Applied Mathematics with Computer Sciences as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Applied Mathematics with Hydrology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Applied Mathematics with Mathematics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Applied Mathematics with Physics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Applied Mathematics with Statistics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Augmented: Life Sciences",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Augmented: Physical Sciences",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "B Sc Biochemistry with Botany as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Biochemistry with Chemistry as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Biochemistry with Human Movement Science as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Biochemistry with Microbiology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Biochemistry with Zoology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Botany with Geography as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Botany with Hydrology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Botany with Microbiology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Botany with Zoology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Chemistry with Computer Science as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Chemistry with Hydrology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Chemistry with Mathematics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Chemistry with Physics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Chemistry with Zoology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Computer Science with Hydrology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Computer Science with Mathematics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Computer Science with Physics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Computer Science with Statistics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Geography with Hydrology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; English; Mathematics; Physical Sciences."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Geography with Physics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Physical Sciences."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Geography with Statistics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; Physical Sciences."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Geography with Zoology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Human Movement Science with Physics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Human Movement Science with Zoology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; English; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Hydrology with Microbiology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; English; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Hydrology with Physics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Hydrology with Statistics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Hydrology with Zoology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; English; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Mathematics with Physics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Mathematics with Statistics as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "B Sc Microbiology with Human Movement Science as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree; English; Mathematics."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Microbiology with Zoology as Major 2",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "aps_required": 28,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "B Sc Foundation",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Degree."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 2
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dip Hospitality Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Diploma; Four 20-credit subjects excluding language at level 3."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Dip Sport and Exercise Technology",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 26,
+            "closing_month": 10,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Faculty telephone: 035 902 6306/6649.",
+                "Closing date: 31 October 2025.",
+                "Additional UNIZULU requirements: NSC Diploma; Three subjects from the designated list at level 3."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

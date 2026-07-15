@@ -1,0 +1,139 @@
+{
+    "name": "Faculty of Arts and Design",
+    "closing_month": 7,
+    "closing_day": 31,
+    "qualifications": [
+        {
+            "name": "Diploma in Commercial Photography",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Fashion Design and Technology",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Fine and Applied Arts",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Integrated Communication Design",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 24,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Interior Design",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "recommended_subjects": [
+                "Civil Technology",
+                "Design",
+                "Engineering Graphics and Design",
+                "Visual Arts"
+            ]
+        },
+        {
+            "name": "Diploma in Jewellery Design and Manufacture",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Motion Picture Production",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Music",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "is_selection_programme": true,
+            "notes": "Audition required.",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Performing Arts",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "is_selection_programme": true,
+            "notes": "Audition required.",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Music",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "aps_required": 18,
+            "is_selection_programme": true,
+            "notes": "Audition required.",
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        }
+    ]
+}

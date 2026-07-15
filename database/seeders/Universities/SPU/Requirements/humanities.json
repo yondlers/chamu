@@ -1,0 +1,167 @@
+{
+    "faculty": "School of Humanities",
+    "university": "Sol Plaatje University",
+    "source": "SPU Prospectus 2023",
+    "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+    "admission_score_type": "SPU APS",
+    "qualifications": [
+        {
+            "name": "Bachelor of Arts",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BA",
+            "duration_years": 3,
+            "aps_required": 30,
+            "admission_score_required": 30,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Bachelor's Degree requirement.",
+                "For Economics, Geography or Mathematics majors/modules, a minimum Level 4 is required in the relevant NSC subject."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Heritage Studies",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HC Heritage Studies",
+            "duration_years": 1,
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Higher Certificate requirement."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Court Interpreting",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HC Court Interpreting",
+            "duration_years": 1,
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Higher Certificate requirement or NCV with appropriate subjects."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "choices": [
+                        {
+                            "label": "one African language at Home Language Level 4",
+                            "count": 1,
+                            "minimum_level": 4,
+                            "subjects": [
+                                "isiNdebele Home Language",
+                                "isiXhosa Home Language",
+                                "isiZulu Home Language",
+                                "Sepedi Home Language",
+                                "Sesotho Home Language",
+                                "Setswana Home Language",
+                                "SiSwati Home Language",
+                                "Tshivenda Home Language",
+                                "Xitsonga Home Language"
+                            ]
+                        },
+                        {
+                            "label": "one African language at First Additional Language Level 5",
+                            "count": 1,
+                            "minimum_level": 5,
+                            "subjects": [
+                                "isiNdebele First Additional Language",
+                                "isiXhosa First Additional Language",
+                                "isiZulu First Additional Language",
+                                "Sepedi First Additional Language",
+                                "Sesotho First Additional Language",
+                                "Setswana First Additional Language",
+                                "SiSwati First Additional Language",
+                                "Tshivenda First Additional Language",
+                                "Xitsonga First Additional Language"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

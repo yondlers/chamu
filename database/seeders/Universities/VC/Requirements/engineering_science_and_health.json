@@ -1,0 +1,318 @@
+{
+    "faculty": "Engineering, Science and Health",
+    "university": "The IIE's Varsity College",
+    "source": "The IIE Institutional Prospectus 2026",
+    "admission_score_type": "Pass type + subject percentage requirements",
+    "qualifications": [
+        {
+            "name": "Bachelor of Public Health",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Engineering in Civil Engineering (4 Year)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 4,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%, Mathematics 70%, Physical Science 60%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematics: 70%."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Physical Science: 60%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Engineering in Electrical and Electronic Engineering (4 Year)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 4,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%, Mathematics 70%, Physical Science 60%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematics: 70%."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Physical Science: 60%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Engineering in Mechanical Engineering (4 Year)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 4,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%, Mathematics 70%, Physical Science 60%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 70,
+                    "minimum_level": 6,
+                    "note": "Original subject requirement: Mathematics: 70%."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Physical Science: 60%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Engineering in Electrical and Electronic Engineering (5 Year)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 5,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%, Mathematics 60%, Physical Science 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Physical Science: 50%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Engineering in Mechanical Engineering (5 Year)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 5,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%, Mathematics 60%, Physical Science 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Physical Science: 50%."
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Engineering in Civil Engineering (5 Year)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": 5,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%, Mathematics 60%, Physical Science 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "minimum_level": 5,
+                    "note": "Original subject requirement: Mathematics: 60%."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Original subject requirement: Physical Science: 50%."
+                }
+            ]
+        }
+    ]
+}

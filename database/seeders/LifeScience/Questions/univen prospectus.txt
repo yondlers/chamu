@@ -1,0 +1,680 @@
+{
+  "institution": "University of Venda",
+  "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+  "faculty": "Faculty of Humanities, Social Sciences and Education",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Arts (Media Studies)",
+      "code": "HSBAMS",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English or African Languages"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Arts (Development Studies)",
+      "code": "HSBADS",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in History or Economics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Arts",
+      "code": "HSBBA",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Indigenous Knowledge Systems",
+      "code": "HSBIKS",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Arts in Language Practice",
+      "code": "HSBALP",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in African Language",
+        "Adequate achievement in English"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Arts in International Relations",
+      "code": "HSBAIR",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in History or Economics",
+        "Adequate achievement in English"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Arts, Youth in Development",
+      "code": "HSBAYD",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Theology",
+      "code": "HSBBT",
+      "admission_requirements": [
+        "NSC 30",
+        "OR RPL according to University Policy"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Religious Studies",
+      "code": "HSBARS",
+      "admission_requirements": [
+        "NSC 30",
+        "OR RPL according to University Policy"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Higher Certificate in Music",
+      "code": "HSCHCM",
+      "admission_requirements": [
+        "NSC",
+        "Adequate achievement in English"
+      ],
+      "duration": "1 year"
+    },
+    {
+      "programme_name": "Bachelor of Social Work",
+      "code": "HSBBSW",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English level 4"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Education in Senior Phase and Further Education and Training",
+      "codes": ["SEBESP", "SEBECP", "SEBELP"],
+      "admission_requirements": [
+        "English 50% plus two subjects at 50% from Mathematics, Physical Sciences and Life Sciences",
+        "OR English 50% plus two subjects at 50% from Accounting, Business Studies and Economics",
+        "OR English 50% plus two subjects at 50% from History, Geography, Sepedi, Tshivenda, Xitsonga, Siswati or IsiNdebele"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Education in Foundation Phase Teaching",
+      "code": "SEBEFP",
+      "admission_requirements": [
+        "National Senior Certificate with Bachelor endorsement",
+        "APS of 36 points",
+        "Minimum 50% in English for Grade 12",
+        "OR Matric/Grade 12 with Early Childhood Development experience, either certificate or work experience, and minimum 50% in English for Grade 12",
+        "OR Old Senior Certificate with exemption and average symbol D Standard Grade or E Higher Grade in English for Grade 12",
+        "OR Matric/Grade 12 with Early Childhood Development experience, either certificate or work experience, and minimum 50% in English for Grade 12"
+      ],
+      "duration": "4 years"
+    }
+  ],
+  "career_opportunities": [
+    "Social Worker",
+    "Public Relations Officer",
+    "Anthropologist",
+    "Psychologist",
+    "Information Officer",
+    "Interpreter",
+    "Lecturer",
+    "Translator",
+    "Teacher",
+    "Vocational Officer",
+    "Counsellor",
+    "Public Servant",
+    "Archaeologist",
+    "Politician",
+    "Music Composer",
+    "Ambassador",
+    "Officer in nongovernmental organisations",
+    "Training Officer",
+    "TV Presenter",
+    "Radio Broadcaster",
+    "United Nations agencies such as UNESCO and UNICEF",
+    "Social Welfare Education Officer",
+    "Adult Education Specialist",
+    "Environmental Education Specialist",
+    "Youth Studies Professional",
+    "Journalist",
+    "Editor",
+    "Terminologist",
+    "Proofreader",
+    "Creative Writer",
+    "Book Reviewer",
+    "Tour Guide",
+    "Museum Curator",
+    "Archivist",
+    "Librarian",
+    "Community Developer",
+    "Extension Officer",
+    "Indigenous Knowledge Systems Practitioner"
+  ]
+}
+
+{
+  "institution": "University of Venda",
+  "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+  "faculty": "Faculty of Health Sciences",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Nursing",
+      "code": "SHBBN",
+      "admission_requirements": [
+        "NSC 36",
+        "Adequate achievement in Life Sciences",
+        "Adequate achievement in Mathematics",
+        "Adequate achievement in English",
+        "Adequate achievement in Physical Sciences",
+        "Life Orientation excluded from APS",
+        "Selection test required",
+        "Physical assessment required"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "BSc in Nutrition",
+      "code": "SHBBSN",
+      "admission_requirements": [
+        "NSC 34",
+        "Adequate achievement in Life Sciences",
+        "Adequate achievement in English",
+        "Adequate achievement in Mathematics",
+        "Adequate achievement in Physical Sciences or Agricultural Sciences"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "BSc in Biokinetics",
+      "code": "SHBBSB",
+      "admission_requirements": [
+        "NSC 34",
+        "Adequate achievement in Life Sciences",
+        "Adequate achievement in English",
+        "Adequate achievement in Mathematics",
+        "Adequate achievement in Physical Sciences"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "BSc in Sports and Exercise Science",
+      "code": "SHBSES",
+      "admission_requirements": [
+        "NSC 34",
+        "Adequate achievement in Life Sciences",
+        "Adequate achievement in English",
+        "Adequate achievement in Physical Sciences"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "BSc in Recreation and Leisure Studies",
+      "code": "SHBRLS",
+      "admission_requirements": [
+        "NSC 34",
+        "Adequate achievement in English"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Psychology",
+      "code": "SHBBP",
+      "admission_requirements": [
+        "NSC 36",
+        "Adequate achievement in English",
+        "Selection test required"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Diploma in Nursing",
+      "code": "SHDPN",
+      "admission_requirements": [
+        "NSC 28",
+        "Life Orientation excluded from APS",
+        "Life Sciences level 4",
+        "English level 4",
+        "Mathematics level 3",
+        "Physical Sciences level 4",
+        "Selection test required",
+        "Physical assessment required"
+      ],
+      "duration": "3 years"
+    }
+  ],
+  "career_opportunities": [
+    "Professional Nurse in private and public sector",
+    "Midwife",
+    "Psychiatric Nurse",
+    "Nutritionist",
+    "Registered Counsellor",
+    "Biokineticist",
+    "Certified Leisure Professional",
+    "Recreation and Sport Science Specialist"
+  ]
+}
+
+{
+  "institution": "University of Venda",
+  "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+  "faculty": "Faculty of Management, Commerce and Law",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Administration",
+      "code": "MSBAPA",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement in English",
+        "Moderate achievement level in any three subjects"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce",
+      "field": "Various disciplines",
+      "code": null,
+      "admission_requirements": [],
+      "duration": null
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Accounting Sciences",
+      "code": "MSBCAS",
+      "admission_requirements": [
+        "NSC 35",
+        "Adequate achievement level in English",
+        "At least 55% pass in Mathematics if student does not have Matric Accounting",
+        "OR at least 50% pass in Mathematics if student has done and passed Accounting with at least 60% in Matric"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Accounting",
+      "code": "MSBBCA",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Accounting or Mathematics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Business Information Systems",
+      "code": "MSBBIS",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Moderate achievement in Mathematics OR 75% in Mathematical Literacy",
+        "Any two of these subjects: Accounting, Business Studies, Economics, Information Technology or Computer Studies"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Business Management",
+      "code": "MSBCBM",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Business Studies",
+        "Moderate achievement in any two of these subjects: Accounting, Economics, Information Technology and Mathematics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Cost and Management Accounting",
+      "code": "MSBCMA",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Accounting or Mathematics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Economics",
+      "code": "MSBBCE",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Economics or Mathematics",
+        "Moderate achievement in any two of these subjects: Accounting, Business Studies and Information Technology"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Human Resource Management",
+      "code": "MSBHRM",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology and Mathematics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Industrial Psychology",
+      "code": "MSBCIP",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology and Mathematics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Commerce in Tourism Management",
+      "code": "MSBCTM",
+      "admission_requirements": [
+        "NSC 32",
+        "Adequate achievement level in English",
+        "Mathematical Literacy OR moderate achievement in Mathematics",
+        "Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology, Geography and Tourism"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Baccalaureus Legum",
+      "code": "LWBBL",
+      "admission_requirements": [
+        "NSC 38",
+        "Life Orientation excluded from APS",
+        "Minimum of 60% in English"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Arts in Criminal Justice",
+      "code": "LWBACJ",
+      "admission_requirements": [
+        "NSC 34",
+        "Life Orientation excluded from APS",
+        "Minimum of 50% in English"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Extended Degree Programmes",
+      "admission_requirements": [
+        "Students who do not qualify for the main degree programme of choice may be considered",
+        "Must meet requirements for bachelor's degree in Grade 12 OR have completed Matric with university exemption",
+        "APS of 28-31 excluding Life Orientation"
+      ],
+      "duration": "4 years",
+      "programmes_offered": [
+        {
+          "programme_name": "Extended Bachelor of Administration",
+          "code": "MSEABA",
+          "duration": "4 years"
+        },
+        {
+          "programme_name": "Extended Bachelor of Commerce in Accounting",
+          "code": "MSEBCA",
+          "duration": "4 years"
+        },
+        {
+          "programme_name": "Extended Bachelor of Commerce in Business Information Systems",
+          "code": "MSEBIS",
+          "duration": "4 years"
+        },
+        {
+          "programme_name": "Extended Bachelor of Commerce in Business Management",
+          "code": "MSEBCM",
+          "duration": "4 years"
+        },
+        {
+          "programme_name": "Extended Bachelor of Commerce in Cost and Management Accounting",
+          "code": "MSECMA",
+          "duration": "4 years"
+        },
+        {
+          "programme_name": "Extended Bachelor of Commerce in Economics",
+          "code": "MSEBCE",
+          "duration": "4 years"
+        },
+        {
+          "programme_name": "Extended Bachelor of Commerce in Human Resources Management",
+          "code": "MSEHRM",
+          "duration": "4 years"
+        },
+        {
+          "programme_name": "Extended Bachelor of Commerce in Tourism Management",
+          "code": "MSECTM",
+          "duration": "4 years"
+        }
+      ]
+    }
+  ],
+  "career_opportunities": {
+    "bcom": [
+      "Accountant",
+      "Bookkeeper",
+      "Auditor",
+      "Tax Manager",
+      "Tax Consultant",
+      "Personnel Manager",
+      "Office Manager",
+      "Administrator in national, provincial or local government",
+      "Nongovernmental organisations",
+      "Business organisations",
+      "Social Development Manager",
+      "Small Business Manager",
+      "Small Business Advisor",
+      "Entrepreneur",
+      "Tourist and Hotel Industry Manager",
+      "Business Management Information Expert",
+      "Economist",
+      "Financial institutional worker in banking or insurance",
+      "Lecturer",
+      "Researcher"
+    ],
+    "law": [
+      "Advocate",
+      "Attorney",
+      "Prosecutor",
+      "Legal Adviser",
+      "Magistrate",
+      "Judge",
+      "Lawyer in the public and corporate sector",
+      "International relations",
+      "International organisations",
+      "National or international nongovernmental organisations",
+      "Academic fields"
+    ],
+    "criminal_justice": [
+      "Police Officer",
+      "Traffic Officer",
+      "Lecturer",
+      "Self-employment such as private practice",
+      "Criminologist",
+      "Administrative Officer in criminology and policing",
+      "Researcher"
+    ]
+  }
+}
+
+{
+  "institution": "University of Venda",
+  "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+  "faculty": "Faculty of Science, Engineering and Agriculture",
+  "programmes": [
+    {
+      "programme_name": "Bachelor of Agriculture",
+      "code": "SCBAGR",
+      "streams": [
+        "Agricultural Economics",
+        "Animal Science",
+        "Crop Science"
+      ],
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Life Sciences OR Agricultural Sciences",
+        "Adequate achievement in Mathematics"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Environmental Sciences",
+      "code": "SCBES",
+      "streams": [
+        "Geography",
+        "Hydrology",
+        "Ecology",
+        "Environmental Management"
+      ],
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Geography",
+        "Adequate achievement in Mathematics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Science",
+      "code": "SCBSC",
+      "streams": [
+        "Biochemistry",
+        "Biotechnology",
+        "Botany",
+        "Chemistry",
+        "Computer Science",
+        "Mathematics",
+        "Microbiology",
+        "Physics",
+        "Statistics",
+        "Zoology"
+      ],
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Mathematics",
+        "Adequate achievement in Physical Sciences"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Science in Earth Sciences",
+      "code": "SCBESC",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Mathematics",
+        "Adequate achievement in Physical Sciences",
+        "Geography recommended"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Science in Computer Science",
+      "code": "SCBCS",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Mathematics",
+        "Physical Sciences recommended"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Science in Information Systems",
+      "code": "SCBIS",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Mathematics"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Science in Mining and Environmental Geology",
+      "code": "SCBMEG",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Mathematics",
+        "Adequate achievement in Physical Sciences"
+      ],
+      "duration": "3 years"
+    },
+    {
+      "programme_name": "Bachelor of Science in Urban and Regional Planning",
+      "code": "SCBURP",
+      "admission_requirements": [
+        "NSC 30",
+        "Adequate achievement in English",
+        "Adequate achievement in Geography",
+        "Adequate achievement in Mathematics OR Mathematical Literacy"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Bachelor of Engineering",
+      "code": "SCBENG",
+      "streams": [
+        "Civil Engineering",
+        "Electrical Engineering"
+      ],
+      "admission_requirements": [
+        "NSC 34",
+        "Adequate achievement in English",
+        "Mathematics level 5 or higher",
+        "Physical Sciences level 5 or higher"
+      ],
+      "duration": "4 years"
+    },
+    {
+      "programme_name": "Extended BSc Programme",
+      "code": "SCEBSC",
+      "admission_requirements": [
+        "APS below mainstream requirement but meeting extended programme criteria",
+        "Selection according to University policy"
+      ],
+      "duration": "4 years"
+    }
+  ],
+  "career_opportunities": [
+    "Agricultural Scientist",
+    "Agricultural Economist",
+    "Agronomist",
+    "Animal Scientist",
+    "Crop Scientist",
+    "Environmental Scientist",
+    "Ecologist",
+    "Hydrologist",
+    "GIS Specialist",
+    "Geologist",
+    "Mining Geologist",
+    "Urban and Regional Planner",
+    "Software Developer",
+    "Systems Analyst",
+    "Data Analyst",
+    "Statistician",
+    "Biotechnologist",
+    "Microbiologist",
+    "Chemist",
+    "Physicist",
+    "Research Scientist",
+    "Civil Engineer",
+    "Electrical Engineer",
+    "Environmental Consultant"
+  ]
+}

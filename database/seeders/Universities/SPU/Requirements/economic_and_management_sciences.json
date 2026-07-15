@@ -1,0 +1,187 @@
+{
+    "faculty": "School of Economic and Management Sciences",
+    "university": "Sol Plaatje University",
+    "source": "SPU Prospectus 2023",
+    "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+    "admission_score_type": "SPU APS",
+    "qualifications": [
+        {
+            "name": "Bachelor of Commerce in Accounting",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BCom Accounting",
+            "duration_years": 3,
+            "aps_required": 30,
+            "admission_score_required": 30,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Bachelor's Degree requirement."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "choices": [
+                        {
+                            "label": "Mathematics Level 4",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_level": 4
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Mathematics Level 3 and Accounting Level 3",
+                            "count": 2,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_level": 3
+                                },
+                                {
+                                    "subject": "Accounting",
+                                    "minimum_level": 3
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Mathematical Literacy Level 5 and Accounting Level 3",
+                            "count": 2,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematical Literacy",
+                                    "minimum_level": 5
+                                },
+                                {
+                                    "subject": "Accounting",
+                                    "minimum_level": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Economics",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BCom Economics",
+            "duration_years": 3,
+            "aps_required": 30,
+            "admission_score_required": 30,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Bachelor's Degree requirement."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Retail Business Management",
+            "qualification_type": "Diploma",
+            "abbreviation": "Dip Retail Business Management",
+            "duration_years": 3,
+            "aps_required": 25,
+            "admission_score_required": 25,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "SPU source pass type: NSC pass with Diploma requirement."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count",
+                    "label": "Accounting, Business Studies or Economics",
+                    "count": 1,
+                    "minimum_level": 4,
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Economics"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Advanced Diploma in Management",
+            "qualification_type": "Advanced Diploma",
+            "abbreviation": "AdvDip Management",
+            "duration_years": null,
+            "aps_required": null,
+            "admission_score_required": null,
+            "selection_programme": false,
+            "source_url": "https://www.spu.ac.za/index.php/admission-requirements-2/",
+            "notes": [
+                "Requires a relevant Diploma at NQF Level 6, Bachelor's degree or equivalent.",
+                "Applicant must have passed subjects related to management.",
+                "Requires an average of 60% in the qualification giving access to the Advanced Diploma."
+            ],
+            "subject_requirements": []
+        }
+    ]
+}

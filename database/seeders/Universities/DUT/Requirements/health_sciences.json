@@ -1,0 +1,570 @@
+{
+    "faculty": "Health Sciences",
+    "university": "Durban University of Technology",
+    "source": "DUT Student Course Guide 2026",
+    "qualifications": [
+        {
+            "name": "Bachelor of Child and Youth Care",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-CYC.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Four 20-credit subjects at Level 4; Not more than one language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 4
+                }
+            ],
+            "admission_score_required": 28
+        },
+        {
+            "name": "Bachelor of Health Sciences in Environmental Health",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-EVH.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ],
+            "admission_score_required": 28
+        },
+        {
+            "name": "Bachelor of Health Sciences in Radiography: Diagnostic",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 8,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-RAD.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Health Sciences in Radiography: Sonography",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 8,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-RAS.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Health Sciences in Radiography: Therapy and Oncology",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 8,
+            "closing_day": 31,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-RTO.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Health Sciences in Clinical Technology",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DCT.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 3; Not more than one language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 28
+        },
+        {
+            "name": "Bachelor of Health Sciences in Emergency Medical Care",
+            "qualification_type": "Bachelor",
+            "aps_required": 30,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-HS4.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Health Sciences in Homeopathy",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-HM4.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two additional 20-credit subjects at Level 4; Not more than one language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ],
+            "admission_score_required": 28
+        },
+        {
+            "name": "Bachelor of Health Sciences in Chiropractic",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 8,
+            "closing_day": 15,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-CHI.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two additional 20-credit subjects at Level 4; Not more than one language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ],
+            "admission_score_required": 28
+        },
+        {
+            "name": "Bachelor of Health Sciences in Medical Laboratory Science",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BLS.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 3; Not more than one language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 28
+        },
+        {
+            "name": "Bachelor in Nursing",
+            "qualification_type": "Bachelor",
+            "aps_required": 28,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-I-BN1.",
+                "Campus: Indumiso Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two additional 20-credit subjects at Level 4; Only one of the additional subjects may be an additional language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Somatology",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-ST3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Any two additional 20-credit subjects at Level 3; Only one of the additional subjects may be a language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 28
+        },
+        {
+            "name": "Higher Certificate in Dental Assisting",
+            "qualification_type": "Higher Certificate",
+            "aps_required": 22,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-HDA.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Higher Certificate.",
+                "Additional DUT requirements: NSC Higher Certificate pass; Two 20-credit subjects at Level 3; Not more than one language.",
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "admission_score_required": 28
+        }
+    ]
+}

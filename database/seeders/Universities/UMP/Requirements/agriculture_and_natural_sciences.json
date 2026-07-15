@@ -1,0 +1,423 @@
+{
+    "faculty": "Agriculture and Natural Sciences",
+    "university": "University of Mpumalanga",
+    "source": "Undergraduate Programmes",
+    "qualifications": [
+        {
+            "name": "Diploma in Nature Conservation",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": true,
+            "notes": [
+                "Qualification credits: 360.",
+                "Selection notes: Students will be considered on a monthly basis; Students who meet or exceed the minimum entrance requirements will be offered places.",
+                "NCV requirements: NCV level 4 in Primary Agriculture; At least 50% for English Home Language or First Additional Language; 30% for Mathematics OR 40% for Mathematical Literacy.",
+                "Additional UMP requirements: Minimum Admission Point Score: 30; Recommended subjects: Life Sciences and Geography level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in ICT in User Support",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1.0,
+            "aps_required": 20,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 120.",
+                "NCV requirements: Applicants must have completed an NCV level 4 in Information Technology and/or Computer Science/Studies discipline.",
+                "Additional UMP requirements: Minimum Admission Point Score: 20 with Mathematics OR 22 with Mathematical Literacy; Any other three content subjects at level 2; Diploma and/or Higher Certificate endorsement."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 2
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Agriculture in Plant Production",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 23,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 360.",
+                "NCV requirements: NCV level 4 in Primary Agriculture; At least 50% for English Home Language or First Additional Language; 40% for Mathematics OR 70% for Mathematical Literacy.",
+                "Additional UMP requirements: Minimum Admission Point Score: 23 with Mathematics OR 24 with Mathematical Literacy."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 480.",
+                "Additional UMP requirements: Minimum Admission Point Score: 30; Life Sciences, Biology or Agriculture level 4; Physical Sciences level 4; Any other relevant subjects level 4."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Forestry",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 498.",
+                "Additional UMP requirements: Minimum Admission Point Score: 30; NSC or IEB with Admission for Bachelor Pass."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Animal Production",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 360.",
+                "NCV requirements: NCV level 4 in Primary Agriculture; At least 50% for English Home Language or First Additional Language; 40% for Mathematics OR 70% for Mathematical Literacy.",
+                "Additional UMP requirements: Minimum Admission Point Score: 24 with Mathematics OR 27 with Mathematical Literacy."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 6
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Agriculture in Agricultural Extension and Rural Resource Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "Qualification credits: 360.",
+                "Additional UMP requirements: Minimum Admission Point Score: 26 with Mathematics OR 28 with Mathematical Literacy."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 6
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Environmental Science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": true,
+            "notes": [
+                "Qualification credits: 360.",
+                "Selection notes: South African students who have written under another examination board and international students must have similar scores for the same or similar related subjects to be considered; Students who completed a 360-credit Diploma in an appropriate field such as conservation will be considered for this degree; Students will be considered monthly; Students who meet or exceed the minimum entrance requirements will be offered places.",
+                "Additional UMP requirements: Minimum Admission Point Score: 30."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science Degree",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": true,
+            "notes": [
+                "Qualification credits: 360.",
+                "Selection notes: South African students who have written under another examination board and international students must have similar scores for the same or similar subjects to be considered; Students who completed a 360-credit Diploma in an appropriate field such as conservation will be considered for this degree; Students will be considered monthly; Students who meet or exceed the minimum entrance requirements will be offered places.",
+                "Additional UMP requirements: Minimum Admission Point Score: 30."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Geography",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

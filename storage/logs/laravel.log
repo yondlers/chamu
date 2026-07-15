@@ -2841,3 +2841,15 @@ Did you mean one of these?
 #22 /Users/slx/Code/Edu-App/server/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
 #23 {main}
 "} 
+[2026-07-15 13:46:37] local.ERROR: Unsupported format "raw". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\InvalidArgumentException(code: 0): Unsupported format \"raw\". at /Users/slx/Code/chamu/vendor/symfony/console/Helper/DescriptorHelper.php:63)
+[stacktrace]
+#0 /Users/slx/Code/chamu/vendor/symfony/console/Command/ListCommand.php(63): Symfony\\Component\\Console\\Helper\\DescriptorHelper->describe(Object(Symfony\\Component\\Console\\Output\\ConsoleOutput), Object(Illuminate\\Console\\Application), Array)
+#1 /Users/slx/Code/chamu/vendor/symfony/console/Command/Command.php(341): Symfony\\Component\\Console\\Command\\ListCommand->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Users/slx/Code/chamu/vendor/symfony/console/Application.php(1117): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/slx/Code/chamu/vendor/symfony/console/Application.php(356): Symfony\\Component\\Console\\Application->doRunCommand(Object(Symfony\\Component\\Console\\Command\\ListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/slx/Code/chamu/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/slx/Code/chamu/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#8 {main}
+"} 

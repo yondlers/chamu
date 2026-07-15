@@ -1,0 +1,253 @@
+{
+    "faculty": "Engineering & the Built Environment",
+    "university": "University of Cape Town",
+    "source": "2024 Guidelines for Admission for Holders of National Senior Certificate",
+    "admission_score_type": "FPS/WPS",
+    "qualifications": [
+        {
+            "name": "Bachelor of Science in Engineering in Civil Engineering",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 420.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 420 FPS or above.",
+                "Notes: Probable admission: 480 WPS or above.; Guaranteed admission: 500 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 80.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 70.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Engineering in Electrical Engineering, Electrical & Computer Engineering and Mechatronics",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 420.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 420 FPS or above.",
+                "Notes: Probable admission: 480 WPS or above.; Guaranteed admission: 500 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 80.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 70.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Construction Studies",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 390.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 390 FPS or above.",
+                "Notes: Probable admission: 420 WPS or above.; Guaranteed admission: 450 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 55.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Property Studies",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 390.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 390 FPS or above.",
+                "Notes: Probable admission: 420 WPS or above.; Guaranteed admission: 450 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Architectural Studies",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 348.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 348 FPS or above.",
+                "Notes: Probable admission: 408 WPS or above with Architecture Portfolio Score of 68% or above.; Guaranteed admission: 450 FPS or above with Architecture Portfolio Score of 75% or above..",
+                "Additional subject or selection requirements: Architecture_Portfolio_Score: 50% or above."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50.0
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50.0
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Engineering in Chemical Engineering",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 420.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 420 FPS or above.",
+                "Notes: Probable admission: 480 WPS or above.; Guaranteed admission: 500 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 80.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 70.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Engineering in Mechanical, and Mechanical & Mechatronic Engineering",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 420.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 420 FPS or above.",
+                "Notes: Probable admission: 480 WPS or above.; Guaranteed admission: 500 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 80.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 75.0
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Geomatics",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 390.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "FPS is the Faculty Points Score.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "Mathematical Literacy or Technical Mathematics cannot be substituted for Mathematics.",
+                "Technical Science cannot be substituted for Physical Sciences.",
+                "NBTs are not required for programmes in the Faculty of Engineering & the Built Environment.",
+                "Eligible applicant group: Only South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: 390 FPS or above.",
+                "Notes: Probable admission: 420 WPS or above.; Guaranteed admission: 450 FPS or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 65.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60.0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "faculty": "Education",
+    "university": "Cape Peninsula University of Technology",
+    "source": "CPUT Prospectus",
+    "qualifications": [
+        {
+            "name": "Bachelor in Education: Foundation Phase Teaching",
+            "qualification_type": "Bachelor",
+            "duration_years": null,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "APS score: 32.",
+                "NCV requirements: NCV Level 4 issued by the Council for General and Further Education and Training; At least 60% in three fundamental subjects, including the language of learning and teaching; English at NQF Level 4; Mathematics at NQF Level 4 OR Mathematical Literacy with at least 70%; Life Orientation at NQF Level 4; At least 70% in four vocational subjects; Vocational subjects should include an additional language other than the language of learning and teaching, either Afrikaans or IsiXhosa; At least two vocational subjects should relate to the elective offerings of the Teacher Education programme.",
+                "Faculty notes: Due to limited spaces, admission is not guaranteed; Selection is based on Grade 11 final results for provisional acceptance; Full unconditional acceptance is based on final NSC and school-leaving results; Applicants who meet the minimum criteria may still go through further selection, including academic results, admission examinations, interviews, or a confidential report from a school principal.",
+                "Postgraduate study options: BEd Honours in Teaching and Learning; BEd Honours in Educational Management and Leadership; Advanced Diploma in Technical and Vocational Teaching; Magister Educationis; Doctor Educationis.",
+                "Language of instruction: {'mowbray_campus': 'English', 'wellington_campus': 'Afrikaans'}."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor in Education: Intermediate Phase Teaching",
+            "qualification_type": "Bachelor",
+            "duration_years": null,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "APS score: 32.",
+                "Faculty notes: Due to limited spaces, admission is not guaranteed; Selection is based on Grade 11 final results for provisional acceptance; Full unconditional acceptance is based on final NSC and school-leaving results; Applicants who meet the minimum criteria may still go through further selection, including academic results, admission examinations, interviews, or a confidential report from a school principal.",
+                "Postgraduate study options: BEd Honours in Teaching and Learning; BEd Honours in Educational Management and Leadership; Advanced Diploma in Technical and Vocational Teaching; Magister Educationis; Doctor Educationis.",
+                "Language of instruction: {'mowbray_campus': 'English', 'wellington_campus': 'Afrikaans'}."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor in Education: Senior Phase and Further Education and Training Teaching",
+            "qualification_type": "Bachelor",
+            "duration_years": null,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "APS score: 32.",
+                "Additional requirements: Students choosing Mathematics, Accounting, Physical Science or Life Sciences as electives must have at least 50% in the relevant NSC subject; Students choosing Mathematical Literacy as an elective must have at least 60%.",
+                "Faculty notes: Due to limited spaces, admission is not guaranteed; Selection is based on Grade 11 final results for provisional acceptance; Full unconditional acceptance is based on final NSC and school-leaving results; Applicants who meet the minimum criteria may still go through further selection, including academic results, admission examinations, interviews, or a confidential report from a school principal.",
+                "Postgraduate study options: BEd Honours in Teaching and Learning; BEd Honours in Educational Management and Leadership; Advanced Diploma in Technical and Vocational Teaching; Magister Educationis; Doctor Educationis.",
+                "Language of instruction: {'mowbray_campus': 'English', 'wellington_campus': 'Afrikaans'}."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Diploma in Grade R Teaching",
+            "qualification_type": "Diploma",
+            "duration_years": null,
+            "aps_required": null,
+            "selection_programme": false,
+            "notes": [
+                "Additional requirements: Applicants with ECD Level 4 and/or Level 5 without Matric and experience in Grade R teaching may apply; Applicants must provide evidence that they are working in a Grade R classroom at a registered WCED ECD centre or school.",
+                "Faculty notes: Due to limited spaces, admission is not guaranteed; Selection is based on Grade 11 final results for provisional acceptance; Full unconditional acceptance is based on final NSC and school-leaving results; Applicants who meet the minimum criteria may still go through further selection, including academic results, admission examinations, interviews, or a confidential report from a school principal.",
+                "Postgraduate study options: BEd Honours in Teaching and Learning; BEd Honours in Educational Management and Leadership; Advanced Diploma in Technical and Vocational Teaching; Magister Educationis; Doctor Educationis.",
+                "Language of instruction: {'mowbray_campus': 'English', 'wellington_campus': 'Afrikaans'}."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Diploma in Early Childhood Development Care and Education",
+            "qualification_type": "Diploma",
+            "duration_years": null,
+            "aps_required": null,
+            "selection_programme": false,
+            "notes": [
+                "Additional requirements: Applicants with ECD Level 4 and/or Level 5 without Matric may apply; Applicants must provide evidence that they are working in an Early Childhood environment or classroom at a registered WCED ECD centre; Language and computer proficiency will be tested before entry; Additional support will be provided to improve proficiency during the period of study.",
+                "Faculty notes: Due to limited spaces, admission is not guaranteed; Selection is based on Grade 11 final results for provisional acceptance; Full unconditional acceptance is based on final NSC and school-leaving results; Applicants who meet the minimum criteria may still go through further selection, including academic results, admission examinations, interviews, or a confidential report from a school principal.",
+                "Postgraduate study options: BEd Honours in Teaching and Learning; BEd Honours in Educational Management and Leadership; Advanced Diploma in Technical and Vocational Teaching; Magister Educationis; Doctor Educationis.",
+                "Language of instruction: {'mowbray_campus': 'English', 'wellington_campus': 'Afrikaans'}."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Postgraduate Certificate in Education",
+            "qualification_type": "Postgraduate Diploma",
+            "duration_years": null,
+            "aps_required": null,
+            "selection_programme": false,
+            "notes": [
+                "Faculty notes: Due to limited spaces, admission is not guaranteed; Selection is based on Grade 11 final results for provisional acceptance; Full unconditional acceptance is based on final NSC and school-leaving results; Applicants who meet the minimum criteria may still go through further selection, including academic results, admission examinations, interviews, or a confidential report from a school principal.",
+                "Postgraduate study options: BEd Honours in Teaching and Learning; BEd Honours in Educational Management and Leadership; Advanced Diploma in Technical and Vocational Teaching; Magister Educationis; Doctor Educationis.",
+                "Language of instruction: {'mowbray_campus': 'English', 'wellington_campus': 'Afrikaans'}."
+            ],
+            "subject_requirements": []
+        }
+    ]
+}

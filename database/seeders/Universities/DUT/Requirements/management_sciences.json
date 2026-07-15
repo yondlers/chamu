@@ -1,0 +1,1106 @@
+{
+    "faculty": "Management Sciences",
+    "university": "Durban University of Technology",
+    "source": "DUT Student Course Guide 2026",
+    "qualifications": [
+        {
+            "name": "Diploma in Management Sciences: Business Administration (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-MN3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Business Administration (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-MN3.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Business Law",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BL3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Business Administration (Extended Curriculum Programme, PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-MB5.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: Extended Curriculum Programme.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Human Resources (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-HR3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Human Resources (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-HR3.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Human Resources (Part-time, DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-HRY.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: Part-time.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Marketing",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-MK3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Operations (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-PD3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Operations (Part-time, DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-PDY.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: Part-time.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Public Relations and Communication Management (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-MP3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Public Relations and Communication Management (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-MP3.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Sciences: Retail",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-RB3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Administration: Disaster and Risk Management",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-RM3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Administration: Local Government",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-GV3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Administration: Public Management (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-PM3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Administration: Public Management (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-PM3.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three recognised 20-credit subjects at Level 3."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Administration: Supply Chain Management (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-SC3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Administration: Supply Chain Management (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-SC3.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Catering Management",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-CKM.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3; Not more than one language.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "Subject requirements updated from DUT entry requirements PDF: English HL 3/FAL 4, Maths 3/Maths Lit 4, Accounting 4, plus two listed subjects at level 4."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count",
+                    "label": "Consumer Studies, Economics, Business Studies or Tourism",
+                    "count": 2,
+                    "minimum_level": 4,
+                    "subjects": [
+                        "Consumer Studies",
+                        "Economics",
+                        "Business Studies",
+                        "Tourism"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Hospitality Management",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-HPM.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in Hospitality minimum APS 22, English level 3, Mathematics/Mathematical Literacy level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "Subject requirements updated from DUT entry requirements PDF: English HL 3/FAL 4, Maths 3/Maths Lit 4, one listed subject at level 4, plus two 20-credit subjects at level 4."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count",
+                    "label": "Accounting, Business Studies, Consumer Studies, Hospitality Studies or Tourism",
+                    "count": 1,
+                    "minimum_level": 4,
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Consumer Studies",
+                        "Hospitality Studies",
+                        "Tourism"
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Tourism Management",
+            "qualification_type": "Diploma",
+            "aps_required": 26,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DTM.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 2 OR Mathematical Literacy: Level 3 OR Accounting; Three recognised 20-credit subjects at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Eco Tourism",
+            "qualification_type": "Diploma",
+            "aps_required": 25,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-ET3.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; One 20-credit subject at Level 3; Not more than one language."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 3
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Agricultural Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 1,
+                    "minimum_level": 3
+                }
+            ]
+        }
+    ]
+}

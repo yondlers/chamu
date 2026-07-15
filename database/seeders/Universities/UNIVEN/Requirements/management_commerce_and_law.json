@@ -1,0 +1,197 @@
+{
+    "faculty": "Faculty of Management, Commerce and Law",
+    "university": "University of Venda",
+    "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+    "qualifications": [
+        {
+            "name": "Bachelor of Administration",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBAPA.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement in English; Moderate achievement level in any three subjects."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce",
+            "qualification_type": "Bachelor",
+            "duration_years": null,
+            "aps_required": null,
+            "selection_programme": false,
+            "notes": [
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "No specific admission requirements provided in source."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Accounting Sciences",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 35,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBCAS.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 35; Adequate achievement level in English; At least 55% pass in Mathematics if student does not have Matric Accounting; OR at least 50% pass in Mathematics if student has done and passed Accounting with at least 60% in Matric."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Accounting",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBBCA.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Accounting or Mathematics."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Business Information Systems",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBBIS.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Moderate achievement in Mathematics OR 75% in Mathematical Literacy; Any two of these subjects: Accounting, Business Studies, Economics, Information Technology or Computer Studies."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Business Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBCBM.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Business Studies; Moderate achievement in any two of these subjects: Accounting, Economics, Information Technology and Mathematics."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Cost and Management Accounting",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBCMA.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Accounting or Mathematics."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Economics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBBCE.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Economics or Mathematics; Moderate achievement in any two of these subjects: Accounting, Business Studies and Information Technology."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Human Resource Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBHRM.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology and Mathematics."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Industrial Psychology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBCIP.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology and Mathematics."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Tourism Management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): MSBCTM.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Mathematical Literacy OR moderate achievement in Mathematics; Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology, Geography and Tourism."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "Baccalaureus Legum",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 38,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): LWBBL.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 38; Life Orientation excluded from APS."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Criminal Justice",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 34,
+            "selection_programme": false,
+            "notes": [
+                "Programme code(s): LWBACJ.",
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: NSC 34; Life Orientation excluded from APS."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Extended Degree Programmes",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "notes": [
+                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
+                "Additional UNIVEN requirements: Students who do not qualify for the main degree programme of choice may be considered; Must meet requirements for bachelor's degree in Grade 12 OR have completed Matric with university exemption; APS of 28-31 excluding Life Orientation."
+            ],
+            "subject_requirements": []
+        }
+    ]
+}

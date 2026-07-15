@@ -1,0 +1,204 @@
+{
+    "faculty": "Faculty of Management Sciences",
+    "university": "Tshwane University of Technology",
+    "default_application_closing_month": "September",
+    "default_application_closing_day": 30,
+    "qualifications": [
+        {
+            "name": "Diploma in Administrative Information Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Business and Information Administration",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Contact Centre Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Entrepreneurship",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Financial Information Systems",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 22,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Hospitality Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Human Resource Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Marketing",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Operations Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Retail Business Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Sport Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Supply Chain Management",
+            "qualification_type": "Diploma",
+            "duration_years": 3,
+            "aps_required": 20,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Administrative Information Management",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "aps_required": 18,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Hospitality Management",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "aps_required": 18,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Marketing",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "aps_required": 18,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                }
+            ]
+        }
+    ]
+}

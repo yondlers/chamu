@@ -1,0 +1,187 @@
+{
+    "faculty": "Faculty of Health Sciences",
+    "university": "University of Limpopo",
+    "source": "Student Prospectus 2025",
+    "qualifications": [
+        {
+            "name": "MBChB - Bachelor of Medicine and Bachelor of Surgery",
+            "qualification_type": "Bachelor",
+            "duration_years": 6,
+            "aps_required": 27,
+            "selection_programme": false,
+            "notes": [
+                "School: Medicine.",
+                "Possible careers: General Medical Practitioner, Medical Research Institutes.",
+                "Additional UL requirements: Additional subject 1 level 4 (50-59%); Additional subject 2 level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BSc (Dietetics) - Bachelor of Science in Dietetics",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "School: Health Care Sciences.",
+                "Possible careers: Dietician in Hospital, Community Dietician, Food Service Manager, Consultants for Food Production Companies, Medical Representatives of Nutritional Companies, Private Practice and Research Centres.",
+                "Additional UL requirements: Additional subject 1 level 4 (50-59%); Additional subject 2 level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BOptom - Bachelor of Optometry",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 27,
+            "selection_programme": false,
+            "notes": [
+                "School: Health Care Sciences.",
+                "Possible careers: Optometrist in Private Sector, Optometrist in Public Sector.",
+                "Additional UL requirements: Additional subject 1 level 4 (50-59%); Additional subject 2 level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BSc (Medical Sciences) - Bachelor of Science in Medical Sciences",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "School: Health Care Sciences.",
+                "Possible careers: Medical Scientist, Laboratory Researcher.",
+                "Additional UL requirements: Additional subject 1 level 4 (50-59%); Additional subject 2 level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BNurs - Bachelor of Nursing",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 26,
+            "selection_programme": false,
+            "notes": [
+                "School: Health Care Sciences.",
+                "Possible careers: General Nurse, Psychiatric Nurse, Community Nurse, Midwife, Occupational Health Nurse, Old Age Homes, Home-Based Care, Private Practice, Hospitals, Pharmaceutical Companies, Insurance and Medical Aid Companies.",
+                "Additional UL requirements: Additional subject 1 level 4 (50-59%); Additional subject 2 level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BPharm - Bachelor of Pharmacy",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "aps_required": 27,
+            "selection_programme": false,
+            "notes": [
+                "School: Health Care Sciences.",
+                "Possible careers: Retail Medicine, Medicine Control Centre, Departments of Health, Industrial Environment, Private Practice.",
+                "Additional UL requirements: Additional subject 1 level 4 (50-59%); Additional subject 2 level 4 (50-59%)."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 5
+                }
+            ]
+        }
+    ]
+}

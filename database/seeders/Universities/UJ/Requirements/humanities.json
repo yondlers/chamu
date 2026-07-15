@@ -1,0 +1,305 @@
+{
+    "faculty": "Humanities",
+    "university": "University of Johannesburg",
+    "source": "2026 Undergraduate Prospectus",
+    "qualifications": [
+        {
+            "name": "Bachelor of Social Work - Social Work",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": 31,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7025Q.",
+                "Qualification group: Bachelor of Social Work.",
+                "Campus: APK.",
+                "Career paths: Social Worker in private sector, Social Worker in welfare organisations, Social Worker in government organisations, Social Worker in non-governmental organisations.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - BA",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 27,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7023Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: APK.",
+                "Career paths: Anthropologist, Ethicist, Social Responsibility Officer, Manager of Multicultural and Gender Affairs, General Manager, Teacher, Human Resources Development, Public Governance, Civil Service, Politics, Financial Sector, Journalist, Development Planner, Development Administrator, Researcher, NGO sector roles, Government sector roles, Private sector roles, Director, Producer, Script Writer, Production Crew, Copywriter, Corporate Journalist, Translator, Interpreter, Language Planner, Copy Editor, Literary Reviewer, Visual or Literary Specialist, Language Teacher or Trainer, Public Relations, Marketing, Human Resources, Account Manager, Strategic Planner, Media Planner, Brand Manager, Marketing Communication Practitioner, Communication Researcher, Communication Consultant, Psychologist after postgraduate studies.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval.",
+                "Additional UJ requirements: Technical Mathematics not accepted."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - BA with specialisation in Language Practice",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 27,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7026Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: APK.",
+                "Career paths: Language Practitioner, Translator, Text Editor, Interpreter, Language Planner, Language Manager, Lexicographer, Terminologist, Copy Writer, Journalist, Subtitler, Plain Language Specialist.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval.",
+                "Additional UJ requirements: Mathematics not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - BA with specialisation in Politics, Economics and Technology",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 27,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7024Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: APK.",
+                "Career paths: Apprentice Data Analyst, Researcher, Account Manager, Sales Data Management and Development, Business Development, Trainee Analyst, Import/Export Administrator, Financial Operations, Information Management, Economic Analysis, Postgraduate Study.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - Community Development and Leadership",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": 27,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7015Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: SWC.",
+                "Career paths: Municipalities, Government departments such as Department of Social Development, Non-governmental organisations focusing on development work.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval.",
+                "Additional UJ requirements: Mathematics not applicable."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - BA with specialisation in Development Studies",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7EX2Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: APK.",
+                "Career paths: Social development practitioner, Social change practitioner, Researcher of social change, Activist, Foreign service, Enterprise and organisational development.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval.",
+                "Additional UJ requirements: APS score in English determines the range of the overall APS score."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - BA with specialisation in Linguistics",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7EX3Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: APK.",
+                "Career paths: Teaching English to speakers of other languages, Training, Research, Administration, Business communication in the public sector, Market research, Interpreting, Translating, Academic career.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval.",
+                "Additional UJ requirements: APS score in English determines the range of the overall APS score."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - BA with specialisation in Linguistics and Language Practice",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: B7EX4Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: APK.",
+                "Career paths: Language Practitioner, Translator, Text Editor, Interpreter, Language Planner, Language Manager, Lexicographer, Terminologist, Copy Writer, Journalist, Subtitler, Plain Language Specialist.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval.",
+                "Additional UJ requirements: APS score in English determines the range of the overall APS score."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts - BA with specialisation in Strategic Communication",
+            "qualification_type": "Extended Bachelor Degree",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": true,
+            "notes": [
+                "Qualification code: B7EX5Q.",
+                "Qualification group: Bachelor of Arts.",
+                "Campus: APK.",
+                "Career paths: Brand Manager, Social Media Strategist, Digital Data Analyst, Online Advertising Planner, Digital Marketing Manager, Advertising Specialist, Public Relations Specialist, Media Planner, Development Officer, Communication Officer, Communication and Reputation Manager, Stakeholder Manager, Corporate Social Responsibility Specialist, Media Relations Manager, Company Spokesperson.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval.",
+                "Additional UJ requirements: APS score in English determines the range of the overall APS score; Interview may be conducted with individual applicants."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Public Relations and Communication",
+            "qualification_type": "Diploma",
+            "duration_years": 3.0,
+            "aps_required": 25,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D7002Q.",
+                "Campus: APB.",
+                "Career paths: Public Relations Practitioner, Organisation communication strategy.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "Public Relations and Communication (D7EX2Q)",
+            "qualification_type": "Diploma",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": false,
+            "notes": [
+                "Qualification code: D7EX2Q.",
+                "Campus: APB.",
+                "Career paths: Public Relations Practitioner, Organisation communication strategy.",
+                "Faculty notes: Due to limited space, fulfilling the minimum admission requirements does not guarantee acceptance into a programme; Extended programmes only consider new first-time entering candidates with no previous studies from a Higher Education Institution; Technical Mathematics is not accepted for the BA where applicable; Where Mathematics is selected as a major in the BA, the Faculty of Science minimum requirement for Grade 12 Mathematics level 4 (50%+) must be met.",
+                "NCV admission summary: NCV applicants are only considered for BA Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; English as Language of Teaching and Learning or First Additional Language requires achievement rating 5; All other fundamental and vocational categories require achievement rating 4.",
+                "NASCA admission summary: NASCA applicants are only considered for the Diploma in Public Relations and Communication and the Extended Diploma in Public Relations and Communication; NASCA applicants must comply with faculty minimum admission requirements.",
+                "SC(a) admission summary: SC(a) applicants are only considered for BA Humanities Extended, Diploma in Public Relations and Communication, and Extended Diploma in Public Relations and Communication; Admission is Senate discretionary and requires Senate approval."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
+        }
+    ]
+}

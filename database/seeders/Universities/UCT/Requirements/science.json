@@ -1,0 +1,40 @@
+{
+    "faculty": "Science",
+    "university": "University of Cape Town",
+    "source": "2024 Guidelines for Admission for Holders of National Senior Certificate",
+    "admission_score_type": "FPS/WPS",
+    "qualifications": [
+        {
+            "name": "Faculty of Science undergraduate programmes",
+            "qualification_type": "Bachelor",
+            "admission_score_required": 550.0,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "notes": [
+                "Main requirement uses the lowest listed possible-admission band where available.",
+                "For Science, FPS is calculated out of 800.",
+                "For Science FPS, Mathematics and Physical Sciences scores are doubled.",
+                "WPS is the Weighted Points Score and applies to South African applicants only.",
+                "NBTs in Mathematics, Academic Literacy and Quantitative Literacy must be written, but the results are not taken into account for admission to the Science Faculty.",
+                "Acceptance into the Science Faculty does not guarantee acceptance into a chosen major because some majors have limited places.",
+                "If Physical Science or Information Technology was not completed at school-leaving level, choice of majors is restricted to Archaeology and Environmental & Geographical Science.",
+                "For majors in Computer Science and Business Computing, the Physical Science requirement may be replaced by Information Technology only where Physical Science was not taken.",
+                "Eligible applicant group: South African applicants in targeted redress categories.",
+                "Admission band used: Band C.",
+                "Admission outcome: Possible admission.",
+                "Score requirement: FPS of 550 or above.",
+                "Notes: NBTs in Mathematics, Academic Literacy and Quantitative Literacy must be written, but NBT results are not taken into account for admission to the Science Faculty.; Probable admission: WPS of 640 or above.; Guaranteed admission: FPS of 660 or above.."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 70.0
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60.0
+                }
+            ]
+        }
+    ]
+}

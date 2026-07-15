@@ -1,0 +1,178 @@
+{
+    "faculty": "Law",
+    "university": "Stellenbosch University",
+    "source": "Admission Requirements for Undergraduate Programmes 2025",
+    "qualifications": [
+        {
+            "name": "LLB",
+            "qualification_type": "Bachelor",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "aggregate_average_required": 70.0,
+            "selection_programme": true,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: BAccLLB; BA Law; BCom Law.",
+                "Career opportunities: Legal practitioner; Attorney; Advocate; Judge; Public Prosecutor; Deeds Office examiner or registrar; Master of the High Court clerk or registrar; Legal advisor; Compliance manager; Mediator; Arbitrator; Public Protector; Academic lecturer; NGO work; Entrepreneur; Business manager; Journalist; National or provincial government.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Additional Stellenbosch requirements: Write the NBTs AQL before 31 July; Aggregate of at least 70% in the NSC or IEB school-leaving certificate, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "LLB (Option 2)",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": null,
+            "selection_programme": false,
+            "notes": [
+                "Aggregate note: Only available as a second bachelor's degree; selection is based on prior bachelor\u2019s degree performance.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Additional Stellenbosch requirements: Any bachelor's degree from a South African university; Aggregate of at least 60% in the final year."
+            ],
+            "subject_requirements": []
+        },
+        {
+            "name": "BA Law",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 70.0,
+            "selection_programme": true,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: LLB; BAccLLB; BCom Law.",
+                "Career opportunities: Entry route into the two-year LLB degree; Legal practitioner pathway after completing LLB; Attorney pathway after completing LLB; Advocate pathway after completing LLB; Careers requiring understanding of languages, human behaviour and social issues.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Additional Stellenbosch requirements: Write the NBTs AQL before 31 July; Aggregate of at least 70% in the NSC or IEB school-leaving certificate, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BCom Law",
+            "qualification_type": "Bachelor",
+            "duration_years": 3.0,
+            "aps_required": null,
+            "aggregate_average_required": 70.0,
+            "selection_programme": true,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: LLB; BAccLLB; BA Law.",
+                "Career opportunities: Business world; Commercial law; Entry route into the two-year LLB degree; Legal practitioner pathway after completing LLB; Attorney pathway after completing LLB; Advocate pathway after completing LLB.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Additional Stellenbosch requirements: Write the NBTs AQL and MAT before 31 July; Aggregate of at least 70% in the NSC or IEB school-leaving certificate, excluding Life Orientation."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                }
+            ]
+        },
+        {
+            "name": "BAccLLB",
+            "qualification_type": "Bachelor",
+            "duration_years": 5.0,
+            "aps_required": null,
+            "aggregate_average_required": 80.0,
+            "selection_programme": true,
+            "notes": [
+                "Aggregate note: Excluding Life Orientation.",
+                "Similar programmes: LLB; BCom Law; BA Law.",
+                "Career opportunities: Law; Accounting; Legal profession after practical training and prescribed examinations; Chartered accountant pathway through Honours or Postgraduate Diploma in Accounting.",
+                "Admission score type: Aggregated average.",
+                "Faculty aggregate note: Excluding Life Orientation.",
+                "Additional Stellenbosch requirements: Write the NBTs AQL and MAT before 31 July; Aggregate of at least 80% in the NSC or IEB school-leaving certificate, excluding Life Orientation; Mathematics: 70% OR Mathematics: 60% AND Accounting: 70%."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

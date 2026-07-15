@@ -1,0 +1,975 @@
+{
+    "faculty": "Accounting and Informatics",
+    "university": "Durban University of Technology",
+    "source": "DUT Student Course Guide 2026",
+    "qualifications": [
+        {
+            "name": "Bachelor of Information and Communications Technology",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BIT.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; At least three designated 20-credit subjects at Level 4; Not more than one language.",
+                "APS updated from DUT APS requirements summary: bachelor ICT-related programmes treated as degree-level minimum APS 28; verify programme-specific selection with DUT.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of ICT: Internet of Things",
+            "qualification_type": "Bachelor",
+            "aps_required": 24,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-IoT.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Bachelor.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two designated 20-credit subjects at Level 4; Not more than one language.",
+                "APS updated from DUT APS requirements summary: bachelor ICT-related programmes treated as degree-level minimum APS 28; verify programme-specific selection with DUT.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Diploma ICT: Applications Development (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-APD.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma ICT: Applications Development (Indumiso Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-I-APD.",
+                "Campus: Indumiso Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma ICT: Applications Development (4 Year Foundation Programme, DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-APF.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: 4 Year Foundation Programme.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma ICT: Business Analysis (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BUA.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma ICT: Business Analysis (Indumiso Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-I-BUA.",
+                "Campus: Indumiso Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma Business and Information Management (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 24,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BI3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Excluding Life Orientation; Not more than one language.",
+                "APS filled from DUT APS requirements summary as an Accounting and Informatics diploma-level minimum where a programme-specific APS was absent; verify with DUT."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma Business and Information Management (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 24,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-BI3.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Excluding Life Orientation; Not more than one language.",
+                "APS filled from DUT APS requirements summary as an Accounting and Informatics diploma-level minimum where a programme-specific APS was absent; verify with DUT."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Accounting (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DAT.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Accounting (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-DAT.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Accounting (4 Year Foundation Programme, DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DA4.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: 4 Year Foundation Programme.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Accounting (4 Year Foundation Programme, PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-DA4.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: 4 Year Foundation Programme.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Business and Information",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-BI4.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: 4 Year Foundation Programme.",
+                "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Excluding Life Orientation; Not more than one language.",
+                "APS filled from DUT APS requirements summary as an Accounting and Informatics diploma-level minimum where a programme-specific APS was absent; verify with DUT.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Internal Auditing (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DIA.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 4 and three 20-credit subjects at Level 3; OR Mathematics: Level 3 OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3; Not more than one language.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Internal Auditing (4 Year Foundation Programme, DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DI4.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: 4 Year Foundation Programme.",
+                "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 4 and three 20-credit subjects at Level 3; OR Mathematics: Level 3 OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3; Not more than one language.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Library and Information Studies",
+            "qualification_type": "Diploma",
+            "aps_required": 20,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-LS3.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Not more than one language.",
+                "APS filled from DUT APS requirements summary as a diploma-level minimum where a programme-specific APS was absent; verify with DUT.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 4,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Accounting (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-MAC.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 3 OR Accounting: Level 4 AND three 20-credit subjects at Level 3; OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Management Accounting (PMB Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-P-MAC.",
+                "Campus: PMB Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 3 OR Accounting: Level 4 AND three 20-credit subjects at Level 3; OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Taxation (DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DTA.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Accounting",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Taxation (4 Year Foundation Programme, DBN Campus)",
+            "qualification_type": "Diploma",
+            "aps_required": 21,
+            "aggregate_average_required": null,
+            "closing_month": 9,
+            "closing_day": 30,
+            "selection_programme": false,
+            "notes": [
+                "Source: DUT Student Course Guide 2026.",
+                "Admission score type: NSC Points.",
+                "CAO code: DU-D-DT6.",
+                "Campus: DBN Campus.",
+                "Original qualification type: Diploma.",
+                "Programme note: 4 Year Foundation Programme.",
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+            ],
+            "source_url": null,
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Accounting",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 3,
+                    "minimum_level": 3
+                }
+            ]
+        }
+    ]
+}

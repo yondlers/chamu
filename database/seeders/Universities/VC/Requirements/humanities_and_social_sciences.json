@@ -1,0 +1,880 @@
+{
+    "faculty": "Humanities and Social Sciences",
+    "university": "The IIE's Varsity College",
+    "source": "The IIE Institutional Prospectus 2026",
+    "admission_score_type": "Pass type + subject percentage requirements",
+    "qualifications": [
+        {
+            "name": "Higher Certificate in Art and Design",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Journalism",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Communication Practices",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Brand Building Practice",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Creative Development",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Photography",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Video and Photography",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Higher Certificate pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Computer-Based Graphic Development",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Diploma pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Journalism Studies",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Diploma pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Public Relations",
+            "qualification_type": "Diploma",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "diploma",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Diploma pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 60%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: 60%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: English: 60%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Interior Design (Requirement set 1)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Corporate Communication (Requirement set 1)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Social Science",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 50%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Original subject requirement: English: 50%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Interior Design (Requirement set 2)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 40,
+                    "minimum_level": 3,
+                    "note": "Original subject requirement: Mathematics: 40%."
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Copywriting",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Corporate Communication (Requirement set 2)",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Creative Brand Communications",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Communication Design",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Graphic Design",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Strategic Brand Communication",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Digital Design",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Fashion Design",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Brand Experience Planning",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Experience Design",
+            "qualification_type": "Bachelor",
+            "abbreviation": null,
+            "duration_years": null,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: The IIE Institutional Prospectus 2026.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Original pass requirement: Bachelor's Degree pass.",
+                "Subject requirement group: English 30%.",
+                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+            ],
+            "source_url": "https://www.emeris.ac.za/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Original subject requirement: English: 30%."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
