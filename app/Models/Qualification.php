@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Str;
 
 class Qualification extends Model
 {
@@ -20,6 +21,7 @@ class Qualification extends Model
         'nqf_level_id',
         'required_grade_id',
         'name',
+        'slug',
         'abbreviation',
         'duration_years',
         'aps_required',
@@ -32,6 +34,29 @@ class Qualification extends Model
         'notes',
         'source_url',
     ];
+
+    protected static function booted(): void
+    {
+        static::creating(function (Qualification $qualification): void {
+            if ($qualification->slug) {
+                return;
+            }
+
+            $base = Str::slug((string) $qualification->name) ?: 'qualification';
+            $slug = $base;
+            $suffix = 2;
+
+            while (static::query()
+                ->where('university_id', $qualification->university_id)
+                ->where('slug', $slug)
+                ->exists()) {
+                $slug = $base.'-'.$suffix;
+                $suffix++;
+            }
+
+            $qualification->slug = $slug;
+        });
+    }
 
     public function qualificationType(): BelongsTo
     {
@@ -48,6 +73,11 @@ class Qualification extends Model
         return $this->belongsTo(Faculty::class, 'faculty_id');
     }
 
+    public function requiredGrade(): BelongsTo
+    {
+        return $this->belongsTo(Grade::class, 'required_grade_id');
+    }
+
     public function university(): BelongsTo
     {
         return $this->belongsTo(University::class, 'university_id');
@@ -61,5 +91,10 @@ class Qualification extends Model
     public function admissionScoreVariants(): HasMany
     {
         return $this->hasMany(QualificationAdmissionScoreVariant::class, 'qualification_id');
+    }
+
+    public function universityAdmissionRules(): HasMany
+    {
+        return $this->hasMany(UniversityAdmissionRule::class, 'qualification_id');
     }
 }

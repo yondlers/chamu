@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Public\QualificationController as PublicQualificationController;
+use App\Http\Controllers\Public\UniversityController as PublicUniversityController;
 use App\Models\AuditLog;
 use App\Models\SiteVisit;
 use App\Models\User;
@@ -1567,6 +1569,13 @@ Route::get('/aps-calculator', function (Request $request) {
 })->name('aps-calculator.index');
 
 Route::get('/funding', fn () => redirect()->route('bursaries.index'))->name('funding.index');
+
+Route::scopeBindings()->group(function () {
+    Route::get('/universities/{university:slug}', [PublicUniversityController::class, 'show'])
+        ->name('public.universities.show');
+    Route::get('/universities/{university:slug}/qualifications/{qualification:slug}', [PublicQualificationController::class, 'show'])
+        ->name('public.qualifications.show');
+});
 
 Route::get('/aps', function (Request $request) {
     if ($request->user() !== null) {
