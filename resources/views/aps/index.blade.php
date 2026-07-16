@@ -105,7 +105,7 @@
                                         <i data-lucide="gauge" style="width:14px;height:14px;"></i>
                                         APS score
                                     </span>
-                                    <span class="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-black text-amber-800">Required first</span>
+                                    <span class="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-black text-amber-800">Required</span>
                                 </label>
                                 <input id="aps_score" name="aps_score" type="number" inputmode="numeric" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="32" @class([
                                     'h-14 w-full rounded-2xl border bg-white px-4 text-2xl font-black text-neutral-950 outline-none transition',
