@@ -67,7 +67,7 @@ class ApsTest extends TestCase
         $response->assertSee('UCT (University of Cape Town)');
     }
 
-    public function test_authenticated_user_can_view_aps_screen(): void
+    public function test_authenticated_user_is_redirected_to_course_match_from_aps(): void
     {
         $records = $this->createLookupRecords();
         $user = User::factory()->create([
@@ -82,8 +82,7 @@ class ApsTest extends TestCase
             ->actingAs($user)
             ->get(route('aps.index', ['aps_score' => 32]));
 
-        $response->assertOk();
-        $response->assertSee('Find courses from your APS score');
+        $response->assertRedirect(route('course-match.index', ['aps_score' => 32]));
     }
 
     /**

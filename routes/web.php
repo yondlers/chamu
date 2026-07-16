@@ -1569,6 +1569,10 @@ Route::get('/aps-calculator', function (Request $request) {
 Route::get('/funding', fn () => redirect()->route('bursaries.index'))->name('funding.index');
 
 Route::get('/aps', function (Request $request) {
+    if ($request->user() !== null) {
+        return redirect()->route('course-match.index', $request->query());
+    }
+
     $apsScore = $request->has('aps_score') && is_numeric($request->query('aps_score'))
         ? min(max((int) $request->query('aps_score'), 0), 60)
         : null;

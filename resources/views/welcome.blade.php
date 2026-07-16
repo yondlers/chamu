@@ -105,7 +105,7 @@
                     Start learning <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                 </span>
             </a>
-            <a href="{{ route('aps.index') }}" class="group rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
+            <a href="{{ auth()->check() ? route('course-match.index') : route('aps.index') }}" class="group rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700">
                     <i data-lucide="target" style="width:22px;height:22px;"></i>
                 </span>
