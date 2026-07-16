@@ -1,6 +1,9 @@
 <?php
 
+use App\Models\AuditLog;
+use App\Models\SiteVisit;
 use App\Models\User;
+use App\Models\UserSubjectResult;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
@@ -8,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
 
 Route::get('/', fn () => redirect()->route('aps.index'))->name('home');
@@ -922,12 +926,17 @@ Route::middleware('guest')->group(function () {
     })->name('login');
 
     Route::post('/login', function (Request $request) {
-        $credentials = $request->validate([
+        $data = $request->validate([
             'username' => ['required', 'string'],
             'password' => ['required', 'string'],
         ]);
+        $login = $data['username'];
+        $loginField = filter_var($login, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
 
-        if (! Auth::attempt($credentials, $request->boolean('remember'))) {
+        if (! Auth::attempt([
+            $loginField => $login,
+            'password' => $data['password'],
+        ], $request->boolean('remember'))) {
             return back()
                 ->withErrors(['username' => 'These credentials do not match our records.'])
                 ->onlyInput('username');
@@ -946,8 +955,8 @@ Route::middleware('guest')->group(function () {
         $userTypes = Schema::hasTable('user_types')
             ? DB::table('user_types')
                 ->select('id', 'name')
-                ->whereIn('name', ['pupil', 'teacher', 'parent'])
-                ->orderByRaw("case name when 'pupil' then 1 when 'teacher' then 2 when 'parent' then 3 else 4 end")
+                ->where('name', 'pupil')
+                ->orderBy('name')
                 ->get()
             : collect();
 
@@ -997,7 +1006,7 @@ Route::middleware('guest')->group(function () {
 
         $userType = DB::table('user_types')
             ->where('id', $data['user_type_id'])
-            ->whereIn('name', ['pupil', 'teacher', 'parent'])
+            ->where('name', 'pupil')
             ->first(['id', 'name']);
         $countryId = DB::table('countries')->where('name', 'South Africa')->value('id') ?? DB::table('countries')->value('id');
 
@@ -1039,6 +1048,151 @@ Route::post('/logout', function (Request $request) {
 
     return redirect('/');
 })->middleware('auth')->name('logout');
+
+Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
+    Route::get('/', function (Request $request) {
+        $activeWindow = now()->subMinutes(10);
+        $activeVisits = SiteVisit::with('user')
+            ->where('visited_at', '>=', $activeWindow)
+            ->latest('visited_at')
+            ->limit(500)
+            ->get()
+            ->unique(fn (SiteVisit $visit) => $visit->session_id ?: $visit->ip_address.'|'.$visit->user_agent)
+            ->values();
+        $recentVisits = SiteVisit::with('user')
+            ->latest('visited_at')
+            ->limit(150)
+            ->get();
+        $markAuditLogs = AuditLog::with('user')
+            ->where('event', 'marks.updated')
+            ->latest()
+            ->limit(100)
+            ->get();
+        $totalAccounts = User::count();
+        $accountSearch = trim((string) $request->query('account_search', ''));
+        $accounts = User::query()
+            ->with(['userType', 'curriculum', 'grade', 'province'])
+            ->withCount([
+                'userSubjectPreferences as subjects_count',
+                'userSubjectResults as marks_count' => fn ($query) => $query->whereNotNull('mark'),
+            ])
+            ->withMax('siteVisits as last_seen_at', 'visited_at')
+            ->when($accountSearch !== '', function ($query) use ($accountSearch) {
+                $query->where(function ($query) use ($accountSearch) {
+                    $query
+                        ->where('name', 'like', "%{$accountSearch}%")
+                        ->orWhere('first_name', 'like', "%{$accountSearch}%")
+                        ->orWhere('last_name', 'like', "%{$accountSearch}%")
+                        ->orWhere('username', 'like', "%{$accountSearch}%")
+                        ->orWhere('email', 'like', "%{$accountSearch}%");
+                });
+            })
+            ->latest()
+            ->paginate(25, ['*'], 'accounts_page')
+            ->withQueryString()
+            ->fragment('accounts');
+
+        return view('admin.index', [
+            'activeWindow' => $activeWindow,
+            'activeVisits' => $activeVisits,
+            'recentVisits' => $recentVisits,
+            'markAuditLogs' => $markAuditLogs,
+            'totalAccounts' => $totalAccounts,
+            'accounts' => $accounts,
+            'accountSearch' => $accountSearch,
+        ]);
+    })->name('admin.index');
+
+    Route::get('/accounts/{user}', function (User $user) {
+        $user->load(['userType', 'curriculum', 'grade', 'province', 'country', 'school', 'parent']);
+
+        $selectedSubjects = $user->userSubjectPreferences()
+            ->with(['subject', 'grade', 'curriculum'])
+            ->orderBy('sort_order')
+            ->get();
+
+        $markResults = UserSubjectResult::query()
+            ->with(['subject', 'term', 'grade'])
+            ->where('user_subject_results.user_id', $user->id)
+            ->whereNotNull('user_subject_results.mark')
+            ->leftJoin('grades', 'grades.id', '=', 'user_subject_results.grade_id')
+            ->leftJoin('terms', 'terms.id', '=', 'user_subject_results.term_id')
+            ->leftJoin('subjects', 'subjects.id', '=', 'user_subject_results.subject_id')
+            ->select('user_subject_results.*')
+            ->orderByDesc('user_subject_results.updated_at')
+            ->orderBy('subjects.name')
+            ->get();
+
+        $latestResult = $markResults->first();
+        $latestMarks = collect();
+
+        if ($latestResult !== null) {
+            $latestMarks = UserSubjectResult::query()
+                ->with(['subject', 'term', 'grade'])
+                ->where('user_subject_results.user_id', $user->id)
+                ->where('user_subject_results.grade_id', $latestResult->grade_id)
+                ->where('user_subject_results.term_id', $latestResult->term_id)
+                ->whereNotNull('user_subject_results.mark')
+                ->leftJoin('subjects', 'subjects.id', '=', 'user_subject_results.subject_id')
+                ->select('user_subject_results.*')
+                ->orderBy('subjects.name')
+                ->get();
+        }
+
+        $isLifeOrientation = fn (UserSubjectResult $result): bool => Str::lower((string) ($result->subject?->code ?? '')) === 'lo'
+            || Str::lower((string) ($result->subject?->name ?? '')) === 'life orientation';
+        $countedLatestMarks = $latestMarks->reject($isLifeOrientation);
+        $latestApsTotal = (int) $countedLatestMarks->sum(fn (UserSubjectResult $result) => (int) ($result->aps_score ?? 0));
+        $latestAverageMark = $countedLatestMarks->avg('mark');
+        $marksByTerm = $markResults->groupBy(function (UserSubjectResult $result) {
+            return ($result->grade?->name ?? 'Unknown grade').' - '.($result->term?->name ?? 'Unknown term');
+        });
+
+        $recentVisits = SiteVisit::query()
+            ->where('user_id', $user->id)
+            ->latest('visited_at')
+            ->limit(30)
+            ->get();
+        $markAuditLogs = AuditLog::query()
+            ->where('event', 'marks.updated')
+            ->where('user_id', $user->id)
+            ->latest()
+            ->limit(30)
+            ->get();
+        $recentExamSessions = DB::table('exam_sessions')
+            ->leftJoin('subjects', 'subjects.id', '=', 'exam_sessions.subject_id')
+            ->where('exam_sessions.user_id', $user->id)
+            ->select(
+                'exam_sessions.id',
+                'exam_sessions.title',
+                'exam_sessions.quiz_type',
+                'exam_sessions.source',
+                'exam_sessions.score',
+                'exam_sessions.total_marks',
+                'exam_sessions.percentage',
+                'exam_sessions.completed_at',
+                'exam_sessions.updated_at',
+                'subjects.name as subject_name'
+            )
+            ->latest('exam_sessions.updated_at')
+            ->limit(10)
+            ->get();
+
+        return view('admin.accounts.show', [
+            'account' => $user,
+            'selectedSubjects' => $selectedSubjects,
+            'markResults' => $markResults,
+            'latestResult' => $latestResult,
+            'latestMarks' => $latestMarks,
+            'latestApsTotal' => $latestApsTotal,
+            'latestAverageMark' => $latestAverageMark,
+            'marksByTerm' => $marksByTerm,
+            'recentVisits' => $recentVisits,
+            'markAuditLogs' => $markAuditLogs,
+            'recentExamSessions' => $recentExamSessions,
+        ]);
+    })->name('admin.accounts.show');
+});
 
 Route::get('/aps-calculator', function (Request $request) {
     $user = $request->user();
@@ -3332,6 +3486,10 @@ Route::middleware('auth')->group(function () {
             };
         };
 
+        $changedMarks = [];
+        $removedMarks = [];
+        $submittedSubjectCount = 0;
+
         foreach (($data['marks'] ?? []) as $subjectId => $mark) {
             $subjectId = (int) $subjectId;
 
@@ -3339,34 +3497,76 @@ Route::middleware('auth')->group(function () {
                 continue;
             }
 
+            $submittedSubjectCount++;
+
             if ($mark === null || $mark === '') {
-                DB::table('user_subject_results')
+                $existingResult = UserSubjectResult::query()
                     ->where('user_id', $user->id)
                     ->where('grade_id', $user->grade_id)
                     ->where('term_id', $data['term_id'])
                     ->where('subject_id', $subjectId)
-                    ->delete();
+                    ->first();
+
+                if ($existingResult !== null) {
+                    $removedMarks[] = [
+                        'subject_id' => $subjectId,
+                        'previous_mark' => $existingResult->mark,
+                        'previous_aps_score' => $existingResult->aps_score,
+                    ];
+
+                    $existingResult->delete();
+                }
 
                 continue;
             }
 
             $mark = (int) $mark;
+            $apsScore = $aps($mark);
 
-            DB::table('user_subject_results')->updateOrInsert(
-                [
-                    'user_id' => $user->id,
-                    'grade_id' => $user->grade_id,
-                    'term_id' => $data['term_id'],
-                    'subject_id' => $subjectId,
-                ],
-                [
-                    'mark' => $mark,
-                    'aps_score' => $aps($mark),
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ],
-            );
+            $result = UserSubjectResult::firstOrNew([
+                'user_id' => $user->id,
+                'grade_id' => $user->grade_id,
+                'term_id' => $data['term_id'],
+                'subject_id' => $subjectId,
+            ]);
+            $previousMark = $result->exists ? $result->mark : null;
+            $previousApsScore = $result->exists ? $result->aps_score : null;
+
+            $result->fill([
+                'mark' => $mark,
+                'aps_score' => $apsScore,
+            ]);
+            $result->save();
+
+            $changedMarks[] = [
+                'subject_id' => $subjectId,
+                'result_id' => $result->id,
+                'previous_mark' => $previousMark,
+                'new_mark' => $mark,
+                'previous_aps_score' => $previousApsScore,
+                'new_aps_score' => $apsScore,
+            ];
         }
+
+        AuditLog::create([
+            'name' => 'Marks updated',
+            'description' => $user->name.' saved term marks.',
+            'user_id' => $user->id,
+            'event' => 'marks.updated',
+            'auditable_type' => User::class,
+            'auditable_id' => $user->id,
+            'ip_address' => $request->ip(),
+            'user_agent' => Str::limit((string) $request->userAgent(), 250, ''),
+            'url' => $request->fullUrl(),
+            'metadata' => [
+                'grade_id' => $user->grade_id,
+                'term_id' => (int) $data['term_id'],
+                'selected_subject_count' => count($selectedSubjectIds),
+                'submitted_subject_count' => $submittedSubjectCount,
+                'changed_marks' => $changedMarks,
+                'removed_marks' => $removedMarks,
+            ],
+        ]);
 
         return redirect()
             ->route('marks.index', ['term_id' => $data['term_id']])

@@ -31,8 +31,8 @@
                     @csrf
 
                     <div>
-                        <label for="username" class="block text-sm font-semibold mb-2">Username</label>
-                        <input id="username" name="username" value="{{ old('username') }}" required autofocus class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
+                        <label for="username" class="block text-sm font-semibold mb-2">Email or username</label>
+                        <input id="username" name="username" value="{{ old('username') }}" required autofocus autocomplete="username" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                         @error('username')
                             <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                         @enderror

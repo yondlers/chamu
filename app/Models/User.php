@@ -15,6 +15,8 @@ class User extends Authenticatable
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
 
+    protected $table = 'users';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -39,6 +41,7 @@ class User extends Authenticatable
         'points',
         'streak',
         'last_login_at',
+        'is_super_admin',
     ];
 
     /**
@@ -61,6 +64,7 @@ class User extends Authenticatable
         return [
             'last_login_at' => 'datetime',
             'email_verified_at' => 'datetime',
+            'is_super_admin' => 'boolean',
             'password' => 'hashed',
         ];
     }
@@ -98,6 +102,16 @@ class User extends Authenticatable
     public function sessions(): HasMany
     {
         return $this->hasMany(Session::class, 'user_id');
+    }
+
+    public function siteVisits(): HasMany
+    {
+        return $this->hasMany(SiteVisit::class, 'user_id');
+    }
+
+    public function auditLogs(): HasMany
+    {
+        return $this->hasMany(AuditLog::class, 'user_id');
     }
 
     public function userType(): BelongsTo

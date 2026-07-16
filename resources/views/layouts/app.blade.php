@@ -88,6 +88,16 @@
                     @php
                         $profileActive = request()->routeIs('profile.*');
                     @endphp
+                    @if (auth()->user()->is_super_admin)
+                        <a
+                            href="{{ route('admin.index') }}"
+                            @class([$navLinkBase, request()->routeIs('admin.*') ? $navLinkActive : $navLinkIdle])
+                            @if (request()->routeIs('admin.*')) aria-current="page" @endif
+                        >
+                            <i data-lucide="shield-check" style="width:16px;height:16px;"></i>
+                            Admin
+                        </a>
+                    @endif
                     <a
                         href="{{ route('profile.edit') }}"
                         @class([$navLinkBase, $profileActive ? $navLinkActive : $navLinkIdle])

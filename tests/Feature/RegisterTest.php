@@ -10,6 +10,32 @@ class RegisterTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function test_register_page_only_offers_pupil_accounts(): void
+    {
+        $this->createSignupLookups();
+        DB::table('user_types')->insert([
+            [
+                'name' => 'teacher',
+                'description' => 'Teacher',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'parent',
+                'description' => 'Parent',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
+
+        $response = $this->get(route('register'));
+
+        $response->assertOk();
+        $response->assertSee('Pupil');
+        $response->assertDontSee('Teacher');
+        $response->assertDontSee('Parent');
+    }
+
     public function test_new_user_can_register_and_is_redirected_to_subject_setup(): void
     {
         $lookups = $this->createSignupLookups();

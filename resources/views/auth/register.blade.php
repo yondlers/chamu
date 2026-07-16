@@ -25,20 +25,25 @@
                 </a>
 
                 <h1 class="text-3xl font-bold">Create account</h1>
-                <p class="mt-2 text-neutral-500">Choose your account type, curriculum, grade, and province once.</p>
+                <p class="mt-2 text-neutral-500">Create a pupil account with your curriculum, grade, and province.</p>
 
                 <form method="POST" action="{{ route('register.store') }}" class="mt-8 space-y-5">
                     @csrf
 
                     <div>
-                        <label for="user_type_id" class="block text-sm font-semibold mb-2">I am a</label>
-                        <select id="user_type_id" name="user_type_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
-                            @foreach ($userTypes as $userType)
-                                <option value="{{ $userType->id }}" @selected((int) old('user_type_id') === $userType->id)>
-                                    {{ $userType->name === 'pupil' ? 'Pupil' : ucfirst($userType->name) }}
-                                </option>
-                            @endforeach
-                        </select>
+                        <label class="block text-sm font-semibold mb-2">Account type</label>
+                        @if ($userTypes->isNotEmpty())
+                            <input type="hidden" name="user_type_id" value="{{ old('user_type_id', $userTypes->first()->id) }}">
+                        @endif
+                        <div class="flex items-center gap-3 rounded-xl border border-neutral-300 bg-neutral-50 px-4 py-3">
+                            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#01225E] text-white">
+                                <i data-lucide="graduation-cap" style="width:18px;height:18px;"></i>
+                            </span>
+                            <div>
+                                <p class="font-bold text-neutral-950">Pupil</p>
+                                <p class="text-sm font-semibold text-neutral-500">Other account types are coming later.</p>
+                            </div>
+                        </div>
                         @error('user_type_id')
                             <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
                         @enderror
