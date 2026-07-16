@@ -244,7 +244,7 @@
         </section>
 
         @if ($apsScore !== null)
-            <section id="search-results" class="mx-auto mt-5 grid scroll-mt-24 max-w-7xl gap-4 px-4 sm:px-5 lg:px-8">
+            <section id="search-results" tabindex="-1" class="mx-auto mt-5 grid scroll-mt-24 max-w-7xl gap-4 px-4 focus:outline-none sm:px-5 lg:px-8">
                 <div class="flex flex-col gap-2 rounded-2xl border border-neutral-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
                     <p class="text-sm font-bold text-neutral-700">
                         {{ $courses->count() }} courses found for APS {{ $apsScore }}
@@ -342,7 +342,7 @@
                     <div class="university-marquee-track flex gap-3 px-4">
                         @foreach ([false, true] as $duplicate)
                             @foreach ($universities as $university)
-                                <a href="{{ route('aps.index', ['university_ids' => [$university->id]]) }}" @if ($duplicate) aria-hidden="true" tabindex="-1" @endif class="flex w-64 shrink-0 items-center gap-3 rounded-2xl border border-neutral-200 bg-white px-4 py-3 hover:border-[#01225E]/40 hover:bg-blue-50/50">
+                                <a href="{{ route('aps.index', ['university_ids' => [$university->id]]) }}#search-results" @if ($duplicate) aria-hidden="true" tabindex="-1" @endif class="flex w-64 shrink-0 items-center gap-3 rounded-2xl border border-neutral-200 bg-white px-4 py-3 hover:border-[#01225E]/40 hover:bg-blue-50/50">
                                     <span class="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-neutral-200 bg-white text-xs font-black text-[#01225E]">
                                         @if ($university->logo)
                                             <img src="{{ asset($university->logo) }}" alt="{{ $university->name }} logo" class="h-full w-full object-contain p-1.5">
@@ -363,7 +363,7 @@
         </section>
 
         @if ($apsScore === null)
-            <section id="search-results" class="mx-auto mt-6 grid scroll-mt-24 max-w-7xl gap-4 px-4 sm:px-5 lg:px-8">
+            <section id="search-results" tabindex="-1" class="mx-auto mt-6 grid scroll-mt-24 max-w-7xl gap-4 px-4 focus:outline-none sm:px-5 lg:px-8">
                 <article class="rounded-[28px] border border-neutral-200 bg-white p-6 shadow-sm sm:p-8">
                     <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-center">
                         <div>
@@ -536,5 +536,17 @@
 
             updateSummary();
         });
+
+        const searchResultsTarget = document.getElementById('search-results');
+
+        if (window.location.hash === '#search-results' && searchResultsTarget) {
+            window.requestAnimationFrame(() => {
+                try {
+                    searchResultsTarget.focus({ preventScroll: true });
+                } catch (error) {
+                    searchResultsTarget.focus();
+                }
+            });
+        }
     </script>
 @endpush
