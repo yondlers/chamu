@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Public\QualificationController as PublicQualificationController;
 use App\Http\Controllers\Public\UniversityController as PublicUniversityController;
+use App\Http\Controllers\SitemapController;
 use App\Models\AuditLog;
 use App\Models\SiteVisit;
 use App\Models\User;
@@ -17,6 +18,8 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
 
 Route::get('/', fn () => redirect()->route('aps.index'))->name('home');
+
+Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
 
 Route::get('/learn', function () {
     $user = Auth::user();
