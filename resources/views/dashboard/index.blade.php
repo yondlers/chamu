@@ -6,9 +6,9 @@
     <main class="max-w-6xl mx-auto px-5 lg:px-8 py-8">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-8">
             <div>
-                <p class="text-sm font-semibold text-[#01225E]">Your three paths</p>
+                <p class="text-sm font-semibold text-[#01225E]">Your application paths</p>
                 <h1 class="mt-1 text-3xl font-bold">Welcome back, {{ $user->first_name }}</h1>
-                <p class="mt-2 text-neutral-500">Learn, APS, and Funding are the main journeys. Subjects, marks, and progress keep those journeys personal.</p>
+                <p class="mt-2 text-neutral-500">APS and Funding are the main journeys. Subjects, marks, and progress keep those journeys personal.</p>
             </div>
             <div class="flex flex-wrap gap-2">
                 <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 font-semibold text-white">
@@ -20,14 +20,7 @@
             </div>
         </div>
 
-        <section class="mb-6 grid gap-4 md:grid-cols-3">
-            <a href="{{ route('learn.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
-                <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-[#01225E]">
-                    <i data-lucide="book-open" style="width:20px;height:20px;"></i>
-                </span>
-                <h2 class="mt-4 text-lg font-bold">Learn</h2>
-                <p class="mt-2 text-sm text-neutral-500">Progress and quiz history help you continue past papers, questions, and notes.</p>
-            </a>
+        <section class="mb-6 grid gap-4 md:grid-cols-2">
             <a href="{{ route('course-match.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700">
                     <i data-lucide="target" style="width:20px;height:20px;"></i>

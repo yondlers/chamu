@@ -10,7 +10,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Validation\Rules\Password;
 
-Route::get('/', function () {
+Route::get('/', fn () => redirect()->route('aps.index'))->name('home');
+
+Route::get('/learn', function () {
     $user = Auth::user();
     $curriculums = collect();
     $allGrades = collect();
@@ -121,7 +123,7 @@ Route::get('/', function () {
         'stats' => $stats,
         'pendingQuizzes' => $pendingQuizzes,
     ]);
-});
+})->name('learn.index');
 
 Route::get('/content', function (Request $request) {
     $user = Auth::user();
@@ -937,7 +939,7 @@ Route::middleware('guest')->group(function () {
             'last_login_at' => now(),
         ])->save();
 
-        return redirect()->intended('/');
+        return redirect()->intended(route('aps.index'));
     })->name('login.store');
 
     Route::get('/register', function () {
@@ -1410,8 +1412,6 @@ Route::get('/aps-calculator', function (Request $request) {
     ]);
 })->name('aps-calculator.index');
 
-Route::get('/learn', fn () => redirect('/'))->name('learn.index');
-
 Route::get('/funding', fn () => redirect()->route('bursaries.index'))->name('funding.index');
 
 Route::get('/aps', function (Request $request) {
@@ -1429,6 +1429,8 @@ Route::get('/aps', function (Request $request) {
         ->select('id', 'name', 'abbreviation', 'logo')
         ->orderBy('name')
         ->get();
+    $qualificationCount = DB::table('qualifications')->count();
+    $bursaryCount = Schema::hasTable('bursaries') ? DB::table('bursaries')->count() : 0;
 
     $courses = collect();
 
@@ -1474,6 +1476,8 @@ Route::get('/aps', function (Request $request) {
         'apsScore' => $apsScore,
         'search' => $search,
         'universities' => $universities,
+        'qualificationCount' => $qualificationCount,
+        'bursaryCount' => $bursaryCount,
         'courses' => $courses,
         'filters' => [
             'university_id' => $universityId,

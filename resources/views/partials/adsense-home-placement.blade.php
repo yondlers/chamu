@@ -1,4 +1,4 @@
-<aside class="{{ $class ?? 'my-6' }}" aria-label="Advertisement">
+<aside class="adsense-placement {{ $class ?? 'my-6' }}" aria-label="Advertisement">
     <!-- yondlers_ads_AdSense1_1x1_as -->
     <ins class="adsbygoogle"
         style="display:block"

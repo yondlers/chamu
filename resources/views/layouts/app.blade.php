@@ -30,6 +30,7 @@
         .fade-in { animation: fadeUp .6s ease both; }
         @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
         #toast { transition: opacity .3s ease, transform .3s ease; }
+        .adsense-placement:has(.adsbygoogle[data-ad-status="unfilled"]) { display: none; }
         a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #01225E; outline-offset: 3px; border-radius: 8px; }
     </style>
     @stack('styles')
@@ -40,12 +41,6 @@
         $navLinkIdle = 'border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50';
         $navLinkActive = 'border-neutral-950 bg-neutral-950 text-white shadow-sm';
         $navItems = [
-            [
-                'label' => 'Learn',
-                'href' => route('learn.index'),
-                'icon' => 'book-open',
-                'active' => request()->is('/') || request()->routeIs('learn.*') || request()->routeIs('content.index'),
-            ],
             [
                 'label' => 'APS',
                 'href' => route('course-match.index'),
@@ -63,12 +58,6 @@
                 'href' => route('dashboard.index'),
                 'icon' => 'home',
                 'active' => request()->routeIs('dashboard.index'),
-            ],
-            [
-                'label' => 'Progress',
-                'href' => route('progress.index'),
-                'icon' => 'activity',
-                'active' => request()->routeIs('progress.index') || request()->routeIs('practice.*'),
             ],
         ];
     @endphp
@@ -115,10 +104,6 @@
                         </button>
                     </form>
                 @else
-                    <a href="{{ route('learn.index') }}" class="{{ $navLinkBase }} {{ request()->is('/') || request()->routeIs('learn.*') || request()->routeIs('content.index') ? $navLinkActive : $navLinkIdle }}" @if (request()->is('/') || request()->routeIs('learn.*') || request()->routeIs('content.index')) aria-current="page" @endif>
-                        <i data-lucide="book-open" style="width:16px;height:16px;"></i>
-                        Learn
-                    </a>
                     <a href="{{ route('aps.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*')) aria-current="page" @endif>
                         <i data-lucide="target" style="width:16px;height:16px;"></i>
                         APS

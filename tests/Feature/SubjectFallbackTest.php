@@ -16,7 +16,7 @@ class SubjectFallbackTest extends TestCase
     {
         $records = $this->createSubjectRecords();
 
-        $response = $this->actingAs($records['user'])->get('/');
+        $response = $this->actingAs($records['user'])->get(route('learn.index'));
 
         $response->assertOk();
 
