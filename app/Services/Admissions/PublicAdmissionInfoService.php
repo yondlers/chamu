@@ -91,6 +91,74 @@ class PublicAdmissionInfoService
         return 'required';
     }
 
+    /**
+     * @param  Collection<int, QualificationSubjectRequirement>  $requirements
+     */
+    public function requirementGroupHeading(Collection $requirements): string
+    {
+        $firstRequirement = $requirements->first();
+
+        if ($firstRequirement?->requirement_type === 'subject_group_count_choice') {
+            return 'One of these subject combinations';
+        }
+
+        if ($firstRequirement?->requirement_type === 'subject_group_count') {
+            $config = $this->structuredRequirementNote($firstRequirement->notes);
+            $count = (int) ($config['required_count'] ?? 1);
+            $label = trim((string) ($config['label'] ?? 'listed subjects'));
+
+            return $count.' from '.$label;
+        }
+
+        return $requirements->count() > 1 ? 'One of these requirements' : 'Required subject';
+    }
+
+    /**
+     * @param  Collection<int, QualificationSubjectRequirement>  $requirements
+     * @return array<int, array{label: string, requirements: Collection<int, QualificationSubjectRequirement>}>
+     */
+    public function requirementChoiceGroups(Collection $requirements): array
+    {
+        if ($requirements->first()?->requirement_type !== 'subject_group_count_choice') {
+            return [];
+        }
+
+        return $requirements
+            ->groupBy(function (QualificationSubjectRequirement $requirement): string {
+                $config = $this->structuredRequirementNote($requirement->notes);
+
+                return (string) ($config['choice_key'] ?? 'choice');
+            })
+            ->map(function (Collection $choiceRequirements): array {
+                $config = $this->structuredRequirementNote($choiceRequirements->first()?->notes);
+                $label = trim((string) ($config['label'] ?? $choiceRequirements
+                    ->map(fn (QualificationSubjectRequirement $requirement) => trim(($requirement->subject_name ?: $requirement->subject?->name ?: 'Subject').' '.$this->requirementLabel($requirement)))
+                    ->implode(' and ')));
+
+                return [
+                    'label' => $label,
+                    'requirements' => $choiceRequirements->values(),
+                ];
+            })
+            ->values()
+            ->all();
+    }
+
+    /**
+     * @param  Collection<int, QualificationSubjectRequirement>  $requirements
+     * @return array<int, string>
+     */
+    public function requirementNotes(Collection $requirements): array
+    {
+        return $requirements
+            ->pluck('notes')
+            ->filter()
+            ->unique()
+            ->reject(fn (string $note): bool => $this->structuredRequirementNote($note) !== null)
+            ->values()
+            ->all();
+    }
+
     public function closingLabel(?int $month, ?int $day): ?string
     {
         if ($month === null || $day === null) {
@@ -133,5 +201,25 @@ class PublicAdmissionInfoService
         }
 
         return number_format($value, 0);
+    }
+
+    /**
+     * @return array<string, mixed>|null
+     */
+    private function structuredRequirementNote(?string $note): ?array
+    {
+        if ($note === null || $note === '') {
+            return null;
+        }
+
+        $decoded = json_decode($note, true);
+
+        if (! is_array($decoded)) {
+            return null;
+        }
+
+        return array_key_exists('required_count', $decoded) || array_key_exists('choice_key', $decoded)
+            ? $decoded
+            : null;
     }
 }

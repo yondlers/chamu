@@ -145,17 +145,36 @@
                         @forelse ($requirements as $group)
                             <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <h3 class="text-sm font-bold text-neutral-950">
-                                    {{ $group->count() > 1 ? 'One of these requirements' : 'Required subject' }}
+                                    {{ $admissionInfo->requirementGroupHeading($group) }}
                                 </h3>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    @foreach ($group as $requirement)
-                                        <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-neutral-700">
-                                            {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
-                                            {{ $admissionInfo->requirementLabel($requirement) }}
-                                        </span>
-                                    @endforeach
-                                </div>
-                                @foreach ($group->pluck('notes')->filter() as $note)
+                                @php($choiceGroups = $admissionInfo->requirementChoiceGroups($group))
+                                @if ($choiceGroups !== [])
+                                    <div class="mt-3 grid gap-2">
+                                        @foreach ($choiceGroups as $choiceGroup)
+                                            <div class="rounded-lg bg-white px-3 py-2">
+                                                <p class="text-xs font-bold text-neutral-700">{{ $choiceGroup['label'] }}</p>
+                                                <div class="mt-2 flex flex-wrap gap-2">
+                                                    @foreach ($choiceGroup['requirements'] as $requirement)
+                                                        <span class="rounded-full bg-neutral-50 px-3 py-1 text-xs font-bold text-neutral-700">
+                                                            {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
+                                                            {{ $admissionInfo->requirementLabel($requirement) }}
+                                                        </span>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                @else
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        @foreach ($group as $requirement)
+                                            <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-neutral-700">
+                                                {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
+                                                {{ $admissionInfo->requirementLabel($requirement) }}
+                                            </span>
+                                        @endforeach
+                                    </div>
+                                @endif
+                                @foreach ($admissionInfo->requirementNotes($group) as $note)
                                     <p class="mt-2 text-sm text-neutral-600">{{ $note }}</p>
                                 @endforeach
                             </article>

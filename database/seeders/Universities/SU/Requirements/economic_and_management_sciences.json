@@ -64,15 +64,65 @@
             "qualification_type": "Bachelor",
             "duration_years": 5.0,
             "aps_required": null,
-            "aggregate_average_required": null,
-            "selection_programme": false,
+            "aggregate_average_required": 80.0,
+            "selection_programme": true,
             "notes": [
-                "Aggregate note: See Faculty of Law requirements.",
+                "Aggregate note: Excluding Life Orientation.",
                 "Admission score type: Aggregated average.",
                 "Faculty aggregate note: Excluding Life Orientation.",
-                "Additional Stellenbosch requirements: Admission requirements are listed under the Faculty of Law."
+                "Additional Stellenbosch requirements: Write the NBTs AQL and MAT before 31 July; Aggregate of at least 80% in the NSC or IEB school-leaving certificate, excluding Life Orientation; Mathematics: 70% OR Mathematics: 60% AND Accounting: 70%."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language or English First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Afrikaans Home Language or Afrikaans First Additional Language",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 6
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "choices": [
+                        {
+                            "label": "Mathematics 70%",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_mark": 70
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Mathematics 60% and Accounting 70%",
+                            "count": 2,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_mark": 60
+                                },
+                                {
+                                    "subject": "Accounting",
+                                    "minimum_mark": 70
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "BCom Economic Sciences",

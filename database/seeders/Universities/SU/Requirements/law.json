@@ -171,6 +171,35 @@
                             "minimum_level": 6
                         }
                     ]
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "choices": [
+                        {
+                            "label": "Mathematics 70%",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_mark": 70
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Mathematics 60% and Accounting 70%",
+                            "count": 2,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_mark": 60
+                                },
+                                {
+                                    "subject": "Accounting",
+                                    "minimum_mark": 70
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }

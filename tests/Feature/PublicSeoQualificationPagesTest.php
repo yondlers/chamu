@@ -76,6 +76,79 @@ class PublicSeoQualificationPagesTest extends TestCase
         $response->assertDontSee('Sign up to view this course');
     }
 
+    public function test_public_qualification_page_displays_aggregate_average_and_subject_choice_requirements(): void
+    {
+        $records = $this->createPublicQualificationRecords();
+        $university = $records['university'];
+        $qualification = $records['qualification'];
+
+        $qualification->update([
+            'name' => 'BAccLLB',
+            'aps_required' => null,
+            'aggregate_average_required' => 80,
+            'admission_score_required' => 80,
+        ]);
+
+        AdmissionRule::where('code', 'up_aps')->update([
+            'score_type' => 'aggregate_average',
+            'score_label' => 'Aggregated average',
+            'score_suffix' => '%',
+        ]);
+
+        QualificationSubjectRequirement::where('qualification_id', $qualification->id)->delete();
+
+        $choiceOneNotes = json_encode([
+            'choice_key' => 'choice_1',
+            'required_count' => 1,
+            'label' => 'Mathematics 70%',
+        ]);
+        $choiceTwoNotes = json_encode([
+            'choice_key' => 'choice_2',
+            'required_count' => 2,
+            'label' => 'Mathematics 60% and Accounting 70%',
+        ]);
+
+        QualificationSubjectRequirement::create([
+            'qualification_id' => $qualification->id,
+            'subject_name' => 'Mathematics',
+            'minimum_mark' => 70,
+            'requirement_type' => 'subject_group_count_choice',
+            'requirement_group' => 'math_accounting_choice',
+            'notes' => $choiceOneNotes,
+        ]);
+        QualificationSubjectRequirement::create([
+            'qualification_id' => $qualification->id,
+            'subject_name' => 'Mathematics',
+            'minimum_mark' => 60,
+            'requirement_type' => 'subject_group_count_choice',
+            'requirement_group' => 'math_accounting_choice',
+            'notes' => $choiceTwoNotes,
+        ]);
+        QualificationSubjectRequirement::create([
+            'qualification_id' => $qualification->id,
+            'subject_name' => 'Accounting',
+            'minimum_mark' => 70,
+            'requirement_type' => 'subject_group_count_choice',
+            'requirement_group' => 'math_accounting_choice',
+            'notes' => $choiceTwoNotes,
+        ]);
+
+        $response = $this->get(route('public.qualifications.show', [
+            'university' => $university->slug,
+            'qualification' => $qualification->slug,
+        ]));
+
+        $response->assertOk();
+        $response->assertSee('Aggregated average');
+        $response->assertSee('80%');
+        $response->assertSee('One of these subject combinations');
+        $response->assertSee('Mathematics 70%');
+        $response->assertSee('Mathematics 60% and Accounting 70%');
+        $response->assertSee('Accounting');
+        $response->assertDontSee('choice_key');
+        $response->assertDontSee('required_count');
+    }
+
     public function test_qualification_from_another_university_returns_404(): void
     {
         $records = $this->createPublicQualificationRecords();
