@@ -186,7 +186,14 @@
                             </div>
                         </div>
 
-                        @if ($apsScore !== null)
+                        @if ($apsScore === null)
+                            <div class="mt-4 flex flex-col gap-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-bold text-amber-900 sm:flex-row sm:items-center sm:justify-between">
+                                <span>Enter your APS score first so Chamu can search matching courses.</span>
+                                <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center gap-2 text-[#01225E] hover:underline">
+                                    Calculate APS <i data-lucide="calculator" style="width:16px;height:16px;"></i>
+                                </a>
+                            </div>
+                        @else
                             <div class="mt-4 flex flex-col gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-900 sm:flex-row sm:items-center sm:justify-between">
                                 <span>
                                     {{ $courses->count() }} courses found for APS {{ $apsScore }}
@@ -348,8 +355,8 @@
                     <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-center">
                         <div>
                             <p class="text-sm font-bold text-[#01225E]">Ready when you are</p>
-                            <h2 class="mt-1 text-2xl font-bold text-neutral-950">Enter an APS score to unlock matching programmes</h2>
-                            <p class="mt-2 text-sm leading-6 text-neutral-600">You can search broadly, narrow by university, or open the calculator if you still need to work out your APS.</p>
+                            <h2 class="mt-1 text-2xl font-bold text-neutral-950">APS is needed before course search</h2>
+                            <p class="mt-2 text-sm leading-6 text-neutral-600">Add your APS score above to search programmes. You can still choose universities and keywords first, then run the search once the score is in.</p>
                         </div>
                         <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]">
                             Open APS calculator <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>

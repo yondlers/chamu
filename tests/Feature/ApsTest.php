@@ -11,6 +11,17 @@ class ApsTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function test_aps_landing_state_explains_score_is_required_for_search(): void
+    {
+        $this->createLookupRecords();
+
+        $response = $this->get(route('aps.index'));
+
+        $response->assertOk();
+        $response->assertSee('Enter your APS score first so Chamu can search matching courses.');
+        $response->assertSee('APS is needed before course search');
+    }
+
     public function test_guest_can_filter_aps_results_by_multiple_universities(): void
     {
         $records = $this->createLookupRecords();
