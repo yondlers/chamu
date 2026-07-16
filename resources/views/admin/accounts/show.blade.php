@@ -13,7 +13,7 @@
     <main class="mx-auto max-w-7xl px-4 py-8 sm:px-5 lg:px-8">
         <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-                <a href="{{ route('admin.index') }}#accounts" class="inline-flex items-center gap-2 text-sm font-bold text-[#01225E] hover:underline">
+                <a href="{{ route('admin.accounts.index') }}" class="inline-flex items-center gap-2 text-sm font-bold text-[#01225E] hover:underline">
                     <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Accounts
                 </a>
                 <p class="mt-5 text-sm font-bold text-[#01225E]">Super admin account view</p>

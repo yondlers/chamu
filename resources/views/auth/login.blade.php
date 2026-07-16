@@ -4,18 +4,11 @@
 
 @section('content')
     <main class="min-h-screen grid lg:grid-cols-[1fr_480px] bg-white">
-        <section class="hidden lg:flex flex-col justify-between p-10 bg-[#F3F7FC] border-r border-blue-100">
-            <a href="{{ url('/') }}" class="flex items-center gap-2">
-                <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-10 w-10 rounded-xl object-contain">
-                <span class="font-bold text-xl">Chamu</span>
-            </a>
-            <div class="max-w-xl">
-                <p class="text-sm font-semibold uppercase text-[#01225E] mb-3">Welcome back</p>
-                <h1 class="text-5xl font-bold tracking-normal text-neutral-950">Pick up your streak where you left it.</h1>
-                <p class="mt-4 text-lg text-neutral-600">Your points, grade, and subjects follow your account.</p>
-            </div>
-            <p class="text-sm text-neutral-500">Built for South African Grade 10-12 learners.</p>
-        </section>
+        @include('auth.partials.campus-carousel', [
+            'eyebrow' => 'Welcome back',
+            'heading' => 'Pick up your streak where you left it.',
+            'copy' => 'Your points, grade, and subjects follow your account.',
+        ])
 
         <section class="flex items-center justify-center px-5 py-10">
             <div class="w-full max-w-md">

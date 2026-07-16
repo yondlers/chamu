@@ -1055,7 +1055,7 @@ Route::post('/logout', function (Request $request) {
 })->middleware('auth')->name('logout');
 
 Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
-    Route::get('/', function (Request $request) {
+    Route::get('/', function () {
         $activeWindow = now()->subMinutes(10);
         $activeVisits = SiteVisit::with('user')
             ->where('visited_at', '>=', $activeWindow)
@@ -1064,16 +1064,44 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
             ->get()
             ->unique(fn (SiteVisit $visit) => $visit->session_id ?: $visit->ip_address.'|'.$visit->user_agent)
             ->values();
+        $activeVisitorCount = $activeVisits->count();
+        $activeVisits = $activeVisits->take(5)->values();
         $recentVisits = SiteVisit::with('user')
             ->latest('visited_at')
-            ->limit(150)
+            ->limit(5)
             ->get();
         $markAuditLogs = AuditLog::with('user')
-            ->where('event', 'marks.updated')
             ->latest()
-            ->limit(100)
+            ->limit(5)
             ->get();
         $totalAccounts = User::count();
+        $totalVisits = SiteVisit::count();
+        $totalAuditLogs = AuditLog::count();
+        $accounts = User::query()
+            ->with(['userType', 'curriculum', 'grade', 'province'])
+            ->withCount([
+                'userSubjectPreferences as subjects_count',
+                'userSubjectResults as marks_count' => fn ($query) => $query->whereNotNull('mark'),
+            ])
+            ->withMax('siteVisits as last_seen_at', 'visited_at')
+            ->latest()
+            ->limit(5)
+            ->get();
+
+        return view('admin.index', [
+            'activeWindow' => $activeWindow,
+            'activeVisits' => $activeVisits,
+            'activeVisitorCount' => $activeVisitorCount,
+            'recentVisits' => $recentVisits,
+            'markAuditLogs' => $markAuditLogs,
+            'totalAccounts' => $totalAccounts,
+            'totalVisits' => $totalVisits,
+            'totalAuditLogs' => $totalAuditLogs,
+            'accounts' => $accounts,
+        ]);
+    })->name('admin.index');
+
+    Route::get('/accounts', function (Request $request) {
         $accountSearch = trim((string) $request->query('account_search', ''));
         $accounts = User::query()
             ->with(['userType', 'curriculum', 'grade', 'province'])
@@ -1093,20 +1121,55 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 });
             })
             ->latest()
-            ->paginate(25, ['*'], 'accounts_page')
-            ->withQueryString()
-            ->fragment('accounts');
+            ->paginate(25)
+            ->withQueryString();
 
-        return view('admin.index', [
-            'activeWindow' => $activeWindow,
-            'activeVisits' => $activeVisits,
-            'recentVisits' => $recentVisits,
-            'markAuditLogs' => $markAuditLogs,
-            'totalAccounts' => $totalAccounts,
+        return view('admin.accounts.index', [
             'accounts' => $accounts,
             'accountSearch' => $accountSearch,
         ]);
-    })->name('admin.index');
+    })->name('admin.accounts.index');
+
+    Route::get('/site-visits', function () {
+        $siteVisits = SiteVisit::with('user')
+            ->latest('visited_at')
+            ->paginate(50);
+
+        return view('admin.site-visits.index', [
+            'siteVisits' => $siteVisits,
+            'totalVisits' => SiteVisit::count(),
+            'guestVisits' => SiteVisit::whereNull('user_id')->count(),
+            'userVisits' => SiteVisit::whereNotNull('user_id')->count(),
+        ]);
+    })->name('admin.site-visits.index');
+
+    Route::get('/site-visits/{siteVisit}', function (SiteVisit $siteVisit) {
+        $siteVisit->load('user');
+
+        return view('admin.site-visits.show', [
+            'siteVisit' => $siteVisit,
+        ]);
+    })->name('admin.site-visits.show');
+
+    Route::get('/audit-logs', function () {
+        $auditLogs = AuditLog::with('user')
+            ->latest()
+            ->paginate(50);
+
+        return view('admin.audit-logs.index', [
+            'auditLogs' => $auditLogs,
+            'totalAuditLogs' => AuditLog::count(),
+            'markAuditLogs' => AuditLog::where('event', 'marks.updated')->count(),
+        ]);
+    })->name('admin.audit-logs.index');
+
+    Route::get('/audit-logs/{auditLog}', function (AuditLog $auditLog) {
+        $auditLog->load(['user', 'auditable']);
+
+        return view('admin.audit-logs.show', [
+            'auditLog' => $auditLog,
+        ]);
+    })->name('admin.audit-logs.show');
 
     Route::get('/accounts/{user}', function (User $user) {
         $user->load(['userType', 'curriculum', 'grade', 'province', 'country', 'school', 'parent']);

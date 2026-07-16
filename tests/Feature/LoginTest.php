@@ -12,6 +12,16 @@ class LoginTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function test_login_page_shows_campus_image_carousel(): void
+    {
+        $response = $this->get(route('login'));
+
+        $response->assertOk();
+        $response->assertSee('data-auth-campus-carousel', false);
+        $response->assertSee('images/auth-campus/rhodes-uni.jpg', false);
+        $response->assertSee('images/auth-campus/wits-great-hall.png', false);
+    }
+
     public function test_user_can_login_with_email(): void
     {
         $records = $this->createSignupLookups();
@@ -92,8 +102,8 @@ class LoginTest extends TestCase
     }
 
     /**
-     * @param array<string, int> $records
-     * @param array<string, mixed> $overrides
+     * @param  array<string, int>  $records
+     * @param  array<string, mixed>  $overrides
      */
     private function createUser(array $records, array $overrides): User
     {

@@ -31,6 +31,9 @@ class RegisterTest extends TestCase
         $response = $this->get(route('register'));
 
         $response->assertOk();
+        $response->assertSee('data-auth-campus-carousel', false);
+        $response->assertSee('images/auth-campus/rhodes-uni.jpg', false);
+        $response->assertSee('images/auth-campus/wits-great-hall.png', false);
         $response->assertSee('Pupil');
         $response->assertDontSee('Teacher');
         $response->assertDontSee('Parent');

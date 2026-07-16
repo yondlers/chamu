@@ -19,7 +19,7 @@ class SuperAdminActivityTest extends TestCase
         $records = $this->createRecords();
         $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
 
-        SiteVisit::create([
+        $siteVisit = SiteVisit::create([
             'ip_address' => '127.0.0.1',
             'method' => 'GET',
             'url' => 'https://chamu.test/aps',
@@ -39,7 +39,7 @@ class SuperAdminActivityTest extends TestCase
             'browser' => 'Safari',
             'visited_at' => now(),
         ]);
-        AuditLog::create([
+        $auditLog = AuditLog::create([
             'name' => 'Marks updated',
             'event' => 'marks.updated',
             'user_id' => $superAdmin->id,
@@ -54,9 +54,72 @@ class SuperAdminActivityTest extends TestCase
         $response->assertSee('Grouped by session');
         $response->assertSee('Guest visitor');
         $response->assertSee('APS page, university selected, no APS yet');
+        $response->assertSee(route('admin.site-visits.index'), false);
+        $response->assertSee(route('admin.site-visits.show', $siteVisit), false);
+        $response->assertSee(route('admin.audit-logs.index'), false);
+        $response->assertSee(route('admin.audit-logs.show', $auditLog), false);
         $response->assertSee('Accounts created');
         $response->assertSee('admin@example.com');
-        $response->assertSee('Mark-entry audit log');
+        $response->assertSee('Audit log');
+    }
+
+    public function test_super_admin_can_view_full_site_visit_list_and_visit_details(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $oldVisit = SiteVisit::create([
+            'ip_address' => '127.0.0.9',
+            'method' => 'GET',
+            'url' => 'https://chamu.test/old-page',
+            'route_name' => 'old.route',
+            'device_type' => 'desktop',
+            'platform' => 'macOS',
+            'browser' => 'Safari',
+            'visited_at' => now()->subHours(3),
+        ]);
+
+        $listResponse = $this->actingAs($superAdmin)->get(route('admin.site-visits.index'));
+
+        $listResponse->assertOk();
+        $listResponse->assertSee("Who's on the site", false);
+        $listResponse->assertSee('not limited to the last 10 minutes');
+        $listResponse->assertSee('https://chamu.test/old-page');
+        $listResponse->assertSee(route('admin.site-visits.show', $oldVisit), false);
+
+        $detailResponse = $this->actingAs($superAdmin)->get(route('admin.site-visits.show', $oldVisit));
+
+        $detailResponse->assertOk();
+        $detailResponse->assertSee('site_visits');
+        $detailResponse->assertSee('https://chamu.test/old-page');
+        $detailResponse->assertSee('Route Name');
+    }
+
+    public function test_super_admin_can_view_full_audit_log_list_and_audit_details(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $auditLog = AuditLog::create([
+            'name' => 'Custom audit',
+            'event' => 'custom.event',
+            'user_id' => $superAdmin->id,
+            'auditable_type' => User::class,
+            'auditable_id' => $superAdmin->id,
+            'metadata' => ['reason' => 'test detail'],
+        ]);
+
+        $listResponse = $this->actingAs($superAdmin)->get(route('admin.audit-logs.index'));
+
+        $listResponse->assertOk();
+        $listResponse->assertSee('Audit records');
+        $listResponse->assertSee('custom.event');
+        $listResponse->assertSee(route('admin.audit-logs.show', $auditLog), false);
+
+        $detailResponse = $this->actingAs($superAdmin)->get(route('admin.audit-logs.show', $auditLog));
+
+        $detailResponse->assertOk();
+        $detailResponse->assertSee('audit_logs');
+        $detailResponse->assertSee('custom.event');
+        $detailResponse->assertSee('test detail');
     }
 
     public function test_super_admin_can_view_account_details_with_marks(): void
@@ -132,6 +195,12 @@ class SuperAdminActivityTest extends TestCase
         $indexResponse->assertOk();
         $indexResponse->assertSee('learner-account@example.com');
         $indexResponse->assertSee(route('admin.accounts.show', $learner), false);
+
+        $accountsResponse = $this->actingAs($superAdmin)->get(route('admin.accounts.index'));
+        $accountsResponse->assertOk();
+        $accountsResponse->assertSee('Account list');
+        $accountsResponse->assertSee('learner-account@example.com');
+        $accountsResponse->assertSee(route('admin.accounts.show', $learner), false);
 
         $detailResponse = $this->actingAs($superAdmin)->get(route('admin.accounts.show', $learner));
 
@@ -254,8 +323,8 @@ class SuperAdminActivityTest extends TestCase
     }
 
     /**
-     * @param array<string, int> $records
-     * @param array<string, mixed> $overrides
+     * @param  array<string, int>  $records
+     * @param  array<string, mixed>  $overrides
      */
     private function createUser(array $records, array $overrides = []): User
     {
