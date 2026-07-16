@@ -22,6 +22,18 @@ class ApsTest extends TestCase
         $response->assertSee('APS is needed before course search');
     }
 
+    public function test_aps_university_only_state_prompts_for_score(): void
+    {
+        $records = $this->createLookupRecords();
+        $university = $this->createUniversity($records['country_id'], 'University of Johannesburg', 'UJ');
+
+        $response = $this->get(route('aps.index', ['university_id' => $university]));
+
+        $response->assertOk();
+        $response->assertSee('Nice, now enter your APS to see courses at this university.');
+        $response->assertSee('Required first');
+    }
+
     public function test_guest_can_filter_aps_results_by_multiple_universities(): void
     {
         $records = $this->createLookupRecords();

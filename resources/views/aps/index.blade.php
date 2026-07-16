@@ -37,6 +37,11 @@
         1 => ' at '.$universityFilterLabel,
         default => ' across '.$selectedUniversities->count().' selected universities',
     };
+    $apsRequiredMessage = $selectedUniversities->isNotEmpty()
+        ? ($selectedUniversities->count() === 1
+            ? 'Nice, now enter your APS to see courses at this university.'
+            : 'Nice, now enter your APS to see courses at these universities.')
+        : 'Enter your APS score first so Chamu can search matching courses.';
 @endphp
 
 @push('styles')
@@ -94,11 +99,18 @@
 
                         <div class="mt-5 grid gap-3 lg:grid-cols-[150px_minmax(0,1fr)_minmax(0,1fr)]">
                             <div>
-                                <label for="aps_score" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
-                                    <i data-lucide="gauge" style="width:14px;height:14px;"></i>
-                                    APS score
+                                <label for="aps_score" class="mb-2 flex items-center justify-between gap-2 text-xs font-bold uppercase text-neutral-500">
+                                    <span class="flex items-center gap-1.5">
+                                        <i data-lucide="gauge" style="width:14px;height:14px;"></i>
+                                        APS score
+                                    </span>
+                                    <span class="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-black text-amber-800">Required first</span>
                                 </label>
-                                <input id="aps_score" name="aps_score" type="number" inputmode="numeric" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="32" class="h-14 w-full rounded-2xl border border-neutral-300 bg-white px-4 text-2xl font-black text-neutral-950 outline-none transition focus:border-[#01225E] focus:ring-4 focus:ring-[#01225E]/10">
+                                <input id="aps_score" name="aps_score" type="number" inputmode="numeric" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="32" @class([
+                                    'h-14 w-full rounded-2xl border bg-white px-4 text-2xl font-black text-neutral-950 outline-none transition',
+                                    'border-amber-300 focus:border-amber-500 focus:ring-4 focus:ring-amber-100' => $apsScore === null,
+                                    'border-neutral-300 focus:border-[#01225E] focus:ring-4 focus:ring-[#01225E]/10' => $apsScore !== null,
+                                ])>
                             </div>
 
                             <div class="relative" data-university-multiselect>
@@ -188,7 +200,7 @@
 
                         @if ($apsScore === null)
                             <div class="mt-4 flex flex-col gap-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-bold text-amber-900 sm:flex-row sm:items-center sm:justify-between">
-                                <span>Enter your APS score first so Chamu can search matching courses.</span>
+                                <span>{{ $apsRequiredMessage }}</span>
                                 <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center gap-2 text-[#01225E] hover:underline">
                                     Calculate APS <i data-lucide="calculator" style="width:16px;height:16px;"></i>
                                 </a>

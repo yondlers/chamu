@@ -202,9 +202,15 @@
                         </thead>
                         <tbody>
                             @forelse ($recentVisits as $visit)
+                                @php
+                                    $pageDetail = $visit->pageDetail();
+                                @endphp
                                 <tr class="border-b border-neutral-100 align-top">
                                     <td class="py-3 pr-3">
-                                        <p class="max-w-xs truncate text-sm font-bold text-neutral-950">{{ $visit->url }}</p>
+                                        <p class="max-w-xs truncate text-sm font-bold text-neutral-950">{{ $visit->pageLabel() }}</p>
+                                        @if ($pageDetail)
+                                            <p class="mt-1 max-w-xs truncate text-xs font-semibold text-neutral-500">URL {{ $pageDetail }}</p>
+                                        @endif
                                         <p class="mt-1 text-xs font-semibold text-neutral-500">{{ $visit->ip_address ?? 'Unknown IP' }}</p>
                                     </td>
                                     <td class="px-3 py-3 text-sm font-semibold text-neutral-700">{{ $visit->device_type ?? 'Unknown' }} - {{ $visit->browser ?? 'Unknown' }}</td>

@@ -66,6 +66,9 @@
                     </thead>
                     <tbody>
                         @forelse ($activeVisits as $visit)
+                            @php
+                                $pageDetail = $visit->pageDetail();
+                            @endphp
                             <tr class="border-b border-neutral-100 align-top">
                                 <td class="py-4 pr-3">
                                     <p class="font-bold text-neutral-950">{{ $visit->user?->name ?? 'Guest visitor' }}</p>
@@ -78,7 +81,10 @@
                                 </td>
                                 <td class="px-3 py-4 text-sm font-semibold text-neutral-700">{{ $visit->browser ?? 'Unknown' }}</td>
                                 <td class="px-3 py-4">
-                                    <p class="max-w-sm truncate text-sm font-semibold text-neutral-900">{{ $visit->url }}</p>
+                                    <p class="max-w-sm truncate text-sm font-semibold text-neutral-900">{{ $visit->pageLabel() }}</p>
+                                    @if ($pageDetail)
+                                        <p class="mt-1 max-w-sm truncate text-xs font-semibold text-neutral-500">URL {{ $pageDetail }}</p>
+                                    @endif
                                     @if ($visit->referrer)
                                         <p class="mt-1 max-w-sm truncate text-xs font-semibold text-neutral-500">From {{ $visit->referrer }}</p>
                                     @endif
@@ -204,6 +210,9 @@
                     </thead>
                     <tbody>
                         @forelse ($recentVisits as $visit)
+                            @php
+                                $pageDetail = $visit->pageDetail();
+                            @endphp
                             <tr class="border-b border-neutral-100 align-top">
                                 <td class="py-4 pr-3">
                                     <p class="font-bold text-neutral-950">{{ $visit->user?->name ?? 'Guest visitor' }}</p>
@@ -211,7 +220,10 @@
                                 </td>
                                 <td class="px-3 py-4 text-sm font-bold text-neutral-700">{{ $visit->method }}</td>
                                 <td class="px-3 py-4">
-                                    <p class="max-w-md truncate text-sm font-semibold text-neutral-900">{{ $visit->url }}</p>
+                                    <p class="max-w-md truncate text-sm font-semibold text-neutral-900">{{ $visit->pageLabel() }}</p>
+                                    @if ($pageDetail)
+                                        <p class="mt-1 max-w-md truncate text-xs font-semibold text-neutral-500">URL {{ $pageDetail }}</p>
+                                    @endif
                                     <p class="mt-1 text-xs font-semibold text-neutral-500">{{ $visit->route_name ?? 'No route name' }}</p>
                                 </td>
                                 <td class="px-3 py-4 text-sm font-semibold text-neutral-700">{{ $visit->device_type ?? 'Unknown' }} - {{ $visit->browser ?? 'Unknown' }}</td>

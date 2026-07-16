@@ -29,6 +29,16 @@ class SuperAdminActivityTest extends TestCase
             'browser' => 'Safari',
             'visited_at' => now(),
         ]);
+        SiteVisit::create([
+            'ip_address' => '127.0.0.2',
+            'method' => 'GET',
+            'url' => 'https://chamu.test/aps?university_id=20',
+            'route_name' => 'aps.index',
+            'device_type' => 'desktop',
+            'platform' => 'macOS',
+            'browser' => 'Safari',
+            'visited_at' => now(),
+        ]);
         AuditLog::create([
             'name' => 'Marks updated',
             'event' => 'marks.updated',
@@ -43,6 +53,7 @@ class SuperAdminActivityTest extends TestCase
         $response->assertOk();
         $response->assertSee('Grouped by session');
         $response->assertSee('Guest visitor');
+        $response->assertSee('APS page, university selected, no APS yet');
         $response->assertSee('Accounts created');
         $response->assertSee('admin@example.com');
         $response->assertSee('Mark-entry audit log');
