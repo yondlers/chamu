@@ -21,6 +21,8 @@
             @endauth
         </div>
 
+        @include('partials.adsense-home-placement', ['class' => 'mb-6'])
+
         <form method="GET" action="{{ route('bursaries.index') }}" class="mb-6 rounded-2xl border border-neutral-200 bg-white p-4 soft-card">
             <div class="grid gap-3 lg:grid-cols-[1.3fr_1fr_1fr_auto]">
                 <div>

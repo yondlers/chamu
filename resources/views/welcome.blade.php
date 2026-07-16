@@ -127,6 +127,8 @@
             </a>
         </section>
 
+        @include('partials.adsense-home-placement', ['class' => 'my-8 fade-in'])
+
         <div class="pt-10 pb-2 fade-in">
             <h2 class="font-bold text-[32px]">@auth What would you like to master today? @else Start learning @endauth</h2>
             <p class="mt-1 text-lg text-neutral-500">@auth Pick up where you left off, or start something fresh. @else Pick a subject and try the app, or sign in to track streaks and points. @endauth</p>

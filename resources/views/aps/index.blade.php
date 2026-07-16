@@ -59,6 +59,8 @@
             </section>
         @endguest
 
+        @include('partials.adsense-home-placement', ['class' => 'my-4 sm:my-6'])
+
         <section class="mt-4 grid gap-4 sm:mt-6">
             @if ($apsScore === null)
                 <article class="rounded-2xl border border-dashed border-neutral-300 bg-white p-6 text-center sm:p-8">

@@ -41,6 +41,8 @@
             </div>
         </section>
 
+        @include('partials.adsense-home-placement', ['class' => 'mb-6'])
+
         @php
             $selectedUniversity = $universities->firstWhere('id', (int) $filters['university_id']);
             $selectedFaculty = $faculties->firstWhere('id', (int) $filters['faculty_id']);
