@@ -1607,14 +1607,14 @@ Route::get('/aps', function (Request $request) {
     $bursaryCount = Schema::hasTable('bursaries') ? DB::table('bursaries')->count() : 0;
 
     $courses = collect();
+    $previewCourses = collect();
 
-    if ($apsScore !== null) {
-        $courses = DB::table('qualifications')
+    $qualificationQuery = function () use ($selectedUniversityIds, $search) {
+        return DB::table('qualifications')
             ->join('universities', 'universities.id', '=', 'qualifications.university_id')
             ->join('faculties', 'faculties.id', '=', 'qualifications.faculty_id')
             ->join('qualification_types', 'qualification_types.id', '=', 'qualifications.qualification_type_id')
             ->whereNotNull('qualifications.aps_required')
-            ->where('qualifications.aps_required', '<=', $apsScore)
             ->when($selectedUniversityIds->isNotEmpty(), fn ($query) => $query->whereIn('qualifications.university_id', $selectedUniversityIds->all()))
             ->when($search !== '', function ($query) use ($search) {
                 $query->where(function ($query) use ($search) {
@@ -1638,12 +1638,49 @@ Route::get('/aps', function (Request $request) {
                 'universities.logo as university_logo',
                 'faculties.name as faculty_name',
                 'qualification_types.name as qualification_type_name',
-            )
+            );
+    };
+
+    if ($apsScore !== null) {
+        $courses = $qualificationQuery()
+            ->where('qualifications.aps_required', '<=', $apsScore)
             ->orderBy('qualifications.aps_required')
             ->orderBy('universities.name')
             ->orderBy('qualifications.name')
             ->limit(80)
             ->get();
+    } elseif ($selectedUniversityIds->isNotEmpty()) {
+        $previewPool = $qualificationQuery()
+            ->orderBy('qualifications.aps_required')
+            ->orderBy('universities.name')
+            ->orderBy('qualifications.name')
+            ->limit(300)
+            ->get();
+
+        if ($previewPool->isNotEmpty()) {
+            $lastIndex = $previewPool->count() - 1;
+            $targetIndexes = collect([
+                0,
+                (int) floor($lastIndex * 0.25),
+                (int) floor($lastIndex * 0.5),
+                (int) floor($lastIndex * 0.75),
+                $lastIndex,
+            ]);
+
+            $previewCourses = $targetIndexes
+                ->map(fn ($index) => $previewPool->get($index))
+                ->filter()
+                ->unique('id')
+                ->values();
+
+            if ($previewCourses->count() < 5) {
+                $previewCourses = $previewCourses
+                    ->merge($previewPool)
+                    ->unique('id')
+                    ->take(5)
+                    ->values();
+            }
+        }
     }
 
     return view('aps.index', [
@@ -1653,6 +1690,7 @@ Route::get('/aps', function (Request $request) {
         'qualificationCount' => $qualificationCount,
         'bursaryCount' => $bursaryCount,
         'courses' => $courses,
+        'previewCourses' => $previewCourses,
         'filters' => [
             'university_id' => $selectedUniversityIds->first(),
             'university_ids' => $selectedUniversityIds->all(),

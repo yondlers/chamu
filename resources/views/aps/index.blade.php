@@ -27,6 +27,7 @@
     $selectedUniversities = $universities
         ->filter(fn ($university) => $selectedUniversityIds->contains((int) $university->id))
         ->values();
+    $previewCourses = $previewCourses ?? collect();
     $universityFilterLabel = match ($selectedUniversities->count()) {
         0 => 'All universities',
         1 => $universityLabel($selectedUniversities->first()),
@@ -366,15 +367,71 @@
                 <article class="rounded-[28px] border border-neutral-200 bg-white p-6 shadow-sm sm:p-8">
                     <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-center">
                         <div>
-                            <p class="text-sm font-bold text-[#01225E]">Ready when you are</p>
-                            <h2 class="mt-1 text-2xl font-bold text-neutral-950">APS is needed before course search</h2>
-                            <p class="mt-2 text-sm leading-6 text-neutral-600">Add your APS score above to search programmes. You can still choose universities and keywords first, then run the search once the score is in.</p>
+                            <p class="text-sm font-bold text-[#01225E]">{{ $previewCourses->isNotEmpty() ? 'Qualification preview' : 'Ready when you are' }}</p>
+                            <h2 class="mt-1 text-2xl font-bold text-neutral-950">{{ $previewCourses->isNotEmpty() ? 'A quick look before APS' : 'APS is needed before course search' }}</h2>
+                            <p class="mt-2 text-sm leading-6 text-neutral-600">
+                                @if ($previewCourses->isNotEmpty())
+                                    These sample programmes mix lower, middle and higher APS requirements{{ $selectedUniversityScopeLabel }}. Enter your APS to unlock the full course list, then log in when you want subject-aware matching.
+                                @else
+                                    Add your APS score above to search programmes. You can still choose universities and keywords first, then run the search once the score is in.
+                                @endif
+                            </p>
                         </div>
-                        <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]">
-                            Open APS calculator <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
-                        </a>
+                        <div class="flex flex-col gap-2">
+                            <a href="#aps_score" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]">
+                                Enter APS to view more <i data-lucide="arrow-up" style="width:18px;height:18px;"></i>
+                            </a>
+                            <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-sm font-bold text-neutral-900 hover:bg-neutral-50">
+                                Open APS calculator <i data-lucide="calculator" style="width:18px;height:18px;"></i>
+                            </a>
+                        </div>
                     </div>
                 </article>
+
+                @if ($previewCourses->isNotEmpty())
+                    <div class="grid gap-3">
+                        @foreach ($previewCourses as $course)
+                            <article class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+                                <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                                    <div class="min-w-0">
+                                        <div class="flex flex-wrap items-center gap-2">
+                                            <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-[#01225E]">Preview</span>
+                                            <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">APS {{ $course->aps_required }}</span>
+                                            <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-700">{{ $course->qualification_type_name }}</span>
+                                            @if ($course->is_selection_programme)
+                                                <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">Selection programme</span>
+                                            @endif
+                                        </div>
+                                        <h3 class="mt-3 text-lg font-bold text-neutral-950">{{ $course->name }}</h3>
+                                        <p class="mt-1 text-sm font-semibold text-neutral-500">
+                                            {{ $course->university_abbreviation ?? $course->university_name }} · {{ $course->faculty_name }}
+                                        </p>
+                                    </div>
+                                    <div class="flex min-w-full flex-col gap-2 sm:min-w-[260px]">
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-3">
+                                                <p class="text-xs font-bold uppercase text-neutral-500">Required APS</p>
+                                                <p class="mt-1 text-2xl font-bold">{{ $course->aps_required }}</p>
+                                            </div>
+                                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-3">
+                                                <p class="text-xs font-bold uppercase text-neutral-500">Duration</p>
+                                                <p class="mt-1 text-2xl font-bold">{{ $course->duration_years ? $course->duration_years . 'y' : 'N/A' }}</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2 sm:flex-row">
+                                            <a href="#aps_score" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 text-sm font-bold text-white hover:bg-[#001A48]">
+                                                View more with APS <i data-lucide="gauge" style="width:16px;height:16px;"></i>
+                                            </a>
+                                            <a href="{{ route('login') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold hover:bg-neutral-50">
+                                                Log in for full match <i data-lucide="log-in" style="width:16px;height:16px;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        @endforeach
+                    </div>
+                @endif
             </section>
         @endif
 
