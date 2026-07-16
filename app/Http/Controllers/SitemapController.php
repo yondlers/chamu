@@ -76,6 +76,10 @@ class SitemapController extends Controller
 
     private function universityRows()
     {
+        if (! Schema::hasColumn('universities', 'slug')) {
+            return collect();
+        }
+
         $query = DB::table('universities')
             ->select('slug', 'updated_at')
             ->whereNotNull('slug')
@@ -89,6 +93,10 @@ class SitemapController extends Controller
 
     private function qualificationRows()
     {
+        if (! Schema::hasColumn('universities', 'slug') || ! Schema::hasColumn('qualifications', 'slug')) {
+            return collect();
+        }
+
         $query = DB::table('qualifications')
             ->join('universities', 'universities.id', '=', 'qualifications.university_id')
             ->select(

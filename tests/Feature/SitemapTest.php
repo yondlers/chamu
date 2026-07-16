@@ -6,8 +6,10 @@ use App\Models\Faculty;
 use App\Models\Qualification;
 use App\Models\QualificationType;
 use App\Models\University;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use SimpleXMLElement;
 use Tests\TestCase;
 
@@ -57,6 +59,28 @@ class SitemapTest extends TestCase
         $xml = simplexml_load_string($content);
 
         $this->assertInstanceOf(SimpleXMLElement::class, $xml);
+    }
+
+    public function test_sitemap_does_not_error_when_slug_migration_has_not_run(): void
+    {
+        config(['app.url' => 'https://chamu.co.za']);
+
+        Schema::table('qualifications', function (Blueprint $table) {
+            $table->dropUnique('qualifications_university_slug_unique');
+            $table->dropColumn('slug');
+        });
+        Schema::table('universities', function (Blueprint $table) {
+            $table->dropUnique('universities_slug_unique');
+            $table->dropColumn('slug');
+        });
+
+        $response = $this->get('/sitemap.xml');
+        $content = $response->streamedContent();
+
+        $response->assertOk();
+        $this->assertSame('application/xml; charset=UTF-8', $response->headers->get('Content-Type'));
+        $this->assertStringContainsString('<loc>https://chamu.co.za</loc>', $content);
+        $this->assertInstanceOf(SimpleXMLElement::class, simplexml_load_string($content));
     }
 
     /**
