@@ -43,7 +43,7 @@
         $navItems = [
             [
                 'label' => 'APS',
-                'href' => route('course-match.index'),
+                'href' => route('aps.index'),
                 'icon' => 'target',
                 'active' => request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') || request()->routeIs('course-match.*') || request()->routeIs('courses.*') || request()->routeIs('universities.*'),
             ],

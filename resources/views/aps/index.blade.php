@@ -3,7 +3,11 @@
 @section('title', 'APS · Chamu')
 
 @php
-    $selectedUniversity = $universities->firstWhere('id', (int) $filters['university_id']);
+    $selectedUniversityIds = collect($filters['university_ids'] ?? [])
+        ->map(fn ($id) => (int) $id)
+        ->filter()
+        ->unique()
+        ->values();
     $universityLabel = function ($university) {
         if (! $university) {
             return 'All universities';
@@ -19,6 +23,19 @@
         }
 
         return Str::of($university->name)->substr(0, 2)->upper();
+    };
+    $selectedUniversities = $universities
+        ->filter(fn ($university) => $selectedUniversityIds->contains((int) $university->id))
+        ->values();
+    $universityFilterLabel = match ($selectedUniversities->count()) {
+        0 => 'All universities',
+        1 => $universityLabel($selectedUniversities->first()),
+        default => $selectedUniversities->count().' universities selected',
+    };
+    $selectedUniversityScopeLabel = match ($selectedUniversities->count()) {
+        0 => '',
+        1 => ' at '.$universityFilterLabel,
+        default => ' across '.$selectedUniversities->count().' selected universities',
     };
 @endphp
 
@@ -68,7 +85,7 @@
                         <div class="mt-4 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
                             <div>
                                 <h1 class="max-w-3xl text-3xl font-bold leading-tight tracking-normal text-neutral-950 sm:text-4xl">Find courses from your APS score</h1>
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-neutral-600 sm:text-base">Search programmes by APS, university, and keyword. Create an account when you are ready for subject-aware matching.</p>
+                                <p class="mt-2 max-w-2xl text-sm leading-6 text-neutral-600 sm:text-base">Search programmes by APS, one or more universities, and keyword. Use the quick finder freely, then add an account only when you want subject-aware matching.</p>
                             </div>
                             <a href="{{ route('funding.index') }}" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-bold text-emerald-800 hover:bg-emerald-100">
                                 Funding <i data-lucide="badge-dollar-sign" style="width:16px;height:16px;"></i>
@@ -84,39 +101,65 @@
                                 <input id="aps_score" name="aps_score" type="number" inputmode="numeric" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="32" class="h-14 w-full rounded-2xl border border-neutral-300 bg-white px-4 text-2xl font-black text-neutral-950 outline-none transition focus:border-[#01225E] focus:ring-4 focus:ring-[#01225E]/10">
                             </div>
 
-                            <div class="relative" data-combobox>
-                                <label for="university_id_search" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
+                            <div class="relative" data-university-multiselect>
+                                <label id="university_filter_label" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
                                     <i data-lucide="building-2" style="width:14px;height:14px;"></i>
-                                    University
+                                    Universities
                                 </label>
-                                <input type="hidden" name="university_id" value="{{ $filters['university_id'] }}" data-combobox-value>
-                                <input id="university_id_search" type="search" autocomplete="off" value="{{ $universityLabel($selectedUniversity) }}" placeholder="Search university" class="h-14 w-full rounded-2xl border border-neutral-300 bg-white px-4 pr-11 text-sm font-bold text-neutral-950 outline-none transition focus:border-[#01225E] focus:ring-4 focus:ring-[#01225E]/10" data-combobox-input>
-                                <i data-lucide="chevron-down" class="pointer-events-none absolute right-4 top-[46px] text-neutral-400" style="width:18px;height:18px;"></i>
-                                <div class="absolute left-0 right-0 z-30 mt-2 hidden max-h-80 overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-2 shadow-2xl" data-combobox-list>
-                                    <button type="button" class="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50" data-combobox-option data-value="" data-label="All universities" data-search="all universities">
-                                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-neutral-100 text-xs font-black text-neutral-700">ALL</span>
-                                        <span>
-                                            <span class="block text-neutral-950">All universities</span>
-                                            <span class="block text-xs font-semibold text-neutral-500">Search every captured programme</span>
-                                        </span>
-                                    </button>
-                                    @foreach ($universities as $university)
-                                        @php($label = $universityLabel($university))
-                                        <button type="button" class="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50" data-combobox-option data-value="{{ $university->id }}" data-label="{{ $label }}" data-search="{{ $label }} {{ $university->name }} {{ $university->abbreviation }}">
-                                            <span class="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-neutral-200 bg-white text-xs font-black text-[#01225E]">
-                                                @if ($university->logo)
-                                                    <img src="{{ asset($university->logo) }}" alt="{{ $university->name }} logo" class="h-full w-full object-contain p-1">
-                                                @else
-                                                    {{ $universityInitials($university) }}
-                                                @endif
-                                            </span>
-                                            <span class="min-w-0">
-                                                <span class="block truncate text-neutral-950">{{ $university->abbreviation ?: $university->name }}</span>
-                                                <span class="block truncate text-xs font-semibold text-neutral-500">{{ $university->name }}</span>
+                                <button type="button" aria-labelledby="university_filter_label" aria-expanded="false" class="flex h-14 w-full items-center justify-between gap-3 rounded-2xl border border-neutral-300 bg-white px-4 text-left text-sm font-bold text-neutral-950 outline-none transition hover:bg-neutral-50 focus:border-[#01225E] focus:ring-4 focus:ring-[#01225E]/10" data-university-trigger>
+                                    <span class="min-w-0 truncate" data-university-summary>{{ $universityFilterLabel }}</span>
+                                    <i data-lucide="chevron-down" class="shrink-0 text-neutral-400" style="width:18px;height:18px;"></i>
+                                </button>
+
+                                @if ($selectedUniversities->isNotEmpty())
+                                    <div class="mt-2 flex flex-wrap gap-1.5">
+                                        @foreach ($selectedUniversities as $university)
+                                            <span class="rounded-full bg-[#01225E]/10 px-2.5 py-1 text-xs font-bold text-[#01225E]">{{ $university->abbreviation ?: $university->name }}</span>
+                                        @endforeach
+                                    </div>
+                                @endif
+
+                                <div class="absolute left-0 right-0 z-30 mt-2 hidden overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-2xl" data-university-panel>
+                                    <div class="border-b border-neutral-100 bg-white p-2">
+                                        <input type="search" autocomplete="off" placeholder="Search university" class="h-11 w-full rounded-xl border border-neutral-200 px-3 text-sm font-semibold outline-none focus:border-[#01225E]" data-university-search>
+                                        <div class="mt-2 flex items-center justify-between gap-3 px-1">
+                                            <span class="text-xs font-bold text-neutral-500" data-university-count>{{ $selectedUniversities->count() }} selected</span>
+                                            <button type="button" class="text-xs font-bold text-[#01225E] hover:underline" data-university-clear>Clear</button>
+                                        </div>
+                                    </div>
+                                    <div class="max-h-80 overflow-y-auto p-2">
+                                        <button type="button" class="mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50" data-university-clear data-university-option data-search="all universities">
+                                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-neutral-100 text-xs font-black text-neutral-700">ALL</span>
+                                            <span>
+                                                <span class="block text-neutral-950">All universities</span>
+                                                <span class="block text-xs font-semibold text-neutral-500">Search every captured programme</span>
                                             </span>
                                         </button>
-                                    @endforeach
-                                    <p class="hidden px-3 py-2 text-sm font-semibold text-neutral-500" data-combobox-empty>No universities found</p>
+                                        @foreach ($universities as $university)
+                                            @php($label = $universityLabel($university))
+                                            <label class="flex cursor-pointer items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50" data-university-option data-search="{{ $label }} {{ $university->name }} {{ $university->abbreviation }}">
+                                                <input type="checkbox" name="university_ids[]" value="{{ $university->id }}" class="peer sr-only" data-university-checkbox data-label="{{ $label }}" @checked($selectedUniversityIds->contains((int) $university->id))>
+                                                <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-neutral-300 bg-white text-white peer-checked:border-[#01225E] peer-checked:bg-[#01225E]">
+                                                    <i data-lucide="check" style="width:14px;height:14px;"></i>
+                                                </span>
+                                                <span class="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-neutral-200 bg-white text-xs font-black text-[#01225E]">
+                                                    @if ($university->logo)
+                                                        <img src="{{ asset($university->logo) }}" alt="{{ $university->name }} logo" class="h-full w-full object-contain p-1">
+                                                    @else
+                                                        {{ $universityInitials($university) }}
+                                                    @endif
+                                                </span>
+                                                <span class="min-w-0">
+                                                    <span class="block truncate text-neutral-950">{{ $university->abbreviation ?: $university->name }}</span>
+                                                    <span class="block truncate text-xs font-semibold text-neutral-500">{{ $university->name }}</span>
+                                                </span>
+                                            </label>
+                                        @endforeach
+                                        <p class="hidden px-3 py-2 text-sm font-semibold text-neutral-500" data-university-empty>No universities found</p>
+                                    </div>
+                                    <div class="border-t border-neutral-100 bg-neutral-50 p-2">
+                                        <button type="button" class="flex h-10 w-full items-center justify-center rounded-xl bg-[#01225E] text-sm font-bold text-white hover:bg-[#001A48]" data-university-done>Done</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -145,7 +188,10 @@
 
                         @if ($apsScore !== null)
                             <div class="mt-4 flex flex-col gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-900 sm:flex-row sm:items-center sm:justify-between">
-                                <span>{{ $courses->count() }} courses found for APS {{ $apsScore }}</span>
+                                <span>
+                                    {{ $courses->count() }} courses found for APS {{ $apsScore }}
+                                    {{ $selectedUniversityScopeLabel }}
+                                </span>
                                 <a href="#search-results" class="inline-flex items-center gap-2 text-[#01225E] hover:underline">
                                     View results <i data-lucide="arrow-down" style="width:16px;height:16px;"></i>
                                 </a>
@@ -180,7 +226,10 @@
         @if ($apsScore !== null)
             <section id="search-results" class="mx-auto mt-5 grid scroll-mt-24 max-w-7xl gap-4 px-4 sm:px-5 lg:px-8">
                 <div class="flex flex-col gap-2 rounded-2xl border border-neutral-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
-                    <p class="text-sm font-bold text-neutral-700">{{ $courses->count() }} courses found for APS {{ $apsScore }}</p>
+                    <p class="text-sm font-bold text-neutral-700">
+                        {{ $courses->count() }} courses found for APS {{ $apsScore }}
+                        {{ $selectedUniversityScopeLabel }}
+                    </p>
                     <a href="{{ route('aps.index') }}" class="text-sm font-bold text-[#01225E] hover:underline">Reset search</a>
                 </div>
 
@@ -200,12 +249,18 @@
                                     {{ $course->university_abbreviation ?? $course->university_name }} · {{ $course->faculty_name }}
                                 </p>
                                 <div class="mt-4 flex flex-wrap gap-2">
-                                    <a href="{{ route('register') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 text-sm font-bold text-white hover:bg-[#001A48]">
-                                        Sign up for full match <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
-                                    </a>
-                                    <a href="{{ route('funding.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold hover:bg-neutral-50">
+                                    <a href="{{ route('funding.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 text-sm font-bold text-white hover:bg-[#001A48]">
                                         Check funding <i data-lucide="badge-dollar-sign" style="width:16px;height:16px;"></i>
                                     </a>
+                                    @auth
+                                        <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold hover:bg-neutral-50">
+                                            Full subject match <i data-lucide="target" style="width:16px;height:16px;"></i>
+                                        </a>
+                                    @else
+                                        <a href="{{ route('register') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold hover:bg-neutral-50">
+                                            Optional full match <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
+                                        </a>
+                                    @endauth
                                 </div>
                             </div>
                             <div class="grid min-w-full grid-cols-2 gap-2 sm:min-w-[280px]">
@@ -231,18 +286,18 @@
 
         @guest
             <section class="mx-auto mt-6 max-w-7xl px-4 sm:px-5 lg:px-8">
-                <div class="grid gap-4 rounded-[28px] border border-[#01225E]/15 bg-white p-5 shadow-sm md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
+                <div class="grid gap-4 rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
                     <div>
-                        <p class="text-sm font-bold text-[#01225E]">Get a stronger match</p>
-                        <h2 class="mt-1 text-2xl font-bold text-neutral-950">Sign in to match with your subjects and marks</h2>
-                        <p class="mt-2 max-w-3xl text-sm leading-6 text-neutral-600">APS is a helpful starting point. An account lets Chamu compare your actual subjects, marks, requirements, and funding fit.</p>
+                        <p class="text-sm font-bold text-[#01225E]">No account needed for APS</p>
+                        <h2 class="mt-1 text-xl font-bold text-neutral-950">Compare courses first, save marks later</h2>
+                        <p class="mt-2 max-w-3xl text-sm leading-6 text-neutral-600">Use APS and university filters freely. When you want subject-aware matching against your marks, you can save your profile then.</p>
                     </div>
                     <div class="flex flex-col gap-2 sm:flex-row">
-                        <a href="{{ route('login') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-sm font-bold text-neutral-900 hover:bg-neutral-50">
-                            Log in <i data-lucide="log-in" style="width:16px;height:16px;"></i>
+                        <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-bold text-neutral-900 hover:bg-neutral-50">
+                            Calculate APS <i data-lucide="calculator" style="width:16px;height:16px;"></i>
                         </a>
-                        <a href="{{ route('register') }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]">
-                            Create account <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
+                        <a href="{{ route('register') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-bold text-neutral-900 hover:bg-neutral-50">
+                            Save marks later <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
                         </a>
                     </div>
                 </div>
@@ -267,7 +322,7 @@
                     <div class="university-marquee-track flex gap-3 px-4">
                         @foreach ([false, true] as $duplicate)
                             @foreach ($universities as $university)
-                                <a href="{{ route('aps.index', ['university_id' => $university->id]) }}" @if ($duplicate) aria-hidden="true" tabindex="-1" @endif class="flex w-64 shrink-0 items-center gap-3 rounded-2xl border border-neutral-200 bg-white px-4 py-3 hover:border-[#01225E]/40 hover:bg-blue-50/50">
+                                <a href="{{ route('aps.index', ['university_ids' => [$university->id]]) }}" @if ($duplicate) aria-hidden="true" tabindex="-1" @endif class="flex w-64 shrink-0 items-center gap-3 rounded-2xl border border-neutral-200 bg-white px-4 py-3 hover:border-[#01225E]/40 hover:bg-blue-50/50">
                                     <span class="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-neutral-200 bg-white text-xs font-black text-[#01225E]">
                                         @if ($university->logo)
                                             <img src="{{ asset($university->logo) }}" alt="{{ $university->name }} logo" class="h-full w-full object-contain p-1.5">
@@ -310,32 +365,34 @@
 
 @push('scripts')
     <script>
-        document.querySelectorAll('[data-combobox]').forEach((combobox) => {
-            const input = combobox.querySelector('[data-combobox-input]');
-            const hidden = combobox.querySelector('[data-combobox-value]');
-            const list = combobox.querySelector('[data-combobox-list]');
-            const options = Array.from(combobox.querySelectorAll('[data-combobox-option]'));
-            const empty = combobox.querySelector('[data-combobox-empty]');
-            const form = combobox.closest('form');
+        document.querySelectorAll('[data-university-multiselect]').forEach((multiselect) => {
+            const trigger = multiselect.querySelector('[data-university-trigger]');
+            const panel = multiselect.querySelector('[data-university-panel]');
+            const search = multiselect.querySelector('[data-university-search]');
+            const summary = multiselect.querySelector('[data-university-summary]');
+            const countLabel = multiselect.querySelector('[data-university-count]');
+            const empty = multiselect.querySelector('[data-university-empty]');
+            const done = multiselect.querySelector('[data-university-done]');
+            const checkboxes = Array.from(multiselect.querySelectorAll('[data-university-checkbox]'));
+            const options = Array.from(multiselect.querySelectorAll('[data-university-option]'));
+            const clearButtons = Array.from(multiselect.querySelectorAll('[data-university-clear]'));
 
-            const normalise = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-            const open = () => list.classList.remove('hidden');
-            const close = () => list.classList.add('hidden');
-
-            const visibleOptions = () => options.filter((option) => ! option.classList.contains('hidden'));
-
-            const selectOption = (option) => {
-                input.value = option.dataset.label || option.textContent.trim();
-                hidden.value = option.dataset.value || '';
-                close();
+            const normalise = (value) => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+            const open = () => {
+                panel.classList.remove('hidden');
+                trigger.setAttribute('aria-expanded', 'true');
+            };
+            const close = () => {
+                panel.classList.add('hidden');
+                trigger.setAttribute('aria-expanded', 'false');
             };
 
             const filterOptions = () => {
-                const query = normalise(input.value);
+                const query = normalise(search?.value);
                 let visibleCount = 0;
 
                 options.forEach((option) => {
-                    const haystack = normalise(option.dataset.search || option.dataset.label || option.textContent);
+                    const haystack = normalise(option.dataset.search || option.textContent);
                     const isVisible = query === '' || haystack.includes(query);
                     option.classList.toggle('hidden', ! isVisible);
                     visibleCount += isVisible ? 1 : 0;
@@ -344,55 +401,64 @@
                 empty.classList.toggle('hidden', visibleCount > 0);
             };
 
-            const syncExactValue = () => {
-                const typed = normalise(input.value);
-                const exactOption = options.find((option) => {
-                    return normalise(option.dataset.label || '') === typed || normalise(option.textContent) === typed;
-                });
+            const updateSummary = () => {
+                const selected = checkboxes.filter((checkbox) => checkbox.checked);
+                const selectedCount = selected.length;
 
-                hidden.value = exactOption ? exactOption.dataset.value || '' : hidden.value;
+                summary.textContent = selectedCount === 0
+                    ? 'All universities'
+                    : (selectedCount === 1 ? selected[0].dataset.label : `${selectedCount} universities selected`);
+                countLabel.textContent = `${selectedCount} selected`;
             };
 
-            input.addEventListener('focus', () => {
-                open();
-                filterOptions();
-                input.select();
-            });
+            const clearSelection = () => {
+                checkboxes.forEach((checkbox) => {
+                    checkbox.checked = false;
+                });
+                updateSummary();
+            };
 
-            input.addEventListener('input', () => {
-                hidden.value = '';
-                open();
-                filterOptions();
-            });
+            trigger.addEventListener('click', () => {
+                const isOpen = ! panel.classList.contains('hidden');
 
-            input.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
+                if (isOpen) {
                     close();
                     return;
                 }
 
-                if (event.key === 'Enter' && ! list.classList.contains('hidden')) {
-                    const firstVisible = visibleOptions()[0];
+                open();
+                filterOptions();
+                search?.focus();
+            });
 
-                    if (firstVisible && normalise(input.value) !== '') {
-                        event.preventDefault();
-                        selectOption(firstVisible);
-                        form?.requestSubmit();
-                    }
+            search?.addEventListener('input', filterOptions);
+            search?.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    close();
+                }
+
+                if (event.key === 'Enter') {
+                    event.preventDefault();
                 }
             });
 
-            options.forEach((option) => {
-                option.addEventListener('click', () => selectOption(option));
+            checkboxes.forEach((checkbox) => {
+                checkbox.addEventListener('change', updateSummary);
             });
 
-            form?.addEventListener('submit', syncExactValue);
+            clearButtons.forEach((button) => {
+                button.addEventListener('click', clearSelection);
+            });
+
+            done?.addEventListener('click', close);
 
             document.addEventListener('click', (event) => {
-                if (! combobox.contains(event.target)) {
+                if (! multiselect.contains(event.target)) {
                     close();
                 }
             });
+
+            updateSummary();
         });
     </script>
 @endpush

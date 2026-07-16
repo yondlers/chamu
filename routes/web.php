@@ -1569,20 +1569,36 @@ Route::get('/aps-calculator', function (Request $request) {
 Route::get('/funding', fn () => redirect()->route('bursaries.index'))->name('funding.index');
 
 Route::get('/aps', function (Request $request) {
-    if ($request->user() !== null) {
-        return redirect()->route('course-match.index', $request->query());
-    }
-
     $apsScore = $request->has('aps_score') && is_numeric($request->query('aps_score'))
         ? min(max((int) $request->query('aps_score'), 0), 60)
         : null;
     $search = trim((string) $request->query('search', ''));
-    $universityId = $request->integer('university_id') ?: null;
+    $requestedUniversityIds = $request->query('university_ids', []);
+
+    if (! is_array($requestedUniversityIds)) {
+        $requestedUniversityIds = [$requestedUniversityIds];
+    }
+
+    $legacyUniversityId = $request->integer('university_id') ?: null;
+
+    if ($legacyUniversityId !== null) {
+        $requestedUniversityIds[] = $legacyUniversityId;
+    }
 
     $universities = DB::table('universities')
         ->select('id', 'name', 'abbreviation', 'logo')
         ->orderBy('name')
         ->get();
+    $validUniversityIds = $universities
+        ->pluck('id')
+        ->map(fn ($id) => (int) $id);
+    $selectedUniversityIds = collect($requestedUniversityIds)
+        ->filter(fn ($id) => is_numeric($id))
+        ->map(fn ($id) => (int) $id)
+        ->filter(fn ($id) => $id > 0)
+        ->unique()
+        ->intersect($validUniversityIds)
+        ->values();
     $qualificationCount = DB::table('qualifications')->count();
     $bursaryCount = Schema::hasTable('bursaries') ? DB::table('bursaries')->count() : 0;
 
@@ -1595,7 +1611,7 @@ Route::get('/aps', function (Request $request) {
             ->join('qualification_types', 'qualification_types.id', '=', 'qualifications.qualification_type_id')
             ->whereNotNull('qualifications.aps_required')
             ->where('qualifications.aps_required', '<=', $apsScore)
-            ->when($universityId !== null, fn ($query) => $query->where('qualifications.university_id', $universityId))
+            ->when($selectedUniversityIds->isNotEmpty(), fn ($query) => $query->whereIn('qualifications.university_id', $selectedUniversityIds->all()))
             ->when($search !== '', function ($query) use ($search) {
                 $query->where(function ($query) use ($search) {
                     $query
@@ -1634,7 +1650,8 @@ Route::get('/aps', function (Request $request) {
         'bursaryCount' => $bursaryCount,
         'courses' => $courses,
         'filters' => [
-            'university_id' => $universityId,
+            'university_id' => $selectedUniversityIds->first(),
+            'university_ids' => $selectedUniversityIds->all(),
         ],
     ]);
 })->name('aps.index');
