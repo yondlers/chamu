@@ -44,10 +44,13 @@
             : 'Nice, now enter your APS to see courses at these universities.')
         : 'Enter your APS score first so Chamu can search matching courses.';
     $heroSlides = [
-        ['src' => asset('images/aps/classroom-design.png'), 'position' => 'object-[center_48%]'],
-        ['src' => asset('images/aps/exam-hall.png'), 'position' => 'object-[center_50%]'],
-        ['src' => asset('images/aps/school-assembly.png'), 'position' => 'object-[center_42%]'],
-        ['src' => asset('images/aps/campus-learner.png'), 'position' => 'object-[center_45%]'],
+        ['src' => asset('images/aps/graduates-smiling.png'), 'position' => 'object-[center_38%]', 'delay' => 0],
+        ['src' => asset('images/aps/engineering-workshop.png'), 'position' => 'object-[center_45%]', 'delay' => 7],
+        ['src' => asset('images/aps/school-learners.png'), 'position' => 'object-[center_44%]', 'delay' => 14],
+        ['src' => asset('images/aps/nursing-students.png'), 'position' => 'object-[center_42%]', 'delay' => 21],
+        ['src' => asset('images/aps/uct-graduate.png'), 'position' => 'object-[center_46%]', 'delay' => 28],
+        ['src' => asset('images/aps/graduation-group.png'), 'position' => 'object-[center_44%]', 'delay' => 35],
+        ['src' => asset('images/aps/aps-calculation.png'), 'position' => 'object-[center_50%]', 'delay' => 42],
     ];
     $featuredUniversities = $selectedUniversities->isNotEmpty()
         ? $selectedUniversities
@@ -64,19 +67,15 @@
         .aps-hero-slide {
             opacity: 0;
             transform: scale(1.03);
-            animation: aps-hero-fade 28s infinite;
+            animation: aps-hero-fade 49s infinite;
+            animation-delay: var(--aps-slide-delay, 0s);
         }
-
-        .aps-hero-slide:nth-child(1) { animation-delay: 0s; }
-        .aps-hero-slide:nth-child(2) { animation-delay: 7s; }
-        .aps-hero-slide:nth-child(3) { animation-delay: 14s; }
-        .aps-hero-slide:nth-child(4) { animation-delay: 21s; }
 
         @keyframes aps-hero-fade {
             0% { opacity: 0; transform: scale(1.03); }
-            5% { opacity: 1; }
-            24% { opacity: 1; }
-            30% { opacity: 0; transform: scale(1.10); }
+            4% { opacity: 1; }
+            15% { opacity: 1; }
+            19% { opacity: 0; transform: scale(1.10); }
             100% { opacity: 0; transform: scale(1.10); }
         }
 
@@ -126,7 +125,7 @@
         <section class="relative isolate bg-[#07111f] text-white">
             <div class="absolute inset-0 -z-10 overflow-hidden">
                 @foreach ($heroSlides as $slide)
-                    <img src="{{ $slide['src'] }}" alt="" class="aps-hero-slide absolute inset-0 h-full w-full object-cover {{ $slide['position'] }}">
+                    <img src="{{ $slide['src'] }}" alt="" class="aps-hero-slide absolute inset-0 h-full w-full object-cover {{ $slide['position'] }}" style="--aps-slide-delay: {{ $slide['delay'] }}s;">
                 @endforeach
                 <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,10,22,.96)_0%,rgba(4,10,22,.80)_45%,rgba(4,10,22,.42)_100%)]"></div>
                 <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#f5f7fb] via-[#f5f7fb]/45 to-transparent"></div>
