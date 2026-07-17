@@ -960,10 +960,29 @@ Route::middleware('guest')->group(function () {
     })->name('login.store');
 
     Route::get('/register', function () {
+        $publicUserTypes = [
+            'pupil' => 'High school learner account for studying, practice, notes, and exams.',
+            'student' => 'University or college student account for funding and study planning.',
+        ];
+
+        if (Schema::hasTable('user_types')) {
+            DB::table('user_types')->insertOrIgnore(
+                collect($publicUserTypes)
+                    ->map(fn ($description, $name) => [
+                        'name' => $name,
+                        'description' => $description,
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ])
+                    ->values()
+                    ->all()
+            );
+        }
+
         $userTypes = Schema::hasTable('user_types')
             ? DB::table('user_types')
                 ->select('id', 'name')
-                ->whereIn('name', ['pupil', 'student'])
+                ->whereIn('name', array_keys($publicUserTypes))
                 ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 else 3 end")
                 ->get()
             : collect();
