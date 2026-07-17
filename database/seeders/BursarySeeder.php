@@ -33,18 +33,98 @@ class BursarySeeder extends Seeder
             'contact_phone' => $contactPhone,
         ];
 
-        $bursary = fn (array $data): array => array_merge([
-            'service_contract' => null,
-            'renewal' => null,
-            'contact_name' => null,
-            'contact_email' => null,
-            'contact_phone' => null,
-            'application_delivery_type' => 'external_link',
-            'application_email' => null,
-            'chamu_apply_enabled' => false,
-            'apply_url' => null,
-            'is_active' => true,
-        ], $data);
+        $emailApplicationSources = [
+            'https://www.zabursaries.co.za/universities/ada-bertie-levenstein-bursary/' => 'pgfunding@ru.ac.za',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/african-institute-for-mathematical-sciences-bursaries/' => 'research-admin@aims.ac.za',
+            'https://www.zabursaries.co.za/engineering-bursaries-south-africa/african-rainbow-minerals-arm-bursary/' => 'armbrightsparks@arm.co.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/africa-wetu-foundation-awf-bursary/' => 'info@africawetufoundation.org',
+            'https://www.zabursaries.co.za/commerce-bursaries-south-africa/agribusiness-centenary-bursary/' => 'policy@agbiz.co.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/agricultural-economics-association-of-south-africa-aeasa-bursary/' => 'elduples@namc.co.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/bongani-mayosi-national-health-scholars-programme-bm-nhsp/' => 'Lindokuhle.Ndlandla@mrc.ac.za',
+            'https://www.zabursaries.co.za/engineering-bursaries-south-africa/council-for-geoscience-bursary/' => 'bursaries@geoscience.org.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/critical-food-studies-postgraduate-scholarship/' => 'MagudulelaM@ukzn.ac.za',
+            'https://www.zabursaries.co.za/universities/david-and-elaine-potter-fellowship/' => 'fellowships@uct.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-tourism-bursary/' => 'Bursary2026@tourism.gov.za',
+            'https://www.zabursaries.co.za/general-bursaries-south-africa/department-of-transport-bursary/' => 'makgarc@unisa.ac.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/dudley-dewes-scholarship/' => 'info@khulacapefoundation.org.za',
+            'https://www.zabursaries.co.za/universities/erika-theron-trust-scholarship-at-uwc/' => 'finaidbursaries@uwc.ac.za',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/garden-cities-bursary/' => 'ljasson@uwc.ac.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/greenmatter-fellowship-phd-at-university-of-cape-town/' => 'janavi@greenmatter.co.za',
+            'https://www.zabursaries.co.za/universities/guy-butler-research-award-scholarship/' => 'pgfunding@ru.ac.za',
+            'https://www.zabursaries.co.za/universities/harry-crossley-foundation-research-fellowship/' => 'fellowships@uct.ac.za',
+            'https://www.zabursaries.co.za/engineering-bursaries-south-africa/hensoldt-optronics-bursary/' => 'recruitment@hensoldt.net',
+            'https://www.zabursaries.co.za/mba-postgraduate/hwseta-postgraduate-bursary/' => 'rimepg@hwseta.org.za',
+            'https://www.zabursaries.co.za/universities/inscape-scholarship/' => 'registrar@inscape.co.za',
+            'https://www.zabursaries.co.za/general-bursaries-south-africa/inseta-bursary/' => 'bursariesforyouth@inseta.org.za',
+            'https://www.zabursaries.co.za/general-bursaries-south-africa/mancosa-bursary/' => 'communications@wefeedsa.org',
+            'https://www.zabursaries.co.za/construction-and-built-environment-bursaries-south-africa/master-builders-association-bursary/' => 'benjamin@mbawc.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/mhlathuze-water-bursary/' => 'bursaries@mhlathuze.co.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/miway-bursary/' => 'actuarial.careers@miway.co.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/mpumalanga-provincial-government-bursary/' => 'otprecruitment@mpg.gov.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/nersa-bursary/' => 'bursaries@nersa.org.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/nmu-aidc-postdoctoral-fellowship/' => 'khaled.abou-el-hossein@mandela.ac.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/nmu-aidc-postgraduate-bursary/' => 'khaled.abou-el-hossein@mandela.ac.za',
+            'https://www.zabursaries.co.za/universities/nrf-scholarship-at-uj/' => 'brendas@uj.ac.za',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/quantum-foods-bursary/' => 'chandre.lesch@quantumfoods.co.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/rothschild-co-foundation-scholarship/' => 'lynn.waterson@rothschildandco.com',
+            'https://www.zabursaries.co.za/engineering-bursaries-south-africa/sawise-angus-scholarship/' => 'sawise.scholarships@gmail.com',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/saafost-aubrey-parsons-study-grant/' => 'irene@saafost.org.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/saafost-brian-koeppen-memorial-scholarship/' => 'irene@saafost.org.za',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/saafost-foundation-bursary-for-part-time-students/' => 'irene@saafost.org.za',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/samac-bursary/' => 'juandre@samac.org.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/samrc-scholarship/' => 'RCDscholarships@mrc.ac.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/sanbi-biological-invasion-bursary/' => 'students@sanbi.org.za',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/sasol-agriculture-trust-bursary/' => 'marna@agrimanage.co.za',
+            'https://www.zabursaries.co.za/science-bursaries-south-africa/saimi-bursary/' => 'bursary@saimi.co.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/south-african-national-seed-organization-sansor-bursary/' => 'research@sansor.co.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/south-african-society-for-animal-science-sasas-bursary/' => 'secretary@sasas.co.za',
+            'https://www.zabursaries.co.za/general-bursaries-south-africa/southern-african-transport-conference-satc-bursary/' => 'info@satc.org.za',
+            'https://www.zabursaries.co.za/universities/stellenbosch-university-andrew-w-mellon-foundation-scholarship/' => 'graduateschool@sun.ac.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/stellenbosch-university-doctoral-scholarship/' => 'graduateschool@sun.ac.za',
+            'https://www.zabursaries.co.za/universities/stellenbosch-university-gem-scholarship/' => 'GEM@sun.ac.za',
+            'https://www.zabursaries.co.za/universities/stellenbosch-university-lisa-maskell-scholarship/' => 'graduateschool@sun.ac.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/tiso-foundation-archibald-mafeje-phd-scholarship/' => 'mmokoena@tiso.co.za',
+            'https://www.zabursaries.co.za/universities/uct-centre-for-african-studies-jack-simons-bursary/' => 'vuyelwa.mnqanqeni@uct.ac.za',
+            'https://www.zabursaries.co.za/computer-science-it-bursaries-south-africa/uct-department-of-information-systems-bursary/' => 'generalawardsapplications@uct.ac.za',
+            'https://www.zabursaries.co.za/universities/uct-international-and-refugee-scholarship/' => 'pgfunding@uct.ac.za',
+            'https://www.zabursaries.co.za/mba-postgraduate/umgeni-water-postgraduate-bursary/' => 'gugu.myeza@umgeni.co.za',
+            'https://www.zabursaries.co.za/universities/ukzn-college-of-agriculture-engineering-and-science-caes-bursary/' => 'radebem3@ukzn.ac.za',
+            'https://www.zabursaries.co.za/universities/ukzn-ethekwini-maritime-cluster-bursary/' => 'peterv@ukzn.ac.za',
+            'https://www.zabursaries.co.za/universities/ukzn-mellon-spatial-humanities-scholarship/' => 'udofidelisj@gmail.com',
+            'https://www.zabursaries.co.za/universities/university-of-free-state-ufs-doctoral-scholarship/' => 'MathebulaM@ufs.ac.za',
+            'https://www.zabursaries.co.za/universities/uwc-inseta-bursary/' => 'aduarte@uwc.ac.za',
+        ];
+
+        $bursary = function (array $data) use ($emailApplicationSources): array {
+            $bursary = array_merge([
+                'service_contract' => null,
+                'renewal' => null,
+                'contact_name' => null,
+                'contact_email' => null,
+                'contact_phone' => null,
+                'application_delivery_type' => 'external_link',
+                'application_email' => null,
+                'chamu_apply_enabled' => false,
+                'apply_url' => null,
+                'is_active' => true,
+            ], $data);
+
+            $email = $emailApplicationSources[$bursary['source_url'] ?? ''] ?? null;
+
+            if ($email !== null) {
+                $bursary['application_delivery_type'] = 'email';
+                $bursary['application_email'] = $email;
+                $bursary['chamu_apply_enabled'] = true;
+                $bursary['apply_url'] = 'mailto:'.$email;
+                $bursary['contact_email'] = $bursary['contact_email'] ?: $email;
+
+                if (! Str::contains(Str::lower((string) ($bursary['application_method'] ?? '')), ['email', 'e-mail'])) {
+                    $bursary['application_method'] = 'Apply by email to '.$email.'.';
+                }
+            }
+
+            return $bursary;
+        };
 
         $entry = fn (array $company, array $bursary, array $requirements = [], array $documentRequirements = []): array => [
             'company' => $company,
@@ -88,6 +168,19 @@ class BursarySeeder extends Seeder
             'accepts_multiple' => $multiple,
             'requirement_group' => $group,
             'sort_order' => $sort,
+        ];
+
+        $defaultEmailDocumentRequirements = [
+            $docReq('covering_letter', 'Covering letter', false, null, 'A short letter introducing the applicant and motivation for the bursary.', false, 10),
+            $docReq('id_document', 'Certified copy of ID document', true, null, 'Upload the front and back if they are separate files.', true, 20),
+            $docReq('curriculum_vitae', 'Curriculum Vitae', true, null, 'Current CV with education, achievements, and activities.', false, 30),
+            $docReq('matric_certificate', 'Certified copy of Matric certificate', false, 'academic_record', 'Required if Matric has been completed. One academic record option must be uploaded.', false, 40),
+            $docReq('academic_transcript', 'Full academic record or transcript', false, 'academic_record', 'Use tertiary institution letterhead where available. One academic record option must be uploaded.', false, 50),
+            $docReq('grade_12_marks', 'Grade 12 marks', false, 'academic_record', 'Latest Grade 12 marks are accepted when Matric is not complete.', false, 60),
+            $docReq('grade_11_marks', 'Grade 11 marks', false, 'academic_record', 'Grade 11 final marks may support current Matric applications.', false, 70),
+            $docReq('family_ids', 'Family IDs', false, null, 'Certified ID copies for parents, legal guardian, or spouse, if financial need applies.', true, 80),
+            $docReq('proof_of_income', 'Proof of income', false, null, 'Payslips, employment letters, or retrenchment letters for parents or guardians. Not needed for SASSA grant recipients.', true, 90),
+            $docReq('special_case_documents', 'Special case documents', false, null, 'Disability Annexure A or Vulnerable Child Declaration, if applicable.', true, 100),
         ];
 
         $englishAny = fn (
@@ -5484,6 +5577,95 @@ class BursarySeeder extends Seeder
             );
         }
 
+        $additionalPostgraduateSourceEntries = [
+            ['African Institute for Mathematical Sciences Bursaries', 'https://www.zabursaries.co.za/science-bursaries-south-africa/african-institute-for-mathematical-sciences-bursaries/'],
+            ['Astron Energy Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/astron-energy-bursary/'],
+            ['Canon Collins Trust and University of London Scholarships for Distance Learning', 'https://www.zabursaries.co.za/international-scholarships-bursaries-south-africa/canon-collins-trust-and-university-of-london-scholarships-for-distance-learning/'],
+            ['Cecil Renaud International Scholarship', 'https://www.zabursaries.co.za/international-scholarships-bursaries-south-africa/cecil-renaud-overseas-scholarship-for-postgraduate-studies-in-the-uk/'],
+            ['Department of Agriculture, Land Reform and Rural Development (DALRRD) Bursary', 'https://www.zabursaries.co.za/government-bursaries-south-africa/dalrrd-bursary/'],
+            ['Department of Forestry, Fisheries and the Environment (DFFE) Bursary', 'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-environment-forestry-and-fisheries-bursary/'],
+            ['Department of Tourism Bursary', 'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-tourism-bursary/'],
+            ['Department of Transport Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/department-of-transport-bursary/'],
+            ['Energy Mobility Education Trust Scholarship', 'https://www.zabursaries.co.za/science-bursaries-south-africa/energy-mobility-education-trust-scholarship/'],
+            ['Ernst & Ethel Eriksen Trust Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/ernst-ethel-eriksen-trust-bursary-grant/'],
+            ['FoodBev SETA Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/foodbev-seta-bursary/'],
+            ['Fulbright Foreign Student Program South Africa', 'https://www.zabursaries.co.za/international-scholarships-bursaries-south-africa/fulbright-foreign-student-program-south-africa/'],
+            ['Gates Cambridge International Scholarship', 'https://www.zabursaries.co.za/international-scholarships-bursaries-south-africa/gates-cambridge-international-scholarship/'],
+            ['Garden Cities Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/garden-cities-bursary/'],
+            ['HCI Foundation Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/hci-foundation-bursary/'],
+            ['Imfundo Enhle Education Trust Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/imfundo-enhle-education-trust-bursary/'],
+            ['INSETA Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/inseta-bursary/'],
+            ['LGSETA Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/lgseta-bursary/'],
+            ['Maize Trust Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/maize-trust-bursary/'],
+            ['MANCOSA Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/mancosa-bursary/'],
+            ['Mhlathuze Water Bursary', 'https://www.zabursaries.co.za/government-bursaries-south-africa/mhlathuze-water-bursary/'],
+            ['Mpumalanga Provincial Government Bursary', 'https://www.zabursaries.co.za/government-bursaries-south-africa/mpumalanga-provincial-government-bursary/'],
+            ['Poliomyelitis Research Foundation Bursaries', 'https://www.zabursaries.co.za/medical-bursaries-south-africa/poliomyelitis-research-foundation-bursaries/'],
+            ['Potato Industry Development Trust Bursaries', 'https://www.zabursaries.co.za/science-bursaries-south-africa/potato-industry-development-trust-bursaries/'],
+            ['PwC Honours Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/pwc-honours-bursary/'],
+            ['Queen Elizabeth Commonwealth Scholarships (QECS)', 'https://www.zabursaries.co.za/international-scholarships-bursaries-south-africa/queen-elizabeth-commonwealth-scholarships-qecs/'],
+            ['Quantum Foods Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/quantum-foods-bursary/'],
+            ['Rhodes Trust Scholarship', 'https://www.zabursaries.co.za/general-bursaries-south-africa/the-rhodes-trust-scholarship-postgraduate/'],
+            ['RSM Education Trust Bursary', 'https://www.zabursaries.co.za/accounting-bursaries-south-africa/rsm-education-trust-bursary/'],
+            ['SA Cultivar & Technology Agency (SACTA) Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/sa-cultivar-technology-agency-sacta-bursary/'],
+            ['SACCCS Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/sacccs-bursary/'],
+            ['SAAFoST Aubrey Parsons Study Grant', 'https://www.zabursaries.co.za/science-bursaries-south-africa/saafost-aubrey-parsons-study-grant/'],
+            ['SAAFoST Foundation Bursary (for Part-Time Students)', 'https://www.zabursaries.co.za/science-bursaries-south-africa/saafost-foundation-bursary-for-part-time-students/'],
+            ['SAMAC Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/samac-bursary/'],
+            ['Sasol Agriculture Trust Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/sasol-agriculture-trust-bursary/'],
+            ['Sorghum Trust Scholarship', 'https://www.zabursaries.co.za/science-bursaries-south-africa/sorghum-trust-scholarship/'],
+            ['South Africa International Maritime Institute (SAIMI) Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/saimi-bursary/'],
+            ['South African Association of Botanists Scholarship', 'https://www.zabursaries.co.za/science-bursaries-south-africa/south-african-association-of-botanists-scholarship/'],
+            ['Southern African Transport Conference (SATC) Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/southern-african-transport-conference-satc-bursary/'],
+            ['Toyota Tsusho Africa Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/toyota-tsusho-africa-bursary/'],
+            ['Transport Education Training Authority (TETA) Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/teta-bursary/'],
+            ['Winter Cereal Trust Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/winter-cereal-trust-bursary/'],
+        ];
+
+        $seededSourceUrls = [];
+
+        foreach ($bursaries as $existingBursaryEntry) {
+            $seededSourceUrls[$existingBursaryEntry['bursary']['source_url']] = true;
+        }
+
+        foreach ($additionalPostgraduateSourceEntries as [$postgraduateTitle, $sourceUrl]) {
+            if (isset($seededSourceUrls[$sourceUrl])) {
+                continue;
+            }
+
+            $providerName = trim((string) preg_replace('/\s+(Bursary|Bursaries|Scholarship|Scholarships|Fellowship|Fellowships|Grant|Programme)$/i', '', $postgraduateTitle));
+
+            $bursaries[] = $entry(
+                $company(
+                    $providerName !== '' ? $providerName : $postgraduateTitle,
+                    null,
+                    'Postgraduate, research, fellowship, scholarship or related bursary provider.',
+                    null,
+                    null,
+                ),
+                $bursary([
+                    'title' => $postgraduateTitle,
+                    'category' => 'Postgraduate',
+                    'summary' => $postgraduateTitle.' for postgraduate, Honours, Masters, Doctoral, fellowship, research or related studies.',
+                    'fields_covered' => 'Postgraduate, Honours, Masters, Doctoral, fellowship, research or related fields supported by the provider.',
+                    'coverage_value' => 'See provider for the confirmed funding package.',
+                    'eligibility_requirements' => [
+                        'Studying or intending to study in one of the listed postgraduate or research fields',
+                        'Meets the provider requirements listed on the source page',
+                    ],
+                    'application_method' => 'See the source page for current application instructions.',
+                    'supporting_documents' => [
+                        'See source page for required supporting documents.',
+                    ],
+                    'closing_date' => null,
+                    'closing_date_label' => 'See source page',
+                    'source_url' => $sourceUrl,
+                ]),
+            );
+
+            $seededSourceUrls[$sourceUrl] = true;
+        }
+
         foreach ($bursaries as $entry) {
             $company = $entry['company'];
             $companySlug = Str::slug($company['name']);
@@ -5576,7 +5758,13 @@ class BursarySeeder extends Seeder
 
             DB::table('bursary_document_requirements')->where('bursary_id', $bursaryId)->delete();
 
-            foreach ($entry['document_requirements'] as $index => $requirement) {
+            $documentRequirements = $entry['document_requirements'];
+
+            if ($documentRequirements === [] && $bursary['application_delivery_type'] === 'email') {
+                $documentRequirements = $defaultEmailDocumentRequirements;
+            }
+
+            foreach ($documentRequirements as $index => $requirement) {
                 DB::table('bursary_document_requirements')->insert([
                     'bursary_id' => $bursaryId,
                     'key' => $requirement['key'],

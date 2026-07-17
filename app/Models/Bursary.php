@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Str;
 
 class Bursary extends Model
 {
@@ -65,5 +66,39 @@ class Bursary extends Model
     public function applications(): HasMany
     {
         return $this->hasMany(BursaryApplication::class, 'bursary_id');
+    }
+
+    public function applicationProviderEmail(): ?string
+    {
+        if (filled($this->application_email)) {
+            return $this->application_email;
+        }
+
+        if (filled($this->contact_email)) {
+            return $this->contact_email;
+        }
+
+        if (Str::startsWith((string) $this->apply_url, 'mailto:')) {
+            return Str::of($this->apply_url)
+                ->after('mailto:')
+                ->before('?')
+                ->trim()
+                ->toString();
+        }
+
+        return null;
+    }
+
+    public function isEmailSubmission(): bool
+    {
+        return ($this->chamu_apply_enabled ?? false)
+            || ($this->application_delivery_type ?? null) === 'email'
+            || Str::startsWith((string) $this->apply_url, 'mailto:')
+            || Str::contains(Str::lower((string) $this->application_method), [
+                'apply by email',
+                'email to',
+                'via email',
+                'submitted by email',
+            ]);
     }
 }

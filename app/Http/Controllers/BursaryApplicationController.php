@@ -7,14 +7,15 @@ use App\Mail\BursaryApplicationSubmitted;
 use App\Models\Bursary;
 use App\Models\BursaryApplication;
 use App\Models\BursaryApplicationDocument;
+use App\Models\BursaryDocumentRequirement;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 use Throwable;
 
 class BursaryApplicationController extends Controller
@@ -31,29 +32,29 @@ class BursaryApplicationController extends Controller
 
     public function store(Request $request, Bursary $bursary): RedirectResponse
     {
-        $providerEmail = $bursary->application_email ?: $bursary->contact_email;
+        $providerEmail = $bursary->applicationProviderEmail();
 
-        if (! Schema::hasTable('bursary_document_requirements') || ! Schema::hasTable('bursary_applications')) {
+        if (! Schema::hasTable('bursary_applications') || ! Schema::hasTable('bursary_application_documents')) {
             return back()->withErrors([
                 'application' => 'Bursary applications are being prepared. Please run the latest migrations and try again.',
             ]);
         }
 
-        if (! $bursary->chamu_apply_enabled || $bursary->application_delivery_type !== 'email' || ! filter_var($providerEmail, FILTER_VALIDATE_EMAIL)) {
+        if (! $bursary->isEmailSubmission() || ! filter_var($providerEmail, FILTER_VALIDATE_EMAIL)) {
             return back()->withErrors([
                 'application' => 'This bursary is not ready for Chamu email applications yet.',
             ]);
         }
 
-        $requirements = $bursary->documentRequirements()
-            ->orderBy('sort_order')
-            ->orderBy('id')
-            ->get();
+        $requirements = Schema::hasTable('bursary_document_requirements')
+            ? $bursary->documentRequirements()
+                ->orderBy('sort_order')
+                ->orderBy('id')
+                ->get()
+            : collect();
 
         if ($requirements->isEmpty()) {
-            return back()->withErrors([
-                'application' => 'Document requirements have not been captured for this bursary yet.',
-            ]);
+            $requirements = BursaryDocumentRequirement::defaultEmailSubmissionRequirements();
         }
 
         $validator = Validator::make($request->all(), [
@@ -139,7 +140,7 @@ class BursaryApplicationController extends Controller
 
                     BursaryApplicationDocument::create([
                         'bursary_application_id' => $application->id,
-                        'bursary_document_requirement_id' => $requirement->id,
+                        'bursary_document_requirement_id' => $requirement->id ?? null,
                         'document_key' => $documentKey,
                         'original_name' => $file->getClientOriginalName(),
                         'storage_disk' => 'local',
@@ -221,4 +222,5 @@ class BursaryApplicationController extends Controller
 
         return $file->storeAs('bursary-applications/'.$application->id, $filename, 'local');
     }
+
 }

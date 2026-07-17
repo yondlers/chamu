@@ -5,6 +5,8 @@ use App\Http\Controllers\Public\QualificationController as PublicQualificationCo
 use App\Http\Controllers\Public\UniversityController as PublicUniversityController;
 use App\Http\Controllers\SitemapController;
 use App\Models\AuditLog;
+use App\Models\Bursary;
+use App\Models\BursaryDocumentRequirement;
 use App\Models\SiteVisit;
 use App\Models\User;
 use App\Models\UserSubjectResult;
@@ -2121,6 +2123,12 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
 
     $bursary->eligibility_requirements = json_decode($bursary->eligibility_requirements ?? '[]', true) ?: [];
     $bursary->supporting_documents = json_decode($bursary->supporting_documents ?? '[]', true) ?: [];
+    $bursaryModel = (new Bursary())->setRawAttributes((array) $bursary, true);
+    $providerEmail = $bursaryModel->applicationProviderEmail();
+    $isEmailSubmission = $bursaryModel->isEmailSubmission();
+    $hasValidProviderEmail = filter_var($providerEmail, FILTER_VALIDATE_EMAIL) !== false;
+    $applicationTablesReady = Schema::hasTable('bursary_applications')
+        && Schema::hasTable('bursary_application_documents');
 
     $requirements = DB::table('bursary_subject_requirements')
         ->where('bursary_id', $bursary->id)
@@ -2134,6 +2142,10 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
             ->orderBy('id')
             ->get()
         : collect();
+
+    if ($documentRequirements->isEmpty() && $isEmailSubmission) {
+        $documentRequirements = BursaryDocumentRequirement::defaultEmailSubmissionRequirements();
+    }
 
     $latestApplication = null;
 
@@ -2150,6 +2162,9 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
         'requirements' => $requirements,
         'documentRequirements' => $documentRequirements,
         'latestApplication' => $latestApplication,
+        'isChamuHandled' => $isEmailSubmission && $hasValidProviderEmail && $applicationTablesReady,
+        'applicationTablesReady' => $applicationTablesReady,
+        'providerEmail' => $providerEmail,
     ]);
 })->name('bursaries.show');
 

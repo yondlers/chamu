@@ -116,7 +116,42 @@ class BursaryApplicationTest extends TestCase
         $response->assertOk();
         $response->assertSee('Apply with Chamu');
         $response->assertSee('Certified copy of ID document');
-        $response->assertSee('Email submission to yondlers@gmail.com');
+        $response->assertSee('Review application');
+        $response->assertSee('Confirm and send');
+        $response->assertSee('Chamu-managed submission');
+        $response->assertDontSee('How to apply');
+        $response->assertDontSee('Apply by email.');
+        $response->assertDontSee('Source');
+    }
+
+    public function test_email_submission_bursary_is_handled_by_chamu_even_without_seeded_flags(): void
+    {
+        $records = $this->createSignupLookups();
+        $user = User::factory()->create([
+            'user_type_id' => $records['user_type_id'],
+            'country_id' => $records['country_id'],
+            'curriculum_id' => $records['curriculum_id'],
+            'grade_id' => $records['grade_id'],
+            'name' => 'Kekana Gomolemo',
+            'first_name' => 'Kekana',
+            'last_name' => 'Gomolemo',
+            'username' => 'kekanagomolemo',
+            'email' => 'kekanagomolemo@gmail.com',
+        ]);
+        $bursary = $this->createEmailBursary([
+            'application_delivery_type' => 'external_link',
+            'application_email' => null,
+            'chamu_apply_enabled' => false,
+            'apply_url' => 'mailto:yondlers@gmail.com',
+        ], false);
+
+        $response = $this->actingAs($user)->get(route('bursaries.show', $bursary));
+
+        $response->assertOk();
+        $response->assertSee('Apply with Chamu');
+        $response->assertSee('Certified copy of ID document');
+        $response->assertDontSee('Apply link');
+        $response->assertDontSee('Source');
     }
 
     /**
@@ -165,7 +200,10 @@ class BursaryApplicationTest extends TestCase
         ];
     }
 
-    private function createEmailBursary(): Bursary
+    /**
+     * @param  array<string, mixed>  $overrides
+     */
+    private function createEmailBursary(array $overrides = [], bool $withStructuredDocuments = true): Bursary
     {
         $now = now();
 
@@ -177,7 +215,7 @@ class BursaryApplicationTest extends TestCase
             'updated_at' => $now,
         ]);
 
-        $bursary = Bursary::create([
+        $bursary = Bursary::create(array_merge([
             'company_id' => $companyId,
             'title' => 'A2A Kopano Inc. Bursary Test',
             'slug' => 'a2a-kopano-inc-bursary-test',
@@ -199,7 +237,11 @@ class BursaryApplicationTest extends TestCase
             'contact_email' => 'yondlers@gmail.com',
             'source_url' => 'https://example.com/a2a-kopano-inc-bursary-test',
             'is_active' => true,
-        ]);
+        ], $overrides));
+
+        if (! $withStructuredDocuments) {
+            return $bursary;
+        }
 
         foreach ([
             ['id_document', 'Certified copy of ID document', true, null, 10],
