@@ -3001,7 +3001,7 @@ class BursarySeeder extends Seeder
                     'contact_name' => 'BBD bursaries',
                     'contact_email' => 'hr@bbd.co.za / info@bbdsoftware.com',
                     'contact_phone' => '011 532 8300',
-                    'source_url' => 'http://www.zabursaries.co.za/computer-science-it-bursaries-south-africa/bbd-bursary/',
+                    'source_url' => 'https://www.zabursaries.co.za/computer-science-it-bursaries-south-africa/bbd-bursary/',
                     'apply_url' => 'https://bbdsoftware.com/jobs/bursary-beyond-programme/',
                 ]),
                 [
