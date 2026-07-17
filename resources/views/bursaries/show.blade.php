@@ -6,11 +6,15 @@
     @php
         $applicationDeliveryType = $bursary->application_delivery_type ?? 'external_link';
         $providerEmail = $providerEmail ?? (($bursary->application_email ?? null) ?: $bursary->contact_email);
+        $providerPostalAddress = $providerPostalAddress ?? ($bursary->application_postal_address ?? null);
         $isChamuHandled = $isChamuHandled ?? false;
+        $isPostalSubmission = $isPostalSubmission ?? $applicationDeliveryType === 'postal';
         $applicationTablesReady = $applicationTablesReady ?? true;
         $canApplyWithChamu = $isChamuHandled && $documentRequirements->isNotEmpty();
+        $applicationDeliveryLabel = $isPostalSubmission ? 'postal submission' : 'email submission';
+        $latestDeliveryType = $latestApplication->delivery_type ?? ($isPostalSubmission ? 'postal' : 'email');
         $academicDocumentKeys = ['academic_transcript', 'grade_12_marks', 'grade_11_marks', 'matric_certificate'];
-        $submittedApplication = $latestApplication && $latestApplication->status === 'submitted';
+        $submittedApplication = $latestApplication && in_array($latestApplication->status, ['submitted', 'postal_ready'], true);
         $companyName = $bursary->company_name ?? 'Bursary provider';
         $fundingRows = collect([
             'Fields covered' => $bursary->fields_covered,
@@ -40,16 +44,22 @@
                     <div class="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-full bg-emerald-600 text-white">
                         <i data-lucide="check" style="width:22px;height:22px;"></i>
                     </div>
-                    <h1 class="mt-4 text-3xl font-black text-emerald-950">Your application has been sent</h1>
+                    <h1 class="mt-4 text-3xl font-black text-emerald-950">
+                        {{ $latestDeliveryType === 'postal' ? 'Your postal application is ready' : 'Your application has been sent' }}
+                    </h1>
                     <p class="mt-2 text-sm font-semibold text-emerald-800">
-                        Chamu emailed the bursary provider and sent your receipt to {{ auth()->user()?->email ?? 'your email address' }}.
+                        @if ($latestDeliveryType === 'postal')
+                            Chamu saved the postal application pack and sent your receipt to {{ auth()->user()?->email ?? 'your email address' }}.
+                        @else
+                            Chamu emailed the bursary provider and sent your receipt to {{ auth()->user()?->email ?? 'your email address' }}.
+                        @endif
                     </p>
                     <div class="mx-auto mt-5 max-w-3xl rounded-xl border border-emerald-200 bg-white p-4 text-left">
                         <p class="text-xs font-black uppercase tracking-[0.14em] text-emerald-700">Application summary</p>
                         <div class="mt-3 grid gap-3 text-sm font-semibold text-neutral-700 sm:grid-cols-3">
                             <span class="inline-flex items-center gap-2"><i data-lucide="briefcase" style="width:16px;height:16px;"></i>{{ $bursary->title }}</span>
                             <span class="inline-flex items-center gap-2"><i data-lucide="building-2" style="width:16px;height:16px;"></i>{{ $companyName }}</span>
-                            <span class="inline-flex items-center gap-2"><i data-lucide="mail-check" style="width:16px;height:16px;"></i>Receipt sent</span>
+                            <span class="inline-flex items-center gap-2"><i data-lucide="{{ $latestDeliveryType === 'postal' ? 'package-check' : 'mail-check' }}" style="width:16px;height:16px;"></i>Receipt sent</span>
                         </div>
                     </div>
                 </div>
@@ -100,7 +110,7 @@
                         </div>
                         <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                             <dt class="text-xs font-black uppercase tracking-[0.14em] text-neutral-500">Application</dt>
-                            <dd class="mt-1 text-sm font-black">{{ $isChamuHandled ? 'Handled by Chamu' : ($bursary->contact_email ?? 'See provider') }}</dd>
+                            <dd class="mt-1 text-sm font-black">{{ $isChamuHandled ? 'Handled by Chamu' : 'See provider' }}</dd>
                         </div>
                     </dl>
                 </article>
@@ -173,7 +183,9 @@
                         <div>
                             <h2 class="text-xl font-black">Supporting documents</h2>
                             @if ($isChamuHandled)
-                                <p class="mt-1 text-sm font-semibold text-neutral-500">These are the files Chamu will attach to your bursary application.</p>
+                            <p class="mt-1 text-sm font-semibold text-neutral-500">
+                                {{ $isPostalSubmission ? 'These are the files Chamu will include in your postal application pack.' : 'These are the files Chamu will attach to your bursary application.' }}
+                            </p>
                             @endif
                         </div>
                         @if ($isChamuHandled && $documentRequirements->where('requirement_group', 'academic_record')->isNotEmpty())
@@ -222,7 +234,7 @@
                     <div class="mt-5 space-y-3 border-y border-neutral-200 py-5 text-sm font-semibold text-neutral-700">
                         <p class="flex items-center gap-2"><i data-lucide="calendar-days" style="width:16px;height:16px;"></i>{{ $bursary->closing_date_label ?? 'Closing date not listed' }}</p>
                         <p class="flex items-center gap-2"><i data-lucide="folder-check" style="width:16px;height:16px;"></i>{{ $documentRequirements->count() }} document checks</p>
-                        <p class="flex items-center gap-2"><i data-lucide="mail-check" style="width:16px;height:16px;"></i>{{ $isChamuHandled ? 'Chamu-managed email submission' : 'Provider application' }}</p>
+                        <p class="flex items-center gap-2"><i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'mail-check' }}" style="width:16px;height:16px;"></i>{{ $isChamuHandled ? 'Chamu-managed '.$applicationDeliveryLabel : 'Provider application' }}</p>
                     </div>
 
                     @if ($canApplyWithChamu)
@@ -272,7 +284,9 @@
                             <div>
                                 <p class="text-xs font-black uppercase tracking-[0.14em] text-[#01225E]">{{ $companyName }}</p>
                                 <h2 class="mt-1 text-2xl font-black">Apply with Chamu</h2>
-                                <p class="mt-1 text-sm font-semibold text-neutral-500">Review your details before Chamu sends the application.</p>
+                                <p class="mt-1 text-sm font-semibold text-neutral-500">
+                                    {{ $isPostalSubmission ? 'Review your details before Chamu prepares the postal application.' : 'Review your details before Chamu sends the application.' }}
+                                </p>
                             </div>
                             <button type="button" data-close-apply-modal class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-300 hover:bg-neutral-50" aria-label="Close application form">
                                 <i data-lucide="x" style="width:18px;height:18px;"></i>
@@ -329,6 +343,14 @@
                                         <input id="current_year" name="current_year" value="{{ old('current_year') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                         @error('current_year') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
+                                    @if ($isPostalSubmission)
+                                        <div class="sm:col-span-2">
+                                            <label for="applicant_postal_address" class="block text-sm font-bold mb-2">Postal or return address</label>
+                                            <textarea id="applicant_postal_address" name="applicant_postal_address" rows="3" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">{{ old('applicant_postal_address') }}</textarea>
+                                            <p class="mt-2 text-xs font-semibold text-neutral-500">Chamu keeps this with your postal application pack so the submission has your correct address details.</p>
+                                            @error('applicant_postal_address') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
+                                        </div>
+                                    @endif
                                     <div>
                                         <label for="household_income" class="block text-sm font-bold mb-2">Household income context</label>
                                         <input id="household_income" name="household_income" value="{{ old('household_income') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
@@ -414,6 +436,9 @@
                                             <p class="flex items-center gap-2"><i data-lucide="mail" style="width:16px;height:16px;"></i>{{ auth()->user()->email }}</p>
                                             <p class="flex items-center gap-2"><i data-lucide="phone" style="width:16px;height:16px;"></i><span data-review-phone>Not added</span></p>
                                             <p class="flex items-center gap-2"><i data-lucide="graduation-cap" style="width:16px;height:16px;"></i><span data-review-study>Not added</span></p>
+                                            @if ($isPostalSubmission)
+                                                <p class="flex items-start gap-2"><i data-lucide="map-pin" class="mt-0.5" style="width:16px;height:16px;"></i><span data-review-postal-address>Not added</span></p>
+                                            @endif
                                         </div>
 
                                         <div class="mt-5 border-t border-neutral-200 pt-4">
@@ -423,7 +448,7 @@
 
                                         <label class="mt-5 flex items-start gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-sm font-semibold text-neutral-700">
                                             <input type="checkbox" name="consent" value="1" required @checked(old('consent')) class="mt-1">
-                                            I confirm that Chamu may email this application and attached documents on my behalf.
+                                            {{ $isPostalSubmission ? 'I confirm that Chamu may prepare this postal application and keep the uploaded documents on my behalf.' : 'I confirm that Chamu may email this application and attached documents on my behalf.' }}
                                         </label>
                                         @error('consent') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </section>
@@ -434,7 +459,11 @@
                                         <p class="mt-1 text-sm font-bold text-neutral-600">{{ $companyName }}</p>
                                         <div class="mt-5 space-y-3 text-sm font-semibold text-neutral-700">
                                             <p class="flex gap-2"><i data-lucide="shield-check" style="width:16px;height:16px;"></i>Chamu-managed submission</p>
-                                            <p class="flex gap-2"><i data-lucide="reply" style="width:16px;height:16px;"></i>Provider replies to your email</p>
+                                            @if ($isPostalSubmission)
+                                                <p class="flex gap-2"><i data-lucide="package-check" style="width:16px;height:16px;"></i>Postal pack prepared in Chamu</p>
+                                            @else
+                                                <p class="flex gap-2"><i data-lucide="reply" style="width:16px;height:16px;"></i>Provider replies to your email</p>
+                                            @endif
                                             <p class="flex gap-2"><i data-lucide="receipt-text" style="width:16px;height:16px;"></i>You receive a receipt</p>
                                         </div>
                                     </aside>
@@ -443,7 +472,7 @@
                                 <div class="mt-6 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
                                     <button type="button" data-edit-application class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-bold hover:bg-neutral-50">Edit details</button>
                                     <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-black text-white hover:bg-[#001A48]">
-                                        Confirm and send <i data-lucide="send" style="width:18px;height:18px;"></i>
+                                        {{ $isPostalSubmission ? 'Confirm application' : 'Confirm and send' }} <i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'send' }}" style="width:18px;height:18px;"></i>
                                     </button>
                                 </div>
                             </section>
@@ -463,6 +492,7 @@
         const reviewStep = document.querySelector('[data-apply-step="review"]');
         const academicInputs = [...document.querySelectorAll('[data-academic-record="true"]')];
         const academicError = document.querySelector('[data-academic-error]');
+        const isPostalSubmission = @json($isPostalSubmission);
 
         const openApplyModal = () => {
             if (!applyModal) return;
@@ -494,6 +524,10 @@
         const populateReview = () => {
             document.querySelector('[data-review-phone]').textContent = fieldValue('applicant_phone');
             document.querySelector('[data-review-study]').textContent = fieldValue('study_level');
+            if (isPostalSubmission) {
+                const postalReview = document.querySelector('[data-review-postal-address]');
+                if (postalReview) postalReview.textContent = fieldValue('applicant_postal_address');
+            }
 
             const fileList = document.querySelector('[data-review-files]');
             fileList.innerHTML = '';

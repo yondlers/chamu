@@ -33,6 +33,11 @@ class BursaryApplicationController extends Controller
     public function store(Request $request, Bursary $bursary): RedirectResponse
     {
         $providerEmail = $bursary->applicationProviderEmail();
+        $providerPostalAddress = $bursary->applicationProviderPostalAddress();
+        $isEmailSubmission = $bursary->isEmailSubmission();
+        $isPostalSubmission = $bursary->isPostalSubmission();
+        $canUseEmailSubmission = $isEmailSubmission && filter_var($providerEmail, FILTER_VALIDATE_EMAIL);
+        $deliveryType = $canUseEmailSubmission ? 'email' : ($isPostalSubmission ? 'postal' : 'email');
 
         if (! Schema::hasTable('bursary_applications') || ! Schema::hasTable('bursary_application_documents')) {
             return back()->withErrors([
@@ -40,7 +45,13 @@ class BursaryApplicationController extends Controller
             ]);
         }
 
-        if (! $bursary->isEmailSubmission() || ! filter_var($providerEmail, FILTER_VALIDATE_EMAIL)) {
+        if (! $isEmailSubmission && ! $isPostalSubmission) {
+            return back()->withErrors([
+                'application' => 'This bursary is not ready for Chamu applications yet.',
+            ]);
+        }
+
+        if ($deliveryType === 'email' && ! $canUseEmailSubmission) {
             return back()->withErrors([
                 'application' => 'This bursary is not ready for Chamu email applications yet.',
             ]);
@@ -57,8 +68,9 @@ class BursaryApplicationController extends Controller
             $requirements = BursaryDocumentRequirement::defaultEmailSubmissionRequirements();
         }
 
-        $validator = Validator::make($request->all(), [
+        $rules = [
             'applicant_phone' => ['nullable', 'string', 'max:40'],
+            'applicant_postal_address' => [$deliveryType === 'postal' ? 'required' : 'nullable', 'string', 'max:1200'],
             'study_level' => ['nullable', 'string', 'max:80'],
             'institution' => ['nullable', 'string', 'max:255'],
             'qualification' => ['nullable', 'string', 'max:255'],
@@ -72,8 +84,13 @@ class BursaryApplicationController extends Controller
             'documents.*' => ['nullable', 'array'],
             'documents.*.*' => ['file', 'mimes:pdf,jpg,jpeg,png,doc,docx', 'max:10240'],
             'consent' => ['accepted'],
-        ], [
-            'consent.accepted' => 'Confirm that Chamu may email this application on your behalf.',
+        ];
+
+        $validator = Validator::make($request->all(), $rules, [
+            'applicant_postal_address.required' => 'Add the postal or return address Chamu should keep with this application.',
+            'consent.accepted' => $deliveryType === 'postal'
+                ? 'Confirm that Chamu may prepare this postal application on your behalf.'
+                : 'Confirm that Chamu may email this application on your behalf.',
             'documents.*.*.mimes' => 'Documents must be PDF, JPG, PNG, DOC, or DOCX files.',
             'documents.*.*.max' => 'Each document may not be larger than 10MB.',
         ]);
@@ -104,15 +121,18 @@ class BursaryApplicationController extends Controller
         $user = $request->user();
         $requirementsByKey = $requirements->keyBy('key');
 
-        $application = DB::transaction(function () use ($bursary, $data, $providerEmail, $request, $requirementsByKey, $user): BursaryApplication {
+        $application = DB::transaction(function () use ($bursary, $data, $deliveryType, $providerEmail, $providerPostalAddress, $request, $requirementsByKey, $user): BursaryApplication {
             $application = BursaryApplication::create([
                 'user_id' => $user->id,
                 'bursary_id' => $bursary->id,
                 'status' => 'pending',
-                'provider_email' => $providerEmail,
+                'delivery_type' => $deliveryType,
+                'provider_email' => $providerEmail ?: '',
+                'provider_postal_address' => $providerPostalAddress,
                 'applicant_name' => $user->name ?: trim($user->first_name.' '.$user->last_name),
                 'applicant_email' => $user->email,
                 'applicant_phone' => $data['applicant_phone'] ?? null,
+                'applicant_postal_address' => $data['applicant_postal_address'] ?? null,
                 'study_level' => $data['study_level'] ?? null,
                 'institution' => $data['institution'] ?? null,
                 'qualification' => $data['qualification'] ?? null,
@@ -122,6 +142,7 @@ class BursaryApplicationController extends Controller
                 'sassa_recipient' => (bool) ($data['sassa_recipient'] ?? false),
                 'special_circumstances' => array_values($data['special_circumstances'] ?? []),
                 'metadata' => [
+                    'delivery_type' => $deliveryType,
                     'bursary_title' => $bursary->title,
                     'company_name' => $bursary->company?->name,
                     'source_url' => $bursary->source_url,
@@ -155,10 +176,12 @@ class BursaryApplicationController extends Controller
         });
 
         try {
-            Mail::to($providerEmail)->send(new BursaryApplicationSubmitted($application));
+            if ($deliveryType === 'email') {
+                Mail::to($providerEmail)->send(new BursaryApplicationSubmitted($application));
+            }
 
             $application->forceFill([
-                'status' => 'submitted',
+                'status' => $deliveryType === 'postal' ? 'postal_ready' : 'submitted',
                 'submitted_at' => now(),
             ])->save();
 
@@ -186,7 +209,9 @@ class BursaryApplicationController extends Controller
 
         return redirect()
             ->route('bursaries.show', $bursary)
-            ->with('status', 'Chamu sent your bursary application and emailed you a receipt.');
+            ->with('status', $deliveryType === 'postal'
+                ? 'Chamu prepared your postal bursary application and emailed you a receipt.'
+                : 'Chamu sent your bursary application and emailed you a receipt.');
     }
 
     private function hasDocumentUpload(Request $request, string $key): bool

@@ -42,13 +42,35 @@ class BursarySeeder extends Seeder
             'https://www.zabursaries.co.za/mba-postgraduate/agricultural-economics-association-of-south-africa-aeasa-bursary/' => 'elduples@namc.co.za',
             'https://www.zabursaries.co.za/mba-postgraduate/bongani-mayosi-national-health-scholars-programme-bm-nhsp/' => 'Lindokuhle.Ndlandla@mrc.ac.za',
             'https://www.zabursaries.co.za/engineering-bursaries-south-africa/council-for-geoscience-bursary/' => 'bursaries@geoscience.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/chris-hani-district-municipality-bursary/' => 'recruitment@chda.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-johannesburg-ems-bursary/' => 'lufunomap@joburg.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/capricorn-district-municipality-bursary/' => 'info@cdm.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/compensation-fund-bursary/' => 'CFexternalbursaries@labour.gov.za',
             'https://www.zabursaries.co.za/mba-postgraduate/critical-food-studies-postgraduate-scholarship/' => 'MagudulelaM@ukzn.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-cape-town-bursary/' => 'external.bursaries2026@capetown.gov.za',
             'https://www.zabursaries.co.za/universities/david-and-elaine-potter-fellowship/' => 'fellowships@uct.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/dedea-bursary/' => 'Thabo.Manentsa@dedea.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/dube-tradeport-bursary/' => 'DTPCbursaries@dubetradeport.co.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/drakenstein-municipality-bursary/' => 'ExternalBursaries@drakenstein.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-department-of-agriculture-bursary/' => 'bursary@ecagriculture.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-department-of-education-ecdoe/' => 'Luvuyo.Mgijima@ecdoe.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-dept-of-economic-development-environmental-affairs-and-tourism-bursary/' => 'cira.ngetu@deaet.ecape.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-office-of-the-premier-ecotp-bursary/' => 'youthsupportskills@ecotp.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-provincial-treasury-bursary/' => 'Vuyo.nohaji@ectreasury.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/emfuleni-local-municipality-bursary/' => 'Mayorsoffice@emfuleni.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/ephraim-mogale-local-municipality-bursary/' => 'bursaries@education.mpu.gov.za',
             'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-tourism-bursary/' => 'Bursary2026@tourism.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-rural-development-and-agrarian-reform-drdar-bursary/' => 'bursary@drdar.gov.za',
             'https://www.zabursaries.co.za/general-bursaries-south-africa/department-of-transport-bursary/' => 'makgarc@unisa.ac.za',
             'https://www.zabursaries.co.za/mba-postgraduate/dudley-dewes-scholarship/' => 'info@khulacapefoundation.org.za',
             'https://www.zabursaries.co.za/universities/erika-theron-trust-scholarship-at-uwc/' => 'finaidbursaries@uwc.ac.za',
             'https://www.zabursaries.co.za/science-bursaries-south-africa/garden-cities-bursary/' => 'ljasson@uwc.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-cogta-bursary/' => 'lebo.moetji@gauteng.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-department-of-e-government-bursary/' => 'Fezisa.Mfo@gauteng.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-dept-of-infrastructure-development-bursary/' => 'Frank.Sape@gauteng.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-provincial-department-of-human-settlements-bursary/' => 'GDHSbursaryapplications@gauteng.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-provincial-treasury-bursary/' => 'gpt.externalbursary@gauteng.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/george-municipality-bursary/' => 'gmun@george.gov.za',
             'https://www.zabursaries.co.za/mba-postgraduate/greenmatter-fellowship-phd-at-university-of-cape-town/' => 'janavi@greenmatter.co.za',
             'https://www.zabursaries.co.za/universities/guy-butler-research-award-scholarship/' => 'pgfunding@ru.ac.za',
             'https://www.zabursaries.co.za/universities/harry-crossley-foundation-research-fellowship/' => 'fellowships@uct.ac.za',
@@ -56,16 +78,31 @@ class BursarySeeder extends Seeder
             'https://www.zabursaries.co.za/mba-postgraduate/hwseta-postgraduate-bursary/' => 'rimepg@hwseta.org.za',
             'https://www.zabursaries.co.za/universities/inscape-scholarship/' => 'registrar@inscape.co.za',
             'https://www.zabursaries.co.za/general-bursaries-south-africa/inseta-bursary/' => 'bursariesforyouth@inseta.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/johannesburg-water-bursary/' => 'jw.Bsccivil@jwater.co.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/joe-morolong-assmang-bursary/' => 'bursary@joemorolong.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/kwadukuza-municipality-bursary/' => 'wisemanc@kwadukuza.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/kwazulu-natal-dept-of-edtea-bursary/' => 'babalwa.tandwa@kznedtea.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/knysna-municipality-mayoral-bursary/' => 'bmjamba@knysna.gov.za',
             'https://www.zabursaries.co.za/general-bursaries-south-africa/mancosa-bursary/' => 'communications@wefeedsa.org',
             'https://www.zabursaries.co.za/construction-and-built-environment-bursaries-south-africa/master-builders-association-bursary/' => 'benjamin@mbawc.org.za',
             'https://www.zabursaries.co.za/government-bursaries-south-africa/mhlathuze-water-bursary/' => 'bursaries@mhlathuze.co.za',
             'https://www.zabursaries.co.za/mba-postgraduate/miway-bursary/' => 'actuarial.careers@miway.co.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/mopani-district-municipality-bursary/' => 'makhananisar@mopani.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/mossel-bay-municipality-bursary/' => 'admin@mosselbay.gov.za',
             'https://www.zabursaries.co.za/government-bursaries-south-africa/mpumalanga-provincial-government-bursary/' => 'otprecruitment@mpg.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/musina-local-municipality-bursary/' => 'info@musina.gov.za',
             'https://www.zabursaries.co.za/mba-postgraduate/nersa-bursary/' => 'bursaries@nersa.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/nelson-mandela-bay-municipality-bursary/' => 'zmaqoqa@mandelametro.gov.za',
             'https://www.zabursaries.co.za/mba-postgraduate/nmu-aidc-postdoctoral-fellowship/' => 'khaled.abou-el-hossein@mandela.ac.za',
             'https://www.zabursaries.co.za/mba-postgraduate/nmu-aidc-postgraduate-bursary/' => 'khaled.abou-el-hossein@mandela.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/northern-cape-provincial-government-bursary/' => 'BursAdmin@ncpetf.onmicrosoft.com',
             'https://www.zabursaries.co.za/universities/nrf-scholarship-at-uj/' => 'brendas@uj.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/o-r-tambo-district-municipality-bursary/' => 'ortambodm@ortambodm.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/overstrand-municipality-bursary/' => 'kvdmerwe@overstrand.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/prince-albert-municipality-bursary/' => 'george@pamun.gov.za',
             'https://www.zabursaries.co.za/science-bursaries-south-africa/quantum-foods-bursary/' => 'chandre.lesch@quantumfoods.co.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/rand-west-city-local-municipality-bursary/' => 'daddy.nakana@randwestcity.gov.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/ray-nkonyeni-municipality-bursary/' => 'Nothando.Skhosana@rnm.gov.za',
             'https://www.zabursaries.co.za/mba-postgraduate/rothschild-co-foundation-scholarship/' => 'lynn.waterson@rothschildandco.com',
             'https://www.zabursaries.co.za/engineering-bursaries-south-africa/sawise-angus-scholarship/' => 'sawise.scholarships@gmail.com',
             'https://www.zabursaries.co.za/science-bursaries-south-africa/saafost-aubrey-parsons-study-grant/' => 'irene@saafost.org.za',
@@ -79,10 +116,12 @@ class BursarySeeder extends Seeder
             'https://www.zabursaries.co.za/mba-postgraduate/south-african-national-seed-organization-sansor-bursary/' => 'research@sansor.co.za',
             'https://www.zabursaries.co.za/mba-postgraduate/south-african-society-for-animal-science-sasas-bursary/' => 'secretary@sasas.co.za',
             'https://www.zabursaries.co.za/general-bursaries-south-africa/southern-african-transport-conference-satc-bursary/' => 'info@satc.org.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/stellenbosch-municipality-bursary/' => 'Michelle.langeveldt@stellenbosch.gov.za',
             'https://www.zabursaries.co.za/universities/stellenbosch-university-andrew-w-mellon-foundation-scholarship/' => 'graduateschool@sun.ac.za',
             'https://www.zabursaries.co.za/mba-postgraduate/stellenbosch-university-doctoral-scholarship/' => 'graduateschool@sun.ac.za',
             'https://www.zabursaries.co.za/universities/stellenbosch-university-gem-scholarship/' => 'GEM@sun.ac.za',
             'https://www.zabursaries.co.za/universities/stellenbosch-university-lisa-maskell-scholarship/' => 'graduateschool@sun.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/theewaterskloof-municipality-bursary/' => 'josepham@twk.gov.za',
             'https://www.zabursaries.co.za/mba-postgraduate/tiso-foundation-archibald-mafeje-phd-scholarship/' => 'mmokoena@tiso.co.za',
             'https://www.zabursaries.co.za/universities/uct-centre-for-african-studies-jack-simons-bursary/' => 'vuyelwa.mnqanqeni@uct.ac.za',
             'https://www.zabursaries.co.za/computer-science-it-bursaries-south-africa/uct-department-of-information-systems-bursary/' => 'generalawardsapplications@uct.ac.za',
@@ -93,9 +132,52 @@ class BursarySeeder extends Seeder
             'https://www.zabursaries.co.za/universities/ukzn-mellon-spatial-humanities-scholarship/' => 'udofidelisj@gmail.com',
             'https://www.zabursaries.co.za/universities/university-of-free-state-ufs-doctoral-scholarship/' => 'MathebulaM@ufs.ac.za',
             'https://www.zabursaries.co.za/universities/uwc-inseta-bursary/' => 'aduarte@uwc.ac.za',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/western-cape-dept-of-agriculture-elsenburg-agricultural-training-institute-bursary/' => 'DOA.study@westerncape.gov.za',
         ];
 
-        $bursary = function (array $data) use ($emailApplicationSources): array {
+        $postalInstruction = 'Postal or hand-delivery submission is handled by Chamu. Chamu will verify the provider address from the source instructions before dispatch.';
+
+        $postalApplicationSources = array_fill_keys([
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/alfred-nzo-district-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/buffalo-city-metropolitan-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-environment-forestry-and-fisheries-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/dr-ab-xuma-local-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-dept-of-roads-and-public-works-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-department-of-agriculture-and-rural-development-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/ingquza-hill-local-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-department-of-human-settlements-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-department-of-sport-arts-and-culture-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/kwazulu-natal-department-of-transport-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-provincial-government-bursaries/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-provincial-treasury-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/ndwedwe-local-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/the-msunduzi-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/ubuhlebezwe-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/umlalazi-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/blouberg-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-polokwane-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/elias-motsoaledi-local-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/greater-letaba-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-department-of-agriculture-and-rural-development-ldard-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-department-of-transport-and-community-safety-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-provincial-government-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-provincial-treasury-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/makhuduthamaga-local-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/vhembe-district-municipality-mayoral-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/dr-ruth-s-mompati-district-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/north-west-department-of-health-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/ratlou-local-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/breede-valley-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/cape-agulhas-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/garden-route-district-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/langeberg-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/overberg-district-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/swartland-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/west-coast-district-municipality-bursary/',
+            'https://www.zabursaries.co.za/government-bursaries-south-africa/witzenberg-municipality-bursary/',
+        ], $postalInstruction);
+
+        $bursary = function (array $data) use ($emailApplicationSources, $postalApplicationSources): array {
             $bursary = array_merge([
                 'service_contract' => null,
                 'renewal' => null,
@@ -104,12 +186,14 @@ class BursarySeeder extends Seeder
                 'contact_phone' => null,
                 'application_delivery_type' => 'external_link',
                 'application_email' => null,
+                'application_postal_address' => null,
                 'chamu_apply_enabled' => false,
                 'apply_url' => null,
                 'is_active' => true,
             ], $data);
 
             $email = $emailApplicationSources[$bursary['source_url'] ?? ''] ?? null;
+            $postalAddress = $postalApplicationSources[$bursary['source_url'] ?? ''] ?? null;
 
             if ($email !== null) {
                 $bursary['application_delivery_type'] = 'email';
@@ -120,6 +204,15 @@ class BursarySeeder extends Seeder
 
                 if (! Str::contains(Str::lower((string) ($bursary['application_method'] ?? '')), ['email', 'e-mail'])) {
                     $bursary['application_method'] = 'Apply by email to '.$email.'.';
+                }
+            } elseif ($postalAddress !== null) {
+                $bursary['application_delivery_type'] = 'postal';
+                $bursary['application_postal_address'] = $postalAddress;
+                $bursary['chamu_apply_enabled'] = true;
+                $bursary['apply_url'] = null;
+
+                if (! Str::contains(Str::lower((string) ($bursary['application_method'] ?? '')), ['post', 'postal', 'hand delivery'])) {
+                    $bursary['application_method'] = 'Apply by postal or hand-delivery submission through Chamu.';
                 }
             }
 
@@ -5622,6 +5715,119 @@ class BursarySeeder extends Seeder
             ['Winter Cereal Trust Bursary', 'https://www.zabursaries.co.za/science-bursaries-south-africa/winter-cereal-trust-bursary/'],
         ];
 
+        $additionalProvincialGovernmentSourceEntries = [
+            ['Alfred Nzo District Municipality Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/alfred-nzo-district-municipality-bursary/'],
+            ['Buffalo City Metropolitan Municipality Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/buffalo-city-metropolitan-municipality-bursary/'],
+            ['Chris Hani District Municipality Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/chris-hani-district-municipality-bursary/'],
+            ['DEDEAT Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/dedea-bursary/'],
+            ['Department of Forestry, Fisheries and the Environment (DFFE) Bursary', 'National', 'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-environment-forestry-and-fisheries-bursary/'],
+            ['Dept of Economic Development, Environmental Affairs and Tourism (EC) Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-dept-of-economic-development-environmental-affairs-and-tourism-bursary/'],
+            ['Department of Rural Development and Agrarian Reform (DRDAR) Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/department-of-rural-development-and-agrarian-reform-drdar-bursary/'],
+            ['East London Industrial Development Zone (ELIDZ) Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/science-bursaries-south-africa/east-london-idz-bursary/'],
+            ['Eastern Cape Department of Agriculture Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-department-of-agriculture-bursary/'],
+            ['Eastern Cape Department of Education (ECDOE) Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-department-of-education-ecdoe/'],
+            ['Eastern Cape Department of Health Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-department-of-health-bursary/'],
+            ['Eastern Cape Department of Public Works and Infrastructure Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-dept-of-roads-and-public-works-bursary/'],
+            ['Eastern Cape Department of Transport Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-department-of-transport-bursary/'],
+            ['Eastern Cape Department of Transport Traffic Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-department-of-transport-traffic-bursary/'],
+            ['Eastern Cape Office of the Premier Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-office-of-the-premier-ecotp-bursary/'],
+            ['Eastern Cape Provincial Treasury Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/eastern-cape-provincial-treasury-bursary/'],
+            ['Dr AB Xuma Local Municipality Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/dr-ab-xuma-local-municipality-bursary/'],
+            ['FASSET Bursary', 'National', 'https://www.zabursaries.co.za/accounting-bursaries-south-africa/fasset-bursary/'],
+            ['Ingquza Hill Local Municipality Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ingquza-hill-local-municipality-bursary/'],
+            ['Nelson Mandela Bay Municipality Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/nelson-mandela-bay-municipality-bursary/'],
+            ['City of Johannesburg Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-johannesburg-bursary/'],
+            ['City of Johannesburg EMS Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-johannesburg-ems-bursary/'],
+            ['Compensation Fund Bursary', 'National', 'https://www.zabursaries.co.za/government-bursaries-south-africa/compensation-fund-bursary/'],
+            ['Ekurhuleni Metropolitan Municipality Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ekurhuleni-metropolitan-municipality-bursaries/'],
+            ['Emfuleni Local Municipality Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/emfuleni-local-municipality-bursary/'],
+            ['Gauteng City Region Academy (GCRA) Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-city-region-academy-bursary/'],
+            ['Gauteng COGTA Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-cogta-bursary/'],
+            ['Gauteng Department of Agriculture and Rural Development Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-department-of-agriculture-and-rural-development-bursary/'],
+            ['Gauteng Department of e-Government Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-department-of-e-government-bursary/'],
+            ['Gauteng Department of Health Bursary to Study Medicine in Cuba', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-department-of-health-bursary-to-study-medicine-in-cuba/'],
+            ['Gauteng Dept of Infrastructure Development Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-dept-of-infrastructure-development-bursary/'],
+            ['Gauteng Department of Roads and Transport Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-department-of-roads-and-transport-bursary/'],
+            ['Gauteng Department of Social Development Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-department-of-social-development-bursary/'],
+            ['Gauteng Film Commission (GFC) Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-film-commission-gfc-bursary/'],
+            ['Gauteng Provincial Department of Human Settlements Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-provincial-department-of-human-settlements-bursary/'],
+            ['Gauteng Provincial Treasury Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/gauteng-provincial-treasury-bursary/'],
+            ['Johannesburg Water Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/johannesburg-water-bursary/'],
+            ['O.R. Tambo District Municipality Bursary', 'Eastern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/o-r-tambo-district-municipality-bursary/'],
+            ['Rand West City Local Municipality Bursary', 'Gauteng', 'https://www.zabursaries.co.za/government-bursaries-south-africa/rand-west-city-local-municipality-bursary/'],
+            ['Dube TradePort Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/dube-tradeport-bursary/'],
+            ['eThekwini Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/durban-ethekwini-municipality-bursary/'],
+            ['Emadlangeni Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/emadlangeni-municipality-bursary/'],
+            ['KwaDukuza Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kwadukuza-municipality-bursary/'],
+            ['KwaZulu-Natal Department of Economic Development, Tourism and Environmental Affairs (EDTEA) Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kwazulu-natal-dept-of-edtea-bursary/'],
+            ['KwaZulu-Natal Department of Health Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-department-of-health-bursary/'],
+            ['KwaZulu-Natal Department of Human Settlements Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-department-of-human-settlements-bursary/'],
+            ['KZN Department of Sport, Arts and Culture Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-department-of-sport-arts-and-culture-bursary/'],
+            ['KwaZulu-Natal Department of Transport Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kwazulu-natal-department-of-transport-bursary/'],
+            ['KwaZulu-Natal Government Bursaries', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-provincial-government-bursaries/'],
+            ['KZN Provincial Treasury Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/kzn-provincial-treasury-bursary/'],
+            ['Mhlathuze Water Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/mhlathuze-water-bursary/'],
+            ['Ndwedwe Local Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ndwedwe-local-municipality-bursary/'],
+            ['Newcastle Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/newcastle-municipality-bursary/'],
+            ['Okhahlamba Local Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/okhahlamba-local-municipality-bursary/'],
+            ['Ray Nkonyeni Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ray-nkonyeni-municipality-bursary/'],
+            ['The Msunduzi Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/the-msunduzi-municipality-bursary/'],
+            ['Ubuhlebezwe Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ubuhlebezwe-municipality-bursary/'],
+            ['uMlalazi Municipality Bursary', 'KwaZulu-Natal', 'https://www.zabursaries.co.za/government-bursaries-south-africa/umlalazi-municipality-bursary/'],
+            ['Ba-Phalaborwa Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ba-phalaborwa-municipality-bursary/'],
+            ['Blouberg Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/blouberg-municipality-bursary/'],
+            ['Bushbuckridge Local Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/bushbuckridge-local-municipality-bursary/'],
+            ['Capricorn District Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/capricorn-district-municipality-bursary/'],
+            ['City of Polokwane Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-polokwane-bursary/'],
+            ['Elias Motsoaledi Local Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/elias-motsoaledi-local-municipality-bursary/'],
+            ['Ephraim Mogale Local Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ephraim-mogale-local-municipality-bursary/'],
+            ['Greater Letaba Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/greater-letaba-municipality-bursary/'],
+            ['Limpopo Department of Agriculture and Rural Development (LDARD) Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-department-of-agriculture-and-rural-development-ldard-bursary/'],
+            ['Limpopo Department of Transport and Community Safety Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-department-of-transport-and-community-safety-bursary/'],
+            ['Limpopo Provincial Treasury Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-provincial-treasury-bursary/'],
+            ['Limpopo Department of Public Works Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-provincial-government-bursary/'],
+            ['Makhuduthamaga Local Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/makhuduthamaga-local-municipality-bursary/'],
+            ['Mopani District Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/mopani-district-municipality-bursary/'],
+            ['Musina Local Municipality Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/musina-local-municipality-bursary/'],
+            ['Vhembe District Municipality Mayoral Bursary', 'Limpopo', 'https://www.zabursaries.co.za/government-bursaries-south-africa/vhembe-district-municipality-mayoral-bursary/'],
+            ['Joe Morolong Assmang Bursary', 'Northern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/joe-morolong-assmang-bursary/'],
+            ['Northern Cape Dept of Transport, Safety & Liaison Bursary', 'Northern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/northern-cape-dept-of-transport-safety-liaison-bursary/'],
+            ['Northern Cape Provincial Government Bursary', 'Northern Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/northern-cape-provincial-government-bursary/'],
+            ['City of Matlosana Bursary', 'North West', 'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-matlosana-bursary/'],
+            ['Dr Ruth S Mompati District Municipality Bursary', 'North West', 'https://www.zabursaries.co.za/government-bursaries-south-africa/dr-ruth-s-mompati-district-municipality-bursary/'],
+            ['North West Department of Health Bursary', 'North West', 'https://www.zabursaries.co.za/government-bursaries-south-africa/north-west-department-of-health-bursary/'],
+            ['North West Provincial Government (NWPG) Bursary', 'North West', 'https://www.zabursaries.co.za/government-bursaries-south-africa/north-west-provincial-government-office-of-the-premier-bursary/'],
+            ['Ratlou Local Municipality Bursary', 'North West', 'https://www.zabursaries.co.za/government-bursaries-south-africa/ratlou-local-municipality-bursary/'],
+            ['Bergrivier Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/bergrivier-municipality-bursary/'],
+            ['Bitou Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/bitou-municipality-mayoral-bursary/'],
+            ['Breede Valley Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/breede-valley-municipality-bursary/'],
+            ['Cape Agulhas Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/cape-agulhas-municipality-bursary/'],
+            ['Cape Winelands District Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/cape-winelands-district-municipality-bursary/'],
+            ['Cederberg Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/cederberg-municipality-bursary/'],
+            ['City of Cape Town Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/city-of-cape-town-bursary/'],
+            ['Drakenstein Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/drakenstein-municipality-bursary/'],
+            ['Garden Route District Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/garden-route-district-municipality-bursary/'],
+            ['George Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/george-municipality-bursary/'],
+            ['Hessequa Local Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/hessequa-local-municipality-bursary/'],
+            ['Knysna Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/knysna-municipality-mayoral-bursary/'],
+            ['Langeberg Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/langeberg-municipality-bursary/'],
+            ['Masakh’iSizwe (WC Dept of Transport and Public Works) Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/masakhisizwe-bursary/'],
+            ['Mossel Bay Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/mossel-bay-municipality-bursary/'],
+            ['Oudtshoorn Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/oudtshoorn-municipality-bursary/'],
+            ['Overberg District Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/overberg-district-municipality-bursary/'],
+            ['Overstrand Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/overstrand-municipality-bursary/'],
+            ['Prince Albert Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/prince-albert-municipality-bursary/'],
+            ['Saldanha Bay Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/saldanha-bay-municipality-bursary/'],
+            ['Stellenbosch Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/stellenbosch-municipality-bursary/'],
+            ['Swartland Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/swartland-municipality-bursary/'],
+            ['Theewaterskloof Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/theewaterskloof-municipality-bursary/'],
+            ['Western Cape Department of Health and Wellness Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/western-cape-department-of-health/'],
+            ['Western Cape Dept of Agriculture - Elsenburg Agricultural Training Institute Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/western-cape-dept-of-agriculture-elsenburg-agricultural-training-institute-bursary/'],
+            ['West Coast District Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/west-coast-district-municipality-bursary/'],
+            ['Western Cape Provincial Treasury Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/western-cape-provincial-treasury-bursary/'],
+            ['Witzenberg Municipality Bursary', 'Western Cape', 'https://www.zabursaries.co.za/government-bursaries-south-africa/witzenberg-municipality-bursary/'],
+        ];
+
         $seededSourceUrls = [];
 
         foreach ($bursaries as $existingBursaryEntry) {
@@ -5651,6 +5857,44 @@ class BursarySeeder extends Seeder
                     'coverage_value' => 'See provider for the confirmed funding package.',
                     'eligibility_requirements' => [
                         'Studying or intending to study in one of the listed postgraduate or research fields',
+                        'Meets the provider requirements listed on the source page',
+                    ],
+                    'application_method' => 'See the source page for current application instructions.',
+                    'supporting_documents' => [
+                        'See source page for required supporting documents.',
+                    ],
+                    'closing_date' => null,
+                    'closing_date_label' => 'See source page',
+                    'source_url' => $sourceUrl,
+                ]),
+            );
+
+            $seededSourceUrls[$sourceUrl] = true;
+        }
+
+        foreach ($additionalProvincialGovernmentSourceEntries as [$governmentTitle, $province, $sourceUrl]) {
+            if (isset($seededSourceUrls[$sourceUrl])) {
+                continue;
+            }
+
+            $providerName = trim((string) preg_replace('/\s+(Bursary|Bursaries)$/i', '', $governmentTitle));
+
+            $bursaries[] = $entry(
+                $company(
+                    $providerName !== '' ? $providerName : $governmentTitle,
+                    null,
+                    'Government, provincial, municipal or public sector bursary provider.',
+                    null,
+                    null,
+                ),
+                $bursary([
+                    'title' => $governmentTitle,
+                    'category' => 'Government',
+                    'summary' => $governmentTitle.' for residents or eligible applicants linked to '.$province.'.',
+                    'fields_covered' => 'Government, scarce-skills, municipal, provincial or public sector study fields supported by the provider.',
+                    'coverage_value' => 'See provider for the confirmed funding package.',
+                    'eligibility_requirements' => [
+                        $province === 'National' ? 'South African citizen or eligible resident' : 'Resident of '.$province.' or the relevant municipal area',
                         'Meets the provider requirements listed on the source page',
                     ],
                     'application_method' => 'See the source page for current application instructions.',
@@ -5722,6 +5966,7 @@ class BursarySeeder extends Seeder
                     'application_method' => $bursary['application_method'],
                     'application_delivery_type' => $bursary['application_delivery_type'],
                     'application_email' => $bursary['application_email'],
+                    'application_postal_address' => $bursary['application_postal_address'],
                     'chamu_apply_enabled' => $bursary['chamu_apply_enabled'],
                     'supporting_documents' => json_encode($bursary['supporting_documents']),
                     'closing_date' => $bursary['closing_date'],
@@ -5760,7 +6005,7 @@ class BursarySeeder extends Seeder
 
             $documentRequirements = $entry['document_requirements'];
 
-            if ($documentRequirements === [] && $bursary['application_delivery_type'] === 'email') {
+            if ($documentRequirements === [] && in_array($bursary['application_delivery_type'], ['email', 'postal'], true)) {
                 $documentRequirements = $defaultEmailDocumentRequirements;
             }
 

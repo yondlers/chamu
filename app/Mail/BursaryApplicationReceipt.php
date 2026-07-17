@@ -20,8 +20,10 @@ class BursaryApplicationReceipt extends Mailable
 
     public function envelope(): Envelope
     {
+        $verb = $this->application->delivery_type === 'postal' ? 'prepared' : 'sent';
+
         return new Envelope(
-            subject: 'Receipt: Chamu sent your '.$this->application->bursary->title.' application',
+            subject: 'Receipt: Chamu '.$verb.' your '.$this->application->bursary->title.' application',
         );
     }
 

@@ -250,7 +250,7 @@
                                     <a href="{{ route('bursaries.show', $bursary->id) }}" class="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-black text-neutral-950 hover:bg-neutral-50">
                                         Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                     </a>
-                                    @if (($bursary->chamu_apply_enabled ?? false) && ($bursary->application_delivery_type ?? null) === 'email')
+                                    @if (($bursary->chamu_apply_enabled ?? false) && in_array($bursary->application_delivery_type ?? null, ['email', 'postal'], true))
                                         <a href="{{ route('bursaries.show', $bursary->id) }}" class="inline-flex items-center gap-2 rounded-lg bg-[#01225E] px-4 py-2 text-sm font-black text-white hover:bg-[#001A48]">
                                             Apply with Chamu <i data-lucide="send" style="width:16px;height:16px;"></i>
                                         </a>

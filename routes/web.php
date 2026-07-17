@@ -2125,8 +2125,11 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
     $bursary->supporting_documents = json_decode($bursary->supporting_documents ?? '[]', true) ?: [];
     $bursaryModel = (new Bursary())->setRawAttributes((array) $bursary, true);
     $providerEmail = $bursaryModel->applicationProviderEmail();
+    $providerPostalAddress = $bursaryModel->applicationProviderPostalAddress();
     $isEmailSubmission = $bursaryModel->isEmailSubmission();
+    $isPostalSubmission = $bursaryModel->isPostalSubmission();
     $hasValidProviderEmail = filter_var($providerEmail, FILTER_VALIDATE_EMAIL) !== false;
+    $usesPostalChamuFlow = $isPostalSubmission && ! ($isEmailSubmission && $hasValidProviderEmail);
     $applicationTablesReady = Schema::hasTable('bursary_applications')
         && Schema::hasTable('bursary_application_documents');
 
@@ -2143,7 +2146,7 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
             ->get()
         : collect();
 
-    if ($documentRequirements->isEmpty() && $isEmailSubmission) {
+    if ($documentRequirements->isEmpty() && ($isEmailSubmission || $isPostalSubmission)) {
         $documentRequirements = BursaryDocumentRequirement::defaultEmailSubmissionRequirements();
     }
 
@@ -2162,9 +2165,14 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
         'requirements' => $requirements,
         'documentRequirements' => $documentRequirements,
         'latestApplication' => $latestApplication,
-        'isChamuHandled' => $isEmailSubmission && $hasValidProviderEmail && $applicationTablesReady,
+        'isChamuHandled' => $applicationTablesReady && (
+            ($isEmailSubmission && $hasValidProviderEmail)
+            || $isPostalSubmission
+        ),
+        'isPostalSubmission' => $usesPostalChamuFlow,
         'applicationTablesReady' => $applicationTablesReady,
         'providerEmail' => $providerEmail,
+        'providerPostalAddress' => $providerPostalAddress,
     ]);
 })->name('bursaries.show');
 

@@ -28,6 +28,7 @@ class Bursary extends Model
         'application_method',
         'application_delivery_type',
         'application_email',
+        'application_postal_address',
         'chamu_apply_enabled',
         'supporting_documents',
         'closing_date',
@@ -89,10 +90,22 @@ class Bursary extends Model
         return null;
     }
 
+    public function applicationProviderPostalAddress(): ?string
+    {
+        if (filled($this->application_postal_address)) {
+            return $this->application_postal_address;
+        }
+
+        if (($this->application_delivery_type ?? null) === 'postal') {
+            return 'Chamu will verify the provider postal or hand-delivery address from the bursary instructions before dispatch.';
+        }
+
+        return null;
+    }
+
     public function isEmailSubmission(): bool
     {
-        return ($this->chamu_apply_enabled ?? false)
-            || ($this->application_delivery_type ?? null) === 'email'
+        return ($this->application_delivery_type ?? null) === 'email'
             || Str::startsWith((string) $this->apply_url, 'mailto:')
             || Str::contains(Str::lower((string) $this->application_method), [
                 'apply by email',
@@ -100,5 +113,28 @@ class Bursary extends Model
                 'via email',
                 'submitted by email',
             ]);
+    }
+
+    public function isPostalSubmission(): bool
+    {
+        return ($this->application_delivery_type ?? null) === 'postal'
+            || Str::contains(Str::lower((string) $this->application_method), [
+                'apply by post',
+                'submit by post',
+                'submitted by post',
+                'via post',
+                'postal',
+                'po box',
+                'p.o. box',
+                'private bag',
+                'hand delivery',
+                'deliver to',
+            ]);
+    }
+
+    public function isChamuSubmission(): bool
+    {
+        return (bool) ($this->chamu_apply_enabled ?? false)
+            && ($this->isEmailSubmission() || $this->isPostalSubmission());
     }
 }
