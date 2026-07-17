@@ -25,6 +25,9 @@ class Bursary extends Model
         'renewal',
         'eligibility_requirements',
         'application_method',
+        'application_delivery_type',
+        'application_email',
+        'chamu_apply_enabled',
         'supporting_documents',
         'closing_date',
         'closing_date_label',
@@ -40,6 +43,7 @@ class Bursary extends Model
         'eligibility_requirements' => 'array',
         'supporting_documents' => 'array',
         'closing_date' => 'date',
+        'chamu_apply_enabled' => 'boolean',
         'is_active' => 'boolean',
     ];
 
@@ -51,5 +55,15 @@ class Bursary extends Model
     public function subjectRequirements(): HasMany
     {
         return $this->hasMany(BursarySubjectRequirement::class, 'bursary_id');
+    }
+
+    public function documentRequirements(): HasMany
+    {
+        return $this->hasMany(BursaryDocumentRequirement::class, 'bursary_id');
+    }
+
+    public function applications(): HasMany
+    {
+        return $this->hasMany(BursaryApplication::class, 'bursary_id');
     }
 }

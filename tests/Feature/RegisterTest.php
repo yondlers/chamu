@@ -10,7 +10,7 @@ class RegisterTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_register_page_only_offers_pupil_accounts(): void
+    public function test_register_page_offers_pupil_and_student_accounts(): void
     {
         $this->createSignupLookups();
         DB::table('user_types')->insert([
@@ -34,7 +34,8 @@ class RegisterTest extends TestCase
         $response->assertSee('data-auth-campus-carousel', false);
         $response->assertSee('images/auth-campus/rhodes-uni.jpg', false);
         $response->assertSee('images/auth-campus/wits-great-hall.png', false);
-        $response->assertSee('Pupil');
+        $response->assertSee('Pupil (High School)');
+        $response->assertSee('Student (University/College)');
         $response->assertDontSee('Teacher');
         $response->assertDontSee('Parent');
     }
@@ -71,6 +72,33 @@ class RegisterTest extends TestCase
         ]);
     }
 
+    public function test_university_student_can_register_without_high_school_grade(): void
+    {
+        $lookups = $this->createSignupLookups();
+
+        $response = $this->post(route('register.store'), [
+            'first_name' => 'Tertiary',
+            'last_name' => 'Student',
+            'username' => 'tertiarystudent',
+            'email' => 'student@example.com',
+            'password' => 'Password123!',
+            'password_confirmation' => 'Password123!',
+            'user_type_id' => $lookups['student_user_type_id'],
+        ]);
+
+        $response->assertRedirect(route('bursaries.index'));
+        $this->assertAuthenticated();
+
+        $this->assertDatabaseHas('users', [
+            'name' => 'Tertiary Student',
+            'email' => 'student@example.com',
+            'user_type_id' => $lookups['student_user_type_id'],
+            'country_id' => $lookups['country_id'],
+            'curriculum_id' => null,
+            'grade_id' => null,
+        ]);
+    }
+
     /**
      * @return array<string, int>
      */
@@ -81,6 +109,13 @@ class RegisterTest extends TestCase
         $userTypeId = DB::table('user_types')->insertGetId([
             'name' => 'pupil',
             'description' => 'Learner',
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+
+        $studentUserTypeId = DB::table('user_types')->insertGetId([
+            'name' => 'student',
+            'description' => 'Student',
             'created_at' => $now,
             'updated_at' => $now,
         ]);
@@ -111,6 +146,7 @@ class RegisterTest extends TestCase
 
         return [
             'user_type_id' => $userTypeId,
+            'student_user_type_id' => $studentUserTypeId,
             'country_id' => $countryId,
             'curriculum_id' => $curriculumId,
             'grade_id' => $gradeId,

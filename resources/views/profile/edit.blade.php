@@ -3,6 +3,16 @@
 @section('title', 'Profile · Chamu')
 
 @section('content')
+    @php
+        $userTypeLabels = [
+            'pupil' => 'Pupil (High School)',
+            'student' => 'Student (University/College)',
+            'teacher' => 'Teacher',
+            'parent' => 'Parent',
+        ];
+        $selectedUserTypeId = (int) old('user_type_id', $user->user_type_id);
+    @endphp
+
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-10">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
             <div>
@@ -59,12 +69,12 @@
                     <div>
                         <label for="user_type_id" class="block text-sm font-semibold mb-2">User type</label>
                         <select id="user_type_id" name="user_type_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
-                            @foreach ($userTypes as $userType)
-                                <option value="{{ $userType->id }}" @selected((int) old('user_type_id', $user->user_type_id) === $userType->id)>
-                                    {{ $userType->name === 'pupil' ? 'Pupil' : ucfirst($userType->name) }}
-                                </option>
-                            @endforeach
-                        </select>
+	                            @foreach ($userTypes as $userType)
+	                                <option value="{{ $userType->id }}" @selected((int) old('user_type_id', $user->user_type_id) === $userType->id)>
+	                                    {{ $userTypeLabels[$userType->name] ?? Str::of($userType->name)->title() }}
+	                                </option>
+	                            @endforeach
+	                        </select>
                         @error('user_type_id') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                     </div>
                     <div>
@@ -77,9 +87,10 @@
                         </select>
                         @error('province_id') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                     </div>
+                    <div id="high-school-profile-fields" class="contents">
                     <div>
                         <label for="curriculum_id" class="block text-sm font-semibold mb-2">Curriculum</label>
-                        <select id="curriculum_id" name="curriculum_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
+                        <select id="curriculum_id" name="curriculum_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                             @foreach ($curriculums as $curriculum)
                                 <option value="{{ $curriculum->id }}" @selected((int) old('curriculum_id', $user->curriculum_id) === $curriculum->id)>
                                     {{ $curriculum->abbreviation ?: $curriculum->name }}
@@ -92,6 +103,7 @@
                         <label for="grade_id" class="block text-sm font-semibold mb-2">Grade</label>
                         <select id="grade_id" name="grade_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]"></select>
                         @error('grade_id') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
+                    </div>
                     </div>
                 </div>
             </section>
@@ -126,8 +138,11 @@
 @push('scripts')
     <script>
         const grades = @json($grades->values());
+        const userTypes = @json($userTypes->values());
         const curriculumSelect = document.getElementById('curriculum_id');
         const gradeSelect = document.getElementById('grade_id');
+        const userTypeSelect = document.getElementById('user_type_id');
+        const highSchoolProfileFields = document.getElementById('high-school-profile-fields');
         const selectedGradeId = '{{ old('grade_id', $user->grade_id) }}';
 
         const refreshGrades = () => {
@@ -147,5 +162,19 @@
 
         curriculumSelect.addEventListener('change', refreshGrades);
         refreshGrades();
+
+        const refreshLearningProfile = () => {
+            const selectedUserType = userTypes.find((userType) => Number(userType.id) === Number(userTypeSelect.value));
+            const isPupil = selectedUserType?.name === 'pupil';
+
+            highSchoolProfileFields.classList.toggle('hidden', !isPupil);
+            highSchoolProfileFields.classList.toggle('contents', isPupil);
+            curriculumSelect.required = isPupil;
+            curriculumSelect.disabled = !isPupil;
+            gradeSelect.disabled = !isPupil;
+        };
+
+        userTypeSelect.addEventListener('change', refreshLearningProfile);
+        refreshLearningProfile();
     </script>
 @endpush

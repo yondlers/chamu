@@ -1,0 +1,224 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Mail\BursaryApplicationReceipt;
+use App\Mail\BursaryApplicationSubmitted;
+use App\Models\Bursary;
+use App\Models\BursaryApplication;
+use App\Models\BursaryApplicationDocument;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Validator;
+use Throwable;
+
+class BursaryApplicationController extends Controller
+{
+    /**
+     * @var array<int, string>
+     */
+    private const ACADEMIC_RECORD_KEYS = [
+        'academic_transcript',
+        'grade_12_marks',
+        'grade_11_marks',
+        'matric_certificate',
+    ];
+
+    public function store(Request $request, Bursary $bursary): RedirectResponse
+    {
+        $providerEmail = $bursary->application_email ?: $bursary->contact_email;
+
+        if (! Schema::hasTable('bursary_document_requirements') || ! Schema::hasTable('bursary_applications')) {
+            return back()->withErrors([
+                'application' => 'Bursary applications are being prepared. Please run the latest migrations and try again.',
+            ]);
+        }
+
+        if (! $bursary->chamu_apply_enabled || $bursary->application_delivery_type !== 'email' || ! filter_var($providerEmail, FILTER_VALIDATE_EMAIL)) {
+            return back()->withErrors([
+                'application' => 'This bursary is not ready for Chamu email applications yet.',
+            ]);
+        }
+
+        $requirements = $bursary->documentRequirements()
+            ->orderBy('sort_order')
+            ->orderBy('id')
+            ->get();
+
+        if ($requirements->isEmpty()) {
+            return back()->withErrors([
+                'application' => 'Document requirements have not been captured for this bursary yet.',
+            ]);
+        }
+
+        $validator = Validator::make($request->all(), [
+            'applicant_phone' => ['nullable', 'string', 'max:40'],
+            'study_level' => ['nullable', 'string', 'max:80'],
+            'institution' => ['nullable', 'string', 'max:255'],
+            'qualification' => ['nullable', 'string', 'max:255'],
+            'current_year' => ['nullable', 'string', 'max:80'],
+            'funding_need' => ['nullable', 'string', 'max:1200'],
+            'household_income' => ['nullable', 'string', 'max:255'],
+            'sassa_recipient' => ['nullable', 'boolean'],
+            'special_circumstances' => ['nullable', 'array'],
+            'special_circumstances.*' => ['string', 'in:disability,vulnerable_child'],
+            'documents' => ['nullable', 'array'],
+            'documents.*' => ['nullable', 'array'],
+            'documents.*.*' => ['file', 'mimes:pdf,jpg,jpeg,png,doc,docx', 'max:10240'],
+            'consent' => ['accepted'],
+        ], [
+            'consent.accepted' => 'Confirm that Chamu may email this application on your behalf.',
+            'documents.*.*.mimes' => 'Documents must be PDF, JPG, PNG, DOC, or DOCX files.',
+            'documents.*.*.max' => 'Each document may not be larger than 10MB.',
+        ]);
+
+        $validator->after(function ($validator) use ($request, $requirements): void {
+            $requirements
+                ->where('is_required', true)
+                ->whereNull('requirement_group')
+                ->each(function ($requirement) use ($request, $validator): void {
+                    if (! $this->hasDocumentUpload($request, $requirement->key)) {
+                        $validator->errors()->add("documents.{$requirement->key}", $requirement->label.' is required.');
+                    }
+                });
+
+            $academicRequirements = $requirements->where('requirement_group', 'academic_record');
+
+            if ($academicRequirements->isNotEmpty()) {
+                $hasAcademicRecord = collect(self::ACADEMIC_RECORD_KEYS)
+                    ->contains(fn (string $key): bool => $this->hasDocumentUpload($request, $key));
+
+                if (! $hasAcademicRecord) {
+                    $validator->errors()->add('documents.academic_record', 'Upload at least one academic record, transcript, Grade 12 marks, Grade 11 marks, or matric certificate.');
+                }
+            }
+        });
+
+        $data = $validator->validate();
+        $user = $request->user();
+        $requirementsByKey = $requirements->keyBy('key');
+
+        $application = DB::transaction(function () use ($bursary, $data, $providerEmail, $request, $requirementsByKey, $user): BursaryApplication {
+            $application = BursaryApplication::create([
+                'user_id' => $user->id,
+                'bursary_id' => $bursary->id,
+                'status' => 'pending',
+                'provider_email' => $providerEmail,
+                'applicant_name' => $user->name ?: trim($user->first_name.' '.$user->last_name),
+                'applicant_email' => $user->email,
+                'applicant_phone' => $data['applicant_phone'] ?? null,
+                'study_level' => $data['study_level'] ?? null,
+                'institution' => $data['institution'] ?? null,
+                'qualification' => $data['qualification'] ?? null,
+                'current_year' => $data['current_year'] ?? null,
+                'funding_need' => $data['funding_need'] ?? null,
+                'household_income' => $data['household_income'] ?? null,
+                'sassa_recipient' => (bool) ($data['sassa_recipient'] ?? false),
+                'special_circumstances' => array_values($data['special_circumstances'] ?? []),
+                'metadata' => [
+                    'bursary_title' => $bursary->title,
+                    'company_name' => $bursary->company?->name,
+                    'source_url' => $bursary->source_url,
+                    'supporting_documents' => $bursary->supporting_documents ?? [],
+                ],
+            ]);
+
+            foreach ((array) $request->file('documents', []) as $documentKey => $files) {
+                if (! $requirementsByKey->has($documentKey)) {
+                    continue;
+                }
+
+                foreach ($this->normaliseFiles($files) as $file) {
+                    $requirement = $requirementsByKey->get($documentKey);
+                    $path = $this->storeDocument($application, $documentKey, $file);
+
+                    BursaryApplicationDocument::create([
+                        'bursary_application_id' => $application->id,
+                        'bursary_document_requirement_id' => $requirement->id,
+                        'document_key' => $documentKey,
+                        'original_name' => $file->getClientOriginalName(),
+                        'storage_disk' => 'local',
+                        'path' => $path,
+                        'mime_type' => $file->getMimeType(),
+                        'size' => $file->getSize(),
+                    ]);
+                }
+            }
+
+            return $application->load(['bursary.company', 'documents.requirement', 'user']);
+        });
+
+        try {
+            Mail::to($providerEmail)->send(new BursaryApplicationSubmitted($application));
+
+            $application->forceFill([
+                'status' => 'submitted',
+                'submitted_at' => now(),
+            ])->save();
+
+            Mail::to($application->applicant_email)->send(new BursaryApplicationReceipt(
+                $application->fresh(['bursary.company', 'documents.requirement', 'user'])
+            ));
+
+            $application->forceFill([
+                'receipt_sent_at' => now(),
+            ])->save();
+        } catch (Throwable $exception) {
+            $application->forceFill([
+                'status' => 'failed',
+                'metadata' => array_merge($application->metadata ?? [], [
+                    'mail_error' => $exception->getMessage(),
+                ]),
+            ])->save();
+
+            report($exception);
+
+            return back()
+                ->withInput($request->except('documents'))
+                ->withErrors(['application' => 'We saved your application, but the email could not be sent. Please try again.']);
+        }
+
+        return redirect()
+            ->route('bursaries.show', $bursary)
+            ->with('status', 'Chamu sent your bursary application and emailed you a receipt.');
+    }
+
+    private function hasDocumentUpload(Request $request, string $key): bool
+    {
+        return collect($this->normaliseFiles($request->file("documents.{$key}")))
+            ->contains(fn (UploadedFile $file): bool => $file->isValid());
+    }
+
+    /**
+     * @return array<int, UploadedFile>
+     */
+    private function normaliseFiles(mixed $files): array
+    {
+        if ($files instanceof UploadedFile) {
+            return [$files];
+        }
+
+        if (! is_array($files)) {
+            return [];
+        }
+
+        return collect($files)
+            ->filter(fn ($file): bool => $file instanceof UploadedFile)
+            ->values()
+            ->all();
+    }
+
+    private function storeDocument(BursaryApplication $application, string $documentKey, UploadedFile $file): string
+    {
+        $basename = Str::slug(pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)) ?: $documentKey;
+        $extension = $file->getClientOriginalExtension();
+        $filename = $documentKey.'-'.$basename.'-'.Str::random(8).($extension ? '.'.$extension : '');
+
+        return $file->storeAs('bursary-applications/'.$application->id, $filename, 'local');
+    }
+}

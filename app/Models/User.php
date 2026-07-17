@@ -114,6 +114,11 @@ class User extends Authenticatable
         return $this->hasMany(AuditLog::class, 'user_id');
     }
 
+    public function bursaryApplications(): HasMany
+    {
+        return $this->hasMany(BursaryApplication::class, 'user_id');
+    }
+
     public function userType(): BelongsTo
     {
         return $this->belongsTo(UserType::class, 'user_type_id');

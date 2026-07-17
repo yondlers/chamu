@@ -39,14 +39,18 @@ class BursarySeeder extends Seeder
             'contact_name' => null,
             'contact_email' => null,
             'contact_phone' => null,
+            'application_delivery_type' => 'external_link',
+            'application_email' => null,
+            'chamu_apply_enabled' => false,
             'apply_url' => null,
             'is_active' => true,
         ], $data);
 
-        $entry = fn (array $company, array $bursary, array $requirements = []): array => [
+        $entry = fn (array $company, array $bursary, array $requirements = [], array $documentRequirements = []): array => [
             'company' => $company,
             'bursary' => $bursary,
             'subject_requirements' => $requirements,
+            'document_requirements' => $documentRequirements,
         ];
 
         $req = function (
@@ -67,6 +71,24 @@ class BursarySeeder extends Seeder
                 'notes' => $notes,
             ];
         };
+
+        $docReq = fn (
+            string $key,
+            string $label,
+            bool $required = false,
+            ?string $group = null,
+            ?string $description = null,
+            bool $multiple = false,
+            int $sort = 0,
+        ): array => [
+            'key' => $key,
+            'label' => $label,
+            'description' => $description,
+            'is_required' => $required,
+            'accepts_multiple' => $multiple,
+            'requirement_group' => $group,
+            'sort_order' => $sort,
+        ];
 
         $englishAny = fn (
             int $homeLanguageMark,
@@ -106,11 +128,17 @@ class BursarySeeder extends Seeder
                     'application_method' => 'Apply by email to marcelenej@cbarnes.co.za or post to The Bursary Officer, PO Box 137, Queenstown, 5320.',
                     'supporting_documents' => [
                         'Covering letter',
-                        'Certified copy of ID document',
-                        'Certified copy of Matric certificate',
+                        'Certified copy of ID document (required)',
+                        'Curriculum Vitae (required)',
+                        'Certified copy of Matric certificate, Grade 12 marks, Grade 11 marks, or latest available academic results',
                         'Full academic record or transcript on tertiary institution letterhead',
-                        'Curriculum Vitae',
+                        'Certified copies of IDs for parents, legal guardian, or spouse, if financial need applies',
+                        'Proof of income for parents or guardians, unless the applicant receives a SASSA grant',
+                        'Disability Annexure A or Vulnerable Child Declaration, if applicable',
                     ],
+                    'application_delivery_type' => 'email',
+                    'application_email' => 'marcelenej@cbarnes.co.za',
+                    'chamu_apply_enabled' => true,
                     'closing_date' => null,
                     'closing_date_label' => '30 September annually',
                     'contact_name' => 'The Bursary Officer',
@@ -119,6 +147,19 @@ class BursarySeeder extends Seeder
                     'source_url' => 'https://www.zabursaries.co.za/accounting-bursaries-south-africa/a2a-kopano-inc-bursary/',
                     'apply_url' => 'mailto:marcelenej@cbarnes.co.za',
                 ]),
+                [],
+                [
+                    $docReq('covering_letter', 'Covering letter', false, null, 'A short letter introducing the applicant and motivation for the bursary.', false, 10),
+                    $docReq('id_document', 'Certified copy of ID document', true, null, 'Upload the front and back if they are separate files.', true, 20),
+                    $docReq('curriculum_vitae', 'Curriculum Vitae', true, null, 'Current CV with education, achievements, and activities.', false, 30),
+                    $docReq('matric_certificate', 'Certified copy of Matric certificate', false, 'academic_record', 'Required if Matric has been completed. One academic record option must be uploaded.', false, 40),
+                    $docReq('academic_transcript', 'Full academic record or transcript', false, 'academic_record', 'Use tertiary institution letterhead where available. One academic record option must be uploaded.', false, 50),
+                    $docReq('grade_12_marks', 'Grade 12 marks', false, 'academic_record', 'Latest Grade 12 marks are accepted when Matric is not complete.', false, 60),
+                    $docReq('grade_11_marks', 'Grade 11 marks', false, 'academic_record', 'Grade 11 final marks may support current Matric applications.', false, 70),
+                    $docReq('family_ids', 'Family IDs', false, null, 'Certified ID copies for parents, legal guardian, or spouse, if financial need applies.', true, 80),
+                    $docReq('proof_of_income', 'Proof of income', false, null, 'Payslips, employment letters, or retrenchment letters for parents or guardians. Not needed for SASSA grant recipients.', true, 90),
+                    $docReq('special_case_documents', 'Special case documents', false, null, 'Disability Annexure A or Vulnerable Child Declaration, if applicable.', true, 100),
+                ],
             ),
             $entry(
                 $company(
@@ -5497,6 +5538,9 @@ class BursarySeeder extends Seeder
                     'renewal' => $bursary['renewal'],
                     'eligibility_requirements' => json_encode($bursary['eligibility_requirements']),
                     'application_method' => $bursary['application_method'],
+                    'application_delivery_type' => $bursary['application_delivery_type'],
+                    'application_email' => $bursary['application_email'],
+                    'chamu_apply_enabled' => $bursary['chamu_apply_enabled'],
                     'supporting_documents' => json_encode($bursary['supporting_documents']),
                     'closing_date' => $bursary['closing_date'],
                     'closing_date_label' => $bursary['closing_date_label'],
@@ -5525,6 +5569,23 @@ class BursarySeeder extends Seeder
                     'requirement_type' => $requirement['requirement_type'] ?? 'required',
                     'requirement_group' => $requirement['requirement_group'] ?? null,
                     'notes' => $requirement['notes'] ?? null,
+                    'created_at' => $now,
+                    'updated_at' => $now,
+                ]);
+            }
+
+            DB::table('bursary_document_requirements')->where('bursary_id', $bursaryId)->delete();
+
+            foreach ($entry['document_requirements'] as $index => $requirement) {
+                DB::table('bursary_document_requirements')->insert([
+                    'bursary_id' => $bursaryId,
+                    'key' => $requirement['key'],
+                    'label' => $requirement['label'],
+                    'description' => $requirement['description'] ?? null,
+                    'is_required' => $requirement['is_required'] ?? false,
+                    'accepts_multiple' => $requirement['accepts_multiple'] ?? false,
+                    'requirement_group' => $requirement['requirement_group'] ?? null,
+                    'sort_order' => $requirement['sort_order'] ?? ($index + 1),
                     'created_at' => $now,
                     'updated_at' => $now,
                 ]);

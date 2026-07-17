@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BursaryApplicationController;
 use App\Http\Controllers\Public\QualificationController as PublicQualificationController;
 use App\Http\Controllers\Public\UniversityController as PublicUniversityController;
 use App\Http\Controllers\SitemapController;
@@ -960,8 +961,8 @@ Route::middleware('guest')->group(function () {
         $userTypes = Schema::hasTable('user_types')
             ? DB::table('user_types')
                 ->select('id', 'name')
-                ->where('name', 'pupil')
-                ->orderBy('name')
+                ->whereIn('name', ['pupil', 'student'])
+                ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 else 3 end")
                 ->get()
             : collect();
 
@@ -1004,14 +1005,14 @@ Route::middleware('guest')->group(function () {
             'email' => ['required', 'email', 'max:255', 'unique:users,email'],
             'password' => ['required', 'confirmed', Password::min(8)],
             'user_type_id' => ['required', 'exists:user_types,id'],
-            'curriculum_id' => ['required', 'exists:curriculums,id'],
+            'curriculum_id' => ['nullable', 'exists:curriculums,id'],
             'grade_id' => ['nullable', 'exists:grades,id'],
             'province_id' => ['nullable', 'exists:provinces,id'],
         ]);
 
         $userType = DB::table('user_types')
             ->where('id', $data['user_type_id'])
-            ->where('name', 'pupil')
+            ->whereIn('name', ['pupil', 'student'])
             ->first(['id', 'name']);
         $countryId = DB::table('countries')->where('name', 'South Africa')->value('id') ?? DB::table('countries')->value('id');
 
@@ -1021,12 +1022,18 @@ Route::middleware('guest')->group(function () {
                 ->withInput($request->except('password', 'password_confirmation'));
         }
 
+        if ($userType->name === 'pupil' && empty($data['curriculum_id'])) {
+            return back()
+                ->withErrors(['curriculum_id' => 'Choose your curriculum for a high school pupil account.'])
+                ->withInput($request->except('password', 'password_confirmation'));
+        }
+
         $user = User::create([
             'user_type_id' => $userType->id,
             'country_id' => $countryId,
             'province_id' => $data['province_id'] ?? null,
-            'curriculum_id' => $data['curriculum_id'],
-            'grade_id' => $data['grade_id'] ?? null,
+            'curriculum_id' => $userType->name === 'pupil' ? $data['curriculum_id'] : null,
+            'grade_id' => $userType->name === 'pupil' ? ($data['grade_id'] ?? null) : null,
             'name' => trim($data['first_name'].' '.($data['last_name'] ?? '')),
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'] ?? null,
@@ -1040,8 +1047,8 @@ Route::middleware('guest')->group(function () {
         $request->session()->regenerate();
 
         return redirect()
-            ->route('subjects.index')
-            ->with('status', 'Select your subjects to personalize Chamu.');
+            ->route($userType->name === 'pupil' ? 'subjects.index' : 'bursaries.index')
+            ->with('status', $userType->name === 'pupil' ? 'Select your subjects to personalize Chamu.' : 'Your student account is ready for bursary applications.');
     })->name('register.store');
 });
 
@@ -2120,11 +2127,35 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
         ->orderBy('id')
         ->get();
 
+    $documentRequirements = Schema::hasTable('bursary_document_requirements')
+        ? DB::table('bursary_document_requirements')
+            ->where('bursary_id', $bursary->id)
+            ->orderBy('sort_order')
+            ->orderBy('id')
+            ->get()
+        : collect();
+
+    $latestApplication = null;
+
+    if ($request->user() !== null && Schema::hasTable('bursary_applications')) {
+        $latestApplication = DB::table('bursary_applications')
+            ->where('bursary_id', $bursary->id)
+            ->where('user_id', $request->user()->id)
+            ->latest('created_at')
+            ->first();
+    }
+
     return view('bursaries.show', [
         'bursary' => $bursary,
         'requirements' => $requirements,
+        'documentRequirements' => $documentRequirements,
+        'latestApplication' => $latestApplication,
     ]);
 })->name('bursaries.show');
+
+Route::post('/bursaries/{bursary}/apply', [BursaryApplicationController::class, 'store'])
+    ->middleware('auth')
+    ->name('bursaries.apply');
 
 Route::middleware('auth')->group(function () {
     Route::get('/tools', function (Request $request) {
@@ -2299,8 +2330,8 @@ Route::middleware('auth')->group(function () {
 
         $userTypes = DB::table('user_types')
             ->select('id', 'name')
-            ->whereIn('name', ['pupil', 'teacher', 'parent'])
-            ->orderByRaw("case name when 'pupil' then 1 when 'teacher' then 2 when 'parent' then 3 else 4 end")
+            ->whereIn('name', ['pupil', 'student', 'teacher', 'parent'])
+            ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 when 'teacher' then 3 when 'parent' then 4 else 5 end")
             ->get();
 
         $curriculums = DB::table('curriculums')
@@ -2337,15 +2368,15 @@ Route::middleware('auth')->group(function () {
             'username' => ['required', 'string', 'max:255', 'alpha_dash', 'unique:users,username,' . $user->id],
             'email' => ['required', 'email', 'max:255', 'unique:users,email,' . $user->id],
             'user_type_id' => ['required', 'exists:user_types,id'],
-            'curriculum_id' => ['required', 'exists:curriculums,id'],
+            'curriculum_id' => ['nullable', 'exists:curriculums,id'],
             'grade_id' => ['nullable', 'exists:grades,id'],
             'province_id' => ['nullable', 'exists:provinces,id'],
         ]);
 
         $userType = DB::table('user_types')
             ->where('id', $data['user_type_id'])
-            ->whereIn('name', ['pupil', 'teacher', 'parent'])
-            ->first(['id']);
+            ->whereIn('name', ['pupil', 'student', 'teacher', 'parent'])
+            ->first(['id', 'name']);
 
         if ($userType === null) {
             return back()
@@ -2353,10 +2384,16 @@ Route::middleware('auth')->group(function () {
                 ->withInput();
         }
 
+        if ($userType->name === 'pupil' && empty($data['curriculum_id'])) {
+            return back()
+                ->withErrors(['curriculum_id' => 'Choose your curriculum for a high school pupil account.'])
+                ->withInput();
+        }
+
         $user->forceFill([
             'user_type_id' => $data['user_type_id'],
-            'curriculum_id' => $data['curriculum_id'],
-            'grade_id' => $data['grade_id'] ?? null,
+            'curriculum_id' => $userType->name === 'pupil' ? $data['curriculum_id'] : null,
+            'grade_id' => $userType->name === 'pupil' ? ($data['grade_id'] ?? null) : null,
             'province_id' => $data['province_id'] ?? null,
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'] ?? null,

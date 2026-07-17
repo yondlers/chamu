@@ -15,7 +15,11 @@ class UserTypeSeeder extends Seeder
         $userTypes = [
             [
                 'name' => 'pupil',
-                'description' => 'Learner account for studying, practice, notes, and exams.',
+                'description' => 'High school learner account for studying, practice, notes, and exams.',
+            ],
+            [
+                'name' => 'student',
+                'description' => 'University or college student account for funding and study planning.',
             ],
             [
                 'name' => 'teacher',
