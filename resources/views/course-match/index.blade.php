@@ -2,51 +2,44 @@
 
 @section('title', 'Course Match · Chamu')
 
+@push('styles')
+    <style>
+        .course-match-hero-slide {
+            opacity: 0;
+            transform: scale(1.03);
+            animation: course-match-hero-fade 49s infinite;
+            animation-delay: var(--course-match-slide-delay, 0s);
+        }
+
+        @keyframes course-match-hero-fade {
+            0% { opacity: 0; transform: scale(1.03); }
+            4% { opacity: 1; }
+            15% { opacity: 1; }
+            19% { opacity: 0; transform: scale(1.10); }
+            100% { opacity: 0; transform: scale(1.10); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .course-match-hero-slide {
+                animation: none;
+                opacity: 0;
+                transform: none;
+            }
+
+            .course-match-hero-slide:first-child {
+                opacity: 1;
+            }
+        }
+    </style>
+@endpush
+
 @section('content')
-    <main class="max-w-6xl mx-auto px-5 lg:px-8 py-8">
-        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-8">
-            <div>
-                <p class="text-sm font-semibold text-[#01225E]">Admissions match</p>
-                <h1 class="mt-1 text-3xl font-bold">Courses you qualify for</h1>
-                <p class="mt-2 text-neutral-500">Matches use your selected term marks, APS or aggregate average, and subject requirements.</p>
-            </div>
-            <div class="flex flex-wrap gap-2">
-                <a href="{{ route('marks.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
-                    <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
-                    Marks
-                </a>
-                <a href="{{ route('dashboard.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
-                    <i data-lucide="home" style="width:16px;height:16px;"></i>
-                    Dashboard
-                </a>
-            </div>
-        </div>
-
-        <section class="grid gap-3 md:grid-cols-4 mb-5">
-            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
-                <p class="text-xs font-bold uppercase text-neutral-500">APS Score</p>
-                <p class="mt-2 text-3xl font-bold">{{ $apsTotal }}</p>
-            </div>
-            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
-                <p class="text-xs font-bold uppercase text-neutral-500">Average</p>
-                <p class="mt-2 text-3xl font-bold">{{ $averageMark ? number_format($averageMark, 1) : '0.0' }}%</p>
-            </div>
-            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
-                <p class="text-xs font-bold uppercase text-neutral-500">Matched Courses</p>
-                <p class="mt-2 text-3xl font-bold">{{ $matchedCount }}</p>
-            </div>
-            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
-                <p class="text-xs font-bold uppercase text-neutral-500">Visible Courses</p>
-                <p class="mt-2 text-3xl font-bold">{{ $visibleMatchesCount }}</p>
-            </div>
-        </section>
-
-        @include('partials.adsense-home-placement', ['class' => 'mb-6'])
-
         @php
             $selectedUniversity = $universities->firstWhere('id', (int) $filters['university_id']);
             $selectedFaculty = $faculties->firstWhere('id', (int) $filters['faculty_id']);
             $selectedQualificationType = $qualificationTypes->firstWhere('id', (int) $filters['qualification_type_id']);
+            $selectedTerm = $terms->firstWhere('id', (int) $termId);
+            $studentFirstName = $user->first_name ?: Str::of($user->name)->before(' ');
             $universityLabel = function ($university) {
                 if (! $university) {
                     return 'All universities';
@@ -56,11 +49,102 @@
                     ? $university->abbreviation.' ('.$university->name.')'
                     : $university->name;
             };
+            $heroSlides = [
+                ['src' => asset('images/aps/graduates-smiling.png'), 'position' => 'object-[center_38%]', 'delay' => 0],
+                ['src' => asset('images/aps/engineering-workshop.png'), 'position' => 'object-[center_45%]', 'delay' => 7],
+                ['src' => asset('images/aps/school-learners.png'), 'position' => 'object-[center_44%]', 'delay' => 14],
+                ['src' => asset('images/aps/nursing-students.png'), 'position' => 'object-[center_42%]', 'delay' => 21],
+                ['src' => asset('images/aps/uct-graduate.png'), 'position' => 'object-[center_46%]', 'delay' => 28],
+                ['src' => asset('images/aps/graduation-group.png'), 'position' => 'object-[center_44%]', 'delay' => 35],
+                ['src' => asset('images/aps/aps-calculation.png'), 'position' => 'object-[center_50%]', 'delay' => 42],
+            ];
+            $activeFilterSummary = collect([
+                $selectedTerm?->name,
+                $selectedUniversity ? $universityLabel($selectedUniversity) : null,
+                $selectedFaculty ? $selectedFaculty->university_abbreviation.' · '.$selectedFaculty->name : null,
+                $selectedQualificationType?->name,
+                $search !== '' ? '"'.$search.'"' : null,
+            ])->filter()->implode(' · ');
         @endphp
 
-        <form method="GET" action="{{ route('course-match.index') }}" class="mb-6 rounded-2xl border border-neutral-200 bg-white p-4 soft-card">
-            <input type="hidden" name="page" value="1">
-            <div class="grid gap-3 lg:grid-cols-4">
+    <main class="bg-[#f5f7fb] pb-16 text-neutral-950">
+        <section class="relative isolate bg-[#07111f] text-white">
+            <div class="absolute inset-0 -z-10 overflow-hidden">
+                @foreach ($heroSlides as $slide)
+                    <img src="{{ $slide['src'] }}" alt="" class="course-match-hero-slide absolute inset-0 h-full w-full object-cover {{ $slide['position'] }}" style="--course-match-slide-delay: {{ $slide['delay'] }}s;">
+                @endforeach
+                <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,10,22,.96)_0%,rgba(4,10,22,.82)_45%,rgba(4,10,22,.48)_100%)]"></div>
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#f5f7fb] via-[#f5f7fb]/45 to-transparent"></div>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-5 pb-10 pt-8 sm:pb-16 sm:pt-16 lg:px-8 lg:pb-20 lg:pt-20">
+                <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-end">
+                    <div class="max-w-3xl">
+                        <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase text-white/85 backdrop-blur">
+                            <span class="h-2 w-2 rounded-full bg-sky-300"></span>
+                            Full subject match
+                        </div>
+                        <h1 class="mt-4 max-w-3xl text-3xl font-black leading-[1.02] text-white sm:mt-5 sm:text-6xl">
+                            {{ $studentFirstName }}, see what your marks unlock.
+                        </h1>
+                        <p class="mt-4 max-w-2xl text-sm font-medium leading-6 text-white/75 sm:mt-5 sm:text-lg sm:leading-7">
+                            Chamu compares your saved term marks with university APS, aggregate, and subject rules so the next move is easier to choose.
+                        </p>
+
+                        <div class="mt-6 grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-white/15 bg-white/15 sm:mt-8 sm:grid-cols-4">
+                            <div class="bg-white/5 p-4 backdrop-blur">
+                                <p class="text-xs font-black uppercase text-white/55">APS score</p>
+                                <p class="mt-2 text-2xl font-black">{{ $apsTotal }}</p>
+                            </div>
+                            <div class="bg-white/5 p-4 backdrop-blur">
+                                <p class="text-xs font-black uppercase text-white/55">Average</p>
+                                <p class="mt-2 text-2xl font-black">{{ $averageMark ? number_format($averageMark, 1) : '0.0' }}%</p>
+                            </div>
+                            <div class="bg-white/5 p-4 backdrop-blur">
+                                <p class="text-xs font-black uppercase text-white/55">Matched</p>
+                                <p class="mt-2 text-2xl font-black">{{ $matchedCount }}</p>
+                            </div>
+                            <div class="bg-white/5 p-4 backdrop-blur">
+                                <p class="text-xs font-black uppercase text-white/55">Visible</p>
+                                <p class="mt-2 text-2xl font-black">{{ $visibleMatchesCount }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden rounded-lg border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur lg:block">
+                        <div class="flex items-center justify-between gap-4">
+                            <div>
+                                <p class="text-xs font-bold uppercase text-white/55">Current match</p>
+                                <p class="mt-2 text-lg font-black">{{ $activeFilterSummary ?: 'All programmes' }}</p>
+                            </div>
+                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-sky-300 text-[#07111f]">
+                                <i data-lucide="sparkles" style="width:22px;height:22px;"></i>
+                            </span>
+                        </div>
+                        <div class="mt-5 space-y-3 border-t border-white/15 pt-5">
+                            <div class="flex items-center justify-between gap-4 text-sm">
+                                <span class="font-semibold text-white/65">Marks term</span>
+                                <span class="font-black">{{ $selectedTerm?->name ?? 'No term' }}</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-4 text-sm">
+                                <span class="font-semibold text-white/65">Programmes checked</span>
+                                <span class="font-black">{{ number_format($totalMatchesBeforeFilters) }}</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex gap-2">
+                            <a href="{{ route('marks.index') }}" class="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-white px-3 py-2 text-sm font-black text-[#01225E] hover:bg-white/90">
+                                Marks <i data-lucide="line-chart" style="width:15px;height:15px;"></i>
+                            </a>
+                            <a href="{{ route('dashboard.index') }}" class="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-white/25 px-3 py-2 text-sm font-black text-white hover:bg-white/10">
+                                Dashboard <i data-lucide="home" style="width:15px;height:15px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form method="GET" action="{{ route('course-match.index') }}#match-results" class="mt-6 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)] sm:mt-8">
+                    <input type="hidden" name="page" value="1">
+                    <div class="grid gap-2 lg:grid-cols-4">
                 <div>
                     <label for="term_id" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
                         <i data-lucide="calendar-days" style="width:14px;height:14px;"></i>
@@ -84,7 +168,9 @@
                     <div class="absolute left-0 right-0 z-30 mt-2 hidden max-h-72 overflow-y-auto rounded-xl border border-neutral-200 bg-white p-1 shadow-xl" data-combobox-list>
                         <button type="button" class="w-full rounded-lg px-3 py-2 text-left text-sm font-semibold hover:bg-neutral-50" data-combobox-option data-value="" data-label="All universities">All universities</button>
                         @foreach ($universities as $university)
-                            @php($label = $universityLabel($university))
+                            @php
+                                $label = $universityLabel($university);
+                            @endphp
                             <button type="button" class="w-full rounded-lg px-3 py-2 text-left text-sm font-semibold hover:bg-neutral-50" data-combobox-option data-value="{{ $university->id }}" data-label="{{ $label }}">
                                 {{ $label }}
                             </button>
@@ -183,8 +269,13 @@
                 </div>
             </div>
         </form>
+            </div>
+        </section>
 
-        @if ($results->isEmpty())
+        @include('partials.adsense-home-placement', ['class' => 'mx-auto mt-8 max-w-7xl px-5 lg:px-8'])
+
+        <div id="match-results" class="mx-auto mt-8 scroll-mt-24 max-w-7xl px-5 lg:px-8">
+            @if ($results->isEmpty())
             <section class="rounded-2xl border border-dashed border-neutral-300 bg-white p-8 text-center">
                 <h2 class="text-xl font-bold">Add marks first</h2>
                 <p class="mt-2 text-neutral-500">Course matching needs your term marks so it can calculate APS and compare subject levels.</p>
@@ -302,7 +393,8 @@
                     {{ $matches->onEachSide(1)->links() }}
                 </div>
             @endif
-        @endif
+            @endif
+        </div>
     </main>
 @endsection
 

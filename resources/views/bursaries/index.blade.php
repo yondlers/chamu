@@ -36,7 +36,7 @@
                             Find a bursary that fits your marks and your future.
                         </h1>
                         <p class="mt-5 max-w-2xl text-base font-medium leading-7 text-white/75 sm:text-lg">
-                            Browse {{ number_format($bursaries->total()) }} {{ $opportunityNoun }}, compare academic requirements, and apply through Chamu when email submission is available.
+                            Browse {{ number_format($bursaries->total()) }} {{ $opportunityNoun }}, compare academic requirements, then open details before applying or visiting a provider link.
                         </p>
 
                         <div class="mt-8 grid max-w-2xl grid-cols-3 divide-x divide-white/15 border-y border-white/15 py-4">
@@ -247,18 +247,12 @@
                                 @endif
 
                                 <div class="mt-5 flex flex-wrap gap-2 pl-2">
-                                    <a href="{{ route('bursaries.show', $bursary->id) }}" class="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-black text-neutral-950 hover:bg-neutral-50">
+                                    <a href="{{ route('bursaries.show', $bursary->id) }}" class="inline-flex items-center gap-2 rounded-lg bg-[#01225E] px-4 py-2 text-sm font-black text-white hover:bg-[#001A48]">
                                         Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                     </a>
-                                    @if (($bursary->chamu_apply_enabled ?? false) && in_array($bursary->application_delivery_type ?? null, ['email', 'postal'], true))
-                                        <a href="{{ route('bursaries.show', $bursary->id) }}" class="inline-flex items-center gap-2 rounded-lg bg-[#01225E] px-4 py-2 text-sm font-black text-white hover:bg-[#001A48]">
-                                            Apply with Chamu <i data-lucide="send" style="width:16px;height:16px;"></i>
-                                        </a>
-                                    @else
-                                        <a href="{{ $bursary->apply_url ?: $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-lg bg-[#01225E] px-4 py-2 text-sm font-black text-white hover:bg-[#001A48]">
-                                            Apply link <i data-lucide="external-link" style="width:16px;height:16px;"></i>
-                                        </a>
-                                    @endif
+                                    <span class="inline-flex items-center gap-2 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-2 text-sm font-bold text-neutral-500">
+                                        Review first <i data-lucide="file-search" style="width:16px;height:16px;"></i>
+                                    </span>
                                 </div>
                             </div>
 
