@@ -37,7 +37,7 @@
             </a>
         </section>
 
-        <section class="grid gap-3 md:grid-cols-4">
+        <section class="grid gap-3 md:grid-cols-5">
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Subjects</p>
                 <p class="mt-2 text-3xl font-bold">{{ $selectedSubjects->count() }}</p>
@@ -53,6 +53,83 @@
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Open Quizzes</p>
                 <p class="mt-2 text-3xl font-bold">{{ $pendingQuizzes->count() }}</p>
+            </div>
+            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
+                <p class="text-xs font-bold uppercase text-neutral-500">Applications</p>
+                <p class="mt-2 text-3xl font-bold">{{ $applicationSummary->total }}</p>
+            </div>
+        </section>
+
+        <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Bursary applications</h2>
+                    <p class="mt-1 text-sm text-neutral-500">Receipts, sent applications, postal packs, and documents Chamu has handled for you.</p>
+                </div>
+                <a href="{{ route('applications.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold hover:bg-neutral-50">
+                    View history <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </a>
+            </div>
+
+            <div class="mt-4 grid gap-3 sm:grid-cols-3">
+                <div class="rounded-xl bg-emerald-50 px-4 py-3 text-emerald-900">
+                    <p class="text-xs font-black uppercase tracking-[0.12em]">Sent</p>
+                    <p class="mt-1 text-2xl font-black">{{ $applicationSummary->submitted }}</p>
+                </div>
+                <div class="rounded-xl bg-sky-50 px-4 py-3 text-sky-900">
+                    <p class="text-xs font-black uppercase tracking-[0.12em]">Postal ready</p>
+                    <p class="mt-1 text-2xl font-black">{{ $applicationSummary->postal_ready }}</p>
+                </div>
+                <div class="rounded-xl bg-rose-50 px-4 py-3 text-rose-900">
+                    <p class="text-xs font-black uppercase tracking-[0.12em]">Needs attention</p>
+                    <p class="mt-1 text-2xl font-black">{{ $applicationSummary->failed }}</p>
+                </div>
+            </div>
+
+            <div class="mt-4 space-y-3">
+                @forelse ($recentBursaryApplications as $application)
+                    @php
+                        $statusLabel = match ($application->status) {
+                            'submitted' => 'Sent',
+                            'postal_ready' => 'Postal ready',
+                            'failed' => 'Needs attention',
+                            default => \Illuminate\Support\Str::of($application->status)->replace('_', ' ')->title(),
+                        };
+                        $statusClass = match ($application->status) {
+                            'submitted' => 'bg-emerald-50 text-emerald-800',
+                            'postal_ready' => 'bg-sky-50 text-sky-800',
+                            'failed' => 'bg-rose-50 text-rose-800',
+                            default => 'bg-neutral-100 text-neutral-700',
+                        };
+                        $applicationDate = $application->submitted_at ?? $application->created_at;
+                    @endphp
+                    <a href="{{ route('bursaries.show', $application->bursary_id) }}" class="block rounded-xl border border-neutral-200 px-4 py-3 hover:bg-neutral-50">
+                        <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                            <div>
+                                <p class="font-bold">{{ $application->bursary_title }}</p>
+                                <p class="mt-1 text-sm font-semibold text-neutral-500">{{ $application->company_name ?? 'Bursary provider' }}</p>
+                                <p class="mt-2 text-xs font-bold text-neutral-500">
+                                    {{ (int) $application->documents_count }} {{ \Illuminate\Support\Str::plural('document', (int) $application->documents_count) }}
+                                    @if ($application->receipt_sent_at)
+                                        · receipt emailed
+                                    @endif
+                                </p>
+                            </div>
+                            <div class="flex shrink-0 flex-col gap-2 sm:items-end">
+                                <span class="inline-flex rounded-full px-3 py-1 text-xs font-black {{ $statusClass }}">{{ $statusLabel }}</span>
+                                <span class="text-xs font-bold text-neutral-500">{{ $applicationDate ? \Illuminate\Support\Carbon::parse($applicationDate)->format('d M Y') : 'Not dated' }}</span>
+                            </div>
+                        </div>
+                    </a>
+                @empty
+                    <div class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-6 text-center">
+                        <p class="font-bold">No bursary applications yet</p>
+                        <p class="mt-1 text-sm text-neutral-500">When you apply with Chamu, your application and receipt trail will appear here.</p>
+                        <a href="{{ route('bursaries.index') }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
+                            Browse funding <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                        </a>
+                    </div>
+                @endforelse
             </div>
         </section>
 

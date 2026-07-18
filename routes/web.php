@@ -2253,6 +2253,13 @@ Route::middleware('auth')->group(function () {
         $results = collect();
         $pendingQuizzes = collect();
         $recentAttempts = collect();
+        $recentBursaryApplications = collect();
+        $applicationSummary = (object) [
+            'total' => 0,
+            'submitted' => 0,
+            'postal_ready' => 0,
+            'failed' => 0,
+        ];
 
         if ($user->grade_id !== null) {
             $selectedSubjects = DB::table('user_subject_preferences')
@@ -2358,6 +2365,48 @@ Route::middleware('auth')->group(function () {
             ->limit(4)
             ->get();
 
+        if (Schema::hasTable('bursary_applications')) {
+            $summary = DB::table('bursary_applications')
+                ->where('user_id', $user->id)
+                ->selectRaw('count(*) as total')
+                ->selectRaw("sum(case when status = 'submitted' then 1 else 0 end) as submitted")
+                ->selectRaw("sum(case when status = 'postal_ready' then 1 else 0 end) as postal_ready")
+                ->selectRaw("sum(case when status = 'failed' then 1 else 0 end) as failed")
+                ->first();
+
+            $applicationSummary = (object) [
+                'total' => (int) ($summary->total ?? 0),
+                'submitted' => (int) ($summary->submitted ?? 0),
+                'postal_ready' => (int) ($summary->postal_ready ?? 0),
+                'failed' => (int) ($summary->failed ?? 0),
+            ];
+
+            $recentBursaryApplications = DB::table('bursary_applications')
+                ->leftJoin('bursaries', 'bursaries.id', '=', 'bursary_applications.bursary_id')
+                ->leftJoin('companies', 'companies.id', '=', 'bursaries.company_id')
+                ->where('bursary_applications.user_id', $user->id)
+                ->select(
+                    'bursary_applications.id',
+                    'bursary_applications.status',
+                    'bursary_applications.delivery_type',
+                    'bursary_applications.submitted_at',
+                    'bursary_applications.receipt_sent_at',
+                    'bursary_applications.created_at',
+                    'bursaries.id as bursary_id',
+                    'bursaries.title as bursary_title',
+                    'companies.name as company_name',
+                )
+                ->selectSub(function ($query) {
+                    $query
+                        ->from('bursary_application_documents')
+                        ->selectRaw('count(*)')
+                        ->whereColumn('bursary_application_documents.bursary_application_id', 'bursary_applications.id');
+                }, 'documents_count')
+                ->latest('bursary_applications.created_at')
+                ->limit(5)
+                ->get();
+        }
+
         return view('dashboard.index', [
             'user' => $user,
             'selectedSubjects' => $selectedSubjects,
@@ -2368,8 +2417,47 @@ Route::middleware('auth')->group(function () {
             'apsProgress' => $apsProgress,
             'pendingQuizzes' => $pendingQuizzes,
             'recentAttempts' => $recentAttempts,
+            'applicationSummary' => $applicationSummary,
+            'recentBursaryApplications' => $recentBursaryApplications,
         ]);
     })->name('dashboard.index');
+
+    Route::get('/applications', function (Request $request) {
+        abort_unless(Schema::hasTable('bursary_applications'), 404);
+
+        $applications = DB::table('bursary_applications')
+            ->leftJoin('bursaries', 'bursaries.id', '=', 'bursary_applications.bursary_id')
+            ->leftJoin('companies', 'companies.id', '=', 'bursaries.company_id')
+            ->where('bursary_applications.user_id', $request->user()->id)
+            ->select(
+                'bursary_applications.id',
+                'bursary_applications.status',
+                'bursary_applications.delivery_type',
+                'bursary_applications.provider_email',
+                'bursary_applications.provider_postal_address',
+                'bursary_applications.applicant_email',
+                'bursary_applications.submitted_at',
+                'bursary_applications.receipt_sent_at',
+                'bursary_applications.created_at',
+                'bursaries.id as bursary_id',
+                'bursaries.title as bursary_title',
+                'bursaries.closing_date_label',
+                'companies.name as company_name',
+            )
+            ->selectSub(function ($query) {
+                $query
+                    ->from('bursary_application_documents')
+                    ->selectRaw('count(*)')
+                    ->whereColumn('bursary_application_documents.bursary_application_id', 'bursary_applications.id');
+            }, 'documents_count')
+            ->latest('bursary_applications.created_at')
+            ->paginate(10)
+            ->withQueryString();
+
+        return view('applications.index', [
+            'applications' => $applications,
+        ]);
+    })->name('applications.index');
 
     Route::get('/profile', function (Request $request) {
         $user = $request->user();

@@ -60,6 +60,12 @@
                 'icon' => 'home',
                 'active' => request()->routeIs('dashboard.index'),
             ],
+            [
+                'label' => 'Applications',
+                'href' => route('applications.index'),
+                'icon' => 'folder-check',
+                'active' => request()->routeIs('applications.*'),
+            ],
         ];
     @endphp
 
