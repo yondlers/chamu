@@ -2,8 +2,10 @@
 
 namespace Tests\Feature;
 
+use App\Mail\WelcomeToChamu;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class RegisterTest extends TestCase
@@ -42,6 +44,8 @@ class RegisterTest extends TestCase
 
     public function test_new_user_can_register_and_is_redirected_to_subject_setup(): void
     {
+        Mail::fake();
+
         $lookups = $this->createSignupLookups();
 
         $response = $this->post(route('register.store'), [
@@ -70,10 +74,18 @@ class RegisterTest extends TestCase
             'curriculum_id' => $lookups['curriculum_id'],
             'grade_id' => $lookups['grade_id'],
         ]);
+
+        Mail::assertSent(WelcomeToChamu::class, function (WelcomeToChamu $mail): bool {
+            return $mail->hasTo('learner@example.com')
+                && $mail->firstName === 'Test'
+                && $mail->accountType === 'pupil';
+        });
     }
 
     public function test_university_student_can_register_without_high_school_grade(): void
     {
+        Mail::fake();
+
         $lookups = $this->createSignupLookups();
 
         $response = $this->post(route('register.store'), [
@@ -97,6 +109,45 @@ class RegisterTest extends TestCase
             'curriculum_id' => null,
             'grade_id' => null,
         ]);
+
+        Mail::assertSent(WelcomeToChamu::class, function (WelcomeToChamu $mail): bool {
+            return $mail->hasTo('student@example.com')
+                && $mail->firstName === 'Tertiary'
+                && $mail->accountType === 'student';
+        });
+
+        $html = (new WelcomeToChamu('Tertiary', 'student'))->render();
+
+        $this->assertStringContainsString('find bursaries', $html);
+        $this->assertStringContainsString('Apply with Chamu', $html);
+        $this->assertStringContainsString('Track your history', $html);
+    }
+
+    public function test_welcome_email_test_command_sends_template_to_requested_address(): void
+    {
+        Mail::fake();
+
+        $this->artisan('mail:test-welcome', [
+            'email' => 'yondlers@example.com',
+            '--first-name' => 'Yondlers',
+            '--account-type' => 'student',
+        ])
+            ->expectsOutput('Sent student welcome email to yondlers@example.com.')
+            ->assertExitCode(0);
+
+        Mail::assertSent(WelcomeToChamu::class, function (WelcomeToChamu $mail): bool {
+            return $mail->hasTo('yondlers@example.com')
+                && $mail->firstName === 'Yondlers'
+                && $mail->accountType === 'student';
+        });
+
+        $html = (new WelcomeToChamu('Yondlers', 'pupil'))->render();
+
+        $this->assertStringContainsString('Welcome to Chamu, Yondlers!', $html);
+        $this->assertStringContainsString('Explore funding', $html);
+        $this->assertStringContainsString('bursaries before applications get busy', $html);
+        $this->assertStringNotContainsString('welcome-to-chamu.png', $html);
+        $this->assertStringNotContainsString('<img', $html);
     }
 
     /**

@@ -4,6 +4,7 @@ use App\Http\Controllers\BursaryApplicationController;
 use App\Http\Controllers\Public\QualificationController as PublicQualificationController;
 use App\Http\Controllers\Public\UniversityController as PublicUniversityController;
 use App\Http\Controllers\SitemapController;
+use App\Mail\WelcomeToChamu;
 use App\Models\AuditLog;
 use App\Models\Bursary;
 use App\Models\BursaryDocumentRequirement;
@@ -15,6 +16,7 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
@@ -1063,6 +1065,12 @@ Route::middleware('guest')->group(function () {
             'password' => Hash::make($data['password']),
             'last_login_at' => now(),
         ]);
+
+        try {
+            Mail::to($user->email)->send(new WelcomeToChamu($user->first_name ?: $user->name, $userType->name));
+        } catch (\Throwable $exception) {
+            report($exception);
+        }
 
         Auth::login($user);
         $request->session()->regenerate();
