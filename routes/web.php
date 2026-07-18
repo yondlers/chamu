@@ -1805,6 +1805,7 @@ Route::get('/bursaries', function (Request $request) {
     $search = trim((string) $request->query('search', ''));
     $category = trim((string) $request->query('category', ''));
     $companyId = $request->integer('company_id') ?: null;
+    $today = now()->toDateString();
 
     $companies = DB::table('companies')
         ->join('bursaries', 'bursaries.company_id', '=', 'companies.id')
@@ -2100,8 +2101,11 @@ Route::get('/bursaries', function (Request $request) {
                     ->orWhere('companies.name', 'like', '%'.$search.'%');
             });
         })
-        ->orderByRaw('case when bursaries.closing_date is null then 1 else 0 end')
-        ->orderBy('bursaries.closing_date')
+        ->orderByRaw(
+            'case when bursaries.closing_date >= ? then 0 when bursaries.closing_date is null then 1 else 2 end',
+            [$today],
+        )
+        ->orderByDesc('bursaries.closing_date')
         ->orderBy('bursaries.title')
         ->paginate(12)
         ->withQueryString()
