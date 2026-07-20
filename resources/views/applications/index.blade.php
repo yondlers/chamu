@@ -73,10 +73,21 @@
                             <p class="text-xs font-black uppercase tracking-[0.12em] text-neutral-500">Where it went</p>
                             @if ($application->delivery_type === 'postal')
                                 <p class="mt-2 text-sm font-semibold text-neutral-800">{{ $application->provider_postal_address ?: 'Postal destination saved with bursary.' }}</p>
-                                <p class="mt-2 text-xs text-neutral-500">Chamu has prepared the postal pack trail for this application.</p>
+                                <p class="mt-2 text-xs text-neutral-500">Chamu prepared a postal pack. Print and submit it yourself.</p>
                             @else
                                 <p class="mt-2 text-sm font-semibold text-neutral-800">{{ $application->provider_email ?: 'Provider email saved with bursary.' }}</p>
                                 <p class="mt-2 text-xs text-neutral-500">The student email is kept as Reply-To on Chamu-managed submissions.</p>
+                            @endif
+
+                            @if ($application->delivery_type === 'postal')
+                                <a href="{{ route('applications.postal-pack', $application->id) }}" target="_blank" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-black text-white hover:bg-[#001A48]">
+                                    Print postal pack <i data-lucide="printer" style="width:16px;height:16px;"></i>
+                                </a>
+                                @if ($application->source_url)
+                                    <a href="{{ $application->source_url }}" target="_blank" rel="noreferrer" class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-neutral-700 ring-1 ring-neutral-200 hover:bg-neutral-100">
+                                        Source instructions <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+                                    </a>
+                                @endif
                             @endif
 
                             <a href="{{ route('bursaries.show', $application->bursary_id) }}" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-[#01225E] ring-1 ring-neutral-200 hover:bg-neutral-100">

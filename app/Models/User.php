@@ -7,6 +7,7 @@ use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -117,6 +118,16 @@ class User extends Authenticatable
     public function bursaryApplications(): HasMany
     {
         return $this->hasMany(BursaryApplication::class, 'user_id');
+    }
+
+    public function applicationProfile(): HasOne
+    {
+        return $this->hasOne(UserApplicationProfile::class, 'user_id');
+    }
+
+    public function applicationDocuments(): HasMany
+    {
+        return $this->hasMany(UserApplicationDocument::class, 'user_id');
     }
 
     public function userType(): BelongsTo

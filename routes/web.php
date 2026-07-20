@@ -10,6 +10,8 @@ use App\Models\Bursary;
 use App\Models\BursaryDocumentRequirement;
 use App\Models\SiteVisit;
 use App\Models\User;
+use App\Models\UserApplicationDocument;
+use App\Models\UserApplicationProfile;
 use App\Models\UserSubjectResult;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -19,6 +21,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
 
@@ -2182,6 +2186,8 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
     }
 
     $latestApplication = null;
+    $applicationProfile = null;
+    $savedApplicationDocuments = collect();
 
     if ($request->user() !== null && Schema::hasTable('bursary_applications')) {
         $latestApplication = DB::table('bursary_applications')
@@ -2191,11 +2197,25 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
             ->first();
     }
 
+    if ($request->user() !== null && Schema::hasTable('user_application_profiles') && Schema::hasTable('user_application_documents')) {
+        $applicationProfile = DB::table('user_application_profiles')
+            ->where('user_id', $request->user()->id)
+            ->first();
+
+        $savedApplicationDocuments = DB::table('user_application_documents')
+            ->where('user_id', $request->user()->id)
+            ->orderByDesc('created_at')
+            ->get()
+            ->groupBy('document_key');
+    }
+
     return view('bursaries.show', [
         'bursary' => $bursary,
         'requirements' => $requirements,
         'documentRequirements' => $documentRequirements,
         'latestApplication' => $latestApplication,
+        'applicationProfile' => $applicationProfile,
+        'savedApplicationDocuments' => $savedApplicationDocuments,
         'isChamuHandled' => $applicationTablesReady && (
             ($isEmailSubmission && $hasValidProviderEmail)
             || $isPostalSubmission
@@ -2449,6 +2469,7 @@ Route::middleware('auth')->group(function () {
                 'bursary_applications.created_at',
                 'bursaries.id as bursary_id',
                 'bursaries.title as bursary_title',
+                'bursaries.source_url',
                 'bursaries.closing_date_label',
                 'companies.name as company_name',
             )
@@ -2466,6 +2487,42 @@ Route::middleware('auth')->group(function () {
             'applications' => $applications,
         ]);
     })->name('applications.index');
+
+    Route::get('/applications/{application}/postal-pack', function (Request $request, int $application) {
+        abort_unless(Schema::hasTable('bursary_applications') && Schema::hasTable('bursary_application_documents'), 404);
+
+        $application = DB::table('bursary_applications')
+            ->leftJoin('bursaries', 'bursaries.id', '=', 'bursary_applications.bursary_id')
+            ->leftJoin('companies', 'companies.id', '=', 'bursaries.company_id')
+            ->where('bursary_applications.id', $application)
+            ->where('bursary_applications.user_id', $request->user()->id)
+            ->where('bursary_applications.delivery_type', 'postal')
+            ->select(
+                'bursary_applications.*',
+                'bursaries.title as bursary_title',
+                'bursaries.source_url',
+                'bursaries.closing_date_label',
+                'companies.name as company_name',
+            )
+            ->first();
+
+        abort_if($application === null, 404);
+
+        $documents = DB::table('bursary_application_documents')
+            ->leftJoin('bursary_document_requirements', 'bursary_document_requirements.id', '=', 'bursary_application_documents.bursary_document_requirement_id')
+            ->where('bursary_application_documents.bursary_application_id', $application->id)
+            ->select(
+                'bursary_application_documents.*',
+                'bursary_document_requirements.label as requirement_label',
+            )
+            ->orderBy('bursary_application_documents.id')
+            ->get();
+
+        return view('applications.postal-pack', [
+            'application' => $application,
+            'documents' => $documents,
+        ]);
+    })->name('applications.postal-pack');
 
     Route::get('/profile', function (Request $request) {
         $user = $request->user();
@@ -2547,6 +2604,170 @@ Route::middleware('auth')->group(function () {
             ->route('profile.edit')
             ->with('status', 'Profile updated.');
     })->name('profile.update');
+
+    Route::get('/profile/application', function (Request $request) {
+        abort_unless(
+            Schema::hasTable('user_application_profiles') && Schema::hasTable('user_application_documents'),
+            404
+        );
+
+        $user = $request->user();
+        $applicationProfile = UserApplicationProfile::firstOrNew(['user_id' => $user->id]);
+        $documentDefinitions = UserApplicationDocument::definitions();
+        $savedDocuments = UserApplicationDocument::query()
+            ->where('user_id', $user->id)
+            ->latest()
+            ->get()
+            ->groupBy('document_key');
+
+        return view('profile.application', [
+            'user' => $user,
+            'applicationProfile' => $applicationProfile,
+            'documentDefinitions' => $documentDefinitions,
+            'savedDocuments' => $savedDocuments,
+        ]);
+    })->name('profile.application');
+
+    Route::put('/profile/application', function (Request $request) {
+        abort_unless(
+            Schema::hasTable('user_application_profiles') && Schema::hasTable('user_application_documents'),
+            404
+        );
+
+        $user = $request->user();
+        $documentDefinitions = UserApplicationDocument::definitions();
+        $documentKeys = $documentDefinitions->pluck('key')->all();
+        $academicDocumentKeys = $documentDefinitions
+            ->where('requirement_group', 'academic_record')
+            ->pluck('key')
+            ->all();
+        $existingDocuments = UserApplicationDocument::query()
+            ->where('user_id', $user->id)
+            ->get()
+            ->groupBy('document_key');
+
+        $normaliseFiles = function (mixed $files): array {
+            if ($files instanceof \Illuminate\Http\UploadedFile) {
+                return [$files];
+            }
+
+            if (! is_array($files)) {
+                return [];
+            }
+
+            return collect($files)
+                ->filter(fn ($file): bool => $file instanceof \Illuminate\Http\UploadedFile)
+                ->values()
+                ->all();
+        };
+
+        $hasNewDocument = fn (string $key): bool => collect($normaliseFiles($request->file("documents.{$key}")))
+            ->contains(fn ($file): bool => $file->isValid());
+
+        $validator = Validator::make($request->all(), [
+            'applicant_phone' => ['nullable', 'string', 'max:40'],
+            'applicant_postal_address' => ['nullable', 'string', 'max:1200'],
+            'study_level' => ['nullable', 'string', 'max:80'],
+            'institution' => ['nullable', 'string', 'max:255'],
+            'qualification' => ['nullable', 'string', 'max:255'],
+            'current_year' => ['nullable', 'string', 'max:80'],
+            'funding_need' => ['nullable', 'string', 'max:1200'],
+            'household_income' => ['nullable', 'string', 'max:255'],
+            'sassa_recipient' => ['nullable', 'boolean'],
+            'special_circumstances' => ['nullable', 'array'],
+            'special_circumstances.*' => ['string', 'in:disability,vulnerable_child'],
+            'documents' => ['nullable', 'array'],
+            'documents.*' => ['nullable', 'array'],
+            'documents.*.*' => ['file', 'mimes:pdf,jpg,jpeg,png,doc,docx', 'max:10240'],
+        ], [
+            'documents.*.*.mimes' => 'Documents must be PDF, JPG, PNG, DOC, or DOCX files.',
+            'documents.*.*.max' => 'Each document may not be larger than 10MB.',
+        ]);
+
+        $validator->after(function ($validator) use ($academicDocumentKeys, $documentDefinitions, $existingDocuments, $hasNewDocument): void {
+            $documentDefinitions
+                ->where('is_required', true)
+                ->each(function ($definition) use ($existingDocuments, $hasNewDocument, $validator): void {
+                    if ($existingDocuments->get($definition->key, collect())->isEmpty() && ! $hasNewDocument($definition->key)) {
+                        $validator->errors()->add("documents.{$definition->key}", $definition->label.' is required.');
+                    }
+                });
+
+            $hasAcademicDocument = collect($academicDocumentKeys)->contains(function (string $key) use ($existingDocuments, $hasNewDocument): bool {
+                return $existingDocuments->get($key, collect())->isNotEmpty() || $hasNewDocument($key);
+            });
+
+            if (! $hasAcademicDocument) {
+                $validator->errors()->add('documents.academic_record', 'Upload at least one academic record, transcript, Grade 12 marks, Grade 11 marks, or matric certificate.');
+            }
+        });
+
+        $data = $validator->validate();
+
+        UserApplicationProfile::updateOrCreate(
+            ['user_id' => $user->id],
+            [
+                'applicant_phone' => $data['applicant_phone'] ?? null,
+                'applicant_postal_address' => $data['applicant_postal_address'] ?? null,
+                'study_level' => $data['study_level'] ?? null,
+                'institution' => $data['institution'] ?? null,
+                'qualification' => $data['qualification'] ?? null,
+                'current_year' => $data['current_year'] ?? null,
+                'funding_need' => $data['funding_need'] ?? null,
+                'household_income' => $data['household_income'] ?? null,
+                'sassa_recipient' => (bool) ($data['sassa_recipient'] ?? false),
+                'special_circumstances' => array_values($data['special_circumstances'] ?? []),
+            ]
+        );
+
+        $definitionsByKey = $documentDefinitions->keyBy('key');
+
+        foreach ((array) $request->file('documents', []) as $documentKey => $files) {
+            if (! in_array($documentKey, $documentKeys, true)) {
+                continue;
+            }
+
+            $definition = $definitionsByKey->get($documentKey);
+            $uploadedFiles = $normaliseFiles($files);
+
+            if ($uploadedFiles === []) {
+                continue;
+            }
+
+            if (! $definition->accepts_multiple) {
+                UserApplicationDocument::query()
+                    ->where('user_id', $user->id)
+                    ->where('document_key', $documentKey)
+                    ->get()
+                    ->each(function (UserApplicationDocument $document): void {
+                        Storage::disk($document->storage_disk)->delete($document->path);
+                        $document->delete();
+                    });
+            }
+
+            foreach ($uploadedFiles as $file) {
+                $basename = Str::slug(pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)) ?: $documentKey;
+                $extension = $file->getClientOriginalExtension();
+                $filename = $documentKey.'-'.$basename.'-'.Str::random(8).($extension ? '.'.$extension : '');
+                $path = $file->storeAs('application-profiles/'.$user->id, $filename, 'local');
+
+                UserApplicationDocument::create([
+                    'user_id' => $user->id,
+                    'document_key' => $documentKey,
+                    'label' => $definition->label,
+                    'original_name' => $file->getClientOriginalName(),
+                    'storage_disk' => 'local',
+                    'path' => $path,
+                    'mime_type' => $file->getMimeType(),
+                    'size' => $file->getSize(),
+                ]);
+            }
+        }
+
+        return redirect()
+            ->route('profile.application')
+            ->with('status', 'Application profile saved.');
+    })->name('profile.application.update');
 
     Route::get('/subjects', function (Request $request) {
         $user = $request->user();

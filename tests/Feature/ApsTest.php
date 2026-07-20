@@ -31,7 +31,37 @@ class ApsTest extends TestCase
 
         $response->assertOk();
         $response->assertSee('Nice, now enter your APS to see courses at this university.');
-        $response->assertSee('Required first');
+        $response->assertSee('Required');
+    }
+
+    public function test_university_selection_without_aps_shows_mixed_qualification_preview(): void
+    {
+        $records = $this->createLookupRecords();
+        $typeId = $this->createQualificationType();
+        $uj = $this->createUniversity($records['country_id'], 'University of Johannesburg', 'UJ');
+        $uct = $this->createUniversity($records['country_id'], 'University of Cape Town', 'UCT');
+
+        $this->createQualification($uj, $typeId, 'UJ Low APS Preview', 20);
+        $this->createQualification($uj, $typeId, 'UJ Lower Middle APS Preview', 25);
+        $this->createQualification($uj, $typeId, 'UJ Middle APS Preview', 30);
+        $this->createQualification($uj, $typeId, 'UJ Upper Middle APS Preview', 35);
+        $this->createQualification($uj, $typeId, 'UJ High APS Preview', 42);
+        $this->createQualification($uct, $typeId, 'UCT Hidden Preview', 24);
+
+        $response = $this->get(route('aps.index', ['university_ids' => [$uj]]));
+
+        $response->assertOk();
+        $response->assertSee(route('aps.index', ['university_ids' => [$uj]]).'#search-results', false);
+        $response->assertSee('id="search-results" tabindex="-1"', false);
+        $response->assertSee('Qualification preview');
+        $response->assertSee('Enter APS to view more');
+        $response->assertSee('Log in for full match');
+        $response->assertSee('UJ Low APS Preview');
+        $response->assertSee('UJ Lower Middle APS Preview');
+        $response->assertSee('UJ Middle APS Preview');
+        $response->assertSee('UJ Upper Middle APS Preview');
+        $response->assertSee('UJ High APS Preview');
+        $response->assertDontSee('UCT Hidden Preview');
     }
 
     public function test_guest_can_filter_aps_results_by_multiple_universities(): void

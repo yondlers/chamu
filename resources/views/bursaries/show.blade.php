@@ -13,7 +13,37 @@
         $canApplyWithChamu = $isChamuHandled && $documentRequirements->isNotEmpty();
         $applicationDeliveryLabel = $isPostalSubmission ? 'postal submission' : 'email submission';
         $latestDeliveryType = $latestApplication->delivery_type ?? ($isPostalSubmission ? 'postal' : 'email');
+        $applicationActionLabel = $isPostalSubmission ? 'Apply with Postal' : 'Apply with Chamu';
+        $applicationActionIcon = $isPostalSubmission ? 'package-check' : 'send';
+        $applicationBadgeLabel = $isPostalSubmission ? 'Postal required' : 'Chamu application';
+        $applicationPanelLabel = $isPostalSubmission
+            ? 'Postal submission required'
+            : ($isChamuHandled ? 'Chamu-managed '.$applicationDeliveryLabel : 'Provider application');
+        $applicationModalTitle = $isPostalSubmission ? 'Apply with Postal' : 'Apply with Chamu';
+        $applicationModalIntro = $isPostalSubmission
+            ? 'This bursary requires postal or hand-delivery submission. Chamu prepares the pack; you still need to print and submit it.'
+            : 'Review your details before Chamu sends the application.';
         $academicDocumentKeys = ['academic_transcript', 'grade_12_marks', 'grade_11_marks', 'matric_certificate'];
+        $applicationProfile = $applicationProfile ?? null;
+        $savedApplicationDocuments = $savedApplicationDocuments ?? collect();
+        $profileSpecialCircumstances = $applicationProfile->special_circumstances ?? [];
+
+        if (is_string($profileSpecialCircumstances)) {
+            $profileSpecialCircumstances = json_decode($profileSpecialCircumstances, true) ?: [];
+        }
+
+        $profileDocumentCount = $savedApplicationDocuments->flatten(1)->count();
+        $requiredDocumentKeys = $documentRequirements
+            ->where('is_required', true)
+            ->whereNull('requirement_group')
+            ->pluck('key')
+            ->values()
+            ->all();
+        $documentRequirementKeys = $documentRequirements->pluck('key')->values()->all();
+        $extraSavedApplicationDocuments = $savedApplicationDocuments
+            ->reject(fn ($documents, $key) => in_array($key, $documentRequirementKeys, true))
+            ->flatten(1);
+        $documentLabelsByKey = $documentRequirements->pluck('label', 'key')->all();
         $submittedApplication = $latestApplication && in_array($latestApplication->status, ['submitted', 'postal_ready'], true);
         $companyName = $bursary->company_name ?? 'Bursary provider';
         $fundingRows = collect([
@@ -49,7 +79,7 @@
                     </h1>
                     <p class="mt-2 text-sm font-semibold text-emerald-800">
                         @if ($latestDeliveryType === 'postal')
-                            Chamu saved the postal application pack and sent your receipt to {{ auth()->user()?->email ?? 'your email address' }}.
+                            Chamu prepared your postal pack and sent your receipt to {{ auth()->user()?->email ?? 'your email address' }}. You still need to print and submit it to the provider.
                         @else
                             Chamu emailed the bursary provider and sent your receipt to {{ auth()->user()?->email ?? 'your email address' }}.
                         @endif
@@ -61,6 +91,18 @@
                             <span class="inline-flex items-center gap-2"><i data-lucide="building-2" style="width:16px;height:16px;"></i>{{ $companyName }}</span>
                             <span class="inline-flex items-center gap-2"><i data-lucide="{{ $latestDeliveryType === 'postal' ? 'package-check' : 'mail-check' }}" style="width:16px;height:16px;"></i>Receipt sent</span>
                         </div>
+                        @if ($latestDeliveryType === 'postal' && $latestApplication)
+                            <div class="mt-4 flex flex-col gap-2 sm:flex-row">
+                                <a href="{{ route('applications.postal-pack', $latestApplication->id) }}" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-black text-white hover:bg-[#001A48]">
+                                    Print postal pack <i data-lucide="printer" style="width:16px;height:16px;"></i>
+                                </a>
+                                @if ($bursary->source_url)
+                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-200 px-4 py-2.5 text-sm font-black text-emerald-800 hover:bg-emerald-50">
+                                        Source instructions <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+                                    </a>
+                                @endif
+                            </div>
+                        @endif
                     </div>
                 </div>
             </section>
@@ -88,7 +130,7 @@
                                 </span>
                                 @if ($isChamuHandled)
                                     <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-emerald-800">
-                                        <i data-lucide="shield-check" style="width:14px;height:14px;"></i>Chamu application
+                                        <i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'shield-check' }}" style="width:14px;height:14px;"></i>{{ $applicationBadgeLabel }}
                                     </span>
                                 @endif
                             </div>
@@ -110,7 +152,7 @@
                         </div>
                         <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                             <dt class="text-xs font-black uppercase tracking-[0.14em] text-neutral-500">Application</dt>
-                            <dd class="mt-1 text-sm font-black">{{ $isChamuHandled ? 'Handled by Chamu' : 'See provider' }}</dd>
+                            <dd class="mt-1 text-sm font-black">{{ $applicationPanelLabel }}</dd>
                         </div>
                     </dl>
                 </article>
@@ -184,7 +226,7 @@
                             <h2 class="text-xl font-black">Supporting documents</h2>
                             @if ($isChamuHandled)
                             <p class="mt-1 text-sm font-semibold text-neutral-500">
-                                {{ $isPostalSubmission ? 'These are the files Chamu will include in your postal application pack.' : 'These are the files Chamu will attach to your bursary application.' }}
+                                {{ $isPostalSubmission ? 'These are the files Chamu will prepare into your postal pack for printing.' : 'These are the files Chamu will attach to your bursary application.' }}
                             </p>
                             @endif
                         </div>
@@ -234,17 +276,17 @@
                     <div class="mt-5 space-y-3 border-y border-neutral-200 py-5 text-sm font-semibold text-neutral-700">
                         <p class="flex items-center gap-2"><i data-lucide="calendar-days" style="width:16px;height:16px;"></i>{{ $bursary->closing_date_label ?? 'Closing date not listed' }}</p>
                         <p class="flex items-center gap-2"><i data-lucide="folder-check" style="width:16px;height:16px;"></i>{{ $documentRequirements->count() }} document checks</p>
-                        <p class="flex items-center gap-2"><i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'mail-check' }}" style="width:16px;height:16px;"></i>{{ $isChamuHandled ? 'Chamu-managed '.$applicationDeliveryLabel : 'Provider application' }}</p>
+                        <p class="flex items-center gap-2"><i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'mail-check' }}" style="width:16px;height:16px;"></i>{{ $applicationPanelLabel }}</p>
                     </div>
 
                     @if ($canApplyWithChamu)
                         @auth
                             <button type="button" data-open-apply-modal class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 text-sm font-black text-white shadow-[0_14px_30px_rgba(1,34,94,0.22)] hover:bg-[#001A48]">
-                                Apply with Chamu <i data-lucide="send" style="width:18px;height:18px;"></i>
+                                {{ $applicationActionLabel }} <i data-lucide="{{ $applicationActionIcon }}" style="width:18px;height:18px;"></i>
                             </button>
                         @else
                             <a href="{{ route('login') }}" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 text-sm font-black text-white shadow-[0_14px_30px_rgba(1,34,94,0.22)] hover:bg-[#001A48]">
-                                Apply with Chamu <i data-lucide="log-in" style="width:18px;height:18px;"></i>
+                                {{ $applicationActionLabel }} <i data-lucide="log-in" style="width:18px;height:18px;"></i>
                             </a>
                             <a href="{{ route('register') }}" class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-sm font-black hover:bg-neutral-50">
                                 Sign up <i data-lucide="user-plus" style="width:18px;height:18px;"></i>
@@ -257,7 +299,7 @@
                     @else
                         @if ($bursary->apply_url)
                             <a href="{{ $bursary->apply_url }}" target="_blank" rel="noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 text-sm font-black text-white hover:bg-[#001A48]">
-                                Apply link <i data-lucide="external-link" style="width:18px;height:18px;"></i>
+                                Apply Link <i data-lucide="external-link" style="width:18px;height:18px;"></i>
                             </a>
                         @endif
                         @if ($bursary->source_url)
@@ -283,9 +325,9 @@
                         <div class="flex items-start justify-between gap-4 border-b border-neutral-200 px-5 py-4">
                             <div>
                                 <p class="text-xs font-black uppercase tracking-[0.14em] text-[#01225E]">{{ $companyName }}</p>
-                                <h2 class="mt-1 text-2xl font-black">Apply with Chamu</h2>
+                                <h2 class="mt-1 text-2xl font-black">{{ $applicationModalTitle }}</h2>
                                 <p class="mt-1 text-sm font-semibold text-neutral-500">
-                                    {{ $isPostalSubmission ? 'Review your details before Chamu prepares the postal application.' : 'Review your details before Chamu sends the application.' }}
+                                    {{ $applicationModalIntro }}
                                 </p>
                             </div>
                             <button type="button" data-close-apply-modal class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-300 hover:bg-neutral-50" aria-label="Close application form">
@@ -300,6 +342,17 @@
                                 <p class="mb-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{{ $message }}</p>
                             @enderror
 
+                            <div class="mb-5 rounded-xl border border-sky-200 bg-sky-50 px-4 py-3 text-sm font-semibold text-sky-900">
+                                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                                    <p>
+                                        {{ $profileDocumentCount > 0 ? $profileDocumentCount.' saved profile document'.($profileDocumentCount === 1 ? '' : 's').' ready to reuse.' : 'Save your ID, CV, and marks once to make future bursary applications faster.' }}
+                                    </p>
+                                    <a href="{{ route('profile.application') }}" class="inline-flex w-fit items-center gap-2 rounded-lg border border-sky-300 bg-white px-3 py-2 text-xs font-black text-[#01225E] hover:bg-sky-100">
+                                        Application profile <i data-lucide="folder-check" style="width:15px;height:15px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+
                             <div class="mb-5 grid gap-2 sm:grid-cols-2">
                                 <div class="rounded-xl border border-[#01225E] bg-blue-50 px-4 py-3">
                                     <p class="text-xs font-black uppercase tracking-[0.14em] text-[#01225E]">Step 1</p>
@@ -307,58 +360,79 @@
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3">
                                     <p class="text-xs font-black uppercase tracking-[0.14em] text-neutral-500">Step 2</p>
-                                    <p class="mt-1 text-sm font-black">Confirm and send</p>
+                                    <p class="mt-1 text-sm font-black">{{ $isPostalSubmission ? 'Print and submit' : 'Confirm and send' }}</p>
                                 </div>
                             </div>
 
                             <section data-apply-step="details">
                                 <div class="grid gap-4 sm:grid-cols-2">
+                                    @if ($isPostalSubmission)
+                                        <div class="sm:col-span-2 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm font-semibold text-amber-950">
+                                            <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                                                <div>
+                                                    <p class="text-xs font-black uppercase tracking-[0.14em] text-amber-700">Postal submission required</p>
+                                                    <p class="mt-2 leading-6">This bursary does not get emailed by Chamu. We prepare the application pack so you can print and post or hand-deliver it.</p>
+                                                    @if ($providerPostalAddress)
+                                                        <p class="mt-3"><span class="font-black">Provider address:</span><br>{{ $providerPostalAddress }}</p>
+                                                    @endif
+                                                </div>
+                                                @if ($bursary->source_url)
+                                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex w-fit items-center gap-2 rounded-lg border border-amber-300 bg-white px-3 py-2 text-xs font-black text-amber-900 hover:bg-amber-100">
+                                                        Source instructions <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+                                                    </a>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    @endif
                                     <div>
                                         <label for="applicant_phone" class="block text-sm font-bold mb-2">Phone</label>
-                                        <input id="applicant_phone" name="applicant_phone" value="{{ old('applicant_phone') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
+                                        <input id="applicant_phone" name="applicant_phone" value="{{ old('applicant_phone', $applicationProfile->applicant_phone ?? '') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                         @error('applicant_phone') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
                                     <div>
                                         <label for="study_level" class="block text-sm font-bold mb-2">Study level</label>
+                                        @php
+                                            $selectedStudyLevel = old('study_level', $applicationProfile->study_level ?? '');
+                                        @endphp
                                         <select id="study_level" name="study_level" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                             <option value="">Choose level</option>
-                                            <option value="Pupil (High School)" @selected(old('study_level') === 'Pupil (High School)')>Pupil (High School)</option>
-                                            <option value="Student (University/College)" @selected(old('study_level') === 'Student (University/College)')>Student (University/College)</option>
-                                            <option value="Other" @selected(old('study_level') === 'Other')>Other</option>
+                                            <option value="Pupil (High School)" @selected($selectedStudyLevel === 'Pupil (High School)')>Pupil (High School)</option>
+                                            <option value="Student (University/College)" @selected($selectedStudyLevel === 'Student (University/College)')>Student (University/College)</option>
+                                            <option value="Other" @selected($selectedStudyLevel === 'Other')>Other</option>
                                         </select>
                                         @error('study_level') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
                                     <div>
                                         <label for="institution" class="block text-sm font-bold mb-2">Institution</label>
-                                        <input id="institution" name="institution" value="{{ old('institution') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
+                                        <input id="institution" name="institution" value="{{ old('institution', $applicationProfile->institution ?? '') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                         @error('institution') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
                                     <div>
                                         <label for="qualification" class="block text-sm font-bold mb-2">Qualification or field</label>
-                                        <input id="qualification" name="qualification" value="{{ old('qualification') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
+                                        <input id="qualification" name="qualification" value="{{ old('qualification', $applicationProfile->qualification ?? '') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                         @error('qualification') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
                                     <div>
                                         <label for="current_year" class="block text-sm font-bold mb-2">Current year</label>
-                                        <input id="current_year" name="current_year" value="{{ old('current_year') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
+                                        <input id="current_year" name="current_year" value="{{ old('current_year', $applicationProfile->current_year ?? '') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                         @error('current_year') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
                                     @if ($isPostalSubmission)
                                         <div class="sm:col-span-2">
                                             <label for="applicant_postal_address" class="block text-sm font-bold mb-2">Postal or return address</label>
-                                            <textarea id="applicant_postal_address" name="applicant_postal_address" rows="3" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">{{ old('applicant_postal_address') }}</textarea>
-                                            <p class="mt-2 text-xs font-semibold text-neutral-500">Chamu keeps this with your postal application pack so the submission has your correct address details.</p>
+                                            <textarea id="applicant_postal_address" name="applicant_postal_address" rows="3" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">{{ old('applicant_postal_address', $applicationProfile->applicant_postal_address ?? '') }}</textarea>
+                                            <p class="mt-2 text-xs font-semibold text-neutral-500">Chamu adds this to the printable postal pack so the provider has your correct return address details.</p>
                                             @error('applicant_postal_address') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                         </div>
                                     @endif
                                     <div>
                                         <label for="household_income" class="block text-sm font-bold mb-2">Household income context</label>
-                                        <input id="household_income" name="household_income" value="{{ old('household_income') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
+                                        <input id="household_income" name="household_income" value="{{ old('household_income', $applicationProfile->household_income ?? '') }}" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                                         @error('household_income') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
                                     <div class="sm:col-span-2">
                                         <label for="funding_need" class="block text-sm font-bold mb-2">Funding need</label>
-                                        <textarea id="funding_need" name="funding_need" rows="3" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">{{ old('funding_need') }}</textarea>
+                                        <textarea id="funding_need" name="funding_need" rows="3" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">{{ old('funding_need', $applicationProfile->funding_need ?? '') }}</textarea>
                                         @error('funding_need') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </div>
                                 </div>
@@ -367,15 +441,15 @@
                                     <h3 class="text-base font-black">Applicant circumstances</h3>
                                     <div class="mt-3 grid gap-3 sm:grid-cols-3">
                                         <label class="flex items-start gap-2 rounded-xl border border-neutral-200 p-3 text-sm font-semibold">
-                                            <input type="checkbox" name="sassa_recipient" value="1" @checked(old('sassa_recipient')) class="mt-1">
+                                            <input type="checkbox" name="sassa_recipient" value="1" @checked(old('sassa_recipient', $applicationProfile->sassa_recipient ?? false)) class="mt-1">
                                             SASSA grant recipient
                                         </label>
                                         <label class="flex items-start gap-2 rounded-xl border border-neutral-200 p-3 text-sm font-semibold">
-                                            <input type="checkbox" name="special_circumstances[]" value="disability" @checked(in_array('disability', old('special_circumstances', []), true)) class="mt-1">
+                                            <input type="checkbox" name="special_circumstances[]" value="disability" @checked(in_array('disability', old('special_circumstances', $profileSpecialCircumstances), true)) class="mt-1">
                                             Disability
                                         </label>
                                         <label class="flex items-start gap-2 rounded-xl border border-neutral-200 p-3 text-sm font-semibold">
-                                            <input type="checkbox" name="special_circumstances[]" value="vulnerable_child" @checked(in_array('vulnerable_child', old('special_circumstances', []), true)) class="mt-1">
+                                            <input type="checkbox" name="special_circumstances[]" value="vulnerable_child" @checked(in_array('vulnerable_child', old('special_circumstances', $profileSpecialCircumstances), true)) class="mt-1">
                                             Vulnerable child
                                         </label>
                                     </div>
@@ -384,11 +458,18 @@
                                 <section class="mt-6 border-t border-neutral-200 pt-5">
                                     <h3 class="text-base font-black">Documents</h3>
                                     <p class="mt-1 text-sm font-semibold text-neutral-500">Upload certified copies where the bursary asks for certified copies.</p>
+                                    <p data-document-error class="mt-3 hidden text-sm font-bold text-red-600"></p>
                                     <p data-academic-error class="mt-3 hidden text-sm font-bold text-red-600">Upload at least one academic record, transcript, Grade 12 marks, Grade 11 marks, or matric certificate.</p>
                                     @error('documents.academic_record') <p class="mt-3 text-sm text-red-600">{{ $message }}</p> @enderror
 
                                     <div class="mt-4 grid gap-3 sm:grid-cols-2">
                                         @foreach ($documentRequirements as $document)
+                                            @php
+                                                $storedForKey = $savedApplicationDocuments->get($document->key, collect());
+                                                $defaultSavedDocumentIds = $storedForKey->pluck('id')->map(fn ($id) => (string) $id)->all();
+                                                $oldSavedDocumentIds = old("saved_documents.{$document->key}", $defaultSavedDocumentIds);
+                                                $oldSavedDocumentIds = is_array($oldSavedDocumentIds) ? array_map('strval', $oldSavedDocumentIds) : [(string) $oldSavedDocumentIds];
+                                            @endphp
                                             <div class="rounded-xl border border-neutral-200 p-4">
                                                 <div class="flex flex-wrap items-center gap-2">
                                                     <label for="document_{{ $document->key }}" class="font-black">{{ $document->label }}</label>
@@ -401,12 +482,33 @@
                                                 @if ($document->description)
                                                     <p class="mt-1 text-xs font-semibold leading-5 text-neutral-500">{{ $document->description }}</p>
                                                 @endif
+                                                @if ($storedForKey->isNotEmpty())
+                                                    <div class="mt-3 space-y-2">
+                                                        <p class="text-xs font-black uppercase tracking-[0.12em] text-neutral-500">Saved in profile</p>
+                                                        @foreach ($storedForKey as $storedDocument)
+                                                            <label class="flex items-center gap-3 rounded-xl bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-950">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    name="saved_documents[{{ $document->key }}][]"
+                                                                    value="{{ $storedDocument->id }}"
+                                                                    data-saved-document-key="{{ $document->key }}"
+                                                                    data-saved-document-label="{{ $document->label }}"
+                                                                    data-saved-document-name="{{ $storedDocument->original_name }}"
+                                                                    @if (in_array($document->key, $academicDocumentKeys, true)) data-academic-record="true" @endif
+                                                                    @checked(in_array((string) $storedDocument->id, $oldSavedDocumentIds, true))
+                                                                >
+                                                                <span class="min-w-0 flex-1 truncate">{{ $storedDocument->original_name }}</span>
+                                                                <span class="shrink-0 text-xs text-emerald-700">{{ number_format(($storedDocument->size ?? 0) / 1024, 1) }} KB</span>
+                                                            </label>
+                                                        @endforeach
+                                                    </div>
+                                                @endif
                                                 <input
                                                     id="document_{{ $document->key }}"
                                                     name="documents[{{ $document->key }}][]"
                                                     type="file"
                                                     @if ($document->accepts_multiple) multiple @endif
-                                                    @if ($document->is_required) required @endif
+                                                    data-document-key="{{ $document->key }}"
                                                     @if (in_array($document->key, $academicDocumentKeys, true)) data-academic-record="true" @endif
                                                     data-document-label="{{ $document->label }}"
                                                     class="mt-3 w-full rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold file:mr-4 file:rounded-lg file:border-0 file:bg-[#01225E] file:px-3 file:py-2 file:font-bold file:text-white"
@@ -417,6 +519,39 @@
                                             </div>
                                         @endforeach
                                     </div>
+
+                                    @if ($extraSavedApplicationDocuments->isNotEmpty())
+                                        <div class="mt-4 rounded-xl border border-dashed border-neutral-300 p-4">
+                                            <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                                                <div>
+                                                    <h4 class="font-black">Other saved documents</h4>
+                                                    <p class="mt-1 text-xs font-semibold text-neutral-500">Include extra profile files only when this bursary asks for them.</p>
+                                                </div>
+                                                <span class="w-fit rounded-full bg-neutral-100 px-2 py-0.5 text-[11px] font-black uppercase text-neutral-600">Optional</span>
+                                            </div>
+                                            <div class="mt-3 grid gap-2 sm:grid-cols-2">
+                                                @foreach ($extraSavedApplicationDocuments as $storedDocument)
+                                                    @php
+                                                        $oldExtraDocumentIds = old("saved_documents.{$storedDocument->document_key}", []);
+                                                        $oldExtraDocumentIds = is_array($oldExtraDocumentIds) ? array_map('strval', $oldExtraDocumentIds) : [(string) $oldExtraDocumentIds];
+                                                    @endphp
+                                                    <label class="flex items-center gap-3 rounded-xl bg-neutral-50 px-3 py-2 text-sm font-semibold text-neutral-800">
+                                                        <input
+                                                            type="checkbox"
+                                                            name="saved_documents[{{ $storedDocument->document_key }}][]"
+                                                            value="{{ $storedDocument->id }}"
+                                                            data-saved-document-key="{{ $storedDocument->document_key }}"
+                                                            data-saved-document-label="{{ $storedDocument->label }}"
+                                                            data-saved-document-name="{{ $storedDocument->original_name }}"
+                                                            @checked(in_array((string) $storedDocument->id, $oldExtraDocumentIds, true))
+                                                        >
+                                                        <span class="min-w-0 flex-1 truncate">{{ $storedDocument->label }}: {{ $storedDocument->original_name }}</span>
+                                                        <span class="shrink-0 text-xs text-neutral-500">{{ number_format(($storedDocument->size ?? 0) / 1024, 1) }} KB</span>
+                                                    </label>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    @endif
                                 </section>
 
                                 <div class="mt-6 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
@@ -442,13 +577,25 @@
                                         </div>
 
                                         <div class="mt-5 border-t border-neutral-200 pt-4">
-                                            <p class="text-sm font-black">Attached documents</p>
+                                            <p class="text-sm font-black">{{ $isPostalSubmission ? 'Documents in postal pack' : 'Attached documents' }}</p>
                                             <ul data-review-files class="mt-3 grid gap-2 text-sm font-semibold text-neutral-700"></ul>
                                         </div>
 
+                                        @if ($isPostalSubmission)
+                                            <div class="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm font-semibold text-amber-950">
+                                                <p class="font-black">Postal destination</p>
+                                                <p class="mt-2 whitespace-pre-line">{{ $providerPostalAddress ?: 'Use the provider postal or hand-delivery address shown in the source instructions.' }}</p>
+                                                @if ($bursary->source_url)
+                                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 text-xs font-black text-amber-900 underline">
+                                                        Review source instructions <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+                                                    </a>
+                                                @endif
+                                            </div>
+                                        @endif
+
                                         <label class="mt-5 flex items-start gap-3 rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-sm font-semibold text-neutral-700">
-                                            <input type="checkbox" name="consent" value="1" required @checked(old('consent')) class="mt-1">
-                                            {{ $isPostalSubmission ? 'I confirm that Chamu may prepare this postal application and keep the uploaded documents on my behalf.' : 'I confirm that Chamu may email this application and attached documents on my behalf.' }}
+                                            <input type="checkbox" name="consent" value="1" required disabled @checked(old('consent')) data-consent-input class="mt-1">
+                                            {{ $isPostalSubmission ? 'I understand this bursary requires postal or hand-delivery submission, and I will print and submit the prepared pack to the provider.' : 'I confirm that Chamu may email this application and attached documents on my behalf.' }}
                                         </label>
                                         @error('consent') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
                                     </section>
@@ -458,13 +605,13 @@
                                         <h3 class="mt-2 text-lg font-black text-[#01225E]">{{ $bursary->title }}</h3>
                                         <p class="mt-1 text-sm font-bold text-neutral-600">{{ $companyName }}</p>
                                         <div class="mt-5 space-y-3 text-sm font-semibold text-neutral-700">
-                                            <p class="flex gap-2"><i data-lucide="shield-check" style="width:16px;height:16px;"></i>Chamu-managed submission</p>
+                                            <p class="flex gap-2"><i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'shield-check' }}" style="width:16px;height:16px;"></i>{{ $isPostalSubmission ? 'Postal pack prepared in Chamu' : 'Chamu-managed submission' }}</p>
                                             @if ($isPostalSubmission)
-                                                <p class="flex gap-2"><i data-lucide="package-check" style="width:16px;height:16px;"></i>Postal pack prepared in Chamu</p>
+                                                <p class="flex gap-2"><i data-lucide="printer" style="width:16px;height:16px;"></i>Print, sign, and submit yourself</p>
                                             @else
                                                 <p class="flex gap-2"><i data-lucide="reply" style="width:16px;height:16px;"></i>Provider replies to your email</p>
                                             @endif
-                                            <p class="flex gap-2"><i data-lucide="receipt-text" style="width:16px;height:16px;"></i>You receive a receipt</p>
+                                            <p class="flex gap-2"><i data-lucide="receipt" style="width:16px;height:16px;"></i>You receive a receipt</p>
                                         </div>
                                     </aside>
                                 </div>
@@ -472,7 +619,7 @@
                                 <div class="mt-6 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
                                     <button type="button" data-edit-application class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-bold hover:bg-neutral-50">Edit details</button>
                                     <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-black text-white hover:bg-[#001A48]">
-                                        {{ $isPostalSubmission ? 'Confirm application' : 'Confirm and send' }} <i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'send' }}" style="width:18px;height:18px;"></i>
+                                        {{ $isPostalSubmission ? 'Prepare postal pack' : 'Confirm and send' }} <i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'send' }}" style="width:18px;height:18px;"></i>
                                     </button>
                                 </div>
                             </section>
@@ -490,9 +637,15 @@
         const applyForm = document.querySelector('[data-apply-form]');
         const detailsStep = document.querySelector('[data-apply-step="details"]');
         const reviewStep = document.querySelector('[data-apply-step="review"]');
+        const consentInput = document.querySelector('[data-consent-input]');
         const academicInputs = [...document.querySelectorAll('[data-academic-record="true"]')];
         const academicError = document.querySelector('[data-academic-error]');
+        const documentError = document.querySelector('[data-document-error]');
+        const documentInputs = [...document.querySelectorAll('[data-document-key]')];
+        const savedDocumentInputs = [...document.querySelectorAll('[data-saved-document-key]')];
         const isPostalSubmission = @json($isPostalSubmission);
+        const requiredDocumentKeys = @json($requiredDocumentKeys);
+        const documentLabelsByKey = @json($documentLabelsByKey);
 
         const openApplyModal = () => {
             if (!applyModal) return;
@@ -507,16 +660,42 @@
         const showDetailsStep = () => {
             detailsStep?.classList.remove('hidden');
             reviewStep?.classList.add('hidden');
+            if (consentInput) consentInput.disabled = true;
         };
         const showReviewStep = () => {
             detailsStep?.classList.add('hidden');
             reviewStep?.classList.remove('hidden');
+            if (consentInput) consentInput.disabled = false;
             if (window.lucide) lucide.createIcons();
         };
         const fieldValue = (name) => applyForm?.querySelector(`[name="${name}"]`)?.value?.trim() || 'Not added';
+        const inputHasDocumentValue = (input) => input.type === 'file'
+            ? input.files.length > 0
+            : input.checked;
+        const hasFileForKey = (key) => documentInputs.some((input) => input.dataset.documentKey === key && input.files.length > 0);
+        const hasSavedForKey = (key) => savedDocumentInputs.some((input) => input.dataset.savedDocumentKey === key && input.checked);
+        const focusDocumentKey = (key) => {
+            const target = savedDocumentInputs.find((input) => input.dataset.savedDocumentKey === key)
+                || documentInputs.find((input) => input.dataset.documentKey === key);
+            target?.focus();
+        };
+        const validateRequiredDocuments = () => {
+            const missingKey = requiredDocumentKeys.find((key) => !hasFileForKey(key) && !hasSavedForKey(key));
+
+            if (documentError) {
+                documentError.textContent = missingKey
+                    ? `${documentLabelsByKey[missingKey] || 'Required document'} is required. Upload it or keep a saved profile document selected.`
+                    : '';
+                documentError.classList.toggle('hidden', !missingKey);
+            }
+
+            if (missingKey) focusDocumentKey(missingKey);
+
+            return !missingKey;
+        };
         const validateAcademicFiles = () => {
             if (academicInputs.length === 0) return true;
-            const hasAcademicFile = academicInputs.some((input) => input.files.length > 0);
+            const hasAcademicFile = academicInputs.some(inputHasDocumentValue);
             academicError?.classList.toggle('hidden', hasAcademicFile);
             if (!hasAcademicFile) academicInputs[0]?.focus();
             return hasAcademicFile;
@@ -531,11 +710,27 @@
 
             const fileList = document.querySelector('[data-review-files]');
             fileList.innerHTML = '';
+            savedDocumentInputs.filter((input) => input.checked).forEach((input) => {
+                const item = document.createElement('li');
+                const label = document.createElement('span');
+                const name = document.createElement('span');
+                item.className = 'flex items-center justify-between gap-3 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2';
+                label.textContent = input.dataset.savedDocumentLabel || 'Saved document';
+                name.className = 'truncate text-emerald-700';
+                name.textContent = input.dataset.savedDocumentName || 'Saved in profile';
+                item.append(label, name);
+                fileList.appendChild(item);
+            });
             document.querySelectorAll('input[type="file"][data-document-label]').forEach((input) => {
                 [...input.files].forEach((file) => {
                     const item = document.createElement('li');
+                    const label = document.createElement('span');
+                    const name = document.createElement('span');
                     item.className = 'flex items-center justify-between gap-3 rounded-xl border border-neutral-200 px-3 py-2';
-                    item.innerHTML = `<span>${input.dataset.documentLabel}</span><span class="truncate text-neutral-500">${file.name}</span>`;
+                    label.textContent = input.dataset.documentLabel || 'Uploaded document';
+                    name.className = 'truncate text-neutral-500';
+                    name.textContent = file.name;
+                    item.append(label, name);
                     fileList.appendChild(item);
                 });
             });
@@ -556,11 +751,17 @@
         document.querySelector('[data-edit-application]')?.addEventListener('click', showDetailsStep);
         document.querySelector('[data-review-application]')?.addEventListener('click', () => {
             if (!applyForm.reportValidity()) return;
+            if (!validateRequiredDocuments()) return;
             if (!validateAcademicFiles()) return;
             populateReview();
             showReviewStep();
         });
-        academicInputs.forEach((input) => input.addEventListener('change', validateAcademicFiles));
+        [...documentInputs, ...savedDocumentInputs].forEach((input) => {
+            input.addEventListener('change', () => {
+                validateRequiredDocuments();
+                validateAcademicFiles();
+            });
+        });
         applyModal?.addEventListener('click', (event) => {
             if (event.target === applyModal) closeApplyModal();
         });

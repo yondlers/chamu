@@ -8,14 +8,18 @@ use App\Models\Bursary;
 use App\Models\BursaryApplication;
 use App\Models\BursaryApplicationDocument;
 use App\Models\BursaryDocumentRequirement;
+use App\Models\UserApplicationDocument;
+use App\Models\UserApplicationProfile;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use RuntimeException;
 use Throwable;
 
 class BursaryApplicationController extends Controller
@@ -32,6 +36,7 @@ class BursaryApplicationController extends Controller
 
     public function store(Request $request, Bursary $bursary): RedirectResponse
     {
+        $user = $request->user();
         $providerEmail = $bursary->applicationProviderEmail();
         $providerPostalAddress = $bursary->applicationProviderPostalAddress();
         $isEmailSubmission = $bursary->isEmailSubmission();
@@ -68,9 +73,26 @@ class BursaryApplicationController extends Controller
             $requirements = BursaryDocumentRequirement::defaultEmailSubmissionRequirements();
         }
 
+        $applicationProfile = Schema::hasTable('user_application_profiles')
+            ? UserApplicationProfile::query()->where('user_id', $user->id)->first()
+            : null;
+        $selectedSavedDocumentIds = collect($request->input('saved_documents', []))
+            ->flatten()
+            ->map(fn ($id): int => (int) $id)
+            ->filter()
+            ->unique()
+            ->values();
+        $selectedSavedDocuments = Schema::hasTable('user_application_documents') && $selectedSavedDocumentIds->isNotEmpty()
+            ? UserApplicationDocument::query()
+                ->where('user_id', $user->id)
+                ->whereIn('id', $selectedSavedDocumentIds)
+                ->get()
+            : collect();
+        $selectedSavedDocumentsByKey = $selectedSavedDocuments->groupBy('document_key');
+
         $rules = [
             'applicant_phone' => ['nullable', 'string', 'max:40'],
-            'applicant_postal_address' => [$deliveryType === 'postal' ? 'required' : 'nullable', 'string', 'max:1200'],
+            'applicant_postal_address' => ['nullable', 'string', 'max:1200'],
             'study_level' => ['nullable', 'string', 'max:80'],
             'institution' => ['nullable', 'string', 'max:255'],
             'qualification' => ['nullable', 'string', 'max:255'],
@@ -83,24 +105,40 @@ class BursaryApplicationController extends Controller
             'documents' => ['nullable', 'array'],
             'documents.*' => ['nullable', 'array'],
             'documents.*.*' => ['file', 'mimes:pdf,jpg,jpeg,png,doc,docx', 'max:10240'],
+            'saved_documents' => ['nullable', 'array'],
+            'saved_documents.*' => ['nullable', 'array'],
+            'saved_documents.*.*' => ['integer'],
             'consent' => ['accepted'],
         ];
 
         $validator = Validator::make($request->all(), $rules, [
             'applicant_postal_address.required' => 'Add the postal or return address Chamu should keep with this application.',
             'consent.accepted' => $deliveryType === 'postal'
-                ? 'Confirm that Chamu may prepare this postal application on your behalf.'
+                ? 'Confirm that you understand this bursary must be printed and submitted by post or hand delivery.'
                 : 'Confirm that Chamu may email this application on your behalf.',
             'documents.*.*.mimes' => 'Documents must be PDF, JPG, PNG, DOC, or DOCX files.',
             'documents.*.*.max' => 'Each document may not be larger than 10MB.',
         ]);
 
-        $validator->after(function ($validator) use ($request, $requirements): void {
+        $validator->after(function ($validator) use ($applicationProfile, $deliveryType, $request, $requirements, $selectedSavedDocuments, $selectedSavedDocumentsByKey): void {
+            if (
+                $deliveryType === 'postal'
+                && trim((string) $request->input('applicant_postal_address', $applicationProfile?->applicant_postal_address ?? '')) === ''
+            ) {
+                $validator->errors()->add('applicant_postal_address', 'Add the postal or return address Chamu should keep with this application.');
+            }
+
+            $selectedSavedDocuments->each(function (UserApplicationDocument $document) use ($validator): void {
+                if (! Storage::disk($document->storage_disk)->exists($document->path)) {
+                    $validator->errors()->add("documents.{$document->document_key}", $document->label.' is saved on your profile, but the file is missing. Please upload it again.');
+                }
+            });
+
             $requirements
                 ->where('is_required', true)
                 ->whereNull('requirement_group')
-                ->each(function ($requirement) use ($request, $validator): void {
-                    if (! $this->hasDocumentUpload($request, $requirement->key)) {
+                ->each(function ($requirement) use ($request, $selectedSavedDocumentsByKey, $validator): void {
+                    if (! $this->hasDocumentUpload($request, $requirement->key) && $selectedSavedDocumentsByKey->get($requirement->key, collect())->isEmpty()) {
                         $validator->errors()->add("documents.{$requirement->key}", $requirement->label.' is required.');
                     }
                 });
@@ -109,7 +147,7 @@ class BursaryApplicationController extends Controller
 
             if ($academicRequirements->isNotEmpty()) {
                 $hasAcademicRecord = collect(self::ACADEMIC_RECORD_KEYS)
-                    ->contains(fn (string $key): bool => $this->hasDocumentUpload($request, $key));
+                    ->contains(fn (string $key): bool => $this->hasDocumentUpload($request, $key) || $selectedSavedDocumentsByKey->get($key, collect())->isNotEmpty());
 
                 if (! $hasAcademicRecord) {
                     $validator->errors()->add('documents.academic_record', 'Upload at least one academic record, transcript, Grade 12 marks, Grade 11 marks, or matric certificate.');
@@ -118,10 +156,16 @@ class BursaryApplicationController extends Controller
         });
 
         $data = $validator->validate();
-        $user = $request->user();
         $requirementsByKey = $requirements->keyBy('key');
+        $profileValue = fn (string $key): mixed => filled($data[$key] ?? null)
+            ? $data[$key]
+            : ($applicationProfile?->{$key} ?? null);
+        $specialCircumstances = $data['special_circumstances'] ?? $applicationProfile?->special_circumstances ?? [];
+        $sassaRecipient = array_key_exists('sassa_recipient', $data)
+            ? (bool) $data['sassa_recipient']
+            : (bool) ($applicationProfile?->sassa_recipient ?? false);
 
-        $application = DB::transaction(function () use ($bursary, $data, $deliveryType, $providerEmail, $providerPostalAddress, $request, $requirementsByKey, $user): BursaryApplication {
+        $application = DB::transaction(function () use ($bursary, $deliveryType, $profileValue, $providerEmail, $providerPostalAddress, $request, $requirementsByKey, $sassaRecipient, $selectedSavedDocuments, $specialCircumstances, $user): BursaryApplication {
             $application = BursaryApplication::create([
                 'user_id' => $user->id,
                 'bursary_id' => $bursary->id,
@@ -131,24 +175,41 @@ class BursaryApplicationController extends Controller
                 'provider_postal_address' => $providerPostalAddress,
                 'applicant_name' => $user->name ?: trim($user->first_name.' '.$user->last_name),
                 'applicant_email' => $user->email,
-                'applicant_phone' => $data['applicant_phone'] ?? null,
-                'applicant_postal_address' => $data['applicant_postal_address'] ?? null,
-                'study_level' => $data['study_level'] ?? null,
-                'institution' => $data['institution'] ?? null,
-                'qualification' => $data['qualification'] ?? null,
-                'current_year' => $data['current_year'] ?? null,
-                'funding_need' => $data['funding_need'] ?? null,
-                'household_income' => $data['household_income'] ?? null,
-                'sassa_recipient' => (bool) ($data['sassa_recipient'] ?? false),
-                'special_circumstances' => array_values($data['special_circumstances'] ?? []),
+                'applicant_phone' => $profileValue('applicant_phone'),
+                'applicant_postal_address' => $profileValue('applicant_postal_address'),
+                'study_level' => $profileValue('study_level'),
+                'institution' => $profileValue('institution'),
+                'qualification' => $profileValue('qualification'),
+                'current_year' => $profileValue('current_year'),
+                'funding_need' => $profileValue('funding_need'),
+                'household_income' => $profileValue('household_income'),
+                'sassa_recipient' => $sassaRecipient,
+                'special_circumstances' => array_values($specialCircumstances),
                 'metadata' => [
                     'delivery_type' => $deliveryType,
                     'bursary_title' => $bursary->title,
                     'company_name' => $bursary->company?->name,
                     'source_url' => $bursary->source_url,
                     'supporting_documents' => $bursary->supporting_documents ?? [],
+                    'used_application_profile' => $selectedSavedDocuments->isNotEmpty(),
                 ],
             ]);
+
+            foreach ($selectedSavedDocuments as $savedDocument) {
+                $requirement = $requirementsByKey->get($savedDocument->document_key);
+                $path = $this->copySavedDocument($application, $savedDocument);
+
+                BursaryApplicationDocument::create([
+                    'bursary_application_id' => $application->id,
+                    'bursary_document_requirement_id' => $requirement->id ?? null,
+                    'document_key' => $savedDocument->document_key,
+                    'original_name' => $savedDocument->original_name,
+                    'storage_disk' => $savedDocument->storage_disk,
+                    'path' => $path,
+                    'mime_type' => $savedDocument->mime_type,
+                    'size' => $savedDocument->size,
+                ]);
+            }
 
             foreach ((array) $request->file('documents', []) as $documentKey => $files) {
                 if (! $requirementsByKey->has($documentKey)) {
@@ -204,13 +265,15 @@ class BursaryApplicationController extends Controller
 
             return back()
                 ->withInput($request->except('documents'))
-                ->withErrors(['application' => 'We saved your application, but the email could not be sent. Please try again.']);
+                ->withErrors(['application' => $deliveryType === 'postal'
+                    ? 'We saved your postal pack, but the receipt email could not be sent. Please try again.'
+                    : 'We saved your application, but the email could not be sent. Please try again.']);
         }
 
         return redirect()
             ->route('bursaries.show', $bursary)
             ->with('status', $deliveryType === 'postal'
-                ? 'Chamu prepared your postal bursary application and emailed you a receipt.'
+                ? 'Chamu prepared your postal bursary pack. Print and submit it to the provider.'
                 : 'Chamu sent your bursary application and emailed you a receipt.');
     }
 
@@ -246,6 +309,26 @@ class BursaryApplicationController extends Controller
         $filename = $documentKey.'-'.$basename.'-'.Str::random(8).($extension ? '.'.$extension : '');
 
         return $file->storeAs('bursary-applications/'.$application->id, $filename, 'local');
+    }
+
+    private function copySavedDocument(BursaryApplication $application, UserApplicationDocument $document): string
+    {
+        $disk = Storage::disk($document->storage_disk);
+
+        if (! $disk->exists($document->path)) {
+            throw new RuntimeException('A saved application document could not be found. Please upload it again.');
+        }
+
+        $basename = Str::slug(pathinfo($document->original_name, PATHINFO_FILENAME)) ?: $document->document_key;
+        $extension = pathinfo($document->original_name, PATHINFO_EXTENSION);
+        $filename = $document->document_key.'-'.$basename.'-saved-'.Str::random(8).($extension ? '.'.$extension : '');
+        $path = 'bursary-applications/'.$application->id.'/'.$filename;
+
+        if (! $disk->copy($document->path, $path)) {
+            throw new RuntimeException('A saved application document could not be attached. Please upload it again.');
+        }
+
+        return $path;
     }
 
 }

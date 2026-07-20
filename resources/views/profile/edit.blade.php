@@ -116,7 +116,7 @@
             </div>
         </form>
 
-        <section class="mt-8 grid md:grid-cols-2 gap-5">
+        <section class="mt-8 grid gap-5 md:grid-cols-3">
             <a href="{{ route('subjects.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
                 <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
                     <i data-lucide="list-checks" style="width:22px;height:22px;"></i>
@@ -130,6 +130,13 @@
                 </span>
                 <h2 class="font-bold text-xl">Add term marks</h2>
                 <p class="mt-2 text-sm text-neutral-500">Capture marks by term. APS is calculated automatically.</p>
+            </a>
+            <a href="{{ route('profile.application') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
+                <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
+                    <i data-lucide="folder-check" style="width:22px;height:22px;"></i>
+                </span>
+                <h2 class="font-bold text-xl">Application profile</h2>
+                <p class="mt-2 text-sm text-neutral-500">Save bursary details and documents so Apply with Chamu is quicker.</p>
             </a>
         </section>
     </main>

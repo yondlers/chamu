@@ -5,11 +5,22 @@
 
     @if ($application->delivery_type === 'postal')
         <p>
-            Chamu prepared your postal application record for {{ $application->bursary->title }}.
+            Chamu prepared your postal application pack for {{ $application->bursary->title }}.
+            Chamu has not emailed the bursary provider because this bursary requires postal
+            or hand-delivery submission.
+        </p>
+
+        <p>
+            Please print the pack, attach the listed documents, sign any required provider forms,
+            and submit everything to the provider before the closing date.
         </p>
 
         @if ($application->provider_postal_address)
             <p><strong>Provider postal instructions:</strong><br>{{ $application->provider_postal_address }}</p>
+        @endif
+
+        @if ($application->bursary->source_url)
+            <p><strong>Source instructions:</strong><br>{{ $application->bursary->source_url }}</p>
         @endif
 
         @if ($application->applicant_postal_address)
