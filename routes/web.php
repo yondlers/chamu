@@ -18,6 +18,7 @@ use App\Models\UserSubjectResult;
 use App\Support\Social\FacebookGraph;
 use App\Support\Social\InstagramGraph;
 use App\Support\Social\LinkedInGraph;
+use App\Support\Social\SocialImageStorage;
 use App\Support\Social\SocialMediaConfig;
 use App\Support\Social\ThreadsGraph;
 use Illuminate\Http\Request;
@@ -1219,8 +1220,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
             $mediaUrl = trim((string) ($data['media_url'] ?? '')) ?: null;
 
             if ($request->hasFile('image_upload')) {
-                $path = $request->file('image_upload')->store('social-posts/'.$socialChannel['slug'], 'public');
-                $mediaUrl = url(Storage::disk('public')->url($path));
+                $mediaUrl = SocialImageStorage::storePublic($request->file('image_upload'), $socialChannel['slug']);
             }
 
             $status = ($data['intent'] ?? null) === 'queue' ? 'queued' : $data['status'];
@@ -1295,6 +1295,12 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
 
         Route::post('/'.$socialChannel['slug'].'/posts/{socialPost}/publish', function (SocialPost $socialPost) use ($socialChannel) {
             abort_unless($socialPost->platform === $socialChannel['slug'], 404);
+
+            $promotedMediaUrl = SocialImageStorage::promoteStorageUrl($socialPost->media_url, $socialChannel['slug']);
+
+            if ($promotedMediaUrl !== $socialPost->media_url) {
+                $socialPost->forceFill(['media_url' => $promotedMediaUrl])->save();
+            }
 
             $requestPayload = [
                 'platform' => $socialChannel['slug'],
