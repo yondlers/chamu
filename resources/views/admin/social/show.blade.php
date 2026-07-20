@@ -37,6 +37,18 @@
             </div>
         </div>
 
+        @if (session('status'))
+            <div class="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-800">
+                {{ session('status') }}
+            </div>
+        @endif
+
+        @if ($errors->any())
+            <div class="mb-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-700">
+                Please check the post fields and try again.
+            </div>
+        @endif
+
         <section class="grid gap-3 md:grid-cols-4">
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Connection</p>
@@ -81,47 +93,54 @@
                     </span>
                 </div>
 
-                <form class="space-y-4">
+                <form method="POST" action="{{ route('admin.'.$platform['slug'].'.posts.store') }}" class="space-y-4">
+                    @csrf
                     <div class="grid gap-4 md:grid-cols-2">
                         <div>
                             <label for="post_title" class="text-sm font-bold text-neutral-800">Campaign title</label>
-                            <input id="post_title" type="text" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="{{ $platform['name'] }} campaign">
+                            <input id="post_title" name="title" value="{{ old('title') }}" type="text" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="{{ $platform['name'] }} campaign">
+                            @error('title') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                         </div>
                         <div>
                             <label for="post_audience" class="text-sm font-bold text-neutral-800">Audience</label>
-                            <input id="post_audience" type="text" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" value="{{ $platform['audience'] }}">
+                            <input id="post_audience" name="audience" type="text" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" value="{{ old('audience', $platform['audience']) }}">
+                            @error('audience') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                         </div>
                     </div>
 
                     <div>
                         <label for="post_caption" class="text-sm font-bold text-neutral-800">Caption</label>
-                        <textarea id="post_caption" rows="7" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the admin post that Chamu will publish to {{ $platform['name'] }}."></textarea>
+                        <textarea id="post_caption" name="message" rows="7" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the admin post that Chamu will publish to {{ $platform['name'] }}.">{{ old('message') }}</textarea>
+                        @error('message') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                     </div>
 
                     <div class="grid gap-4 md:grid-cols-3">
                         <div>
                             <label for="post_link" class="text-sm font-bold text-neutral-800">Link</label>
-                            <input id="post_link" type="url" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="https://">
+                            <input id="post_link" name="link_url" value="{{ old('link_url') }}" type="url" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="https://">
+                            @error('link_url') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                         </div>
                         <div>
                             <label for="post_media" class="text-sm font-bold text-neutral-800">Media asset</label>
-                            <input id="post_media" type="text" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Asset ID or URL">
+                            <input id="post_media" name="media_url" value="{{ old('media_url') }}" type="text" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Asset ID or URL">
+                            @error('media_url') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                         </div>
                         <div>
                             <label for="post_status" class="text-sm font-bold text-neutral-800">Status</label>
-                            <select id="post_status" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]">
-                                <option>Draft</option>
-                                <option>Ready for approval</option>
-                                <option>Queue after API connection</option>
+                            <select id="post_status" name="status" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]">
+                                @foreach (['draft' => 'Draft', 'ready_for_approval' => 'Ready for approval', 'queued' => 'Queued'] as $value => $label)
+                                    <option value="{{ $value }}" @selected(old('status', 'draft') === $value)>{{ $label }}</option>
+                                @endforeach
                             </select>
+                            @error('status') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                         </div>
                     </div>
 
                     <div class="flex flex-wrap gap-2">
-                        <button type="button" class="js-btn inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-bold text-white hover:bg-[#001A48]" data-action="Draft staging is ready for API storage.">
+                        <button name="intent" value="draft" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-bold text-white hover:bg-[#001A48]">
                             Save draft <i data-lucide="save" style="width:16px;height:16px;"></i>
                         </button>
-                        <button type="button" class="js-btn inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-bold hover:bg-neutral-50" data-action="Publishing will activate after {{ $platform['name'] }} credentials are connected.">
+                        <button name="intent" value="queue" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-bold hover:bg-neutral-50">
                             Queue <i data-lucide="send" style="width:16px;height:16px;"></i>
                         </button>
                     </div>
@@ -164,17 +183,81 @@
             </div>
         </section>
 
-        <section class="mt-6 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+        <section class="mt-6 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
             <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-                <div class="mb-4">
-                    <h2 class="text-xl font-bold">Content queue</h2>
-                    <p class="mt-1 text-sm text-neutral-500">Scheduled posts will appear here once persistence is connected.</p>
+                <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                    <div>
+                        <h2 class="text-xl font-bold">Stored posts</h2>
+                        <p class="mt-1 text-sm text-neutral-500">Review saved drafts, queued posts, publish results, and response records.</p>
+                    </div>
+                    <span class="inline-flex w-fit items-center gap-2 rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-700">
+                        <i data-lucide="database" style="width:14px;height:14px;"></i>
+                        {{ number_format($posts->total()) }} saved
+                    </span>
                 </div>
-                <div class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 px-4 py-8 text-center">
-                    <i data-lucide="calendar-clock" class="mx-auto text-neutral-400" style="width:28px;height:28px;"></i>
-                    <p class="mt-3 text-sm font-bold text-neutral-800">No queued {{ $platform['name'] }} posts</p>
-                    <p class="mt-1 text-xs font-semibold text-neutral-500">Drafts and scheduled campaigns will be listed by platform.</p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[860px] text-left">
+                        <thead>
+                            <tr class="border-b border-neutral-200 text-xs uppercase text-neutral-500">
+                                <th class="py-3 pr-3">Post</th>
+                                <th class="px-3 py-3">Status</th>
+                                <th class="px-3 py-3">Responses</th>
+                                <th class="px-3 py-3">Updated</th>
+                                <th class="py-3 pl-3 text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($posts as $post)
+                                <tr class="border-b border-neutral-100 align-top">
+                                    <td class="py-4 pr-3">
+                                        <p class="font-bold text-neutral-950">{{ $post->title ?: 'Untitled post' }}</p>
+                                        <p class="mt-1 line-clamp-2 max-w-md text-xs font-semibold text-neutral-500">{{ $post->message }}</p>
+                                        @if ($post->external_post_id)
+                                            <p class="mt-1 text-xs font-bold text-neutral-500">External ID {{ $post->external_post_id }}</p>
+                                        @endif
+                                    </td>
+                                    <td class="px-3 py-4">
+                                        <span @class([
+                                            'inline-flex rounded-full px-3 py-1 text-xs font-bold',
+                                            'bg-emerald-50 text-emerald-700' => $post->status === 'published',
+                                            'bg-red-50 text-red-700' => $post->status === 'failed',
+                                            'bg-amber-50 text-amber-700' => $post->status === 'queued',
+                                            'bg-neutral-100 text-neutral-700' => ! in_array($post->status, ['published', 'failed', 'queued'], true),
+                                        ])>{{ $post->statusLabel() }}</span>
+                                    </td>
+                                    <td class="px-3 py-4 text-sm font-semibold text-neutral-700">{{ number_format($post->responses_count) }}</td>
+                                    <td class="px-3 py-4 text-sm font-semibold text-neutral-600">{{ $post->updated_at?->format('d M H:i') ?? 'N/A' }}</td>
+                                    <td class="py-4 pl-3">
+                                        <div class="flex justify-end gap-2">
+                                            <a href="{{ route('admin.'.$platform['slug'].'.posts.show', $post) }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-3 py-2 text-sm font-bold hover:bg-neutral-50">
+                                                Review <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+                                            </a>
+                                            @if ($platform['slug'] === 'facebook' && $hasAccessToken && $post->status !== 'published')
+                                                <form method="POST" action="{{ route('admin.facebook.posts.publish', $post) }}">
+                                                    @csrf
+                                                    <button class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-3 py-2 text-sm font-bold text-white hover:bg-[#001A48]">
+                                                        Publish <i data-lucide="send" style="width:15px;height:15px;"></i>
+                                                    </button>
+                                                </form>
+                                            @endif
+                                        </div>
+                                    </td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="5" class="py-8 text-center text-sm font-semibold text-neutral-500">No {{ $platform['name'] }} posts stored yet.</td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
                 </div>
+
+                @if ($posts->hasPages())
+                    <div class="mt-5">
+                        {{ $posts->links() }}
+                    </div>
+                @endif
             </div>
 
             <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">

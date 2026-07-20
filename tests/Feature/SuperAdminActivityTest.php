@@ -4,11 +4,14 @@ namespace Tests\Feature;
 
 use App\Models\AuditLog;
 use App\Models\SiteVisit;
+use App\Models\SocialPost;
+use App\Models\SocialPostResponse;
 use App\Models\User;
 use App\Support\Social\SocialMediaConfig;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
 class SuperAdminActivityTest extends TestCase
@@ -136,6 +139,66 @@ class SuperAdminActivityTest extends TestCase
         $response->assertSee('Access token configured');
         $response->assertSee('https://graph.facebook.com/v25.0/me/feed');
         $response->assertDontSee($token);
+    }
+
+    public function test_super_admin_can_store_review_and_publish_social_post_with_saved_response(): void
+    {
+        Http::fake([
+            'graph.facebook.com/*' => Http::response(['id' => 'page_12345'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+
+        $storeResponse = $this->actingAs($superAdmin)->post(route('admin.facebook.posts.store'), [
+            'title' => 'Hello Chamu campaign',
+            'audience' => 'Parents and learners',
+            'message' => 'Hello World! We are Chamu',
+            'link_url' => 'https://chamu.test/funding',
+            'media_url' => 'asset://welcome-card',
+            'status' => 'draft',
+            'intent' => 'queue',
+        ]);
+
+        $socialPost = SocialPost::first();
+
+        $this->assertInstanceOf(SocialPost::class, $socialPost);
+        $storeResponse->assertRedirect(route('admin.facebook.posts.show', $socialPost));
+        $this->assertSame($superAdmin->id, $socialPost->user_id);
+        $this->assertSame('facebook', $socialPost->platform);
+        $this->assertSame('queued', $socialPost->status);
+        $this->assertSame('Hello World! We are Chamu', $socialPost->request_payload['fields']['message']);
+        $this->assertArrayNotHasKey('access_token', $socialPost->request_payload['fields']);
+
+        $reviewResponse = $this->actingAs($superAdmin)->get(route('admin.facebook.posts.show', $socialPost));
+
+        $reviewResponse->assertOk();
+        $reviewResponse->assertSee('Hello Chamu campaign');
+        $reviewResponse->assertSee('Saved request payload');
+        $reviewResponse->assertDontSee(SocialMediaConfig::accessToken('facebook'));
+
+        $publishResponse = $this->actingAs($superAdmin)->post(route('admin.facebook.posts.publish', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $publishResponse->assertRedirect(route('admin.facebook.posts.show', $socialPost));
+        $this->assertSame('published', $socialPost->status);
+        $this->assertSame('page_12345', $socialPost->external_post_id);
+        $this->assertSame(['id' => 'page_12345'], $socialPost->response_payload);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame($socialPost->id, $responseRecord->social_post_id);
+        $this->assertSame('publish', $responseRecord->response_type);
+        $this->assertSame('page_12345', $responseRecord->external_response_id);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === 'https://graph.facebook.com/v25.0/me/feed'
+                && $data['message'] === 'Hello World! We are Chamu'
+                && $data['link'] === 'https://chamu.test/funding'
+                && $data['access_token'] === SocialMediaConfig::accessToken('facebook');
+        });
     }
 
     public function test_super_admin_can_view_full_site_visit_list_and_visit_details(): void

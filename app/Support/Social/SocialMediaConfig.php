@@ -26,7 +26,7 @@ class SocialMediaConfig
             'graph_url' => 'https://graph.facebook.com',
             'graph_version' => 'v25.0',
             'feed_node' => 'me',
-            'access_token' => 'EAAeFz3w2lusBSIZAkRQ0Op0l3w47FDoJxjC8ufWxn9x2hBqo27msE0PcjfRhm0U47RG3vzmdv8vsQ77N4jZAonbVMDhi5T8QrhlbSzTOQbfrMIcViJslZBaqWrf2PVd7UK5LIePMZAUlGZCDO2PR4kFI6dWtLPw6qxxZAuQkZBvkxb9iKBTackAbCxdNIMjYeSs0qDhs4pb7EaTbSzDZAUg8WosV1E2oLzhrXCCV5udmIuYZD',
+            'access_token' => 'EAAeFz3w2lusBSGsqHmefCcc2Dvd4T3RihtGAnCdNoZAgVYZBwfThAZBG2zZAIZCB1ZBBliHIOn1RcJ37J6Gw2Pz0Wk282h3W2MtXVRXcDjUvaXRpnZC8blgZAguLZCZBZBtA3gYSXH522Tz0XBRTC0erFGurYsS9dFHivt02XZA0ZBMVgnBFNncHJZBPTWmWbJQGxNvO2SPVbzN0LZBLq93dfv9SJXHZAaLPbTXqfiXsM2LJnqdZAMrlCzsfnCTJkS0lZBt2tzNW79V2ojMuByRlfZAHue3',
             'next_steps' => [
                 'Create or connect the Meta app',
                 'Add page publishing permissions',

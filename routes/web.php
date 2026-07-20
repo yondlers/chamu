@@ -9,6 +9,8 @@ use App\Models\AuditLog;
 use App\Models\Bursary;
 use App\Models\BursaryDocumentRequirement;
 use App\Models\SiteVisit;
+use App\Models\SocialPost;
+use App\Models\SocialPostResponse;
 use App\Models\User;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
@@ -26,6 +28,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
 
 Route::get('/', fn () => redirect()->route('aps.index'))->name('home');
@@ -1150,18 +1153,187 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
 
     foreach ($socialChannels as $socialChannel) {
         Route::get('/'.$socialChannel['slug'], function () use ($socialChannels, $socialChannel) {
+            $posts = SocialPost::query()
+                ->with('user')
+                ->withCount('responses')
+                ->where('platform', $socialChannel['slug'])
+                ->latest()
+                ->paginate(12)
+                ->withQueryString();
+
             return view('admin.social.show', [
                 'platform' => $socialChannel,
                 'socialChannels' => $socialChannels,
                 'hasAccessToken' => (bool) $socialChannel['has_access_token'],
                 'graphVersion' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::graphVersion() : null,
                 'postEndpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
-                'draftCount' => 0,
-                'queuedCount' => 0,
-                'publishedCount' => 0,
-                'engagementCount' => 0,
+                'draftCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'draft')->count(),
+                'queuedCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'queued')->count(),
+                'publishedCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'published')->count(),
+                'engagementCount' => SocialPostResponse::where('platform', $socialChannel['slug'])->count(),
+                'posts' => $posts,
             ]);
         })->name('admin.'.$socialChannel['slug'].'.index');
+
+        Route::post('/'.$socialChannel['slug'].'/posts', function (Request $request) use ($socialChannel) {
+            $data = $request->validate([
+                'title' => ['nullable', 'string', 'max:180'],
+                'audience' => ['nullable', 'string', 'max:180'],
+                'message' => ['required', 'string', 'max:5000'],
+                'link_url' => ['nullable', 'url', 'max:2048'],
+                'media_url' => ['nullable', 'string', 'max:2048'],
+                'status' => ['required', Rule::in(['draft', 'ready_for_approval', 'queued'])],
+                'intent' => ['nullable', Rule::in(['draft', 'queue'])],
+            ]);
+
+            $status = ($data['intent'] ?? null) === 'queue' ? 'queued' : $data['status'];
+            $requestPayload = [
+                'platform' => $socialChannel['slug'],
+                'endpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
+                'fields' => $socialChannel['slug'] === 'facebook'
+                    ? FacebookGraph::safeFeedPayload($data['message'], ['link' => $data['link_url'] ?? null])
+                    : [
+                        'message' => $data['message'],
+                        'link' => $data['link_url'] ?? null,
+                        'media' => $data['media_url'] ?? null,
+                    ],
+            ];
+
+            $socialPost = new SocialPost();
+            $socialPost->fill([
+                'user_id' => $request->user()->id,
+                'platform' => $socialChannel['slug'],
+                'title' => $data['title'] ?? null,
+                'message' => $data['message'],
+                'audience' => $data['audience'] ?? null,
+                'link_url' => $data['link_url'] ?? null,
+                'media_url' => $data['media_url'] ?? null,
+                'status' => $status,
+                'request_payload' => $requestPayload,
+            ]);
+            $socialPost->save();
+
+            return redirect()
+                ->route('admin.'.$socialChannel['slug'].'.posts.show', $socialPost)
+                ->with('status', $socialChannel['name'].' post saved as '.$socialPost->statusLabel().'.');
+        })->name('admin.'.$socialChannel['slug'].'.posts.store');
+
+        Route::get('/'.$socialChannel['slug'].'/posts/{socialPost}', function (SocialPost $socialPost) use ($socialChannels, $socialChannel) {
+            abort_unless($socialPost->platform === $socialChannel['slug'], 404);
+
+            $socialPost->load(['user', 'responses' => fn ($query) => $query->latest()]);
+
+            return view('admin.social.posts.show', [
+                'platform' => $socialChannel,
+                'socialChannels' => $socialChannels,
+                'hasAccessToken' => (bool) $socialChannel['has_access_token'],
+                'postEndpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
+                'socialPost' => $socialPost,
+            ]);
+        })->name('admin.'.$socialChannel['slug'].'.posts.show');
+
+        Route::post('/'.$socialChannel['slug'].'/posts/{socialPost}/publish', function (SocialPost $socialPost) use ($socialChannel) {
+            abort_unless($socialPost->platform === $socialChannel['slug'], 404);
+
+            $requestPayload = [
+                'platform' => $socialChannel['slug'],
+                'endpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
+                'fields' => $socialChannel['slug'] === 'facebook'
+                    ? FacebookGraph::safeFeedPayload($socialPost->message, ['link' => $socialPost->link_url])
+                    : [
+                        'message' => $socialPost->message,
+                        'link' => $socialPost->link_url,
+                        'media' => $socialPost->media_url,
+                    ],
+            ];
+
+            if ($socialChannel['slug'] !== 'facebook') {
+                $message = $socialChannel['name'].' publishing is not connected yet.';
+
+                $socialPost->fill([
+                    'status' => 'failed',
+                    'request_payload' => $requestPayload,
+                    'error_message' => $message,
+                ]);
+                $socialPost->save();
+
+                $responseRecord = new SocialPostResponse();
+                $responseRecord->fill([
+                    'social_post_id' => $socialPost->id,
+                    'platform' => $socialPost->platform,
+                    'response_type' => 'publish_blocked',
+                    'body' => $message,
+                    'request_payload' => $requestPayload,
+                    'response_payload' => ['message' => $message],
+                    'received_at' => now(),
+                ]);
+                $responseRecord->save();
+
+                return redirect()
+                    ->route('admin.'.$socialChannel['slug'].'.posts.show', $socialPost)
+                    ->with('status', $message);
+            }
+
+            try {
+                $response = FacebookGraph::postToFeed($socialPost->message, null, ['link' => $socialPost->link_url]);
+                $responsePayload = $response->json();
+                $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                $externalPostId = data_get($responsePayload, 'id');
+                $errorMessage = $response->successful()
+                    ? null
+                    : (data_get($responsePayload, 'error.message') ?: $response->body());
+
+                $socialPost->fill([
+                    'status' => $response->successful() ? 'published' : 'failed',
+                    'external_post_id' => $response->successful() ? $externalPostId : $socialPost->external_post_id,
+                    'request_payload' => $requestPayload,
+                    'response_payload' => $responsePayload,
+                    'error_message' => $errorMessage,
+                    'published_at' => $response->successful() ? now() : $socialPost->published_at,
+                ]);
+                $socialPost->save();
+
+                $responseRecord = new SocialPostResponse();
+                $responseRecord->fill([
+                    'social_post_id' => $socialPost->id,
+                    'platform' => $socialPost->platform,
+                    'response_type' => $response->successful() ? 'publish' : 'publish_error',
+                    'external_response_id' => $externalPostId,
+                    'body' => $errorMessage,
+                    'request_payload' => $requestPayload,
+                    'response_payload' => $responsePayload,
+                    'received_at' => now(),
+                ]);
+                $responseRecord->save();
+
+                return redirect()
+                    ->route('admin.facebook.posts.show', $socialPost)
+                    ->with('status', $response->successful() ? 'Facebook post published and response saved.' : 'Facebook publish failed and response was saved.');
+            } catch (\Throwable $exception) {
+                $socialPost->fill([
+                    'status' => 'failed',
+                    'request_payload' => $requestPayload,
+                    'error_message' => $exception->getMessage(),
+                ]);
+                $socialPost->save();
+
+                $responseRecord = new SocialPostResponse();
+                $responseRecord->fill([
+                    'social_post_id' => $socialPost->id,
+                    'platform' => $socialPost->platform,
+                    'response_type' => 'publish_exception',
+                    'body' => $exception->getMessage(),
+                    'request_payload' => $requestPayload,
+                    'response_payload' => ['message' => $exception->getMessage()],
+                    'received_at' => now(),
+                ]);
+                $responseRecord->save();
+
+                return redirect()
+                    ->route('admin.facebook.posts.show', $socialPost)
+                    ->with('status', 'Facebook publish threw an exception and the response was saved.');
+            }
+        })->name('admin.'.$socialChannel['slug'].'.posts.publish');
     }
 
     Route::get('/accounts', function (Request $request) {

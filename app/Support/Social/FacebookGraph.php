@@ -32,26 +32,46 @@ class FacebookGraph
     }
 
     /**
-     * @return array{message: string, access_token: string}
+     * @param  array<string, string|null>  $fields
+     * @return array<string, string>
      */
-    public static function feedPayload(string $message): array
+    public static function feedPayload(string $message, array $fields = []): array
     {
-        return [
+        return array_filter([
             'message' => $message,
+            'link' => $fields['link'] ?? null,
             'access_token' => self::requireAccessToken(),
-        ];
+        ], fn ($value) => $value !== null && trim((string) $value) !== '');
     }
 
-    public static function feedCurl(string $message, ?string $node = null): string
+    /**
+     * @param  array<string, string|null>  $fields
+     * @return array<string, string>
+     */
+    public static function safeFeedPayload(string $message, array $fields = []): array
     {
-        $query = http_build_query(self::feedPayload($message), '', '&', PHP_QUERY_RFC3986);
+        return array_filter([
+            'message' => $message,
+            'link' => $fields['link'] ?? null,
+        ], fn ($value) => $value !== null && trim((string) $value) !== '');
+    }
+
+    /**
+     * @param  array<string, string|null>  $fields
+     */
+    public static function feedCurl(string $message, ?string $node = null, array $fields = []): string
+    {
+        $query = http_build_query(self::feedPayload($message, $fields), '', '&', PHP_QUERY_RFC3986);
 
         return 'curl -i -X POST "'.self::feedEndpoint($node).'?'.$query.'"';
     }
 
-    public static function postToFeed(string $message, ?string $node = null): Response
+    /**
+     * @param  array<string, string|null>  $fields
+     */
+    public static function postToFeed(string $message, ?string $node = null, array $fields = []): Response
     {
-        return Http::asForm()->post(self::feedEndpoint($node), self::feedPayload($message));
+        return Http::asForm()->post(self::feedEndpoint($node), self::feedPayload($message, $fields));
     }
 
     private static function requireAccessToken(): string
