@@ -60,9 +60,16 @@
                     <h2 class="text-xl font-bold">Automated marketing</h2>
                     <p class="mt-1 text-sm text-neutral-500">Manage each social platform separately while the API bridge is prepared.</p>
                 </div>
-                <span class="inline-flex w-fit items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">
-                    <i data-lucide="plug-zap" style="width:14px;height:14px;"></i>
-                    API pending
+                @php
+                    $connectedSocialChannels = collect($socialChannels)->where('has_access_token', true)->count();
+                @endphp
+                <span @class([
+                    'inline-flex w-fit items-center gap-2 rounded-full border px-3 py-1 text-xs font-bold',
+                    'border-emerald-200 bg-emerald-50 text-emerald-700' => $connectedSocialChannels > 0,
+                    'border-amber-200 bg-amber-50 text-amber-700' => $connectedSocialChannels === 0,
+                ])>
+                    <i data-lucide="{{ $connectedSocialChannels > 0 ? 'key-round' : 'plug-zap' }}" style="width:14px;height:14px;"></i>
+                    {{ $connectedSocialChannels > 0 ? $connectedSocialChannels.' connected' : 'API pending' }}
                 </span>
             </div>
 
