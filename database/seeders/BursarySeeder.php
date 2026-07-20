@@ -1074,6 +1074,42 @@ class BursarySeeder extends Seeder
         $bursaries = [
             $entry(
                 $company(
+                    'Chamu',
+                    'https://chamu.co.za',
+                    'Chamu test bursary provider for demonstrating the Apply with Chamu flow.',
+                    'info@chamu.co.za',
+                    null,
+                ),
+                $bursary([
+                    'title' => 'Chamu (Test) Bursary',
+                    'category' => 'Testing and QA',
+                    'summary' => 'This test bursary lets you submit a sample application through Chamu, receive the normal application receipt, and see the same outcome as a real Chamu-managed bursary. It is not a real funding opportunity.',
+                    'fields_covered' => 'Any field of study, for testing the Chamu application flow only.',
+                    'coverage_value' => 'No funding is awarded. This bursary is only for testing the Chamu application outcome.',
+                    'eligibility_requirements' => [
+                        'Anyone with a Chamu account may use this to test the Apply with Chamu flow',
+                        'Use sample documents if you do not want to submit personal documents',
+                        'This is not a real funding opportunity and no bursary award will be made',
+                    ],
+                    'application_method' => 'Use Apply with Chamu to submit a test application. Chamu will send the test application email and send you a receipt, just like it does for a real Chamu-managed bursary.',
+                    'supporting_documents' => [
+                        'Certified copy of ID document',
+                        'Curriculum Vitae',
+                        'At least one academic record, transcript, Grade 12 marks, Grade 11 marks, or Matric certificate',
+                    ],
+                    'application_delivery_type' => 'email',
+                    'application_email' => 'kekanagomolemo@gmail.com',
+                    'chamu_apply_enabled' => true,
+                    'closing_date' => '2020-01-01',
+                    'closing_date_label' => 'Test only - no funding awarded',
+                    'contact_name' => 'Chamu Test Applications',
+                    'contact_email' => 'kekanagomolemo@gmail.com',
+                    'source_url' => 'https://chamu.co.za/test-bursaries/chamu-test-bursary',
+                    'apply_url' => 'mailto:kekanagomolemo@gmail.com',
+                ]),
+            ),
+            $entry(
+                $company(
                     'A2A Kopano Incorporated',
                     null,
                     'A South African auditing and advisory firm formed in 2005, serving private and public sector clients.',
@@ -8261,5 +8297,15 @@ class BursarySeeder extends Seeder
                 ]);
             }
         }
+
+        DB::table('bursaries')
+            ->whereIn('source_url', [
+                'https://chamu.local/test-bursaries/chamu-test-email-bursary',
+                'https://chamu.local/test-bursaries/chamu-test-postal-bursary',
+            ])
+            ->update([
+                'is_active' => false,
+                'updated_at' => $now,
+            ]);
     }
 }
