@@ -133,6 +133,66 @@ class BursaryApplicationTest extends TestCase
         ]);
     }
 
+    public function test_application_profile_ignores_saved_document_rows_when_files_are_missing(): void
+    {
+        Storage::fake('local');
+
+        $records = $this->createSignupLookups();
+        $user = User::factory()->create([
+            'user_type_id' => $records['user_type_id'],
+            'country_id' => $records['country_id'],
+            'curriculum_id' => $records['curriculum_id'],
+            'grade_id' => $records['grade_id'],
+            'name' => 'Missing File Student',
+            'first_name' => 'Missing',
+            'last_name' => 'Student',
+            'username' => 'missingfilestudent',
+            'email' => 'missing-file-student@example.com',
+        ]);
+
+        foreach ([
+            'id_document' => ['Certified copy of ID document', 'missing-id.pdf'],
+            'curriculum_vitae' => ['Curriculum Vitae', 'missing-cv.pdf'],
+            'academic_transcript' => ['Full academic record or transcript', 'missing-transcript.pdf'],
+        ] as $key => [$label, $originalName]) {
+            UserApplicationDocument::create([
+                'user_id' => $user->id,
+                'document_key' => $key,
+                'label' => $label,
+                'original_name' => $originalName,
+                'storage_disk' => 'local',
+                'path' => 'application-profiles/'.$user->id.'/'.$originalName,
+                'mime_type' => 'application/pdf',
+                'size' => 24000,
+            ]);
+        }
+
+        $profile = $this->actingAs($user)->get(route('profile.application'));
+
+        $profile->assertOk();
+        $profile->assertSee('0/3');
+        $profile->assertDontSee('missing-id.pdf');
+        $profile->assertDontSee('missing-cv.pdf');
+        $profile->assertDontSee('missing-transcript.pdf');
+
+        $response = $this
+            ->actingAs($user)
+            ->from(route('profile.application'))
+            ->put(route('profile.application.update'), [
+                'applicant_phone' => '071 000 0000',
+                'study_level' => 'Student (University/College)',
+                'institution' => 'Test University',
+                'qualification' => 'BSc Computer Science',
+            ]);
+
+        $response->assertRedirect(route('profile.application'));
+        $response->assertSessionHasErrors([
+            'documents.id_document',
+            'documents.curriculum_vitae',
+            'documents.academic_record',
+        ]);
+    }
+
     public function test_user_can_store_application_profile_details_and_documents(): void
     {
         Storage::fake('local');
@@ -297,6 +357,101 @@ class BursaryApplicationTest extends TestCase
             return $mail->hasTo('yondlers@gmail.com')
                 && count($mail->attachments()) === 4
                 && $mail->application->applicant_email === 'saved-docs-student@example.com';
+        });
+    }
+
+    public function test_chamu_application_can_replace_missing_saved_profile_documents_with_uploads(): void
+    {
+        Mail::fake();
+        Storage::fake('local');
+
+        $records = $this->createSignupLookups();
+        $user = User::factory()->create([
+            'user_type_id' => $records['user_type_id'],
+            'country_id' => $records['country_id'],
+            'curriculum_id' => $records['curriculum_id'],
+            'grade_id' => $records['grade_id'],
+            'name' => 'Replacement Student',
+            'first_name' => 'Replacement',
+            'last_name' => 'Student',
+            'username' => 'replacementstudent',
+            'email' => 'replacement-student@example.com',
+        ]);
+        $bursary = $this->createEmailBursary([
+            'title' => 'Replacement Documents Bursary Test',
+            'slug' => 'replacement-documents-bursary-test',
+        ]);
+
+        $missingDocuments = collect([
+            'id_document' => ['Certified copy of ID document', 'missing-id.pdf'],
+            'curriculum_vitae' => ['Curriculum Vitae', 'missing-cv.pdf'],
+            'academic_transcript' => ['Full academic record or transcript', 'missing-transcript.pdf'],
+        ])->mapWithKeys(function (array $details, string $key) use ($user): array {
+            [$label, $originalName] = $details;
+
+            return [$key => UserApplicationDocument::create([
+                'user_id' => $user->id,
+                'document_key' => $key,
+                'label' => $label,
+                'original_name' => $originalName,
+                'storage_disk' => 'local',
+                'path' => 'application-profiles/'.$user->id.'/'.$originalName,
+                'mime_type' => 'application/pdf',
+                'size' => 24000,
+            ])];
+        });
+
+        $show = $this->actingAs($user)->get(route('bursaries.show', $bursary));
+
+        $show->assertOk();
+        $show->assertDontSee('missing-id.pdf');
+        $show->assertDontSee('missing-cv.pdf');
+        $show->assertDontSee('missing-transcript.pdf');
+
+        $response = $this->actingAs($user)->post(route('bursaries.apply', $bursary), [
+            'saved_documents' => [
+                'id_document' => [$missingDocuments->get('id_document')->id],
+                'curriculum_vitae' => [$missingDocuments->get('curriculum_vitae')->id],
+                'academic_transcript' => [$missingDocuments->get('academic_transcript')->id],
+            ],
+            'documents' => [
+                'id_document' => [
+                    UploadedFile::fake()->create('replacement-id.pdf', 24, 'application/pdf'),
+                ],
+                'curriculum_vitae' => [
+                    UploadedFile::fake()->create('replacement-cv.pdf', 24, 'application/pdf'),
+                ],
+                'academic_transcript' => [
+                    UploadedFile::fake()->create('replacement-transcript.pdf', 24, 'application/pdf'),
+                ],
+            ],
+            'consent' => '1',
+        ]);
+
+        $response->assertRedirect(route('bursaries.show', $bursary));
+        $response->assertSessionHasNoErrors();
+
+        $application = DB::table('bursary_applications')->first();
+        $this->assertNotNull($application);
+
+        $attachedDocuments = DB::table('bursary_application_documents')
+            ->where('bursary_application_id', $application->id)
+            ->get();
+
+        $this->assertCount(3, $attachedDocuments);
+        $this->assertEqualsCanonicalizing(
+            ['replacement-cv.pdf', 'replacement-id.pdf', 'replacement-transcript.pdf'],
+            $attachedDocuments->pluck('original_name')->all()
+        );
+
+        foreach ($attachedDocuments as $document) {
+            Storage::disk($document->storage_disk)->assertExists($document->path);
+        }
+
+        Mail::assertSent(BursaryApplicationSubmitted::class, function (BursaryApplicationSubmitted $mail): bool {
+            return $mail->hasTo('yondlers@gmail.com')
+                && count($mail->attachments()) === 3
+                && $mail->application->applicant_email === 'replacement-student@example.com';
         });
     }
 

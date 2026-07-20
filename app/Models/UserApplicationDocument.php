@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Storage;
 
 class UserApplicationDocument extends Model
 {
@@ -48,5 +49,14 @@ class UserApplicationDocument extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function existsOnDisk(): bool
+    {
+        if (blank($this->storage_disk) || blank($this->path)) {
+            return false;
+        }
+
+        return Storage::disk($this->storage_disk)->exists($this->path);
     }
 }

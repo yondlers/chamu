@@ -88,7 +88,9 @@ class BursaryApplicationController extends Controller
                 ->whereIn('id', $selectedSavedDocumentIds)
                 ->get()
             : collect();
-        $selectedSavedDocumentsByKey = $selectedSavedDocuments->groupBy('document_key');
+        [$selectedSavedDocumentsWithFiles, $missingSelectedSavedDocuments] = $selectedSavedDocuments
+            ->partition(fn (UserApplicationDocument $document): bool => $document->existsOnDisk());
+        $selectedSavedDocumentsByKey = $selectedSavedDocumentsWithFiles->groupBy('document_key');
 
         $rules = [
             'applicant_phone' => ['nullable', 'string', 'max:40'],
@@ -120,7 +122,7 @@ class BursaryApplicationController extends Controller
             'documents.*.*.max' => 'Each document may not be larger than 10MB.',
         ]);
 
-        $validator->after(function ($validator) use ($applicationProfile, $deliveryType, $request, $requirements, $selectedSavedDocuments, $selectedSavedDocumentsByKey): void {
+        $validator->after(function ($validator) use ($applicationProfile, $deliveryType, $missingSelectedSavedDocuments, $request, $requirements, $selectedSavedDocumentsByKey): void {
             if (
                 $deliveryType === 'postal'
                 && trim((string) $request->input('applicant_postal_address', $applicationProfile?->applicant_postal_address ?? '')) === ''
@@ -128,8 +130,11 @@ class BursaryApplicationController extends Controller
                 $validator->errors()->add('applicant_postal_address', 'Add the postal or return address Chamu should keep with this application.');
             }
 
-            $selectedSavedDocuments->each(function (UserApplicationDocument $document) use ($validator): void {
-                if (! Storage::disk($document->storage_disk)->exists($document->path)) {
+            $missingSelectedSavedDocuments->each(function (UserApplicationDocument $document) use ($request, $selectedSavedDocumentsByKey, $validator): void {
+                $hasReplacement = $this->hasDocumentUpload($request, $document->document_key)
+                    || $selectedSavedDocumentsByKey->get($document->document_key, collect())->isNotEmpty();
+
+                if (! $hasReplacement) {
                     $validator->errors()->add("documents.{$document->document_key}", $document->label.' is saved on your profile, but the file is missing. Please upload it again.');
                 }
             });
@@ -165,7 +170,7 @@ class BursaryApplicationController extends Controller
             ? (bool) $data['sassa_recipient']
             : (bool) ($applicationProfile?->sassa_recipient ?? false);
 
-        $application = DB::transaction(function () use ($bursary, $deliveryType, $profileValue, $providerEmail, $providerPostalAddress, $request, $requirementsByKey, $sassaRecipient, $selectedSavedDocuments, $specialCircumstances, $user): BursaryApplication {
+        $application = DB::transaction(function () use ($bursary, $deliveryType, $profileValue, $providerEmail, $providerPostalAddress, $request, $requirementsByKey, $sassaRecipient, $selectedSavedDocumentsWithFiles, $specialCircumstances, $user): BursaryApplication {
             $application = BursaryApplication::create([
                 'user_id' => $user->id,
                 'bursary_id' => $bursary->id,
@@ -191,11 +196,11 @@ class BursaryApplicationController extends Controller
                     'company_name' => $bursary->company?->name,
                     'source_url' => $bursary->source_url,
                     'supporting_documents' => $bursary->supporting_documents ?? [],
-                    'used_application_profile' => $selectedSavedDocuments->isNotEmpty(),
+                    'used_application_profile' => $selectedSavedDocumentsWithFiles->isNotEmpty(),
                 ],
             ]);
 
-            foreach ($selectedSavedDocuments as $savedDocument) {
+            foreach ($selectedSavedDocumentsWithFiles as $savedDocument) {
                 $requirement = $requirementsByKey->get($savedDocument->document_key);
                 $path = $this->copySavedDocument($application, $savedDocument);
 

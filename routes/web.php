@@ -2202,10 +2202,11 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
             ->where('user_id', $request->user()->id)
             ->first();
 
-        $savedApplicationDocuments = DB::table('user_application_documents')
+        $savedApplicationDocuments = UserApplicationDocument::query()
             ->where('user_id', $request->user()->id)
-            ->orderByDesc('created_at')
+            ->latest()
             ->get()
+            ->filter(fn (UserApplicationDocument $document): bool => $document->existsOnDisk())
             ->groupBy('document_key');
     }
 
@@ -2618,6 +2619,7 @@ Route::middleware('auth')->group(function () {
             ->where('user_id', $user->id)
             ->latest()
             ->get()
+            ->filter(fn (UserApplicationDocument $document): bool => $document->existsOnDisk())
             ->groupBy('document_key');
 
         return view('profile.application', [
@@ -2644,6 +2646,7 @@ Route::middleware('auth')->group(function () {
         $existingDocuments = UserApplicationDocument::query()
             ->where('user_id', $user->id)
             ->get()
+            ->filter(fn (UserApplicationDocument $document): bool => $document->existsOnDisk())
             ->groupBy('document_key');
 
         $normaliseFiles = function (mixed $files): array {
