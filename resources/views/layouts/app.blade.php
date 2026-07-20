@@ -88,6 +88,12 @@
                 'active' => request()->routeIs('admin.instagram.*'),
             ],
             [
+                'label' => 'Threads',
+                'href' => route('admin.threads.index'),
+                'icon' => 'at-sign',
+                'active' => request()->routeIs('admin.threads.*'),
+            ],
+            [
                 'label' => 'LinkedIn',
                 'href' => route('admin.linkedin.index'),
                 'icon' => 'briefcase',

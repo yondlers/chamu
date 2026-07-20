@@ -23,8 +23,8 @@
                 <p class="mt-2 max-w-3xl text-neutral-500">{{ $platform['name'] }} - {{ $socialPost->statusLabel() }} - {{ $socialPost->user?->name ?? 'Unknown admin' }}</p>
             </div>
             <div class="flex flex-wrap gap-2">
-                @if ($platform['slug'] === 'facebook' && $hasAccessToken && $socialPost->status !== 'published')
-                    <form method="POST" action="{{ route('admin.facebook.posts.publish', $socialPost) }}">
+                @if (in_array($platform['slug'], ['facebook', 'instagram', 'linkedin', 'threads'], true) && $hasAccessToken && $socialPost->status !== 'published')
+                    <form method="POST" action="{{ route('admin.'.$platform['slug'].'.posts.publish', $socialPost) }}">
                         @csrf
                         <button class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 text-sm font-bold text-white hover:bg-[#001A48]">
                             Publish <i data-lucide="send" style="width:16px;height:16px;"></i>
@@ -86,6 +86,14 @@
                         <dt class="font-semibold text-neutral-500">Media</dt>
                         <dd class="max-w-sm truncate text-right font-bold text-neutral-900">{{ $socialPost->media_url ?: 'N/A' }}</dd>
                     </div>
+                    @if ($socialPost->media_url && str($socialPost->media_url)->startsWith(['http://', 'https://']))
+                        <div class="border-b border-neutral-100 pb-3">
+                            <dt class="font-semibold text-neutral-500">Preview</dt>
+                            <dd class="mt-2">
+                                <img src="{{ $socialPost->media_url }}" alt="{{ $socialPost->title ?: 'Social post image' }}" class="aspect-square w-full max-w-sm rounded-xl border border-neutral-200 object-cover">
+                            </dd>
+                        </div>
+                    @endif
                     <div class="flex justify-between gap-4">
                         <dt class="font-semibold text-neutral-500">Created</dt>
                         <dd class="text-right font-bold text-neutral-900">{{ $socialPost->created_at?->format('d M Y H:i') ?? 'N/A' }}</dd>

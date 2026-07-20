@@ -35,4 +35,22 @@ return [
         ],
     ],
 
+    'social' => [
+        'facebook' => [
+            'access_token' => env('FACEBOOK_ACCESS_TOKEN'),
+        ],
+        'instagram' => [
+            'business_account_id' => env('INSTAGRAM_BUSINESS_ACCOUNT_ID'),
+        ],
+        'threads' => [
+            'account_id' => env('THREADS_ACCOUNT_ID'),
+        ],
+        'linkedin' => [
+            'client_id' => env('LINKEDIN_CLIENT_ID'),
+            'client_credential' => env('LINKEDIN_CLIENT_CREDENTIAL'),
+            'author_urn' => env('LINKEDIN_AUTHOR_URN'),
+            'access_token' => env('LINKEDIN_ACCESS_TOKEN'),
+        ],
+    ],
+
 ];

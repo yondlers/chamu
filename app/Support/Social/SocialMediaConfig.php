@@ -26,7 +26,7 @@ class SocialMediaConfig
             'graph_url' => 'https://graph.facebook.com',
             'graph_version' => 'v25.0',
             'feed_node' => 'me',
-            'access_token' => 'EAAeFz3w2lusBSLDwRktUqmdjVNERQBa6oH0baFDSZChT4B6iIvrH86dsG9PYTeZBxZCWPafdZCq0tQjTHrUXq6xG0Fe7dThs5zSVoBCRVLbw6mJ3ZCROOOgWWqzuwYyb1p6blUxR9K2urhzjG7Wi368G2Xq6RZCVxBv3E6if7G78we3wbOcqdzsAyEFgjlZAPbZALOkQAGkzU9teO0mWuVF0ZCSOWTZAOHQyLAIDoom0O9uWYZD',
+            'access_token' => '',
             'next_steps' => [
                 'Create or connect the Meta app',
                 'Add page publishing permissions',
@@ -44,12 +44,38 @@ class SocialMediaConfig
             'tone' => 'Short-form visual campaign moments',
             'api_state' => 'Instagram Graph API connection pending',
             'engagement_state' => 'Comment management depends on business account access',
+            'graph_url' => 'https://graph.facebook.com',
+            'graph_version' => 'v25.0',
+            'business_account_id' => '',
             'access_token' => '',
+            'token_source' => 'facebook',
             'next_steps' => [
-                'Connect an Instagram business account',
-                'Map media upload and publish flow',
+                'Instagram business account ID stored',
+                'Upload a public image and capture the caption',
                 'Add caption, hashtag, and asset validation',
                 'Configure comment moderation webhooks',
+            ],
+        ],
+        'threads' => [
+            'slug' => 'threads',
+            'name' => 'Threads',
+            'icon' => 'at-sign',
+            'accent' => '#111111',
+            'audience' => 'Short updates for students, parents, and Chamu followers',
+            'surface' => 'Text threads, image posts, and conversation replies',
+            'tone' => 'Short conversational updates',
+            'api_state' => 'Threads API connection pending',
+            'engagement_state' => 'Replies and insights depend on Threads API permissions',
+            'graph_url' => 'https://graph.threads.net',
+            'graph_version' => 'v1.0',
+            'account_id' => '',
+            'access_token' => '',
+            'token_source' => 'facebook',
+            'next_steps' => [
+                'Threads account ID stored',
+                'Create text or image media containers',
+                'Publish containers with creation IDs',
+                'Map replies and insights once permissions are approved',
             ],
         ],
         'linkedin' => [
@@ -58,16 +84,21 @@ class SocialMediaConfig
             'icon' => 'briefcase',
             'accent' => '#0A66C2',
             'audience' => 'Sponsors, partners, schools, and professional networks',
-            'surface' => 'Company page updates and campaign reporting',
+            'surface' => 'Member text posts, image posts, and campaign reporting',
             'tone' => 'Partner-facing education and funding updates',
-            'api_state' => 'LinkedIn API connection pending',
-            'engagement_state' => 'Organization social actions depend on API product access',
+            'api_state' => 'LinkedIn OAuth access token pending',
+            'engagement_state' => 'Posting depends on a 3-legged member token with w_member_social',
+            'api_url' => 'https://api.linkedin.com',
+            'rest_version' => '202401',
+            'client_id' => '',
+            'client_credential' => '',
+            'author_urn' => '',
             'access_token' => '',
             'next_steps' => [
-                'Create or connect the LinkedIn app',
-                'Request organization posting access',
-                'Store organization URN and OAuth tokens',
-                'Map reactions and comments if products are approved',
+                'LinkedIn app credentials stored',
+                'Generate a 3-legged member access token',
+                'Store the member author URN',
+                'Publish text posts or uploaded image posts',
             ],
         ],
     ];
@@ -78,7 +109,9 @@ class SocialMediaConfig
     public static function adminPlatforms(): array
     {
         return array_map(function (array $platform) {
-            unset($platform['access_token']);
+            $platform['has_client_credentials'] = self::value($platform['slug'], 'client_id') !== null
+                && self::value($platform['slug'], 'client_credential') !== null;
+            unset($platform['access_token'], $platform['client_id'], $platform['client_credential'], $platform['author_urn']);
             $platform['has_access_token'] = self::hasAccessToken($platform['slug']);
             $platform['api_state'] = $platform['has_access_token']
                 ? 'Access token configured'
@@ -103,13 +136,29 @@ class SocialMediaConfig
 
     public static function accessToken(string $slug): ?string
     {
-        $token = trim((string) (self::PLATFORMS[$slug]['access_token'] ?? ''));
+        $token = trim((string) self::value($slug, 'access_token', ''));
+
+        if ($token === '' && isset(self::PLATFORMS[$slug]['token_source'])) {
+            $token = trim((string) self::value(self::PLATFORMS[$slug]['token_source'], 'access_token', ''));
+        }
 
         return $token !== '' ? $token : null;
     }
 
     public static function value(string $slug, string $key, mixed $default = null): mixed
     {
-        return self::PLATFORMS[$slug][$key] ?? $default;
+        $configValue = config('services.social.'.$slug.'.'.$key);
+
+        if ($configValue !== null && trim((string) $configValue) !== '') {
+            return $configValue;
+        }
+
+        $value = self::PLATFORMS[$slug][$key] ?? null;
+
+        if ($value !== null && trim((string) $value) !== '') {
+            return $value;
+        }
+
+        return $default;
     }
 }

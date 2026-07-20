@@ -16,12 +16,16 @@ use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
 use App\Models\UserSubjectResult;
 use App\Support\Social\FacebookGraph;
+use App\Support\Social\InstagramGraph;
+use App\Support\Social\LinkedInGraph;
 use App\Support\Social\SocialMediaConfig;
+use App\Support\Social\ThreadsGraph;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
@@ -1165,8 +1169,20 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 'platform' => $socialChannel,
                 'socialChannels' => $socialChannels,
                 'hasAccessToken' => (bool) $socialChannel['has_access_token'],
-                'graphVersion' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::graphVersion() : null,
-                'postEndpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
+                'graphVersion' => match ($socialChannel['slug']) {
+                    'facebook' => FacebookGraph::graphVersion(),
+                    'instagram' => InstagramGraph::graphVersion(),
+                    'linkedin' => LinkedInGraph::restVersion(),
+                    'threads' => ThreadsGraph::graphVersion(),
+                    default => null,
+                },
+                'postEndpoint' => match ($socialChannel['slug']) {
+                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'instagram' => InstagramGraph::mediaEndpoint().' then '.InstagramGraph::mediaPublishEndpoint(),
+                    'linkedin' => LinkedInGraph::postsEndpoint().' with optional '.LinkedInGraph::imagesInitializeUploadEndpoint(),
+                    'threads' => ThreadsGraph::threadsEndpoint().' then '.ThreadsGraph::threadsPublishEndpoint(),
+                    default => null,
+                },
                 'draftCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'draft')->count(),
                 'queuedCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'queued')->count(),
                 'publishedCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'published')->count(),
@@ -1176,27 +1192,66 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
         })->name('admin.'.$socialChannel['slug'].'.index');
 
         Route::post('/'.$socialChannel['slug'].'/posts', function (Request $request) use ($socialChannel) {
-            $data = $request->validate([
+            $validator = Validator::make($request->all(), [
                 'title' => ['nullable', 'string', 'max:180'],
                 'audience' => ['nullable', 'string', 'max:180'],
                 'message' => ['required', 'string', 'max:5000'],
                 'link_url' => ['nullable', 'url', 'max:2048'],
-                'media_url' => ['nullable', 'string', 'max:2048'],
+                'media_url' => in_array($socialChannel['slug'], ['instagram', 'linkedin', 'threads'], true)
+                    ? ['nullable', 'url', 'max:2048']
+                    : ['nullable', 'string', 'max:2048'],
+                'image_upload' => ['nullable', 'image', 'mimes:jpg,jpeg,png', 'max:10240'],
                 'status' => ['required', Rule::in(['draft', 'ready_for_approval', 'queued'])],
                 'intent' => ['nullable', Rule::in(['draft', 'queue'])],
             ]);
+            $validator->after(function ($validator) use ($request, $socialChannel) {
+                if (
+                    $socialChannel['slug'] === 'instagram'
+                    && ! $request->hasFile('image_upload')
+                    && trim((string) $request->input('media_url')) === ''
+                ) {
+                    $validator->errors()->add('image_upload', 'Upload an image or provide a public image URL for Instagram.');
+                }
+            });
+
+            $data = $validator->validate();
+
+            $mediaUrl = trim((string) ($data['media_url'] ?? '')) ?: null;
+
+            if ($request->hasFile('image_upload')) {
+                $path = $request->file('image_upload')->store('social-posts/'.$socialChannel['slug'], 'public');
+                $mediaUrl = url(Storage::disk('public')->url($path));
+            }
 
             $status = ($data['intent'] ?? null) === 'queue' ? 'queued' : $data['status'];
             $requestPayload = [
                 'platform' => $socialChannel['slug'],
-                'endpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
-                'fields' => $socialChannel['slug'] === 'facebook'
-                    ? FacebookGraph::safeFeedPayload($data['message'], ['link' => $data['link_url'] ?? null])
-                    : [
+                'endpoint' => match ($socialChannel['slug']) {
+                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'instagram' => InstagramGraph::mediaEndpoint(),
+                    'linkedin' => LinkedInGraph::postsEndpoint(),
+                    'threads' => ThreadsGraph::threadsEndpoint(),
+                    default => null,
+                },
+                'publish_endpoint' => match ($socialChannel['slug']) {
+                    'instagram' => InstagramGraph::mediaPublishEndpoint(),
+                    'linkedin' => $mediaUrl ? LinkedInGraph::imagesInitializeUploadEndpoint() : null,
+                    'threads' => ThreadsGraph::threadsPublishEndpoint(),
+                    default => null,
+                },
+                'fields' => match ($socialChannel['slug']) {
+                    'facebook' => FacebookGraph::safeFeedPayload($data['message'], ['link' => $data['link_url'] ?? null]),
+                    'instagram' => InstagramGraph::safeMediaPayload($data['message'], (string) $mediaUrl),
+                    'linkedin' => LinkedInGraph::safePostPayload($data['message'], LinkedInGraph::authorUrn()) + array_filter([
+                        'image_source_url' => $mediaUrl,
+                    ]),
+                    'threads' => ThreadsGraph::safeThreadPayload($data['message'], $mediaUrl),
+                    default => [
                         'message' => $data['message'],
                         'link' => $data['link_url'] ?? null,
-                        'media' => $data['media_url'] ?? null,
+                        'media' => $mediaUrl,
                     ],
+                },
             ];
 
             $socialPost = new SocialPost();
@@ -1207,7 +1262,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 'message' => $data['message'],
                 'audience' => $data['audience'] ?? null,
                 'link_url' => $data['link_url'] ?? null,
-                'media_url' => $data['media_url'] ?? null,
+                'media_url' => $mediaUrl,
                 'status' => $status,
                 'request_payload' => $requestPayload,
             ]);
@@ -1227,7 +1282,13 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 'platform' => $socialChannel,
                 'socialChannels' => $socialChannels,
                 'hasAccessToken' => (bool) $socialChannel['has_access_token'],
-                'postEndpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
+                'postEndpoint' => match ($socialChannel['slug']) {
+                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'instagram' => InstagramGraph::mediaEndpoint().' then '.InstagramGraph::mediaPublishEndpoint(),
+                    'linkedin' => LinkedInGraph::postsEndpoint().' with optional '.LinkedInGraph::imagesInitializeUploadEndpoint(),
+                    'threads' => ThreadsGraph::threadsEndpoint().' then '.ThreadsGraph::threadsPublishEndpoint(),
+                    default => null,
+                },
                 'socialPost' => $socialPost,
             ]);
         })->name('admin.'.$socialChannel['slug'].'.posts.show');
@@ -1237,17 +1298,35 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
 
             $requestPayload = [
                 'platform' => $socialChannel['slug'],
-                'endpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
-                'fields' => $socialChannel['slug'] === 'facebook'
-                    ? FacebookGraph::safeFeedPayload($socialPost->message, ['link' => $socialPost->link_url])
-                    : [
+                'endpoint' => match ($socialChannel['slug']) {
+                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'instagram' => InstagramGraph::mediaEndpoint(),
+                    'linkedin' => LinkedInGraph::postsEndpoint(),
+                    'threads' => ThreadsGraph::threadsEndpoint(),
+                    default => null,
+                },
+                'publish_endpoint' => match ($socialChannel['slug']) {
+                    'instagram' => InstagramGraph::mediaPublishEndpoint(),
+                    'linkedin' => $socialPost->media_url ? LinkedInGraph::imagesInitializeUploadEndpoint() : null,
+                    'threads' => ThreadsGraph::threadsPublishEndpoint(),
+                    default => null,
+                },
+                'fields' => match ($socialChannel['slug']) {
+                    'facebook' => FacebookGraph::safeFeedPayload($socialPost->message, ['link' => $socialPost->link_url]),
+                    'instagram' => InstagramGraph::safeMediaPayload($socialPost->message, (string) $socialPost->media_url),
+                    'linkedin' => LinkedInGraph::safePostPayload($socialPost->message, LinkedInGraph::authorUrn()) + array_filter([
+                        'image_source_url' => $socialPost->media_url,
+                    ]),
+                    'threads' => ThreadsGraph::safeThreadPayload($socialPost->message, $socialPost->media_url),
+                    default => [
                         'message' => $socialPost->message,
                         'link' => $socialPost->link_url,
                         'media' => $socialPost->media_url,
                     ],
+                },
             ];
 
-            if ($socialChannel['slug'] !== 'facebook') {
+            if (! in_array($socialChannel['slug'], ['facebook', 'instagram', 'linkedin', 'threads'], true)) {
                 $message = $socialChannel['name'].' publishing is not connected yet.';
 
                 $socialPost->fill([
@@ -1272,6 +1351,471 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 return redirect()
                     ->route('admin.'.$socialChannel['slug'].'.posts.show', $socialPost)
                     ->with('status', $message);
+            }
+
+            if ($socialChannel['slug'] === 'instagram') {
+                if (trim((string) $socialPost->media_url) === '') {
+                    $message = 'Instagram publishing needs a public image URL.';
+
+                    $socialPost->fill([
+                        'status' => 'failed',
+                        'request_payload' => $requestPayload,
+                        'error_message' => $message,
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'publish_blocked',
+                        'body' => $message,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $message],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->with('status', $message);
+                }
+
+                try {
+                    $containerResponse = InstagramGraph::createMediaContainer($socialPost->message, $socialPost->media_url);
+                    $containerPayload = $containerResponse->json();
+                    $containerPayload = is_array($containerPayload) ? $containerPayload : ['body' => $containerResponse->body()];
+                    $creationId = (string) data_get($containerPayload, 'id', '');
+                    $requestPayload['publish_fields'] = $creationId !== ''
+                        ? InstagramGraph::safePublishPayload($creationId)
+                        : [];
+
+                    if (! $containerResponse->successful() || $creationId === '') {
+                        $errorMessage = data_get($containerPayload, 'error.message') ?: $containerResponse->body();
+
+                        $socialPost->fill([
+                            'status' => 'failed',
+                            'request_payload' => $requestPayload,
+                            'response_payload' => ['media_container' => $containerPayload],
+                            'error_message' => $errorMessage,
+                        ]);
+                        $socialPost->save();
+
+                        $responseRecord = new SocialPostResponse();
+                        $responseRecord->fill([
+                            'social_post_id' => $socialPost->id,
+                            'platform' => $socialPost->platform,
+                            'response_type' => 'container_error',
+                            'external_response_id' => $creationId !== '' ? $creationId : null,
+                            'body' => $errorMessage,
+                            'request_payload' => $requestPayload,
+                            'response_payload' => $containerPayload,
+                            'received_at' => now(),
+                        ]);
+                        $responseRecord->save();
+
+                        return redirect()
+                            ->route('admin.instagram.posts.show', $socialPost)
+                            ->with('status', 'Instagram media container failed and response was saved.');
+                    }
+
+                    $publishResponse = InstagramGraph::publishMediaContainer($creationId);
+                    $publishPayload = $publishResponse->json();
+                    $publishPayload = is_array($publishPayload) ? $publishPayload : ['body' => $publishResponse->body()];
+                    $externalPostId = data_get($publishPayload, 'id');
+                    $errorMessage = $publishResponse->successful()
+                        ? null
+                        : (data_get($publishPayload, 'error.message') ?: $publishResponse->body());
+                    $responsePayload = [
+                        'media_container' => $containerPayload,
+                        'publish' => $publishPayload,
+                    ];
+
+                    $socialPost->fill([
+                        'status' => $publishResponse->successful() ? 'published' : 'failed',
+                        'external_post_id' => $publishResponse->successful() ? $externalPostId : $socialPost->external_post_id,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'error_message' => $errorMessage,
+                        'published_at' => $publishResponse->successful() ? now() : $socialPost->published_at,
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $publishResponse->successful() ? 'publish' : 'publish_error',
+                        'external_response_id' => $publishResponse->successful() ? $externalPostId : $creationId,
+                        'body' => $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->with('status', $publishResponse->successful() ? 'Instagram post published and response saved.' : 'Instagram publish failed and response was saved.');
+                } catch (\Throwable $exception) {
+                    $socialPost->fill([
+                        'status' => 'failed',
+                        'request_payload' => $requestPayload,
+                        'error_message' => $exception->getMessage(),
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'publish_exception',
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->with('status', 'Instagram publish threw an exception and the response was saved.');
+                }
+            }
+
+            if ($socialChannel['slug'] === 'linkedin') {
+                $missingLinkedInConfig = collect([
+                    LinkedInGraph::accessToken() === null ? 'OAuth access token' : null,
+                    LinkedInGraph::authorUrn() === null ? 'author URN' : null,
+                ])->filter()->implode(' and ');
+
+                if ($missingLinkedInConfig !== '') {
+                    $message = 'LinkedIn publishing needs '.$missingLinkedInConfig.'.';
+
+                    $socialPost->fill([
+                        'status' => 'failed',
+                        'request_payload' => $requestPayload,
+                        'error_message' => $message,
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'publish_blocked',
+                        'body' => $message,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $message],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.linkedin.posts.show', $socialPost)
+                        ->with('status', $message);
+                }
+
+                try {
+                    $imageUrn = null;
+                    $imageUploadPayload = null;
+
+                    if (trim((string) $socialPost->media_url) !== '') {
+                        $imageContents = null;
+                        $imageContentType = 'application/octet-stream';
+                        $mediaPath = parse_url($socialPost->media_url, PHP_URL_PATH);
+                        $storagePath = is_string($mediaPath) && str_starts_with($mediaPath, '/storage/')
+                            ? Str::after($mediaPath, '/storage/')
+                            : null;
+
+                        if ($storagePath !== null && Storage::disk('public')->exists($storagePath)) {
+                            $imageContents = Storage::disk('public')->get($storagePath);
+                            $imageContentType = Storage::disk('public')->mimeType($storagePath) ?: $imageContentType;
+                        } else {
+                            $imageResponse = Http::get($socialPost->media_url);
+                            if ($imageResponse->successful()) {
+                                $imageContents = $imageResponse->body();
+                                $imageContentType = $imageResponse->header('Content-Type') ?: $imageContentType;
+                            }
+                        }
+
+                        if ($imageContents === null || $imageContents === '') {
+                            $message = 'LinkedIn image upload needs a readable image source.';
+
+                            $socialPost->fill([
+                                'status' => 'failed',
+                                'request_payload' => $requestPayload,
+                                'response_payload' => ['image_source_url' => $socialPost->media_url],
+                                'error_message' => $message,
+                            ]);
+                            $socialPost->save();
+
+                            $responseRecord = new SocialPostResponse();
+                            $responseRecord->fill([
+                                'social_post_id' => $socialPost->id,
+                                'platform' => $socialPost->platform,
+                                'response_type' => 'image_upload_blocked',
+                                'body' => $message,
+                                'request_payload' => $requestPayload,
+                                'response_payload' => ['image_source_url' => $socialPost->media_url],
+                                'received_at' => now(),
+                            ]);
+                            $responseRecord->save();
+
+                            return redirect()
+                                ->route('admin.linkedin.posts.show', $socialPost)
+                                ->with('status', $message);
+                        }
+
+                        $initializeResponse = LinkedInGraph::initializeImageUpload();
+                        $initializePayload = $initializeResponse->json();
+                        $initializePayload = is_array($initializePayload) ? $initializePayload : ['body' => $initializeResponse->body()];
+                        $imageUrn = data_get($initializePayload, 'value.image');
+                        $uploadUrl = data_get($initializePayload, 'value.uploadUrl');
+
+                        if (! $initializeResponse->successful() || ! is_string($imageUrn) || ! is_string($uploadUrl)) {
+                            $errorMessage = data_get($initializePayload, 'message') ?: data_get($initializePayload, 'error.message') ?: $initializeResponse->body();
+
+                            $socialPost->fill([
+                                'status' => 'failed',
+                                'request_payload' => $requestPayload,
+                                'response_payload' => ['image_initialize' => $initializePayload],
+                                'error_message' => $errorMessage,
+                            ]);
+                            $socialPost->save();
+
+                            $responseRecord = new SocialPostResponse();
+                            $responseRecord->fill([
+                                'social_post_id' => $socialPost->id,
+                                'platform' => $socialPost->platform,
+                                'response_type' => 'image_initialize_error',
+                                'external_response_id' => is_string($imageUrn) ? $imageUrn : null,
+                                'body' => $errorMessage,
+                                'request_payload' => $requestPayload,
+                                'response_payload' => $initializePayload,
+                                'received_at' => now(),
+                            ]);
+                            $responseRecord->save();
+
+                            return redirect()
+                                ->route('admin.linkedin.posts.show', $socialPost)
+                                ->with('status', 'LinkedIn image upload initialization failed and response was saved.');
+                        }
+
+                        $imageUploadResponse = LinkedInGraph::uploadImage($uploadUrl, $imageContents, $imageContentType);
+                        $imageUploadPayload = [
+                            'status' => $imageUploadResponse->status(),
+                            'body' => $imageUploadResponse->body(),
+                            'image' => $imageUrn,
+                        ];
+
+                        if (! $imageUploadResponse->successful()) {
+                            $errorMessage = $imageUploadResponse->body();
+
+                            $socialPost->fill([
+                                'status' => 'failed',
+                                'request_payload' => $requestPayload,
+                                'response_payload' => [
+                                    'image_initialize' => $initializePayload,
+                                    'image_upload' => $imageUploadPayload,
+                                ],
+                                'error_message' => $errorMessage,
+                            ]);
+                            $socialPost->save();
+
+                            $responseRecord = new SocialPostResponse();
+                            $responseRecord->fill([
+                                'social_post_id' => $socialPost->id,
+                                'platform' => $socialPost->platform,
+                                'response_type' => 'image_upload_error',
+                                'external_response_id' => $imageUrn,
+                                'body' => $errorMessage,
+                                'request_payload' => $requestPayload,
+                                'response_payload' => $imageUploadPayload,
+                                'received_at' => now(),
+                            ]);
+                            $responseRecord->save();
+
+                            return redirect()
+                                ->route('admin.linkedin.posts.show', $socialPost)
+                                ->with('status', 'LinkedIn image upload failed and response was saved.');
+                        }
+                    }
+
+                    $requestPayload['fields'] = LinkedInGraph::safePostPayload($socialPost->message, LinkedInGraph::authorUrn(), $imageUrn, $socialPost->title);
+                    $response = LinkedInGraph::createPost($socialPost->message, $imageUrn, $socialPost->title);
+                    $responsePayload = $response->json();
+                    $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                    $externalPostId = $response->header('x-restli-id') ?: data_get($responsePayload, 'id');
+                    $errorMessage = $response->successful()
+                        ? null
+                        : (data_get($responsePayload, 'message') ?: data_get($responsePayload, 'error.message') ?: $response->body());
+
+                    $savedResponsePayload = [
+                        'publish' => $responsePayload,
+                    ];
+
+                    if (isset($initializePayload)) {
+                        $savedResponsePayload['image_initialize'] = $initializePayload;
+                    }
+
+                    if ($imageUploadPayload !== null) {
+                        $savedResponsePayload['image_upload'] = $imageUploadPayload;
+                    }
+
+                    $socialPost->fill([
+                        'status' => $response->successful() ? 'published' : 'failed',
+                        'external_post_id' => $response->successful() ? $externalPostId : $socialPost->external_post_id,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $savedResponsePayload,
+                        'error_message' => $errorMessage,
+                        'published_at' => $response->successful() ? now() : $socialPost->published_at,
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $response->successful() ? 'publish' : 'publish_error',
+                        'external_response_id' => $response->successful() ? $externalPostId : $imageUrn,
+                        'body' => $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $savedResponsePayload,
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.linkedin.posts.show', $socialPost)
+                        ->with('status', $response->successful() ? 'LinkedIn post published and response saved.' : 'LinkedIn publish failed and response was saved.');
+                } catch (\Throwable $exception) {
+                    $socialPost->fill([
+                        'status' => 'failed',
+                        'request_payload' => $requestPayload,
+                        'error_message' => $exception->getMessage(),
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'publish_exception',
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.linkedin.posts.show', $socialPost)
+                        ->with('status', 'LinkedIn publish threw an exception and the response was saved.');
+                }
+            }
+
+            if ($socialChannel['slug'] === 'threads') {
+                try {
+                    $containerResponse = ThreadsGraph::createThreadContainer($socialPost->message, $socialPost->media_url);
+                    $containerPayload = $containerResponse->json();
+                    $containerPayload = is_array($containerPayload) ? $containerPayload : ['body' => $containerResponse->body()];
+                    $creationId = (string) data_get($containerPayload, 'id', '');
+                    $requestPayload['publish_fields'] = $creationId !== ''
+                        ? ThreadsGraph::safePublishPayload($creationId)
+                        : [];
+
+                    if (! $containerResponse->successful() || $creationId === '') {
+                        $errorMessage = data_get($containerPayload, 'error.message') ?: $containerResponse->body();
+
+                        $socialPost->fill([
+                            'status' => 'failed',
+                            'request_payload' => $requestPayload,
+                            'response_payload' => ['thread_container' => $containerPayload],
+                            'error_message' => $errorMessage,
+                        ]);
+                        $socialPost->save();
+
+                        $responseRecord = new SocialPostResponse();
+                        $responseRecord->fill([
+                            'social_post_id' => $socialPost->id,
+                            'platform' => $socialPost->platform,
+                            'response_type' => 'container_error',
+                            'external_response_id' => $creationId !== '' ? $creationId : null,
+                            'body' => $errorMessage,
+                            'request_payload' => $requestPayload,
+                            'response_payload' => $containerPayload,
+                            'received_at' => now(),
+                        ]);
+                        $responseRecord->save();
+
+                        return redirect()
+                            ->route('admin.threads.posts.show', $socialPost)
+                            ->with('status', 'Threads container failed and response was saved.');
+                    }
+
+                    $publishResponse = ThreadsGraph::publishThreadContainer($creationId);
+                    $publishPayload = $publishResponse->json();
+                    $publishPayload = is_array($publishPayload) ? $publishPayload : ['body' => $publishResponse->body()];
+                    $externalPostId = data_get($publishPayload, 'id');
+                    $errorMessage = $publishResponse->successful()
+                        ? null
+                        : (data_get($publishPayload, 'error.message') ?: $publishResponse->body());
+                    $responsePayload = [
+                        'thread_container' => $containerPayload,
+                        'publish' => $publishPayload,
+                    ];
+
+                    $socialPost->fill([
+                        'status' => $publishResponse->successful() ? 'published' : 'failed',
+                        'external_post_id' => $publishResponse->successful() ? $externalPostId : $socialPost->external_post_id,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'error_message' => $errorMessage,
+                        'published_at' => $publishResponse->successful() ? now() : $socialPost->published_at,
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $publishResponse->successful() ? 'publish' : 'publish_error',
+                        'external_response_id' => $publishResponse->successful() ? $externalPostId : $creationId,
+                        'body' => $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->with('status', $publishResponse->successful() ? 'Threads post published and response saved.' : 'Threads publish failed and response was saved.');
+                } catch (\Throwable $exception) {
+                    $socialPost->fill([
+                        'status' => 'failed',
+                        'request_payload' => $requestPayload,
+                        'error_message' => $exception->getMessage(),
+                    ]);
+                    $socialPost->save();
+
+                    $responseRecord = new SocialPostResponse();
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'publish_exception',
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->with('status', 'Threads publish threw an exception and the response was saved.');
+                }
             }
 
             try {

@@ -27,6 +27,11 @@
         <env name="DB_DATABASE" value=":memory:"/>
         <env name="DB_URL" value=""/>
         <env name="MAIL_MAILER" value="array"/>
+        <env name="FACEBOOK_ACCESS_TOKEN" value="testing-facebook-token"/>
+        <env name="INSTAGRAM_BUSINESS_ACCOUNT_ID" value="17841408125635770"/>
+        <env name="THREADS_ACCOUNT_ID" value="28186523434264969"/>
+        <env name="LINKEDIN_CLIENT_ID" value="testing-linkedin-client-id"/>
+        <env name="LINKEDIN_CLIENT_CREDENTIAL" value="testing-linkedin-credential"/>
         <env name="QUEUE_CONNECTION" value="sync"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="PULSE_ENABLED" value="false"/>
