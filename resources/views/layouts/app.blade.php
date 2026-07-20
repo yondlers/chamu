@@ -38,10 +38,11 @@
 </head>
 <body class="min-h-screen text-neutral-900 bg-white">
     @php
+        $isAdminPortal = auth()->check() && auth()->user()->is_super_admin && request()->routeIs('admin.*');
         $navLinkBase = 'inline-flex shrink-0 items-center gap-2 rounded-xl border px-3 py-2 text-sm font-semibold transition';
         $navLinkIdle = 'border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50';
         $navLinkActive = 'border-neutral-950 bg-neutral-950 text-white shadow-sm';
-        $navItems = [
+        $studentNavItems = [
             [
                 'label' => 'APS',
                 'href' => route('course-match.index'),
@@ -67,19 +68,75 @@
                 'active' => request()->routeIs('applications.*'),
             ],
         ];
+        $adminNavItems = [
+            [
+                'label' => 'Dashboard',
+                'href' => route('admin.index'),
+                'icon' => 'layout-dashboard',
+                'active' => request()->routeIs('admin.index'),
+            ],
+            [
+                'label' => 'Facebook',
+                'href' => route('admin.facebook.index'),
+                'icon' => 'messages-square',
+                'active' => request()->routeIs('admin.facebook.*'),
+            ],
+            [
+                'label' => 'Instagram',
+                'href' => route('admin.instagram.index'),
+                'icon' => 'camera',
+                'active' => request()->routeIs('admin.instagram.*'),
+            ],
+            [
+                'label' => 'LinkedIn',
+                'href' => route('admin.linkedin.index'),
+                'icon' => 'briefcase',
+                'active' => request()->routeIs('admin.linkedin.*'),
+            ],
+            [
+                'label' => 'Activity',
+                'href' => route('admin.activity-logs.index'),
+                'icon' => 'activity',
+                'active' => request()->routeIs('admin.activity-logs.*'),
+            ],
+            [
+                'label' => 'Audit',
+                'href' => route('admin.audit-logs.index'),
+                'icon' => 'file-search',
+                'active' => request()->routeIs('admin.audit-logs.*'),
+            ],
+            [
+                'label' => 'Accounts',
+                'href' => route('admin.accounts.index'),
+                'icon' => 'users',
+                'active' => request()->routeIs('admin.accounts.*'),
+            ],
+            [
+                'label' => 'Visits',
+                'href' => route('admin.site-visits.index'),
+                'icon' => 'mouse-pointer-click',
+                'active' => request()->routeIs('admin.site-visits.*'),
+            ],
+        ];
+        $navItems = $isAdminPortal ? $adminNavItems : $studentNavItems;
     @endphp
 
     <header class="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/95 backdrop-blur">
         <nav class="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-5 lg:px-8">
-            <a href="{{ url('/') }}" class="flex shrink-0 items-center gap-2">
+            <a href="{{ $isAdminPortal ? route('admin.index') : url('/') }}" class="flex shrink-0 items-center gap-2">
                 <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-9 w-9 rounded-xl object-contain">
                 <span class="font-bold text-lg">Chamu</span>
+                @if ($isAdminPortal)
+                    <span class="hidden rounded-full bg-[#F3F7FC] px-2.5 py-1 text-xs font-bold text-[#01225E] sm:inline-flex">Admin</span>
+                @endif
             </a>
 
             <div class="no-scrollbar ml-auto flex min-w-0 items-center gap-2 overflow-x-auto whitespace-nowrap pb-1">
                 @auth
-                    <span class="hidden shrink-0 items-center rounded-full bg-orange-50 px-3 py-1.5 text-sm font-semibold text-orange-700 sm:inline-flex">{{ auth()->user()->streak }} day streak</span>
-                    <span class="hidden shrink-0 items-center rounded-full bg-emerald-50 px-3 py-1.5 text-sm font-semibold text-emerald-700 sm:inline-flex">{{ number_format(auth()->user()->points) }} pts</span>
+                    @unless ($isAdminPortal)
+                        <span class="hidden shrink-0 items-center rounded-full bg-orange-50 px-3 py-1.5 text-sm font-semibold text-orange-700 sm:inline-flex">{{ auth()->user()->streak }} day streak</span>
+                        <span class="hidden shrink-0 items-center rounded-full bg-emerald-50 px-3 py-1.5 text-sm font-semibold text-emerald-700 sm:inline-flex">{{ number_format(auth()->user()->points) }} pts</span>
+                    @endunless
 
                     @foreach ($navItems as $item)
                         <a
@@ -95,7 +152,7 @@
                     @php
                         $profileActive = request()->routeIs('profile.*');
                     @endphp
-                    @if (auth()->user()->is_super_admin)
+                    @if (auth()->user()->is_super_admin && ! $isAdminPortal)
                         <a
                             href="{{ route('admin.index') }}"
                             @class([$navLinkBase, request()->routeIs('admin.*') ? $navLinkActive : $navLinkIdle])

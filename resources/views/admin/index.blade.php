@@ -1,16 +1,22 @@
 @extends('layouts.app')
 
-@section('title', 'Admin - Chamu')
+@section('title', 'Admin Dashboard - Chamu')
 
 @section('content')
     <main class="mx-auto max-w-7xl px-4 py-8 sm:px-5 lg:px-8">
         <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
                 <p class="text-sm font-bold text-[#01225E]">Super admin</p>
-                <h1 class="mt-1 text-3xl font-bold">Admin overview</h1>
-                <p class="mt-2 max-w-3xl text-neutral-500">A quick glimpse of current activity. Open each section to inspect the full list and individual records.</p>
+                <h1 class="mt-1 text-3xl font-bold">Admin dashboard</h1>
+                <p class="mt-2 max-w-3xl text-neutral-500">A focused view for platform operations, user activity, audit records, and social-media publishing preparation.</p>
             </div>
             <div class="flex flex-wrap gap-2">
+                <a href="{{ route('admin.activity-logs.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
+                    Activity <i data-lucide="activity" style="width:16px;height:16px;"></i>
+                </a>
+                <a href="{{ route('admin.audit-logs.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
+                    Audit <i data-lucide="file-search" style="width:16px;height:16px;"></i>
+                </a>
                 <a href="{{ route('admin.site-visits.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                     Visits <i data-lucide="activity" style="width:16px;height:16px;"></i>
                 </a>
@@ -20,7 +26,7 @@
             </div>
         </div>
 
-        <section class="grid gap-3 md:grid-cols-4">
+        <section class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Active now</p>
                 <p class="mt-2 text-3xl font-bold">{{ number_format($activeVisitorCount) }}</p>
@@ -40,6 +46,40 @@
                 <p class="text-xs font-bold uppercase text-neutral-500">Accounts</p>
                 <p class="mt-2 text-3xl font-bold">{{ number_format($totalAccounts) }}</p>
                 <p class="mt-1 text-xs font-semibold text-neutral-500">Created in Chamu</p>
+            </div>
+            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
+                <p class="text-xs font-bold uppercase text-neutral-500">Social channels</p>
+                <p class="mt-2 text-3xl font-bold">{{ number_format($totalSocialChannels) }}</p>
+                <p class="mt-1 text-xs font-semibold text-neutral-500">Ready for API setup</p>
+            </div>
+        </section>
+
+        <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+            <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">Automated marketing</h2>
+                    <p class="mt-1 text-sm text-neutral-500">Manage each social platform separately while the API bridge is prepared.</p>
+                </div>
+                <span class="inline-flex w-fit items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">
+                    <i data-lucide="plug-zap" style="width:14px;height:14px;"></i>
+                    API pending
+                </span>
+            </div>
+
+            <div class="grid gap-3 md:grid-cols-3">
+                @foreach ($socialChannels as $channel)
+                    <a href="{{ route('admin.'.$channel['slug'].'.index') }}" class="group rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition hover:border-neutral-300 hover:bg-white">
+                        <div class="flex items-start justify-between gap-4">
+                            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl text-white" style="background: {{ $channel['accent'] }}">
+                                <i data-lucide="{{ $channel['icon'] }}" style="width:20px;height:20px;"></i>
+                            </span>
+                            <i data-lucide="arrow-right" class="text-neutral-400 transition group-hover:translate-x-0.5 group-hover:text-neutral-700" style="width:18px;height:18px;"></i>
+                        </div>
+                        <p class="mt-4 text-lg font-bold text-neutral-950">{{ $channel['name'] }}</p>
+                        <p class="mt-1 text-sm font-semibold text-neutral-600">{{ $channel['api_state'] }}</p>
+                        <p class="mt-3 text-xs font-bold uppercase text-neutral-500">{{ $channel['surface'] }}</p>
+                    </a>
+                @endforeach
             </div>
         </section>
 

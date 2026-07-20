@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Models\AuditLog;
 use App\Models\SiteVisit;
 use App\Models\User;
+use App\Support\Social\SocialMediaConfig;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -56,11 +57,85 @@ class SuperAdminActivityTest extends TestCase
         $response->assertSee('APS page, university selected, no APS yet');
         $response->assertSee(route('admin.site-visits.index'), false);
         $response->assertSee(route('admin.site-visits.show', $siteVisit), false);
+        $response->assertSee(route('admin.activity-logs.index'), false);
         $response->assertSee(route('admin.audit-logs.index'), false);
         $response->assertSee(route('admin.audit-logs.show', $auditLog), false);
+        $response->assertSee(route('admin.facebook.index'), false);
+        $response->assertSee(route('admin.instagram.index'), false);
+        $response->assertSee(route('admin.linkedin.index'), false);
         $response->assertSee('Accounts created');
         $response->assertSee('admin@example.com');
         $response->assertSee('Audit log');
+        $response->assertSee('Automated marketing');
+    }
+
+    public function test_super_admin_can_view_social_pages_and_unified_activity_log(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $siteVisit = SiteVisit::create([
+            'ip_address' => '127.0.0.8',
+            'method' => 'GET',
+            'url' => 'https://chamu.test/funding',
+            'route_name' => 'funding.index',
+            'device_type' => 'mobile',
+            'platform' => 'iOS',
+            'browser' => 'Safari',
+            'visited_at' => now(),
+        ]);
+        $auditLog = AuditLog::create([
+            'name' => 'Marketing audit seed',
+            'event' => 'marketing.seeded',
+            'user_id' => $superAdmin->id,
+            'auditable_type' => User::class,
+            'auditable_id' => $superAdmin->id,
+            'metadata' => ['platform' => 'facebook'],
+        ]);
+
+        foreach ([
+            'facebook' => 'Facebook',
+            'instagram' => 'Instagram',
+            'linkedin' => 'LinkedIn',
+        ] as $routeKey => $platformName) {
+            $response = $this->actingAs($superAdmin)->get(route('admin.'.$routeKey.'.index'));
+
+            $response->assertOk();
+            $response->assertSee($platformName);
+            $response->assertSee('Post composer');
+            $response->assertSee('Integration readiness');
+
+            if ($routeKey === 'facebook') {
+                $response->assertSee('Token configured');
+            } else {
+                $response->assertSee('API pending');
+            }
+        }
+
+        $activityResponse = $this->actingAs($superAdmin)->get(route('admin.activity-logs.index'));
+
+        $activityResponse->assertOk();
+        $activityResponse->assertSee('Unified timeline');
+        $activityResponse->assertSee('Site visit');
+        $activityResponse->assertSee('Audit');
+        $activityResponse->assertSee('https://chamu.test/funding');
+        $activityResponse->assertSee('marketing.seeded');
+        $activityResponse->assertSee(route('admin.site-visits.show', $siteVisit), false);
+        $activityResponse->assertSee(route('admin.audit-logs.show', $auditLog), false);
+    }
+
+    public function test_facebook_admin_page_detects_token_without_rendering_it(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $token = SocialMediaConfig::accessToken('facebook');
+
+        $response = $this->actingAs($superAdmin)->get(route('admin.facebook.index'));
+
+        $this->assertNotNull($token);
+        $response->assertOk();
+        $response->assertSee('Access token configured');
+        $response->assertSee('https://graph.facebook.com/v25.0/me/feed');
+        $response->assertDontSee($token);
     }
 
     public function test_super_admin_can_view_full_site_visit_list_and_visit_details(): void

@@ -13,6 +13,8 @@ use App\Models\User;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
 use App\Models\UserSubjectResult;
+use App\Support\Social\FacebookGraph;
+use App\Support\Social\SocialMediaConfig;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
@@ -1095,7 +1097,9 @@ Route::post('/logout', function (Request $request) {
 })->middleware('auth')->name('logout');
 
 Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
-    Route::get('/', function () {
+    $socialChannels = SocialMediaConfig::adminPlatforms();
+
+    Route::get('/', function () use ($socialChannels) {
         $activeWindow = now()->subMinutes(10);
         $activeVisits = SiteVisit::with('user')
             ->where('visited_at', '>=', $activeWindow)
@@ -1117,6 +1121,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
         $totalAccounts = User::count();
         $totalVisits = SiteVisit::count();
         $totalAuditLogs = AuditLog::count();
+        $totalSocialChannels = count($socialChannels);
         $accounts = User::query()
             ->with(['userType', 'curriculum', 'grade', 'province'])
             ->withCount([
@@ -1137,9 +1142,27 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
             'totalAccounts' => $totalAccounts,
             'totalVisits' => $totalVisits,
             'totalAuditLogs' => $totalAuditLogs,
+            'totalSocialChannels' => $totalSocialChannels,
+            'socialChannels' => $socialChannels,
             'accounts' => $accounts,
         ]);
     })->name('admin.index');
+
+    foreach ($socialChannels as $socialChannel) {
+        Route::get('/'.$socialChannel['slug'], function () use ($socialChannels, $socialChannel) {
+            return view('admin.social.show', [
+                'platform' => $socialChannel,
+                'socialChannels' => $socialChannels,
+                'hasAccessToken' => (bool) $socialChannel['has_access_token'],
+                'graphVersion' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::graphVersion() : null,
+                'postEndpoint' => $socialChannel['slug'] === 'facebook' ? FacebookGraph::feedEndpoint() : null,
+                'draftCount' => 0,
+                'queuedCount' => 0,
+                'publishedCount' => 0,
+                'engagementCount' => 0,
+            ]);
+        })->name('admin.'.$socialChannel['slug'].'.index');
+    }
 
     Route::get('/accounts', function (Request $request) {
         $accountSearch = trim((string) $request->query('account_search', ''));
@@ -1190,6 +1213,61 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
             'siteVisit' => $siteVisit,
         ]);
     })->name('admin.site-visits.show');
+
+    Route::get('/activity-logs', function () {
+        $siteVisitItems = SiteVisit::with('user')
+            ->latest('visited_at')
+            ->limit(80)
+            ->get()
+            ->map(function (SiteVisit $visit) {
+                return [
+                    'type' => 'Site visit',
+                    'icon' => 'mouse-pointer-click',
+                    'title' => $visit->pageLabel(),
+                    'actor' => $visit->user?->name ?? 'Guest visitor',
+                    'context' => trim(($visit->method ?? 'GET').' '.($visit->route_name ?? 'No route')),
+                    'meta' => ($visit->device_type ?? 'Unknown device').' - '.($visit->browser ?? 'Unknown browser'),
+                    'occurred_at' => $visit->visited_at,
+                    'href' => route('admin.site-visits.show', $visit),
+                    'tone' => 'border-sky-200 bg-sky-50 text-sky-700',
+                ];
+            });
+
+        $auditItems = AuditLog::with('user')
+            ->latest()
+            ->limit(80)
+            ->get()
+            ->map(function (AuditLog $log) {
+                return [
+                    'type' => 'Audit',
+                    'icon' => 'file-search',
+                    'title' => $log->name,
+                    'actor' => $log->user?->name ?? 'System',
+                    'context' => $log->event ?? 'No event key',
+                    'meta' => class_basename($log->auditable_type ?? '') ?: 'No auditable model',
+                    'occurred_at' => $log->created_at,
+                    'href' => route('admin.audit-logs.show', $log),
+                    'tone' => 'border-violet-200 bg-violet-50 text-violet-700',
+                ];
+            });
+
+        $activityLogs = $siteVisitItems
+            ->merge($auditItems)
+            ->sortByDesc(fn (array $item) => $item['occurred_at']?->timestamp ?? 0)
+            ->take(100)
+            ->values();
+
+        return view('admin.activity-logs.index', [
+            'activityLogs' => $activityLogs,
+            'totalActivities' => SiteVisit::count() + AuditLog::count(),
+            'totalVisits' => SiteVisit::count(),
+            'totalAuditLogs' => AuditLog::count(),
+            'activeVisitors' => SiteVisit::where('visited_at', '>=', now()->subMinutes(10))
+                ->get()
+                ->unique(fn (SiteVisit $visit) => $visit->session_id ?: $visit->ip_address.'|'.$visit->user_agent)
+                ->count(),
+        ]);
+    })->name('admin.activity-logs.index');
 
     Route::get('/audit-logs', function () {
         $auditLogs = AuditLog::with('user')

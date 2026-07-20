@@ -7,7 +7,7 @@
         <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
                 <a href="{{ route('admin.index') }}" class="inline-flex items-center gap-2 text-sm font-bold text-[#01225E] hover:underline">
-                    <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Admin overview
+                    <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Admin dashboard
                 </a>
                 <p class="mt-5 text-sm font-bold text-[#01225E]">Accounts</p>
                 <h1 class="mt-1 text-3xl font-bold">Accounts created</h1>
