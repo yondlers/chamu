@@ -26,11 +26,13 @@ class SocialMediaConfig
             'graph_url' => 'https://graph.facebook.com',
             'graph_version' => 'v25.0',
             'feed_node' => 'me',
+            'page_id' => '',
+            'page_access_token' => '',
             'access_token' => '',
             'next_steps' => [
                 'Create or connect the Meta app',
-                'Add page publishing permissions',
-                'Store long-lived page access tokens',
+                'Add pages_read_engagement and pages_manage_posts',
+                'Store the target Page ID and Page access token',
                 'Configure webhooks for comments and messages',
             ],
         ],
@@ -111,7 +113,7 @@ class SocialMediaConfig
         return array_map(function (array $platform) {
             $platform['has_client_credentials'] = self::value($platform['slug'], 'client_id') !== null
                 && self::value($platform['slug'], 'client_credential') !== null;
-            unset($platform['access_token'], $platform['client_id'], $platform['client_credential'], $platform['author_urn']);
+            unset($platform['access_token'], $platform['page_access_token'], $platform['client_id'], $platform['client_credential'], $platform['author_urn']);
             $platform['has_access_token'] = self::hasAccessToken($platform['slug']);
             $platform['api_state'] = $platform['has_access_token']
                 ? 'Access token configured'
@@ -137,6 +139,11 @@ class SocialMediaConfig
     public static function accessToken(string $slug): ?string
     {
         $token = trim((string) self::value($slug, 'access_token', ''));
+
+        if ($slug === 'facebook') {
+            $pageToken = trim((string) self::value($slug, 'page_access_token', ''));
+            $token = $pageToken !== '' ? $pageToken : $token;
+        }
 
         if ($token === '' && isset(self::PLATFORMS[$slug]['token_source'])) {
             $token = trim((string) self::value(self::PLATFORMS[$slug]['token_source'], 'access_token', ''));

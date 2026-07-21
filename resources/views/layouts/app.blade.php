@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Chamu')</title>
+    @php
+        $adsenseEnabled = request()->routeIs(
+            'aps.index',
+            'aps-calculator.index',
+            'bursaries.index',
+            'bursaries.show',
+            'learn.index',
+            'guides.*',
+            'public.universities.show',
+            'public.qualifications.show',
+        ) || (request()->routeIs('content.index') && request()->filled('subject_id'));
+    @endphp
     @stack('head')
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4352231193802470"
-        crossorigin="anonymous"></script>
+    @if ($adsenseEnabled)
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4352231193802470"
+            crossorigin="anonymous"></script>
+    @endif
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -192,6 +206,18 @@
                         <i data-lucide="badge-dollar-sign" style="width:16px;height:16px;"></i>
                         Funding
                     </a>
+                    <a href="{{ route('learn.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('learn.*') || request()->routeIs('content.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('learn.*') || request()->routeIs('content.*')) aria-current="page" @endif>
+                        <i data-lucide="book-open" style="width:16px;height:16px;"></i>
+                        Learn
+                    </a>
+                    <a href="{{ route('guides.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('guides.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('guides.*')) aria-current="page" @endif>
+                        <i data-lucide="library" style="width:16px;height:16px;"></i>
+                        Guides
+                    </a>
+                    <a href="{{ route('about') }}" class="{{ $navLinkBase }} {{ request()->routeIs('about') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('about')) aria-current="page" @endif>
+                        <i data-lucide="info" style="width:16px;height:16px;"></i>
+                        About
+                    </a>
                     <a href="{{ route('login') }}" class="{{ $navLinkBase }} {{ request()->routeIs('login') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('login')) aria-current="page" @endif>
                         <i data-lucide="log-in" style="width:16px;height:16px;"></i>
                         Log in
@@ -205,6 +231,25 @@
     </header>
 
     @yield('content')
+
+    <footer class="border-t border-neutral-200 bg-white">
+        <div class="mx-auto grid max-w-7xl gap-6 px-5 py-8 text-sm text-neutral-600 sm:grid-cols-[1fr_auto] sm:items-center lg:px-8">
+            <div>
+                <a href="{{ url('/') }}" class="inline-flex items-center gap-2 font-bold text-neutral-950">
+                    <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-8 w-8 rounded-lg object-contain">
+                    Chamu
+                </a>
+                <p class="mt-2 max-w-2xl leading-6">South African learner tools for APS planning, study practice, bursary discovery, and university requirement checks.</p>
+            </div>
+            <nav aria-label="Footer" class="flex flex-wrap gap-x-4 gap-y-2 font-semibold">
+                <a href="{{ route('guides.index') }}" class="hover:text-neutral-950">Guides</a>
+                <a href="{{ route('about') }}" class="hover:text-neutral-950">About</a>
+                <a href="{{ route('contact') }}" class="hover:text-neutral-950">Contact</a>
+                <a href="{{ route('privacy') }}" class="hover:text-neutral-950">Privacy</a>
+                <a href="{{ route('terms') }}" class="hover:text-neutral-950">Terms</a>
+            </nav>
+        </div>
+    </footer>
 
     <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 opacity-0 pointer-events-none bg-neutral-900 text-white px-5 py-3 rounded-xl text-sm font-medium shadow-lg max-w-[90vw] text-center"></div>
 

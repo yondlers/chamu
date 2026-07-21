@@ -26,6 +26,7 @@ class SitemapController extends Controller
                 $writer->writeAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
 
                 $this->writeUrl($writer, route('home'));
+                $this->writeStaticPages($writer);
                 echo $writer->flush();
 
                 $this->universityRows()->each(function (object $university) use ($writer): void {
@@ -57,6 +58,28 @@ class SitemapController extends Controller
                 URL::forceScheme(null);
             }
         }, 200, ['Content-Type' => 'application/xml; charset=UTF-8']);
+    }
+
+    private function writeStaticPages(XMLWriter $writer): void
+    {
+        $routeNames = [
+            'aps.index',
+            'learn.index',
+            'guides.index',
+            'bursaries.index',
+            'about',
+            'contact',
+            'privacy',
+            'terms',
+        ];
+
+        foreach ($routeNames as $routeName) {
+            $this->writeUrl($writer, route($routeName));
+        }
+
+        foreach (array_keys(config('chamu_guides.guides', [])) as $slug) {
+            $this->writeUrl($writer, route('guides.show', ['guide' => $slug]));
+        }
     }
 
     private function configuredHttpsRoot(): string

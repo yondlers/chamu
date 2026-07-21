@@ -37,6 +37,8 @@ return [
 
     'social' => [
         'facebook' => [
+            'page_id' => env('FACEBOOK_PAGE_ID'),
+            'page_access_token' => env('FACEBOOK_PAGE_ACCESS_TOKEN'),
             'access_token' => env('FACEBOOK_ACCESS_TOKEN'),
         ],
         'instagram' => [

@@ -37,6 +37,14 @@ class SitemapTest extends TestCase
         $response->assertOk();
         $this->assertSame('application/xml; charset=UTF-8', $response->headers->get('Content-Type'));
         $this->assertStringContainsString('<loc>https://chamu.co.za</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/aps</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/learn</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/guides</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/guides/how-aps-works</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/about</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/contact</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/privacy-policy</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/terms</loc>', $content);
         $this->assertStringContainsString(
             '<loc>'.$expectedUniversityUrl.'</loc>',
             $content,

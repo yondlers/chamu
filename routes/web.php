@@ -22,6 +22,7 @@ use App\Support\Social\SocialImageStorage;
 use App\Support\Social\SocialMediaConfig;
 use App\Support\Social\ThreadsGraph;
 use Illuminate\Http\Request;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -39,6 +40,37 @@ use Illuminate\Validation\Rules\Password;
 Route::get('/', fn () => redirect()->route('aps.index'))->name('home');
 
 Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
+
+Route::view('/about', 'pages.about')->name('about');
+Route::view('/contact', 'pages.contact')->name('contact');
+Route::view('/privacy-policy', 'pages.privacy')->name('privacy');
+Route::redirect('/privacy', '/privacy-policy');
+Route::view('/terms', 'pages.terms')->name('terms');
+
+Route::get('/guides', function () {
+    $guides = collect(config('chamu_guides.guides', []))
+        ->map(fn (array $guide, string $slug) => (object) array_merge(['slug' => $slug], $guide))
+        ->values();
+
+    return view('guides.index', ['guides' => $guides]);
+})->name('guides.index');
+
+Route::get('/guides/{guide}', function (string $guide) {
+    $guides = collect(config('chamu_guides.guides', []));
+    abort_unless($guides->has($guide), 404);
+
+    $selectedGuide = (object) array_merge(['slug' => $guide], $guides->get($guide));
+    $relatedGuides = $guides
+        ->except($guide)
+        ->take(3)
+        ->map(fn (array $relatedGuide, string $slug) => (object) array_merge(['slug' => $slug], $relatedGuide))
+        ->values();
+
+    return view('guides.show', [
+        'guide' => $selectedGuide,
+        'relatedGuides' => $relatedGuides,
+    ]);
+})->name('guides.show');
 
 Route::get('/learn', function () {
     $user = Auth::user();
@@ -167,6 +199,13 @@ Route::get('/content', function (Request $request) {
     $questions = collect();
     $subQuestions = collect();
     $sources = collect();
+    $availableSubjects = collect();
+    $contentStats = [
+        'subjects' => 0,
+        'questions' => 0,
+        'papers' => 0,
+        'curriculums' => 0,
+    ];
 
     if ($subjectId !== 0 && Schema::hasTable('subjects')) {
         $subject = DB::table('subjects')
@@ -258,6 +297,75 @@ Route::get('/content', function (Request $request) {
             ->values();
     }
 
+    if (Schema::hasTable('subjects')) {
+        $subjectQuery = DB::table('subjects')
+            ->leftJoin('grades', 'grades.id', '=', 'subjects.grade_id')
+            ->leftJoin('curriculums', 'curriculums.id', '=', 'subjects.curriculum_id')
+            ->when(Schema::hasColumn('subjects', 'is_live'), fn ($query) => $query->where('subjects.is_live', true));
+
+        if (Schema::hasTable('questions')) {
+            $subjectQuery
+                ->leftJoin('questions', 'questions.subject_id', '=', 'subjects.id')
+                ->select(
+                    'subjects.id',
+                    'subjects.name',
+                    'subjects.code',
+                    'subjects.abbreviation',
+                    'subjects.colour',
+                    'subjects.icon',
+                    'grades.name as grade_name',
+                    'curriculums.abbreviation as curriculum_abbreviation',
+                    DB::raw('COUNT(questions.id) as question_count'),
+                )
+                ->groupBy(
+                    'subjects.id',
+                    'subjects.name',
+                    'subjects.code',
+                    'subjects.abbreviation',
+                    'subjects.colour',
+                    'subjects.icon',
+                    'grades.name',
+                    'curriculums.abbreviation',
+                )
+                ->orderByDesc('question_count');
+        } else {
+            $subjectQuery
+                ->select(
+                    'subjects.id',
+                    'subjects.name',
+                    'subjects.code',
+                    'subjects.abbreviation',
+                    'subjects.colour',
+                    'subjects.icon',
+                    'grades.name as grade_name',
+                    'curriculums.abbreviation as curriculum_abbreviation',
+                    DB::raw('0 as question_count'),
+                )
+                ->orderBy('subjects.name');
+        }
+
+        $availableSubjects = $subjectQuery
+            ->orderBy('subjects.name')
+            ->limit(12)
+            ->get();
+
+        $contentStats['subjects'] = DB::table('subjects')
+            ->when(Schema::hasColumn('subjects', 'is_live'), fn ($query) => $query->where('is_live', true))
+            ->count();
+    }
+
+    if (Schema::hasTable('questions')) {
+        $contentStats['questions'] = DB::table('questions')->count();
+    }
+
+    if (Schema::hasTable('papers')) {
+        $contentStats['papers'] = DB::table('papers')->count();
+    }
+
+    if (Schema::hasTable('curriculums')) {
+        $contentStats['curriculums'] = DB::table('curriculums')->count();
+    }
+
     return view('content.index', [
         'subject' => $subject,
         'paper' => $paper,
@@ -266,6 +374,8 @@ Route::get('/content', function (Request $request) {
         'questions' => $questions,
         'subQuestions' => $subQuestions,
         'sources' => $sources,
+        'availableSubjects' => $availableSubjects,
+        'contentStats' => $contentStats,
     ]);
 })->name('content.index');
 
@@ -661,62 +771,62 @@ Route::middleware('auth')->group(function () {
                 abort_if($subQuestion === null, 404);
 
                 if ($subQuestion->answer_type === 'json') {
-                $acceptedAnswerMap = json_decode($subQuestion->accepted_answers ?? '[]', true);
-                $correctAnswerMap = json_decode($subQuestion->correct_answer ?? '[]', true);
-                $answerFields = collect(is_array($acceptedAnswerMap) ? array_keys($acceptedAnswerMap) : [])
-                    ->merge(is_array($correctAnswerMap) ? array_keys($correctAnswerMap) : [])
-                    ->unique()
-                    ->values();
+                    $acceptedAnswerMap = json_decode($subQuestion->accepted_answers ?? '[]', true);
+                    $correctAnswerMap = json_decode($subQuestion->correct_answer ?? '[]', true);
+                    $answerFields = collect(is_array($acceptedAnswerMap) ? array_keys($acceptedAnswerMap) : [])
+                        ->merge(is_array($correctAnswerMap) ? array_keys($correctAnswerMap) : [])
+                        ->unique()
+                        ->values();
 
-                $answers = collect($request->input('answer', []))
-                    ->map(fn ($value) => trim((string) $value))
-                    ->only($answerFields)
-                    ->all();
+                    $answers = collect($request->input('answer', []))
+                        ->map(fn ($value) => trim((string) $value))
+                        ->only($answerFields)
+                        ->all();
 
-                $missingField = $answerFields->first(fn ($field) => ($answers[$field] ?? '') === '');
-                if ($missingField !== null) {
-                    return back()
-                        ->withInput()
-                        ->withErrors(['answer' => "Answer label {$missingField} before continuing."]);
-                }
+                    $missingField = $answerFields->first(fn ($field) => ($answers[$field] ?? '') === '');
+                    if ($missingField !== null) {
+                        return back()
+                            ->withInput()
+                            ->withErrors(['answer' => "Answer label {$missingField} before continuing."]);
+                    }
 
-                $selectedAnswer = json_encode($answers);
+                    $selectedAnswer = json_encode($answers);
                 } else {
-                if (! is_string($data['answer'])) {
-                    return back()
-                        ->withInput()
-                        ->withErrors(['answer' => 'Answer this question before continuing.']);
-                }
+                    if (! is_string($data['answer'])) {
+                        return back()
+                            ->withInput()
+                            ->withErrors(['answer' => 'Answer this question before continuing.']);
+                    }
 
-                $selectedAnswer = trim($data['answer']);
+                    $selectedAnswer = trim($data['answer']);
                 }
 
                 DB::table('exam_session_answers')->updateOrInsert(
-                [
-                    'exam_session_id' => $quiz->id,
-                    'sub_question_id' => $subQuestion->id,
-                ],
-                [
-                    'question_id' => $subQuestion->question_id,
-                    'selected_answer' => $selectedAnswer,
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ],
+                    [
+                        'exam_session_id' => $quiz->id,
+                        'sub_question_id' => $subQuestion->id,
+                    ],
+                    [
+                        'question_id' => $subQuestion->question_id,
+                        'selected_answer' => $selectedAnswer,
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ],
                 );
 
                 DB::table('exam_sessions')
-                ->where('id', $quiz->id)
-                ->update(['updated_at' => now()]);
+                    ->where('id', $quiz->id)
+                    ->update(['updated_at' => now()]);
 
                 $totalSubQuestions = DB::table('exam_session_questions')
-                ->join('sub_questions', 'sub_questions.question_id', '=', 'exam_session_questions.question_id')
-                ->where('exam_session_questions.exam_session_id', $quiz->id)
-                ->count();
+                    ->join('sub_questions', 'sub_questions.question_id', '=', 'exam_session_questions.question_id')
+                    ->where('exam_session_questions.exam_session_id', $quiz->id)
+                    ->count();
 
                 $answeredCount = DB::table('exam_session_answers')
-                ->where('exam_session_id', $quiz->id)
-                ->whereNotNull('selected_answer')
-                ->count();
+                    ->where('exam_session_id', $quiz->id)
+                    ->whereNotNull('selected_answer')
+                    ->count();
 
                 if ($answeredCount < $totalSubQuestions) {
                     return redirect()->route('practice.take', $quiz->id);
@@ -737,23 +847,23 @@ Route::middleware('auth')->group(function () {
                 ->get();
         } else {
             $rows = DB::table('exam_session_questions')
-            ->join('sub_questions', 'sub_questions.question_id', '=', 'exam_session_questions.question_id')
-            ->leftJoin('answers', 'answers.id', '=', 'sub_questions.answer_id')
-            ->leftJoin('exam_session_answers', function ($join) use ($quiz) {
-                $join->on('exam_session_answers.sub_question_id', '=', 'sub_questions.id')
-                    ->where('exam_session_answers.exam_session_id', '=', $quiz->id);
-            })
-            ->where('exam_session_questions.exam_session_id', $quiz->id)
-            ->select(
-                'sub_questions.question_id',
-                'sub_questions.id as sub_question_id',
-                'exam_session_answers.selected_answer',
-                'sub_questions.sub_question_number',
-                'sub_questions.question',
-                'answers.correct_answer',
-                'answers.accepted_answers',
-            )
-            ->get();
+                ->join('sub_questions', 'sub_questions.question_id', '=', 'exam_session_questions.question_id')
+                ->leftJoin('answers', 'answers.id', '=', 'sub_questions.answer_id')
+                ->leftJoin('exam_session_answers', function ($join) use ($quiz) {
+                    $join->on('exam_session_answers.sub_question_id', '=', 'sub_questions.id')
+                        ->where('exam_session_answers.exam_session_id', '=', $quiz->id);
+                })
+                ->where('exam_session_questions.exam_session_id', $quiz->id)
+                ->select(
+                    'sub_questions.question_id',
+                    'sub_questions.id as sub_question_id',
+                    'exam_session_answers.selected_answer',
+                    'sub_questions.sub_question_number',
+                    'sub_questions.question',
+                    'answers.correct_answer',
+                    'answers.accepted_answers',
+                )
+                ->get();
         }
 
         $normalize = fn ($value): string => strtolower(trim((string) $value));
@@ -1082,7 +1192,7 @@ Route::middleware('guest')->group(function () {
 
         try {
             Mail::to($user->email)->send(new WelcomeToChamu($user->first_name ?: $user->name, $userType->name));
-        } catch (\Throwable $exception) {
+        } catch (Throwable $exception) {
             report($exception);
         }
 
@@ -1254,7 +1364,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 },
             ];
 
-            $socialPost = new SocialPost();
+            $socialPost = new SocialPost;
             $socialPost->fill([
                 'user_id' => $request->user()->id,
                 'platform' => $socialChannel['slug'],
@@ -1342,7 +1452,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 ]);
                 $socialPost->save();
 
-                $responseRecord = new SocialPostResponse();
+                $responseRecord = new SocialPostResponse;
                 $responseRecord->fill([
                     'social_post_id' => $socialPost->id,
                     'platform' => $socialPost->platform,
@@ -1370,7 +1480,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1407,7 +1517,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                         ]);
                         $socialPost->save();
 
-                        $responseRecord = new SocialPostResponse();
+                        $responseRecord = new SocialPostResponse;
                         $responseRecord->fill([
                             'social_post_id' => $socialPost->id,
                             'platform' => $socialPost->platform,
@@ -1447,7 +1557,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1463,7 +1573,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     return redirect()
                         ->route('admin.instagram.posts.show', $socialPost)
                         ->with('status', $publishResponse->successful() ? 'Instagram post published and response saved.' : 'Instagram publish failed and response was saved.');
-                } catch (\Throwable $exception) {
+                } catch (Throwable $exception) {
                     $socialPost->fill([
                         'status' => 'failed',
                         'request_payload' => $requestPayload,
@@ -1471,7 +1581,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1505,7 +1615,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1556,7 +1666,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                             ]);
                             $socialPost->save();
 
-                            $responseRecord = new SocialPostResponse();
+                            $responseRecord = new SocialPostResponse;
                             $responseRecord->fill([
                                 'social_post_id' => $socialPost->id,
                                 'platform' => $socialPost->platform,
@@ -1590,7 +1700,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                             ]);
                             $socialPost->save();
 
-                            $responseRecord = new SocialPostResponse();
+                            $responseRecord = new SocialPostResponse;
                             $responseRecord->fill([
                                 'social_post_id' => $socialPost->id,
                                 'platform' => $socialPost->platform,
@@ -1629,7 +1739,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                             ]);
                             $socialPost->save();
 
-                            $responseRecord = new SocialPostResponse();
+                            $responseRecord = new SocialPostResponse;
                             $responseRecord->fill([
                                 'social_post_id' => $socialPost->id,
                                 'platform' => $socialPost->platform,
@@ -1679,7 +1789,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1695,7 +1805,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     return redirect()
                         ->route('admin.linkedin.posts.show', $socialPost)
                         ->with('status', $response->successful() ? 'LinkedIn post published and response saved.' : 'LinkedIn publish failed and response was saved.');
-                } catch (\Throwable $exception) {
+                } catch (Throwable $exception) {
                     $socialPost->fill([
                         'status' => 'failed',
                         'request_payload' => $requestPayload,
@@ -1703,7 +1813,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1742,7 +1852,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                         ]);
                         $socialPost->save();
 
-                        $responseRecord = new SocialPostResponse();
+                        $responseRecord = new SocialPostResponse;
                         $responseRecord->fill([
                             'social_post_id' => $socialPost->id,
                             'platform' => $socialPost->platform,
@@ -1782,7 +1892,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1798,7 +1908,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     return redirect()
                         ->route('admin.threads.posts.show', $socialPost)
                         ->with('status', $publishResponse->successful() ? 'Threads post published and response saved.' : 'Threads publish failed and response was saved.');
-                } catch (\Throwable $exception) {
+                } catch (Throwable $exception) {
                     $socialPost->fill([
                         'status' => 'failed',
                         'request_payload' => $requestPayload,
@@ -1806,7 +1916,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ]);
                     $socialPost->save();
 
-                    $responseRecord = new SocialPostResponse();
+                    $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
                         'social_post_id' => $socialPost->id,
                         'platform' => $socialPost->platform,
@@ -1843,7 +1953,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 ]);
                 $socialPost->save();
 
-                $responseRecord = new SocialPostResponse();
+                $responseRecord = new SocialPostResponse;
                 $responseRecord->fill([
                     'social_post_id' => $socialPost->id,
                     'platform' => $socialPost->platform,
@@ -1859,7 +1969,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 return redirect()
                     ->route('admin.facebook.posts.show', $socialPost)
                     ->with('status', $response->successful() ? 'Facebook post published and response saved.' : 'Facebook publish failed and response was saved.');
-            } catch (\Throwable $exception) {
+            } catch (Throwable $exception) {
                 $socialPost->fill([
                     'status' => 'failed',
                     'request_payload' => $requestPayload,
@@ -1867,7 +1977,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 ]);
                 $socialPost->save();
 
-                $responseRecord = new SocialPostResponse();
+                $responseRecord = new SocialPostResponse;
                 $responseRecord->fill([
                     'social_post_id' => $socialPost->id,
                     'platform' => $socialPost->platform,
@@ -2834,6 +2944,7 @@ Route::get('/bursaries', function (Request $request) {
 
             if ($requiredMet && $anyOfMet) {
                 $met[] = 'Option met: '.$group;
+
                 continue;
             }
 
@@ -2958,7 +3069,7 @@ Route::get('/bursaries/{bursary}', function (Request $request, int $bursary) {
 
     $bursary->eligibility_requirements = json_decode($bursary->eligibility_requirements ?? '[]', true) ?: [];
     $bursary->supporting_documents = json_decode($bursary->supporting_documents ?? '[]', true) ?: [];
-    $bursaryModel = (new Bursary())->setRawAttributes((array) $bursary, true);
+    $bursaryModel = (new Bursary)->setRawAttributes((array) $bursary, true);
     $providerEmail = $bursaryModel->applicationProviderEmail();
     $providerPostalAddress = $bursaryModel->applicationProviderPostalAddress();
     $isEmailSubmission = $bursaryModel->isEmailSubmission();
@@ -3365,8 +3476,8 @@ Route::middleware('auth')->group(function () {
         $data = $request->validate([
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['nullable', 'string', 'max:255'],
-            'username' => ['required', 'string', 'max:255', 'alpha_dash', 'unique:users,username,' . $user->id],
-            'email' => ['required', 'email', 'max:255', 'unique:users,email,' . $user->id],
+            'username' => ['required', 'string', 'max:255', 'alpha_dash', 'unique:users,username,'.$user->id],
+            'email' => ['required', 'email', 'max:255', 'unique:users,email,'.$user->id],
             'user_type_id' => ['required', 'exists:user_types,id'],
             'curriculum_id' => ['nullable', 'exists:curriculums,id'],
             'grade_id' => ['nullable', 'exists:grades,id'],
@@ -3450,7 +3561,7 @@ Route::middleware('auth')->group(function () {
             ->groupBy('document_key');
 
         $normaliseFiles = function (mixed $files): array {
-            if ($files instanceof \Illuminate\Http\UploadedFile) {
+            if ($files instanceof UploadedFile) {
                 return [$files];
             }
 
@@ -3459,7 +3570,7 @@ Route::middleware('auth')->group(function () {
             }
 
             return collect($files)
-                ->filter(fn ($file): bool => $file instanceof \Illuminate\Http\UploadedFile)
+                ->filter(fn ($file): bool => $file instanceof UploadedFile)
                 ->values()
                 ->all();
         };
@@ -3943,7 +4054,7 @@ Route::middleware('auth')->group(function () {
                             $result = $findResultBySubjectName($weight['subject'] ?? '');
 
                             return $result === null ? 0 : ((float) $result->mark * (float) ($weight['additional_weight'] ?? 0));
-                    }),
+                        }),
                     'missing_components' => [],
                 ],
                 'nmu_applicant_score' => [
@@ -4370,12 +4481,12 @@ Route::middleware('auth')->group(function () {
                 return true;
             })
             ->sortBy([
-            ['is_match', 'desc'],
-            ['aps_met', 'desc'],
-            ['aps_gap', 'asc'],
-            ['university_name', 'asc'],
-            ['name', 'asc'],
-        ])->values();
+                ['is_match', 'desc'],
+                ['aps_met', 'desc'],
+                ['aps_gap', 'asc'],
+                ['university_name', 'asc'],
+                ['name', 'asc'],
+            ])->values();
 
         if ($search !== '') {
             $searchNeedle = $normalise($search);

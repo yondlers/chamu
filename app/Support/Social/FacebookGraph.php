@@ -20,7 +20,9 @@ class FacebookGraph
 
     public static function feedNode(): string
     {
-        return trim((string) SocialMediaConfig::value('facebook', 'feed_node', 'me'), '/');
+        $pageId = trim((string) SocialMediaConfig::value('facebook', 'page_id', ''));
+
+        return trim($pageId !== '' ? $pageId : (string) SocialMediaConfig::value('facebook', 'feed_node', 'me'), '/');
     }
 
     public static function feedEndpoint(?string $node = null): string
