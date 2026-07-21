@@ -123,6 +123,38 @@
             </section>
         @endif
 
+        @if ($platform['slug'] === 'facebook')
+            <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+                <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                        <h2 class="text-xl font-bold">Facebook comment</h2>
+                        <p class="mt-1 text-sm text-neutral-500">Post a Page comment on the published Facebook post and save the Graph response here.</p>
+                    </div>
+                    @if (! $socialPost->external_post_id)
+                        <span class="inline-flex w-fit rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">Publish first</span>
+                    @endif
+                </div>
+
+                @if ($socialPost->external_post_id && $hasAccessToken)
+                    <form method="POST" action="{{ route('admin.facebook.posts.comments.store', $socialPost) }}" class="space-y-3">
+                        @csrf
+                        <div>
+                            <label for="facebook_comment_message" class="text-sm font-bold text-neutral-800">Comment</label>
+                            <textarea id="facebook_comment_message" name="comment_message" rows="4" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the Facebook Page comment.">{{ old('comment_message') }}</textarea>
+                            @error('comment_message') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                        </div>
+                        <button class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-bold text-white hover:bg-[#001A48]">
+                            Post comment <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+                        </button>
+                    </form>
+                @else
+                    <p class="rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-sm font-semibold text-neutral-600">
+                        {{ $hasAccessToken ? 'Publish this Facebook post before commenting.' : 'Configure the Facebook Page access token before commenting.' }}
+                    </p>
+                @endif
+            </section>
+        @endif
+
         <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
             <div class="mb-4">
                 <h2 class="text-xl font-bold">Saved responses</h2>

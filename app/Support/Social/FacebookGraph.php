@@ -33,6 +33,22 @@ class FacebookGraph
         return $graphUrl.'/'.self::graphVersion().'/'.$feedNode.'/feed';
     }
 
+    public static function photosEndpoint(?string $node = null): string
+    {
+        $graphUrl = rtrim((string) SocialMediaConfig::value('facebook', 'graph_url', 'https://graph.facebook.com'), '/');
+        $feedNode = trim($node ?? self::feedNode(), '/');
+
+        return $graphUrl.'/'.self::graphVersion().'/'.$feedNode.'/photos';
+    }
+
+    public static function commentsEndpoint(string $postId): string
+    {
+        $graphUrl = rtrim((string) SocialMediaConfig::value('facebook', 'graph_url', 'https://graph.facebook.com'), '/');
+        $postId = trim($postId, '/');
+
+        return $graphUrl.'/'.self::graphVersion().'/'.$postId.'/comments';
+    }
+
     /**
      * @param  array<string, string|null>  $fields
      * @return array<string, string>
@@ -59,6 +75,47 @@ class FacebookGraph
     }
 
     /**
+     * @return array<string, string>
+     */
+    public static function photoPayload(string $caption, string $imageUrl): array
+    {
+        return self::safePhotoPayload($caption, $imageUrl) + [
+            'access_token' => self::requireAccessToken(),
+        ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    public static function safePhotoPayload(string $caption, string $imageUrl): array
+    {
+        return array_filter([
+            'caption' => $caption,
+            'url' => $imageUrl,
+        ], fn ($value) => trim((string) $value) !== '');
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    public static function commentPayload(string $message): array
+    {
+        return self::safeCommentPayload($message) + [
+            'access_token' => self::requireAccessToken(),
+        ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    public static function safeCommentPayload(string $message): array
+    {
+        return array_filter([
+            'message' => $message,
+        ], fn ($value) => trim((string) $value) !== '');
+    }
+
+    /**
      * @param  array<string, string|null>  $fields
      */
     public static function feedCurl(string $message, ?string $node = null, array $fields = []): string
@@ -74,6 +131,16 @@ class FacebookGraph
     public static function postToFeed(string $message, ?string $node = null, array $fields = []): Response
     {
         return Http::asForm()->post(self::feedEndpoint($node), self::feedPayload($message, $fields));
+    }
+
+    public static function postPhoto(string $caption, string $imageUrl, ?string $node = null): Response
+    {
+        return Http::asForm()->post(self::photosEndpoint($node), self::photoPayload($caption, $imageUrl));
+    }
+
+    public static function commentOnPost(string $postId, string $message): Response
+    {
+        return Http::asForm()->post(self::commentsEndpoint($postId), self::commentPayload($message));
     }
 
     private static function requireAccessToken(): string

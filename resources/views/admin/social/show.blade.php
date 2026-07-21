@@ -121,11 +121,11 @@
                             @error('link_url') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                         </div>
                         <div>
-                            <label for="post_media" class="text-sm font-bold text-neutral-800">{{ in_array($platform['slug'], ['instagram', 'linkedin', 'threads'], true) ? 'Public image URL' : 'Media asset' }}</label>
-                            <input id="post_media" name="media_url" value="{{ old('media_url') }}" type="{{ in_array($platform['slug'], ['instagram', 'linkedin', 'threads'], true) ? 'url' : 'text' }}" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="{{ in_array($platform['slug'], ['instagram', 'linkedin', 'threads'], true) ? 'https://' : 'Asset ID or URL' }}">
+                            <label for="post_media" class="text-sm font-bold text-neutral-800">{{ in_array($platform['slug'], ['facebook', 'instagram', 'linkedin', 'threads'], true) ? 'Public image URL' : 'Media asset' }}</label>
+                            <input id="post_media" name="media_url" value="{{ old('media_url') }}" type="{{ in_array($platform['slug'], ['facebook', 'instagram', 'linkedin', 'threads'], true) ? 'url' : 'text' }}" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="{{ in_array($platform['slug'], ['facebook', 'instagram', 'linkedin', 'threads'], true) ? 'https://' : 'Asset ID or URL' }}">
                             @error('media_url') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                         </div>
-                        @if (in_array($platform['slug'], ['instagram', 'linkedin', 'threads'], true))
+                        @if (in_array($platform['slug'], ['facebook', 'instagram', 'linkedin', 'threads'], true))
                             <div>
                                 <label for="post_image_upload" class="text-sm font-bold text-neutral-800">Upload image</label>
                                 <input id="post_image_upload" name="image_upload" type="file" accept="image/png,image/jpeg" class="mt-2 w-full rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold outline-none file:mr-3 file:rounded-lg file:border-0 file:bg-neutral-100 file:px-3 file:py-1.5 file:text-sm file:font-bold focus:border-[#01225E]">

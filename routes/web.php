@@ -1288,7 +1288,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     default => null,
                 },
                 'postEndpoint' => match ($socialChannel['slug']) {
-                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'facebook' => FacebookGraph::feedEndpoint().' or '.FacebookGraph::photosEndpoint(),
                     'instagram' => InstagramGraph::mediaEndpoint().' then '.InstagramGraph::mediaPublishEndpoint(),
                     'linkedin' => LinkedInGraph::postsEndpoint().' with optional '.LinkedInGraph::imagesInitializeUploadEndpoint(),
                     'threads' => ThreadsGraph::threadsEndpoint().' then '.ThreadsGraph::threadsPublishEndpoint(),
@@ -1334,10 +1334,13 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
             }
 
             $status = ($data['intent'] ?? null) === 'queue' ? 'queued' : $data['status'];
+            $facebookHasImage = $socialChannel['slug'] === 'facebook'
+                && $mediaUrl !== null
+                && str($mediaUrl)->startsWith(['http://', 'https://']);
             $requestPayload = [
                 'platform' => $socialChannel['slug'],
                 'endpoint' => match ($socialChannel['slug']) {
-                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'facebook' => $facebookHasImage ? FacebookGraph::photosEndpoint() : FacebookGraph::feedEndpoint(),
                     'instagram' => InstagramGraph::mediaEndpoint(),
                     'linkedin' => LinkedInGraph::postsEndpoint(),
                     'threads' => ThreadsGraph::threadsEndpoint(),
@@ -1350,7 +1353,9 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     default => null,
                 },
                 'fields' => match ($socialChannel['slug']) {
-                    'facebook' => FacebookGraph::safeFeedPayload($data['message'], ['link' => $data['link_url'] ?? null]),
+                    'facebook' => $facebookHasImage
+                        ? FacebookGraph::safePhotoPayload($data['message'], $mediaUrl)
+                        : FacebookGraph::safeFeedPayload($data['message'], ['link' => $data['link_url'] ?? null]),
                     'instagram' => InstagramGraph::safeMediaPayload($data['message'], (string) $mediaUrl),
                     'linkedin' => LinkedInGraph::safePostPayload($data['message'], LinkedInGraph::authorUrn()) + array_filter([
                         'image_source_url' => $mediaUrl,
@@ -1393,7 +1398,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 'socialChannels' => $socialChannels,
                 'hasAccessToken' => (bool) $socialChannel['has_access_token'],
                 'postEndpoint' => match ($socialChannel['slug']) {
-                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'facebook' => FacebookGraph::feedEndpoint().' or '.FacebookGraph::photosEndpoint(),
                     'instagram' => InstagramGraph::mediaEndpoint().' then '.InstagramGraph::mediaPublishEndpoint(),
                     'linkedin' => LinkedInGraph::postsEndpoint().' with optional '.LinkedInGraph::imagesInitializeUploadEndpoint(),
                     'threads' => ThreadsGraph::threadsEndpoint().' then '.ThreadsGraph::threadsPublishEndpoint(),
@@ -1412,10 +1417,13 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 $socialPost->forceFill(['media_url' => $promotedMediaUrl])->save();
             }
 
+            $facebookHasImage = $socialChannel['slug'] === 'facebook'
+                && filled($socialPost->media_url)
+                && str($socialPost->media_url)->startsWith(['http://', 'https://']);
             $requestPayload = [
                 'platform' => $socialChannel['slug'],
                 'endpoint' => match ($socialChannel['slug']) {
-                    'facebook' => FacebookGraph::feedEndpoint(),
+                    'facebook' => $facebookHasImage ? FacebookGraph::photosEndpoint() : FacebookGraph::feedEndpoint(),
                     'instagram' => InstagramGraph::mediaEndpoint(),
                     'linkedin' => LinkedInGraph::postsEndpoint(),
                     'threads' => ThreadsGraph::threadsEndpoint(),
@@ -1428,7 +1436,9 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     default => null,
                 },
                 'fields' => match ($socialChannel['slug']) {
-                    'facebook' => FacebookGraph::safeFeedPayload($socialPost->message, ['link' => $socialPost->link_url]),
+                    'facebook' => $facebookHasImage
+                        ? FacebookGraph::safePhotoPayload($socialPost->message, (string) $socialPost->media_url)
+                        : FacebookGraph::safeFeedPayload($socialPost->message, ['link' => $socialPost->link_url]),
                     'instagram' => InstagramGraph::safeMediaPayload($socialPost->message, (string) $socialPost->media_url),
                     'linkedin' => LinkedInGraph::safePostPayload($socialPost->message, LinkedInGraph::authorUrn()) + array_filter([
                         'image_source_url' => $socialPost->media_url,
@@ -1935,10 +1945,14 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
             }
 
             try {
-                $response = FacebookGraph::postToFeed($socialPost->message, null, ['link' => $socialPost->link_url]);
+                $response = $facebookHasImage
+                    ? FacebookGraph::postPhoto($socialPost->message, (string) $socialPost->media_url)
+                    : FacebookGraph::postToFeed($socialPost->message, null, ['link' => $socialPost->link_url]);
                 $responsePayload = $response->json();
                 $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
-                $externalPostId = data_get($responsePayload, 'id');
+                $externalPostId = $facebookHasImage
+                    ? (data_get($responsePayload, 'post_id') ?: data_get($responsePayload, 'id'))
+                    : data_get($responsePayload, 'id');
                 $errorMessage = $response->successful()
                     ? null
                     : (data_get($responsePayload, 'error.message') ?: $response->body());
@@ -1994,6 +2008,78 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     ->with('status', 'Facebook publish threw an exception and the response was saved.');
             }
         })->name('admin.'.$socialChannel['slug'].'.posts.publish');
+
+        if ($socialChannel['slug'] === 'facebook') {
+            Route::post('/facebook/posts/{socialPost}/comments', function (Request $request, SocialPost $socialPost) {
+                abort_unless($socialPost->platform === 'facebook', 404);
+
+                $data = $request->validate([
+                    'comment_message' => ['required', 'string', 'max:8000'],
+                ]);
+
+                if (blank($socialPost->external_post_id)) {
+                    $message = 'Publish this Facebook post before commenting.';
+
+                    return redirect()
+                        ->route('admin.facebook.posts.show', $socialPost)
+                        ->withErrors(['comment_message' => $message]);
+                }
+
+                $requestPayload = [
+                    'platform' => 'facebook',
+                    'endpoint' => FacebookGraph::commentsEndpoint($socialPost->external_post_id),
+                    'fields' => FacebookGraph::safeCommentPayload($data['comment_message']),
+                ];
+
+                try {
+                    $response = FacebookGraph::commentOnPost($socialPost->external_post_id, $data['comment_message']);
+                    $responsePayload = $response->json();
+                    $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                    $externalCommentId = data_get($responsePayload, 'id');
+                    $errorMessage = $response->successful()
+                        ? null
+                        : (data_get($responsePayload, 'error.message') ?: $response->body());
+
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $response->successful() ? 'comment' : 'comment_error',
+                        'external_response_id' => $externalCommentId,
+                        'body' => $response->successful() ? $data['comment_message'] : $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                        'responded_at' => $response->successful() ? now() : null,
+                    ]);
+                    $responseRecord->save();
+
+                    $socialPost->forceFill([
+                        'last_synced_at' => now(),
+                    ])->save();
+
+                    return redirect()
+                        ->route('admin.facebook.posts.show', $socialPost)
+                        ->with('status', $response->successful() ? 'Facebook comment posted and response saved.' : 'Facebook comment failed and response was saved.');
+                } catch (Throwable $exception) {
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'comment_exception',
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.facebook.posts.show', $socialPost)
+                        ->with('status', 'Facebook comment threw an exception and the response was saved.');
+                }
+            })->name('admin.facebook.posts.comments.store');
+        }
     }
 
     Route::get('/accounts', function (Request $request) {
