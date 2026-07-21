@@ -41,6 +41,32 @@ class LinkedInGraph
         return $authorUrn !== '' ? $authorUrn : null;
     }
 
+    public static function authorType(?string $authorUrn = null): ?string
+    {
+        $authorUrn = trim((string) ($authorUrn ?? self::authorUrn()));
+
+        if ($authorUrn === '') {
+            return null;
+        }
+
+        if (str_starts_with($authorUrn, 'urn:li:organization:')) {
+            return 'organization';
+        }
+
+        if (str_starts_with($authorUrn, 'urn:li:person:')) {
+            return 'member';
+        }
+
+        return 'unknown';
+    }
+
+    public static function requiredPostingPermission(?string $authorUrn = null): string
+    {
+        return self::authorType($authorUrn) === 'organization'
+            ? 'w_organization_social'
+            : 'w_member_social';
+    }
+
     public static function postsEndpoint(): string
     {
         return self::apiUrl().'/rest/posts';
