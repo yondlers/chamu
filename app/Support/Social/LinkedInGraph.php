@@ -29,7 +29,9 @@ class LinkedInGraph
 
     public static function restVersion(): string
     {
-        return trim((string) SocialMediaConfig::value('linkedin', 'rest_version', '202401'));
+        $version = preg_replace('/\D/', '', trim((string) SocialMediaConfig::value('linkedin', 'rest_version', '202607'))) ?: '202607';
+
+        return substr($version, 0, 6);
     }
 
     public static function authorUrn(): ?string

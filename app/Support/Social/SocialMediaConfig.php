@@ -89,7 +89,7 @@ class SocialMediaConfig
             'api_state' => 'LinkedIn OAuth access token pending',
             'engagement_state' => 'Posting depends on a 3-legged member token with w_member_social',
             'api_url' => 'https://api.linkedin.com',
-            'rest_version' => '202401',
+            'rest_version' => '202607',
             'client_id' => '',
             'client_credential' => '',
             'author_urn' => '',

@@ -48,6 +48,7 @@ return [
         'linkedin' => [
             'client_id' => env('LINKEDIN_CLIENT_ID'),
             'client_credential' => env('LINKEDIN_CLIENT_CREDENTIAL'),
+            'rest_version' => env('LINKEDIN_REST_VERSION'),
             'author_urn' => env('LINKEDIN_AUTHOR_URN'),
             'access_token' => env('LINKEDIN_ACCESS_TOKEN'),
         ],
