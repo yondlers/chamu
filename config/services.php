@@ -46,6 +46,7 @@ return [
         ],
         'threads' => [
             'account_id' => env('THREADS_ACCOUNT_ID'),
+            'access_token' => env('THREADS_ACCESS_TOKEN'),
         ],
         'linkedin' => [
             'client_id' => env('LINKEDIN_CLIENT_ID'),

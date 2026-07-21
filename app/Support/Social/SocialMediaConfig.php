@@ -72,9 +72,9 @@ class SocialMediaConfig
             'graph_version' => 'v1.0',
             'account_id' => '',
             'access_token' => '',
-            'token_source' => 'facebook',
             'next_steps' => [
                 'Threads account ID stored',
+                'Store a Threads API access token for the connected account',
                 'Create text or image media containers',
                 'Publish containers with creation IDs',
                 'Map replies and insights once permissions are approved',
