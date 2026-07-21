@@ -110,7 +110,10 @@
 
                     <div>
                         <label for="post_caption" class="text-sm font-bold text-neutral-800">Caption</label>
-                        <textarea id="post_caption" name="message" rows="7" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the admin post that Chamu will publish to {{ $platform['name'] }}.">{{ old('message') }}</textarea>
+                        <textarea id="post_caption" name="message" rows="7" maxlength="{{ $messageMaxLength ?? 5000 }}" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the admin post that Chamu will publish to {{ $platform['name'] }}.">{{ old('message') }}</textarea>
+                        @if ($platform['slug'] === 'threads')
+                            <p class="mt-2 text-xs font-bold text-neutral-500">{{ number_format($messageMaxLength ?? 500) }} characters max on Threads.</p>
+                        @endif
                         @error('message') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
                     </div>
 

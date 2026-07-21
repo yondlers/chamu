@@ -127,8 +127,8 @@
             <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
                 <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                     <div>
-                        <h2 class="text-xl font-bold">Facebook comment</h2>
-                        <p class="mt-1 text-sm text-neutral-500">Post a Page comment on the published Facebook post and save the Graph response here.</p>
+                        <h2 class="text-xl font-bold">Facebook comments and insights</h2>
+                        <p class="mt-1 text-sm text-neutral-500">Post a Page comment or fetch the latest Facebook post insights.</p>
                     </div>
                     @if (! $socialPost->external_post_id)
                         <span class="inline-flex w-fit rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">Publish first</span>
@@ -136,20 +136,127 @@
                 </div>
 
                 @if ($socialPost->external_post_id && $hasAccessToken)
-                    <form method="POST" action="{{ route('admin.facebook.posts.comments.store', $socialPost) }}" class="space-y-3">
-                        @csrf
-                        <div>
-                            <label for="facebook_comment_message" class="text-sm font-bold text-neutral-800">Comment</label>
-                            <textarea id="facebook_comment_message" name="comment_message" rows="4" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the Facebook Page comment.">{{ old('comment_message') }}</textarea>
-                            @error('comment_message') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                    <div class="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+                        <form method="POST" action="{{ route('admin.facebook.posts.comments.store', $socialPost) }}" class="space-y-3">
+                            @csrf
+                            <div>
+                                <label for="facebook_comment_message" class="text-sm font-bold text-neutral-800">Comment</label>
+                                <textarea id="facebook_comment_message" name="comment_message" rows="4" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the Facebook Page comment.">{{ old('comment_message') }}</textarea>
+                                @error('comment_message') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                            </div>
+                            <button class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-bold text-white hover:bg-[#001A48]">
+                                Post comment <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+                            </button>
+                        </form>
+
+                        <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                            <p class="text-sm font-bold text-neutral-800">Facebook insights</p>
+                            <p class="mt-1 text-sm text-neutral-500">Impressions, unique reach, engaged users, clicks, and reaction breakdowns are saved as an insight response.</p>
+                            @error('insights') <p class="mt-3 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                            <form method="POST" action="{{ route('admin.facebook.posts.insights.fetch', $socialPost) }}" class="mt-4">
+                                @csrf
+                                <button class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-sm font-bold hover:bg-neutral-50">
+                                    Fetch insights <i data-lucide="chart-no-axes-column" style="width:16px;height:16px;"></i>
+                                </button>
+                            </form>
                         </div>
-                        <button class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-bold text-white hover:bg-[#001A48]">
-                            Post comment <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
-                        </button>
-                    </form>
+                    </div>
                 @else
                     <p class="rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-sm font-semibold text-neutral-600">
-                        {{ $hasAccessToken ? 'Publish this Facebook post before commenting.' : 'Configure the Facebook Page access token before commenting.' }}
+                        {{ $hasAccessToken ? 'Publish this Facebook post before commenting or fetching insights.' : 'Configure the Facebook Page access token before commenting or fetching insights.' }}
+                    </p>
+                @endif
+            </section>
+        @endif
+
+        @if ($platform['slug'] === 'instagram')
+            <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+                <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                        <h2 class="text-xl font-bold">Instagram comments and insights</h2>
+                        <p class="mt-1 text-sm text-neutral-500">Post a comment on the published Instagram media or fetch the latest media insights.</p>
+                    </div>
+                    @if (! $socialPost->external_post_id)
+                        <span class="inline-flex w-fit rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">Publish first</span>
+                    @endif
+                </div>
+
+                @if ($socialPost->external_post_id && $hasAccessToken)
+                    <div class="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+                        <form method="POST" action="{{ route('admin.instagram.posts.comments.store', $socialPost) }}" class="space-y-3">
+                            @csrf
+                            <div>
+                                <label for="instagram_comment_message" class="text-sm font-bold text-neutral-800">Comment</label>
+                                <textarea id="instagram_comment_message" name="comment_message" rows="4" maxlength="{{ \App\Support\Social\InstagramGraph::COMMENT_MAX_LENGTH }}" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the Instagram comment.">{{ old('comment_message') }}</textarea>
+                                @error('comment_message') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                            </div>
+                            <button class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-bold text-white hover:bg-[#001A48]">
+                                Post comment <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+                            </button>
+                        </form>
+
+                        <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                            <p class="text-sm font-bold text-neutral-800">Instagram insights</p>
+                            <p class="mt-1 text-sm text-neutral-500">Views, reach, likes, comments, shares, saves, and total interactions are saved as an insight response.</p>
+                            @error('insights') <p class="mt-3 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                            <form method="POST" action="{{ route('admin.instagram.posts.insights.fetch', $socialPost) }}" class="mt-4">
+                                @csrf
+                                <button class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-sm font-bold hover:bg-neutral-50">
+                                    Fetch insights <i data-lucide="chart-no-axes-column" style="width:16px;height:16px;"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                @else
+                    <p class="rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-sm font-semibold text-neutral-600">
+                        {{ $hasAccessToken ? 'Publish this Instagram post before commenting or fetching insights.' : 'Configure the Instagram access token before commenting or fetching insights.' }}
+                    </p>
+                @endif
+            </section>
+        @endif
+
+        @if ($platform['slug'] === 'threads')
+            <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+                <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                        <h2 class="text-xl font-bold">Threads comments and insights</h2>
+                        <p class="mt-1 text-sm text-neutral-500">Post a reply on the published Threads post or fetch the latest Threads API metrics.</p>
+                    </div>
+                    @if (! $socialPost->external_post_id)
+                        <span class="inline-flex w-fit rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">Publish first</span>
+                    @endif
+                </div>
+
+                @if ($socialPost->external_post_id && $hasAccessToken)
+                    <div class="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
+                        <form method="POST" action="{{ route('admin.threads.posts.comments.store', $socialPost) }}" class="space-y-3">
+                            @csrf
+                            <div>
+                                <label for="threads_comment_message" class="text-sm font-bold text-neutral-800">Comment</label>
+                                <textarea id="threads_comment_message" name="comment_message" rows="4" maxlength="{{ \App\Support\Social\ThreadsGraph::maxTextLength() }}" class="mt-2 w-full resize-y rounded-xl border border-neutral-300 px-4 py-3 text-sm font-semibold outline-none focus:border-[#01225E]" placeholder="Write the Threads reply.">{{ old('comment_message') }}</textarea>
+                                <p class="mt-2 text-xs font-bold text-neutral-500">{{ number_format(\App\Support\Social\ThreadsGraph::maxTextLength()) }} characters max on Threads.</p>
+                                @error('comment_message') <p class="mt-2 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                            </div>
+                            <button class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-bold text-white hover:bg-[#001A48]">
+                                Post comment <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+                            </button>
+                        </form>
+
+                        <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                            <p class="text-sm font-bold text-neutral-800">Threads analytics</p>
+                            <p class="mt-1 text-sm text-neutral-500">Views, likes, replies, reposts, quotes, and shares are saved as an insight response.</p>
+                            @error('insights') <p class="mt-3 text-xs font-bold text-red-600">{{ $message }}</p> @enderror
+                            <form method="POST" action="{{ route('admin.threads.posts.insights.fetch', $socialPost) }}" class="mt-4">
+                                @csrf
+                                <button class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-sm font-bold hover:bg-neutral-50">
+                                    Fetch insights <i data-lucide="chart-no-axes-column" style="width:16px;height:16px;"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                @else
+                    <p class="rounded-xl border border-neutral-200 bg-neutral-50 p-4 text-sm font-semibold text-neutral-600">
+                        {{ $hasAccessToken ? 'Publish this Threads post before commenting or fetching insights.' : 'Configure the Threads access token before commenting or fetching insights.' }}
                     </p>
                 @endif
             </section>

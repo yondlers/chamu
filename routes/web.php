@@ -1298,15 +1298,17 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                 'queuedCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'queued')->count(),
                 'publishedCount' => SocialPost::where('platform', $socialChannel['slug'])->where('status', 'published')->count(),
                 'engagementCount' => SocialPostResponse::where('platform', $socialChannel['slug'])->count(),
+                'messageMaxLength' => $socialChannel['slug'] === 'threads' ? ThreadsGraph::maxTextLength() : 5000,
                 'posts' => $posts,
             ]);
         })->name('admin.'.$socialChannel['slug'].'.index');
 
         Route::post('/'.$socialChannel['slug'].'/posts', function (Request $request) use ($socialChannel) {
+            $messageMaxLength = $socialChannel['slug'] === 'threads' ? ThreadsGraph::maxTextLength() : 5000;
             $validator = Validator::make($request->all(), [
                 'title' => ['nullable', 'string', 'max:180'],
                 'audience' => ['nullable', 'string', 'max:180'],
-                'message' => ['required', 'string', 'max:5000'],
+                'message' => ['required', 'string', 'max:'.$messageMaxLength],
                 'link_url' => ['nullable', 'url', 'max:2048'],
                 'media_url' => in_array($socialChannel['slug'], ['instagram', 'linkedin', 'threads'], true)
                     ? ['nullable', 'url', 'max:2048']
@@ -2079,6 +2081,379 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                         ->with('status', 'Facebook comment threw an exception and the response was saved.');
                 }
             })->name('admin.facebook.posts.comments.store');
+
+            Route::post('/facebook/posts/{socialPost}/insights', function (SocialPost $socialPost) {
+                abort_unless($socialPost->platform === 'facebook', 404);
+
+                if (blank($socialPost->external_post_id)) {
+                    $message = 'Publish this Facebook post before fetching insights.';
+
+                    return redirect()
+                        ->route('admin.facebook.posts.show', $socialPost)
+                        ->withErrors(['insights' => $message]);
+                }
+
+                $requestPayload = [
+                    'platform' => 'facebook',
+                    'endpoint' => FacebookGraph::insightsEndpoint($socialPost->external_post_id),
+                    'fields' => FacebookGraph::safeInsightsPayload(FacebookGraph::postInsightMetrics()),
+                ];
+
+                try {
+                    $response = FacebookGraph::getPostInsights($socialPost->external_post_id, FacebookGraph::postInsightMetrics());
+                    $responsePayload = $response->json();
+                    $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                    $errorMessage = $response->successful()
+                        ? null
+                        : (data_get($responsePayload, 'error.message') ?: $response->body());
+
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $response->successful() ? 'insights' : 'insights_error',
+                        'external_response_id' => $socialPost->external_post_id,
+                        'body' => $response->successful() ? 'Facebook insights fetched.' : $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    $socialPost->forceFill([
+                        'last_synced_at' => now(),
+                    ])->save();
+
+                    return redirect()
+                        ->route('admin.facebook.posts.show', $socialPost)
+                        ->with('status', $response->successful() ? 'Facebook insights fetched and response saved.' : 'Facebook insights failed and response was saved.');
+                } catch (Throwable $exception) {
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'insights_exception',
+                        'external_response_id' => $socialPost->external_post_id,
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.facebook.posts.show', $socialPost)
+                        ->with('status', 'Facebook insights threw an exception and the response was saved.');
+                }
+            })->name('admin.facebook.posts.insights.fetch');
+        }
+
+        if ($socialChannel['slug'] === 'instagram') {
+            Route::post('/instagram/posts/{socialPost}/comments', function (Request $request, SocialPost $socialPost) {
+                abort_unless($socialPost->platform === 'instagram', 404);
+
+                $data = $request->validate([
+                    'comment_message' => ['required', 'string', 'max:'.InstagramGraph::COMMENT_MAX_LENGTH],
+                ]);
+
+                if (blank($socialPost->external_post_id)) {
+                    $message = 'Publish this Instagram post before commenting.';
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->withErrors(['comment_message' => $message]);
+                }
+
+                $requestPayload = [
+                    'platform' => 'instagram',
+                    'endpoint' => InstagramGraph::commentsEndpoint($socialPost->external_post_id),
+                    'fields' => InstagramGraph::safeCommentPayload($data['comment_message']),
+                ];
+
+                try {
+                    $response = InstagramGraph::commentOnMedia($socialPost->external_post_id, $data['comment_message']);
+                    $responsePayload = $response->json();
+                    $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                    $externalCommentId = data_get($responsePayload, 'id');
+                    $errorMessage = $response->successful()
+                        ? null
+                        : (data_get($responsePayload, 'error.message') ?: $response->body());
+
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $response->successful() ? 'comment' : 'comment_error',
+                        'external_response_id' => $externalCommentId,
+                        'body' => $response->successful() ? $data['comment_message'] : $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                        'responded_at' => $response->successful() ? now() : null,
+                    ]);
+                    $responseRecord->save();
+
+                    $socialPost->forceFill([
+                        'last_synced_at' => now(),
+                    ])->save();
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->with('status', $response->successful() ? 'Instagram comment posted and response saved.' : 'Instagram comment failed and response was saved.');
+                } catch (Throwable $exception) {
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'comment_exception',
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->with('status', 'Instagram comment threw an exception and the response was saved.');
+                }
+            })->name('admin.instagram.posts.comments.store');
+
+            Route::post('/instagram/posts/{socialPost}/insights', function (SocialPost $socialPost) {
+                abort_unless($socialPost->platform === 'instagram', 404);
+
+                if (blank($socialPost->external_post_id)) {
+                    $message = 'Publish this Instagram post before fetching insights.';
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->withErrors(['insights' => $message]);
+                }
+
+                $requestPayload = [
+                    'platform' => 'instagram',
+                    'endpoint' => InstagramGraph::insightsEndpoint($socialPost->external_post_id),
+                    'fields' => InstagramGraph::safeInsightsPayload(InstagramGraph::mediaInsightMetrics()),
+                ];
+
+                try {
+                    $response = InstagramGraph::getMediaInsights($socialPost->external_post_id, InstagramGraph::mediaInsightMetrics());
+                    $responsePayload = $response->json();
+                    $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                    $errorMessage = $response->successful()
+                        ? null
+                        : (data_get($responsePayload, 'error.message') ?: $response->body());
+
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $response->successful() ? 'insights' : 'insights_error',
+                        'external_response_id' => $socialPost->external_post_id,
+                        'body' => $response->successful() ? 'Instagram insights fetched.' : $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    $socialPost->forceFill([
+                        'last_synced_at' => now(),
+                    ])->save();
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->with('status', $response->successful() ? 'Instagram insights fetched and response saved.' : 'Instagram insights failed and response was saved.');
+                } catch (Throwable $exception) {
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'insights_exception',
+                        'external_response_id' => $socialPost->external_post_id,
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.instagram.posts.show', $socialPost)
+                        ->with('status', 'Instagram insights threw an exception and the response was saved.');
+                }
+            })->name('admin.instagram.posts.insights.fetch');
+        }
+
+        if ($socialChannel['slug'] === 'threads') {
+            Route::post('/threads/posts/{socialPost}/comments', function (Request $request, SocialPost $socialPost) {
+                abort_unless($socialPost->platform === 'threads', 404);
+
+                $data = $request->validate([
+                    'comment_message' => ['required', 'string', 'max:'.ThreadsGraph::maxTextLength()],
+                ]);
+
+                if (blank($socialPost->external_post_id)) {
+                    $message = 'Publish this Threads post before commenting.';
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->withErrors(['comment_message' => $message]);
+                }
+
+                $requestPayload = [
+                    'platform' => 'threads',
+                    'endpoint' => ThreadsGraph::threadsEndpoint(),
+                    'publish_endpoint' => ThreadsGraph::threadsPublishEndpoint(),
+                    'fields' => ThreadsGraph::safeThreadPayload($data['comment_message'], null, $socialPost->external_post_id),
+                ];
+
+                try {
+                    $containerResponse = ThreadsGraph::createThreadContainer($data['comment_message'], null, $socialPost->external_post_id);
+                    $containerPayload = $containerResponse->json();
+                    $containerPayload = is_array($containerPayload) ? $containerPayload : ['body' => $containerResponse->body()];
+                    $creationId = (string) data_get($containerPayload, 'id', '');
+                    $requestPayload['publish_fields'] = $creationId !== ''
+                        ? ThreadsGraph::safePublishPayload($creationId)
+                        : [];
+
+                    if (! $containerResponse->successful() || $creationId === '') {
+                        $errorMessage = data_get($containerPayload, 'error.message') ?: $containerResponse->body();
+
+                        $responseRecord = new SocialPostResponse;
+                        $responseRecord->fill([
+                            'social_post_id' => $socialPost->id,
+                            'platform' => $socialPost->platform,
+                            'response_type' => 'reply_container_error',
+                            'external_response_id' => $creationId !== '' ? $creationId : null,
+                            'body' => $errorMessage,
+                            'request_payload' => $requestPayload,
+                            'response_payload' => ['thread_container' => $containerPayload],
+                            'received_at' => now(),
+                        ]);
+                        $responseRecord->save();
+
+                        return redirect()
+                            ->route('admin.threads.posts.show', $socialPost)
+                            ->with('status', 'Threads reply container failed and response was saved.');
+                    }
+
+                    $publishResponse = ThreadsGraph::publishThreadContainer($creationId);
+                    $publishPayload = $publishResponse->json();
+                    $publishPayload = is_array($publishPayload) ? $publishPayload : ['body' => $publishResponse->body()];
+                    $externalReplyId = data_get($publishPayload, 'id');
+                    $errorMessage = $publishResponse->successful()
+                        ? null
+                        : (data_get($publishPayload, 'error.message') ?: $publishResponse->body());
+                    $responsePayload = [
+                        'thread_container' => $containerPayload,
+                        'publish' => $publishPayload,
+                    ];
+
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $publishResponse->successful() ? 'reply' : 'reply_error',
+                        'external_response_id' => $publishResponse->successful() ? $externalReplyId : $creationId,
+                        'body' => $publishResponse->successful() ? $data['comment_message'] : $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                        'responded_at' => $publishResponse->successful() ? now() : null,
+                    ]);
+                    $responseRecord->save();
+
+                    $socialPost->forceFill([
+                        'last_synced_at' => now(),
+                    ])->save();
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->with('status', $publishResponse->successful() ? 'Threads reply posted and response saved.' : 'Threads reply failed and response was saved.');
+                } catch (Throwable $exception) {
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'reply_exception',
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->with('status', 'Threads reply threw an exception and the response was saved.');
+                }
+            })->name('admin.threads.posts.comments.store');
+
+            Route::post('/threads/posts/{socialPost}/insights', function (SocialPost $socialPost) {
+                abort_unless($socialPost->platform === 'threads', 404);
+
+                if (blank($socialPost->external_post_id)) {
+                    $message = 'Publish this Threads post before fetching insights.';
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->withErrors(['insights' => $message]);
+                }
+
+                $requestPayload = [
+                    'platform' => 'threads',
+                    'endpoint' => ThreadsGraph::insightsEndpoint($socialPost->external_post_id),
+                    'fields' => ThreadsGraph::safeInsightsPayload(ThreadsGraph::insightMetrics()),
+                ];
+
+                try {
+                    $response = ThreadsGraph::getPostInsights($socialPost->external_post_id, ThreadsGraph::insightMetrics());
+                    $responsePayload = $response->json();
+                    $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                    $errorMessage = $response->successful()
+                        ? null
+                        : (data_get($responsePayload, 'error.message') ?: $response->body());
+
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => $response->successful() ? 'insights' : 'insights_error',
+                        'external_response_id' => $socialPost->external_post_id,
+                        'body' => $response->successful() ? 'Threads insights fetched.' : $errorMessage,
+                        'request_payload' => $requestPayload,
+                        'response_payload' => $responsePayload,
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    $socialPost->forceFill([
+                        'last_synced_at' => now(),
+                    ])->save();
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->with('status', $response->successful() ? 'Threads insights fetched and response saved.' : 'Threads insights failed and response was saved.');
+                } catch (Throwable $exception) {
+                    $responseRecord = new SocialPostResponse;
+                    $responseRecord->fill([
+                        'social_post_id' => $socialPost->id,
+                        'platform' => $socialPost->platform,
+                        'response_type' => 'insights_exception',
+                        'external_response_id' => $socialPost->external_post_id,
+                        'body' => $exception->getMessage(),
+                        'request_payload' => $requestPayload,
+                        'response_payload' => ['message' => $exception->getMessage()],
+                        'received_at' => now(),
+                    ]);
+                    $responseRecord->save();
+
+                    return redirect()
+                        ->route('admin.threads.posts.show', $socialPost)
+                        ->with('status', 'Threads insights threw an exception and the response was saved.');
+                }
+            })->name('admin.threads.posts.insights.fetch');
         }
     }
 

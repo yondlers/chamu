@@ -8,9 +8,28 @@ use RuntimeException;
 
 class FacebookGraph
 {
+    /**
+     * @var list<string>
+     */
+    private const POST_INSIGHT_METRICS = [
+        'post_impressions',
+        'post_impressions_unique',
+        'post_engaged_users',
+        'post_clicks',
+        'post_reactions_by_type_total',
+    ];
+
     public static function accessToken(): ?string
     {
         return SocialMediaConfig::accessToken('facebook');
+    }
+
+    /**
+     * @return list<string>
+     */
+    public static function postInsightMetrics(): array
+    {
+        return self::POST_INSIGHT_METRICS;
     }
 
     public static function graphVersion(): string
@@ -47,6 +66,14 @@ class FacebookGraph
         $postId = trim($postId, '/');
 
         return $graphUrl.'/'.self::graphVersion().'/'.$postId.'/comments';
+    }
+
+    public static function insightsEndpoint(string $postId): string
+    {
+        $graphUrl = rtrim((string) SocialMediaConfig::value('facebook', 'graph_url', 'https://graph.facebook.com'), '/');
+        $postId = trim($postId, '/');
+
+        return $graphUrl.'/'.self::graphVersion().'/'.$postId.'/insights';
     }
 
     /**
@@ -116,6 +143,30 @@ class FacebookGraph
     }
 
     /**
+     * @param  list<string>  $metrics
+     * @return array<string, string>
+     */
+    public static function insightsPayload(array $metrics = []): array
+    {
+        return self::safeInsightsPayload($metrics) + [
+            'access_token' => self::requireAccessToken(),
+        ];
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     * @return array<string, string>
+     */
+    public static function safeInsightsPayload(array $metrics = []): array
+    {
+        $metrics = self::normaliseMetrics($metrics);
+
+        return [
+            'metric' => implode(',', $metrics),
+        ];
+    }
+
+    /**
      * @param  array<string, string|null>  $fields
      */
     public static function feedCurl(string $message, ?string $node = null, array $fields = []): string
@@ -141,6 +192,28 @@ class FacebookGraph
     public static function commentOnPost(string $postId, string $message): Response
     {
         return Http::asForm()->post(self::commentsEndpoint($postId), self::commentPayload($message));
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     */
+    public static function getPostInsights(string $postId, array $metrics = []): Response
+    {
+        return Http::get(self::insightsEndpoint($postId), self::insightsPayload($metrics));
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     * @return list<string>
+     */
+    private static function normaliseMetrics(array $metrics): array
+    {
+        $metrics = array_values(array_intersect(
+            array_map(fn (string $metric) => trim($metric), $metrics),
+            self::POST_INSIGHT_METRICS,
+        ));
+
+        return $metrics !== [] ? $metrics : self::POST_INSIGHT_METRICS;
     }
 
     private static function requireAccessToken(): string

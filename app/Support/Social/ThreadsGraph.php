@@ -8,9 +8,36 @@ use RuntimeException;
 
 class ThreadsGraph
 {
+    private const MAX_TEXT_LENGTH = 500;
+
+    /**
+     * @var list<string>
+     */
+    private const INSIGHT_METRICS = [
+        'views',
+        'likes',
+        'replies',
+        'reposts',
+        'quotes',
+        'shares',
+    ];
+
     public static function accessToken(): ?string
     {
         return SocialMediaConfig::accessToken('threads');
+    }
+
+    public static function maxTextLength(): int
+    {
+        return self::MAX_TEXT_LENGTH;
+    }
+
+    /**
+     * @return list<string>
+     */
+    public static function insightMetrics(): array
+    {
+        return self::INSIGHT_METRICS;
     }
 
     public static function graphVersion(): string
@@ -35,12 +62,19 @@ class ThreadsGraph
         return self::baseEndpoint($accountId).'/threads_publish';
     }
 
+    public static function insightsEndpoint(string $threadId): string
+    {
+        $graphUrl = rtrim((string) SocialMediaConfig::value('threads', 'graph_url', 'https://graph.threads.net'), '/');
+
+        return $graphUrl.'/'.self::graphVersion().'/'.trim($threadId, '/').'/insights';
+    }
+
     /**
      * @return array<string, string>
      */
-    public static function threadPayload(string $text, ?string $imageUrl = null): array
+    public static function threadPayload(string $text, ?string $imageUrl = null, ?string $replyToId = null): array
     {
-        return self::safeThreadPayload($text, $imageUrl) + [
+        return self::safeThreadPayload($text, $imageUrl, $replyToId) + [
             'access_token' => self::requireAccessToken(),
         ];
     }
@@ -48,14 +82,16 @@ class ThreadsGraph
     /**
      * @return array<string, string>
      */
-    public static function safeThreadPayload(string $text, ?string $imageUrl = null): array
+    public static function safeThreadPayload(string $text, ?string $imageUrl = null, ?string $replyToId = null): array
     {
         $imageUrl = trim((string) $imageUrl);
+        $replyToId = trim((string) $replyToId);
 
         return array_filter([
             'media_type' => $imageUrl !== '' ? 'IMAGE' : 'TEXT',
             'text' => $text,
             'image_url' => $imageUrl !== '' ? $imageUrl : null,
+            'reply_to_id' => $replyToId !== '' ? $replyToId : null,
         ], fn ($value) => $value !== null && trim((string) $value) !== '');
     }
 
@@ -79,14 +115,60 @@ class ThreadsGraph
         ], fn ($value) => trim((string) $value) !== '');
     }
 
-    public static function createThreadContainer(string $text, ?string $imageUrl = null): Response
+    /**
+     * @param  list<string>  $metrics
+     * @return array<string, string>
+     */
+    public static function insightsPayload(array $metrics = []): array
     {
-        return Http::asForm()->post(self::threadsEndpoint(), self::threadPayload($text, $imageUrl));
+        return self::safeInsightsPayload($metrics) + [
+            'access_token' => self::requireAccessToken(),
+        ];
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     * @return array<string, string>
+     */
+    public static function safeInsightsPayload(array $metrics = []): array
+    {
+        $metrics = self::normaliseMetrics($metrics);
+
+        return [
+            'metric' => implode(',', $metrics),
+        ];
+    }
+
+    public static function createThreadContainer(string $text, ?string $imageUrl = null, ?string $replyToId = null): Response
+    {
+        return Http::asForm()->post(self::threadsEndpoint(), self::threadPayload($text, $imageUrl, $replyToId));
     }
 
     public static function publishThreadContainer(string $creationId): Response
     {
         return Http::asForm()->post(self::threadsPublishEndpoint(), self::publishPayload($creationId));
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     */
+    public static function getPostInsights(string $threadId, array $metrics = []): Response
+    {
+        return Http::get(self::insightsEndpoint($threadId), self::insightsPayload($metrics));
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     * @return list<string>
+     */
+    private static function normaliseMetrics(array $metrics): array
+    {
+        $metrics = array_values(array_intersect(
+            array_map(fn (string $metric) => trim($metric), $metrics),
+            self::INSIGHT_METRICS,
+        ));
+
+        return $metrics !== [] ? $metrics : self::INSIGHT_METRICS;
     }
 
     private static function baseEndpoint(?string $accountId = null): string

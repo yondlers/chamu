@@ -8,9 +8,32 @@ use RuntimeException;
 
 class InstagramGraph
 {
+    public const COMMENT_MAX_LENGTH = 2200;
+
+    /**
+     * @var list<string>
+     */
+    private const MEDIA_INSIGHT_METRICS = [
+        'views',
+        'reach',
+        'likes',
+        'comments',
+        'shares',
+        'saved',
+        'total_interactions',
+    ];
+
     public static function accessToken(): ?string
     {
         return SocialMediaConfig::accessToken('instagram');
+    }
+
+    /**
+     * @return list<string>
+     */
+    public static function mediaInsightMetrics(): array
+    {
+        return self::MEDIA_INSIGHT_METRICS;
     }
 
     public static function graphVersion(): string
@@ -33,6 +56,16 @@ class InstagramGraph
     public static function mediaPublishEndpoint(?string $businessAccountId = null): string
     {
         return self::baseEndpoint($businessAccountId).'/media_publish';
+    }
+
+    public static function commentsEndpoint(string $mediaId): string
+    {
+        return self::mediaObjectEndpoint($mediaId).'/comments';
+    }
+
+    public static function insightsEndpoint(string $mediaId): string
+    {
+        return self::mediaObjectEndpoint($mediaId).'/insights';
     }
 
     /**
@@ -76,6 +109,50 @@ class InstagramGraph
         ], fn ($value) => trim((string) $value) !== '');
     }
 
+    /**
+     * @return array<string, string>
+     */
+    public static function commentPayload(string $message): array
+    {
+        return self::safeCommentPayload($message) + [
+            'access_token' => self::requireAccessToken(),
+        ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    public static function safeCommentPayload(string $message): array
+    {
+        return array_filter([
+            'message' => $message,
+        ], fn ($value) => trim((string) $value) !== '');
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     * @return array<string, string>
+     */
+    public static function insightsPayload(array $metrics = []): array
+    {
+        return self::safeInsightsPayload($metrics) + [
+            'access_token' => self::requireAccessToken(),
+        ];
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     * @return array<string, string>
+     */
+    public static function safeInsightsPayload(array $metrics = []): array
+    {
+        $metrics = self::normaliseMetrics($metrics);
+
+        return [
+            'metric' => implode(',', $metrics),
+        ];
+    }
+
     public static function createMediaContainer(string $caption, string $imageUrl): Response
     {
         return Http::asForm()->post(self::mediaEndpoint(), self::mediaPayload($caption, $imageUrl));
@@ -86,12 +163,46 @@ class InstagramGraph
         return Http::asForm()->post(self::mediaPublishEndpoint(), self::publishPayload($creationId));
     }
 
+    public static function commentOnMedia(string $mediaId, string $message): Response
+    {
+        return Http::asForm()->post(self::commentsEndpoint($mediaId), self::commentPayload($message));
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     */
+    public static function getMediaInsights(string $mediaId, array $metrics = []): Response
+    {
+        return Http::get(self::insightsEndpoint($mediaId), self::insightsPayload($metrics));
+    }
+
     private static function baseEndpoint(?string $businessAccountId = null): string
     {
         $graphUrl = rtrim((string) SocialMediaConfig::value('instagram', 'graph_url', 'https://graph.facebook.com'), '/');
         $accountId = trim((string) ($businessAccountId ?? self::requireBusinessAccountId()), '/');
 
         return $graphUrl.'/'.self::graphVersion().'/'.$accountId;
+    }
+
+    private static function mediaObjectEndpoint(string $mediaId): string
+    {
+        $graphUrl = rtrim((string) SocialMediaConfig::value('instagram', 'graph_url', 'https://graph.facebook.com'), '/');
+
+        return $graphUrl.'/'.self::graphVersion().'/'.trim($mediaId, '/');
+    }
+
+    /**
+     * @param  list<string>  $metrics
+     * @return list<string>
+     */
+    private static function normaliseMetrics(array $metrics): array
+    {
+        $metrics = array_values(array_intersect(
+            array_map(fn (string $metric) => trim($metric), $metrics),
+            self::MEDIA_INSIGHT_METRICS,
+        ));
+
+        return $metrics !== [] ? $metrics : self::MEDIA_INSIGHT_METRICS;
     }
 
     private static function requireBusinessAccountId(): string
