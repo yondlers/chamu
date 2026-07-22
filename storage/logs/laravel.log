@@ -3888,3 +3888,27 @@ Did you mean one of these?
 #65 /Users/slx/Code/chamu/vendor/phpunit/phpunit/phpunit(104): PHPUnit\\TextUI\\Application->run(Array)
 #66 {main}
 "} 
+[2026-07-22 07:31:33] local.ERROR: PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 {"exception":"[object] (Psy\\Exception\\ParseErrorException(code: 0): PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 at /Users/slx/Code/chamu/vendor/psy/psysh/src/Exception/ParseErrorException.php:44)
+[stacktrace]
+#0 /Users/slx/Code/chamu/vendor/psy/psysh/src/CodeCleaner.php(657): Psy\\Exception\\ParseErrorException::fromParseError(Object(PhpParser\\Error))
+#1 /Users/slx/Code/chamu/vendor/psy/psysh/src/CodeCleaner.php(273): Psy\\CodeCleaner->parse('<?php echo \"thr...', false)
+#2 /Users/slx/Code/chamu/vendor/psy/psysh/src/Shell.php(1399): Psy\\CodeCleaner->clean(Array, false)
+#3 /Users/slx/Code/chamu/vendor/psy/psysh/src/Shell.php(1506): Psy\\Shell->appendCode('echo \"threads_t...', true, false)
+#4 /Users/slx/Code/chamu/vendor/psy/psysh/src/Shell.php(2215): Psy\\Shell->setCode('echo \"threads_t...', true)
+#5 /Users/slx/Code/chamu/vendor/laravel/tinker/src/Console/TinkerCommand.php(77): Psy\\Shell->execute('echo \"threads_t...')
+#6 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Laravel\\Tinker\\Console\\TinkerCommand->handle()
+#7 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#10 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#11 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate\\Container\\Container->call(Array)
+#12 /Users/slx/Code/chamu/vendor/symfony/console/Command/Command.php(341): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /Users/slx/Code/chamu/vendor/symfony/console/Application.php(1117): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /Users/slx/Code/chamu/vendor/symfony/console/Application.php(356): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Tinker\\Console\\TinkerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /Users/slx/Code/chamu/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /Users/slx/Code/chamu/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#20 {main}
+"} 

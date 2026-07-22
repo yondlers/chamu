@@ -1846,20 +1846,20 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
             if ($socialChannel['slug'] === 'threads') {
                 try {
                     $containerResponse = ThreadsGraph::createThreadContainer($socialPost->message, $socialPost->media_url);
-                    $containerPayload = $containerResponse->json();
-                    $containerPayload = is_array($containerPayload) ? $containerPayload : ['body' => $containerResponse->body()];
+                    $containerPayload = ThreadsGraph::responseBodyPayload($containerResponse);
                     $creationId = (string) data_get($containerPayload, 'id', '');
                     $requestPayload['publish_fields'] = $creationId !== ''
                         ? ThreadsGraph::safePublishPayload($creationId)
                         : [];
 
                     if (! $containerResponse->successful() || $creationId === '') {
-                        $errorMessage = data_get($containerPayload, 'error.message') ?: $containerResponse->body();
+                        $errorMessage = ThreadsGraph::errorMessage($containerResponse, 'Threads container');
+                        $containerDiagnostics = ThreadsGraph::responseDiagnostics($containerResponse);
 
                         $socialPost->fill([
                             'status' => 'failed',
                             'request_payload' => $requestPayload,
-                            'response_payload' => ['thread_container' => $containerPayload],
+                            'response_payload' => ['thread_container' => $containerDiagnostics],
                             'error_message' => $errorMessage,
                         ]);
                         $socialPost->save();
@@ -1872,7 +1872,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                             'external_response_id' => $creationId !== '' ? $creationId : null,
                             'body' => $errorMessage,
                             'request_payload' => $requestPayload,
-                            'response_payload' => $containerPayload,
+                            'response_payload' => $containerDiagnostics,
                             'received_at' => now(),
                         ]);
                         $responseRecord->save();
@@ -1883,15 +1883,16 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     }
 
                     $publishResponse = ThreadsGraph::publishThreadContainer($creationId);
-                    $publishPayload = $publishResponse->json();
-                    $publishPayload = is_array($publishPayload) ? $publishPayload : ['body' => $publishResponse->body()];
+                    $publishPayload = ThreadsGraph::responseBodyPayload($publishResponse);
                     $externalPostId = data_get($publishPayload, 'id');
                     $errorMessage = $publishResponse->successful()
                         ? null
-                        : (data_get($publishPayload, 'error.message') ?: $publishResponse->body());
+                        : ThreadsGraph::errorMessage($publishResponse, 'Threads publish');
                     $responsePayload = [
                         'thread_container' => $containerPayload,
-                        'publish' => $publishPayload,
+                        'publish' => $publishResponse->successful()
+                            ? $publishPayload
+                            : ThreadsGraph::responseDiagnostics($publishResponse),
                     ];
 
                     $socialPost->fill([
@@ -2310,15 +2311,15 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
 
                 try {
                     $containerResponse = ThreadsGraph::createThreadContainer($data['comment_message'], null, $socialPost->external_post_id);
-                    $containerPayload = $containerResponse->json();
-                    $containerPayload = is_array($containerPayload) ? $containerPayload : ['body' => $containerResponse->body()];
+                    $containerPayload = ThreadsGraph::responseBodyPayload($containerResponse);
                     $creationId = (string) data_get($containerPayload, 'id', '');
                     $requestPayload['publish_fields'] = $creationId !== ''
                         ? ThreadsGraph::safePublishPayload($creationId)
                         : [];
 
                     if (! $containerResponse->successful() || $creationId === '') {
-                        $errorMessage = data_get($containerPayload, 'error.message') ?: $containerResponse->body();
+                        $errorMessage = ThreadsGraph::errorMessage($containerResponse, 'Threads reply container');
+                        $containerDiagnostics = ThreadsGraph::responseDiagnostics($containerResponse);
 
                         $responseRecord = new SocialPostResponse;
                         $responseRecord->fill([
@@ -2328,7 +2329,7 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                             'external_response_id' => $creationId !== '' ? $creationId : null,
                             'body' => $errorMessage,
                             'request_payload' => $requestPayload,
-                            'response_payload' => ['thread_container' => $containerPayload],
+                            'response_payload' => ['thread_container' => $containerDiagnostics],
                             'received_at' => now(),
                         ]);
                         $responseRecord->save();
@@ -2339,15 +2340,16 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                     }
 
                     $publishResponse = ThreadsGraph::publishThreadContainer($creationId);
-                    $publishPayload = $publishResponse->json();
-                    $publishPayload = is_array($publishPayload) ? $publishPayload : ['body' => $publishResponse->body()];
+                    $publishPayload = ThreadsGraph::responseBodyPayload($publishResponse);
                     $externalReplyId = data_get($publishPayload, 'id');
                     $errorMessage = $publishResponse->successful()
                         ? null
-                        : (data_get($publishPayload, 'error.message') ?: $publishResponse->body());
+                        : ThreadsGraph::errorMessage($publishResponse, 'Threads reply publish');
                     $responsePayload = [
                         'thread_container' => $containerPayload,
-                        'publish' => $publishPayload,
+                        'publish' => $publishResponse->successful()
+                            ? $publishPayload
+                            : ThreadsGraph::responseDiagnostics($publishResponse),
                     ];
 
                     $responseRecord = new SocialPostResponse;
@@ -2409,11 +2411,10 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
 
                 try {
                     $response = ThreadsGraph::getPostInsights($socialPost->external_post_id, ThreadsGraph::insightMetrics());
-                    $responsePayload = $response->json();
-                    $responsePayload = is_array($responsePayload) ? $responsePayload : ['body' => $response->body()];
+                    $responsePayload = ThreadsGraph::responseBodyPayload($response);
                     $errorMessage = $response->successful()
                         ? null
-                        : (data_get($responsePayload, 'error.message') ?: $response->body());
+                        : ThreadsGraph::errorMessage($response, 'Threads insights');
 
                     $responseRecord = new SocialPostResponse;
                     $responseRecord->fill([
@@ -2423,7 +2424,9 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->group(function () {
                         'external_response_id' => $socialPost->external_post_id,
                         'body' => $response->successful() ? 'Threads insights fetched.' : $errorMessage,
                         'request_payload' => $requestPayload,
-                        'response_payload' => $responsePayload,
+                        'response_payload' => $response->successful()
+                            ? $responsePayload
+                            : ThreadsGraph::responseDiagnostics($response),
                         'received_at' => now(),
                     ]);
                     $responseRecord->save();

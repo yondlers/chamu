@@ -13,6 +13,20 @@ class ThreadsGraph
     /**
      * @var list<string>
      */
+    private const DIAGNOSTIC_HEADERS = [
+        'content-type',
+        'content-length',
+        'x-fb-trace-id',
+        'x-fb-rev',
+        'x-fb-debug',
+        'x-app-usage',
+        'x-page-usage',
+        'x-business-use-case-usage',
+    ];
+
+    /**
+     * @var list<string>
+     */
     private const INSIGHT_METRICS = [
         'views',
         'likes',
@@ -60,6 +74,11 @@ class ThreadsGraph
     public static function threadsPublishEndpoint(?string $accountId = null): string
     {
         return self::baseEndpoint($accountId).'/threads_publish';
+    }
+
+    public static function profileEndpoint(?string $accountId = null): string
+    {
+        return self::baseEndpoint($accountId);
     }
 
     public static function insightsEndpoint(string $threadId): string
@@ -116,6 +135,26 @@ class ThreadsGraph
     }
 
     /**
+     * @return array<string, string>
+     */
+    public static function profilePayload(): array
+    {
+        return self::safeProfilePayload() + [
+            'access_token' => self::requireAccessToken(),
+        ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    public static function safeProfilePayload(): array
+    {
+        return [
+            'fields' => 'id,username,name',
+        ];
+    }
+
+    /**
      * @param  list<string>  $metrics
      * @return array<string, string>
      */
@@ -149,12 +188,82 @@ class ThreadsGraph
         return Http::asForm()->post(self::threadsPublishEndpoint(), self::publishPayload($creationId));
     }
 
+    public static function getProfile(): Response
+    {
+        return Http::get(self::profileEndpoint(), self::profilePayload());
+    }
+
     /**
      * @param  list<string>  $metrics
      */
     public static function getPostInsights(string $threadId, array $metrics = []): Response
     {
         return Http::get(self::insightsEndpoint($threadId), self::insightsPayload($metrics));
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public static function responseBodyPayload(Response $response): array
+    {
+        $payload = $response->json();
+
+        return is_array($payload) ? $payload : ['body' => $response->body()];
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public static function responseDiagnostics(Response $response): array
+    {
+        $payload = $response->json();
+
+        return array_filter([
+            'status' => $response->status(),
+            'successful' => $response->successful(),
+            'body' => $response->body(),
+            'json' => is_array($payload) ? $payload : null,
+            'headers' => self::responseHeaders($response),
+        ], fn ($value) => $value !== null && $value !== []);
+    }
+
+    public static function errorMessage(Response $response, string $context): string
+    {
+        $message = data_get(self::responseBodyPayload($response), 'error.message');
+
+        if ($message !== null && trim((string) $message) !== '') {
+            return (string) $message;
+        }
+
+        $body = trim($response->body());
+
+        if ($body !== '' && $body !== '[]' && $body !== '{}') {
+            return $body;
+        }
+
+        return $context.' failed with HTTP '.$response->status().'.';
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private static function responseHeaders(Response $response): array
+    {
+        $headers = [];
+
+        foreach (self::DIAGNOSTIC_HEADERS as $header) {
+            $value = $response->header($header);
+
+            if (is_array($value)) {
+                $value = implode(', ', $value);
+            }
+
+            if ($value !== null && trim((string) $value) !== '') {
+                $headers[$header] = (string) $value;
+            }
+        }
+
+        return $headers;
     }
 
     /**
