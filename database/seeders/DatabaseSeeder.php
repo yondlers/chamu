@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Database\Seeders\LifeScience\Papers\LifeSciencePaperSeeder;
 use Database\Seeders\LifeScience\Questions\LifeScienceQuestionSeeder;
 use Database\Seeders\LifeScience\Topics\LifeScienceTopicSeeder;
+use Database\Seeders\Universities\CJC\RequirementSeeder as CjcRequirementSeeder;
 use Database\Seeders\Universities\CPUT\RequirementSeeder as CputRequirementSeeder;
 use Database\Seeders\Universities\CUT\RequirementSeeder as CutRequirementSeeder;
 use Database\Seeders\Universities\DUT\RequirementSeeder as DutRequirementSeeder;
@@ -14,16 +15,18 @@ use Database\Seeders\Universities\RU\RequirementSeeder as RuRequirementSeeder;
 use Database\Seeders\Universities\SMU\RequirementSeeder as SmuRequirementSeeder;
 use Database\Seeders\Universities\SPU\RequirementSeeder as SpuRequirementSeeder;
 use Database\Seeders\Universities\SU\RequirementSeeder as SuRequirementSeeder;
+use Database\Seeders\Universities\TNC\RequirementSeeder as TncRequirementSeeder;
+use Database\Seeders\Universities\TSC\RequirementSeeder as TscRequirementSeeder;
 use Database\Seeders\Universities\TUT\RequirementSeeder as TutRequirementSeeder;
 use Database\Seeders\Universities\UCT\RequirementSeeder as UctRequirementSeeder;
 use Database\Seeders\Universities\UFH\RequirementSeeder as UfhRequirementSeeder;
-use Database\Seeders\Universities\UJ\RequirementSeeder as UjRequirementSeeder;
 use Database\Seeders\Universities\UFS\RequirementSeeder as UfsRequirementSeeder;
-use Database\Seeders\Universities\UL\RequirementSeeder as UlRequirementSeeder;
-use Database\Seeders\Universities\UNIZULU\RequirementSeeder as UnizuluRequirementSeeder;
-use Database\Seeders\Universities\UNIVEN\RequirementSeeder as UnivenRequirementSeeder;
-use Database\Seeders\Universities\UMP\RequirementSeeder as UmpRequirementSeeder;
+use Database\Seeders\Universities\UJ\RequirementSeeder as UjRequirementSeeder;
 use Database\Seeders\Universities\UKZN\RequirementSeeder as UkznRequirementSeeder;
+use Database\Seeders\Universities\UL\RequirementSeeder as UlRequirementSeeder;
+use Database\Seeders\Universities\UMP\RequirementSeeder as UmpRequirementSeeder;
+use Database\Seeders\Universities\UNIVEN\RequirementSeeder as UnivenRequirementSeeder;
+use Database\Seeders\Universities\UNIZULU\RequirementSeeder as UnizuluRequirementSeeder;
 use Database\Seeders\Universities\UP\RequirementSeeder as UpRequirementSeeder;
 use Database\Seeders\Universities\UWC\RequirementSeeder as UwcRequirementSeeder;
 use Database\Seeders\Universities\VC\RequirementSeeder as VcRequirementSeeder;
@@ -100,6 +103,9 @@ class DatabaseSeeder extends Seeder
             LifeScienceTopicSeeder::class,
             LifeScienceQuestionSeeder::class,
             UpRequirementSeeder::class,
+            CjcRequirementSeeder::class,
+            TncRequirementSeeder::class,
+            TscRequirementSeeder::class,
             TutRequirementSeeder::class,
             UfsRequirementSeeder::class,
             NmuRequirementSeeder::class,

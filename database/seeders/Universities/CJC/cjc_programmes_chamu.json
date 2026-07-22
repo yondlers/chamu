@@ -1,0 +1,2876 @@
+{
+  "dataset": {
+    "name": "Central Johannesburg TVET College Programmes for Chamu",
+    "version": "2026-07-22",
+    "programme_count": 26,
+    "duplicate_urls_removed": 1,
+    "purpose": "AI-assisted TVET programme discovery and eligibility matching",
+    "institution": "Central Johannesburg TVET College",
+    "important_warning": "The source programme pages were published in 2022. They remain useful for structure and historic admission rules, but Chamu should verify current availability before presenting a programme as open for application."
+  },
+  "global_ai_rules": {
+    "NCV": {
+      "starting_point": "Grade 9 or equivalent usually enters Level 2",
+      "progression": "Level 2 → Level 3 → Level 4",
+      "aps_primary": false,
+      "rule": "Do not reject a Grade 9 learner because no Grade 12 APS exists."
+    },
+    "NATED": {
+      "starting_point": "N4 usually requires Grade 12, relevant NC(V) Level 4 or equivalent NQF Level 4",
+      "progression": "N4 → N5 → N6",
+      "business_cycle": "Usually six months per level",
+      "engineering_cycle": "Usually three months per level",
+      "national_diploma": "N4-N6 plus prescribed relevant workplace experience may lead to eligibility for a National N Diploma."
+    },
+    "creative_programmes": {
+      "extra_checks": [
+        "portfolio",
+        "audition",
+        "interview"
+      ],
+      "rule": "Academic eligibility alone does not guarantee admission."
+    },
+    "occupational_programmes": {
+      "extra_checks": [
+        "workplace training",
+        "credit structure",
+        "external assessment",
+        "RPL where applicable"
+      ],
+      "rule": "Do not apply a university-style APS test unless the official programme explicitly requires one."
+    }
+  },
+  "programmes": [
+    {
+      "slug": "art-and-design-n4-n6",
+      "name": "Art and Design",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "Introductory N4",
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Art and Design",
+      "campuses": [
+        "Smit Street Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "National Introductory Certificate: N4 Art and Design",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC or NC(V) Level 4 with calculated APS of at least 24"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus the next four best subjects"
+        },
+        "additional_requirements": [
+          "Portfolio of Evidence containing pencil or oil-painting sketches"
+        ]
+      },
+      "subjects": {
+        "Introductory N4": [
+          "Form & Colour",
+          "Drawing",
+          "Graphic Interpretation",
+          "Space & Volume"
+        ],
+        "N4": [
+          "Manual Painting, Adobe Flash & Dreamweaver",
+          "Drawing",
+          "Graphic Design (Manual)",
+          "Graphic Design (Computer)",
+          "Entrepreneurship & Business Management"
+        ],
+        "N5": [
+          "Manual Painting, Adobe Flash & Dreamweaver",
+          "Drawing",
+          "Graphic Design (Manual)",
+          "Graphic Design (Computer)",
+          "History of Art"
+        ],
+        "N6": [
+          "Manual Painting, Adobe Flash & Dreamweaver",
+          "Drawing",
+          "Graphic Design (Manual)",
+          "Graphic Design (Computer)",
+          "History of Art"
+        ]
+      },
+      "careers": [
+        "Self-employed artist or designer",
+        "Art gallery curator",
+        "Art educator",
+        "Resident artist",
+        "Advertising",
+        "Desktop publishing operator",
+        "Reprography",
+        "Publication layout and design"
+      ],
+      "id": "CJC-001",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/art-and-design-n4-n6/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "business-management",
+      "name": "Business Management",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Business and Management",
+      "campuses": [],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "Relevant NC(V) Level 4 certificate",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC with programme-specific APS"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Likely CJC NATED business formula; verify on page"
+        },
+        "additional_requirements": []
+      },
+      "subjects": {},
+      "careers": [
+        "Entrepreneur",
+        "Business administrator",
+        "Management assistant",
+        "Operations support"
+      ],
+      "verification_notes": [
+        "Page was rate-limited during extraction; requirements and subjects must be confirmed before automatic matching."
+      ],
+      "id": "CJC-002",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/business-management/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "mechanical-engineering",
+      "name": "Mechanical Engineering",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Engineering Studies",
+      "campuses": [
+        "Ellis Park Campus",
+        "Riverlea Campus",
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "per_level": 3,
+        "unit": "months",
+        "academic_cycle": "trimester",
+        "maximum_levels_per_year": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 12 or relevant NC(V) Level 4 normally required for N4",
+          "Previous N-level required for progression"
+        ],
+        "aps": null,
+        "additional_requirements": [
+          "Mathematics and relevant science/engineering background recommended"
+        ]
+      },
+      "subjects": {
+        "N4": [
+          "Mechanotechnics",
+          "Mechanical Draughting",
+          "Engineering Science",
+          "Mathematics",
+          "Industrial Electronics"
+        ],
+        "N5": [
+          "Mechanotechnics",
+          "Mathematics",
+          "Strengths of Materials",
+          "Power Machines",
+          "Fluid Mechanics"
+        ],
+        "N6": [
+          "Mechanotechnics",
+          "Mathematics",
+          "Strengths of Materials",
+          "Power Machines",
+          "Fluid Mechanics"
+        ]
+      },
+      "elective_notes": [
+        "Supervisory Management is part-time only at extra cost at N4.",
+        "Mechanical Drawing & Design and Supervisory Management are part-time electives at extra cost at N5-N6."
+      ],
+      "careers": [
+        "Draughtsperson",
+        "Fitter and Turner",
+        "Toolmaker",
+        "Millwright",
+        "Machinist",
+        "Instrument Technician",
+        "Mechanical Technician",
+        "AutoCAD Designer",
+        "Refrigeration Technician"
+      ],
+      "id": "CJC-003",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/mechanical-engineering/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "clothing-production-n4-n6",
+      "name": "Clothing Production",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Fashion and Clothing Production",
+      "campuses": [
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "National Introductory Certificate: N4 Clothing Production",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC or NC(V) Level 4 with calculated APS of at least 24"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus the next four best subjects"
+        },
+        "additional_requirements": [
+          "Portfolio showing design and construction of garments"
+        ]
+      },
+      "subjects": {
+        "N4": [
+          "Clothing Construction",
+          "Pattern Construction",
+          "Fashion Drawing",
+          "Introductory Computer Practice"
+        ],
+        "N5": [
+          "Clothing Construction",
+          "Pattern Construction",
+          "Fashion Drawing",
+          "Entrepreneurship & Business Management"
+        ],
+        "N6": [
+          "Clothing Construction",
+          "Pattern Construction",
+          "Fashion Drawing",
+          "Computer Practice"
+        ]
+      },
+      "diploma_progression": "After N6 and 18 months of relevant practical experience, the learner may apply for a National N Diploma.",
+      "careers": [
+        "Clothing Consultant",
+        "Couturier",
+        "Designer",
+        "Dressmaker",
+        "Entrepreneur",
+        "Patternmaker"
+      ],
+      "id": "CJC-004",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/clothing-production-n4-n6/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "cosmetology",
+      "name": "Cosmetology",
+      "qualification_type": "Legacy / Special Programme",
+      "levels": [
+        "N4"
+      ],
+      "field": "Beauty and Cosmetology",
+      "campuses": [
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "per_level": 3,
+        "unit": "months",
+        "academic_cycle": "trimester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 12 with Mathematics and Science or equivalent, as stated on the page"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "minimum_subjects_to_progress": 3,
+        "minimum_mark_per_subject": 40,
+        "subjects_required_for_certification": 4,
+        "attendance_requirement_percent": 80,
+        "minimum_term_mark_percent": 40
+      },
+      "subjects": {
+        "N4": [
+          "Mathematical Literacy",
+          "Communication",
+          "HIV/AIDS",
+          "Entrepreneurship & Business Management",
+          "Cosmetology"
+        ]
+      },
+      "careers": [
+        "Beauty-service provider",
+        "Cosmetologist",
+        "Salon worker"
+      ],
+      "verification_notes": [
+        "The page mixes older N-level wording with a separate NQF Level 4 beauty qualification; keep this record under manual review."
+      ],
+      "id": "CJC-005",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/cosmetology/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "electrical-engineering-heavy-current",
+      "name": "Electrical Engineering (Heavy Current)",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Electrical Engineering",
+      "campuses": [
+        "Ellis Park Campus",
+        "Riverlea Campus",
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "per_level": 3,
+        "unit": "months",
+        "academic_cycle": "trimester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 12 or relevant NC(V) Level 4 normally required for N4",
+          "Previous N-level required for N5 or N6"
+        ],
+        "aps": null,
+        "additional_requirements": [
+          "Good eyesight and colour vision are career-relevant considerations"
+        ]
+      },
+      "subjects": {
+        "N4": [
+          "Electrotechnics",
+          "Industrial Electronics",
+          "Mathematics",
+          "Engineering Science",
+          "Fault Finding & Protective Devices"
+        ],
+        "N5": [
+          "Electrotechnics",
+          "Industrial Electronics",
+          "Mathematics",
+          "Power Machines",
+          "Fault Finding & Protective Devices"
+        ],
+        "N6": [
+          "Electrotechnics",
+          "Industrial Electronics",
+          "Mathematics",
+          "Power Machines",
+          "Fault Finding & Protective Devices"
+        ]
+      },
+      "careers": [
+        "Electrician",
+        "Electro-Technician",
+        "Refrigeration Technician",
+        "Master Electrician",
+        "Millwright",
+        "Electrical Fitter",
+        "Electrical Engineer",
+        "Electrical Wireperson"
+      ],
+      "id": "CJC-006",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/electrical-engineering-heavy-current/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "electrical-engineering-light-current",
+      "name": "Electrical Engineering (Light Current)",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Electronics and Telecommunications",
+      "campuses": [
+        "Ellis Park Campus",
+        "Riverlea Campus",
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "per_level": 3,
+        "unit": "months",
+        "academic_cycle": "trimester",
+        "maximum_levels_per_year": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 12 or relevant NC(V) Level 4 normally required for N4",
+          "Previous N-level required for progression"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "subjects": {
+        "N4": [
+          "Digital Electronics",
+          "Industrial Electronics",
+          "Mathematics",
+          "Communication Electronics",
+          "Industrial Instruments",
+          "Logic System"
+        ],
+        "N5": [
+          "Digital Electronics",
+          "Industrial Electronics",
+          "Mathematics",
+          "Communication Electronics",
+          "Industrial Instruments"
+        ],
+        "N6": [
+          "Digital Electronics",
+          "Industrial Electronics",
+          "Mathematics",
+          "Communication Electronics",
+          "Industrial Instruments"
+        ]
+      },
+      "careers": [
+        "Radio and TV Technician",
+        "Photocopier and Fax Technician",
+        "Telecommunications Technician",
+        "Instrumentation Technician",
+        "Domestic Appliance Technician",
+        "Car Radio Installer",
+        "Cellphone Repair Technician",
+        "TV and Aerial Installer"
+      ],
+      "id": "CJC-007",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/electrical-engineering-light-current/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "financial-management-n4-n6",
+      "name": "Financial Management",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Finance and Accounting",
+      "campuses": [
+        "Parktown Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester",
+        "full_programme_academic_months": 18,
+        "workplace_experience_months": 18,
+        "intakes": [
+          "January",
+          "July"
+        ]
+      },
+      "admission": {
+        "accepted_routes": [
+          "NC(V) Level 4 in Education and Development, Finance Economics and Accounting, Information Technology, Management, Marketing, Office Administration, or Transport and Logistics",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC with calculated APS of at least 24"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus the next four best NSC subjects"
+        },
+        "additional_requirements": []
+      },
+      "subjects": {
+        "N4": [
+          "Computerised Financial Systems",
+          "Entrepreneurship & Business Management",
+          "Financial Accounting",
+          "Management Communication"
+        ],
+        "N5": [
+          "Computerised Financial Systems",
+          "Entrepreneurship & Business Management",
+          "Financial Accounting",
+          "Cost and Management Accounting"
+        ],
+        "N6": [
+          "Computerised Financial Systems",
+          "Entrepreneurship & Business Management",
+          "Financial Accounting",
+          "Cost and Management Accounting"
+        ]
+      },
+      "careers": [
+        "Accounting Technician or Clerk",
+        "Bookkeeper",
+        "Debtors Clerk",
+        "Creditors Clerk",
+        "Payroll Administrator",
+        "Cost Accounting Assistant",
+        "Internal Audit Clerk"
+      ],
+      "id": "CJC-008",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/financial-management-n4-n6/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "hairdresser",
+      "name": "Hairdresser",
+      "qualification_type": "Occupational Certificate",
+      "levels": [
+        "NQF Level 4"
+      ],
+      "field": "Hairdressing",
+      "campuses": [
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "total": 3,
+        "unit": "years",
+        "college_training_months": 18,
+        "workplace_training_months": 18
+      },
+      "admission": {
+        "accepted_routes": [
+          "NQF Level 1",
+          "Passed Grade 9"
+        ],
+        "aps": null,
+        "additional_requirements": [
+          "Workplace training placement forms part of the qualification"
+        ]
+      },
+      "credits": {
+        "knowledge_modules": 82,
+        "practical_skill_modules": 150,
+        "work_experience_modules": 185
+      },
+      "competencies": [
+        "Hair and scalp treatment",
+        "Hairstyling",
+        "Hair cutting",
+        "Chemical hair services",
+        "Professional client interaction"
+      ],
+      "careers": [
+        "Hairdresser",
+        "Hairstylist",
+        "Cosmetologist",
+        "Hair-product Technical Advisor",
+        "Assessor",
+        "Moderator"
+      ],
+      "id": "CJC-009",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/hairdresser/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "hospitality-services",
+      "name": "Hospitality Services",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Hospitality",
+      "campuses": [
+        "Smit Street Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester",
+        "workplace_experience_months": 18
+      },
+      "admission": {
+        "accepted_routes": [
+          "Hospitality NC(V) Level 4",
+          "National Introductory Certificate N4 Food Services",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC or NC(V) Level 4 with calculated APS of at least 24"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus the next four best subjects"
+        },
+        "additional_requirements": []
+      },
+      "progression": {
+        "minimum_subjects_to_progress": 3
+      },
+      "subjects": {
+        "N4": [
+          "Catering Theory & Practical",
+          "Nutrition & Menu Planning",
+          "Sanitation & Housekeeping",
+          "Applied Management"
+        ],
+        "N5": [
+          "Catering Theory & Practical",
+          "Food & Beverage Services",
+          "Entrepreneurship & Business Management",
+          "Applied Management"
+        ],
+        "N6": [
+          "Catering Theory & Practical",
+          "Communication & Human Relations",
+          "Introductory Computer Practice",
+          "Applied Management"
+        ]
+      },
+      "careers": [
+        "Housekeeping",
+        "Food and Beverage Management",
+        "Hotel Management",
+        "Accommodation Services",
+        "Events Management",
+        "Assistant Cook or Chef",
+        "Waitron"
+      ],
+      "id": "CJC-010",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/hospitality-services/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "human-resource-management-n4-n6",
+      "name": "Human Resource Management",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Human Resources",
+      "campuses": [
+        "Parktown Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester",
+        "full_programme_academic_months": 18,
+        "workplace_experience_months": 18,
+        "intakes": [
+          "January",
+          "July"
+        ]
+      },
+      "admission": {
+        "accepted_routes": [
+          "NC(V) Level 4 in Education and Development, Finance Economics and Accounting, Information Technology, Management, Marketing, or Office Administration",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC with calculated APS of at least 24"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus the next four best NSC subjects"
+        },
+        "additional_requirements": []
+      },
+      "subjects": {
+        "N4": [
+          "Computer Practice",
+          "Entrepreneurship & Business Management",
+          "Management Communication",
+          "Personnel Management"
+        ],
+        "N5": [
+          "Computer Practice",
+          "Labour Relations",
+          "Personnel Training",
+          "Personnel Management"
+        ],
+        "N6": [
+          "Computer Practice",
+          "Labour Relations",
+          "Personnel Training",
+          "Personnel Management"
+        ]
+      },
+      "careers": [
+        "Human Resources Officer",
+        "HR Consultant",
+        "Training and Development Officer",
+        "Labour Relations Officer",
+        "Recruitment Agent",
+        "Personnel Manager"
+      ],
+      "id": "CJC-011",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/human-resource-management-n4-n6/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "studio-work-n4-n6",
+      "name": "Studio Work",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Sound and Music Production",
+      "campuses": [
+        "Smit Street Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC or NC(V) Level 4 with calculated APS of at least 24"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus the next four best subjects"
+        },
+        "additional_requirements": [
+          "Audition",
+          "Interview"
+        ]
+      },
+      "subjects": {
+        "N4": [
+          "Music Business",
+          "Sound Engineering",
+          "Arranging & Production",
+          "Electronic Music & Keyboard Technique"
+        ],
+        "N5": [
+          "Music Business",
+          "Sound Engineering",
+          "Arranging & Production",
+          "Electronic Music & Keyboard Technique"
+        ],
+        "N6": [
+          "Music Business",
+          "Sound Engineering",
+          "Arranging & Production",
+          "Electronic Music & Keyboard Technique"
+        ]
+      },
+      "careers": [
+        "Studio Engineer",
+        "Sound Recordist",
+        "Music Composer",
+        "Music Arranger",
+        "Film Sound Designer",
+        "Game Sound Designer",
+        "Mixing Engineer",
+        "Live Sound Engineer",
+        "Music Producer",
+        "DJ or Electronic Music Producer",
+        "Radio Sound Engineer"
+      ],
+      "id": "CJC-012",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/studio-work-n4-n6/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "travel-and-tourism",
+      "name": "Travel and Tourism",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Tourism",
+      "campuses": [
+        "Riverlea Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "Tourism NC(V) Level 4",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC or NC(V) Level 4 with calculated APS of at least 24"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus the next three best subjects, as stated by CJC"
+        },
+        "additional_requirements": []
+      },
+      "subjects": {
+        "N4": [
+          "Travel Office Procedures",
+          "Travel Service",
+          "Tourism Communications",
+          "Tourism Destinations"
+        ],
+        "N5": [],
+        "N6": []
+      },
+      "careers": [
+        "Travel Consultant",
+        "Tour Guide",
+        "Tourism Information Officer",
+        "Reservations Agent",
+        "Passenger Service Agent",
+        "Tourism Marketing Support"
+      ],
+      "verification_notes": [
+        "N5 and N6 subject lists should be confirmed from the full page before production import."
+      ],
+      "id": "CJC-013",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/travel-and-tourism/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "music-performance",
+      "name": "Music Performance",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Music Performance",
+      "campuses": [
+        "Smit Street Campus"
+      ],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "Equivalent NQF Level 4 qualification",
+          "NSC or NC(V) Level 4 with programme APS"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "CJC creative-programme formula; verify page"
+        },
+        "additional_requirements": [
+          "Audition likely required; verify exact wording",
+          "Interview may be required"
+        ]
+      },
+      "subjects": {},
+      "careers": [
+        "Performing Musician",
+        "Session Musician",
+        "Music Educator",
+        "Band Member",
+        "Composer"
+      ],
+      "verification_notes": [
+        "Detailed page extraction failed; keep manual review enabled."
+      ],
+      "id": "CJC-014",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/music-performance/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "marketing-management-n4-n6",
+      "name": "Marketing Management",
+      "qualification_type": "NATED / Report 191",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "field": "Marketing",
+      "campuses": [],
+      "duration": {
+        "per_level": 6,
+        "unit": "months",
+        "academic_cycle": "semester"
+      },
+      "admission": {
+        "accepted_routes": [
+          "Relevant NC(V) Level 4",
+          "Equivalent NQF Level 4 occupational qualification",
+          "NSC with calculated APS"
+        ],
+        "aps": {
+          "minimum": 24,
+          "calculation": "Double English plus next best subjects; verify exact count"
+        },
+        "additional_requirements": []
+      },
+      "subjects": {},
+      "careers": [
+        "Marketing Officer",
+        "Sales Representative",
+        "Market Research Assistant",
+        "Advertising Assistant",
+        "Public Relations Assistant"
+      ],
+      "verification_notes": [
+        "Detailed page extraction failed; campus and subjects require confirmation."
+      ],
+      "id": "CJC-015",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/marketing-management-n4-n6/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": true,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "cosmetology-nqf-level-4",
+      "name": "Beauty and Nail Technology",
+      "qualification_type": "Further Education and Training Certificate",
+      "levels": [
+        "NQF Level 4"
+      ],
+      "field": "Beauty and Nail Technology",
+      "campuses": [
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "total": 1,
+        "unit": "year",
+        "hours": 1560
+      },
+      "admission": {
+        "accepted_routes": [
+          "Programme permits Recognition of Prior Learning subject to assessment and quality assurance"
+        ],
+        "aps": null,
+        "additional_requirements": [
+          "RPL assessment where applicable"
+        ]
+      },
+      "credits": {
+        "minimum_total": 156,
+        "fundamental": 56,
+        "core": 50,
+        "elective_minimum": 50
+      },
+      "fundamentals": [
+        "Mathematical Literacy NQF Level 4 - 16 credits",
+        "Communication in first South African language NQF Level 4 - 20 credits",
+        "Communication in second South African language NQF Level 3 - 20 credits"
+      ],
+      "careers": [
+        "Salon Owner",
+        "Salon Service Coordinator",
+        "Beauty-service Practitioner",
+        "Nail-service Practitioner"
+      ],
+      "id": "CJC-016",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/cosmetology-nqf-level-4/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "civil-engineering-and-building-construction",
+      "name": "Civil Engineering and Building Construction",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Civil Engineering and Construction",
+      "campuses": [
+        "Ellis Park Campus"
+      ],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Construction Planning",
+          "Plant & Equipment",
+          "Materials",
+          "Choose one: Carpentry & Roof Work, Masonry, Plumbing, or Physical Science"
+        ],
+        "Level 3": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Construction Planning",
+          "Plant & Equipment",
+          "Materials",
+          "Choose one: Carpentry & Roof Work, Masonry, Plumbing, or Physical Science"
+        ],
+        "Level 4": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Construction Planning",
+          "Construction Supervision",
+          "Construction Materials",
+          "Choose one: Carpentry & Roof Work, Masonry, Plumbing, or Physical Science"
+        ]
+      },
+      "careers": [
+        "Construction support",
+        "Carpentry",
+        "Masonry",
+        "Plumbing",
+        "Construction supervision",
+        "CAD and engineering drawing"
+      ],
+      "id": "CJC-017",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/civil-engineering-and-building-construction/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "engineering-and-related-design-electrical",
+      "name": "Engineering and Related Design - Electrical",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Electrical Engineering",
+      "campuses": [
+        "Ellis Park Campus"
+      ],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Electrical Principles & Practice",
+          "Workshop Practice",
+          "Electrical Control & Digital Electronics",
+          "Choose one: Electrical Systems & Construction or Physical Science"
+        ],
+        "Level 3": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Electrical Principles & Practice",
+          "Electrical Workmanship",
+          "Electrical Control & Digital Electronics",
+          "Choose one: Electrical Systems & Construction or Physical Science"
+        ],
+        "Level 4": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Electrical Principles & Practice",
+          "Electrical Workmanship",
+          "Electrical Control & Digital Electronics",
+          "Choose one: Electrical Systems & Construction or Physical Science"
+        ]
+      },
+      "careers": [
+        "Electrical artisan pathway",
+        "Electrical maintenance",
+        "Electrical systems",
+        "Engineering studies"
+      ],
+      "id": "CJC-018",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/engineering-and-related-design-electrical/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "engineering-and-related-design-fitting-turning",
+      "name": "Engineering and Related Design - Fitting and Turning",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Mechanical Engineering Trades",
+      "campuses": [
+        "Ellis Park Campus"
+      ],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Engineering Fundamentals",
+          "Engineering Technology",
+          "Engineering Systems",
+          "Choose one: Fitting & Turning or Physical Science"
+        ],
+        "Level 3": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Engineering Practice & Maintenance",
+          "Engineering Technology",
+          "Engineering Graphics & Design (CAD)",
+          "Choose one: Fitting & Turning or Physical Science"
+        ],
+        "Level 4": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Engineering Processes",
+          "Applied Engineering Technology",
+          "Professional Engineering Practice",
+          "Choose one: Fitting & Turning or Physical Science"
+        ]
+      },
+      "careers": [
+        "Fitter and Turner pathway",
+        "Machining",
+        "Toolmaking",
+        "Mechanical maintenance",
+        "CAD"
+      ],
+      "id": "CJC-019",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/engineering-and-related-design-fitting-turning/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "engineering-and-related-design-motor-or-welding",
+      "name": "Engineering and Related Design - Motor or Welding",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Automotive and Welding",
+      "campuses": [
+        "Alexandra Campus"
+      ],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Engineering Fundamentals",
+          "Engineering Technology",
+          "Engineering Systems",
+          "Automotive or Welding Repair/Maintenance"
+        ],
+        "Level 3": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Engineering Practice & Maintenance",
+          "Materials Technology",
+          "Engineering Graphics & Design",
+          "Automotive or Welding Repair/Maintenance"
+        ],
+        "Level 4": [
+          "English First Language",
+          "Mathematics",
+          "Life Orientation",
+          "Engineering Processes",
+          "Professional Engineering Practice",
+          "Applied Engineering Technology",
+          "Automotive or Welding Repair/Maintenance"
+        ]
+      },
+      "careers": [
+        "Motor mechanic pathway",
+        "Welder pathway",
+        "Automotive maintenance",
+        "Fabrication",
+        "Mechanical engineering"
+      ],
+      "id": "CJC-020",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/engineering-and-related-design-motor-or-welding/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "finance-economics-and-accounting-ncv-l2-l4",
+      "name": "Finance, Economics and Accounting",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Finance and Accounting",
+      "campuses": [],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Applied Accounting",
+          "Economic Environment",
+          "Financial Management",
+          "New Venture Creation"
+        ],
+        "Level 3": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Applied Accounting",
+          "Economic Environment",
+          "Financial Management",
+          "New Venture Creation"
+        ],
+        "Level 4": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Applied Accounting",
+          "Economic Environment",
+          "Financial Management",
+          "New Venture Creation"
+        ]
+      },
+      "careers": [
+        "Bookkeeping",
+        "Accounts Clerk",
+        "Debtors or Creditors Clerk",
+        "Finance Administration"
+      ],
+      "verification_notes": [
+        "Campus and exact subject wording should be confirmed from the full page."
+      ],
+      "id": "CJC-021",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/finance-economics-and-accounting-ncv-l2-l4/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "hospitality-services-ncv-l2-l4",
+      "name": "Hospitality Services",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Hospitality",
+      "campuses": [],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Hospitality Generics",
+          "Food Preparation",
+          "Client Services and Human Relations",
+          "Hospitality Services"
+        ],
+        "Level 3": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Hospitality Generics",
+          "Food Preparation",
+          "Client Services and Human Relations",
+          "Hospitality Services"
+        ],
+        "Level 4": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Hospitality Generics",
+          "Food Preparation",
+          "Client Services and Human Relations",
+          "Hospitality Services"
+        ]
+      },
+      "careers": [
+        "Hospitality Assistant",
+        "Food Preparation",
+        "Accommodation Services",
+        "Restaurant Services"
+      ],
+      "verification_notes": [
+        "Campus and exact subject wording require final verification."
+      ],
+      "id": "CJC-022",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/hospitality-services-ncv-l2-l4/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "information-communication-technology",
+      "name": "Information and Communication Technology",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Information Technology",
+      "campuses": [],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Introduction to Information Systems",
+          "Electronics",
+          "Introduction to Systems Development",
+          "Multimedia Basics"
+        ],
+        "Level 3": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Systems Analysis and Design",
+          "Computer Hardware and Software",
+          "Principles of Computer Programming",
+          "Multimedia Content"
+        ],
+        "Level 4": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Data Communication and Networking",
+          "Computer Programming",
+          "Systems Development",
+          "Multimedia"
+        ]
+      },
+      "careers": [
+        "IT Support",
+        "Junior Developer",
+        "Network Support",
+        "Computer Technician",
+        "Multimedia Support"
+      ],
+      "verification_notes": [
+        "Exact CJC subject naming and campus require confirmation."
+      ],
+      "id": "CJC-023",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/information-communication-technology/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "business-management-ncv-l2-l4",
+      "name": "Business Management",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Business Management",
+      "campuses": [],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Introduction to Governance",
+          "Entrepreneurship",
+          "Management Practice",
+          "Operations Management"
+        ],
+        "Level 3": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Governance",
+          "Entrepreneurship",
+          "Management Practice",
+          "Operations Management"
+        ],
+        "Level 4": [
+          "English First Additional Language",
+          "Mathematics or Mathematical Literacy",
+          "Life Orientation",
+          "Governance",
+          "Entrepreneurship",
+          "Management Practice",
+          "Operations Management"
+        ]
+      },
+      "careers": [
+        "Business Administration",
+        "Entrepreneurship",
+        "Operations Support",
+        "Junior Management"
+      ],
+      "verification_notes": [
+        "Exact subject wording and campus require confirmation."
+      ],
+      "id": "CJC-024",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/business-management-ncv-l2-l4/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "marketing-management-ncv-l2-l4",
+      "name": "Marketing Management",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Marketing",
+      "campuses": [
+        "Langlaagte Campus"
+      ],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Additional Language",
+          "Mathematical Literacy",
+          "Life Orientation",
+          "Marketing",
+          "Advertising & Promotions",
+          "Marketing Communication",
+          "Contact Centre Operations"
+        ],
+        "Level 3": [
+          "English First Additional Language",
+          "Mathematical Literacy",
+          "Life Orientation",
+          "Marketing",
+          "Advertising & Promotions",
+          "Marketing Communication",
+          "Contact Centre Operations"
+        ],
+        "Level 4": [
+          "English First Additional Language",
+          "Mathematical Literacy",
+          "Life Orientation",
+          "Marketing",
+          "Advertising & Promotions",
+          "Marketing Communication",
+          "Contact Centre Operations"
+        ]
+      },
+      "careers": [
+        "Customer Relations",
+        "Marketing",
+        "Market Research",
+        "Product Development",
+        "Public Relations",
+        "Purchasing",
+        "Sales Management",
+        "Call Centre Agent"
+      ],
+      "id": "CJC-025",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/marketing-management-ncv-l2-l4/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    },
+    {
+      "slug": "office-administration-ncv-l2-l4",
+      "name": "Office Administration",
+      "qualification_type": "National Certificate (Vocational)",
+      "levels": [
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "field": "Office Administration",
+      "campuses": [
+        "Langlaagte Campus"
+      ],
+      "duration": {
+        "per_level": 1,
+        "unit": "calendar year",
+        "academic_cycle": "annual",
+        "full_path_years": 3
+      },
+      "admission": {
+        "accepted_routes": [
+          "Grade 9 or equivalent to enter Level 2",
+          "Previous NC(V) level required for Level 3 or Level 4"
+        ],
+        "aps": null,
+        "additional_requirements": []
+      },
+      "progression": {
+        "subjects_per_level": 7,
+        "must_pass_all_subjects_to_progress": true,
+        "vocational_subject_pass_percent": 50,
+        "language_and_life_orientation_pass_percent": 40,
+        "mathematics_or_mathematical_literacy_pass_percent": 30,
+        "internal_and_external_assessment_required": true
+      },
+      "subjects": {
+        "Level 2": [
+          "English First Additional Language",
+          "Mathematical Literacy",
+          "Life Orientation",
+          "Business Practice",
+          "Office Practice",
+          "Office Data Processing",
+          "New Venture Creation"
+        ],
+        "Level 3": [
+          "English First Additional Language",
+          "Mathematical Literacy",
+          "Life Orientation",
+          "Business Practice",
+          "Office Practice",
+          "Office Data Processing",
+          "New Venture Creation"
+        ],
+        "Level 4": [
+          "English First Additional Language",
+          "Mathematical Literacy",
+          "Life Orientation",
+          "Business Practice",
+          "Office Practice",
+          "Office Data Processing",
+          "New Venture Creation"
+        ]
+      },
+      "careers": [
+        "Clerk",
+        "Transcriber",
+        "Call Centre Agent",
+        "Reception Clerk",
+        "Office Secretary",
+        "Personal Assistant",
+        "Accounts Collector"
+      ],
+      "id": "CJC-026",
+      "institution": {
+        "name": "Central Johannesburg TVET College",
+        "abbreviation": "CJC",
+        "type": "Public TVET College",
+        "province": "Gauteng",
+        "country": "South Africa"
+      },
+      "source_url": "https://cjc.edu.za/office-administration-ncv-l2-l4/",
+      "study_mode": "Full-time unless the programme page states otherwise",
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Funding depends on programme approval, household eligibility, available funding and current NSFAS/CJC rules."
+      },
+      "matching": {
+        "use_aps": false,
+        "evaluate": [
+          "qualification type",
+          "highest grade or qualification",
+          "APS where explicitly required",
+          "English weighting where stated",
+          "required portfolio/audition/interview",
+          "previous programme level",
+          "campus availability",
+          "intake cycle",
+          "workplace experience requirement"
+        ],
+        "manual_review_when": [
+          "source details are marked for verification",
+          "creative portfolio or audition has not been assessed",
+          "learner applies directly to N5/N6 or NC(V) L3/L4 without prior results",
+          "programme availability may have changed"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ]
+      },
+      "data_quality": {
+        "source": "Official CJC programme page",
+        "page_publication_year": 2022,
+        "last_checked": "2026-07-22",
+        "warning": "Programme pages are official but dated 2022. Confirm current intake, fees, campuses and continued offering before final application advice."
+      }
+    }
+  ]
+}

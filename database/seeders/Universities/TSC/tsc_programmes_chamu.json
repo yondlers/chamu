@@ -1,0 +1,2206 @@
+{
+  "dataset": {
+    "name": "Tshwane South TVET College Programmes",
+    "version": "2026-07-22",
+    "programme_count": 25,
+    "purpose": "AI-assisted eligibility matching for Chamu",
+    "source_type": "Official TSC programme pages supplied by user",
+    "important_note": "TVET matching should not rely on APS alone. Qualification level, prior subjects, preceding N-level or NC(V) level, campus, intake cycle, selection tests and occupational requirements must be evaluated."
+  },
+  "ai_matching_guidance": {
+    "decision_order": [
+      "Identify qualification type",
+      "Check highest grade or qualification completed",
+      "Check whether the learner has the preceding NC(V) or NATED level",
+      "Check required subjects and minimum marks when confirmed",
+      "Check campus and intake availability",
+      "Check occupational or workplace requirements",
+      "Return manual_review instead of making an unsupported rejection"
+    ],
+    "qualification_type_logic": {
+      "NC(V)": "Usually starts at Level 2 and progresses annually through Levels 3 and 4.",
+      "NATED / Report 191": "Usually progresses from N4 to N6. Engineering commonly runs by trimester; business, tourism and hospitality commonly run by semester.",
+      "Occupational Certificate": "Match against the exact QCTO curriculum and entry rule. Workplace learning and an external assessment may be compulsory.",
+      "Short / Bridging Programme": "Do not assume it leads directly to a national qualification; store its purpose and progression link separately."
+    },
+    "confidence_labels": {
+      "confirmed": "Explicitly stated by an official current source",
+      "inferred": "Derived from programme naming or standard qualification structure",
+      "unverified": "Must be checked before automatic eligibility decisions"
+    }
+  },
+  "programmes": [
+    {
+      "id": "TSC-001",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Civil & Construction",
+        "qualification_type": "NC(V)",
+        "levels_offered": "L2-L4",
+        "study_field": "Engineering and Related Design",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "annual",
+        "campuses": [
+          "Atteridgeville"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/civil-construction-l2-l3"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "placement_or_selection_test",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "Usually aimed at learners who completed Grade 9 or higher, but the college's current admission rules must be checked.",
+          "aps_required": false,
+          "progression": "Learner normally progresses one level at a time after passing the preceding NC(V) level.",
+          "do_not_auto_reject_when": [
+            "APS is absent",
+            "Grade 12 was not completed"
+          ],
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-002",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Civil Engineering",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N4-N6",
+        "study_field": "Engineering Studies",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "trimester",
+        "campuses": [
+          "Pretoria West"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/civil-engineering-n4-n6"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-003",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Electrical Infrastructure & Construction",
+        "qualification_type": "NC(V)",
+        "levels_offered": "L2-L4",
+        "study_field": "Engineering and Related Design",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "annual",
+        "campuses": [
+          "Centurion"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/electrical-infrastructure-l2-l3"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "placement_or_selection_test",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "Usually aimed at learners who completed Grade 9 or higher, but the college's current admission rules must be checked.",
+          "aps_required": false,
+          "progression": "Learner normally progresses one level at a time after passing the preceding NC(V) level.",
+          "do_not_auto_reject_when": [
+            "APS is absent",
+            "Grade 12 was not completed"
+          ],
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-004",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Natural Sciences — Electrical & Civil",
+        "qualification_type": "Short / Bridging Programme",
+        "levels_offered": null,
+        "study_field": "Natural Sciences",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [
+          "Atteridgeville"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/natural-sciences-electrical-civil"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_requirements",
+            "selection_or_placement_process"
+          ],
+          "aps_required": false,
+          "recommended_system_statuses": [
+            "possibly_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-005",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Electrical Engineering",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N4-N6",
+        "study_field": "Engineering Studies",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "trimester",
+        "campuses": [
+          "Centurion",
+          "Pretoria West"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/electrical-engineering"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-006",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Mechanical Engineering",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N4-N6",
+        "study_field": "Engineering Studies",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "trimester",
+        "campuses": [
+          "Centurion",
+          "Pretoria West"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/mechanical-engineering"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-007",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Engineering and Related Design",
+        "qualification_type": "NC(V)",
+        "levels_offered": "L2-L4",
+        "study_field": "Engineering and Related Design",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "annual",
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/erd"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "placement_or_selection_test",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "Usually aimed at learners who completed Grade 9 or higher, but the college's current admission rules must be checked.",
+          "aps_required": false,
+          "progression": "Learner normally progresses one level at a time after passing the preceding NC(V) level.",
+          "do_not_auto_reject_when": [
+            "APS is absent",
+            "Grade 12 was not completed"
+          ],
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-008",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Marketing",
+        "qualification_type": "NC(V)",
+        "levels_offered": "L2-L4",
+        "study_field": "Business Studies",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "annual",
+        "campuses": [
+          "Atteridgeville",
+          "Centurion",
+          "Odi",
+          "Pretoria West"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/marketing-l2-l3"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "placement_or_selection_test",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "Usually aimed at learners who completed Grade 9 or higher, but the college's current admission rules must be checked.",
+          "aps_required": false,
+          "progression": "Learner normally progresses one level at a time after passing the preceding NC(V) level.",
+          "do_not_auto_reject_when": [
+            "APS is absent",
+            "Grade 12 was not completed"
+          ],
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-009",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Office Administration",
+        "qualification_type": "NC(V)",
+        "levels_offered": "L2-L4",
+        "study_field": "Business Studies",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "annual",
+        "campuses": [
+          "Atteridgeville",
+          "Centurion",
+          "Odi"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/office-administration-l2-l3"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "placement_or_selection_test",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "Usually aimed at learners who completed Grade 9 or higher, but the college's current admission rules must be checked.",
+          "aps_required": false,
+          "progression": "Learner normally progresses one level at a time after passing the preceding NC(V) level.",
+          "do_not_auto_reject_when": [
+            "APS is absent",
+            "Grade 12 was not completed"
+          ],
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-010",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Management Assistant",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N5-N6",
+        "study_field": "Business Studies",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "semester",
+        "campuses": [
+          "Atteridgeville",
+          "Centurion",
+          "Odi"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/management-assistant"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-011",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Financial Management",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N5-N6",
+        "study_field": "Business Studies",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "semester",
+        "campuses": [
+          "Atteridgeville",
+          "Centurion",
+          "Odi"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/financial-management"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-012",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Hospitality",
+        "qualification_type": "NC(V)",
+        "levels_offered": "L2-L4",
+        "study_field": "Hospitality",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "annual",
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/hospitality-l2-l4"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "placement_or_selection_test",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "Usually aimed at learners who completed Grade 9 or higher, but the college's current admission rules must be checked.",
+          "aps_required": false,
+          "progression": "Learner normally progresses one level at a time after passing the preceding NC(V) level.",
+          "do_not_auto_reject_when": [
+            "APS is absent",
+            "Grade 12 was not completed"
+          ],
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-013",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Hospitality",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N4-N6",
+        "study_field": "Hospitality",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "semester",
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/hospitality-n4-n6"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-014",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Tourism",
+        "qualification_type": "NC(V)",
+        "levels_offered": "L2-L4",
+        "study_field": "Tourism",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "annual",
+        "campuses": [
+          "Odi"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/tourism-l2-l3"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "placement_or_selection_test",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "Usually aimed at learners who completed Grade 9 or higher, but the college's current admission rules must be checked.",
+          "aps_required": false,
+          "progression": "Learner normally progresses one level at a time after passing the preceding NC(V) level.",
+          "do_not_auto_reject_when": [
+            "APS is absent",
+            "Grade 12 was not completed"
+          ],
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-015",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Tourism",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N5-N6",
+        "study_field": "Tourism",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "semester",
+        "campuses": [
+          "Odi"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/tourism-n4-n6"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-016",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Clothing Production",
+        "qualification_type": "NATED / Report 191",
+        "levels_offered": "N5-N6",
+        "study_field": "Clothing Production",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": "semester",
+        "campuses": [
+          "Odi"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/clothing-production"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "highest_school_grade_completed",
+            "relevant_school_subjects",
+            "previous_N_level",
+            "programme_capacity"
+          ],
+          "typical_entry_guidance": "N4 commonly follows Grade 12 or a relevant NC(V) Level 4. N5 and N6 require the preceding N-level subjects.",
+          "aps_required": false,
+          "progression": "N4 → N5 → N6, subject to passing the required subjects at each level.",
+          "national_diploma_note": "A National N Diploma generally requires completion of N4-N6 plus the prescribed workplace experience; verify current DHET rules.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-017",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Bricklayer",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": null,
+        "study_field": "Trades and Artisan Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/bricklayer"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-018",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Carpenter",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": null,
+        "study_field": "Trades and Artisan Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/carpenter"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-019",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Electrician",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": "NQF Level 4",
+        "study_field": "Trades and Artisan Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/electrician-l4"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-020",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Fitter and Turner",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": null,
+        "study_field": "Trades and Artisan Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/fitter-turner"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-021",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Plumber",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": null,
+        "study_field": "Trades and Artisan Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [
+          "Atteridgeville",
+          "Odi"
+        ],
+        "campus_confirmation_required": false,
+        "source_url": "https://tsc.edu.za/programmes/plumber"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-022",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Welder",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": "NQF Level 4",
+        "study_field": "Trades and Artisan Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/welder-l4"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-023",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Bookkeeper",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": null,
+        "study_field": "Business Occupational Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/bookkeeping"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-024",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Retail Buyer",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": null,
+        "study_field": "Business Occupational Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/retail-buyer"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "TSC-025",
+      "institution": {
+        "name": "Tshwane South TVET College",
+        "abbreviation": "TSC",
+        "country": "South Africa",
+        "province": "Gauteng",
+        "institution_type": "Public TVET College"
+      },
+      "programme": {
+        "name": "Cook",
+        "qualification_type": "Occupational Certificate",
+        "levels_offered": "NQF Level 4",
+        "study_field": "Hospitality Occupational Programmes",
+        "study_mode": "Full-time unless otherwise confirmed",
+        "academic_cycle": null,
+        "campuses": [],
+        "campus_confirmation_required": true,
+        "source_url": "https://tsc.edu.za/programmes/cook-l4"
+      },
+      "admission": {
+        "confirmed_requirements": [],
+        "requirements_verification_status": "not fully extractable from programme page",
+        "matching_rules": {
+          "primary_entry_basis": [
+            "programme_specific_minimum_education",
+            "age_requirement_if_any",
+            "medical_or_physical_requirements_if_any",
+            "workplace_based_learning_availability",
+            "selection_assessment"
+          ],
+          "typical_entry_guidance": "Occupational programmes use programme-specific QCTO entry rules rather than APS alone.",
+          "aps_required": false,
+          "progression": "Knowledge, practical skills and workplace experience may all be required before the external integrated summative assessment.",
+          "recommended_system_statuses": [
+            "eligible",
+            "possibly_eligible",
+            "not_eligible",
+            "manual_review"
+          ]
+        },
+        "subject_requirements": [],
+        "minimum_marks": {},
+        "age_requirements": null,
+        "other_requirements": [],
+        "manual_review_required_when": [
+          "The programme page does not state a clear minimum requirement",
+          "The learner is applying above the first level without prior results",
+          "A trade programme requires workplace placement, medical fitness or an aptitude assessment",
+          "Campus or intake availability is uncertain"
+        ]
+      },
+      "curriculum": {
+        "subjects_by_level": {},
+        "subject_list_verification_required": true
+      },
+      "duration": {
+        "value": null,
+        "unit": null,
+        "notes": "Derive from the qualification structure only after confirming the current TSC prospectus."
+      },
+      "career_paths": [],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "notes": "Funding depends on NSFAS eligibility, programme funding status and current college rules."
+      },
+      "application": {
+        "intake_periods": [],
+        "application_dates": {},
+        "required_documents_typical": [
+          "Certified identity document",
+          "Latest school results or qualification results",
+          "Proof of residence",
+          "Parent or guardian identity document where applicable"
+        ],
+        "selection_not_guaranteed": true
+      },
+      "data_quality": {
+        "programme_identity": "confirmed from supplied TSC URL",
+        "qualification_structure": "confirmed from page title or programme listing where available; otherwise inferred from URL",
+        "campus_data": "confirmed where surfaced by TSC programme listing; otherwise left empty",
+        "admission_requirements": "requires verification from the current official prospectus or application portal",
+        "last_checked": "2026-07-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2998 @@
+{
+  "institution": {
+    "name": "Tshwane North TVET College",
+    "abbreviation": "TNC",
+    "institution_type": "Public TVET College",
+    "country": "South Africa",
+    "province": "Gauteng",
+    "website": "https://www.tnc.edu.za/",
+    "programmes_page": "https://www.tnc.edu.za/programmes.php",
+    "campuses": [
+      "Mamelodi",
+      "Pretoria",
+      "Rosslyn",
+      "Soshanguve North",
+      "Soshanguve South",
+      "Temba"
+    ],
+    "central_office": true
+  },
+  "dataset": {
+    "academic_year": 2026,
+    "source_prospectus": "https://tnc.edu.za/documents/TNC%20Prospectus%202026.pdf",
+    "source_retrieved": "2026-07-22",
+    "schema_version": "1.0",
+    "programme_count": 49,
+    "data_quality": {
+      "minimum_requirements_do_not_guarantee_admission": true,
+      "learner_profiler_required": true,
+      "specific_college_selection_criteria_may_apply": true,
+      "campus_availability_can_change": true,
+      "fees_excluded": true,
+      "manual_verification_recommended_for_fields_marked_with_notes": true
+    }
+  },
+  "application": {
+    "method": "Online application through TNC website",
+    "learner_profiler_required": true,
+    "incomplete_application_examples": [
+      "Profile created only",
+      "Learner Profiler not completed",
+      "Required documents not attached"
+    ],
+    "priority_note": "First preference is given to applicants whose last school attended is in Gauteng.",
+    "cycles": [
+      {
+        "intakes": [
+          "NC(V)",
+          "First Semester",
+          "First Trimester"
+        ],
+        "application_window": "September-October for the upcoming year"
+      },
+      {
+        "intakes": [
+          "Second Semester",
+          "Second Trimester"
+        ],
+        "application_window": "1 March-30 April"
+      },
+      {
+        "intakes": [
+          "Third Trimester"
+        ],
+        "application_window": "1 July-31 August"
+      }
+    ],
+    "documents_south_african": [
+      "Certified ID copy",
+      "Latest certified school report / Senior Certificate / results certificate",
+      "Proof of residential address",
+      "Next-of-kin or responsible parent/guardian contact details"
+    ],
+    "documents_foreign": [
+      "Valid passport copy",
+      "Valid study/work permit for full study duration",
+      "SAQA evaluation certificate aligned to a South African qualification"
+    ]
+  },
+  "funding": {
+    "nsfas_general_criteria_from_prospectus": [
+      "South African citizen",
+      "SASSA grant recipients qualify",
+      "Combined household income not above R350,000 per year",
+      "For a person with a disability, combined household income not above R600,000 per year"
+    ],
+    "warning": "Funding is subject to NSFAS rules, approval and funded-programme status."
+  },
+  "matching_guidance_for_ai": {
+    "do_not_use_aps_as_primary_rule": true,
+    "reason": "TVET matching is mainly based on completed school/NQF level, required school subjects, prior programme level, programme-specific selection criteria, and campus/intake availability.",
+    "recommended_match_order": [
+      "Check target qualification family",
+      "Check highest completed grade or NQF level",
+      "Check required subjects and explicit percentage thresholds",
+      "Check prior-level progression requirement",
+      "Check age or medical requirements",
+      "Check campus availability",
+      "Check intake cycle",
+      "Return eligible, possibly eligible, or ineligible with reasons"
+    ],
+    "statuses": {
+      "eligible": "All published minimum rules pass",
+      "possibly_eligible": "General rule passes but selection criteria, campus, missing marks or programme classification needs confirmation",
+      "ineligible": "A mandatory published rule fails"
+    },
+    "important_distinctions": [
+      "Mathematics is not the same as Mathematical Literacy where explicitly stated",
+      "NC(V) is a level-by-level vocational certificate, normally one year per level",
+      "NATED programmes use N-level progression and may require workplace experience for the National Diploma",
+      "Occupational Certificates combine theory, practical and workplace learning",
+      "Short Skills Programmes are not equivalent to full NC(V), NATED or Occupational qualifications"
+    ]
+  },
+  "programmes": [
+    {
+      "id": "tnc-ncv-eic",
+      "name": "Electrical Infrastructure Construction",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Engineering Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Mamelodi",
+        "Soshanguve North",
+        "Temba"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Mathematics",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Skills & Computer Literacy"
+          ],
+          "vocational_subjects": [
+            "Electrical Principles and Practice",
+            "Workshop Practice",
+            "Electronic Control & Digital Electronics",
+            "Electrical Systems and Construction (Specialisation)"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Skills & Computer Literacy"
+          ],
+          "vocational_subjects": [
+            "Electrical Principles and Practice",
+            "Electrical Workmanship",
+            "Electronic Control & Digital Electronics",
+            "Electrical Systems and Construction (Specialisation)"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Skills & Computer Literacy"
+          ],
+          "vocational_subjects": [
+            "Electrical Principles and Practice",
+            "Electrical Workmanship",
+            "Electronic Control & Digital Electronics",
+            "Electrical Systems and Construction (Specialisation)"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Electrical construction engineering",
+        "Industrial engineering",
+        "Sound technology",
+        "Theatre technology",
+        "Process-level control",
+        "Digital electronics",
+        "Instrumentation"
+      ]
+    },
+    {
+      "id": "tnc-ncv-civil-building",
+      "name": "Civil Engineering and Building Construction",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Engineering Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Mamelodi",
+        "Soshanguve North"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Mathematics",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Skills & Computer Literacy"
+          ],
+          "vocational_subjects": [
+            "Plant and Equipment",
+            "Construction Planning",
+            "Materials",
+            {
+              "choice_group": "specialisation",
+              "choose_one_or_as_offered": [
+                "Carpentry and Roof Work",
+                "Plumbing",
+                "Concrete Structures",
+                "Masonry"
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Skills & Computer Literacy"
+          ],
+          "vocational_subjects": [
+            "Plant and Equipment",
+            "Construction Planning",
+            "Materials",
+            {
+              "choice_group": "specialisation",
+              "choose_one_or_as_offered": [
+                "Carpentry and Roof Work",
+                "Plumbing",
+                "Concrete Structures",
+                "Masonry"
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Skills & Computer Literacy"
+          ],
+          "vocational_subjects": [
+            "Construction Planning",
+            "Construction Supervision",
+            "Materials",
+            {
+              "choice_group": "specialisation",
+              "choose_one_or_as_offered": [
+                "Carpentry and Roof Work",
+                "Plumbing",
+                "Concrete Structures",
+                "Masonry"
+              ]
+            }
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Architectural technology",
+        "Drainage inspection",
+        "Industrial design",
+        "Quantity surveying",
+        "Town and regional planning",
+        "Sanitation and reticulation",
+        "Building construction"
+      ],
+      "vocational_activities": [
+        "Operate and maintain construction equipment and machinery",
+        "Participate in construction of roads, bridges, dams and houses"
+      ]
+    },
+    {
+      "id": "tnc-ncv-erd",
+      "name": "Engineering and Related Design",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Engineering Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Temba"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Mathematics",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Engineering Fundamentals",
+            "Engineering Technology",
+            "Engineering Systems",
+            {
+              "choice_group": "specialisation",
+              "choose_one": [
+                "Fitting and Turning",
+                "Engineering Fabrication",
+                "Automotive Repair and Maintenance"
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Engineering Practice and Maintenance",
+            "Material Technology",
+            "Engineering Graphics and Design",
+            {
+              "choice_group": "specialisation",
+              "choose_one": [
+                "Fitting and Turning",
+                "Engineering Fabrication / Boiler Making",
+                "Automotive Repair and Maintenance"
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Engineering Processes",
+            "Professional Engineering Practice",
+            "Applied Engineering Technology",
+            {
+              "choice_group": "specialisation",
+              "choose_one": [
+                "Fitting and Turning",
+                "Engineering Fabrication / Boiler Making",
+                "Automotive Repair and Maintenance"
+              ]
+            }
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Fabrication and steel structures",
+        "Mining ventilation and facility design",
+        "Fitting and turning",
+        "Machine operation and maintenance",
+        "Automotive manufacturing",
+        "Motor mechanics"
+      ]
+    },
+    {
+      "id": "tnc-ncv-itcs",
+      "name": "Information Technology and Computer Science",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Engineering Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Mamelodi"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Mathematics",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Introduction to Information Systems",
+            "Introduction to Systems Development",
+            "Electronics",
+            "Contact Centre Operations"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Computer Hardware and Software",
+            "Principles of Computer Programming",
+            "Systems Analysis and Design",
+            "Contact Centre Operations"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Computer Programming",
+            "Data Communication and Networking",
+            "Systems Analysis and Design",
+            "Contact Centre Operations"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Computer programming",
+        "Information technology management",
+        "Computer systems engineering",
+        "Data processing"
+      ]
+    },
+    {
+      "id": "tnc-ncv-mechatronics",
+      "name": "Mechatronics",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Engineering Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Rosslyn"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Mathematics",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Electrotechnology",
+            "Introduction to Computers",
+            "Manual Manufacturing",
+            "Mechatronic Systems"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Electrotechnology",
+            "Machine Manufacturing",
+            "Stored Programme Systems",
+            "Mechatronic Systems"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematics",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Computer-Integrated Manufacturing",
+            "Electrotechnology",
+            "Stored Programme Systems",
+            "Mechatronic Systems"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Robotics and intelligent equipment design support",
+        "Product and prototype development",
+        "Manufacturing systems",
+        "Electrical and mechanical systems management",
+        "Equipment testing and installation"
+      ]
+    },
+    {
+      "id": "tnc-ncv-generic-management",
+      "name": "Generic Management",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Business Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Management Practice",
+            "Operations Management",
+            "Financial Management",
+            "Entrepreneurship"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Management Practice",
+            "Operations Management",
+            "Financial Management",
+            "Project Management"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Management Practice",
+            "Operations Management",
+            "Financial Management",
+            "Project Management"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Human resources",
+        "Marketing",
+        "Financial management",
+        "Public relations",
+        "Office administration"
+      ]
+    },
+    {
+      "id": "tnc-ncv-marketing",
+      "name": "Marketing",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Business Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Marketing",
+            "Advertising and Promotions",
+            "Marketing Communication",
+            "Consumer Behaviour"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Marketing",
+            "Advertising and Promotions",
+            "Marketing Communications",
+            "Consumer Behaviour"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Marketing",
+            "Advertising and Promotions",
+            "Marketing Communications",
+            "Consumer Behaviour"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Product marketing",
+        "Market research",
+        "Sales assistant",
+        "Sales representative"
+      ],
+      "notes": [
+        "The 2026 campus matrix lists the programme but shows no ticked campus; availability must be confirmed with TNC."
+      ]
+    },
+    {
+      "id": "tnc-ncv-office-admin",
+      "name": "Office Administration",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Business Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Mamelodi",
+        "Soshanguve South"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Business Practice",
+            {
+              "choice_group": "accounting_or_venture",
+              "choose_one": [
+                "New Venture Creation",
+                "Applied Accounting"
+              ]
+            },
+            "Office Data Processing",
+            "Office Practice"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Business Practice",
+            {
+              "choice_group": "accounting_or_venture",
+              "choose_one": [
+                "New Venture Creation",
+                "Applied Accounting"
+              ]
+            },
+            "Office Data Processing",
+            "Office Practice"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Business Practice",
+            "Office Data Processing",
+            "Office Practice",
+            {
+              "choice_group": "accounting_or_venture",
+              "choose_one": [
+                "New Venture Creation",
+                "Applied Accounting"
+              ]
+            }
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Office administration",
+        "Bookkeeping support",
+        "Financial services support",
+        "Insurance services support",
+        "Investment services support"
+      ],
+      "vocational_activities": [
+        "Bookkeeping",
+        "Wages and salary records",
+        "Petty-cash records",
+        "Basic financial statement preparation"
+      ]
+    },
+    {
+      "id": "tnc-ncv-fea",
+      "name": "Finance, Economics and Accounting",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Business Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Applied Accounting",
+            "Economic Environment",
+            "Financial Management",
+            "New Venture Creation"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Applied Accounting",
+            "Economic Environment",
+            "Financial Management",
+            "New Venture Creation"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Applied Accounting",
+            "Economic Environment",
+            "Financial Management",
+            "New Venture Creation"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Private and public accounting",
+        "Financial services",
+        "Insurance services",
+        "Investment services",
+        "Bookkeeping"
+      ]
+    },
+    {
+      "id": "tnc-ncv-transport-logistics",
+      "name": "Transport and Logistics",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "Business Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Soshanguve South"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Freight Logistics",
+            "Transport Economics",
+            "Transport Operations",
+            "New Venture Creation"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Freight Logistics",
+            "Transport Economics",
+            "Transport Operations",
+            "New Venture Creation"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Freight Logistics",
+            "Transport Economics",
+            "Transport Operations",
+            "New Venture Creation"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Marketing and sales",
+        "Warehousing logistics",
+        "Freight transport",
+        "Air cabin crew",
+        "Freight forwarder",
+        "Air traffic controller",
+        "Logistics and distribution manager",
+        "Passenger transport manager",
+        "Transport planner"
+      ]
+    },
+    {
+      "id": "tnc-ncv-tourism",
+      "name": "Tourism",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "General/Utility Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Science of Tourism",
+            "Client Services and Human Relations",
+            "Sustainable Tourism in South Africa",
+            "Tourism Operations"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Science of Tourism",
+            "Client Services and Human Relations",
+            "Sustainable Tourism in South Africa and Regional Travel",
+            "Tourism Operations"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Science of Tourism",
+            "Client Services and Human Relations",
+            "Sustainable Tourism in South Africa and International Travel",
+            "Tourism Operations"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Accommodation management",
+        "Conference and events planning",
+        "Restaurant and food services",
+        "Travel counselling and arrangements",
+        "Game-ranch and safari work"
+      ]
+    },
+    {
+      "id": "tnc-ncv-safety-society",
+      "name": "Safety in Society",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "General/Utility Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Temba"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Introduction to Governance",
+            "Introduction to Law",
+            "Principles of Criminal Justice",
+            {
+              "choice_group": "policing_or_criminology",
+              "choose_one": [
+                "Introduction to Policing Practices",
+                "Criminology"
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Governance",
+            "Criminal Law",
+            "Criminal Justice Structures and Mandates",
+            {
+              "choice_group": "policing_or_criminology",
+              "choose_one": [
+                "Theory of Policing Practices",
+                "Criminology"
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Governance",
+            "Law of Procedures and Evidence",
+            "Criminal Justice Process",
+            {
+              "choice_group": "policing_or_criminology",
+              "choose_one": [
+                "Applied Policing",
+                "Criminology"
+              ]
+            }
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Correctional services",
+        "Immigration and customs",
+        "Security services",
+        "Policing",
+        "Traffic policing",
+        "Metro policing"
+      ]
+    },
+    {
+      "id": "tnc-ncv-hospitality",
+      "name": "Hospitality",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "General/Utility Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Hospitality Generics",
+            "Food Preparation",
+            "Client Services and Human Relations",
+            "Hospitality Services"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Hospitality Generics",
+            "Food Preparation",
+            "Client Services and Human Relations",
+            "Hospitality Services"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Hospitality Generics",
+            "Food Preparation",
+            "Client Services and Human Relations",
+            "Hospitality Services"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Housekeeping",
+        "Food and beverage management",
+        "Hotel management",
+        "Accommodation services",
+        "Events management",
+        "Catering services",
+        "Entrepreneurship"
+      ]
+    },
+    {
+      "id": "tnc-ncv-primary-agriculture",
+      "name": "Primary Agriculture",
+      "qualification_type": "NC(V)",
+      "qualification_family": "National Certificate (Vocational)",
+      "field": "General/Utility Studies",
+      "nqf_levels": [
+        2,
+        3,
+        4
+      ],
+      "delivery_cycle": "year",
+      "duration": {
+        "per_level": "1 year",
+        "full_path_if_completed_levels_2_to_4": "3 years"
+      },
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [],
+      "entry_points": [
+        {
+          "target_level": 2,
+          "minimum_school_level": "Grade 9 or higher",
+          "accepted_equivalents": [
+            "NQF Level 1",
+            "AET Level 4"
+          ],
+          "required_school_subjects": [
+            "Social Sciences subjects",
+            "English"
+          ],
+          "minimum_percentages": null,
+          "college_selection_criteria_apply": true
+        },
+        {
+          "target_level": 3,
+          "required_prior_qualification": "NC(V) Level 2 in the same subfield/programme"
+        },
+        {
+          "target_level": 4,
+          "required_prior_qualification": "NC(V) Level 3 in the same subfield/programme"
+        }
+      ],
+      "certificate_completion_rule": {
+        "total_subjects": 7,
+        "fundamental_subject_count": 3,
+        "vocational_subject_count": 4
+      },
+      "curriculum_by_level": [
+        {
+          "level": 2,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Animal Production",
+            "Plant Production",
+            "Soil Science",
+            "Agri-business"
+          ]
+        },
+        {
+          "level": 3,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Animal Production",
+            "Plant Production",
+            "Soil Science",
+            "Agri-business"
+          ]
+        },
+        {
+          "level": 4,
+          "fundamental_subjects": [
+            "English 1st Additional Language",
+            "Mathematical Literacy",
+            "Life Orientation"
+          ],
+          "vocational_subjects": [
+            "Animal Production",
+            "Advanced Plant Production",
+            "Farm Planning and Mechanisation",
+            "Agri-business"
+          ]
+        }
+      ],
+      "career_opportunities": [
+        "Animal production",
+        "Crop and livestock production",
+        "Soil production and maintenance",
+        "Farm business management",
+        "Food security",
+        "Internships and apprenticeships"
+      ],
+      "notes": [
+        "Detailed in the 2026 prospectus, but omitted from the campus matrix; campus availability must be confirmed."
+      ]
+    },
+    {
+      "id": "tnc-nated-business-management",
+      "name": "Business Management",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Business Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "Business Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Sales Management N5",
+          "Entrepreneurship and Business Management N5",
+          "Computer Practice N5",
+          "Financial Accounting N5"
+        ],
+        "N6": [
+          "Sales Management N6",
+          "Entrepreneurship and Business Management N6",
+          "Computer Practice N6",
+          "Financial Accounting N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Asset controller",
+        "Debtors clerk",
+        "Creditors clerk",
+        "Entry-level financial management"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-public-management",
+      "name": "Public Management",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Business Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time",
+        "part-time"
+      ],
+      "campuses": [
+        "Mamelodi"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "Business Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Public Finance N5",
+          "Municipal Administration N5",
+          "Computer Practice N5",
+          "Public Administration N5"
+        ],
+        "N6": [
+          "Public Finance N6",
+          "Municipal Administration N6",
+          "Public Law N6",
+          "Public Administration N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Public-sector administration",
+        "Human resources in government",
+        "National government",
+        "Local government"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-financial-management",
+      "name": "Financial Management",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Business Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time",
+        "part-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "Business Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Cost and Management Accounting N5",
+          "Entrepreneurship and Business Management N5",
+          "Computerised Financial Systems N5",
+          "Financial Accounting N5"
+        ],
+        "N6": [
+          "Cost and Management Accounting N6",
+          "Computerised Financial Systems N6",
+          "Income Tax N6",
+          "Financial Accounting N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Asset controller",
+        "Debtors clerk",
+        "Creditors clerk",
+        "Entry-level financial management"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-management-assistant",
+      "name": "Management Assistant",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Business Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time",
+        "part-time"
+      ],
+      "campuses": [
+        "Pretoria",
+        "Soshanguve South",
+        "Temba"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "Business Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Communication N5",
+          "Computer Practice N5",
+          "Information Processing N5",
+          "Office Practice N5"
+        ],
+        "N6": [
+          "Communication N6",
+          "Computer Practice N6",
+          "Information Processing N6",
+          "Office Practice N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Management assistant",
+        "Telephonist",
+        "Receptionist",
+        "Secretary",
+        "Personal assistant",
+        "General office clerk",
+        "Typist",
+        "Audio typist"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-legal-secretary",
+      "name": "Legal Secretary",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Business Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time",
+        "part-time"
+      ],
+      "campuses": [],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "Business Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Legal Practice N5",
+          "Information Processing N5",
+          "Communication N5",
+          "Office Practice N5"
+        ],
+        "N6": [
+          "Legal Practice N6",
+          "Information Processing N6",
+          "Communication N6",
+          "Office Practice N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Legal secretary",
+        "Court administration support",
+        "Police administration support",
+        "Barrister chambers support",
+        "Medical secretary",
+        "Legal executive support"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-public-relations",
+      "name": "Public Relations",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Business Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time",
+        "part-time"
+      ],
+      "campuses": [
+        "Soshanguve South"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "Business Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Communication N5",
+          "Office Practice N5",
+          "Information Processing N5",
+          "Public Relations N5"
+        ],
+        "N6": [
+          "Communication N6",
+          "Computer Practice N5 (as printed)",
+          "Information Processing N6",
+          "Public Relations N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Public relations assistant",
+        "Marketing and communications assistant",
+        "Personal assistant",
+        "Receptionist",
+        "Secretary"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-art-and-design",
+      "name": "Art and Design",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "General/Utility Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "General/Utility Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Painting N5",
+          "Drawing N5",
+          "Graphic Design N5",
+          "History of Art N5"
+        ],
+        "N6": [
+          "Painting N6",
+          "Drawing N6",
+          "Graphic Design N6",
+          "History of Art N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Graphic designer",
+        "Art curator",
+        "Cartoonist/animator",
+        "Art director",
+        "Museum instructor",
+        "Art teacher/lecturer",
+        "Illustrator",
+        "Contemporary artist",
+        "Visual artist",
+        "Art examiner/moderator"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-clothing-production",
+      "name": "Clothing Production",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "General/Utility Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "General/Utility Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Clothing Construction N5",
+          "Fashion Drawing N5",
+          "Pattern Construction N5",
+          "Entrepreneurship and Business Management N4"
+        ],
+        "N6": [
+          "Clothing Construction N6",
+          "Fashion Drawing N6",
+          "Pattern Construction N6",
+          "Computer Practice N4"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Entrepreneur",
+        "Factory seamstress",
+        "Fashion designer",
+        "Garment maker"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-hospitality-and-catering-services",
+      "name": "Hospitality and Catering Services",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "General/Utility Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "General/Utility Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Catering: Theory and Practical N5",
+          "Applied Management N5",
+          "Food and Beverage Services N5",
+          "Entrepreneurship and Business Management N4"
+        ],
+        "N6": [
+          "Catering: Theory and Practical N6",
+          "Applied Management N6",
+          "Communication and Human Relations N6",
+          "Computer Practice N4"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Housekeeping",
+        "Food and beverage management",
+        "Events management",
+        "Accommodation services",
+        "Catering",
+        "Entrepreneurship"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-tourism",
+      "name": "Tourism",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "General/Utility Studies",
+      "levels": [
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Pretoria"
+      ],
+      "delivery_cycle": "semester",
+      "duration": {
+        "theory_per_level": "6 months",
+        "theory_total": "18 months",
+        "work_integrated_learning": "18 months",
+        "total_to_diploma": "36 months / 3 years"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4/N5",
+          "minimum_qualification": "Grade 12 or NQF Level 4",
+          "required_subject_area": "General/Utility Studies",
+          "required_language": "English",
+          "specific_college_requirements_apply": true,
+          "source_wording_warning": "The 2026 prospectus programme pages and matrix emphasise N5-N6, while the qualification framework references N4-N6. Verify the exact first level open for application."
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N5": [
+          "Travel Services N5",
+          "Travel Office Procedures N5",
+          "Tourist Destinations N5",
+          "Tourism Communication N5"
+        ],
+        "N6": [
+          "Travel Services N6",
+          "Travel Office Procedures N6",
+          "Tourist Destinations N6",
+          "Hotel Reception N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Accommodation management",
+        "Conference and events planning",
+        "Restaurant and food services",
+        "Travel counselling and arrangements",
+        "Game-ranch and safari work"
+      ],
+      "notes": [
+        "Campus list is based on the 2026 programme matrix. Part-time availability is captured separately in study_modes."
+      ]
+    },
+    {
+      "id": "tnc-nated-civil-engineering",
+      "name": "Civil Engineering",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Engineering Studies",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Mamelodi",
+        "Soshanguve North"
+      ],
+      "delivery_cycle": "trimester",
+      "duration": {
+        "per_level": "11 weeks / approximately 3 months",
+        "levels": "N4-N6"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4",
+          "minimum_qualification": "Grade 12 / Matric Certificate",
+          "required_subjects": [
+            {
+              "subject": "Mathematics",
+              "minimum_percentage": 40
+            }
+          ],
+          "technical_background_required_or_preferred": "Published wording says for students with technical background"
+        },
+        {
+          "target_level": "N5",
+          "required_prior_qualification": "Passed N4 subjects in same subfield/programme"
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N4 and N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N4": [
+          "Building Administration N4",
+          "Building and Structural Surveying N4",
+          "Building and Structural Construction N4",
+          "Quantity Surveying N4"
+        ],
+        "N5": [
+          "Building Administration N5",
+          "Building and Structural Surveying N5",
+          "Building and Structural Construction N5",
+          "Quantity Surveying N5"
+        ],
+        "N6": [
+          "Building Administration N6",
+          "Building and Structural Surveying N6",
+          "Building and Structural Construction N6",
+          "Quantity Surveying N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Architectural technician",
+        "Quantity surveyor",
+        "Drainage inspector",
+        "Builder"
+      ]
+    },
+    {
+      "id": "tnc-nated-electrical-engineering",
+      "name": "Electrical Engineering",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Engineering Studies",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Mamelodi",
+        "Rosslyn",
+        "Soshanguve North"
+      ],
+      "delivery_cycle": "trimester",
+      "duration": {
+        "per_level": "11 weeks / approximately 3 months",
+        "levels": "N4-N6"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4",
+          "minimum_qualification": "Grade 12 / Matric Certificate",
+          "required_subjects": [
+            {
+              "subject": "Mathematics",
+              "minimum_percentage": 40
+            }
+          ],
+          "technical_background_required_or_preferred": "Published wording says for students with technical background"
+        },
+        {
+          "target_level": "N5",
+          "required_prior_qualification": "Passed N4 subjects in same subfield/programme"
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N4 and N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N4": [
+          "Mathematics N4",
+          "Engineering Science N4",
+          "Industrial Electronics N4",
+          "Electrotechnics N4"
+        ],
+        "N5": [
+          "Mathematics N5",
+          "Industrial Electronics N5",
+          "Electrotechnics N5",
+          "Power Machines N5"
+        ],
+        "N6": [
+          "Mathematics N6",
+          "Industrial Electronics N6",
+          "Electrotechnics N6",
+          "Power Machines N6",
+          "Control Systems N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Electrical installation",
+        "Domestic-appliance repair",
+        "House wiring"
+      ]
+    },
+    {
+      "id": "tnc-nated-mechanical-engineering",
+      "name": "Mechanical Engineering",
+      "qualification_type": "NATED",
+      "qualification_family": "Report 191 / National N Diploma",
+      "field": "Engineering Studies",
+      "levels": [
+        "N4",
+        "N5",
+        "N6"
+      ],
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Rosslyn",
+        "Temba"
+      ],
+      "delivery_cycle": "trimester",
+      "duration": {
+        "per_level": "11 weeks / approximately 3 months",
+        "levels": "N4-N6"
+      },
+      "entry_points": [
+        {
+          "target_level": "N4",
+          "minimum_qualification": "Grade 12 / Matric Certificate",
+          "required_subjects": [
+            {
+              "subject": "Mathematics",
+              "minimum_percentage": 40
+            }
+          ],
+          "technical_background_required_or_preferred": "Published wording says for students with technical background"
+        },
+        {
+          "target_level": "N5",
+          "required_prior_qualification": "Passed N4 subjects in same subfield/programme"
+        },
+        {
+          "target_level": "N6",
+          "required_prior_qualification": "Passed N4 and N5 subjects in same subfield/programme"
+        }
+      ],
+      "subjects_by_level": {
+        "N4": [
+          "Mathematics N4",
+          "Mechanotechnics N4",
+          "Supervisory Management N4",
+          "Engineering Science N4",
+          "Mechanical Draughting N4",
+          "Plating and Structural Steel Drawing N4"
+        ],
+        "N5": [
+          "Mathematics N5",
+          "Mechanotechnics N5",
+          "Supervisory Management N5",
+          "Fluid Mechanics N5",
+          "Power Machines N5",
+          "Strength of Materials and Structures N5",
+          "Mechanical Drawing and Design N5"
+        ],
+        "N6": [
+          "Mathematics N6",
+          "Mechanotechnics N6",
+          "Supervisory Management N6",
+          "Fault Finding and Protective Devices N6",
+          "Fluid Mechanics N6",
+          "Power Machines N6",
+          "Strength of Materials and Structures N6",
+          "Mechanical Drawing and Design N6"
+        ]
+      },
+      "subjects_required_per_level": 4,
+      "career_opportunities": [
+        "Millwright",
+        "Fitter and turner",
+        "Mechanical technician",
+        "Power-station worker",
+        "Mechanical draughtsperson",
+        "Welder",
+        "Toolmaker"
+      ]
+    },
+    {
+      "id": "tnc-plp-engineering",
+      "name": "Pre-Learning Programme / Foundation Learning Programme",
+      "qualification_type": "PLP",
+      "qualification_family": "Bridging programme",
+      "field": "Engineering Studies",
+      "duration": "1 year",
+      "delivery_cycle": "year",
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [
+        "Soshanguve North",
+        "Temba"
+      ],
+      "entry_requirements": {
+        "school_grade_range": "Grade 9-11",
+        "grade_12_applicants_eligible": false,
+        "required_subjects": [
+          "Mathematics",
+          "English"
+        ],
+        "intended_for": [
+          "Applicants to NC(V) Engineering who do not meet direct requirements",
+          "Applicants assessed as having potential to pass NC(V) Engineering"
+        ]
+      },
+      "subjects": [
+        "Foundational English",
+        "Foundational Mathematics",
+        "Foundational Life Skills",
+        "Foundational Science"
+      ],
+      "promotion_rule": "Pass all 4 foundational learning subjects",
+      "progression": "May provide access to Report 191 / NC(V) Engineering programmes that the learner did not initially qualify for."
+    },
+    {
+      "id": "tnc-oq-electrician",
+      "name": "Electrician",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Rosslyn"
+      ],
+      "minimum_entry_requirements": "NQF Level 1 qualification with Mathematics and Science",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4 with Mathematics and Science",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-plumber",
+      "name": "Plumber",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Soshanguve North"
+      ],
+      "minimum_entry_requirements": "NQF Level 3 equivalent to N2 knowledge areas in Engineering Mathematics, Science and Building Drawings",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4 with Mathematics, Science and Building Drawings",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-solar-photovoltaic-pv-service-technician",
+      "name": "Solar Photovoltaic (PV) Service Technician",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Mamelodi"
+      ],
+      "minimum_entry_requirements": "NQF Level 4 with Mathematics",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4 with Mathematics",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-automotive-motor-mechanic",
+      "name": "Automotive Motor Mechanic",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Rosslyn"
+      ],
+      "minimum_entry_requirements": "NQF Level 1 with Mathematics (not Mathematical Literacy)",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4 with Mathematics",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-fitter-and-turner",
+      "name": "Fitter and Turner",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Temba"
+      ],
+      "minimum_entry_requirements": "NQF Level 1 with Mathematics",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4 with Mathematics",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-hairdresser",
+      "name": "Hairdresser",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Pretoria"
+      ],
+      "minimum_entry_requirements": "NQF Level 1 educational qualification",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-early-childhood-development-practitioner",
+      "name": "Early Childhood Development Practitioner",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Pretoria"
+      ],
+      "minimum_entry_requirements": "NQF Level 3 or NC(V) Level 3",
+      "recommended_entry_requirements": "Grade 12 or NC(V) Level 4",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-welder",
+      "name": "Welder",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Mamelodi"
+      ],
+      "minimum_entry_requirements": "NQF Level 1 with Mathematics and Science",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4 with Mathematics and Science",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ]
+    },
+    {
+      "id": "tnc-oq-chef-nqf-level-4",
+      "name": "Chef (NQF Level 4)",
+      "qualification_type": "Occupational Certificate",
+      "accreditation_body": "QCTO",
+      "framework": "Occupational Qualifications Sub-Framework (OQSF)",
+      "duration": "3 years",
+      "study_modes": [
+        "full-time"
+      ],
+      "funding": "Advertised as fully funded through NSFAS, subject to NSFAS eligibility and programme funding rules",
+      "campuses": [
+        "Pretoria"
+      ],
+      "minimum_entry_requirements": "NQF Level 2 with Mathematics",
+      "recommended_entry_requirements": "Grade 12 / NQF Level 4 with Mathematics",
+      "learning_model": [
+        "Theory",
+        "Practical skills",
+        "Workplace experience"
+      ],
+      "additional_requirement": "Passed occupational-health medical certificate"
+    },
+    {
+      "id": "tnc-itec-beauty",
+      "name": "ITEC Diploma for Beauty Specialist (Level 2) and Facial Electrical Treatments (Level 3)",
+      "qualification_type": "International/industry diploma",
+      "awarding_body": "ITEC",
+      "duration": "1 year",
+      "study_modes": [
+        "full-time"
+      ],
+      "campuses": [],
+      "entry_requirements": "Grade 12 or NQF Level 4 Certificate",
+      "learning_areas": [
+        "Make-up",
+        "Manicure and Pedicure",
+        "Waxing",
+        "Professional Conduct and Business Awareness",
+        "Facial Electrical Treatments"
+      ],
+      "availability_note": "Campus not specified on the programme page; confirm with TNC."
+    },
+    {
+      "id": "tnc-hairdressing-legacy",
+      "name": "Hair Dressing",
+      "qualification_type": "College/occupational-style programme (classification should be confirmed)",
+      "duration": "3 years",
+      "campuses": [
+        "Pretoria"
+      ],
+      "entry_requirements": {
+        "minimum": "Grade 9 or equivalent",
+        "minimum_age": 16
+      },
+      "subjects": [
+        "Introductory Studies for Hairdressers",
+        "Shampoo, Conditioning and Treatment",
+        "Hair and Skin",
+        "Hair Styling",
+        "Communication and Sales",
+        "Style Hair",
+        "Cut Hair / Barbering",
+        "Hair Cutting",
+        "Chemical Hair Services",
+        "Colour Hair",
+        "Hair Chemical Treatment"
+      ],
+      "career_opportunities": [
+        "Salon owner",
+        "Barber",
+        "Hair specialist"
+      ],
+      "note": "The prospectus also lists a QCTO Occupational Certificate: Hairdresser. Keep these as separate records until TNC confirms whether they are the same intake."
+    },
+    {
+      "id": "tnc-skill-baking",
+      "name": "Baking",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Recipe costing",
+        "Cakes, tarts, bread, buns, rusks and scones"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-event-management",
+      "name": "Event Management",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Types of events",
+        "Venue selection",
+        "Etiquette",
+        "Event elements",
+        "Finance and administration"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-fashion-design",
+      "name": "Fashion Design",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Measuring and calculations",
+        "Drawing a block pattern",
+        "Creating styles using a block pattern"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-flower-arranging",
+      "name": "Flower Arranging",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Flower identification and use",
+        "Storage and watering",
+        "20 practical bouquets",
+        "Quotations, finance and planning"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-garment-making",
+      "name": "Garment Making",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Using a sewing machine",
+        "Using industrial patterns",
+        "Layout and cutting",
+        "Making 6 garments"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-manicure-and-pedicure",
+      "name": "Manicure and Pedicure",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Basic manicure",
+        "Oil manicure",
+        "Paraffin-wax manicure"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-make-up",
+      "name": "Make-up",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Foundation and corrective make-up",
+        "Day make-up",
+        "Evening make-up",
+        "Bridal make-up"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-nail-technology",
+      "name": "Nail Technology",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Nail services",
+        "Gel nail enhancement",
+        "Liquid and powder nail enhancement"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-project-management",
+      "name": "Project Management",
+      "qualification_type": "Short Skills Programme",
+      "duration": "12 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "College Certificate",
+      "learning_outcomes": [
+        "Project-management fundamentals",
+        "Developing a simple execution schedule"
+      ],
+      "entry_requirements": null
+    },
+    {
+      "id": "tnc-skill-end-user-computing",
+      "name": "End User Computing",
+      "qualification_type": "Short Skills Programme",
+      "duration": "18 Saturdays",
+      "study_schedule": "Saturdays",
+      "campuses": [
+        "Pretoria"
+      ],
+      "certification": "MICT SETA Certificate",
+      "learning_outcomes": [
+        "Microsoft Word",
+        "Microsoft Excel",
+        "Microsoft PowerPoint",
+        "Email and Internet",
+        "Microsoft Access"
+      ],
+      "entry_requirements": null
+    }
+  ]
+}

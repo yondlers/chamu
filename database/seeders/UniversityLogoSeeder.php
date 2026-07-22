@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class UniversityLogoSeeder extends Seeder
 {
     private const LOGOS = [
-        'CPUT' => 'https://www.cput.ac.za/images/About/Brand%20ID/img_branding_logo_correct.jpg',
+        'CPUT' => 'images/universities/cput.png',
         'CUT' => 'https://www.cut.ac.za/Images/Site/cut-u-logo.png',
         'DUT' => 'https://www.dut.ac.za/wp-content/uploads/2026/03/DUT-Logo_new-1.png',
         'NMU' => 'https://webapps.mandela.ac.za/design/Resources/images/logos/FullColourLogo.PNG',
@@ -32,6 +32,12 @@ class UniversityLogoSeeder extends Seeder
         'WSU' => 'https://www.wsu.ac.za/images/header-logo-main.png',
     ];
 
+    private const STALE_LOGOS = [
+        'CPUT' => [
+            'https://www.cput.ac.za/images/About/Brand%20ID/img_branding_logo_correct.jpg',
+        ],
+    ];
+
     public function run(): void
     {
         foreach (self::LOGOS as $abbreviation => $logo) {
@@ -41,7 +47,8 @@ class UniversityLogoSeeder extends Seeder
                     $query
                         ->whereNull('logo')
                         ->orWhere('logo', '')
-                        ->orWhere('logo', 'images/universities/'.strtolower($abbreviation).'.png');
+                        ->orWhere('logo', 'images/universities/'.strtolower($abbreviation).'.png')
+                        ->orWhereIn('logo', self::STALE_LOGOS[$abbreviation] ?? []);
                 })
                 ->update([
                     'logo' => $logo,
@@ -52,7 +59,11 @@ class UniversityLogoSeeder extends Seeder
 
     public static function logoFor(string $abbreviation, ?string $existingLogo = null): ?string
     {
-        if ($existingLogo !== null && $existingLogo !== '' && ! str_starts_with($existingLogo, 'images/universities/')) {
+        if ($existingLogo !== null
+            && $existingLogo !== ''
+            && ! str_starts_with($existingLogo, 'images/universities/')
+            && ! in_array($existingLogo, self::STALE_LOGOS[$abbreviation] ?? [], true)
+        ) {
             return $existingLogo;
         }
 
