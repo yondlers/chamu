@@ -1,0 +1,683 @@
+{
+  "dataset": {
+    "name": "UNISA Diplomas for Chamu",
+    "version": "2026-07-22",
+    "institution": "University of South Africa",
+    "abbreviation": "UNISA",
+    "programme_count": 8,
+    "scope": "Eight user-supplied undergraduate diplomas",
+    "corrections_applied": 3,
+    "important_note": "Current application status must be fetched separately because open and closed statuses change."
+  },
+  "global_rules": {
+    "default_nqf_level": 6,
+    "default_total_credits": 360,
+    "default_nominal_duration_years": 3,
+    "maximum_completion_years": 8,
+    "selection": "Meeting minimum requirements does not guarantee admission.",
+    "annual_registration_limit": "Many UNISA diplomas limit students to 120 credits or 10 modules per academic year."
+  },
+  "programmes": [
+    {
+      "id": "UNISA-98750",
+      "name": "Diploma in Law",
+      "qualification_code": "98750",
+      "stream_code": null,
+      "field": "Law",
+      "college": "College of Law",
+      "aps": 18,
+      "saqa_id": null,
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Law-%2898750%29",
+      "purpose": "Develops foundational and applied legal knowledge for primary legal services and support roles.",
+      "career_examples": [
+        "Paralegal",
+        "Legal Assistant",
+        "Court Administration Clerk",
+        "Compliance Assistant",
+        "Legal Services Officer"
+      ],
+      "admission": {
+        "minimum_aps": 18,
+        "required_endorsement": "Diploma endorsement or an accepted equivalent admission route",
+        "language_requirement": "Programme-specific language requirement applies; verify the current official page",
+        "mathematics": {
+          "required": false,
+          "manual_review": false
+        },
+        "alternative_routes": [
+          "Relevant Higher Certificate, subject to UNISA rules",
+          "Senior Certificate satisfying diploma admission rules"
+        ],
+        "manual_review_required": true
+      },
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98806-ITE",
+      "name": "Diploma in Information Technology",
+      "qualification_code": "98806",
+      "stream_code": "ITE",
+      "field": "Information Technology",
+      "college": "College of Science, Engineering and Technology",
+      "aps": 18,
+      "saqa_id": "62396",
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Information-Technology-%2898806-%E2%80%93-ITE%29",
+      "purpose": "Prepares learners for software development, systems support and applied information technology roles.",
+      "career_examples": [
+        "Software Developer",
+        "IT Support Technician",
+        "Web Developer",
+        "Systems Support Technician",
+        "Database Support Technician"
+      ],
+      "admission": {
+        "minimum_aps": 18,
+        "required_endorsement": "Diploma endorsement",
+        "language_requirement": "At least 50% in the language of teaching and learning for the NSC route",
+        "mathematics": {
+          "required": true,
+          "minimum_percentage": 50,
+          "mathematical_literacy_accepted": false
+        },
+        "alternative_routes": [
+          "N4 Mathematics with at least 50% plus N4 English, Communication or Communication Technology with at least 50%",
+          "Senior Certificate route satisfying the specified Mathematics and language symbols"
+        ],
+        "work_integrated_learning": true,
+        "manual_review_required": false
+      },
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98200",
+      "name": "Diploma in Accounting Sciences",
+      "qualification_code": "98200",
+      "stream_code": null,
+      "field": "Accounting Sciences",
+      "college": "College of Accounting Sciences",
+      "aps": null,
+      "saqa_id": null,
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Accounting-Sciences-%2898200%29",
+      "purpose": "Develops accounting, reporting, management accounting, internal auditing, taxation and small-business management competence.",
+      "career_examples": [
+        "Accounting Technician",
+        "Bookkeeper",
+        "Internal Audit Assistant",
+        "Tax Assistant",
+        "Costing Clerk"
+      ],
+      "admission": {
+        "minimum_aps": null,
+        "required_endorsement": "Diploma endorsement",
+        "language_requirement": "At least 50% in the language of teaching and learning for the NSC route",
+        "mathematics": {
+          "required": true,
+          "minimum_percentage": 40,
+          "mathematical_literacy_accepted": true,
+          "mathematical_literacy_minimum_percentage": 50
+        },
+        "alternative_routes": [
+          "Higher Certificate in Accounting Sciences",
+          "Appropriate Higher Certificate in Economic and Management Sciences",
+          "Advanced Certificate in Accounting Sciences",
+          "Senior Certificate with the prescribed language and Mathematics symbols"
+        ],
+        "manual_review_required": false
+      },
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98216",
+      "name": "Diploma in Administrative Management",
+      "qualification_code": "98216",
+      "stream_code": null,
+      "field": "Administrative Management",
+      "college": "College of Economic and Management Sciences",
+      "aps": 17,
+      "saqa_id": "85146",
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Administrative-Management-%2898216%29",
+      "input_correction": {
+        "supplied_code": "98214",
+        "correct_code": "98216",
+        "reason": "UNISA's current official listing identifies Diploma in Administrative Management as 98216."
+      },
+      "purpose": "Prepares learners for administrative, office-management and organisational support responsibilities.",
+      "career_examples": [
+        "Administrative Officer",
+        "Office Manager",
+        "Operations Administrator",
+        "Project Administrator",
+        "Executive Support Officer"
+      ],
+      "admission": {
+        "minimum_aps": 17,
+        "required_endorsement": "Diploma endorsement",
+        "language_requirement": "At least 50% in the language of teaching and learning is commonly required for CEMS diploma routes",
+        "mathematics": {
+          "required": true,
+          "minimum_percentage": 40,
+          "mathematical_literacy_accepted": true,
+          "mathematical_literacy_minimum_percentage": 70,
+          "confidence": "group-level rule; verify exact programme page"
+        },
+        "alternative_routes": [
+          "Appropriate Higher Certificate in the College of Economic and Management Sciences"
+        ],
+        "manual_review_required": true
+      },
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98211",
+      "name": "Diploma in Human Resource Management",
+      "qualification_code": "98211",
+      "stream_code": null,
+      "field": "Human Resource Management",
+      "college": "College of Economic and Management Sciences",
+      "aps": 17,
+      "saqa_id": "86348",
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Human-Resource-Management-%2898211%29",
+      "purpose": "Develops applied competence in staffing, labour relations, training, compensation and human-resource administration.",
+      "career_examples": [
+        "Human Resources Officer",
+        "Recruitment Officer",
+        "Training Administrator",
+        "Labour Relations Assistant",
+        "Payroll or Benefits Administrator"
+      ],
+      "admission": {
+        "minimum_aps": 17,
+        "required_endorsement": "Diploma endorsement",
+        "language_requirement": "Programme-specific language threshold applies",
+        "mathematics": {
+          "required": true,
+          "minimum_percentage": 40,
+          "mathematical_literacy_accepted": true,
+          "mathematical_literacy_minimum_percentage": 70,
+          "confidence": "CEMS diploma guidance; exact page verification required"
+        },
+        "alternative_routes": [
+          "Appropriate Higher Certificate in the College of Economic and Management Sciences"
+        ],
+        "manual_review_required": true
+      },
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98202",
+      "name": "Diploma in Marketing Management",
+      "qualification_code": "98202",
+      "stream_code": null,
+      "field": "Marketing Management",
+      "college": "College of Economic and Management Sciences",
+      "aps": 17,
+      "saqa_id": "83287",
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Marketing-Management-%2898202%29",
+      "purpose": "Develops practical marketing, consumer, sales, communication and market-analysis competence.",
+      "career_examples": [
+        "Marketing Officer",
+        "Sales Coordinator",
+        "Brand Assistant",
+        "Market Research Assistant",
+        "Digital Marketing Coordinator"
+      ],
+      "admission": {
+        "minimum_aps": 17,
+        "required_endorsement": "Diploma endorsement",
+        "language_requirement": "Programme-specific language threshold applies",
+        "mathematics": {
+          "required": true,
+          "minimum_percentage": 40,
+          "mathematical_literacy_accepted": true,
+          "mathematical_literacy_minimum_percentage": 70,
+          "confidence": "CEMS diploma guidance; exact page verification required"
+        },
+        "alternative_routes": [
+          "Appropriate Higher Certificate in the College of Economic and Management Sciences"
+        ],
+        "manual_review_required": true
+      },
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-90077",
+      "name": "Diploma in Public Relations",
+      "qualification_code": "90077",
+      "stream_code": null,
+      "field": "Public Relations and Communication",
+      "college": "College of Human Sciences",
+      "aps": 18,
+      "saqa_id": "97597",
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Public-Relations-%2890077%29",
+      "input_correction": {
+        "supplied_code": "98212",
+        "correct_code": "90077",
+        "reason": "98212 is currently associated with the Postgraduate Diploma in Organisational Development."
+      },
+      "purpose": "Develops communication, media relations, stakeholder engagement and public-relations campaign skills.",
+      "career_examples": [
+        "Public Relations Practitioner",
+        "Communication Officer",
+        "Media Liaison Officer",
+        "Events Coordinator",
+        "Social Media Coordinator"
+      ],
+      "admission": {
+        "minimum_aps": 18,
+        "required_endorsement": "Diploma endorsement",
+        "language_requirement": "At least 50% in the language of teaching and learning is generally required",
+        "mathematics": {
+          "required": false
+        },
+        "alternative_routes": [
+          "Senior Certificate satisfying diploma admission rules",
+          "Recognised appropriate prior qualification"
+        ],
+        "manual_review_required": true
+      },
+      "module_count": 30,
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98223",
+      "name": "Diploma in Tourism Management",
+      "qualification_code": "98223",
+      "stream_code": null,
+      "field": "Tourism Management",
+      "college": "College of Economic and Management Sciences",
+      "aps": 17,
+      "saqa_id": "86247",
+      "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Tourism-Management-%2898223%29",
+      "input_correction": {
+        "supplied_code": "98216",
+        "correct_code": "98223",
+        "reason": "98216 is Diploma in Administrative Management; UNISA lists Tourism Management as 98223."
+      },
+      "purpose": "Develops operational and managerial competence for tourism businesses, destinations and visitor services.",
+      "career_examples": [
+        "Tourism Officer",
+        "Travel Consultant",
+        "Destination Marketing Assistant",
+        "Tour Operations Coordinator",
+        "Visitor Services Officer"
+      ],
+      "admission": {
+        "minimum_aps": 17,
+        "required_endorsement": "Diploma endorsement",
+        "language_requirement": "Programme-specific language threshold applies",
+        "mathematics": {
+          "required": true,
+          "minimum_percentage": 40,
+          "mathematical_literacy_accepted": true,
+          "mathematical_literacy_minimum_percentage": 70,
+          "confidence": "CEMS diploma guidance; exact page verification required"
+        },
+        "alternative_routes": [
+          "Appropriate Higher Certificate in the College of Economic and Management Sciences"
+        ],
+        "manual_review_required": true
+      },
+      "qualification_type": "Diploma",
+      "nqf_level": 6,
+      "total_credits": 360,
+      "minimum_nominal_years": 3,
+      "maximum_completion_years": 8,
+      "study_mode": [
+        "Open distance learning",
+        "Online-supported learning"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS eligibility and UNISA registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm diploma endorsement or a recognised alternative route",
+          "Calculate the UNISA APS",
+          "Check language of teaching and learning",
+          "Check Mathematics versus Mathematical Literacy rules",
+          "Check qualification-specific alternative-entry routes",
+          "Check current application availability",
+          "Use manual_review where a threshold is not explicitly verified"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "do_not_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly stated",
+          "A qualification is currently open merely because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity_and_code": "verified against current official UNISA listings",
+        "nqf_and_credits": "verified or standard diploma structure",
+        "admission_requirements": "confirmed where explicitly available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    }
+  ]
+}

@@ -25,6 +25,7 @@ use Database\Seeders\Universities\UJ\RequirementSeeder as UjRequirementSeeder;
 use Database\Seeders\Universities\UKZN\RequirementSeeder as UkznRequirementSeeder;
 use Database\Seeders\Universities\UL\RequirementSeeder as UlRequirementSeeder;
 use Database\Seeders\Universities\UMP\RequirementSeeder as UmpRequirementSeeder;
+use Database\Seeders\Universities\UNISA\RequirementSeeder as UnisaRequirementSeeder;
 use Database\Seeders\Universities\UNIVEN\RequirementSeeder as UnivenRequirementSeeder;
 use Database\Seeders\Universities\UNIZULU\RequirementSeeder as UnizuluRequirementSeeder;
 use Database\Seeders\Universities\UP\RequirementSeeder as UpRequirementSeeder;
@@ -112,6 +113,7 @@ class DatabaseSeeder extends Seeder
             NwuRequirementSeeder::class,
             UkznRequirementSeeder::class,
             UlRequirementSeeder::class,
+            UnisaRequirementSeeder::class,
             UnizuluRequirementSeeder::class,
             UnivenRequirementSeeder::class,
             UmpRequirementSeeder::class,

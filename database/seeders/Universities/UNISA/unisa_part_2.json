@@ -1,0 +1,1694 @@
+{
+  "dataset": {
+    "name": "UNISA Bachelor's Degrees Part 2",
+    "file_name_label": "part 2",
+    "version": "2026-07-22",
+    "institution": "University of South Africa",
+    "programme_count": 16,
+    "source_file": "Pasted text(4).txt",
+    "purpose": "Chamu AI-assisted qualification and eligibility matching",
+    "important_warning": "The exact current UNISA qualification page must override inferred or group-level admission guidance."
+  },
+  "global_rules": {
+    "stream_identity": "Use qualification code plus stream code as the unique identifier.",
+    "selection": "Minimum entry requirements do not guarantee admission.",
+    "application_status": "Retrieve current open or closed application status separately.",
+    "professional_programmes": "Teaching and Social Work require practical placement and professional or suitability checks.",
+    "creative_programmes": "Visual Multimedia Arts may require portfolio or additional selection."
+  },
+  "programmes": [
+    {
+      "id": "UNISA-98303-AUI",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Accounting Sciences in Internal Auditing",
+        "display_name": "Bachelor of Accounting Sciences in Internal Auditing (98303 - AUI)",
+        "qualification_code": "98303",
+        "stream_code": "AUI",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Accounting Sciences",
+        "college": "College of Accounting Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Accounting-Sciences-in-Internal-Auditing-Internal-Auditing-(98303-%E2%80%93-AUI%29",
+        "saqa_id": "101111",
+        "aps": 21,
+        "presentation": "Online"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Internal Auditor",
+        "Tax Practitioner",
+        "Compliance Officer",
+        "Risk Officer",
+        "Accounting Professional"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98318-TAX",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Accounting Sciences in Taxation",
+        "display_name": "Bachelor of Accounting Sciences in Taxation (98318 - TAX)",
+        "qualification_code": "98318",
+        "stream_code": "TAX",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Accounting Sciences",
+        "college": "College of Accounting Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Accounting-Sciences-in-Taxation-(98318-%E2%80%93-TAX%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Internal Auditor",
+        "Tax Practitioner",
+        "Compliance Officer",
+        "Risk Officer",
+        "Accounting Professional"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98315-BAD",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Administration",
+        "display_name": "Bachelor of Administration (98315 - BAD)",
+        "qualification_code": "98315",
+        "stream_code": "BAD",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Public Administration",
+        "college": "College of Economic and Management Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Administration-(98315-%E2%80%93-BAD%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Public Administrator",
+        "Municipal Officer",
+        "Government Programme Officer",
+        "Policy Administrator"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-99313",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Arts in Creative Writing",
+        "display_name": "Bachelor of Arts in Creative Writing (99313)",
+        "qualification_code": "99313",
+        "stream_code": null,
+        "qualification_type": "Bachelor's Degree",
+        "field": "Creative Writing",
+        "college": "College of Human Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Arts-in-Creative-Writing-(99313%29"
+      },
+      "admission": {
+        "minimum_aps": 20,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": false,
+        "mathematics": {
+          "required": false,
+          "note": "Do not impose a Mathematics requirement unless stated on the official programme page."
+        }
+      },
+      "career_examples": [
+        "Writer",
+        "Editor",
+        "Content Developer",
+        "Scriptwriter",
+        "Publishing Assistant"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-99312",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Arts in Development Studies",
+        "display_name": "Bachelor of Arts in Development Studies (99312)",
+        "qualification_code": "99312",
+        "stream_code": null,
+        "qualification_type": "Bachelor's Degree",
+        "field": "Development Studies",
+        "college": "College of Human Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Arts-in-Development-Studies-(99312%29"
+      },
+      "admission": {
+        "minimum_aps": 20,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": false,
+        "mathematics": {
+          "required": false,
+          "note": "Do not impose a Mathematics requirement unless stated on the official programme page."
+        }
+      },
+      "career_examples": [
+        "Development Practitioner",
+        "NGO Programme Officer",
+        "Policy Researcher",
+        "Community Development Officer"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-90002",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Arts in Forensic Science and Technology",
+        "display_name": "Bachelor of Arts in Forensic Science and Technology (90002)",
+        "qualification_code": "90002",
+        "stream_code": null,
+        "qualification_type": "Bachelor's Degree",
+        "field": "Forensic Science and Technology",
+        "college": "College of Human Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Arts-in-Forensic-Science-and-Technology-(90002%29"
+      },
+      "admission": {
+        "minimum_aps": 20,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": false,
+        "mathematics": {
+          "required": false,
+          "note": "Do not impose a Mathematics requirement unless stated on the official programme page."
+        }
+      },
+      "career_examples": [
+        "Forensic Investigator",
+        "Fraud Examiner",
+        "Compliance Investigator",
+        "Crime-analysis Support"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-90180",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Arts in Psychology",
+        "display_name": "Bachelor of Arts in Psychology (90180)",
+        "qualification_code": "90180",
+        "stream_code": null,
+        "qualification_type": "Bachelor's Degree",
+        "field": "Psychology",
+        "college": "College of Human Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Arts-in-Psychology-(90180%29",
+        "aps": 20,
+        "module_structure_note": "At least 50% of the qualification consists of Psychology modules."
+      },
+      "admission": {
+        "minimum_aps": 20,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": false,
+        "mathematics": {
+          "required": false,
+          "note": "Do not impose a Mathematics requirement unless stated on the official programme page."
+        }
+      },
+      "career_examples": [
+        "Behavioural Research Assistant",
+        "Community Programme Officer",
+        "HR Support",
+        "Psychology Postgraduate Pathway"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-90091",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Arts in Visual Multimedia Arts",
+        "display_name": "Bachelor of Arts in Visual Multimedia Arts (90091)",
+        "qualification_code": "90091",
+        "stream_code": null,
+        "qualification_type": "Bachelor's Degree",
+        "field": "Visual Multimedia Arts",
+        "college": "College of Human Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Arts-in-Visual-Multimedia-Arts-(90091%29"
+      },
+      "admission": {
+        "minimum_aps": 20,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required": false,
+          "note": "Do not impose a Mathematics requirement unless stated on the official programme page."
+        },
+        "additional_selection": {
+          "portfolio_or_practical_selection": true,
+          "note": "Creative selection requirements must be checked before eligibility is finalised."
+        }
+      },
+      "career_examples": [
+        "Multimedia Artist",
+        "Digital Designer",
+        "Animator",
+        "Video Editor",
+        "Creative Director"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98300-BIS",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Commerce in Business Informatics",
+        "display_name": "Bachelor of Commerce in Business Informatics (98300 - BIS)",
+        "qualification_code": "98300",
+        "stream_code": "BIS",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Business Informatics",
+        "college": "College of Economic and Management Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Commerce-in-Business-Informatics-(98300-%E2%80%93-BIS%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Business Analyst",
+        "Information Systems Analyst",
+        "ERP Support Consultant",
+        "Digital Transformation Analyst"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98767-PPM",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Commerce in Public Procurement Management",
+        "display_name": "Bachelor of Commerce in Public Procurement Management (98767 - PPM)",
+        "qualification_code": "98767",
+        "stream_code": "PPM",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Public Procurement Management",
+        "college": "College of Economic and Management Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Commerce-in-Public-Procurement-Management-(98767-%E2%80%93-PPM%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Procurement Officer",
+        "Supply Officer",
+        "Tender Administrator",
+        "Public-sector Buyer"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98311-QMA",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Commerce in Quantitative Management",
+        "display_name": "Bachelor of Commerce in Quantitative Management (98311 - QMA)",
+        "qualification_code": "98311",
+        "stream_code": "QMA",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Quantitative Management",
+        "college": "College of Economic and Management Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Commerce-in-Quantitative-Management-(98311-%E2%80%93-QMA%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Operations Research Analyst",
+        "Business Analyst",
+        "Quantitative Analyst",
+        "Planning Analyst"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98766-SCM",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Commerce in Supply Chain and Operations Management",
+        "display_name": "Bachelor of Commerce in Supply Chain and Operations Management (98766 - SCM)",
+        "qualification_code": "98766",
+        "stream_code": "SCM",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Supply Chain and Operations Management",
+        "college": "College of Economic and Management Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Commerce-in-Supply-Chain-and-Operations-Management-(98766-%E2%80%93-SCM%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Supply Chain Analyst",
+        "Operations Manager",
+        "Procurement Specialist",
+        "Inventory Planner"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98312-TRT",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Commerce in Tourism Management",
+        "display_name": "Bachelor of Commerce in Tourism Management (98312 - TRT)",
+        "qualification_code": "98312",
+        "stream_code": "TRT",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Tourism Management",
+        "college": "College of Economic and Management Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Commerce-in-Tourism-Management-(98312-%E2%80%93-TRT%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Tourism Manager",
+        "Destination Marketing Officer",
+        "Tour Operations Manager",
+        "Travel Business Manager"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-98313-TRL",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Commerce in Transport and Logistics",
+        "display_name": "Bachelor of Commerce in Transport and Logistics (98313 - TRL)",
+        "qualification_code": "98313",
+        "stream_code": "TRL",
+        "qualification_type": "Bachelor's Degree",
+        "field": "Transport and Logistics",
+        "college": "College of Economic and Management Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Commerce-in-Transport-and-Logistics-(98313-%E2%80%93-TRL%29"
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required_or_preferred": true,
+          "typical_mathematics_minimum_percentage": 50,
+          "mathematical_literacy": {
+            "may_be_accepted": "qualification-dependent",
+            "typical_minimum_when_accepted": 70,
+            "must_verify": true
+          }
+        }
+      },
+      "career_examples": [
+        "Logistics Coordinator",
+        "Transport Planner",
+        "Fleet Manager",
+        "Distribution Manager"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      }
+    },
+    {
+      "id": "UNISA-90102",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Education in Foundation Phase Teaching",
+        "display_name": "Bachelor of Education in Foundation Phase Teaching (90102)",
+        "qualification_code": "90102",
+        "stream_code": null,
+        "qualification_type": "Bachelor's Degree",
+        "field": "Foundation Phase Teaching",
+        "college": "College of Education",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 4,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Education-in-Foundation-Phase-Teaching-(90102%29",
+        "professional_degree": true,
+        "teaching_phase": "Grade R to Grade 3"
+      },
+      "admission": {
+        "minimum_aps": 23,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required": false,
+          "note": "Do not impose a Mathematics requirement unless stated on the official programme page."
+        },
+        "additional_requirements": [
+          "Language and subject-specific teaching requirements may apply",
+          "Teaching Practice is compulsory every year",
+          "Ability to complete school-based practical placements"
+        ]
+      },
+      "career_examples": [
+        "Foundation Phase Teacher",
+        "Grade R Teacher",
+        "Grade 1–3 Teacher",
+        "Education Programme Facilitator"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      },
+      "practical_training": {
+        "required": true,
+        "weeks_per_year": 5,
+        "consecutive_weeks_required": 3,
+        "every_year": true
+      }
+    },
+    {
+      "id": "UNISA-90088",
+      "institution": {
+        "name": "University of South Africa",
+        "abbreviation": "UNISA",
+        "institution_type": "Public distance-learning university",
+        "country": "South Africa"
+      },
+      "qualification": {
+        "name": "Bachelor of Social Work",
+        "display_name": "Bachelor of Social Work (90088)",
+        "qualification_code": "90088",
+        "stream_code": null,
+        "qualification_type": "Bachelor's Degree",
+        "field": "Social Work",
+        "college": "College of Human Sciences",
+        "nqf_level": 7,
+        "total_credits": 360,
+        "minimum_nominal_years": 3,
+        "maximum_completion_years": 8,
+        "study_mode": [
+          "Open distance learning",
+          "Online-supported learning"
+        ],
+        "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Bachelor-of-Social-Work-(90088%29",
+        "professional_degree": true,
+        "aps": 21,
+        "module_count": 37
+      },
+      "admission": {
+        "minimum_aps": 21,
+        "NSC": {
+          "endorsement": "Bachelor's degree admission",
+          "language_of_teaching_and_learning": {
+            "typical_minimum_percentage": 50,
+            "verification_status": "verify exact qualification page"
+          }
+        },
+        "Senior_Certificate": {
+          "endorsement": "Matriculation exemption or eligibility for exemption",
+          "language_rule": "Usually D on Higher Grade or C on Standard Grade",
+          "verification_status": "verify exact qualification page"
+        },
+        "NCV_Level_4": {
+          "accepted": "programme-dependent",
+          "rule": "Must permit bachelor's degree admission and satisfy programme-specific requirements",
+          "verification_status": "manual review"
+        },
+        "selection_note": "Meeting minimum admission requirements does not guarantee admission.",
+        "manual_review_required": true,
+        "mathematics": {
+          "required": false,
+          "note": "Do not impose a Mathematics requirement unless stated on the official programme page."
+        },
+        "additional_requirements": [
+          "Police clearance certificate",
+          "Two testimonials",
+          "Departmental or professional selection requirements",
+          "Ability to complete compulsory practical placements"
+        ]
+      },
+      "career_examples": [
+        "Social Worker",
+        "Community Social Worker",
+        "Child and Family Services Practitioner",
+        "Social Development Officer"
+      ],
+      "technology_requirements": [
+        "Computer or laptop",
+        "Reliable internet access",
+        "Printer may be required",
+        "Webcam may be required for online assessments"
+      ],
+      "funding": {
+        "nsfas_potentially_available": true,
+        "note": "Subject to current NSFAS and UNISA eligibility and registration rules."
+      },
+      "chamu_matching": {
+        "evaluate_in_order": [
+          "Confirm bachelor's degree endorsement or recognised alternative route",
+          "Calculate UNISA APS",
+          "Check language result",
+          "Check Mathematics or Mathematical Literacy rule",
+          "Check stream-specific requirements",
+          "Check portfolio, professional clearance or practical-placement requirements",
+          "Check current application availability"
+        ],
+        "possible_results": [
+          "eligible",
+          "possibly_eligible",
+          "not_eligible",
+          "manual_review"
+        ],
+        "never_assume": [
+          "APS alone guarantees admission",
+          "Mathematical Literacy is accepted unless explicitly confirmed",
+          "A creative or professional programme is eligible without its extra selection requirements",
+          "A qualification is currently open because it exists in the catalogue"
+        ]
+      },
+      "data_quality": {
+        "identity": "confirmed from user-supplied UNISA file",
+        "url": "cleaned from malformed Markdown",
+        "core_structure": "standard UNISA bachelor's structure unless overridden",
+        "admission_thresholds": "verified where official data was available; otherwise marked for manual review",
+        "last_checked": "2026-07-22"
+      },
+      "professional_registration": {
+        "body": "South African Council for Social Service Professions",
+        "abbreviation": "SACSSP",
+        "student_registration": true
+      },
+      "special_documents": [
+        "Police clearance certificate",
+        "Two testimonials"
+      ]
+    }
+  ]
+}
