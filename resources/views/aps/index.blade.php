@@ -148,7 +148,7 @@
                         <div class="mt-6 grid max-w-2xl grid-cols-3 divide-x divide-white/15 border-y border-white/15 py-3 sm:mt-8 sm:py-4">
                             <div class="pr-4">
                                 <p class="text-xl font-black sm:text-2xl">{{ number_format($universities->count()) }}</p>
-                                <p class="mt-1 text-xs font-bold uppercase text-white/55">Universities</p>
+                                <p class="mt-1 text-xs font-bold uppercase text-white/55">University & Colleges</p>
                             </div>
                             <div class="px-4">
                                 <p class="text-xl font-black sm:text-2xl">{{ number_format($qualificationCount) }}</p>
