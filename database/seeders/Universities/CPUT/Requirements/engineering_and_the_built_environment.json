@@ -194,15 +194,48 @@
             "name": "Bachelor of Geomatics",
             "qualification_type": "Bachelor",
             "duration_years": null,
-            "aps_required": null,
+            "aps_required": 36,
+            "source_url": "https://prospectus.cput.ac.za/index.php/course-details?f=140&q=BPGMTS",
             "selection_programme": false,
             "notes": [
                 "Department: Civil Engineering and Surveying.",
-                "Faculty notes: Mathematical Literacy is not accepted within the Faculty of Engineering and the Built Environment, except for Clothing and Textile Technology; National Senior Certificate must be certified by Umalusi; Some programmes use Method 2 for APS calculation; Some ECP programmes admit based on space availability; Meeting minimum requirements does not automatically imply acceptance; First option for admission, selection and placement will be given; Pre-2008 matriculants must contact the faculty office for information.",
-                "ECP consideration notes: Subject to space availability, ECP consideration may be given with English level 4; For selected Engineering ECP programmes, one of Mathematics or Physical Science may be level 4, while the other may be level 3 with at least 45%; For Technical Mathematics or Technical Science, one may be level 5 and the other level 4 with at least 55%; This ECP consideration applies to Diploma in Chemical Engineering, Diploma in Civil Engineering, Diploma in Industrial Engineering, Diploma in Mechanical Engineering, Diploma in Engineering Technology in Electrical Engineering, and Diploma in Engineering Technology in Computer Engineering.",
+                "APS score: 36 using Method 2.",
+                "National certificate requirements: English Language equivalent to the National Senior Certificate; Mathematics N4: 60%; Engineering Science N4: 60%.",
+                "NCV requirements: National Certificate Vocational level 4; English 60%; Mathematics 60%; Engineering Science 60%.",
+                "Alternative admission: A completed Higher Certificate, Advanced Certificate, National Diploma, Diploma, Diploma in Engineering Technology in Surveying, Cartography, Geomatics or a cognate qualification may satisfy the minimum admission requirements.",
+                "Faculty notes: Mathematical Literacy is not accepted within the Faculty of Engineering and the Built Environment, except for Clothing and Textile Technology; National Senior Certificate must be certified by Umalusi; Some programmes use Method 2 for APS calculation; Meeting minimum requirements does not automatically imply acceptance; First option for admission, selection and placement will be given; Pre-2008 matriculants must contact the faculty office for information.",
                 "Abbreviations: M: Mathematics; ML: Mathematical Literacy; TM: Technical Mathematics; ES: Engineering Science; PS: Physical Science; ET: Electrical Technology; TS: Technical Science."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language",
+                    "minimum_level": 5
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 5
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Technical Sciences",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "Diploma in Clothing and Textile Technology",

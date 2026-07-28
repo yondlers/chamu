@@ -7,11 +7,17 @@ use App\Models\SiteVisit;
 use App\Models\SocialPost;
 use App\Models\SocialPostResponse;
 use App\Models\User;
+use App\Support\Social\FacebookGraph;
+use App\Support\Social\InstagramGraph;
+use App\Support\Social\LinkedInGraph;
 use App\Support\Social\SocialMediaConfig;
+use App\Support\Social\ThreadsGraph;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
 class SuperAdminActivityTest extends TestCase
@@ -65,6 +71,7 @@ class SuperAdminActivityTest extends TestCase
         $response->assertSee(route('admin.audit-logs.show', $auditLog), false);
         $response->assertSee(route('admin.facebook.index'), false);
         $response->assertSee(route('admin.instagram.index'), false);
+        $response->assertSee(route('admin.threads.index'), false);
         $response->assertSee(route('admin.linkedin.index'), false);
         $response->assertSee('Accounts created');
         $response->assertSee('admin@example.com');
@@ -98,6 +105,7 @@ class SuperAdminActivityTest extends TestCase
         foreach ([
             'facebook' => 'Facebook',
             'instagram' => 'Instagram',
+            'threads' => 'Threads',
             'linkedin' => 'LinkedIn',
         ] as $routeKey => $platformName) {
             $response = $this->actingAs($superAdmin)->get(route('admin.'.$routeKey.'.index'));
@@ -107,7 +115,7 @@ class SuperAdminActivityTest extends TestCase
             $response->assertSee('Post composer');
             $response->assertSee('Integration readiness');
 
-            if ($routeKey === 'facebook') {
+            if (in_array($routeKey, ['facebook', 'instagram', 'threads'], true)) {
                 $response->assertSee('Token configured');
             } else {
                 $response->assertSee('API pending');
@@ -137,8 +145,58 @@ class SuperAdminActivityTest extends TestCase
         $this->assertNotNull($token);
         $response->assertOk();
         $response->assertSee('Access token configured');
-        $response->assertSee('https://graph.facebook.com/v25.0/me/feed');
+        $response->assertSee('https://graph.facebook.com/v25.0/testing-facebook-page/feed');
         $response->assertDontSee($token);
+    }
+
+    public function test_instagram_admin_page_uses_stored_business_account_without_rendering_token(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $token = SocialMediaConfig::accessToken('instagram');
+
+        $response = $this->actingAs($superAdmin)->get(route('admin.instagram.index'));
+
+        $this->assertNotNull($token);
+        $response->assertOk();
+        $response->assertSee('Access token configured');
+        $response->assertSee(InstagramGraph::mediaEndpoint());
+        $response->assertSee(InstagramGraph::mediaPublishEndpoint());
+        $response->assertDontSee($token);
+    }
+
+    public function test_threads_admin_page_uses_stored_account_without_rendering_token(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $token = SocialMediaConfig::accessToken('threads');
+
+        $response = $this->actingAs($superAdmin)->get(route('admin.threads.index'));
+
+        $this->assertNotNull($token);
+        $response->assertOk();
+        $response->assertSee('Access token configured');
+        $response->assertSee(ThreadsGraph::threadsEndpoint());
+        $response->assertSee(ThreadsGraph::threadsPublishEndpoint());
+        $response->assertSee('maxlength="500"', false);
+        $response->assertSee('500 characters max on Threads');
+        $response->assertDontSee($token);
+    }
+
+    public function test_linkedin_admin_page_uses_stored_app_credentials_without_rendering_credential(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+
+        $response = $this->actingAs($superAdmin)->get(route('admin.linkedin.index'));
+
+        $response->assertOk();
+        $response->assertSee('LinkedIn OAuth access token pending');
+        $response->assertSee('Organization authors need w_organization_social');
+        $response->assertSee('https://api.linkedin.com/rest/posts');
+        $response->assertSee('https://api.linkedin.com/rest/images?action=initializeUpload');
+        $response->assertDontSee(LinkedInGraph::clientId());
+        $response->assertDontSee(LinkedInGraph::clientCredential());
     }
 
     public function test_super_admin_can_store_review_and_publish_social_post_with_saved_response(): void
@@ -194,10 +252,820 @@ class SuperAdminActivityTest extends TestCase
         Http::assertSent(function ($request) {
             $data = $request->data();
 
-            return $request->url() === 'https://graph.facebook.com/v25.0/me/feed'
+            return $request->url() === 'https://graph.facebook.com/v25.0/testing-facebook-page/feed'
                 && $data['message'] === 'Hello World! We are Chamu'
                 && $data['link'] === 'https://chamu.test/funding'
                 && $data['access_token'] === SocialMediaConfig::accessToken('facebook');
+        });
+    }
+
+    public function test_super_admin_can_upload_facebook_image_and_store_photo_payload(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $image = $this->uploadedLogoImage();
+
+        $storeResponse = $this->actingAs($superAdmin)->post(route('admin.facebook.posts.store'), [
+            'title' => 'Facebook logo post',
+            'audience' => 'Parents and learners',
+            'message' => 'Chamu Logo',
+            'image_upload' => $image,
+            'status' => 'draft',
+            'intent' => 'queue',
+        ]);
+
+        $socialPost = SocialPost::first();
+
+        $this->assertInstanceOf(SocialPost::class, $socialPost);
+        $storeResponse->assertRedirect(route('admin.facebook.posts.show', $socialPost));
+        $this->assertSame('facebook', $socialPost->platform);
+        $this->assertSame('queued', $socialPost->status);
+        $this->assertStringStartsWith(url('images/social-posts/facebook').'/', $socialPost->media_url);
+        $this->assertSame(FacebookGraph::photosEndpoint(), $socialPost->request_payload['endpoint']);
+        $this->assertSame('Chamu Logo', $socialPost->request_payload['fields']['caption']);
+        $this->assertSame($socialPost->media_url, $socialPost->request_payload['fields']['url']);
+        $this->assertArrayNotHasKey('access_token', $socialPost->request_payload['fields']);
+
+        $publicPath = $this->publicPathFromUrl($socialPost->media_url);
+        $this->assertFileExists($publicPath);
+        $this->assertSame('image/png', mime_content_type($publicPath));
+        @unlink($publicPath);
+    }
+
+    public function test_super_admin_can_publish_facebook_image_post_with_saved_response(): void
+    {
+        Http::fake([
+            FacebookGraph::photosEndpoint() => Http::response(['id' => 'photo_12345', 'post_id' => 'page_12345'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'facebook',
+            'title' => 'Facebook image launch',
+            'message' => 'Chamu Logo',
+            'audience' => 'Parents and learners',
+            'media_url' => 'https://chamu.co.za/images/brand/chamu-logo.png',
+            'status' => 'queued',
+        ]);
+
+        $publishResponse = $this->actingAs($superAdmin)->post(route('admin.facebook.posts.publish', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $publishResponse->assertRedirect(route('admin.facebook.posts.show', $socialPost));
+        $this->assertSame('published', $socialPost->status);
+        $this->assertSame('page_12345', $socialPost->external_post_id);
+        $this->assertSame(FacebookGraph::photosEndpoint(), $socialPost->request_payload['endpoint']);
+        $this->assertSame('Chamu Logo', $socialPost->request_payload['fields']['caption']);
+        $this->assertSame('https://chamu.co.za/images/brand/chamu-logo.png', $socialPost->request_payload['fields']['url']);
+        $this->assertSame(['id' => 'photo_12345', 'post_id' => 'page_12345'], $socialPost->response_payload);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('publish', $responseRecord->response_type);
+        $this->assertSame('page_12345', $responseRecord->external_response_id);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === FacebookGraph::photosEndpoint()
+                && $data['caption'] === 'Chamu Logo'
+                && $data['url'] === 'https://chamu.co.za/images/brand/chamu-logo.png'
+                && $data['access_token'] === SocialMediaConfig::accessToken('facebook');
+        });
+    }
+
+    public function test_super_admin_can_comment_on_published_facebook_post(): void
+    {
+        Http::fake([
+            FacebookGraph::commentsEndpoint('page_12345') => Http::response(['id' => 'comment_12345'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'facebook',
+            'title' => 'Facebook launch',
+            'message' => 'Hello World! We are Chamu',
+            'audience' => 'Parents and learners',
+            'status' => 'published',
+            'external_post_id' => 'page_12345',
+            'published_at' => now(),
+        ]);
+
+        $commentResponse = $this->actingAs($superAdmin)->post(route('admin.facebook.posts.comments.store', $socialPost), [
+            'comment_message' => 'Thanks for the question. We can help you compare APS and bursaries.',
+        ]);
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $commentResponse->assertRedirect(route('admin.facebook.posts.show', $socialPost));
+        $this->assertNotNull($socialPost->last_synced_at);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('comment', $responseRecord->response_type);
+        $this->assertSame('comment_12345', $responseRecord->external_response_id);
+        $this->assertSame('Thanks for the question. We can help you compare APS and bursaries.', $responseRecord->body);
+        $this->assertSame(FacebookGraph::commentsEndpoint('page_12345'), $responseRecord->request_payload['endpoint']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === FacebookGraph::commentsEndpoint('page_12345')
+                && $data['message'] === 'Thanks for the question. We can help you compare APS and bursaries.'
+                && $data['access_token'] === SocialMediaConfig::accessToken('facebook');
+        });
+    }
+
+    public function test_super_admin_can_fetch_facebook_insights_for_published_post(): void
+    {
+        Http::fake([
+            FacebookGraph::insightsEndpoint('page_12345').'*' => Http::response([
+                'data' => [
+                    [
+                        'name' => 'post_impressions',
+                        'period' => 'lifetime',
+                        'values' => [['value' => 321]],
+                    ],
+                    [
+                        'name' => 'post_clicks',
+                        'period' => 'lifetime',
+                        'values' => [['value' => 27]],
+                    ],
+                ],
+            ], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'facebook',
+            'title' => 'Facebook launch',
+            'message' => 'Hello World! We are Chamu',
+            'audience' => 'Parents and learners',
+            'status' => 'published',
+            'external_post_id' => 'page_12345',
+            'published_at' => now(),
+        ]);
+
+        $showResponse = $this->actingAs($superAdmin)->get(route('admin.facebook.posts.show', $socialPost));
+
+        $showResponse->assertOk();
+        $showResponse->assertSee('Facebook comments and insights');
+        $showResponse->assertSee(route('admin.facebook.posts.insights.fetch', $socialPost), false);
+
+        $insightsResponse = $this->actingAs($superAdmin)->post(route('admin.facebook.posts.insights.fetch', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $insightsResponse->assertRedirect(route('admin.facebook.posts.show', $socialPost));
+        $this->assertNotNull($socialPost->last_synced_at);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('insights', $responseRecord->response_type);
+        $this->assertSame('page_12345', $responseRecord->external_response_id);
+        $this->assertSame('Facebook insights fetched.', $responseRecord->body);
+        $this->assertSame(FacebookGraph::insightsEndpoint('page_12345'), $responseRecord->request_payload['endpoint']);
+        $this->assertSame('post_impressions,post_impressions_unique,post_engaged_users,post_clicks,post_reactions_by_type_total', $responseRecord->request_payload['fields']['metric']);
+        $this->assertSame(321, $responseRecord->response_payload['data'][0]['values'][0]['value']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertSent(function ($request) {
+            $query = [];
+            parse_str((string) parse_url($request->url(), PHP_URL_QUERY), $query);
+            $data = array_merge($query, $request->data());
+
+            return $request->method() === 'GET'
+                && str_starts_with($request->url(), FacebookGraph::insightsEndpoint('page_12345'))
+                && $data['metric'] === 'post_impressions,post_impressions_unique,post_engaged_users,post_clicks,post_reactions_by_type_total'
+                && $data['access_token'] === SocialMediaConfig::accessToken('facebook');
+        });
+    }
+
+    public function test_super_admin_can_upload_instagram_image_and_store_public_media_url(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $image = $this->uploadedLogoImage();
+
+        $storeResponse = $this->actingAs($superAdmin)->post(route('admin.instagram.posts.store'), [
+            'title' => 'Instagram logo post',
+            'audience' => 'Student leads',
+            'message' => 'Chamu Logo',
+            'image_upload' => $image,
+            'status' => 'draft',
+            'intent' => 'queue',
+        ]);
+
+        $socialPost = SocialPost::first();
+
+        $this->assertInstanceOf(SocialPost::class, $socialPost);
+        $storeResponse->assertRedirect(route('admin.instagram.posts.show', $socialPost));
+        $this->assertSame('instagram', $socialPost->platform);
+        $this->assertSame('queued', $socialPost->status);
+        $this->assertStringStartsWith(url('images/social-posts/instagram').'/', $socialPost->media_url);
+        $this->assertSame('Chamu Logo', $socialPost->request_payload['fields']['caption']);
+        $this->assertSame($socialPost->media_url, $socialPost->request_payload['fields']['image_url']);
+        $this->assertArrayNotHasKey('access_token', $socialPost->request_payload['fields']);
+
+        $publicPath = $this->publicPathFromUrl($socialPost->media_url);
+        $this->assertFileExists($publicPath);
+        $this->assertSame('image/png', mime_content_type($publicPath));
+        @unlink($publicPath);
+    }
+
+    public function test_super_admin_can_publish_instagram_image_post_with_saved_response(): void
+    {
+        Http::fake([
+            InstagramGraph::mediaEndpoint() => Http::response(['id' => '18337455196270855'], 200),
+            InstagramGraph::mediaPublishEndpoint() => Http::response(['id' => '18088798253113211'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'instagram',
+            'title' => 'Instagram launch',
+            'message' => 'Chamu Logo',
+            'audience' => 'Student leads',
+            'media_url' => 'https://chamu.co.za/images/brand/chamu-logo.png',
+            'status' => 'queued',
+        ]);
+
+        $publishResponse = $this->actingAs($superAdmin)->post(route('admin.instagram.posts.publish', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $publishResponse->assertRedirect(route('admin.instagram.posts.show', $socialPost));
+        $this->assertSame('published', $socialPost->status);
+        $this->assertSame('18088798253113211', $socialPost->external_post_id);
+        $this->assertSame('18337455196270855', $socialPost->request_payload['publish_fields']['creation_id']);
+        $this->assertSame('18337455196270855', $socialPost->response_payload['media_container']['id']);
+        $this->assertSame('18088798253113211', $socialPost->response_payload['publish']['id']);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame($socialPost->id, $responseRecord->social_post_id);
+        $this->assertSame('publish', $responseRecord->response_type);
+        $this->assertSame('18088798253113211', $responseRecord->external_response_id);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['publish_fields']);
+
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === InstagramGraph::mediaEndpoint()
+                && $data['image_url'] === 'https://chamu.co.za/images/brand/chamu-logo.png'
+                && $data['caption'] === 'Chamu Logo'
+                && $data['access_token'] === SocialMediaConfig::accessToken('instagram');
+        });
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === InstagramGraph::mediaPublishEndpoint()
+                && $data['creation_id'] === '18337455196270855'
+                && $data['access_token'] === SocialMediaConfig::accessToken('instagram');
+        });
+    }
+
+    public function test_super_admin_can_comment_on_published_instagram_post(): void
+    {
+        Http::fake([
+            InstagramGraph::commentsEndpoint('18088798253113211') => Http::response(['id' => '17875570523882024'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'instagram',
+            'title' => 'Instagram launch',
+            'message' => 'Chamu Logo',
+            'audience' => 'Student leads',
+            'media_url' => 'https://chamu.co.za/images/brand/chamu-logo.png',
+            'status' => 'published',
+            'external_post_id' => '18088798253113211',
+            'published_at' => now(),
+        ]);
+
+        $showResponse = $this->actingAs($superAdmin)->get(route('admin.instagram.posts.show', $socialPost));
+
+        $showResponse->assertOk();
+        $showResponse->assertSee('Instagram comments and insights');
+        $showResponse->assertSee(route('admin.instagram.posts.comments.store', $socialPost), false);
+        $showResponse->assertSee(route('admin.instagram.posts.insights.fetch', $socialPost), false);
+
+        $commentResponse = $this->actingAs($superAdmin)->post(route('admin.instagram.posts.comments.store', $socialPost), [
+            'comment_message' => 'Thanks for following Chamu. We can help you compare APS and bursaries.',
+        ]);
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $commentResponse->assertRedirect(route('admin.instagram.posts.show', $socialPost));
+        $this->assertNotNull($socialPost->last_synced_at);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('comment', $responseRecord->response_type);
+        $this->assertSame('17875570523882024', $responseRecord->external_response_id);
+        $this->assertSame('Thanks for following Chamu. We can help you compare APS and bursaries.', $responseRecord->body);
+        $this->assertSame(InstagramGraph::commentsEndpoint('18088798253113211'), $responseRecord->request_payload['endpoint']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === InstagramGraph::commentsEndpoint('18088798253113211')
+                && $data['message'] === 'Thanks for following Chamu. We can help you compare APS and bursaries.'
+                && $data['access_token'] === SocialMediaConfig::accessToken('instagram');
+        });
+    }
+
+    public function test_super_admin_can_fetch_instagram_insights_for_published_post(): void
+    {
+        Http::fake([
+            InstagramGraph::insightsEndpoint('18088798253113211').'*' => Http::response([
+                'data' => [
+                    [
+                        'name' => 'views',
+                        'period' => 'lifetime',
+                        'values' => [['value' => 456]],
+                    ],
+                    [
+                        'name' => 'total_interactions',
+                        'period' => 'lifetime',
+                        'values' => [['value' => 89]],
+                    ],
+                ],
+            ], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'instagram',
+            'title' => 'Instagram launch',
+            'message' => 'Chamu Logo',
+            'audience' => 'Student leads',
+            'media_url' => 'https://chamu.co.za/images/brand/chamu-logo.png',
+            'status' => 'published',
+            'external_post_id' => '18088798253113211',
+            'published_at' => now(),
+        ]);
+
+        $insightsResponse = $this->actingAs($superAdmin)->post(route('admin.instagram.posts.insights.fetch', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $insightsResponse->assertRedirect(route('admin.instagram.posts.show', $socialPost));
+        $this->assertNotNull($socialPost->last_synced_at);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('insights', $responseRecord->response_type);
+        $this->assertSame('18088798253113211', $responseRecord->external_response_id);
+        $this->assertSame('Instagram insights fetched.', $responseRecord->body);
+        $this->assertSame(InstagramGraph::insightsEndpoint('18088798253113211'), $responseRecord->request_payload['endpoint']);
+        $this->assertSame('views,reach,likes,comments,shares,saved,total_interactions', $responseRecord->request_payload['fields']['metric']);
+        $this->assertSame(456, $responseRecord->response_payload['data'][0]['values'][0]['value']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertSent(function ($request) {
+            $query = [];
+            parse_str((string) parse_url($request->url(), PHP_URL_QUERY), $query);
+            $data = array_merge($query, $request->data());
+
+            return $request->method() === 'GET'
+                && str_starts_with($request->url(), InstagramGraph::insightsEndpoint('18088798253113211'))
+                && $data['metric'] === 'views,reach,likes,comments,shares,saved,total_interactions'
+                && $data['access_token'] === SocialMediaConfig::accessToken('instagram');
+        });
+    }
+
+    public function test_instagram_publish_promotes_legacy_storage_image_url_to_public_folder(): void
+    {
+        Storage::fake('public');
+        Http::fake([
+            InstagramGraph::mediaEndpoint() => Http::response(['id' => '18337455196270855'], 200),
+            InstagramGraph::mediaPublishEndpoint() => Http::response(['id' => '18088798253113211'], 200),
+        ]);
+
+        $legacyFilename = 'legacy-instagram-test.png';
+        $legacyStoragePath = 'social-posts/instagram/'.$legacyFilename;
+        Storage::disk('public')->put($legacyStoragePath, file_get_contents(public_path('images/brand/chamu-logo.png')));
+        @unlink(public_path('images/social-posts/instagram/'.$legacyFilename));
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'instagram',
+            'title' => 'Legacy Instagram launch',
+            'message' => 'Chamu Logo',
+            'audience' => 'Student leads',
+            'media_url' => url('storage/'.$legacyStoragePath),
+            'status' => 'queued',
+        ]);
+
+        $this->actingAs($superAdmin)->post(route('admin.instagram.posts.publish', $socialPost));
+        $socialPost->refresh();
+
+        $this->assertSame(url('images/social-posts/instagram/'.$legacyFilename), $socialPost->media_url);
+        $publicPath = $this->publicPathFromUrl($socialPost->media_url);
+        $this->assertFileExists($publicPath);
+        $this->assertSame('image/png', mime_content_type($publicPath));
+
+        Http::assertSent(function ($request) use ($socialPost) {
+            $data = $request->data();
+
+            return $request->url() === InstagramGraph::mediaEndpoint()
+                && $data['image_url'] === $socialPost->media_url;
+        });
+
+        @unlink($publicPath);
+    }
+
+    public function test_super_admin_can_upload_linkedin_image_and_store_post_payload(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $image = $this->uploadedLogoImage();
+
+        $storeResponse = $this->actingAs($superAdmin)->post(route('admin.linkedin.posts.store'), [
+            'title' => 'LinkedIn logo post',
+            'audience' => 'Sponsors and schools',
+            'message' => 'Hello We Are Chamu',
+            'image_upload' => $image,
+            'status' => 'draft',
+            'intent' => 'queue',
+        ]);
+
+        $socialPost = SocialPost::first();
+
+        $this->assertInstanceOf(SocialPost::class, $socialPost);
+        $storeResponse->assertRedirect(route('admin.linkedin.posts.show', $socialPost));
+        $this->assertSame('linkedin', $socialPost->platform);
+        $this->assertSame('queued', $socialPost->status);
+        $this->assertStringStartsWith(url('images/social-posts/linkedin').'/', $socialPost->media_url);
+        $this->assertSame('Hello We Are Chamu', $socialPost->request_payload['fields']['commentary']);
+        $this->assertSame('PUBLIC', $socialPost->request_payload['fields']['visibility']);
+        $this->assertSame($socialPost->media_url, $socialPost->request_payload['fields']['image_source_url']);
+        $this->assertArrayNotHasKey('access_token', $socialPost->request_payload['fields']);
+
+        $publicPath = $this->publicPathFromUrl($socialPost->media_url);
+        $this->assertFileExists($publicPath);
+        $this->assertSame('image/png', mime_content_type($publicPath));
+        @unlink($publicPath);
+    }
+
+    public function test_linkedin_publish_is_blocked_until_oauth_token_and_author_are_configured(): void
+    {
+        Http::fake();
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'linkedin',
+            'title' => 'LinkedIn launch',
+            'message' => 'Hello We Are Chamu',
+            'audience' => 'Sponsors and schools',
+            'status' => 'queued',
+        ]);
+
+        $publishResponse = $this->actingAs($superAdmin)->post(route('admin.linkedin.posts.publish', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $publishResponse->assertRedirect(route('admin.linkedin.posts.show', $socialPost));
+        $this->assertSame('failed', $socialPost->status);
+        $this->assertSame('LinkedIn publishing needs OAuth access token and author URN.', $socialPost->error_message);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('publish_blocked', $responseRecord->response_type);
+        $this->assertSame('LinkedIn publishing needs OAuth access token and author URN.', $responseRecord->body);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertNothingSent();
+    }
+
+    public function test_super_admin_can_upload_threads_image_and_store_image_payload(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $image = $this->uploadedLogoImage();
+
+        $storeResponse = $this->actingAs($superAdmin)->post(route('admin.threads.posts.store'), [
+            'title' => 'Threads logo post',
+            'audience' => 'Student leads',
+            'message' => 'Hello We Are Chamu',
+            'image_upload' => $image,
+            'status' => 'draft',
+            'intent' => 'queue',
+        ]);
+
+        $socialPost = SocialPost::first();
+
+        $this->assertInstanceOf(SocialPost::class, $socialPost);
+        $storeResponse->assertRedirect(route('admin.threads.posts.show', $socialPost));
+        $this->assertSame('threads', $socialPost->platform);
+        $this->assertSame('queued', $socialPost->status);
+        $this->assertStringStartsWith(url('images/social-posts/threads').'/', $socialPost->media_url);
+        $this->assertSame('IMAGE', $socialPost->request_payload['fields']['media_type']);
+        $this->assertSame('Hello We Are Chamu', $socialPost->request_payload['fields']['text']);
+        $this->assertSame($socialPost->media_url, $socialPost->request_payload['fields']['image_url']);
+        $this->assertArrayNotHasKey('access_token', $socialPost->request_payload['fields']);
+
+        $publicPath = $this->publicPathFromUrl($socialPost->media_url);
+        $this->assertFileExists($publicPath);
+        $this->assertSame('image/png', mime_content_type($publicPath));
+        @unlink($publicPath);
+    }
+
+    public function test_threads_post_message_cannot_exceed_character_limit(): void
+    {
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+
+        $storeResponse = $this->actingAs($superAdmin)->post(route('admin.threads.posts.store'), [
+            'title' => 'Threads long post',
+            'audience' => 'Student leads',
+            'message' => str_repeat('a', ThreadsGraph::maxTextLength() + 1),
+            'status' => 'draft',
+            'intent' => 'queue',
+        ]);
+
+        $storeResponse->assertSessionHasErrors('message');
+        $this->assertDatabaseCount('social_posts', 0);
+    }
+
+    public function test_super_admin_can_publish_threads_text_post_with_saved_response(): void
+    {
+        Http::fake([
+            ThreadsGraph::threadsEndpoint() => Http::response(['id' => '18060395891524287'], 200),
+            ThreadsGraph::threadsPublishEndpoint() => Http::response(['id' => '18158273836488130'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'threads',
+            'title' => 'Threads launch',
+            'message' => 'Hello We Are Chamu',
+            'audience' => 'Student leads',
+            'status' => 'queued',
+        ]);
+
+        $publishResponse = $this->actingAs($superAdmin)->post(route('admin.threads.posts.publish', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $publishResponse->assertRedirect(route('admin.threads.posts.show', $socialPost));
+        $this->assertSame('published', $socialPost->status);
+        $this->assertSame('18158273836488130', $socialPost->external_post_id);
+        $this->assertSame('TEXT', $socialPost->request_payload['fields']['media_type']);
+        $this->assertSame('Hello We Are Chamu', $socialPost->request_payload['fields']['text']);
+        $this->assertSame('18060395891524287', $socialPost->request_payload['publish_fields']['creation_id']);
+        $this->assertSame('18060395891524287', $socialPost->response_payload['thread_container']['id']);
+        $this->assertSame('18158273836488130', $socialPost->response_payload['publish']['id']);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame($socialPost->id, $responseRecord->social_post_id);
+        $this->assertSame('publish', $responseRecord->response_type);
+        $this->assertSame('18158273836488130', $responseRecord->external_response_id);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['publish_fields']);
+
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === ThreadsGraph::threadsEndpoint()
+                && $data['media_type'] === 'TEXT'
+                && $data['text'] === 'Hello We Are Chamu'
+                && $data['access_token'] === SocialMediaConfig::accessToken('threads');
+        });
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === ThreadsGraph::threadsPublishEndpoint()
+                && $data['creation_id'] === '18060395891524287'
+                && $data['access_token'] === SocialMediaConfig::accessToken('threads');
+        });
+    }
+
+    public function test_super_admin_can_publish_threads_image_post_with_saved_response(): void
+    {
+        Http::fake([
+            ThreadsGraph::threadsEndpoint() => Http::response(['id' => '18060395891524287'], 200),
+            ThreadsGraph::threadsPublishEndpoint() => Http::response(['id' => '18158273836488130'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'threads',
+            'title' => 'Threads image launch',
+            'message' => 'Hello We Are Chamu',
+            'audience' => 'Student leads',
+            'media_url' => 'https://chamu.co.za/images/brand/chamu-logo.png',
+            'status' => 'queued',
+        ]);
+
+        $publishResponse = $this->actingAs($superAdmin)->post(route('admin.threads.posts.publish', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $publishResponse->assertRedirect(route('admin.threads.posts.show', $socialPost));
+        $this->assertSame('published', $socialPost->status);
+        $this->assertSame('18158273836488130', $socialPost->external_post_id);
+        $this->assertSame('IMAGE', $socialPost->request_payload['fields']['media_type']);
+        $this->assertSame('Hello We Are Chamu', $socialPost->request_payload['fields']['text']);
+        $this->assertSame('https://chamu.co.za/images/brand/chamu-logo.png', $socialPost->request_payload['fields']['image_url']);
+        $this->assertSame('18060395891524287', $socialPost->request_payload['publish_fields']['creation_id']);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('publish', $responseRecord->response_type);
+        $this->assertSame('18158273836488130', $responseRecord->external_response_id);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['publish_fields']);
+
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === ThreadsGraph::threadsEndpoint()
+                && $data['media_type'] === 'IMAGE'
+                && $data['text'] === 'Hello We Are Chamu'
+                && $data['image_url'] === 'https://chamu.co.za/images/brand/chamu-logo.png'
+                && $data['access_token'] === SocialMediaConfig::accessToken('threads');
+        });
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === ThreadsGraph::threadsPublishEndpoint()
+                && $data['creation_id'] === '18060395891524287'
+                && $data['access_token'] === SocialMediaConfig::accessToken('threads');
+        });
+    }
+
+    public function test_threads_publish_stores_http_diagnostics_when_container_response_is_empty(): void
+    {
+        Http::fake([
+            ThreadsGraph::threadsEndpoint() => Http::response('', 500, [
+                'Content-Type' => 'text/plain',
+                'X-FB-Trace-ID' => 'trace_12345',
+            ]),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'threads',
+            'title' => 'Threads launch',
+            'message' => 'Hi',
+            'audience' => 'Student leads',
+            'status' => 'queued',
+        ]);
+
+        $publishResponse = $this->actingAs($superAdmin)->post(route('admin.threads.posts.publish', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $publishResponse->assertRedirect(route('admin.threads.posts.show', $socialPost));
+        $this->assertSame('failed', $socialPost->status);
+        $this->assertSame('Threads container failed with HTTP 500.', $socialPost->error_message);
+        $this->assertSame([], $socialPost->request_payload['publish_fields']);
+        $this->assertSame(500, $socialPost->response_payload['thread_container']['status']);
+        $this->assertFalse($socialPost->response_payload['thread_container']['successful']);
+        $this->assertSame('', $socialPost->response_payload['thread_container']['body']);
+        $this->assertSame('trace_12345', $socialPost->response_payload['thread_container']['headers']['x-fb-trace-id']);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('container_error', $responseRecord->response_type);
+        $this->assertSame('Threads container failed with HTTP 500.', $responseRecord->body);
+        $this->assertSame(500, $responseRecord->response_payload['status']);
+        $this->assertSame('trace_12345', $responseRecord->response_payload['headers']['x-fb-trace-id']);
+
+        Http::assertSentCount(1);
+    }
+
+    public function test_super_admin_can_comment_on_published_threads_post(): void
+    {
+        Http::fake([
+            ThreadsGraph::threadsEndpoint() => Http::response(['id' => '18060395891524287'], 200),
+            ThreadsGraph::threadsPublishEndpoint() => Http::response(['id' => '18158273836488131'], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'threads',
+            'title' => 'Threads launch',
+            'message' => 'Hello We Are Chamu',
+            'audience' => 'Student leads',
+            'status' => 'published',
+            'external_post_id' => '18158273836488130',
+            'published_at' => now(),
+        ]);
+
+        $showResponse = $this->actingAs($superAdmin)->get(route('admin.threads.posts.show', $socialPost));
+
+        $showResponse->assertOk();
+        $showResponse->assertSee('Threads comments and insights');
+        $showResponse->assertSee(route('admin.threads.posts.comments.store', $socialPost), false);
+        $showResponse->assertSee(route('admin.threads.posts.insights.fetch', $socialPost), false);
+        $showResponse->assertSee('maxlength="500"', false);
+
+        $commentResponse = $this->actingAs($superAdmin)->post(route('admin.threads.posts.comments.store', $socialPost), [
+            'comment_message' => 'Thanks for the question. We can help you compare APS and bursaries.',
+        ]);
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $commentResponse->assertRedirect(route('admin.threads.posts.show', $socialPost));
+        $this->assertNotNull($socialPost->last_synced_at);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('reply', $responseRecord->response_type);
+        $this->assertSame('18158273836488131', $responseRecord->external_response_id);
+        $this->assertSame('Thanks for the question. We can help you compare APS and bursaries.', $responseRecord->body);
+        $this->assertSame(ThreadsGraph::threadsEndpoint(), $responseRecord->request_payload['endpoint']);
+        $this->assertSame(ThreadsGraph::threadsPublishEndpoint(), $responseRecord->request_payload['publish_endpoint']);
+        $this->assertSame('18158273836488130', $responseRecord->request_payload['fields']['reply_to_id']);
+        $this->assertSame('18060395891524287', $responseRecord->request_payload['publish_fields']['creation_id']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['publish_fields']);
+
+        Http::assertSent(function ($request) use ($socialPost) {
+            $data = $request->data();
+
+            return $request->url() === ThreadsGraph::threadsEndpoint()
+                && $data['media_type'] === 'TEXT'
+                && $data['text'] === 'Thanks for the question. We can help you compare APS and bursaries.'
+                && $data['reply_to_id'] === $socialPost->external_post_id
+                && $data['access_token'] === SocialMediaConfig::accessToken('threads');
+        });
+        Http::assertSent(function ($request) {
+            $data = $request->data();
+
+            return $request->url() === ThreadsGraph::threadsPublishEndpoint()
+                && $data['creation_id'] === '18060395891524287'
+                && $data['access_token'] === SocialMediaConfig::accessToken('threads');
+        });
+    }
+
+    public function test_super_admin_can_fetch_threads_insights_for_published_post(): void
+    {
+        Http::fake([
+            ThreadsGraph::insightsEndpoint('18158273836488130').'*' => Http::response([
+                'data' => [
+                    [
+                        'name' => 'views',
+                        'period' => 'lifetime',
+                        'values' => [['value' => 123]],
+                    ],
+                    [
+                        'name' => 'likes',
+                        'period' => 'lifetime',
+                        'values' => [['value' => 45]],
+                    ],
+                ],
+            ], 200),
+        ]);
+
+        $records = $this->createRecords();
+        $superAdmin = $this->createUser($records, ['is_super_admin' => true, 'email' => 'admin@example.com', 'username' => 'admin']);
+        $socialPost = SocialPost::create([
+            'user_id' => $superAdmin->id,
+            'platform' => 'threads',
+            'title' => 'Threads launch',
+            'message' => 'Hello We Are Chamu',
+            'audience' => 'Student leads',
+            'status' => 'published',
+            'external_post_id' => '18158273836488130',
+            'published_at' => now(),
+        ]);
+
+        $insightsResponse = $this->actingAs($superAdmin)->post(route('admin.threads.posts.insights.fetch', $socialPost));
+        $socialPost->refresh();
+        $responseRecord = SocialPostResponse::first();
+
+        $insightsResponse->assertRedirect(route('admin.threads.posts.show', $socialPost));
+        $this->assertNotNull($socialPost->last_synced_at);
+        $this->assertInstanceOf(SocialPostResponse::class, $responseRecord);
+        $this->assertSame('insights', $responseRecord->response_type);
+        $this->assertSame('18158273836488130', $responseRecord->external_response_id);
+        $this->assertSame('Threads insights fetched.', $responseRecord->body);
+        $this->assertSame(ThreadsGraph::insightsEndpoint('18158273836488130'), $responseRecord->request_payload['endpoint']);
+        $this->assertSame('views,likes,replies,reposts,quotes,shares', $responseRecord->request_payload['fields']['metric']);
+        $this->assertSame(123, $responseRecord->response_payload['data'][0]['values'][0]['value']);
+        $this->assertArrayNotHasKey('access_token', $responseRecord->request_payload['fields']);
+
+        Http::assertSent(function ($request) {
+            $query = [];
+            parse_str((string) parse_url($request->url(), PHP_URL_QUERY), $query);
+            $data = array_merge($query, $request->data());
+
+            return $request->method() === 'GET'
+                && str_starts_with($request->url(), ThreadsGraph::insightsEndpoint('18158273836488130'))
+                && $data['metric'] === 'views,likes,replies,reposts,quotes,shares'
+                && $data['access_token'] === SocialMediaConfig::accessToken('threads');
         });
     }
 
@@ -458,6 +1326,26 @@ class SuperAdminActivityTest extends TestCase
             'term_id' => $termId,
             'subject_id' => $subjectId,
         ];
+    }
+
+    private function publicPathFromUrl(string $url): string
+    {
+        $path = parse_url($url, PHP_URL_PATH);
+
+        $this->assertIsString($path);
+        $this->assertStringStartsWith('/images/social-posts/', $path);
+
+        return public_path(ltrim($path, '/'));
+    }
+
+    private function uploadedLogoImage(): UploadedFile
+    {
+        $temporaryPath = tempnam(sys_get_temp_dir(), 'chamu-logo-');
+
+        $this->assertIsString($temporaryPath);
+        copy(public_path('images/brand/chamu-logo.png'), $temporaryPath);
+
+        return new UploadedFile($temporaryPath, 'chamu-logo.png', 'image/png', null, true);
     }
 
     /**

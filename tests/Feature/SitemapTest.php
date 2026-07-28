@@ -6,6 +6,16 @@ use App\Models\Faculty;
 use App\Models\Qualification;
 use App\Models\QualificationType;
 use App\Models\University;
+use Database\Seeders\AdmissionRuleSeeder;
+use Database\Seeders\CapsSubjectSeeder;
+use Database\Seeders\GradeSeeder;
+use Database\Seeders\NqfLevelSeeder;
+use Database\Seeders\QualificationTypeSeeder;
+use Database\Seeders\SubjectCategorySeeder;
+use Database\Seeders\Universities\CJC\RequirementSeeder as CjcRequirementSeeder;
+use Database\Seeders\Universities\TNC\RequirementSeeder as TncRequirementSeeder;
+use Database\Seeders\Universities\TSC\RequirementSeeder as TscRequirementSeeder;
+use Database\Seeders\Universities\UNISA\RequirementSeeder as UnisaRequirementSeeder;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
@@ -67,6 +77,49 @@ class SitemapTest extends TestCase
         $xml = simplexml_load_string($content);
 
         $this->assertInstanceOf(SimpleXMLElement::class, $xml);
+    }
+
+    public function test_sitemap_includes_seeded_colleges_and_unisa_qualification_pages(): void
+    {
+        config(['app.url' => 'https://chamu.co.za']);
+
+        $this->seedPublicRequirementData();
+
+        $response = $this->get('/sitemap.xml');
+        $content = $response->streamedContent();
+
+        $response->assertOk();
+
+        foreach ([
+            'central-johannesburg-tvet-college',
+            'tshwane-north-tvet-college',
+            'tshwane-south-tvet-college',
+            'university-of-south-africa',
+        ] as $universitySlug) {
+            $this->assertStringContainsString(
+                '<loc>https://chamu.co.za/universities/'.$universitySlug.'</loc>',
+                $content,
+            );
+        }
+
+        foreach ([
+            ['CJC', 'Art and Design'],
+            ['TNC', 'Mechatronics'],
+            ['TSC', 'Electrician'],
+            ['UNISA', 'Bachelor of Social Work'],
+        ] as [$universityAbbreviation, $qualificationName]) {
+            $qualification = $this->seededQualification($universityAbbreviation, $qualificationName);
+
+            $this->assertStringContainsString(
+                '<loc>https://chamu.co.za'.route('public.qualifications.show', [
+                    'university' => $qualification->university_slug,
+                    'qualification' => $qualification->slug,
+                ], false).'</loc>',
+                $content,
+            );
+        }
+
+        $this->assertInstanceOf(SimpleXMLElement::class, simplexml_load_string($content));
     }
 
     public function test_sitemap_does_not_error_when_slug_migration_has_not_run(): void
@@ -136,5 +189,52 @@ class SitemapTest extends TestCase
             'other_university' => $otherUniversity,
             'qualification' => $qualification,
         ];
+    }
+
+    private function seedPublicRequirementData(): void
+    {
+        $now = now();
+        $countryId = DB::table('countries')->insertGetId([
+            'name' => 'South Africa',
+            'nationality' => 'South African',
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+
+        DB::table('curriculums')->insert([
+            'country_id' => $countryId,
+            'name' => 'NSC (National Senior Certificate)',
+            'abbreviation' => 'CAPS',
+            'is_live' => true,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+
+        $this->seed([
+            NqfLevelSeeder::class,
+            SubjectCategorySeeder::class,
+            GradeSeeder::class,
+            QualificationTypeSeeder::class,
+            CapsSubjectSeeder::class,
+            AdmissionRuleSeeder::class,
+            CjcRequirementSeeder::class,
+            TncRequirementSeeder::class,
+            TscRequirementSeeder::class,
+            UnisaRequirementSeeder::class,
+        ]);
+    }
+
+    private function seededQualification(string $universityAbbreviation, string $qualificationName): object
+    {
+        $qualification = DB::table('qualifications')
+            ->join('universities', 'universities.id', '=', 'qualifications.university_id')
+            ->where('universities.abbreviation', $universityAbbreviation)
+            ->where('qualifications.name', $qualificationName)
+            ->select('qualifications.slug', 'universities.slug as university_slug')
+            ->first();
+
+        $this->assertNotNull($qualification);
+
+        return $qualification;
     }
 }

@@ -5,6 +5,8 @@ namespace Database\Seeders\Universities;
 use Database\Seeders\UniversityLogoSeeder;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 
 abstract class UniversityRequirementSeeder extends Seeder
 {
@@ -204,16 +206,22 @@ abstract class UniversityRequirementSeeder extends Seeder
             ->where('abbreviation', $this->abbreviation())
             ->first();
 
+        $universityValues = [
+            'country_id' => $countryId,
+            'name' => $this->universityName(),
+            'logo' => UniversityLogoSeeder::logoFor($this->abbreviation(), $existing?->logo),
+            'website' => $this->website() ?? $existing?->website,
+            'updated_at' => $now,
+            'created_at' => $now,
+        ];
+
+        if (Schema::hasColumn('universities', 'slug')) {
+            $universityValues['slug'] = $this->universitySlug($existing);
+        }
+
         DB::table('universities')->updateOrInsert(
             ['abbreviation' => $this->abbreviation()],
-            [
-                'country_id' => $countryId,
-                'name' => $this->universityName(),
-                'logo' => UniversityLogoSeeder::logoFor($this->abbreviation(), $existing?->logo),
-                'website' => $this->website() ?? $existing?->website,
-                'updated_at' => $now,
-                'created_at' => $now,
-            ],
+            $universityValues,
         );
 
         return (int) DB::table('universities')
@@ -314,6 +322,34 @@ abstract class UniversityRequirementSeeder extends Seeder
     private function qualificationId(array $qualificationData, int $universityId, int $facultyId, int $qualificationTypeId, array $gradeIdsByName): int
     {
         $now = now();
+        $existing = DB::table('qualifications')
+            ->where('university_id', $universityId)
+            ->where('faculty_id', $facultyId)
+            ->where('name', $qualificationData['name'])
+            ->first();
+
+        $qualificationValues = [
+            'qualification_type_id' => $qualificationTypeId,
+            'nqf_level_id' => $this->qualificationNqfLevelId($qualificationData, $qualificationTypeId),
+            'required_grade_id' => $this->requiredGradeId($qualificationData, $gradeIdsByName),
+            'abbreviation' => $qualificationData['abbreviation'] ?? null,
+            'duration_years' => $qualificationData['duration_years'] ?? null,
+            'aps_required' => $qualificationData['aps_required'] ?? null,
+            'aggregate_average_required' => $this->aggregateAverageRequired($qualificationData),
+            'admission_score_required' => $this->admissionScoreRequired($qualificationData),
+            'minimum_pass_type' => $qualificationData['minimum_pass_type'] ?? $qualificationData['pass_type_required'] ?? null,
+            'closing_month' => $this->monthNumber($qualificationData['closing_month'] ?? $qualificationData['application_closing_month'] ?? null),
+            'closing_day' => $qualificationData['closing_day'] ?? $qualificationData['application_closing_day'] ?? null,
+            'is_selection_programme' => $qualificationData['is_selection_programme'] ?? $qualificationData['selection_programme'] ?? false,
+            'notes' => $this->notes($qualificationData),
+            'source_url' => $qualificationData['source_url'] ?? null,
+            'updated_at' => $now,
+            'created_at' => $now,
+        ];
+
+        if (Schema::hasColumn('qualifications', 'slug')) {
+            $qualificationValues['slug'] = $this->qualificationSlug($qualificationData, $universityId, $qualificationTypeId, $existing);
+        }
 
         DB::table('qualifications')->updateOrInsert(
             [
@@ -321,24 +357,7 @@ abstract class UniversityRequirementSeeder extends Seeder
                 'faculty_id' => $facultyId,
                 'name' => $qualificationData['name'],
             ],
-            [
-                'qualification_type_id' => $qualificationTypeId,
-                'nqf_level_id' => $this->qualificationNqfLevelId($qualificationData, $qualificationTypeId),
-                'required_grade_id' => $this->requiredGradeId($qualificationData, $gradeIdsByName),
-                'abbreviation' => $qualificationData['abbreviation'] ?? null,
-                'duration_years' => $qualificationData['duration_years'] ?? null,
-                'aps_required' => $qualificationData['aps_required'] ?? null,
-                'aggregate_average_required' => $this->aggregateAverageRequired($qualificationData),
-                'admission_score_required' => $this->admissionScoreRequired($qualificationData),
-                'minimum_pass_type' => $qualificationData['minimum_pass_type'] ?? $qualificationData['pass_type_required'] ?? null,
-                'closing_month' => $this->monthNumber($qualificationData['closing_month'] ?? $qualificationData['application_closing_month'] ?? null),
-                'closing_day' => $qualificationData['closing_day'] ?? $qualificationData['application_closing_day'] ?? null,
-                'is_selection_programme' => $qualificationData['is_selection_programme'] ?? $qualificationData['selection_programme'] ?? false,
-                'notes' => $this->notes($qualificationData),
-                'source_url' => $qualificationData['source_url'] ?? null,
-                'updated_at' => $now,
-                'created_at' => $now,
-            ],
+            $qualificationValues,
         );
 
         return (int) DB::table('qualifications')
@@ -346,6 +365,66 @@ abstract class UniversityRequirementSeeder extends Seeder
             ->where('faculty_id', $facultyId)
             ->where('name', $qualificationData['name'])
             ->value('id');
+    }
+
+    private function universitySlug(?object $existing): ?string
+    {
+        if (! Schema::hasColumn('universities', 'slug')) {
+            return null;
+        }
+
+        if ($existing?->slug) {
+            return $existing->slug;
+        }
+
+        $base = Str::slug($this->universityName()) ?: 'university';
+        $slug = $base;
+        $suffix = 2;
+
+        while (DB::table('universities')
+            ->where('slug', $slug)
+            ->when($existing?->id, fn ($query) => $query->where('id', '<>', $existing->id))
+            ->exists()) {
+            $slug = $base.'-'.$suffix;
+            $suffix++;
+        }
+
+        return $slug;
+    }
+
+    private function qualificationSlug(array $qualificationData, int $universityId, int $qualificationTypeId, ?object $existing): ?string
+    {
+        if (! Schema::hasColumn('qualifications', 'slug')) {
+            return null;
+        }
+
+        if ($existing?->slug) {
+            return $existing->slug;
+        }
+
+        $base = Str::slug((string) $qualificationData['name']) ?: 'qualification';
+        $typeSlug = Str::slug((string) DB::table('qualification_types')->where('id', $qualificationTypeId)->value('abbreviation'))
+            ?: Str::slug((string) ($qualificationData['qualification_type'] ?? ''));
+        $candidates = array_values(array_filter(array_unique([
+            $base,
+            $typeSlug ? $base.'-'.$typeSlug : null,
+        ])));
+        $suffix = 2;
+
+        while (true) {
+            foreach ($candidates as $candidate) {
+                if (! DB::table('qualifications')
+                    ->where('university_id', $universityId)
+                    ->where('slug', $candidate)
+                    ->when($existing?->id, fn ($query) => $query->where('id', '<>', $existing->id))
+                    ->exists()) {
+                    return $candidate;
+                }
+            }
+
+            $candidates[] = $base.'-'.$suffix;
+            $suffix++;
+        }
     }
 
     private function aggregateAverageRequired(array $qualificationData): ?float

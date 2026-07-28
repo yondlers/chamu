@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'APS · Chamu')
+@section('title', 'APS Course Match - Chamu')
+
+@push('head')
+    <x-seo-meta
+        title="APS Course Match - Chamu"
+        description="Use Chamu to compare your APS with captured South African university and college programmes, then explore public qualification requirements."
+        :canonical="route('aps.index')"
+    />
+@endpush
 
 @php
     $selectedUniversityIds = collect($filters['university_ids'] ?? [])

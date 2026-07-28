@@ -79,6 +79,74 @@ class BursarySeederTest extends TestCase
         );
     }
 
+    public function test_chamu_test_bursary_is_seeded_for_live_application_testing(): void
+    {
+        $now = now();
+        $legacyCompanyId = DB::table('companies')->insertGetId([
+            'name' => 'Legacy Chamu Test Provider',
+            'slug' => 'legacy-chamu-test-provider',
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+
+        foreach ([
+            ['Chamu Test Email Bursary', 'chamu-test-email-bursary', 'https://chamu.local/test-bursaries/chamu-test-email-bursary'],
+            ['Chamu Test Postal Bursary', 'chamu-test-postal-bursary', 'https://chamu.local/test-bursaries/chamu-test-postal-bursary'],
+        ] as [$title, $slug, $legacySourceUrl]) {
+            DB::table('bursaries')->insert([
+                'company_id' => $legacyCompanyId,
+                'title' => $title,
+                'slug' => $slug,
+                'category' => 'Testing and QA',
+                'summary' => 'Legacy local test bursary.',
+                'application_delivery_type' => 'email',
+                'application_email' => 'kekanagomolemo@gmail.com',
+                'chamu_apply_enabled' => true,
+                'closing_date' => '2027-12-31',
+                'closing_date_label' => '31 December 2027 (test)',
+                'source_url' => $legacySourceUrl,
+                'apply_url' => 'mailto:kekanagomolemo@gmail.com',
+                'is_active' => true,
+                'created_at' => $now,
+                'updated_at' => $now,
+            ]);
+        }
+
+        $this->seed(BursarySeeder::class);
+
+        $sourceUrl = 'https://chamu.co.za/test-bursaries/chamu-test-bursary';
+        $bursary = DB::table('bursaries')->where('source_url', $sourceUrl)->first();
+
+        $this->assertNotNull($bursary);
+        $this->assertSame('Chamu (Test) Bursary', $bursary->title);
+        $this->assertSame('Testing and QA', $bursary->category);
+        $this->assertStringContainsString('submit a sample application through Chamu', $bursary->summary);
+        $this->assertStringContainsString('not a real funding opportunity', $bursary->summary);
+        $this->assertStringContainsString('only for testing the Chamu application outcome', $bursary->coverage_value);
+        $this->assertSame('2020-01-01', (string) $bursary->closing_date);
+        $this->assertSame('Test only - no funding awarded', $bursary->closing_date_label);
+
+        $firstListedTitle = DB::table('bursaries')
+            ->where('is_active', true)
+            ->orderByRaw(
+                'case when closing_date >= ? then 0 when closing_date is null then 1 else 2 end',
+                [now()->toDateString()],
+            )
+            ->orderByDesc('closing_date')
+            ->orderBy('title')
+            ->value('title');
+
+        $this->assertNotSame('Chamu (Test) Bursary', $firstListedTitle);
+        $this->assertEmailBursaryIsChamuManaged($sourceUrl, 'kekanagomolemo@gmail.com');
+
+        foreach ([
+            'https://chamu.local/test-bursaries/chamu-test-email-bursary',
+            'https://chamu.local/test-bursaries/chamu-test-postal-bursary',
+        ] as $legacySourceUrl) {
+            $this->assertFalse((bool) DB::table('bursaries')->where('source_url', $legacySourceUrl)->value('is_active'));
+        }
+    }
+
     public function test_computer_science_it_sources_are_seeded_without_duplicates(): void
     {
         $this->seed(BursarySeeder::class);
