@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Database\Seeders\LifeScience\Papers\LifeSciencePaperSeeder;
 use Database\Seeders\LifeScience\Questions\LifeScienceQuestionSeeder;
 use Database\Seeders\LifeScience\Topics\LifeScienceTopicSeeder;
+use Database\Seeders\Universities\BOLAND\RequirementSeeder as BolandRequirementSeeder;
 use Database\Seeders\Universities\CJC\RequirementSeeder as CjcRequirementSeeder;
 use Database\Seeders\Universities\CPUT\RequirementSeeder as CputRequirementSeeder;
 use Database\Seeders\Universities\CUT\RequirementSeeder as CutRequirementSeeder;
@@ -33,6 +34,7 @@ use Database\Seeders\Universities\UP\RequirementSeeder as UpRequirementSeeder;
 use Database\Seeders\Universities\UWC\RequirementSeeder as UwcRequirementSeeder;
 use Database\Seeders\Universities\VC\RequirementSeeder as VcRequirementSeeder;
 use Database\Seeders\Universities\VUT\RequirementSeeder as VutRequirementSeeder;
+use Database\Seeders\Universities\WESTCOL\RequirementSeeder as WestcolRequirementSeeder;
 use Database\Seeders\Universities\WITS\RequirementSeeder as WitsRequirementSeeder;
 use Database\Seeders\Universities\WSU\RequirementSeeder as WsuRequirementSeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -105,9 +107,11 @@ class DatabaseSeeder extends Seeder
             LifeScienceTopicSeeder::class,
             LifeScienceQuestionSeeder::class,
             UpRequirementSeeder::class,
+            BolandRequirementSeeder::class,
             CjcRequirementSeeder::class,
             TncRequirementSeeder::class,
             TscRequirementSeeder::class,
+            WestcolRequirementSeeder::class,
             TutRequirementSeeder::class,
             UfsRequirementSeeder::class,
             NmuRequirementSeeder::class,

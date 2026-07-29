@@ -36,7 +36,10 @@ class QualificationController extends Controller
             ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id);
         $originBreadcrumb = $this->originBreadcrumb($request);
         $user = $request->user();
-        $hasSavedMarks = $user !== null && $user->userSubjectResults()->whereNotNull('mark')->exists();
+        $qualificationMatch = $user === null
+            ? null
+            : $admissionInfo->qualificationMatchSummary($qualification, $user, $this->matchTermId($request));
+        $hasSavedMarks = $qualificationMatch !== null;
         $qualificationAction = $this->qualificationAction($request, $university, $qualification, $originBreadcrumb, $hasSavedMarks);
         $closingLabel = $admissionInfo->closingLabel(
             $qualification->closing_month ?? $qualification->faculty?->closing_month ?? $university->default_closing_month,
@@ -77,6 +80,7 @@ class QualificationController extends Controller
             'collegeAdmissionSummary' => $collegeAdmissionSummary,
             'usesPassTypeAdmission' => $usesPassTypeAdmission,
             'qualificationAction' => $qualificationAction,
+            'qualificationMatch' => $qualificationMatch,
             'originBreadcrumb' => $originBreadcrumb,
             'seo' => [
                 'title' => $title,
@@ -207,5 +211,31 @@ class QualificationController extends Controller
             'label' => 'Course matches',
             'url' => $url,
         ];
+    }
+
+    private function matchTermId(Request $request): ?int
+    {
+        $termId = $request->integer('term_id');
+
+        if ($termId !== 0) {
+            return $termId;
+        }
+
+        $returnTo = $request->query('return_to');
+
+        if (! is_string($returnTo) || $returnTo === '') {
+            return null;
+        }
+
+        $query = parse_url($returnTo, PHP_URL_QUERY);
+
+        if (! is_string($query) || $query === '') {
+            return null;
+        }
+
+        parse_str($query, $params);
+        $returnToTermId = $params['term_id'] ?? null;
+
+        return is_numeric($returnToTermId) ? (int) $returnToTermId : null;
     }
 }

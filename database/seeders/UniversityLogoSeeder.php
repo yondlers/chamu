@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 class UniversityLogoSeeder extends Seeder
 {
     private const LOGOS = [
+        'BOLAND' => 'https://bolandcollege.com/wp-content/uploads/2022/11/Boland-Logo.png',
         'CPUT' => 'images/universities/cput.png',
         'CUT' => 'https://www.cut.ac.za/Images/Site/cut-u-logo.png',
         'DUT' => 'https://www.dut.ac.za/wp-content/uploads/2026/03/DUT-Logo_new-1.png',
@@ -29,6 +30,7 @@ class UniversityLogoSeeder extends Seeder
         'UWC' => 'https://uwc-za.b-cdn.net/files/images/UWC-2025-trilingual-landscape.svg',
         'VC' => 'https://www.emeris.ac.za/img/emeris-logo-teal.svg',
         'VUT' => 'https://vut.ac.za/wp-content/uploads/2026/03/Vaal-University-of-Technology-60th-logo-scaled-300x72.webp',
+        'WESTCOL' => 'https://westcol.co.za/wp-content/uploads/2025/09/Westcol-College-Logo-Main-1024x98.png',
         'WITS' => 'https://www.wits.ac.za/media/wits-university-style-assets/images/wits-logo.svg',
         'WSU' => 'https://www.wsu.ac.za/images/header-logo-main.png',
     ];

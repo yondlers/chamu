@@ -2,10 +2,13 @@
 
 namespace App\Services\Admissions;
 
+use App\Models\AdmissionRule;
 use App\Models\Qualification;
 use App\Models\QualificationSubjectRequirement;
 use App\Models\UniversityAdmissionRule;
+use App\Models\User;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class PublicAdmissionInfoService
@@ -95,7 +98,7 @@ class PublicAdmissionInfoService
         $university = $qualification->university;
         $abbreviation = strtoupper(trim((string) $university?->abbreviation));
 
-        if (in_array($abbreviation, ['CJC', 'TNC', 'TSC'], true)) {
+        if (in_array($abbreviation, ['BOLAND', 'CJC', 'TNC', 'TSC', 'WESTCOL'], true)) {
             return true;
         }
 
@@ -110,12 +113,20 @@ class PublicAdmissionInfoService
      *     summary_source: string,
      *     intro: string,
      *     cards: array<int, array{label: string, value: string, hint: string}>,
+     *     route_summary: array{
+     *         title: string,
+     *         badge: string,
+     *         intro: string,
+     *         source_note: string,
+     *         checks: array<int, array{label: string, value: string, hint: string}>
+     *     }|null,
      *     notes: array<int, string>
      * }
      */
     public function collegeAdmissionSummary(Qualification $qualification, Collection $rules): array
     {
         $score = $this->collegeScoreSummary($qualification);
+        $routeSummary = $this->collegeRouteSummary($qualification);
         $entryValue = $qualification->requiredGrade?->name
             ? $qualification->requiredGrade->name.' or equivalent'
             : 'Check college route';
@@ -141,7 +152,14 @@ class PublicAdmissionInfoService
                 [
                     'label' => 'Programme type',
                     'value' => $programmeType,
-                    'hint' => 'NC(V), NATED and occupational programmes use different admission routes.',
+                    'hint' => $routeSummary['badge'] ?? 'NC(V), NATED and occupational programmes use different admission routes.',
+                ],
+                [
+                    'label' => 'Route progression',
+                    'value' => $routeSummary['badge'] ?? 'Check route',
+                    'hint' => $routeSummary
+                        ? $routeSummary['source_note']
+                        : 'Confirm whether this is NC(V), NATED/Report 191, occupational, short course or another college route.',
                 ],
                 [
                     'label' => 'APS / score',
@@ -159,7 +177,319 @@ class PublicAdmissionInfoService
                     'hint' => 'Use this alongside the entry route; it is not the same as a school grade.',
                 ],
             ],
+            'route_summary' => $routeSummary,
             'notes' => $this->qualificationNoteBullets($qualification->notes),
+        ];
+    }
+
+    /**
+     * @return array{
+     *     term_label: string|null,
+     *     status_label: string,
+     *     status_tone: string,
+     *     is_match: bool,
+     *     is_almost_there: bool,
+     *     requires_manual_review: bool,
+     *     admission_score_type: string,
+     *     admission_score_label: string,
+     *     admission_score_required_display: string,
+     *     admission_score_actual_display: string,
+     *     admission_score_gap_display: string,
+     *     admission_score_gap: float,
+     *     closing_label: string,
+     *     met_requirements: array<int, string>,
+     *     missing_requirements: array<int, string>,
+     *     missing_score_components: array<int, string>
+     * }|null
+     */
+    public function qualificationMatchSummary(Qualification $qualification, User $user, ?int $termId = null): ?array
+    {
+        if ($user->grade_id === null) {
+            return null;
+        }
+
+        $latestTermId = DB::table('user_subject_results')
+            ->where('user_id', $user->id)
+            ->where('grade_id', $user->grade_id)
+            ->whereNotNull('mark')
+            ->orderByDesc('term_id')
+            ->value('term_id');
+
+        $selectedTermId = $termId ?: $latestTermId;
+
+        if ($selectedTermId === null) {
+            return null;
+        }
+
+        $results = $this->userResultsForTerm($user, (int) $selectedTermId);
+
+        if ($results->isEmpty() && $termId !== null && $latestTermId !== null && (int) $termId !== (int) $latestTermId) {
+            $selectedTermId = (int) $latestTermId;
+            $results = $this->userResultsForTerm($user, $selectedTermId);
+        }
+
+        if ($results->isEmpty()) {
+            return null;
+        }
+
+        $qualification->loadMissing([
+            'faculty',
+            'university',
+            'qualificationSubjectRequirements',
+            'admissionScoreVariants',
+        ]);
+
+        $resultBySubjectId = $results->keyBy('subject_id');
+        $normalise = fn (?string $value): string => trim(strtolower(preg_replace('/[^a-z0-9]+/i', ' ', (string) $value)));
+        $matchingResult = function (object $requirement) use ($results, $resultBySubjectId, $normalise): ?object {
+            $subjectId = $requirement->subject_id ?? null;
+
+            if ($subjectId !== null && $resultBySubjectId->has($subjectId)) {
+                return $resultBySubjectId->get($subjectId);
+            }
+
+            $requirementName = $normalise($requirement->subject_name ?? '');
+
+            if ($requirementName === '') {
+                return null;
+            }
+
+            if (str_contains($requirementName, 'english')) {
+                return $results->first(fn ($result) => str_contains($normalise($result->name), 'english'));
+            }
+
+            return $results->first(function ($result) use ($requirementName, $normalise) {
+                $subjectName = $normalise($result->name);
+
+                return $subjectName !== ''
+                    && (
+                        $subjectName === $requirementName
+                        || str_contains($requirementName, $subjectName)
+                        || str_contains($subjectName, $requirementName)
+                    );
+            });
+        };
+        $requirementThresholdLabel = function (object $requirement): string {
+            if (($requirement->aps_level_required ?? null) !== null) {
+                return 'level '.(int) $requirement->aps_level_required;
+            }
+
+            if (($requirement->minimum_mark ?? null) !== null) {
+                return (int) $requirement->minimum_mark.'%';
+            }
+
+            return 'required';
+        };
+        $requirementIsMet = function (?object $result, object $requirement): bool {
+            if ($result === null) {
+                return false;
+            }
+
+            if (($requirement->aps_level_required ?? null) !== null) {
+                return (int) $result->aps_score >= (int) $requirement->aps_level_required;
+            }
+
+            if (($requirement->minimum_mark ?? null) !== null) {
+                return (float) $result->mark >= (float) $requirement->minimum_mark;
+            }
+
+            return true;
+        };
+
+        $requirements = $qualification->qualificationSubjectRequirements;
+        $missing = [];
+        $met = [];
+
+        foreach ($requirements->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id) as $requirementGroup) {
+            $firstRequirement = $requirementGroup->first();
+
+            if (($firstRequirement->requirement_type ?? null) === 'subject_group_count_choice') {
+                $choiceGroups = $requirementGroup->groupBy(function ($requirement) {
+                    $config = json_decode($requirement->notes ?? '[]', true) ?: [];
+
+                    return $config['choice_key'] ?? 'choice';
+                });
+                $passedChoice = null;
+                $choiceLabels = [];
+
+                foreach ($choiceGroups as $choiceGroup) {
+                    $choiceConfig = json_decode($choiceGroup->first()->notes ?? '[]', true) ?: [];
+                    $requiredCount = (int) ($choiceConfig['required_count'] ?? 1);
+                    $thresholdLabel = $requirementThresholdLabel($choiceGroup->first());
+                    $choiceLabels[] = trim($choiceConfig['label'] ?? $choiceGroup->pluck('subject_name')->filter()->implode(', '));
+                    $passedRequirements = $choiceGroup->filter(function ($requirement) use ($matchingResult, $requirementIsMet) {
+                        return $requirementIsMet($matchingResult($requirement), $requirement);
+                    });
+
+                    if ($passedRequirements->count() >= $requiredCount) {
+                        $passedChoice = [
+                            'count' => $requiredCount,
+                            'label' => trim($choiceConfig['label'] ?? 'listed subjects'),
+                            'threshold' => $thresholdLabel,
+                        ];
+                        break;
+                    }
+                }
+
+                if ($passedChoice !== null) {
+                    $met[] = $passedChoice['count'].' from '.$passedChoice['label'].' '.$passedChoice['threshold'];
+                } else {
+                    $missing[] = 'Required subject combination: '.implode(' OR ', $choiceLabels);
+                }
+
+                continue;
+            }
+
+            if (($firstRequirement->requirement_type ?? null) === 'subject_group_count') {
+                $groupConfig = json_decode($firstRequirement->notes ?? '[]', true) ?: [];
+                $requiredCount = (int) ($groupConfig['required_count'] ?? 1);
+                $thresholdLabel = $requirementThresholdLabel($firstRequirement);
+                $passedRequirements = $requirementGroup->filter(function ($requirement) use ($matchingResult, $requirementIsMet) {
+                    return $requirementIsMet($matchingResult($requirement), $requirement);
+                });
+
+                if ($passedRequirements->count() >= $requiredCount) {
+                    $met[] = $requiredCount.' of '.trim($groupConfig['label'] ?? 'listed subjects').' '.$thresholdLabel;
+                } else {
+                    $remainingCount = max($requiredCount - $passedRequirements->count(), 0);
+                    $missing[] = $remainingCount.' more of: '.$requirementGroup
+                        ->pluck('subject_name')
+                        ->filter()
+                        ->implode(', ')
+                        .' '.$thresholdLabel;
+                }
+
+                continue;
+            }
+
+            $passedRequirement = null;
+            $groupMessages = [];
+
+            foreach ($requirementGroup as $requirement) {
+                $message = trim(($requirement->subject_name ?? 'Subject').' '.$requirementThresholdLabel($requirement));
+
+                if ($requirementIsMet($matchingResult($requirement), $requirement)) {
+                    $passedRequirement = $requirement;
+                    break;
+                }
+
+                $groupMessages[] = $message;
+            }
+
+            if ($passedRequirement !== null) {
+                $met[] = trim(($passedRequirement->subject_name ?? 'Subject').' '.$requirementThresholdLabel($passedRequirement));
+            } else {
+                $missing[] = implode(' or ', $groupMessages);
+            }
+        }
+
+        $ruleAssignment = $this->relevantAdmissionRules($qualification)->first();
+        $admissionRule = $ruleAssignment?->admissionRule;
+        $ruleConfig = array_replace_recursive(
+            $admissionRule?->config ?? [],
+            $ruleAssignment?->overrides ?? [],
+        );
+        $score = $this->scoreForAdmissionRule($results, $admissionRule, $ruleConfig);
+        $usesAggregateAverage = ($admissionRule->score_type ?? null) === 'aggregate_average';
+        $usesPassType = ($admissionRule->score_type ?? null) === 'pass_type';
+        $admissionScoreType = $admissionRule->score_type
+            ?? ($qualification->aggregate_average_required !== null ? 'aggregate_average' : 'aps');
+        $admissionScoreLabel = $admissionRule->score_label
+            ?? ($usesAggregateAverage ? 'Aggregated average' : 'APS');
+        $admissionScoreSuffix = $admissionRule->score_suffix ?? ($usesAggregateAverage ? '%' : '');
+        $passTypeRanking = $ruleConfig['ranking'] ?? [
+            'none' => 0,
+            'senior_certificate' => 1,
+            'nsc' => 1,
+            'higher_certificate' => 2,
+            'diploma' => 3,
+            'bachelor' => 4,
+        ];
+        $requiredPassType = $qualification->minimum_pass_type ?? $admissionRule?->minimum_pass_type ?? null;
+        $admissionScoreVariant = $qualification->admissionScoreVariants
+            ->filter(fn ($variant) => $requirementIsMet($matchingResult($variant), $variant))
+            ->sortBy('admission_score_required')
+            ->first();
+        $fallbackAdmissionScoreVariant = $qualification->admissionScoreVariants
+            ->sortBy('admission_score_required')
+            ->first();
+
+        if ($usesPassType) {
+            $admissionScoreRequired = $requiredPassType === null ? null : (float) ($passTypeRanking[$requiredPassType] ?? 0);
+        } elseif ($admissionScoreVariant !== null) {
+            $admissionScoreRequired = (float) $admissionScoreVariant->admission_score_required;
+        } elseif ($qualification->admission_score_required !== null) {
+            $admissionScoreRequired = (float) $qualification->admission_score_required;
+        } elseif ($fallbackAdmissionScoreVariant !== null) {
+            $admissionScoreRequired = (float) $fallbackAdmissionScoreVariant->admission_score_required;
+        } elseif ($usesAggregateAverage) {
+            $admissionScoreRequired = $qualification->aggregate_average_required === null ? null : (float) $qualification->aggregate_average_required;
+        } else {
+            $admissionScoreRequired = $qualification->aps_required === null ? null : (float) $qualification->aps_required;
+        }
+
+        $admissionScoreActual = $score['actual'];
+        $hasScoreRequirement = $admissionScoreRequired !== null;
+        $requiresManualScoreReview = $hasScoreRequirement
+            && $admissionScoreActual === null
+            && (
+                ($admissionRule?->calculation_method ?? null) === 'programme_specific_manual_review'
+                || ($ruleConfig['requires_manual_verification'] ?? false) === true
+                || str_contains((string) ($admissionRule?->calculation_method ?? ''), 'manual_review')
+            );
+        $admissionScoreGap = $admissionScoreRequired === null || $requiresManualScoreReview
+            ? 0.0
+            : max($admissionScoreRequired - ($admissionScoreActual ?? 0), 0);
+        $hasSubjectRequirements = $requirements->isNotEmpty();
+        $hasMachineCheckableRequirements = ($hasScoreRequirement && ! $requiresManualScoreReview) || $hasSubjectRequirements;
+        $isMatch = ! $requiresManualScoreReview && $hasMachineCheckableRequirements && $admissionScoreGap === 0.0 && count($missing) === 0;
+        $isAlmostThere = ! $isMatch
+            && ! $requiresManualScoreReview
+            && $hasMachineCheckableRequirements
+            && ($admissionScoreGap === 0.0 || count($missing) === 0);
+        $requiresManualReview = $requiresManualScoreReview || ! $hasMachineCheckableRequirements;
+        $formatAdmissionScore = fn (float $value): string => $admissionScoreSuffix === '%'
+            ? rtrim(rtrim(number_format($value, 1), '0'), '.').$admissionScoreSuffix
+            : number_format($value, 0);
+        $requiredPassTypeDisplay = $requiredPassType === null ? 'N/A' : $this->passTypeLabel($requiredPassType);
+        $actualPassTypeDisplay = $this->passTypeLabel($score['pass_type'] ?? 'none');
+
+        return [
+            'term_label' => $results->first()->term_name ?? null,
+            'status_label' => match (true) {
+                $isMatch => 'You meet the listed requirements',
+                $requiresManualReview => 'Review the published notes',
+                $isAlmostThere => 'Almost there',
+                default => 'Still needs attention',
+            },
+            'status_tone' => match (true) {
+                $isMatch => 'success',
+                $requiresManualReview => 'review',
+                $isAlmostThere => 'warning',
+                default => 'danger',
+            },
+            'is_match' => $isMatch,
+            'is_almost_there' => $isAlmostThere,
+            'requires_manual_review' => $requiresManualReview,
+            'admission_score_type' => $admissionScoreType,
+            'admission_score_label' => $admissionScoreLabel,
+            'admission_score_required_display' => $admissionScoreRequired === null
+                ? ($hasMachineCheckableRequirements ? 'N/A' : 'See notes')
+                : ($usesPassType ? $requiredPassTypeDisplay : $formatAdmissionScore($admissionScoreRequired)),
+            'admission_score_actual_display' => $usesPassType
+                ? $actualPassTypeDisplay
+                : ($admissionScoreActual === null ? ($requiresManualScoreReview ? 'Review' : 'N/A') : $formatAdmissionScore($admissionScoreActual)),
+            'admission_score_gap_display' => $usesPassType
+                ? ($admissionScoreGap === 0.0 ? 'Met' : 'Not met')
+                : ($requiresManualScoreReview ? 'Review' : ($hasMachineCheckableRequirements ? $formatAdmissionScore($admissionScoreGap) : 'Review')),
+            'admission_score_gap' => $admissionScoreGap,
+            'closing_label' => $this->closingLabel(
+                $qualification->closing_month ?? $qualification->faculty?->closing_month ?? $qualification->university?->default_closing_month,
+                $qualification->closing_day ?? $qualification->faculty?->closing_day ?? $qualification->university?->default_closing_day,
+            ) ?? 'Not listed',
+            'met_requirements' => $met,
+            'missing_requirements' => $missing,
+            'missing_score_components' => $score['missing_components'],
         ];
     }
 
@@ -271,12 +601,230 @@ class PublicAdmissionInfoService
     public function passTypeLabel(string $passType): string
     {
         return [
+            'none' => 'No pass yet',
             'senior_certificate' => 'Senior Certificate pass',
             'nsc' => 'NSC pass',
             'higher_certificate' => 'Higher Certificate pass',
             'diploma' => 'Diploma pass',
             'bachelor' => 'Bachelor pass',
         ][$passType] ?? str($passType)->replace('_', ' ')->title()->toString();
+    }
+
+    /**
+     * @return Collection<int, object>
+     */
+    private function userResultsForTerm(User $user, int $termId): Collection
+    {
+        return DB::table('user_subject_results')
+            ->join('subjects', 'subjects.id', '=', 'user_subject_results.subject_id')
+            ->leftJoin('terms', 'terms.id', '=', 'user_subject_results.term_id')
+            ->where('user_subject_results.user_id', $user->id)
+            ->where('user_subject_results.grade_id', $user->grade_id)
+            ->where('user_subject_results.term_id', $termId)
+            ->whereNotNull('user_subject_results.mark')
+            ->select(
+                'user_subject_results.subject_id',
+                'user_subject_results.mark',
+                'user_subject_results.aps_score',
+                'subjects.name',
+                'subjects.code',
+                'subjects.abbreviation',
+                'terms.name as term_name',
+            )
+            ->get();
+    }
+
+    /**
+     * @param  Collection<int, object>  $results
+     * @return array{actual: float|null, pass_type?: string, missing_components: array<int, string>}
+     */
+    private function scoreForAdmissionRule(Collection $results, ?AdmissionRule $rule, array $config): array
+    {
+        if ($rule === null) {
+            return ['actual' => null, 'missing_components' => []];
+        }
+
+        $normaliseSubjectName = fn (?string $value): string => trim(strtolower(preg_replace('/[^a-z0-9]+/i', ' ', (string) $value)));
+        $isLifeOrientation = function (object $result): bool {
+            $code = strtoupper($result->code ?? $result->abbreviation ?? '');
+
+            return $code === 'LO' || strcasecmp($result->name, 'Life Orientation') === 0;
+        };
+        $ruleResults = $rule->include_life_orientation
+            ? $results
+            : $results->reject($isLifeOrientation);
+        $subjectCount = $rule->subject_count === null ? null : (int) $rule->subject_count;
+        $scoreSubjects = match (true) {
+            $subjectCount === null => $ruleResults,
+            $rule->subject_selection_strategy === 'best_subjects' => $ruleResults->sortByDesc('mark')->take($subjectCount),
+            default => $ruleResults->take($subjectCount),
+        };
+        $findResultBySubjectName = function (string $subjectName) use ($results, $normaliseSubjectName): ?object {
+            $normalisedSubjectName = $normaliseSubjectName($subjectName);
+
+            return $results->first(function ($result) use ($normalisedSubjectName, $normaliseSubjectName) {
+                $resultName = $normaliseSubjectName($result->name);
+
+                return $resultName !== ''
+                    && (
+                        $resultName === $normalisedSubjectName
+                        || str_contains($normalisedSubjectName, $resultName)
+                        || str_contains($resultName, $normalisedSubjectName)
+                    );
+            });
+        };
+        $pointsForMark = function (float $mark, array $bands): float {
+            foreach ($bands as $band) {
+                if ($mark >= (float) $band['minimum_mark'] && $mark <= (float) $band['maximum_mark']) {
+                    return (float) $band['points'];
+                }
+            }
+
+            return 0.0;
+        };
+        $isLanguageResult = fn (object $result): bool => str_contains($normaliseSubjectName($result->name), 'language')
+            || str_contains($normaliseSubjectName($result->name), 'english')
+            || str_contains($normaliseSubjectName($result->name), 'afrikaans')
+            || str_contains($normaliseSubjectName($result->name), 'isizulu')
+            || str_contains($normaliseSubjectName($result->name), 'isixhosa')
+            || str_contains($normaliseSubjectName($result->name), 'sesotho')
+            || str_contains($normaliseSubjectName($result->name), 'setswana')
+            || str_contains($normaliseSubjectName($result->name), 'sepedi')
+            || str_contains($normaliseSubjectName($result->name), 'xitsonga')
+            || str_contains($normaliseSubjectName($result->name), 'tshivenda');
+        $isHomeLanguageResult = fn (object $result): bool => str_contains($normaliseSubjectName($result->name), 'home language');
+        $isMathematicsFamilyResult = fn (object $result): bool => in_array($normaliseSubjectName($result->name), [
+            'mathematics',
+            'mathematical literacy',
+            'technical mathematics',
+        ], true);
+        $nscPassType = function ($ruleResults) use ($isLifeOrientation, $isHomeLanguageResult): string {
+            $subjects = $ruleResults->reject($isLifeOrientation);
+            $homeLanguagePassed = $subjects->contains(fn ($result) => $isHomeLanguageResult($result) && (float) $result->mark >= 40);
+            $subjectsAt50 = $subjects->filter(fn ($result) => (float) $result->mark >= 50)->count();
+            $subjectsAt40 = $subjects->filter(fn ($result) => (float) $result->mark >= 40)->count();
+            $subjectsAt30 = $subjects->filter(fn ($result) => (float) $result->mark >= 30)->count();
+
+            return match (true) {
+                $homeLanguagePassed && $subjectsAt50 >= 4 && $subjectsAt30 >= 6 => 'bachelor',
+                $homeLanguagePassed && $subjectsAt40 >= 4 && $subjectsAt30 >= 6 => 'diploma',
+                $homeLanguagePassed && $subjectsAt40 >= 3 && $subjectsAt30 >= 6 => 'higher_certificate',
+                default => 'none',
+            };
+        };
+        $seniorCertificatePassed = function ($ruleResults) use ($isHomeLanguageResult, $isLanguageResult): bool {
+            return $ruleResults->filter(fn ($result) => (float) $result->mark >= 40)->count() >= 3
+                && $ruleResults->contains(fn ($result) => $isHomeLanguageResult($result) && (float) $result->mark >= 40)
+                && $ruleResults->filter(fn ($result) => (float) $result->mark >= 30)->count() >= 5
+                && $ruleResults->contains(fn ($result) => $isLanguageResult($result) && (float) $result->mark >= 30)
+                && $ruleResults->filter(fn ($result) => (float) $result->mark >= 20)->count() >= 6;
+        };
+        $nmuApplicantScore = function ($ruleResults, array $config) use ($isHomeLanguageResult, $isLanguageResult, $isMathematicsFamilyResult, $isLifeOrientation): float {
+            $eligibleSubjects = $ruleResults->reject($isLifeOrientation)->values();
+            $selected = collect();
+            $selectedSubjectIds = [];
+            $addResult = function (?object $result) use (&$selected, &$selectedSubjectIds): void {
+                if ($result === null || in_array((int) $result->subject_id, $selectedSubjectIds, true)) {
+                    return;
+                }
+
+                $selected->push($result);
+                $selectedSubjectIds[] = (int) $result->subject_id;
+            };
+
+            $addResult($eligibleSubjects->filter($isHomeLanguageResult)->sortByDesc('mark')->first());
+            $addResult($eligibleSubjects->reject($isHomeLanguageResult)->filter($isLanguageResult)->sortByDesc('mark')->first());
+            $addResult($eligibleSubjects->filter($isMathematicsFamilyResult)->sortByDesc('mark')->first());
+            $eligibleSubjects
+                ->reject(fn ($result) => in_array((int) $result->subject_id, $selectedSubjectIds, true))
+                ->sortByDesc('mark')
+                ->take(max(6 - $selected->count(), 0))
+                ->each($addResult);
+
+            $score = (float) $selected->take(6)->sum(fn ($result) => (float) $result->mark);
+
+            if (($config['life_orientation_bonus']['apply_without_quintile_data'] ?? false) === true) {
+                $lifeOrientation = $ruleResults->first($isLifeOrientation);
+                $minimumMark = (float) ($config['life_orientation_bonus']['minimum_mark'] ?? 50);
+
+                if ($lifeOrientation !== null && (float) $lifeOrientation->mark >= $minimumMark) {
+                    $score += (float) ($config['life_orientation_bonus']['points'] ?? 7);
+                }
+            }
+
+            return $score;
+        };
+        $achievedNscPassType = $rule->calculation_method === 'nsc_pass_type'
+            ? $nscPassType($ruleResults)
+            : null;
+        $achievedSeniorCertificatePassType = $rule->calculation_method === 'senior_certificate_pass' && $seniorCertificatePassed($ruleResults)
+            ? 'senior_certificate'
+            : 'none';
+
+        return match ($rule->calculation_method) {
+            'aps_level_sum' => [
+                'actual' => (float) $scoreSubjects->sum(fn ($result) => (int) $result->aps_score),
+                'missing_components' => [],
+            ],
+            'average_mark' => [
+                'actual' => $scoreSubjects->isEmpty() ? null : (float) $scoreSubjects->avg('mark'),
+                'missing_components' => [],
+            ],
+            'raw_mark_sum' => [
+                'actual' => (float) $scoreSubjects->sum(fn ($result) => (float) $result->mark)
+                    / max((float) ($config['score_divisor'] ?? 1), 1),
+                'missing_components' => [],
+            ],
+            'weighted_mark_sum' => [
+                'actual' => (float) $scoreSubjects->sum(fn ($result) => (float) $result->mark)
+                    + collect($config['additional_subject_weights'] ?? [])->sum(function ($weight) use ($findResultBySubjectName) {
+                        $result = $findResultBySubjectName($weight['subject'] ?? '');
+
+                        return $result === null ? 0 : ((float) $result->mark * (float) ($weight['additional_weight'] ?? 0));
+                    }),
+                'missing_components' => [],
+            ],
+            'nmu_applicant_score' => [
+                'actual' => $nmuApplicantScore($ruleResults, $config),
+                'missing_components' => [],
+            ],
+            'subject_point_sum' => [
+                'actual' => (float) $scoreSubjects->sum(function ($result) use ($config, $normaliseSubjectName, $pointsForMark) {
+                    $subjectName = $normaliseSubjectName($result->name);
+                    $scale = collect($config['subject_point_scales'] ?? [])
+                        ->first(function ($scale) use ($subjectName, $normaliseSubjectName) {
+                            return collect($scale['subjects'] ?? [])
+                                ->contains(fn ($subject) => $normaliseSubjectName($subject) === $subjectName);
+                        });
+                    $scale ??= $config['default_point_scale'] ?? [];
+
+                    return $pointsForMark((float) $result->mark, $scale['bands'] ?? []);
+                }),
+                'missing_components' => [],
+            ],
+            'composite_sum' => [
+                'actual' => (float) $scoreSubjects->sum(fn ($result) => (float) $result->mark),
+                'missing_components' => collect($config['components'] ?? [])
+                    ->filter(fn ($component) => ($component['method'] ?? null) === 'external_sum' && ($component['required'] ?? false))
+                    ->pluck('label')
+                    ->values()
+                    ->all(),
+            ],
+            'nsc_pass_type' => [
+                'actual' => (float) (($config['ranking'] ?? [])[$achievedNscPassType] ?? 0),
+                'pass_type' => $achievedNscPassType,
+                'missing_components' => [],
+            ],
+            'senior_certificate_pass' => [
+                'actual' => (float) (($config['ranking'] ?? [])[$achievedSeniorCertificatePassType] ?? 0),
+                'pass_type' => $achievedSeniorCertificatePassType,
+                'missing_components' => [],
+            ],
+            default => [
+                'actual' => null,
+                'missing_components' => [],
+            ],
+        };
     }
 
     private function formatScore(float $value, ?string $suffix): string
@@ -321,6 +869,162 @@ class PublicAdmissionInfoService
     }
 
     /**
+     * @return array{
+     *     title: string,
+     *     badge: string,
+     *     intro: string,
+     *     source_note: string,
+     *     checks: array<int, array{label: string, value: string, hint: string}>
+     * }|null
+     */
+    private function collegeRouteSummary(Qualification $qualification): ?array
+    {
+        $routeText = $this->collegeRouteText($qualification);
+
+        if ($this->isNatedRoute($routeText)) {
+            $levels = $this->natedLevelLabel($routeText);
+
+            return [
+                'title' => 'NATED / Report 191 route',
+                'badge' => $levels.' sequence',
+                'intro' => 'NATED programmes are sequential National N Certificate levels. A school-leaver can usually be checked for the first level, but later levels need proof of the previous N-level.',
+                'source_note' => 'N4, N5 and N6 are progression levels, not ordinary school grades.',
+                'checks' => [
+                    [
+                        'label' => 'N4 entry',
+                        'value' => 'Usually Grade 12 or relevant NC(V) Level 4',
+                        'hint' => 'The field can still require specific school subjects, selection checks or campus capacity.',
+                    ],
+                    [
+                        'label' => 'N5 / N6 entry',
+                        'value' => 'N5 needs N4; N6 needs N5',
+                        'hint' => 'If the college page lists N5 or N6, verify the learner has passed the preceding N-level subjects.',
+                    ],
+                    [
+                        'label' => 'National N Diploma',
+                        'value' => 'N4-N6 plus workplace experience',
+                        'hint' => 'The diploma route normally needs the N4-N6 theory component plus relevant workplace experience or logbook evidence.',
+                    ],
+                ],
+            ];
+        }
+
+        if ($this->isOccupationalRoute($routeText)) {
+            return [
+                'title' => 'Occupational route',
+                'badge' => 'Workplace-based route',
+                'intro' => 'Occupational programmes are built around an occupation or trade and can include knowledge, practical and workplace components.',
+                'source_note' => 'Entry can depend on QCTO/SETA rules, workplace placement, RPL or provider selection.',
+                'checks' => [
+                    [
+                        'label' => 'Entry evidence',
+                        'value' => 'Check grade, NQF or RPL route',
+                        'hint' => 'Some occupational programmes accept prior learning or workplace experience instead of a single school grade.',
+                    ],
+                    [
+                        'label' => 'Practical component',
+                        'value' => 'Workplace or practical training may apply',
+                        'hint' => 'The user may need employer placement, logbook evidence or practical assessments.',
+                    ],
+                    [
+                        'label' => 'Manual review',
+                        'value' => 'Confirm with the college',
+                        'hint' => 'Do not auto-reject only from APS when occupational criteria are not fully published.',
+                    ],
+                ],
+            ];
+        }
+
+        if ($this->isNcvRoute($routeText)) {
+            return [
+                'title' => 'NC(V) route',
+                'badge' => 'Levels 2-4',
+                'intro' => 'NC(V) is the school-age vocational route at TVET colleges. It usually starts at Level 2 and progresses one level at a time through Level 4.',
+                'source_note' => 'NC(V) Level 2 is usually the Grade 9 entry route; Level 4 is an NQF Level 4 exit level.',
+                'checks' => [
+                    [
+                        'label' => 'Level 2 entry',
+                        'value' => 'Usually Grade 9 or equivalent',
+                        'hint' => 'Engineering and technical programmes can still require Mathematics or relevant school subjects.',
+                    ],
+                    [
+                        'label' => 'Level 3 / Level 4',
+                        'value' => 'Progress after passing the previous level',
+                        'hint' => 'A learner does not jump into later NC(V) levels unless the college confirms an equivalent route.',
+                    ],
+                    [
+                        'label' => 'After Level 4',
+                        'value' => 'NQF Level 4 exit',
+                        'hint' => 'This can support work or further study where the next qualification accepts NC(V) Level 4.',
+                    ],
+                ],
+            ];
+        }
+
+        return null;
+    }
+
+    private function collegeRouteText(Qualification $qualification): string
+    {
+        return strtolower(implode(' ', array_filter([
+            $qualification->name,
+            $qualification->abbreviation,
+            $qualification->qualificationType?->name,
+            $qualification->qualificationType?->abbreviation,
+            $qualification->notes,
+        ])));
+    }
+
+    private function isNatedRoute(string $routeText): bool
+    {
+        return str_contains($routeText, 'nated')
+            || str_contains($routeText, 'report 191')
+            || str_contains($routeText, 'national n diploma')
+            || preg_match('/\bn[1-6]\b/i', $routeText) === 1;
+    }
+
+    private function isNcvRoute(string $routeText): bool
+    {
+        return str_contains($routeText, 'national certificate vocational')
+            || str_contains($routeText, 'national certificate (vocational)')
+            || str_contains($routeText, 'nc(v)')
+            || preg_match('/\bncv\b/i', $routeText) === 1;
+    }
+
+    private function isOccupationalRoute(string $routeText): bool
+    {
+        return str_contains($routeText, 'occupational')
+            || str_contains($routeText, 'qcto')
+            || str_contains($routeText, 'workplace training')
+            || str_contains($routeText, 'recognition of prior learning')
+            || str_contains($routeText, 'rpl');
+    }
+
+    private function natedLevelLabel(string $routeText): string
+    {
+        if (preg_match('/\bn\s*([1-6])\s*(?:-|to)\s*n?\s*([1-6])\b/i', $routeText, $matches) === 1) {
+            return 'N'.$matches[1].'-N'.$matches[2];
+        }
+
+        $levels = [];
+
+        for ($level = 1; $level <= 6; $level++) {
+            if (preg_match('/\bn'.$level.'\b/i', $routeText) === 1) {
+                $levels[] = $level;
+            }
+        }
+
+        if ($levels === []) {
+            return 'N4-N6';
+        }
+
+        $minimum = min($levels);
+        $maximum = max($levels);
+
+        return $minimum === $maximum ? 'N'.$minimum : 'N'.$minimum.'-N'.$maximum;
+    }
+
+    /**
      * @param  Collection<int, UniversityAdmissionRule>  $rules
      */
     private function requiresCollegeManualReview(Qualification $qualification, Collection $rules): bool
@@ -343,6 +1047,10 @@ class PublicAdmissionInfoService
             'audition',
             'rpl',
             'workplace',
+            'previous n-level',
+            'preceding n-level',
+            'n5 requires n4',
+            'n6 requires n5',
             'campus capacity',
             'availability must be confirmed',
             'requires verification',
