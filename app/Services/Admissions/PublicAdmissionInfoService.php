@@ -98,7 +98,7 @@ class PublicAdmissionInfoService
         $university = $qualification->university;
         $abbreviation = strtoupper(trim((string) $university?->abbreviation));
 
-        if (in_array($abbreviation, ['BOLAND', 'CJC', 'TNC', 'TSC', 'WESTCOL'], true)) {
+        if (in_array($abbreviation, ['BOLAND', 'CJC', 'SCC', 'TNC', 'TSC', 'WESTCOL'], true)) {
             return true;
         }
 
@@ -883,6 +883,33 @@ class PublicAdmissionInfoService
 
         if ($this->isNatedRoute($routeText)) {
             $levels = $this->natedLevelLabel($routeText);
+            $levelNumbers = $this->natedLevelNumbers($routeText);
+
+            if ($levelNumbers !== [] && max($levelNumbers) <= 3) {
+                return [
+                    'title' => 'NATED / Report 191 route',
+                    'badge' => $levels.' sequence',
+                    'intro' => 'N1-N3 programmes are sequential National N Certificate levels. A school-leaver is usually checked for N1 entry, while N2 and N3 need proof of the previous N-level unless the college publishes a direct Grade 12 route.',
+                    'source_note' => 'N1, N2 and N3 are progression levels, not ordinary school grades.',
+                    'checks' => [
+                        [
+                            'label' => 'N1 entry',
+                            'value' => 'Usually Grade 9 or equivalent',
+                            'hint' => 'Engineering programmes can require Mathematics, college placement tests or related technical subjects.',
+                        ],
+                        [
+                            'label' => 'N2 / N3 entry',
+                            'value' => 'N2 needs N1; N3 needs N2',
+                            'hint' => 'If the college allows Grade 12 entry into N2, check the published Mathematics, Physical Science and placement-test notes.',
+                        ],
+                        [
+                            'label' => 'Next route',
+                            'value' => 'N3 can lead into N4-N6',
+                            'hint' => 'N4-N6 is the later NATED theory route that can support a National N Diploma with relevant workplace experience.',
+                        ],
+                    ],
+                ];
+            }
 
             return [
                 'title' => 'NATED / Report 191 route',
@@ -1022,6 +1049,29 @@ class PublicAdmissionInfoService
         $maximum = max($levels);
 
         return $minimum === $maximum ? 'N'.$minimum : 'N'.$minimum.'-N'.$maximum;
+    }
+
+    /**
+     * @return array<int, int>
+     */
+    private function natedLevelNumbers(string $routeText): array
+    {
+        if (preg_match('/\bn\s*([1-6])\s*(?:-|to)\s*n?\s*([1-6])\b/i', $routeText, $matches) === 1) {
+            $start = (int) $matches[1];
+            $end = (int) $matches[2];
+
+            return range(min($start, $end), max($start, $end));
+        }
+
+        $levels = [];
+
+        for ($level = 1; $level <= 6; $level++) {
+            if (preg_match('/\bn'.$level.'\b/i', $routeText) === 1) {
+                $levels[] = $level;
+            }
+        }
+
+        return $levels;
     }
 
     /**

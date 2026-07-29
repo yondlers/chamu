@@ -16,6 +16,7 @@ class UniversityLogoSeeder extends Seeder
         'NMU' => 'https://webapps.mandela.ac.za/design/Resources/images/logos/FullColourLogo.PNG',
         'NWU' => 'https://www.nwu.ac.za/sites/www.nwu.ac.za/files/NWU-logo-pers_1.png',
         'RU' => 'https://www.ru.ac.za/media/rhodesuniversity/styleassets/2019v6/images/RU_Logo_1.png',
+        'SCC' => 'https://sccollege.co.za/wp-content/uploads/2022/05/SCC-Horizontal.png',
         'SU' => 'https://www.su.ac.za/themes/custom/su2023/images/logo.svg',
         'TUT' => 'https://www.tut.ac.za/media/tshwane-interim/site-assets/images/tut-logo.svg',
         'UCT' => 'https://uct.ac.za/themes/custom/blip_uct/logo.svg',

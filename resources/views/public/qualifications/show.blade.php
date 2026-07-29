@@ -114,27 +114,6 @@
                             @endforeach
                         </div>
 
-                        @if ($collegeAdmissionSummary['route_summary'])
-                            <div class="mt-5 rounded-xl border border-sky-100 bg-sky-50 p-4">
-                                <p class="text-xs font-bold uppercase text-sky-700">How this college route works</p>
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <h3 class="text-lg font-bold text-neutral-950">{{ $collegeAdmissionSummary['route_summary']['title'] }}</h3>
-                                    <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-sky-700">{{ $collegeAdmissionSummary['route_summary']['badge'] }}</span>
-                                </div>
-                                <p class="mt-2 text-sm leading-6 text-neutral-700">{{ $collegeAdmissionSummary['route_summary']['intro'] }}</p>
-                                <div class="mt-4 grid gap-3 md:grid-cols-3">
-                                    @foreach ($collegeAdmissionSummary['route_summary']['checks'] as $check)
-                                        <div class="rounded-xl bg-white p-4">
-                                            <p class="text-xs font-bold uppercase text-neutral-500">{{ $check['label'] }}</p>
-                                            <p class="mt-2 text-base font-bold leading-6 text-neutral-950">{{ $check['value'] }}</p>
-                                            <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $check['hint'] }}</p>
-                                        </div>
-                                    @endforeach
-                                </div>
-                                <p class="mt-3 text-xs font-semibold text-sky-800">{{ $collegeAdmissionSummary['route_summary']['source_note'] }}</p>
-                            </div>
-                        @endif
-
                         @if ($collegeAdmissionSummary['notes'] !== [])
                             <div class="mt-5 rounded-xl bg-amber-50 px-4 py-4 text-sm text-amber-950">
                                 <h3 class="font-bold">Programme notes</h3>

@@ -14,6 +14,7 @@ use Database\Seeders\Universities\EDUVOS\RequirementSeeder as EduvosRequirementS
 use Database\Seeders\Universities\NMU\RequirementSeeder as NmuRequirementSeeder;
 use Database\Seeders\Universities\NWU\RequirementSeeder as NwuRequirementSeeder;
 use Database\Seeders\Universities\RU\RequirementSeeder as RuRequirementSeeder;
+use Database\Seeders\Universities\SCC\RequirementSeeder as SccRequirementSeeder;
 use Database\Seeders\Universities\SMU\RequirementSeeder as SmuRequirementSeeder;
 use Database\Seeders\Universities\SPU\RequirementSeeder as SpuRequirementSeeder;
 use Database\Seeders\Universities\SU\RequirementSeeder as SuRequirementSeeder;
@@ -112,6 +113,7 @@ class DatabaseSeeder extends Seeder
             TncRequirementSeeder::class,
             TscRequirementSeeder::class,
             WestcolRequirementSeeder::class,
+            SccRequirementSeeder::class,
             TutRequirementSeeder::class,
             UfsRequirementSeeder::class,
             NmuRequirementSeeder::class,
