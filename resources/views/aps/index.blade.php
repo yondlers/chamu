@@ -35,7 +35,7 @@
     $selectedUniversities = $universities
         ->filter(fn ($university) => $selectedUniversityIds->contains((int) $university->id))
         ->values();
-    $previewCourses = $previewCourses ?? collect();
+    $totalCourses = $courses->total();
     $universityFilterLabel = match ($selectedUniversities->count()) {
         0 => 'All universities',
         1 => $universityLabel($selectedUniversities->first()),
@@ -46,11 +46,6 @@
         1 => ' at '.$universityFilterLabel,
         default => ' across '.$selectedUniversities->count().' selected universities',
     };
-    $apsRequiredMessage = $selectedUniversities->isNotEmpty()
-        ? ($selectedUniversities->count() === 1
-            ? 'Nice, now enter your APS to see courses at this university.'
-            : 'Nice, now enter your APS to see courses at these universities.')
-        : 'Enter your APS score first so Chamu can search matching courses.';
     $heroSlides = [
         ['src' => asset('images/aps/graduates-smiling.png'), 'position' => 'object-[center_38%]', 'delay' => 0],
         ['src' => asset('images/aps/engineering-workshop.png'), 'position' => 'object-[center_45%]', 'delay' => 7],
@@ -64,8 +59,7 @@
         ? $selectedUniversities
         : $universities->take(8);
     $heroFilterSummary = collect([
-        $apsScore !== null ? 'APS '.$apsScore : 'APS pending',
-        $universityFilterLabel !== 'All universities' ? $universityFilterLabel : null,
+        $universityFilterLabel,
         $search !== '' ? '"'.$search.'"' : null,
     ])->filter()->implode(' · ');
 @endphp
@@ -182,7 +176,7 @@
                         <div class="mt-5 space-y-3 border-t border-white/15 pt-5">
                             <div class="flex items-center justify-between gap-4 text-sm">
                                 <span class="font-semibold text-white/65">Course results</span>
-                                <span class="font-black">{{ $apsScore !== null ? $courses->count() : ($previewCourses->count() ?: 'Ready') }}</span>
+                                <span class="font-black">{{ number_format($totalCourses) }}</span>
                             </div>
                             <div class="flex items-center justify-between gap-4 text-sm">
                                 <span class="font-semibold text-white/65">Subject match</span>
@@ -193,18 +187,7 @@
                 </div>
 
                 <form method="GET" action="{{ route('aps.index') }}#search-results" class="mt-6 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)] sm:mt-8">
-                    <div class="grid gap-2 lg:grid-cols-[160px_1.25fr_1.15fr_auto]">
-                        <div class="rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2.5 sm:px-4 sm:py-3">
-                            <label for="aps_score" class="flex items-center justify-between gap-2 text-xs font-black uppercase text-neutral-500">
-                                <span class="flex items-center gap-1.5">
-                                    <i data-lucide="gauge" style="width:14px;height:14px;"></i>
-                                    APS score
-                                </span>
-                                <span class="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-black text-amber-800">Required</span>
-                            </label>
-                            <input id="aps_score" name="aps_score" type="number" inputmode="numeric" min="0" max="60" value="{{ $apsScore ?? '' }}" placeholder="32" class="mt-1.5 w-full bg-transparent text-2xl font-black text-neutral-950 outline-none placeholder:text-neutral-400 sm:mt-2 sm:text-3xl">
-                        </div>
-
+                    <div class="grid gap-2 lg:grid-cols-[1.35fr_1.15fr_auto]">
                         <div class="relative rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2.5 sm:px-4 sm:py-3" data-university-multiselect>
                             <label id="university_filter_label" class="flex items-center gap-1.5 text-xs font-black uppercase text-neutral-500">
                                 <i data-lucide="building-2" style="width:14px;height:14px;"></i>
@@ -274,23 +257,8 @@
                         </button>
                     </div>
 
-                    <div class="mt-3 flex flex-col gap-3 border-t border-neutral-100 px-1 pt-3 text-xs font-bold text-neutral-500 sm:flex-row sm:items-center sm:justify-between sm:text-sm">
-                        @if ($apsScore === null)
-                            <span>{{ $apsRequiredMessage }}</span>
-                        @else
-                            <span>
-                                {{ $courses->count() }} courses found for APS {{ $apsScore }}
-                                {{ $selectedUniversityScopeLabel }}
-                            </span>
-                        @endif
-                        <div class="flex flex-wrap gap-3">
-                            <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center gap-1.5 text-[#01225E] hover:text-[#001A48]">
-                                Calculate APS <i data-lucide="calculator" style="width:14px;height:14px;"></i>
-                            </a>
-                            <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-1.5 text-[#01225E] hover:text-[#001A48]">
-                                Reset <i data-lucide="refresh-cw" style="width:14px;height:14px;"></i>
-                            </a>
-                        </div>
+                    <div class="mt-3 border-t border-neutral-100 px-1 pt-3 text-xs font-bold text-neutral-500 sm:text-sm">
+                        <span>{{ number_format($totalCourses) }} courses found{{ $selectedUniversityScopeLabel }}</span>
                     </div>
                 </form>
 
@@ -322,137 +290,100 @@
             </div>
         </section>
 
-        @if ($apsScore !== null)
-            <section id="search-results" tabindex="-1" class="mx-auto mt-8 scroll-mt-24 max-w-7xl px-5 focus:outline-none lg:px-8">
-                <div class="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                    <div>
-                        <p class="text-xs font-black uppercase text-[#01225E]">Course shortlist</p>
-                        <h2 class="mt-1 text-2xl font-black text-neutral-950">Best matches to explore</h2>
-                        <p class="mt-1 text-sm font-bold text-neutral-500">
-                            {{ $courses->count() }} courses found for APS {{ $apsScore }}
-                            {{ $selectedUniversityScopeLabel }}
-                        </p>
-                    </div>
-                    <a href="{{ route('aps.index') }}" class="inline-flex items-center justify-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-sm font-black text-neutral-950 shadow-sm hover:bg-neutral-50">
-                        Reset search <i data-lucide="refresh-cw" style="width:16px;height:16px;"></i>
-                    </a>
-                </div>
+        <section id="search-results" tabindex="-1" class="mx-auto mt-8 scroll-mt-24 max-w-7xl px-5 focus:outline-none lg:px-8">
+            <div class="mb-5">
+                <p class="text-xs font-black uppercase text-[#01225E]">Course list</p>
+                <h2 class="mt-1 text-2xl font-black text-neutral-950">Courses to explore</h2>
+                <p class="mt-1 text-sm font-bold text-neutral-500">
+                    {{ number_format($totalCourses) }} courses found{{ $selectedUniversityScopeLabel }}
+                </p>
+            </div>
 
-                <section class="grid gap-4">
-                    @forelse ($courses as $course)
-                        @php
-                            $logoSrc = null;
+            <section class="grid gap-4">
+                @forelse ($courses as $course)
+                    @php
+                        $logoSrc = null;
 
-                            if ($course->university_logo) {
-                                $logoSrc = Str::startsWith($course->university_logo, ['http://', 'https://', '/'])
-                                    ? $course->university_logo
-                                    : asset($course->university_logo);
-                            }
+                        if ($course->university_logo) {
+                            $logoSrc = Str::startsWith($course->university_logo, ['http://', 'https://', '/'])
+                                ? $course->university_logo
+                                : asset($course->university_logo);
+                        }
 
-                            $initials = $course->university_abbreviation
-                                ?: Str::of($course->university_name)->substr(0, 3)->upper();
-                        @endphp
-                        <article class="group overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-[0_16px_45px_rgba(15,23,42,0.06)] transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-[0_22px_60px_rgba(15,23,42,0.10)]">
-                            <div class="grid lg:grid-cols-[minmax(0,1fr)_320px]">
-                                <div class="relative p-5 sm:p-6">
-                                    <div class="absolute inset-y-0 left-0 w-1.5 bg-sky-500"></div>
-                                    <div class="flex gap-4 pl-2">
-                                        <div class="grid h-14 w-14 shrink-0 place-items-center overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 text-sm font-black text-[#01225E]">
-                                            @if ($logoSrc)
-                                                <img src="{{ $logoSrc }}" alt="{{ $course->university_name }} logo" class="h-full w-full object-contain p-2">
-                                            @else
-                                                {{ $initials }}
+                        $initials = $course->university_abbreviation
+                            ?: Str::of($course->university_name)->substr(0, 3)->upper();
+                    @endphp
+                    <article class="group overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-[0_16px_45px_rgba(15,23,42,0.06)] transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-[0_22px_60px_rgba(15,23,42,0.10)]">
+                        <div class="grid lg:grid-cols-[minmax(0,1fr)_320px]">
+                            <div class="relative p-5 sm:p-6">
+                                <div class="absolute inset-y-0 left-0 w-1.5 bg-sky-500"></div>
+                                <div class="flex gap-4 pl-2">
+                                    <div class="grid h-14 w-14 shrink-0 place-items-center overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 text-sm font-black text-[#01225E]">
+                                        @if ($logoSrc)
+                                            <img src="{{ $logoSrc }}" alt="{{ $course->university_name }} logo" class="h-full w-full object-contain p-2">
+                                        @else
+                                            {{ $initials }}
+                                        @endif
+                                    </div>
+
+                                    <div class="min-w-0 flex-1">
+                                        <div class="flex flex-wrap items-center gap-2">
+                                            <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-black text-[#01225E]">APS {{ $course->aps_required ?? 'N/A' }}</span>
+                                            <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-black text-neutral-700">{{ $course->qualification_type_name }}</span>
+                                            @if ($course->is_selection_programme)
+                                                <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-black text-amber-700">Selection programme</span>
                                             @endif
                                         </div>
-
-                                        <div class="min-w-0 flex-1">
-                                            <div class="flex flex-wrap items-center gap-2">
-                                                <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-black text-[#01225E]">APS {{ $course->aps_required }}</span>
-                                                <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-black text-neutral-700">{{ $course->qualification_type_name }}</span>
-                                                @if ($course->is_selection_programme)
-                                                    <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-black text-amber-700">Selection programme</span>
-                                                @endif
-                                            </div>
-                                            <h3 class="mt-3 text-xl font-black leading-tight text-neutral-950 sm:text-2xl">{{ $course->name }}</h3>
-                                            <p class="mt-1 text-sm font-bold text-neutral-500">
-                                                {{ $course->university_abbreviation ?? $course->university_name }} · {{ $course->faculty_name }}
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-5 flex flex-wrap gap-2 pl-2">
-                                        <a href="{{ route('funding.index') }}" class="inline-flex items-center gap-2 rounded-lg bg-[#01225E] px-4 py-2 text-sm font-black text-white hover:bg-[#001A48]">
-                                            Check funding <i data-lucide="badge-dollar-sign" style="width:16px;height:16px;"></i>
-                                        </a>
-                                        @auth
-                                            <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-black hover:bg-neutral-50">
-                                                Full subject match <i data-lucide="target" style="width:16px;height:16px;"></i>
-                                            </a>
-                                        @else
-                                            <a href="{{ route('register') }}" class="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-black hover:bg-neutral-50">
-                                                Optional full match <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
-                                            </a>
-                                        @endauth
+                                        <h3 class="mt-3 text-xl font-black leading-tight text-neutral-950 sm:text-2xl">{{ $course->name }}</h3>
+                                        <p class="mt-1 text-sm font-bold text-neutral-500">
+                                            {{ $course->university_abbreviation ?? $course->university_name }} · {{ $course->faculty_name }}
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
 
-                                <dl class="divide-y divide-neutral-200 border-t border-neutral-200 bg-neutral-50/70 p-5 lg:border-l lg:border-t-0">
-                                    <div class="flex items-start justify-between gap-4 py-3 first:pt-0">
-                                        <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
-                                            <i data-lucide="gauge" style="width:14px;height:14px;"></i>
-                                            Required APS
-                                        </dt>
-                                        <dd class="text-right text-2xl font-black text-neutral-950">{{ $course->aps_required }}</dd>
-                                    </div>
-                                    <div class="flex items-start justify-between gap-4 py-3">
-                                        <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
-                                            <i data-lucide="clock-3" style="width:14px;height:14px;"></i>
-                                            Duration
-                                        </dt>
-                                        <dd class="text-right text-lg font-black text-neutral-950">{{ $course->duration_years ? $course->duration_years . ' years' : 'N/A' }}</dd>
-                                    </div>
-                                    <div class="flex items-start justify-between gap-4 py-3 last:pb-0">
-                                        <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
-                                            <i data-lucide="building-2" style="width:14px;height:14px;"></i>
-                                            University
-                                        </dt>
-                                        <dd class="max-w-[150px] text-right text-sm font-black text-neutral-950">{{ $course->university_abbreviation ?? $course->university_name }}</dd>
-                                    </div>
-                                </dl>
-                            </div>
-                        </article>
-                    @empty
-                        <article class="rounded-lg border border-dashed border-neutral-300 bg-white p-10 text-center shadow-sm">
-                            <div class="mx-auto grid h-12 w-12 place-items-center rounded-lg bg-neutral-100 text-neutral-500">
-                                <i data-lucide="search-x" style="width:22px;height:22px;"></i>
-                            </div>
-                            <h2 class="mt-4 text-xl font-black">No courses found</h2>
-                            <p class="mt-2 text-sm font-semibold text-neutral-500">Try a higher APS score, a different university, or a broader keyword.</p>
-                        </article>
-                    @endforelse
-                </section>
+                            <dl class="divide-y divide-neutral-200 border-t border-neutral-200 bg-neutral-50/70 p-5 lg:border-l lg:border-t-0">
+                                <div class="flex items-start justify-between gap-4 py-3 first:pt-0">
+                                    <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
+                                        <i data-lucide="gauge" style="width:14px;height:14px;"></i>
+                                        Required APS
+                                    </dt>
+                                    <dd class="text-right text-2xl font-black text-neutral-950">{{ $course->aps_required ?? 'N/A' }}</dd>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 py-3">
+                                    <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
+                                        <i data-lucide="clock-3" style="width:14px;height:14px;"></i>
+                                        Duration
+                                    </dt>
+                                    <dd class="text-right text-lg font-black text-neutral-950">{{ $course->duration_years ? $course->duration_years . ' years' : 'N/A' }}</dd>
+                                </div>
+                                <div class="flex items-start justify-between gap-4 py-3 last:pb-0">
+                                    <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
+                                        <i data-lucide="building-2" style="width:14px;height:14px;"></i>
+                                        University
+                                    </dt>
+                                    <dd class="max-w-[150px] text-right text-sm font-black text-neutral-950">{{ $course->university_abbreviation ?? $course->university_name }}</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </article>
+                @empty
+                    <article class="rounded-lg border border-dashed border-neutral-300 bg-white p-10 text-center shadow-sm">
+                        <div class="mx-auto grid h-12 w-12 place-items-center rounded-lg bg-neutral-100 text-neutral-500">
+                            <i data-lucide="search-x" style="width:22px;height:22px;"></i>
+                        </div>
+                        <h2 class="mt-4 text-xl font-black">No courses found</h2>
+                        <p class="mt-2 text-sm font-semibold text-neutral-500">Try a different university or a broader keyword.</p>
+                    </article>
+                @endforelse
             </section>
-        @endif
 
-        @guest
-            <section class="mx-auto mt-6 max-w-7xl px-4 sm:px-5 lg:px-8">
-                <div class="grid gap-4 rounded-lg border border-neutral-200 bg-white p-4 shadow-sm md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
-                    <div>
-                        <p class="text-sm font-bold text-[#01225E]">No account needed for APS</p>
-                        <h2 class="mt-1 text-xl font-bold text-neutral-950">Compare courses first, save marks later</h2>
-                        <p class="mt-2 max-w-3xl text-sm leading-6 text-neutral-600">Use APS and university filters freely. When you want subject-aware matching against your marks, you can save your profile then.</p>
-                    </div>
-                    <div class="flex flex-col gap-2 sm:flex-row">
-                        <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-bold text-neutral-900 hover:bg-neutral-50">
-                            Calculate APS <i data-lucide="calculator" style="width:16px;height:16px;"></i>
-                        </a>
-                        <a href="{{ route('register') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2.5 text-sm font-bold text-neutral-900 hover:bg-neutral-50">
-                            Save marks later <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
-                        </a>
-                    </div>
+            @if ($courses->hasPages())
+                <div class="mt-6">
+                    {{ $courses->links() }}
                 </div>
-            </section>
-        @endguest
+            @endif
+        </section>
 
         <section class="mx-auto mt-8 max-w-7xl px-4 sm:px-5 lg:px-8">
             <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -460,7 +391,7 @@
                     <p class="text-sm font-bold text-[#01225E]">Universities in Chamu</p>
                     <h2 class="mt-1 text-2xl font-bold text-neutral-950">Browse every captured university</h2>
                 </div>
-                <p class="text-sm font-semibold text-neutral-500">Choose one to prefill the APS filter.</p>
+                <p class="text-sm font-semibold text-neutral-500">Choose one to prefill the university filter.</p>
             </div>
 
             @if ($universities->isEmpty())
@@ -491,117 +422,6 @@
                 </div>
             @endif
         </section>
-
-        @if ($apsScore === null)
-            <section id="search-results" tabindex="-1" class="mx-auto mt-6 grid scroll-mt-24 max-w-7xl gap-4 px-4 focus:outline-none sm:px-5 lg:px-8">
-                <article class="rounded-lg border border-neutral-200 bg-white p-6 shadow-sm sm:p-8">
-                    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-center">
-                        <div>
-                            <p class="text-sm font-bold text-[#01225E]">{{ $previewCourses->isNotEmpty() ? 'Qualification preview' : 'Ready when you are' }}</p>
-                            <h2 class="mt-1 text-2xl font-bold text-neutral-950">{{ $previewCourses->isNotEmpty() ? 'A quick look before APS' : 'APS is needed before course search' }}</h2>
-                            <p class="mt-2 text-sm leading-6 text-neutral-600">
-                                @if ($previewCourses->isNotEmpty())
-                                    These sample programmes mix lower, middle and higher APS requirements{{ $selectedUniversityScopeLabel }}. Enter your APS to unlock the full course list, then log in when you want subject-aware matching.
-                                @else
-                                    Add your APS score above to search programmes. You can still choose universities and keywords first, then run the search once the score is in.
-                                @endif
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <a href="#aps_score" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]">
-                                Enter APS to view more <i data-lucide="arrow-up" style="width:18px;height:18px;"></i>
-                            </a>
-                            <a href="{{ route('aps-calculator.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-sm font-bold text-neutral-900 hover:bg-neutral-50">
-                                Open APS calculator <i data-lucide="calculator" style="width:18px;height:18px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                @if ($previewCourses->isNotEmpty())
-                    <div class="grid gap-4">
-                        @foreach ($previewCourses as $course)
-                            @php
-                                $logoSrc = null;
-
-                                if ($course->university_logo) {
-                                    $logoSrc = Str::startsWith($course->university_logo, ['http://', 'https://', '/'])
-                                        ? $course->university_logo
-                                        : asset($course->university_logo);
-                                }
-
-                                $initials = $course->university_abbreviation
-                                    ?: Str::of($course->university_name)->substr(0, 3)->upper();
-                            @endphp
-                            <article class="group overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-[0_16px_45px_rgba(15,23,42,0.06)] transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-[0_22px_60px_rgba(15,23,42,0.10)]">
-                                <div class="grid lg:grid-cols-[minmax(0,1fr)_320px]">
-                                    <div class="relative p-5 sm:p-6">
-                                        <div class="absolute inset-y-0 left-0 w-1.5 bg-[#01225E]"></div>
-                                        <div class="flex gap-4 pl-2">
-                                            <div class="grid h-14 w-14 shrink-0 place-items-center overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 text-sm font-black text-[#01225E]">
-                                                @if ($logoSrc)
-                                                    <img src="{{ $logoSrc }}" alt="{{ $course->university_name }} logo" class="h-full w-full object-contain p-2">
-                                                @else
-                                                    {{ $initials }}
-                                                @endif
-                                            </div>
-
-                                            <div class="min-w-0 flex-1">
-                                                <div class="flex flex-wrap items-center gap-2">
-                                                    <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-black text-[#01225E]">Preview</span>
-                                                    <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-black text-emerald-700">APS {{ $course->aps_required }}</span>
-                                                    <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-black text-neutral-700">{{ $course->qualification_type_name }}</span>
-                                                    @if ($course->is_selection_programme)
-                                                        <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-black text-amber-700">Selection programme</span>
-                                                    @endif
-                                                </div>
-                                                <h3 class="mt-3 text-xl font-black leading-tight text-neutral-950 sm:text-2xl">{{ $course->name }}</h3>
-                                                <p class="mt-1 text-sm font-bold text-neutral-500">
-                                                    {{ $course->university_abbreviation ?? $course->university_name }} · {{ $course->faculty_name }}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="mt-5 flex flex-wrap gap-2 pl-2">
-                                            <a href="#aps_score" class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#01225E] px-4 py-2 text-sm font-black text-white hover:bg-[#001A48]">
-                                                View more with APS <i data-lucide="gauge" style="width:16px;height:16px;"></i>
-                                            </a>
-                                            <a href="{{ route('login') }}" class="inline-flex items-center justify-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-black hover:bg-neutral-50">
-                                                Log in for full match <i data-lucide="log-in" style="width:16px;height:16px;"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <dl class="divide-y divide-neutral-200 border-t border-neutral-200 bg-neutral-50/70 p-5 lg:border-l lg:border-t-0">
-                                        <div class="flex items-start justify-between gap-4 py-3 first:pt-0">
-                                            <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
-                                                <i data-lucide="gauge" style="width:14px;height:14px;"></i>
-                                                Required APS
-                                            </dt>
-                                            <dd class="text-right text-2xl font-black text-neutral-950">{{ $course->aps_required }}</dd>
-                                        </div>
-                                        <div class="flex items-start justify-between gap-4 py-3">
-                                            <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
-                                                <i data-lucide="clock-3" style="width:14px;height:14px;"></i>
-                                                Duration
-                                            </dt>
-                                            <dd class="text-right text-lg font-black text-neutral-950">{{ $course->duration_years ? $course->duration_years . ' years' : 'N/A' }}</dd>
-                                        </div>
-                                        <div class="flex items-start justify-between gap-4 py-3 last:pb-0">
-                                            <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
-                                                <i data-lucide="building-2" style="width:14px;height:14px;"></i>
-                                                University
-                                            </dt>
-                                            <dd class="max-w-[150px] text-right text-sm font-black text-neutral-950">{{ $course->university_abbreviation ?? $course->university_name }}</dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                            </article>
-                        @endforeach
-                    </div>
-                @endif
-            </section>
-        @endif
 
         @include('partials.adsense-home-placement', ['class' => 'mx-auto mt-6 max-w-7xl px-4 sm:px-5 lg:px-8'])
     </main>
