@@ -1,0 +1,348 @@
+{
+    "university": "Eduvos",
+    "source": "Eduvos Campus Admissions and undergraduate programme pages",
+    "admission_score_type": "Eduvos points",
+    "name": "Commerce",
+    "qualifications": [
+        {
+            "name": "Bachelor of Business Administration",
+            "slug": "bachelor-of-business-administration",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-business-administration/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120744.",
+                "Faculty: Commerce.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass.*• Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. • Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. • Or completion of a Bachelor’s degree. • Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). • Or completion of a relevant Higher Certificate.• Or completion of the relevant Eduvos Access Programme",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-business-administration/",
+            "subject_requirements": [],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Commerce",
+            "slug": "bachelor-of-commerce",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-commerce/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120689.",
+                "Faculty: Commerce.",
+                "Available study modes: Distance Part Time, Campus Full Time, Online Part Time (PTAH), Distance Full Time.",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years * Subject to CHE Concession on Online Blended Learning..",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.",
+                "Accreditation: • Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE).• Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-commerce/",
+            "subject_requirements": [],
+            "nqf_level": 7
+        },
+        {
+            "name": "Bachelor of Commerce Access Programme: Accounting",
+            "slug": "bachelor-of-commerce-access-programme-accounting",
+            "qualification_type": "Access Programme",
+            "duration_years": null,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-commerce-access-programme-accounting/.",
+                "Programme type: Access.",
+                "Faculty: Commerce.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: Minimum: 6 months; Maximum: 18 Months | Minimum: 6 months; Maximum: 18 months.",
+                "Minimum admission requirements: Bachelor's degree pass or equivalent. Or Certificate of evaluation on a minimum NQF level 4 for foreign qualifications issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of National N Diploma (TVET). Or completion of any recognised qualification on a minimum of NQF level 5 with at least 120 credits. AND Mathematics below 45% on NSC Grade 12 or equivalent. Or Mathematical Literacy 60% and above on NSC Grade 12 or equivalent. Completing this programme enables students with the option to enter into the Eduvos Bachelor of Commerce in Accounting."
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-commerce-access-programme-accounting/",
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Commerce in Accounting",
+            "slug": "bachelor-of-commerce-in-accounting",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-commerce-in-accounting/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120729.",
+                "Faculty: Commerce.",
+                "Available study modes: Distance Part Time, Campus Full Time, Online Part Time (PTAH), Distance Full Time.",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 yearsFull-Time (Distance) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 yearsPart-Time (Distance) Minimum: 5 years; Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Applicants with less than 50% but greater than or equal to 45%, are required to enrol for and complete COMXB0 before being admitted into 2nd year.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 Mathematics equivalent. Applicants below 50% may have bridging or approval conditions as set out by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE) of South Africa.Registered with the South African Qualifications Authority (SAQA). Accredited with the South African Institute of Chartered Accountants Association of General Accountants (SAICA AGA) (SA).Accredited campuses - Bedfordview, Midrand, Pretoria and Tyger Valley Accredited by the Association of Chartered Certified Accountants (ACCA) (UK).Accredited by the Chartered Institute of Management Accountants (CIMA).**Students will be able to register with the International Association of Bookkeepers (IAB) as members of this professional body upon successful completion of the following modules:Financial Accounting 1A & 1BFinancial Accounting 2A & 2BAccounting on Computers View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-commerce-in-accounting/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Applicants with less than 50% but greater than or equal to 45%, are required to enrol for and complete COMXB0 before being admitted into 2nd year."
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Commerce in Human Resource Management",
+            "slug": "bachelor-of-commerce-in-human-resource-management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-commerce-in-human-resource-management-ft/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120728.",
+                "Faculty: Commerce.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA)Accredited by the South African Board of People Practitioners (SABPP) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-commerce-in-human-resource-management-ft/",
+            "subject_requirements": [],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Commerce in Marketing Management",
+            "slug": "bachelor-of-commerce-in-marketing-management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-commerce-in-marketing-management/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120727.",
+                "Faculty: Commerce.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 years* Subject to CHE Concession on Online Blended Learning..",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA)Endorsed by Marketing Association of South Africa (MASA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-commerce-in-marketing-management/",
+            "subject_requirements": [],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Commerce in Tourism Management",
+            "slug": "bachelor-of-commerce-in-tourism-management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-commerce-in-tourism-management/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120726.",
+                "Faculty: Commerce.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: Full-Time (Campus)• Minimum: 3 years• Maximum: 5 years | Part-Time (Online)*• Minimum: 5 years• Maximum: 7 years* Subject to CHE Concession on Online Blended Learning.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA)Endorsed by Cape Town Tourism (CTT) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-commerce-in-tourism-management/",
+            "subject_requirements": [],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Higher Certificate in Business Management",
+            "slug": "higher-certificate-in-business-management",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-business-management/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120687.",
+                "Faculty: Commerce.",
+                "Available study modes: Distance Part Time, Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH), Distance Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE) of South Africa. Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-business-management/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Business Management: Digital Banking",
+            "slug": "higher-certificate-in-business-management-digital-banking",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-business-management-digital-banking/.",
+                "Programme type: Higher Certificate.",
+                "Faculty: Commerce.",
+                "Available study modes: Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-business-management-digital-banking/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Business Management: Employment Relations",
+            "slug": "higher-certificate-in-business-management-employment-relations",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-business-management-employment-relations/.",
+                "Programme type: Higher Certificate.",
+                "Faculty: Commerce.",
+                "Available study modes: Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-business-management-employment-relations/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Business Management: Tourism",
+            "slug": "higher-certificate-in-business-management-tourism",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-business-management-tourism-campus-full-time/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120687.",
+                "Faculty: Commerce.",
+                "Available study modes: Distance Part Time, Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH), Distance Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Additional Eduvos programme page for another study mode: https://www.eduvos.com/programmes/higher-certificate-in-business-management-tourism/.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA)Endorsed by Cape Town Tourism (CTT) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-business-management-tourism-campus-full-time/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Pre-degree Foundation Programme: Commerce And Law",
+            "slug": "pre-degree-foundation-programme-commerce-and-law",
+            "qualification_type": "Pre-Degree Foundation Programme",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/pre-degree-foundation-programme-commerce-and-law/.",
+                "Programme type: Pre-Degree.",
+                "Faculty: Commerce.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 2 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics.",
+                "Additional admission requirements from Eduvos Campus Admissions: 17 - 24 Eduvos points or more; 30% or above for Grade 12 Mathematics, Mathematical Literacy or Technical Mathematics.",
+                "Accreditation: It is quality assured (externally moderated) by similar higher education institutions.While this programme is not registered on the qualifications framework, this is an access path to Eduvos programmes taught at the same level as those at National Qualifications Framework (NQF) level 5.It is not accredited by the Higher Education Quality Committee (HEQC), nor is it registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/pre-degree-foundation-programme-commerce-and-law/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        }
+                    ]
+                }
+            ],
+            "admission_score_required": 17
+        }
+    ]
+}

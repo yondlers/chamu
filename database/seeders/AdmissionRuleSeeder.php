@@ -53,6 +53,20 @@ class AdmissionRuleSeeder extends Seeder
             ['minimum_mark' => 60, 'maximum_mark' => 69, 'points' => 1],
             ['minimum_mark' => 0, 'maximum_mark' => 59, 'points' => 0],
         ];
+        $eduvosBasePoints = [
+            ['minimum_mark' => 90, 'maximum_mark' => 100, 'points' => 8],
+            ['minimum_mark' => 80, 'maximum_mark' => 89, 'points' => 7],
+            ['minimum_mark' => 70, 'maximum_mark' => 79, 'points' => 6],
+            ['minimum_mark' => 60, 'maximum_mark' => 69, 'points' => 5],
+            ['minimum_mark' => 50, 'maximum_mark' => 59, 'points' => 4],
+            ['minimum_mark' => 40, 'maximum_mark' => 49, 'points' => 3],
+            ['minimum_mark' => 30, 'maximum_mark' => 39, 'points' => 2],
+            ['minimum_mark' => 0, 'maximum_mark' => 29, 'points' => 1],
+        ];
+        $eduvosLifeOrientationPoints = [
+            ['minimum_mark' => 40, 'maximum_mark' => 100, 'points' => 3],
+            ['minimum_mark' => 0, 'maximum_mark' => 39, 'points' => 0],
+        ];
         $spuMathematicsAndLanguageSubjects = [
             'Mathematics',
             'Afrikaans Home Language',
@@ -410,6 +424,36 @@ class AdmissionRuleSeeder extends Seeder
                     ],
                 ],
                 'description' => 'Sol Plaatje University Admission Point Score: NSC percentage bands with extra points for Mathematics and languages, and reduced Life Orientation points.',
+            ],
+            [
+                'code' => 'eduvos_points',
+                'name' => 'Eduvos points',
+                'score_type' => 'aps',
+                'calculation_method' => 'subject_point_sum',
+                'score_label' => 'Eduvos points',
+                'score_suffix' => null,
+                'max_score' => 51,
+                'include_life_orientation' => true,
+                'subject_count' => null,
+                'subject_selection_strategy' => 'all_subjects',
+                'minimum_pass_type' => null,
+                'points_scale' => null,
+                'config' => [
+                    'source_note' => 'Eduvos awards 8 to 1 points by NSC percentage band and grants Life Orientation 3 points from any percentage above 40%.',
+                    'source_url' => 'https://www.eduvos.com/admissions/campus-admissions/',
+                    'subject_point_scales' => [
+                        [
+                            'label' => 'Life Orientation',
+                            'subjects' => ['Life Orientation'],
+                            'bands' => $eduvosLifeOrientationPoints,
+                        ],
+                    ],
+                    'default_point_scale' => [
+                        'label' => 'Other NSC subjects',
+                        'bands' => $eduvosBasePoints,
+                    ],
+                ],
+                'description' => 'Eduvos/Vossie Points: NSC percentage bands from 8 to 1, with Life Orientation counted as 3 points once above 40%.',
             ],
             [
                 'code' => 'subject_levels_only',

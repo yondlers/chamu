@@ -1,0 +1,798 @@
+{
+    "university": "Eduvos",
+    "source": "Eduvos Campus Admissions and undergraduate programme pages",
+    "admission_score_type": "Eduvos points",
+    "name": "Humanities and Arts",
+    "qualifications": [
+        {
+            "name": "Bachelor of Arts Access Programme: BALE and BAPPE",
+            "slug": "bachelor-of-arts-access-programme-bale-and-bappe",
+            "qualification_type": "Access Programme",
+            "duration_years": null,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-access-programme-bale-bappe/.",
+                "Programme type: Access.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 6 months; Maximum: 18 Months.",
+                "Minimum admission requirements: Bachelor's degree pass or equivalent Or certificate of evaluation on a minimum NQF level 4 for foreign qualifications issued by SAQAOr a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of National N Diploma (TVET). Or completion of any recognised qualification on a minimum of NQF level 5 with at least 120 credits. AND English Language between 30% and 49%.Mathematical Literacy between 30% - 49%. * *Applicable to streams with Economics as area of specialisation.",
+                "Accreditation: This is an access programme which is not registered on the qualifications framework. This programme provides access to Eduvos Bachelor of Arts qualifications that are taught at the same level as those at National Qualifications Framework (NQF) level 5. It is not accredited by the Higher Education Quality Committee (HEQC), nor is it registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-access-programme-bale-bappe/",
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts Access Programme: ENG",
+            "slug": "bachelor-of-arts-access-programme-eng",
+            "qualification_type": "Access Programme",
+            "duration_years": null,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-access-programme-eng/.",
+                "Programme type: Access.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 6 months; Maximum: 18 Months.",
+                "Minimum admission requirements: Bachelor's degree pass or equivalent Or certificate of evaluation on a minimum NQF level 4 for foreign qualifications issued by SAQAOr a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of National N Diploma (TVET). Or completion of any recognised qualification on a minimum of NQF level 5 with at least 120 credits. AND English Language between 30% and 49%.Mathematical Literacy between 30% - 49%. * *Applicable to streams with Economics as area of specialisation.",
+                "Accreditation: This is an access programme which is not registered on the qualifications framework. This programme provides access to Eduvos Bachelor of Arts qualifications that are taught at the same level as those at National Qualifications Framework (NQF) level 5. It is not accredited by the Higher Education Quality Committee (HEQC), nor is it registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-access-programme-eng/",
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Arts in Graphic Design",
+            "slug": "bachelor-of-arts-in-graphic-design",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-graphic-design/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120747.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more.",
+                "Accreditation: • Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE).• Registered with the South African Qualifications Authority (SAQA). • Eduvos is a member of DEFSA:- The Design Education Forum of Southern Africa (DEFSA) is a professional organisation of design educators, spanning most design disciplines such as industrial, graphic, interior, clothing, ceramic, textile, jewellery, as well as commercially focused photography. The forum consists of design educators and practitioners furthering the interests and promoting excellence in design education.- DEFSA is a recognised design educator body (http://www.defsa.org.za/) for educators’ purpose and provides a conference platform to publish research and includes moderators for specialist design subjects. View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-graphic-design/",
+            "subject_requirements": [],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Communication Science and English",
+            "slug": "bachelor-of-arts-communication-science-and-english",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-communication-science-and-english/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-communication-science-and-english/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Industrial Psychology and English Literature Studies",
+            "slug": "bachelor-of-arts-industrial-psychology-and-english-literature-studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-english-literature-studies/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-english-literature-studies/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Industrial Psychology and HR Management",
+            "slug": "bachelor-of-arts-industrial-psychology-and-hr-management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-hr-management/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-hr-management/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Industrial Psychology and Linguistics",
+            "slug": "bachelor-of-arts-industrial-psychology-and-linguistics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-linguistics/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-linguistics/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Industrial Psychology and Political Science",
+            "slug": "bachelor-of-arts-industrial-psychology-and-political-science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-political-science/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-industrial-psychology-and-political-science/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Law and Economics",
+            "slug": "bachelor-of-arts-law-and-economics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-law-and-economics/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce).",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-law-and-economics/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce)."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce)."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos additional BA requirement: 50% or above for Grade 12 Mathematics for students electing Economics as a major. Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce)."
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Law and Politics",
+            "slug": "bachelor-of-arts-law-and-politics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-law-and-politics/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-law-and-politics/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Media Studies",
+            "slug": "bachelor-of-arts-media-studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-media/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos."
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-media/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Politics, Philosophy and Economics",
+            "slug": "bachelor-of-arts-politics-philosophy-and-economics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-politics-philosophy-and-economics/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce)",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-politics-philosophy-and-economics/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce)"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce)"
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos additional BA requirement: 50% or above for Grade 12 Mathematics for students electing Economics as a major. Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent. ANDA student with Mathematics Literacy (50% or more) must enrol for and complete Introduction to Mathematics A and Mathematics for Degree Studies B (Commerce).A student with Mathematics (less than 50% but greater than or equal to 30%) must enrol for Mathematics and complete Degree Studies B (Commerce)"
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Psychology and English Literature Studies",
+            "slug": "bachelor-of-arts-psychology-and-english-literature-studies",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-english-literature-studies/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-english-literature-studies/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent."
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Psychology and HR Management",
+            "slug": "bachelor-of-arts-psychology-and-hr-management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-hr-management/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-hr-management/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Psychology and Linguistics",
+            "slug": "bachelor-of-arts-psychology-and-linguistics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-linguistics/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-linguistics/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Arts: Psychology and Political Science",
+            "slug": "bachelor-of-arts-psychology-and-political-science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-political-science/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120745.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: • Minimum: 3 years• Maximum: 5 years | • Minimum: 5 years• Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more; 50% or above for Grade 12 English. Students electing Economics as a major need 50% or above for Grade 12 or equivalent Mathematics, with bridging conditions noted by Eduvos.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-arts-psychology-and-political-science/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. *Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent."
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Higher Certificate in Art and Design",
+            "slug": "higher-certificate-in-art-and-design",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-art-and-design/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 121378.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree,Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent. Or Recognition of Prior Learning.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) Eduvos is a member of DEFSA: The Design Education Forum of Southern Africa (DEFSA) is a professional organisation of design educators spanning most design disciplines such as industrial, graphic, interior, clothing, ceramic, textile, jewellery, as well as commercially focused photography. The forum consists of design educators and practitioners furthering their interests and promoting excellence in design education. DEFSA is a recognised design educator body (www.defsa.org.za) for educator purposes. It provides a conference platform to publish research and includes moderators for specialist design subjects. View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-art-and-design/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Pre-degree Foundation Programme: Graphic Design",
+            "slug": "pre-degree-foundation-programme-graphic-design",
+            "qualification_type": "Pre-Degree Foundation Programme",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/pre-degree-foundation-programme-graphic-design/.",
+                "Programme type: Pre-Degree.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 2 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics.",
+                "Additional admission requirements from Eduvos Campus Admissions: 17 - 24 Eduvos points or more.",
+                "Accreditation: It is quality assured (externally moderated) by similar higher education institutions.While this programme is not registered on the qualifications framework, this is an access path to Eduvos programmes taught at the same level as those at National Qualifications Framework (NQF) level 5.It is not accredited by the Higher Education Quality Committee (HEQC), nor is it registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/pre-degree-foundation-programme-graphic-design/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        }
+                    ]
+                }
+            ],
+            "admission_score_required": 17
+        },
+        {
+            "name": "Pre-degree Foundation Programme: Social Science",
+            "slug": "pre-degree-foundation-programme-social-science",
+            "qualification_type": "Pre-Degree Foundation Programme",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/pre-degree-foundation-programme-social-science/.",
+                "Programme type: Pre-Degree.",
+                "Faculty: Humanities and Arts.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 2 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics.",
+                "Additional admission requirements from Eduvos Campus Admissions: 17 - 24 Eduvos points or more; 30% or above for Grade 12 Mathematics, Mathematical Literacy or Technical Mathematics.",
+                "Accreditation: It is quality assured (externally moderated) by similar higher education institutions.While this programme is not registered on the qualifications framework, this is an access path to Eduvos programmes taught at the same level as those at National Qualifications Framework (NQF) level 5.It is not accredited by the Higher Education Quality Committee (HEQC), nor is it registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/pre-degree-foundation-programme-social-science/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics/Mathematical Literacy/Technical Mathematics."
+                        }
+                    ]
+                }
+            ],
+            "admission_score_required": 24
+        }
+    ]
+}

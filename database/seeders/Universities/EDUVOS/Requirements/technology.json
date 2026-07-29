@@ -1,0 +1,564 @@
+{
+    "university": "Eduvos",
+    "source": "Eduvos Campus Admissions and undergraduate programme pages",
+    "admission_score_type": "Eduvos points",
+    "name": "Technology",
+    "qualifications": [
+        {
+            "name": "Bachelor of Science Access Programme: Information Technology",
+            "slug": "bachelor-of-science-access-programme-information-technology",
+            "qualification_type": "Access Programme",
+            "duration_years": null,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-access-programme-information-technology/.",
+                "Programme type: Access.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 6 months; Maximum: 18 Months | Minimum: 6 months; Maximum: 12 Months.",
+                "Minimum admission requirements: Bachelor's degree pass or equivalent. Or certificate of evaluation on a minimum NQF level 4 for foreign qualifications issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of National N Diploma (TVET). Or completion of any recognised qualification on a minimum of NQF level 5 with at least 120 credits.AND Mathematics below 30% or Mathematical Literacy below 50%."
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-access-programme-information-technology/",
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Science in Information Technology: Data Science",
+            "slug": "bachelor-of-science-in-information-technology-data-science",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-data-science/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120690.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 years Full-Time (Online) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 years* Subject to CHE Concession on Online Blended Learning..",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1).",
+                "Additional admission requirements from Eduvos Campus Admissions: 50% or above for Grade 12 Mathematics. Eduvos lists bridging modules for Mathematical Literacy 50% or more and for Mathematics below 50% but greater than 30%.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-data-science/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1)."
+                }
+            ],
+            "nqf_level": 7
+        },
+        {
+            "name": "Bachelor of Science in Information Technology: Robotics",
+            "slug": "bachelor-of-science-in-information-technology-robotics",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-robotics/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120690.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 yearsFull-Time (Online) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 years*Subject to CHE Concession on Online Blended Learning..",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1).",
+                "Additional admission requirements from Eduvos Campus Admissions: 50% or above for Grade 12 Mathematics. Eduvos lists bridging modules for Mathematical Literacy 50% or more and for Mathematics below 50% but greater than 30%.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-robotics/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1)."
+                }
+            ],
+            "nqf_level": 7
+        },
+        {
+            "name": "Bachelor of Science in Information Technology: Security and Network Engineering",
+            "slug": "bachelor-of-science-in-information-technology-security-and-network-engineering",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-security-and-network-engineering/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120690.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 yearsFull-Time (Online) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 years* Subject to CHE Concession on Online Blended Learning.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1).",
+                "Additional admission requirements from Eduvos Campus Admissions: 50% or above for Grade 12 Mathematics. Eduvos lists bridging modules for Mathematical Literacy 50% or more and for Mathematics below 50% but greater than 30%.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-security-and-network-engineering/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 Mathematics.Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1)."
+                }
+            ],
+            "nqf_level": 7
+        },
+        {
+            "name": "Bachelor of Science in Information Technology: Software Engineering",
+            "slug": "bachelor-of-science-in-information-technology-software-engineering",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-software-engineering/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120690.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 yearsFull-Time (Online) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. And50% or above for Grade 12 Mathematics. Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1).",
+                "Additional admission requirements from Eduvos Campus Admissions: 50% or above for Grade 12 Mathematics. Eduvos lists bridging modules for Mathematical Literacy 50% or more and for Mathematics below 50% but greater than 30%.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-in-information-technology-software-engineering/",
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. And50% or above for Grade 12 Mathematics. Notes: A student with Mathematics Literacy (50% or more) or with Mathematics (less than 50%, but greater than or equal to 30%) is required to register for and complete Maths for Computing (ITMCA0) before attempting Mathematics 1A (ITMTA1)."
+                }
+            ],
+            "nqf_level": 7
+        },
+        {
+            "name": "Higher Certificate in Computing: Computer Systems Architecture",
+            "slug": "higher-certificate-in-computing-computer-systems-architecture",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher_certificate_in_computing_computer_system_architechture/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120669.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher_certificate_in_computing_computer_system_architechture/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Computing: Data Analytics",
+            "slug": "higher-certificate-in-computing-data-analytics",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher_certificate_in_computing_data_analytics/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120669.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher_certificate_in_computing_data_analytics/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Computing: Software Development Lifecycles",
+            "slug": "higher-certificate-in-computing-software-development-lifecycles",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher_certificate_in_computing_software_development_lifecycles/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120669.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher_certificate_in_computing_software_development_lifecycles/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Computing: Strategic Information Systems",
+            "slug": "higher-certificate-in-computing-strategic-information-systems",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher_certificate_in_computing_strategic_information_systems/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120669.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher_certificate_in_computing_strategic_information_systems/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Computing: Website Design and Development",
+            "slug": "higher-certificate-in-computing-website-design-and-development",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher_certificate_in_computing_website_design_and_development/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120669.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher_certificate_in_computing_website_design_and_development/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Cloud Computing",
+            "slug": "higher-certificate-in-information-systems-cloud-computing",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-cloud-computing/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH), Campus Part Time.",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-cloud-computing/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Cyber Security",
+            "slug": "higher-certificate-in-information-systems-cyber-security",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-cyber-security/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-cyber-security/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Data Analytics",
+            "slug": "higher-certificate-in-information-systems-data-analytics",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-data-analytics/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH), Campus Part Time.",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-data-analytics/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Engineering",
+            "slug": "higher-certificate-in-information-systems-engineering",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-engineering/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-engineering/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Game Design and Development",
+            "slug": "higher-certificate-in-information-systems-game-design-and-development",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher_certificate_in_information_systems_game_design_and_development/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH), Campus Part Time.",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE) Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher_certificate_in_information_systems_game_design_and_development/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Machine Learning",
+            "slug": "higher-certificate-in-information-systems-machine-learning",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-machine-learning/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH), Campus Part Time.",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Additional Eduvos programme page for another study mode: https://www.eduvos.com/programmes/highercert-test/.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-machine-learning/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Network Engineering",
+            "slug": "higher-certificate-in-information-systems-network-engineering",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-network-engineering/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-network-engineering/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Robotics and Intelligent Systems",
+            "slug": "higher-certificate-in-information-systems-robotics-and-intelligent-systems",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-robotics-and-intelligent-systems/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-robotics-and-intelligent-systems/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Software Development",
+            "slug": "higher-certificate-in-information-systems-software-development",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-software-development/.",
+                "Programme type: Higher Certificate.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-software-development/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Higher Certificate in Information Systems: Web Development",
+            "slug": "higher-certificate-in-information-systems-web-development",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher-certificate-in-information-systems-web-development/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120688.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Minimum: 1 year; Maximum: 3 years | Minimum: 2 years; Maximum: 4 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher-certificate-in-information-systems-web-development/",
+            "subject_requirements": [],
+            "nqf_level": 5
+        },
+        {
+            "name": "Pre-degree Foundation Programme: Information Technology",
+            "slug": "pre-degree-foundation-programme-information-technology",
+            "qualification_type": "Pre-Degree Foundation Programme",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/pre-degree-foundation-programme-information-technology/.",
+                "Programme type: Pre-Degree.",
+                "Faculty: Technology.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 2 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics.",
+                "Additional admission requirements from Eduvos Campus Admissions: 24 or more Eduvos points; 30% or above for Grade 12 or equivalent Mathematics.",
+                "Accreditation: It is quality assured (externally moderated) by similar higher education institutions.While this programme is not registered on the qualifications framework, this is an access path to Eduvos programmes taught at the same level as those at National Qualifications Framework (NQF) level 5.It is not accredited by the Higher Education Quality Committee (HEQC), nor is it registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/pre-degree-foundation-programme-information-technology/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "minimum_level": 2,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics."
+                }
+            ],
+            "admission_score_required": 24
+        }
+    ]
+}

@@ -1,92 +1,34 @@
 {
     "faculty": "Finance and Accounting",
-    "university": "The IIE's Varsity College",
-    "source": "The IIE Institutional Prospectus 2026",
+    "university": "Emeris",
+    "source": "Emeris qualification pages",
     "admission_score_type": "Pass type + subject percentage requirements",
     "qualifications": [
         {
-            "name": "Higher Certificate in Bookkeeping",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Business Accounting",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Bachelor of Accounting",
+            "slug": "bachelor-of-accounting",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BAC0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, Mathematics 50%, Mathematical Literacy or Technical Mathematics 80%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR Senior Certificate (SC): Endorsement pass, with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR Senior Certificate (Amended) [SC(a)]: Bachelor pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths For International Qualifications: An USAf Exemption Certificate and meeting the relevant Maths and English requirements. Alternatively, A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton, Durban North, Durban Westville, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BAC0701.",
+                "Credits: 360.",
+                "SAQA ID: 99284.",
+                "Accreditation: The IIE Bachelor of Accounting degree is endorsed by the South African Institute of Chartered Accountants (SAICA) as an undergraduate degree to prepare students for the Chartered Accountant qualification. This qualification is accredited by the Council of Higher Education (CHE) and registered on the National Qualifications Framework (NQF) by the South African Qualifications Authority (SAQA) as a 360-credit qualification on level 7 (SAQA ID: 99284)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-accounting",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -94,35 +36,101 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
                         }
                     ]
                 },
                 {
-                    "subject": "Mathematics",
-                    "minimum_mark": 50,
-                    "minimum_level": 4,
-                    "note": "Original subject requirement: Mathematics: 50%."
-                },
-                {
                     "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
+                        },
                         {
                             "subject": "Mathematical Literacy",
                             "minimum_mark": 80,
                             "minimum_level": 7,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 80%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
                         },
                         {
                             "subject": "Technical Mathematics",
                             "minimum_mark": 80,
                             "minimum_level": 7,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 80%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Accounting (Online)",
+            "slug": "online-bachelor-of-accounting",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BAC0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR National Certificate (Vocational) [NC(V)]:Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR Senior Certificate (SC):Endorsement pass, with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR Senior Certificate (Amended) [SC(a)]:Bachelor pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths For International Qualifications:An USAf Exemption Certificate and meeting the relevant Maths and English requirements. Alternatively, A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 4 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BAC0701.",
+                "Credits: 360.",
+                "SAQA ID: 99284.",
+                "Accreditation: The IIE Bachelor of Accounting degree is endorsed by the South African Institute of Chartered Accountants (SAICA) as an undergraduate degree to prepare students for the Chartered Accountant qualification. This qualification is accredited by the Council of Higher Education (CHE) and registered on the National Qualifications Framework (NQF) by the South African Qualifications Authority (SAQA) as a 360-credit qualification on level 7 (SAQA ID: 99284)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-accounting",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 80,
+                            "minimum_level": 7,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 80,
+                            "minimum_level": 7,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English; 50% for Maths (HG) or 80% for Maths Lit/SG/Technical Maths OR"
                         }
                     ]
                 }

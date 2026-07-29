@@ -12,6 +12,7 @@ use App\Models\QualificationSubjectRequirement;
 use App\Models\QualificationType;
 use App\Models\University;
 use App\Models\UniversityAdmissionRule;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
@@ -74,6 +75,82 @@ class PublicSeoQualificationPagesTest extends TestCase
         $response->assertSee('UP APS');
         $response->assertSee('Check your full subject-level eligibility');
         $response->assertDontSee('Sign up to view this course');
+    }
+
+    public function test_logged_in_user_with_saved_marks_gets_return_to_matches_action_on_qualification_page(): void
+    {
+        $records = $this->createPublicQualificationRecords();
+        $university = $records['university'];
+        $qualification = $records['qualification'];
+        $now = now();
+
+        $userTypeId = DB::table('user_types')->insertGetId([
+            'name' => 'Learner',
+            'description' => 'School learner',
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        $subjectCategoryId = DB::table('subject_categories')->insertGetId([
+            'name' => 'Languages',
+            'sort_order' => 1,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        $termId = DB::table('terms')->insertGetId([
+            'curriculum_id' => $records['curriculum_id'],
+            'grade_id' => $records['grade']->id,
+            'name' => 'Term 1',
+            'from_date' => '2026-01-15',
+            'to_date' => '2026-03-31',
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        $subjectId = DB::table('subjects')->insertGetId([
+            'curriculum_id' => $records['curriculum_id'],
+            'grade_id' => $records['grade']->id,
+            'subject_category_id' => $subjectCategoryId,
+            'name' => 'English Home Language',
+            'code' => 'ENGHL',
+            'abbreviation' => 'ENG HL',
+            'sort_order' => 1,
+            'is_live' => true,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+        $user = User::factory()->create([
+            'name' => 'Saved Learner',
+            'user_type_id' => $userTypeId,
+            'curriculum_id' => $records['curriculum_id'],
+            'grade_id' => $records['grade']->id,
+            'country_id' => $records['country_id'],
+        ]);
+
+        DB::table('user_subject_results')->insert([
+            'user_id' => $user->id,
+            'grade_id' => $records['grade']->id,
+            'term_id' => $termId,
+            'subject_id' => $subjectId,
+            'mark' => 65,
+            'aps_score' => 5,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
+
+        $returnTo = route('course-match.index', [], false).'?search=Accounting#match-results';
+        $response = $this->actingAs($user)->get(route('public.qualifications.show', [
+            'university' => $university->slug,
+            'qualification' => $qualification->slug,
+            'from' => 'course-match',
+            'return_to' => $returnTo,
+        ]));
+
+        $response->assertOk();
+        $response->assertSee('Back to Course matches');
+        $response->assertSee('Your match view is ready');
+        $response->assertSee('href="'.$returnTo.'"', false);
+        $response->assertDontSee('Check My Full Eligibility');
+        $response->assertDontSee('Create a Free Account');
+        $response->assertDontSee('Create a free Chamu account');
     }
 
     public function test_public_qualification_page_displays_aggregate_average_and_subject_choice_requirements(): void
@@ -257,6 +334,8 @@ class PublicSeoQualificationPagesTest extends TestCase
 
         return [
             'country_id' => $countryId,
+            'curriculum_id' => $curriculumId,
+            'grade' => $grade,
             'university' => $university,
             'qualification' => $qualification,
         ];

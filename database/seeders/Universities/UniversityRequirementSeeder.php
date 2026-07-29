@@ -26,6 +26,11 @@ abstract class UniversityRequirementSeeder extends Seeder
         return null;
     }
 
+    protected function preferredUniversitySlug(): ?string
+    {
+        return null;
+    }
+
     protected function facultyAdmissionRuleCode(array $facultyData): ?string
     {
         return null;
@@ -377,7 +382,7 @@ abstract class UniversityRequirementSeeder extends Seeder
             return $existing->slug;
         }
 
-        $base = Str::slug($this->universityName()) ?: 'university';
+        $base = Str::slug((string) ($this->preferredUniversitySlug() ?? $this->universityName())) ?: 'university';
         $slug = $base;
         $suffix = 2;
 
@@ -396,6 +401,16 @@ abstract class UniversityRequirementSeeder extends Seeder
     {
         if (! Schema::hasColumn('qualifications', 'slug')) {
             return null;
+        }
+
+        $explicitSlug = Str::slug((string) ($qualificationData['slug'] ?? ''));
+
+        if ($explicitSlug !== '' && ! DB::table('qualifications')
+            ->where('university_id', $universityId)
+            ->where('slug', $explicitSlug)
+            ->when($existing?->id, fn ($query) => $query->where('id', '<>', $existing->id))
+            ->exists()) {
+            return $explicitSlug;
         }
 
         if ($existing?->slug) {

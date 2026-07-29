@@ -1,0 +1,251 @@
+{
+    "university": "Eduvos",
+    "source": "Eduvos Campus Admissions and undergraduate programme pages",
+    "admission_score_type": "Eduvos points",
+    "name": "Applied Sciences",
+    "qualifications": [
+        {
+            "name": "Bachelor of Science Access Programme: Science",
+            "slug": "bachelor-of-science-access-programme-science",
+            "qualification_type": "Access Programme",
+            "duration_years": null,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-access-programme-science/.",
+                "Programme type: Access.",
+                "Faculty: Applied Sciences.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 6 months; Maximum: 18 Months.",
+                "Minimum admission requirements: Bachelor's degree pass or equivalent. Or certificate of evaluation on a minimum NQF level 4 for foreign qualifications issued by SAQA. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of National N Diploma (TVET). Or completion of any recognised qualification on a minimum of NQF level 5 with at least 120 credits. AND Any of the following:English Language between 40% and 49% in Grade 12 or equivalent. No Physical Science on NSC Grade 12 or equivalent. Physical Science below 50% on NSC Grade 12 or equivalent. Mathematics between 30% and 49% on NSC Grade 12 or equivalent. Mathematical Literacy equal or above 50% on NSC Grade 12 or equivalent. Life Sciences/Biology between 30% and 49% on NSC Grade 12 or equivalent"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-access-programme-science/",
+            "subject_requirements": []
+        },
+        {
+            "name": "Bachelor of Science in Biomedicine",
+            "slug": "bachelor-of-science-in-biomedicine",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-in-biomedicine/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120718.",
+                "Faculty: Applied Sciences.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 3 years; Maximum: 5 yearsFull-time.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English. 50% or above for Grade 12 Mathematics. 50% or above for Grade 12 Life Science/Biology. 50% or above for Grade 12 Physical Science.",
+                "Additional admission requirements from Eduvos Campus Admissions: 32 Eduvos points or more; 50% or above for Grade 12 English, Mathematics and Biology/Life Sciences. Eduvos also notes that the points for the best two of Biology/Life Sciences, Mathematics, Chemistry, Physics and Physical Science are doubled.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-in-biomedicine/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English. 50% or above for Grade 12 Mathematics. 50% or above for Grade 12 Life Science/Biology. 50% or above for Grade 12 Physical Science."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English. 50% or above for Grade 12 Mathematics. 50% or above for Grade 12 Life Science/Biology. 50% or above for Grade 12 Physical Science."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English. 50% or above for Grade 12 Mathematics. 50% or above for Grade 12 Life Science/Biology. 50% or above for Grade 12 Physical Science."
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English. 50% or above for Grade 12 Mathematics. 50% or above for Grade 12 Life Science/Biology. 50% or above for Grade 12 Physical Science."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.AND 50% or above for Grade 12 English. 50% or above for Grade 12 Mathematics. 50% or above for Grade 12 Life Science/Biology. 50% or above for Grade 12 Physical Science."
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 32
+        },
+        {
+            "name": "Bachelor of Science in Biotechnology Management",
+            "slug": "bachelor-of-science-in-biotechnology-management",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-science-in-biotechnology-management/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120719.",
+                "Faculty: Applied Sciences.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Full-time Minimum: 3 years; Maximum: 5 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate Or completion of the relevant Eduvos Access Programme AND 50% or above for Grade 12 English50% or above for Grade 12 Mathematics50% or above for Grade 12 Life Science/Biology50% or above for Grade 12 Physical Science.",
+                "Additional admission requirements from Eduvos Campus Admissions: 32 Eduvos points or more; 50% or above for Grade 12 English, Mathematics and Biology/Life Sciences. Eduvos also notes that the points for the best two of Biology/Life Sciences, Mathematics, Chemistry, Physics and Physical Science are doubled.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE). Registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-science-in-biotechnology-management/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate Or completion of the relevant Eduvos Access Programme AND 50% or above for Grade 12 English50% or above for Grade 12 Mathematics50% or above for Grade 12 Life Science/Biology50% or above for Grade 12 Physical Science."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate Or completion of the relevant Eduvos Access Programme AND 50% or above for Grade 12 English50% or above for Grade 12 Mathematics50% or above for Grade 12 Life Science/Biology50% or above for Grade 12 Physical Science."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate Or completion of the relevant Eduvos Access Programme AND 50% or above for Grade 12 English50% or above for Grade 12 Mathematics50% or above for Grade 12 Life Science/Biology50% or above for Grade 12 Physical Science."
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate Or completion of the relevant Eduvos Access Programme AND 50% or above for Grade 12 English50% or above for Grade 12 Mathematics50% or above for Grade 12 Life Science/Biology50% or above for Grade 12 Physical Science."
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 50,
+                    "minimum_level": 4,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate Or completion of the relevant Eduvos Access Programme AND 50% or above for Grade 12 English50% or above for Grade 12 Mathematics50% or above for Grade 12 Life Science/Biology50% or above for Grade 12 Physical Science."
+                }
+            ],
+            "nqf_level": 7,
+            "admission_score_required": 32
+        },
+        {
+            "name": "Higher Certificate in Bioscience",
+            "slug": "higher-certificate-in-bioscience",
+            "qualification_type": "Higher Certificate",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/higher_certificate_in_bioscience/.",
+                "Programme type: Higher Certificate.",
+                "SAQA ID: 120666.",
+                "Faculty: Applied Sciences.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 3 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent. ANDA minimum of 40% for Grade 12 or equivalent English Language. Or a minimum of 40% for Grade 12 or equivalent Mathematics. Or a minimum of 50% in Mathematical Literacy.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/higher_certificate_in_bioscience/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent. ANDA minimum of 40% for Grade 12 or equivalent English Language. Or a minimum of 40% for Grade 12 or equivalent Mathematics. Or a minimum of 50% in Mathematical Literacy."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent. ANDA minimum of 40% for Grade 12 or equivalent English Language. Or a minimum of 40% for Grade 12 or equivalent Mathematics. Or a minimum of 50% in Mathematical Literacy."
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent. ANDA minimum of 40% for Grade 12 or equivalent English Language. Or a minimum of 40% for Grade 12 or equivalent Mathematics. Or a minimum of 50% in Mathematical Literacy."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree, Diploma or Higher Certificate pass. Or a certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree, Diploma, Higher Certificate or equivalent. ANDA minimum of 40% for Grade 12 or equivalent English Language. Or a minimum of 40% for Grade 12 or equivalent Mathematics. Or a minimum of 50% in Mathematical Literacy."
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 5
+        },
+        {
+            "name": "Pre-degree Foundation Programme: Science",
+            "slug": "pre-degree-foundation-programme-science",
+            "qualification_type": "Pre-Degree Foundation Programme",
+            "duration_years": 1,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/pre-degree-foundation-programme-science/.",
+                "Programme type: Pre-Degree.",
+                "Faculty: Applied Sciences.",
+                "Available study modes: Campus Full Time.",
+                "Duration: Minimum: 1 year; Maximum: 2 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics.",
+                "Additional admission requirements from Eduvos Campus Admissions: 24 or more Eduvos points; 30% or above for Grade 12 or equivalent Mathematics.",
+                "Accreditation: It is quality assured (externally moderated) by similar higher education institutions.While this programme is not registered on the qualifications framework, this is an access path to Eduvos programmes taught at the same level as those at National Qualifications Framework (NQF) level 5.It is not accredited by the Higher Education Quality Committee (HEQC), nor is it registered with the South African Qualifications Authority (SAQA). View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/pre-degree-foundation-programme-science/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics."
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 30,
+                    "minimum_level": 2,
+                    "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree, Diploma or Higher Certificate pass. Or a National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with Bachelor’s degree, Diploma or Higher Certificate pass. Or a Certificate of evaluation on a minimum NQF level 4 for foreign qualification issued by SAQA. Or a letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. AND 40% or above for Grade 12 or equivalent in English as a home or first additional language.30% or above for Grade 12 or equivalent Mathematics."
+                }
+            ],
+            "admission_score_required": 24
+        }
+    ]
+}

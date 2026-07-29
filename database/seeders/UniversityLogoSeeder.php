@@ -11,6 +11,7 @@ class UniversityLogoSeeder extends Seeder
         'CPUT' => 'images/universities/cput.png',
         'CUT' => 'https://www.cut.ac.za/Images/Site/cut-u-logo.png',
         'DUT' => 'https://www.dut.ac.za/wp-content/uploads/2026/03/DUT-Logo_new-1.png',
+        'EDUVOS' => 'https://www.eduvos.com/logo.png',
         'NMU' => 'https://webapps.mandela.ac.za/design/Resources/images/logos/FullColourLogo.PNG',
         'NWU' => 'https://www.nwu.ac.za/sites/www.nwu.ac.za/files/NWU-logo-pers_1.png',
         'RU' => 'https://www.ru.ac.za/media/rhodesuniversity/styleassets/2019v6/images/RU_Logo_1.png',

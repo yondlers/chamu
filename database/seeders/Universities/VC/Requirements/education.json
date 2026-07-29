@@ -1,38 +1,92 @@
 {
     "faculty": "Education",
-    "university": "The IIE's Varsity College",
-    "source": "The IIE Institutional Prospectus 2026",
+    "university": "Emeris",
+    "source": "Emeris qualification pages",
     "admission_score_type": "Pass type + subject percentage requirements",
     "qualifications": [
         {
-            "name": "Higher Certificate in Early Childhood Care and Education",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
+            "name": "Bachelor of Education in Foundation Phase Teaching",
+            "slug": "bachelor-of-education-in-foundation-phase-teaching",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BEF0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 40%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL). National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL). Senior Certificate (SC): Endorsement pass with 50% for English and 40% for First Additional Language (FAL). Senior Certificate (Amended) [SC(a)]: Degree pass with 50% for English and 40% for First Additional Language (FAL). Alternate Admission: A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies. 50% for English on NSC or equivalent 40% for First Additional Language (FAL) on NSC or equivalent 50% for English on NSC or equivalent",
+                "Duration: 4 years full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BEF0701.",
+                "Credits: 480.",
+                "SAQA ID: 96408.",
+                "Accreditation: The IIE Bachelor of Education in Foundation Phase Teaching is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 482-credit qualification on level 7 (SAQA ID: 96408)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-education-in-foundation-phase-teaching",
             "subject_requirements": [
                 {
                     "one_of": [
                         {
                             "subject": "English Home Language",
-                            "minimum_mark": 40,
-                            "minimum_level": 3,
-                            "note": "Original subject requirement: English: 40%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL)."
                         },
                         {
                             "subject": "English First Additional Language",
-                            "minimum_mark": 40,
-                            "minimum_level": 3,
-                            "note": "Original subject requirement: English: 40%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL)."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Foundation Phase Teaching (Online)",
+            "slug": "online-bachelor-of-education-in-foundation-phase-teaching",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BEF0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL). National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL). Senior Certificate (SC): Endorsement pass, with 50% for English and 40% for First Additional Language (FAL). Senior Certificate (Amended) [SC(a)]: Degree pass with 50% for English and 40% for First Additional Language (FAL). Alternate Admission: A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies. 50% for English on NSC or equivalent 40% for First Additional Language (FAL) on NSC or equivalent 50% for English on NSC or equivalent",
+                "Duration: 4 years full-time / 5-6 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BEF0701.",
+                "Credits: 480.",
+                "SAQA ID: 96408.",
+                "Accreditation: The IIE Bachelor of Education in Foundation Phase Teaching is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 482-credit qualification on level 7 (SAQA ID: 96408)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-education-in-foundation-phase-teaching",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL)."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL)."
                         }
                     ]
                 }
@@ -40,19 +94,29 @@
         },
         {
             "name": "Bachelor of Education in Intermediate Phase Teaching",
+            "slug": "bachelor-of-education-in-intermediate-phase-teaching",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BEI0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, First Additional Language 40%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR Senior Certificate (SC): Endorsement pass, with 50% for English and 40% for First Additional Language (FAL); OR Senior Certificate (Amended) [SC(a)]: Degree pass with 50% for English and 40% for First Additional Language (FAL); OR Alternatively, a cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies. 50% for English on NSC or equivalent 40% for First Additional Language (FAL) on NSC or equivalent 50% for English on NSC or equivalent",
+                "Duration: 4 years full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BEI0701.",
+                "Credits: 480.",
+                "SAQA ID: 97235.",
+                "Accreditation: The IIE Bachelor of Education in Intermediate Phase Teaching is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 511-credit qualification on level 7 (SAQA ID: 97235)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-education-in-intermediate-phase-teaching",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -60,39 +124,43 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR"
                         }
                     ]
-                },
-                {
-                    "subject": "First Additional Language",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: First Additional Language: 40%."
                 }
             ]
         },
         {
-            "name": "Bachelor of Education in Foundation Phase Teaching",
+            "name": "Bachelor of Education in Intermediate Phase Teaching (Online)",
+            "slug": "online-bachelor-of-education-in-intermediate-phase-teaching",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BEI0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, First Additional Language 40%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR Senior Certificate (SC): Endorsement pass, with 50% for English and 40% for First Additional Language (FAL); OR Senior Certificate (Amended) [SC(a)]: Degree pass with 50% for English and 40% for First Additional Language (FAL); OR Alternate Admission: A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies. 50% for English on NSC or equivalent 40% for First Additional Language (FAL) on NSC or equivalent 50% for English on NSC or equivalent",
+                "Duration: 4 years full-time / 5-6 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BEI0701.",
+                "Credits: 480.",
+                "SAQA ID: 97235.",
+                "Accreditation: The IIE Bachelor of Education in Intermediate Phase Teaching is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 511-credit qualification on level 7 (SAQA ID: 97235)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-education-in-intermediate-phase-teaching",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -100,21 +168,103 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English and 40% for First Additional Language (FAL); OR"
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Early Childhood Care and Education",
+            "slug": "higher-certificate-in-early-childhood-care-and-education",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "Higher Certificate",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 40% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 40% Senior Certificate (Amended) [SC(a)]: Higher Certificate pass with English at 40% National Senior Certificate for Adults (NASCA): 40% International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 40% or equivalent for English",
+                "Duration: 1 year full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: Higher Certificate.",
+                "Credits: 120.",
+                "SAQA ID: 104532.",
+                "Accreditation: The IIE Higher Certificate in Early Childhood Care and Education is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 137-credit qualification on level 5 (SAQA ID: 104532)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/higher-certificate-in-early-childhood-care-and-education",
+            "subject_requirements": [
                 {
-                    "subject": "First Additional Language",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: First Additional Language: 40%."
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 40%"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 40%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Early Childhood Care and Education (Online)",
+            "slug": "online-higher-certificate-in-early-childhood-care-and-education",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "Higher Certificate",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 40% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 40% Senior Certificate (Amended) [SC(a)]: Higher Certificate pass with English at 40% National Senior Certificate for Adults (NASCA): 40% International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 40% or equivalent for English",
+                "Duration: 1 year full-time / 2 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: Higher Certificate.",
+                "Credits: 120.",
+                "SAQA ID: 104532.",
+                "Accreditation: The IIE Higher Certificate in Early Childhood Care and Education is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 137-credit qualification on level 5 (SAQA ID: 104532)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/higher-certificate-in-early-childhood-care-and-education",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 40%"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 40%"
+                        }
+                    ]
                 }
             ]
         }

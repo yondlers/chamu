@@ -1,0 +1,74 @@
+{
+    "university": "Eduvos",
+    "source": "Eduvos Campus Admissions and undergraduate programme pages",
+    "admission_score_type": "Eduvos points",
+    "name": "Law",
+    "qualifications": [
+        {
+            "name": "Bachelor of Commerce in Law",
+            "slug": "bachelor-of-commerce-in-law",
+            "qualification_type": "Bachelor",
+            "duration_years": 3,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-commerce-in-law/.",
+                "Programme type: Degree.",
+                "SAQA ID: 120724.",
+                "Faculty: Law.",
+                "Available study modes: Distance Online Full Time, Distance Online Part Time, Campus Full Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: Full-Time (Campus) Minimum: 3 years; Maximum: 5 yearsFull-Time (Online) Minimum: 3 years; Maximum: 5 yearsFull-Time (Distance) Minimum: 3 years; Maximum: 5 years | Part-Time (Online) Minimum: 5 years; Maximum: 7 yearsPart-Time (Distance) Minimum: 5 years; Maximum: 7 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass. Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme.",
+                "Additional admission requirements from Eduvos Campus Admissions: 25 Eduvos points or more.",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA)Accredited by the South African Board of People Practitioners (SABPP) - Applicable to HR modules of this qualification View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-commerce-in-law/",
+            "subject_requirements": [],
+            "nqf_level": 7,
+            "admission_score_required": 25
+        },
+        {
+            "name": "Bachelor of Laws",
+            "slug": "bachelor-of-laws",
+            "qualification_type": "Bachelor",
+            "duration_years": 4,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Eduvos Campus Admissions page.",
+                "Admission score type: Eduvos points. Life Orientation is granted 3 points from any percentage above 40%; other NSC subjects use the Eduvos 8-to-1 percentage band scale.",
+                "Programme source: https://www.eduvos.com/programmes/bachelor-of-laws/.",
+                "Programme type: Degree.",
+                "Faculty: Law.",
+                "Available study modes: Distance Online Full Time, Distance Online Part Time, Online Part Time (PTAH), Online Full Time (FTAH).",
+                "Duration: (Optional on-campus support at any of our 12 campuses) Full-Time (Distance/Online - Campus Hours) Minimum: 4 years; Maximum: 6 years(Online support and lectures)Full-Time (Distance/Online - After Hours) Minimum: 4 years; Maximum: 6 years | (Optional on-campus support at any of our 12 campuses) Full-Time (Distance/Online - Campus Hours)Part-Time Minimum: 6 years; Maximum: 8 years(Online support and lectures)Full-Time (Distance/Online - After Hours)Part-Time Minimum: 6 years; Maximum: 8 years.",
+                "Minimum admission requirements: South African National Senior Certificate (NSC) with Bachelor’s degree pass.* Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent",
+                "Accreditation: Accredited by the Higher Education Quality Committee (HEQC) of the Council on Higher Education (CHE)Registered with the South African Qualifications Authority (SAQA) View all Eduvos institutional accreditations →"
+            ],
+            "source_url": "https://www.eduvos.com/programmes/bachelor-of-laws/",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass.* Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Eduvos entry requirement: South African National Senior Certificate (NSC) with Bachelor’s degree pass.* Or National Certificate (Vocational) Level 4 issued by the Council of General and Further Education and Training with a Bachelor’s degree pass. Or letter or certificate confirming an exemption from Universities South Africa (USAf) for any other school-leaving results. Or completion of a Bachelor’s degree. Or completion of the relevant Foundation Programme along with a letter or certificate of exemption from Universities South Africa (USAf). Or completion of a relevant Higher Certificate. Or completion of the relevant Eduvos Access Programme. AND 50% or above for Grade 12 English or equivalent"
+                        }
+                    ]
+                }
+            ],
+            "nqf_level": 7
+        }
+    ]
+}

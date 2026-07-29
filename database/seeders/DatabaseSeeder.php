@@ -9,6 +9,7 @@ use Database\Seeders\Universities\CJC\RequirementSeeder as CjcRequirementSeeder;
 use Database\Seeders\Universities\CPUT\RequirementSeeder as CputRequirementSeeder;
 use Database\Seeders\Universities\CUT\RequirementSeeder as CutRequirementSeeder;
 use Database\Seeders\Universities\DUT\RequirementSeeder as DutRequirementSeeder;
+use Database\Seeders\Universities\EDUVOS\RequirementSeeder as EduvosRequirementSeeder;
 use Database\Seeders\Universities\NMU\RequirementSeeder as NmuRequirementSeeder;
 use Database\Seeders\Universities\NWU\RequirementSeeder as NwuRequirementSeeder;
 use Database\Seeders\Universities\RU\RequirementSeeder as RuRequirementSeeder;
@@ -123,6 +124,7 @@ class DatabaseSeeder extends Seeder
             DutRequirementSeeder::class,
             UwcRequirementSeeder::class,
             VcRequirementSeeder::class,
+            EduvosRequirementSeeder::class,
             VutRequirementSeeder::class,
             WsuRequirementSeeder::class,
             RuRequirementSeeder::class,

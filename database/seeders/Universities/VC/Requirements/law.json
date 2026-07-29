@@ -1,58 +1,34 @@
 {
     "faculty": "Law",
-    "university": "The IIE's Varsity College",
-    "source": "The IIE Institutional Prospectus 2026",
+    "university": "Emeris",
+    "source": "Emeris qualification pages",
     "admission_score_type": "Pass type + subject percentage requirements",
     "qualifications": [
         {
-            "name": "Higher Certificate in Legal Studies",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 40%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 40,
-                            "minimum_level": 3,
-                            "note": "Original subject requirement: English: 40%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 40,
-                            "minimum_level": 3,
-                            "note": "Original subject requirement: English: 40%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Bachelor of Arts in Law",
+            "slug": "bachelor-of-arts-in-law",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BALW0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English; OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 60% for English; OR Senior Certificate (SC): Endorsement pass, with 60% for English; OR Senior Certificate (Amended) [SC(a)]: Bachelor pass with 60% for English. For International Qualifications: An USAf Exemption Certificate with 60% or equivalent for English. Alternatively, a cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies",
+                "Duration: 3 years full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Sandton Johannesburg, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site).",
+                "Course code: BALW0701.",
+                "Credits: 360.",
+                "SAQA ID: 105123.",
+                "Accreditation: The IIE Bachelor of Arts in Law degree is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 360-credit qualification on level 7 (SAQA ID: 105123)"
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-arts-in-law",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -60,13 +36,13 @@
                             "subject": "English Home Language",
                             "minimum_mark": 60,
                             "minimum_level": 5,
-                            "note": "Original subject requirement: English: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English; OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 60,
                             "minimum_level": 5,
-                            "note": "Original subject requirement: English: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English; OR"
                         }
                     ]
                 }
@@ -74,19 +50,29 @@
         },
         {
             "name": "Bachelor of Commerce in Law",
+            "slug": "bachelor-of-commerce-in-law",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BCEL0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, Mathematics 30%, Mathematical Literacy or Technical Mathematics 50%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths. National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics. Senior Certificate (SC): Endorsement pass, with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. Senior Certificate (Amended) [SC(a)]: Bachelor pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. International Qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements. Alternate Admission: A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies. If discipline not cognate, at least 20% of credits must be academic literacy or numeracy related.",
+                "Duration: 3 years full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban North, Pietermaritzburg, Durban Westville, Cape Town Newlands.",
+                "Mode of study: Contact (on-site).",
+                "Course code: BCEL0701.",
+                "Credits: 360.",
+                "SAQA ID: 93729.",
+                "Accreditation: The IIE Bachelor of Commerce in Law degree is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 376-credit qualification on level 7 (SAQA ID: 93729)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-commerce-in-law",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -94,35 +80,35 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         }
                     ]
                 },
                 {
-                    "subject": "Mathematics",
-                    "minimum_mark": 30,
-                    "minimum_level": 2,
-                    "note": "Original subject requirement: Mathematics: 30%."
-                },
-                {
                     "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        },
                         {
                             "subject": "Mathematical Literacy",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "Technical Mathematics",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         }
                     ]
                 }
@@ -130,19 +116,28 @@
         },
         {
             "name": "Bachelor of Laws",
+            "slug": "bachelor-of-laws",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BLAW0803",
+            "duration_years": 4,
+            "nqf_level": 8,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 60%, Mathematics 50%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics; OR Senior Certificate (SC): Endorsement pass, with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics; OR Senior Certificate (Amended) [SC(a)]: Bachelor pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics. To note: Once you have graduated with the IIE Bachelor of Laws and want to be eligible to practice as an attorney or advocate of the High Court in South Africa, you need to be a citizen or permanent resident of South Africa. For International Qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements.",
+                "Duration: 4 years full-time.",
+                "Intake: January.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban North, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BLAW0803.",
+                "SAQA ID: 101647.",
+                "Accreditation: The IIE Bachelor of Laws degree is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 530- credit qualification on level 8 (SAQA ID: 101647)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-laws",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -150,35 +145,188 @@
                             "subject": "English Home Language",
                             "minimum_mark": 60,
                             "minimum_level": 5,
-                            "note": "Original subject requirement: English: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 60,
                             "minimum_level": 5,
-                            "note": "Original subject requirement: English: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
                         }
                     ]
                 },
                 {
-                    "subject": "Mathematics",
-                    "minimum_mark": 50,
-                    "minimum_level": 4,
-                    "note": "Original subject requirement: Mathematics: 50%."
-                },
-                {
                     "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
                         {
                             "subject": "Mathematical Literacy",
                             "minimum_mark": 60,
                             "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
                         },
                         {
                             "subject": "Technical Mathematics",
                             "minimum_mark": 60,
                             "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Laws (Online)",
+            "slug": "online-bachelor-of-laws",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BLAW0803",
+            "duration_years": 4,
+            "nqf_level": 8,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics; OR Senior Certificate (SC): Endorsement pass, with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics; OR Senior Certificate (Amended) [SC(a)]: Bachelor pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics. To Note: Once you have graduated with the IIE Bachelor of Laws and want to be eligible to practice as an attorney or advocate of the High Court in South Africa, you need to be a citizen or permanent resident of South Africa. International Qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements.",
+                "Duration: 4 year full-time / 7 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BLAW0803.",
+                "SAQA ID: 101647.",
+                "Accreditation: The IIE Bachelor of Laws degree is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 530- credit qualification on level 8 (SAQA ID: 101647)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-laws",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 60% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Legal Studies",
+            "slug": "higher-certificate-in-legal-studies",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HCLS0501",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "nsc",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): HC pass with 40% for English; OR National Certificate (Vocational) [NC(V)]: HC pass with 40% for English; OR Senior Certificate (SC): Endorsement pass, with 40% for English; OR Senior Certificate (Amended) [SC(a)]: HC pass with 40% for English; OR For International Qualifications: A SAQA Evaluation Certificate with NSC Level 4 equivalence with at least 40% or equivalent for English.",
+                "Duration: 1 year full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban North, Pietermaritzburg, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: HCLS0501.",
+                "Credits: 120.",
+                "SAQA ID: 94696.",
+                "Accreditation: The IIE Higher Certificate in Legal Studies is accredited by the Higher Education Quality Council (HEQC) of the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 120-credit qualification on level 5 (SAQA ID: 94696)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/higher-certificate-in-legal-studies",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): HC pass with 40% for English; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): HC pass with 40% for English; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Legal Studies (Online)",
+            "slug": "online-higher-certificate-in-legal-studies",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HCLS0501",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "nsc",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): HC pass with 40% for English; OR National Certificate (Vocational) [NC(V)]: HC pass with 40% for English; OR Senior Certificate (SC): Endorsement pass, with 40% for English; OR Senior Certificate (Amended) [SC(a)]: HC pass with 40% for English; OR For International Qualifications: A SAQA Evaluation Certificate with NSC Level 4 equivalence with at least 40% or equivalent for English.",
+                "Duration: 1 year full-time / 2 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: HCLS0501.",
+                "Credits: 120.",
+                "SAQA ID: 94696.",
+                "Accreditation: The IIE Higher Certificate in Legal Studies is accredited by the Higher Education Quality Council (HEQC) of the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 120-credit qualification on level 5 (SAQA ID: 94696)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/higher-certificate-in-legal-studies",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): HC pass with 40% for English; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): HC pass with 40% for English; OR"
                         }
                     ]
                 }

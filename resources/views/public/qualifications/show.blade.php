@@ -37,14 +37,16 @@
                         <p class="mt-4 max-w-3xl text-base leading-7 text-neutral-600">
                             @if ($isTvetCollegeQualification)
                                 Public college entry information for {{ $qualification->name }} at {{ $university->name }}. TVET programmes can use school grade, equivalent NQF/NC(V)/NATED routes, subject marks, campus availability and selection notes rather than a single university-style APS.
+                            @elseif ($usesPassTypeAdmission)
+                                Public admission information for {{ $qualification->name }} at {{ $university->name }}. This qualification is checked against the published pass type, English mark and any listed selection or portfolio notes rather than a single APS total.
                             @else
                                 Public admission information for {{ $qualification->name }} at {{ $university->name }}. APS and admission scores are useful filters, but universities may also require specific subjects, marks, selection tests, portfolios or other criteria.
                             @endif
                         </p>
 
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <a href="{{ route('course-match.index', ['university_id' => $university->id, 'faculty_id' => $qualification->faculty_id, 'search' => $qualification->name]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]" data-analytics-event="seo_full_match_started" data-source-page-type="qualification" data-qualification-id="{{ $qualification->id }}">
-                                Check My Full Eligibility <i data-lucide="target" style="width:17px;height:17px;"></i>
+                            <a href="{{ $qualificationAction['url'] }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]" data-analytics-event="seo_qualification_action_clicked" data-action-kind="{{ $qualificationAction['kind'] }}" data-source-page-type="qualification" data-qualification-id="{{ $qualification->id }}">
+                                {{ $qualificationAction['label'] }} <i data-lucide="{{ $qualificationAction['icon'] }}" style="width:17px;height:17px;"></i>
                             </a>
                             @if ($qualification->source_url)
                                 <a href="{{ $qualification->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
@@ -72,15 +74,15 @@
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">NQF</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : ($isTvetCollegeQualification ? 'See notes' : 'Not listed') }}</dd>
+                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : ($isTvetCollegeQualification || $usesPassTypeAdmission ? 'See notes' : 'Not listed') }}</dd>
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                    <dt class="text-xs font-bold uppercase text-neutral-500">{{ $isTvetCollegeQualification ? 'Entry grade' : 'Grade' }}</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->requiredGrade?->name ?? ($isTvetCollegeQualification ? 'See notes' : 'Not listed') }}</dd>
+                                    <dt class="text-xs font-bold uppercase text-neutral-500">{{ $isTvetCollegeQualification || $usesPassTypeAdmission ? 'Entry grade' : 'Grade' }}</dt>
+                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->requiredGrade?->name ?? ($isTvetCollegeQualification || $usesPassTypeAdmission ? 'See notes' : 'Not listed') }}</dd>
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">Duration</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->duration_years ? $qualification->duration_years.' years' : 'Not listed' }}</dd>
+                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $durationLabel ?? ($isTvetCollegeQualification || $usesPassTypeAdmission ? 'See notes' : 'Not listed') }}</dd>
                                 </div>
                             </div>
                             @if ($closingLabel)
@@ -123,6 +125,61 @@
                             </div>
                         @endif
                     </section>
+                @elseif ($usesPassTypeAdmission)
+                    @php
+                        $subjectRequirementSummary = $qualification->qualificationSubjectRequirements
+                            ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id)
+                            ->map(function ($group) use ($admissionInfo) {
+                                return $group
+                                    ->map(function ($requirement) use ($admissionInfo) {
+                                        $label = $requirement->minimum_mark !== null
+                                            ? (int) $requirement->minimum_mark.'%'
+                                            : $admissionInfo->requirementLabel($requirement);
+
+                                        return trim(($requirement->subject_name ?: $requirement->subject?->name ?: 'Subject').' '.$label);
+                                    })
+                                    ->implode(' or ');
+                            })
+                            ->filter()
+                            ->implode('; ');
+                    @endphp
+                    <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
+                        <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission requirements</h2>
+                        <p class="mt-3 max-w-3xl text-sm leading-6 text-neutral-600">
+                            This qualification is checked by pass type and published subject marks rather than APS points.
+                        </p>
+                        <div class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <p class="text-xs font-bold uppercase text-neutral-500">{{ $scoreSummary['label'] }}</p>
+                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $scoreSummary['value'] }}</p>
+                                @if ($scoreSummary['source'])
+                                    <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $scoreSummary['source'] }}</p>
+                                @endif
+                            </div>
+                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <p class="text-xs font-bold uppercase text-neutral-500">Subject rule</p>
+                                <p class="mt-2 text-base font-bold leading-6 text-neutral-950">{{ $subjectRequirementSummary ?: 'See notes' }}</p>
+                                <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">Alternative school-leaving routes may have different language percentages.</p>
+                            </div>
+                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <p class="text-xs font-bold uppercase text-neutral-500">Entry grade</p>
+                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $qualification->requiredGrade?->name ?? 'Grade 12 or equivalent' }}</p>
+                                <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">Use equivalent NC(V), SC, SC(A) or international routes where the source lists them.</p>
+                            </div>
+                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <p class="text-xs font-bold uppercase text-neutral-500">Duration</p>
+                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $durationLabel ?? 'See notes' }}</p>
+                            </div>
+                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <p class="text-xs font-bold uppercase text-neutral-500">NQF</p>
+                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : 'See notes' }}</p>
+                            </div>
+                        </div>
+
+                        @if ($qualification->notes)
+                            <p class="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900">{{ $qualification->notes }}</p>
+                        @endif
+                    </section>
                 @else
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
                         <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission information</h2>
@@ -153,7 +210,7 @@
                     </section>
                 @endif
 
-                @if (! $isTvetCollegeQualification || $qualification->admissionScoreVariants->isNotEmpty())
+                @if ((! $isTvetCollegeQualification && ! $usesPassTypeAdmission) || $qualification->admissionScoreVariants->isNotEmpty())
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="variants-heading">
                         <h2 id="variants-heading" class="text-2xl font-bold text-neutral-950">Alternative score variants</h2>
                         <div class="mt-5 grid gap-3">
@@ -197,7 +254,7 @@
                                                     @foreach ($choiceGroup['requirements'] as $requirement)
                                                         <span class="rounded-full bg-neutral-50 px-3 py-1 text-xs font-bold text-neutral-700">
                                                             {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
-                                                            {{ $admissionInfo->requirementLabel($requirement) }}
+                                                            {{ $usesPassTypeAdmission && $requirement->minimum_mark !== null ? (int) $requirement->minimum_mark.'%' : $admissionInfo->requirementLabel($requirement) }}
                                                         </span>
                                                     @endforeach
                                                 </div>
@@ -209,7 +266,7 @@
                                         @foreach ($group as $requirement)
                                             <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-neutral-700">
                                                 {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
-                                                {{ $admissionInfo->requirementLabel($requirement) }}
+                                                {{ $usesPassTypeAdmission && $requirement->minimum_mark !== null ? (int) $requirement->minimum_mark.'%' : $admissionInfo->requirementLabel($requirement) }}
                                             </span>
                                         @endforeach
                                     </div>
@@ -277,17 +334,29 @@
 
             <aside class="grid content-start gap-6">
                 <section class="rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-5 text-white shadow-sm" aria-labelledby="full-match-heading">
-                    <h2 id="full-match-heading" class="text-xl font-bold">{{ $isTvetCollegeQualification ? 'Check your full college eligibility' : 'Check your full subject-level eligibility' }}</h2>
+                    <h2 id="full-match-heading" class="text-xl font-bold">
+                        @if ($qualificationAction['kind'] === 'saved_match')
+                            Your match view is ready
+                        @elseif ($qualificationAction['kind'] === 'add_marks')
+                            Add marks to check eligibility
+                        @else
+                            {{ $isTvetCollegeQualification ? 'Check your full college eligibility' : 'Check your full subject-level eligibility' }}
+                        @endif
+                    </h2>
                     <p class="mt-3 text-sm leading-6 text-white/80">
-                        @if ($isTvetCollegeQualification)
+                        @if ($qualificationAction['kind'] === 'saved_match')
+                            Your saved subjects and marks are already available. Return to course matches to compare this qualification against your current results.
+                        @elseif ($qualificationAction['kind'] === 'add_marks')
+                            Add your subject marks once and Chamu will compare them with this qualification's requirements.
+                        @elseif ($isTvetCollegeQualification)
                             College admission can depend on entry route, subjects, campus, intake and selection notes. Create a free Chamu account to compare your details and save your result.
                         @else
                             APS is only part of the admission decision. Create a free Chamu account to enter your subjects and marks, compare them with this qualification's requirements, and save your result.
                         @endif
                     </p>
                     <div class="mt-5 grid gap-2">
-                        <a href="{{ route('course-match.index', ['university_id' => $university->id, 'faculty_id' => $qualification->faculty_id, 'search' => $qualification->name]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-bold text-[#01225E] hover:bg-neutral-100" data-analytics-event="seo_match_signup_clicked" data-qualification-id="{{ $qualification->id }}">
-                            Check My Full Eligibility <i data-lucide="target" style="width:16px;height:16px;"></i>
+                        <a href="{{ $qualificationAction['url'] }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-bold text-[#01225E] hover:bg-neutral-100" data-analytics-event="seo_match_action_clicked" data-action-kind="{{ $qualificationAction['kind'] }}" data-qualification-id="{{ $qualification->id }}">
+                            {{ $qualificationAction['label'] }} <i data-lucide="{{ $qualificationAction['icon'] }}" style="width:16px;height:16px;"></i>
                         </a>
                         @guest
                             <a href="{{ route('register') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">

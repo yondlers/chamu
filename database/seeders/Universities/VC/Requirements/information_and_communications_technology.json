@@ -1,24 +1,34 @@
 {
     "faculty": "Information and Communications Technology",
-    "university": "The IIE's Varsity College",
-    "source": "The IIE Institutional Prospectus 2026",
+    "university": "Emeris",
+    "source": "Emeris qualification pages",
     "admission_score_type": "Pass type + subject percentage requirements",
     "qualifications": [
         {
-            "name": "Higher Certificate in Computer",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
+            "name": "Bachelor of Computer and Information Sciences in Application Development",
+            "slug": "bachelor-of-computer-and-information-science-in-application-development",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BCAD0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/ SG / Technical Maths 60%. NC(V): Bachelor’s Degree pass with English at 50%, Maths/HG 50%, Math Lit/ SG / Technical Maths 60%. Senior Certificate (SC): Endorsement with English at 33.3%, Maths/HG 40%, Math Lit/SG/ Technical Maths 50%. SC(a): Bachelor pass with Maths/HG 40%, Math Lit/SG/ Technical Maths 50%. LoLT Requirement: A minimum of 30% in LoLT on NSC/ SC(a) OR with a min. of 33.3% on SC. International Applicants: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements.",
+                "Duration: 3 years full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban North, Pietermaritzburg, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BCAD0701.",
+                "Credits: 360.",
+                "SAQA ID: 97600.",
+                "Accreditation: The IIE Bachelor of Computer and Information Sciences in Application Development by the Higher Education Quality Council (HEQC) of the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 360-credit qualification on level 7 (SAQA ID: 97600)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-computer-and-information-science-in-application-development",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -26,33 +36,49 @@
                             "subject": "English Home Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/ SG / Technical Maths 60%."
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/ SG / Technical Maths 60%."
                         }
                     ]
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "minimum_level": 3,
+                    "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/ SG / Technical Maths 60%."
                 }
             ]
         },
         {
-            "name": "Technical Support Higher Certificate in Construction and Engineering",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
+            "name": "Bachelor of Computer and Information Sciences in Application Development (Online)",
+            "slug": "online-bachelor-of-computer-and-information-science-in-application-development",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BCAD0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/SG/Technical Maths 60% NC(V): Bachelor's Degree pass with English at 50%, Maths/HG 50%, Math Lit/SG/Technical Maths 60% Senior Certificate (SC): Endorsement with English at 33.3%, Maths/HG 40%, Math Lit/SG/Technical Maths 50% SC(a): Bachelor pass with Maths/HG 40%, Math Lit/SG/Technical Maths 50% Language of Learning and Teaching (LoLT): Minimum of 30% on NSC/SC(a) OR minimum of 33.3% on SC International Applicants: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements",
+                "Duration: 3 years full-time / 4 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BCAD0701.",
+                "Credits: 360.",
+                "SAQA ID: 97600.",
+                "Accreditation: The IIE Bachelor of Computer and Information Sciences in Application Development by the Higher Education Quality Council (HEQC) of the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 360-credit qualification on level 7 (SAQA ID: 97600)"
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-computer-and-information-science-in-application-development",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -60,81 +86,86 @@
                             "subject": "English Home Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/SG/Technical Maths 60%"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/SG/Technical Maths 60%"
                         }
                     ]
+                },
+                {
+                    "subject": "Technical Mathematics",
+                    "minimum_mark": 40,
+                    "minimum_level": 3,
+                    "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with English at 30%, Maths/HG 40%, Math Lit/SG/Technical Maths 60%"
                 }
             ]
         },
         {
-            "name": "Higher Certificate in Information Technology in Business Applications",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
+            "name": "Bachelor of Computer and Information Sciences in Game Design and Development",
+            "slug": "bachelor-of-computer-and-information-sciences-in-game-design-and-development",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BCGD0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Legacy Vega School programme page: https://www.vegaschool.com/full-time/bachelor-of-computer-and-information-sciences-in-game-design-and-development-degree. The Vega page points learners to the current Emeris qualification page for latest details.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: A National Senior Certificate (NSC) Bachelor’s Degree pass with - A minimum of 50% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR A National Certificate (Vocational) NC(V) Bachelor's Degree pass with - A minimum of 60% in English and 50% for Mathematics on the HG, or Mathematical Literacy/Technical Maths, with a minimum of 60%; OR A Senior Certificate (SC) (with endorsement) with at least 50% for English, 40% for Mathematics on the HG; OR at least 60% for Mathematics on the SG; OR A Senior Certificate (Amended) SC(A) Bachelors pass with at least 40% for Mathematics on the HG; OR at least 60% for Mathematics on the SG. Applicants who were admitted via Maths Lit/Maths SG/Technical Maths or Higher Certificate are admitted subject to completing the Mathematical Short Learning Programme (SMAPD022) (or equivalent). Successful completion of SMAPD022 (or equivalent) shall be required before students can be permitted to register for the module Mathematical Principles for Developers (MAPD6112). Alternatively, a cognate Higher Certificate or cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time.",
+                "Intake: January.",
+                "Campuses: Cape Town City, Sandton Johannesburg.",
+                "Mode of study: Contact (on-site).",
+                "Course code: BCGD0701.",
+                "Credits: 360.",
+                "SAQA ID: 94726.",
+                "Accreditation: The Bachelor of Computer and Information Sciences in Game Design and Development qualification is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF 7) by the South African Qualifications Authority (SAQA ID 94726)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-computer-and-information-sciences-in-game-design-and-development",
             "subject_requirements": [
                 {
                     "one_of": [
                         {
                             "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree pass with - A minimum of 50% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
                         },
                         {
                             "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree pass with - A minimum of 50% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Information Technology in Support Services",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
+                },
                 {
                     "one_of": [
                         {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree pass with - A minimum of 50% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
                         },
                         {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree pass with - A minimum of 50% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree pass with - A minimum of 50% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
                         }
                     ]
                 }
@@ -142,19 +173,29 @@
         },
         {
             "name": "Higher Certificate in Mobile Application and Web Development",
+            "slug": "higher-certificate-in-mobile-application-and-web-development",
             "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "HMAW0501",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "higher_certificate",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 30% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 33.3% Senior Certificate (Amended) [SC(a)]: Minimum 30% in LOLT on NSC/SC(a) or 33.3% on SC International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 30% or equivalent for English",
+                "Duration: 1 year full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban North, Pietermaritzburg, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: HMAW0501.",
+                "Credits: 120.",
+                "SAQA ID: 117914.",
+                "Accreditation: The IIE Higher Certificate in Mobile Application and Web Development is accredited by the Higher Education Quality Council (HEQC) of the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 120-credit qualification on level 5 (SAQA ID: 117914)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/higher-certificate-in-mobile-application-and-web-development",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -162,33 +203,43 @@
                             "subject": "English Home Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "Diploma in Information Technology Management",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
+            "name": "Higher Certificate in Mobile Application and Web Development (Online)",
+            "slug": "online-higher-certificate-in-mobile-application-and-web-development",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HMAW0501",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 30% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 33.3% Senior Certificate (Amended) [SC(a)]: Minimum 30% in LOLT on NSC/SC(a) or 33.3% on SC International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 30% or equivalent for English",
+                "Duration: 1 year full-time / 2 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: HMAW0501.",
+                "Credits: 120.",
+                "SAQA ID: 117914.",
+                "Accreditation: The IIE Higher Certificate in Mobile Application and Web Development is accredited by the Higher Education Quality Council (HEQC) of the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 120-credit qualification on level 5 (SAQA ID: 117914)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/online/higher-certificate-in-mobile-application-and-web-development",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -196,373 +247,13 @@
                             "subject": "English Home Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Information Technology in Network Management",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Information Technology in Software Development",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Information Technology in Web Development",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Information Technology in Business Systems",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Computer and Information Sciences",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Computer and Information Sciences in Application Development",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Computer and Information Sciences in Game Design and Development",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Computer and Information Sciences in Network Engineering",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
                         }
                     ]
                 }

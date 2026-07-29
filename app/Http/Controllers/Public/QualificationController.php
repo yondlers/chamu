@@ -31,12 +31,18 @@ class QualificationController extends Controller
         $collegeAdmissionSummary = $isTvetCollegeQualification
             ? $admissionInfo->collegeAdmissionSummary($qualification, $rules)
             : null;
+        $usesPassTypeAdmission = ($rules->first()?->admissionRule?->score_type ?? null) === 'pass_type';
         $requirements = $qualification->qualificationSubjectRequirements
             ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id);
+        $originBreadcrumb = $this->originBreadcrumb($request);
+        $user = $request->user();
+        $hasSavedMarks = $user !== null && $user->userSubjectResults()->whereNotNull('mark')->exists();
+        $qualificationAction = $this->qualificationAction($request, $university, $qualification, $originBreadcrumb, $hasSavedMarks);
         $closingLabel = $admissionInfo->closingLabel(
             $qualification->closing_month ?? $qualification->faculty?->closing_month ?? $university->default_closing_month,
             $qualification->closing_day ?? $qualification->faculty?->closing_day ?? $university->default_closing_day,
         );
+        $durationLabel = $this->durationLabel($qualification->duration_years);
         $relatedQualifications = $university->qualifications()
             ->with(['faculty', 'qualificationType'])
             ->whereKeyNot($qualification->id)
@@ -49,11 +55,13 @@ class QualificationController extends Controller
             'university' => $university->slug,
             'qualification' => $qualification->slug,
         ]);
-        $titleSuffix = $isTvetCollegeQualification ? 'Entry Requirements' : 'APS and Requirements';
+        $titleSuffix = $isTvetCollegeQualification || $usesPassTypeAdmission ? 'Entry Requirements' : 'APS and Requirements';
         $title = $qualification->name.' at '.$university->name.': '.$titleSuffix.' | Chamu';
-        $description = $isTvetCollegeQualification
-            ? 'View entry grade, programme type, NQF route, subject checks and college admission notes for '.$qualification->name.' at '.$university->name.'.'
-            : 'View the APS, subject requirements, qualification type and admission information for '.$qualification->name.' at '.$university->name.'.';
+        $description = match (true) {
+            $isTvetCollegeQualification => 'View entry grade, programme type, NQF route, subject checks and college admission notes for '.$qualification->name.' at '.$university->name.'.',
+            $usesPassTypeAdmission => 'View pass type, subject checks, entry grade, NQF level and admission notes for '.$qualification->name.' at '.$university->name.'.',
+            default => 'View the APS, subject requirements, qualification type and admission information for '.$qualification->name.' at '.$university->name.'.',
+        };
 
         return view('public.qualifications.show', [
             'university' => $university,
@@ -63,10 +71,13 @@ class QualificationController extends Controller
             'requirements' => $requirements,
             'relatedQualifications' => $relatedQualifications,
             'closingLabel' => $closingLabel,
+            'durationLabel' => $durationLabel,
             'admissionInfo' => $admissionInfo,
             'isTvetCollegeQualification' => $isTvetCollegeQualification,
             'collegeAdmissionSummary' => $collegeAdmissionSummary,
-            'originBreadcrumb' => $this->originBreadcrumb($request),
+            'usesPassTypeAdmission' => $usesPassTypeAdmission,
+            'qualificationAction' => $qualificationAction,
+            'originBreadcrumb' => $originBreadcrumb,
             'seo' => [
                 'title' => $title,
                 'description' => $description,
@@ -106,6 +117,61 @@ class QualificationController extends Controller
                 ],
             ],
         ]);
+    }
+
+    private function durationLabel(null|float|string $duration): ?string
+    {
+        if ($duration === null || $duration === '') {
+            return null;
+        }
+
+        $value = (float) $duration;
+        $formatted = rtrim(rtrim(number_format($value, 1), '0'), '.');
+
+        return $formatted.' '.($value === 1.0 ? 'year' : 'years');
+    }
+
+    /**
+     * @param  array{label: string, url: string}|null  $originBreadcrumb
+     * @return array{label: string, url: string, icon: string, kind: string}
+     */
+    private function qualificationAction(
+        Request $request,
+        University $university,
+        Qualification $qualification,
+        ?array $originBreadcrumb,
+        bool $hasSavedMarks
+    ): array {
+        $matchUrl = route('course-match.index', [
+            'university_id' => $university->id,
+            'faculty_id' => $qualification->faculty_id,
+            'search' => $qualification->name,
+        ]);
+
+        if ($request->user() === null) {
+            return [
+                'label' => 'Check My Full Eligibility',
+                'url' => $matchUrl,
+                'icon' => 'target',
+                'kind' => 'guest_match',
+            ];
+        }
+
+        if ($hasSavedMarks) {
+            return [
+                'label' => $originBreadcrumb ? 'Back to Course matches' : 'View My Matches',
+                'url' => $originBreadcrumb['url'] ?? $matchUrl,
+                'icon' => $originBreadcrumb ? 'arrow-left' : 'target',
+                'kind' => 'saved_match',
+            ];
+        }
+
+        return [
+            'label' => 'Add Marks',
+            'url' => route('marks.index'),
+            'icon' => 'line-chart',
+            'kind' => 'add_marks',
+        ];
     }
 
     /**

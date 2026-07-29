@@ -1,760 +1,34 @@
 {
     "faculty": "Commerce",
-    "university": "The IIE's Varsity College",
-    "source": "The IIE Institutional Prospectus 2026",
+    "university": "Emeris",
+    "source": "Emeris qualification pages",
     "admission_score_type": "Pass type + subject percentage requirements",
     "qualifications": [
         {
-            "name": "Higher Certificate in Business Management",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Business Principles and Practices",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Digital Marketing",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Event Management",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Hospitality Management",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Human Resource Practices",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Local Governance",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Logistics and Supply Chain Management",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Office Administration",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Quantitative Techniques",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Service Management",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Travel",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Higher Certificate pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Commerce in Business Management",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Commerce in Marketing Management",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Digital Marketing",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Foodservice Management and Nutrition",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Human Resource Management Practice",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Logistics and Supply Chain Management",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Sport Development and Management",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Tourism Management",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Diploma in Entrepreneurial and Small Business Operations",
-            "qualification_type": "Diploma",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "diploma",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Diploma pass.",
-                "Subject requirement group: English 40%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 40,
-                            "minimum_level": 3,
-                            "note": "Original subject requirement: English: 40%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 40,
-                            "minimum_level": 3,
-                            "note": "Original subject requirement: English: 40%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Business Administration",
+            "name": "Bachelor of Business Administration (Online)",
+            "slug": "online-bachelor-of-business-administration",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BBA0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English; OR Senior Certificate (SC): Endorsement pass, with 33.3% for English; OR Senior Certificate (Amended) [SC(a)]: Degree pass; OR For International Qualifications: An USAf Exemption Certificate is required and meeting the English requirements. Alternatively, a cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 4 years part-time.",
+                "Intake: January/ July.",
+                "Campuses: Online.",
+                "Mode of study: (Online).",
+                "Course code: BBA0701.",
+                "Credits: 360.",
+                "SAQA ID: 90759.",
+                "Accreditation: The IIE Bachelor of Business Administration degree is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 360-credit qualification on level 7 (SAQA ID: 90759)"
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-business-administration",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -762,33 +36,43 @@
                             "subject": "English Home Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR"
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "Bachelor of Business Administration in Hospitality Management",
+            "name": "Bachelor of Business Administration in Logistics and Supply Chain Management (Online)",
+            "slug": "online-bachelor-of-business-administration-in-logistics-supply-chain-management",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BBSC0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English; OR Senior Certificate (SC): Endorsement pass, with 33.3% for English; OR Senior Certificate (Amended) [SC(a)]: Degree pass For International Qualifications: An USAf Exemption Certificate is required and meeting the English requirements. Alternatively, a cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 4 years part-time.",
+                "Intake: January / July.",
+                "Campuses: Online.",
+                "Mode of study: (Online).",
+                "Course code: BBSC0701.",
+                "Credits: 360.",
+                "SAQA ID: 101528.",
+                "Accreditation: The IIE Bachelor of Business Administration in Logistics Supply Chain Management degree is accredited by the Council on Higher Education (CHE) and registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 360-credit qualification on level 7 (SAQA ID: 101528)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-business-administration-in-logistics-supply-chain-management",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -796,351 +80,13 @@
                             "subject": "English Home Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 30,
                             "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Business Administration in Logistics and Supply Chain Management",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Business Administration in Marketing",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Hospitality Management",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Public Administration",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Service Management",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Business Administration in Brand Building and Management",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Commerce in Digital Marketing",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Commerce in Strategic Brand Management",
-            "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": false,
-            "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
-                "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 30%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
-            ],
-            "source_url": "https://www.emeris.ac.za/",
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_mark": 30,
-                            "minimum_level": 2,
-                            "note": "Original subject requirement: English: 30%."
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
-                        },
-                        {
-                            "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR"
                         }
                     ]
                 }
@@ -1148,19 +94,29 @@
         },
         {
             "name": "Bachelor of Commerce",
+            "slug": "bachelor-of-commerce",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BM322",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, Mathematics 30%, Mathematical Literacy or Technical Mathematics 50%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths. National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics. Senior Certificate (SC): Endorsement pass, with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. Senior Certificate (Amended) [SC(a)]: Bachelor pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. International Qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements. Alternate Admission: A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time.",
+                "Intake: January.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban North, Pietermaritzburg, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BM322.",
+                "Credits: 360.",
+                "SAQA ID: 84706.",
+                "Accreditation: The qualification is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF) by the South African Qualifications Authority (SAQA), with the relevant SAQA ID 84706 and NQF level 7. The programme meets the necessary regulatory standards for its level and type."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-commerce",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -1168,35 +124,168 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         }
                     ]
                 },
                 {
-                    "subject": "Mathematics",
-                    "minimum_mark": 30,
-                    "minimum_level": 2,
-                    "note": "Original subject requirement: Mathematics: 30%."
-                },
-                {
                     "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        },
                         {
                             "subject": "Mathematical Literacy",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "Technical Mathematics",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce (Online)",
+            "slug": "online-bachelor-of-commerce",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BM322",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths. National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics. Senior Certificate (SC): Endorsement pass, with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. Senior Certificate (Amended) [SC(a)]: Bachelor pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. International Qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements. Alternate Admission: A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time / 4 years part-time.",
+                "Intake: January / July.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BM322.",
+                "Credits: 360.",
+                "SAQA ID: 84706.",
+                "Accreditation: The qualification is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF) by the South African Qualifications Authority (SAQA), with the relevant SAQA ID 84706 and NQF level 7. The programme meets the necessary regulatory standards for its level and type."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-commerce",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Digital Marketing",
+            "slug": "bachelor-of-commerce-in-digital-marketing",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BDM0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Legacy Vega School programme page: https://www.vegaschool.com/full-time/bcom-digital-marketing-degree. The Vega page points learners to the current Emeris qualification page for latest details.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR A National Certificate (Vocational) NC(V) Bachelor’s Degree pass with 50% in English, 50% Mathematics or 60% Mathematical Literacy/Technical Maths; OR A Senior Certificate (SC) endorsement with at least 50% for English, 30% for Mathematics on the HG; OR 50% for Mathematics on the SG; Mathematical Literacy/Technical Maths; OR A Senior Certificate (Amended) SC(A) Bachelor pass with at least 50% for English, 30% for Mathematics on the HG; OR 50% for Mathematics on the SG; Mathematical Literacy/Technical Maths For international qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements. Alternatively, a cognate Higher Certificate or cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time.",
+                "Intake: January.",
+                "Campuses: Pretoria Lynnwood, Durban Umhlanga, Cape Town City, Sandton Johannesburg.",
+                "Mode of study: Contact (on-site).",
+                "Course code: BDM0701.",
+                "Credits: 360.",
+                "SAQA ID: 125162.",
+                "Accreditation: The IIE Bachelor of Commerce in Digital Marketing is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF 7) by the South African Qualifications Authority (SAQA ID 125162)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-commerce-in-digital-marketing",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
                         }
                     ]
                 }
@@ -1204,19 +293,29 @@
         },
         {
             "name": "Bachelor of Commerce in Entrepreneurship",
+            "slug": "bachelor-of-commerce-in-entrepreneurship",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BENT0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, Mathematics 30%, Mathematical Literacy or Technical Mathematics 50%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths. National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics. Senior Certificate (SC): Endorsement pass, with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. Senior Certificate (Amended) [SC(a)]: Bachelor pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. International Qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements. Alternatively, a cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time.",
+                "Intake: January.",
+                "Campuses: Durban North, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BENT0701.",
+                "Credits: 360.",
+                "SAQA ID: 111287.",
+                "Accreditation: The qualification is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF) by the South African Qualifications Authority (SAQA), with the relevant SAQA ID 111287 and NQF level 7. The programme meets the necessary regulatory standards for its level and type."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-commerce-in-entrepreneurship",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -1224,55 +323,65 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         }
                     ]
                 },
                 {
-                    "subject": "Mathematics",
-                    "minimum_mark": 30,
-                    "minimum_level": 2,
-                    "note": "Original subject requirement: Mathematics: 30%."
-                },
-                {
                     "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        },
                         {
                             "subject": "Mathematical Literacy",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "Technical Mathematics",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "Bachelor of Commerce in Economics",
+            "name": "Bachelor of Commerce in Entrepreneurship (Online)",
+            "slug": "online-bachelor-of-commerce-in-entrepreneurship",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BENT0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, Mathematics 50%, Mathematical Literacy or Technical Mathematics 80%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths. National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English, 50% for Mathematics or 60% for Mathematical Literacy/Technical Mathematics. Senior Certificate (SC): Endorsement pass, with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. Senior Certificate (Amended) [SC(a)]: Bachelor pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Mathematics. International Qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements. Alternatively, a cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time / 4 years part-time.",
+                "Intake: January.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BENT0701.",
+                "Credits: 360.",
+                "SAQA ID: 111287.",
+                "Accreditation: The qualification is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF) by the South African Qualifications Authority (SAQA), with the relevant SAQA ID 111287 and NQF level 7. The programme meets the necessary regulatory standards for its level and type."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-commerce-in-entrepreneurship",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -1280,55 +389,132 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         }
                     ]
                 },
                 {
-                    "subject": "Mathematics",
-                    "minimum_mark": 50,
-                    "minimum_level": 4,
-                    "note": "Original subject requirement: Mathematics: 50%."
-                },
-                {
                     "one_of": [
                         {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
+                        },
+                        {
                             "subject": "Mathematical Literacy",
-                            "minimum_mark": 80,
-                            "minimum_level": 7,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 80%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         },
                         {
                             "subject": "Technical Mathematics",
-                            "minimum_mark": 80,
-                            "minimum_level": 7,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 80%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths."
                         }
                     ]
                 }
             ]
         },
         {
-            "name": "Bachelor of Commerce in Human Resource Management",
+            "name": "Bachelor of Commerce in Strategic Brand Management",
+            "slug": "bachelor-of-commerce-in-strategic-brand-management",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
-            "duration_years": null,
+            "abbreviation": "BCSM0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
-                "Source: The IIE Institutional Prospectus 2026.",
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Legacy Vega School programme page: https://www.vegaschool.com/full-time/bcom-strategic-brand-management-degree. The Vega page points learners to the current Emeris qualification page for latest details.",
                 "Admission score type: Pass type + subject percentage requirements.",
-                "Original pass requirement: Bachelor's Degree pass.",
-                "Subject requirement group: English 50%, Mathematics 40%, Mathematical Literacy or Technical Mathematics 60%.",
-                "Varsity College is an educational brand of The Independent Institute of Education; the official website currently redirects to Emeris."
+                "Minimum admission requirements: A National Senior Certificate (NSC) Bachelor’s Degree with pass 30% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR A National Certificate (Vocational) NC(V) Bachelor’s Degree pass with 50% in English, 50% Mathematics or 60% Mathematical Literacy/Technical Maths; OR A Senior Certificate (SC) endorsement with at least 33.3% for English, 40% for Mathematics on the HG; OR 60% for Mathematics on the SG; Mathematical Literacy/Technical Maths; OR A Senior Certificate (Amended) SC(A) Bachelor pass with at least 40% for Mathematics on the HG; OR at least 60% for Mathematics on the SG, Mathematical Literacy/Technical Maths. A minimum of 30% in LOLT on NSC/ SC(a) OR with a min. of 33.3% in SC. For international qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements.",
+                "Duration: 3 years full-time.",
+                "Intake: January.",
+                "Campuses: Pretoria Lynnwood, Durban Umhlanga, Cape Town City, Sandton Johannesburg.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: BCSM0701.",
+                "Credits: 360.",
+                "SAQA ID: 93948.",
+                "Accreditation: The IIE Bachelor of Commerce in Strategic Brand Management is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF 7) by the South African Qualifications Authority (SAQA ID 93948)."
             ],
-            "source_url": "https://www.emeris.ac.za/",
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-commerce-in-strategic-brand-management",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 30% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 30% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_mark": 40,
+                            "minimum_level": 3,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 30% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 30% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_mark": 60,
+                            "minimum_level": 5,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 30% for English, 40% for Mathematics or 60% for Mathematical Literacy/Technical Maths; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Strategic Brand Management (Online)",
+            "slug": "online-bachelor-of-commerce-in-strategic-brand-management",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BCSM0701",
+            "duration_years": 4,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR A National Certificate (Vocational) NC(V) Bachelor’s Degree pass with 50% in English, 50% Mathematics or 60% Mathematical Literacy/Technical Maths; OR A Senior Certificate (SC) endorsement with at least 50% for English, 30% for Mathematics on the HG; OR 50% for Mathematics on the SG; Mathematical Literacy/Technical Maths; OR A Senior Certificate (Amended) SC(A) Bachelor pass with at least 50% for English, 30% for Mathematics on the HG; OR 50% for Mathematics on the SG; Mathematical Literacy/Technical Maths For international qualifications: An USAf Exemption Certificate is required and meeting the relevant Maths and English requirements. Alternatively, a cognate Higher Certificate or cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 4 years part-time.",
+                "Intake: January.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: BCSM0701.",
+                "Credits: 360.",
+                "SAQA ID: 93948.",
+                "Accreditation: The IIE Bachelor of Commerce in Strategic Brand Management is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF 7) by the South African Qualifications Authority (SAQA ID 93948 )."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/bachelor-of-commerce-in-strategic-brand-management",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -1336,35 +522,367 @@
                             "subject": "English Home Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
                         },
                         {
                             "subject": "English First Additional Language",
                             "minimum_mark": 50,
                             "minimum_level": 4,
-                            "note": "Original subject requirement: English: 50%."
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
                         }
                     ]
                 },
                 {
-                    "subject": "Mathematics",
-                    "minimum_mark": 40,
-                    "minimum_level": 3,
-                    "note": "Original subject requirement: Mathematics: 40%."
-                },
-                {
                     "one_of": [
                         {
+                            "subject": "Mathematics",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
+                        },
+                        {
                             "subject": "Mathematical Literacy",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
                         },
                         {
                             "subject": "Technical Mathematics",
-                            "minimum_mark": 60,
-                            "minimum_level": 5,
-                            "note": "Original subject requirement: Mathematical Literacy or Technical Mathematics: 60%."
+                            "minimum_mark": 50,
+                            "minimum_level": 4,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Bachelor’s Degree with pass 50% for English, 30% for Mathematics or 50% for Mathematical Literacy/Technical Maths; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Hospitality Management",
+            "slug": "bachelor-of-hospitality-management",
+            "qualification_type": "Bachelor",
+            "abbreviation": "BOHM0701",
+            "duration_years": 3,
+            "nqf_level": 7,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "bachelor",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR National Certificate (Vocational) [NC(V)]: Bachelor’s Degree pass with 50% for English; OR Senior Certificate (SC): Endorsement pass, with 33.3% for English; OR Senior Certificate (Amended) [SC(a)]: Degree pass; OR International Qualifications: An USAf Exemption Certificate is required and meeting the English requirements. Alternate Admission: A cognate Higher Certificate OR cognate 240 credit Diploma OR an Advanced Certificate OR 360 credit Diploma or Degree may satisfy the minimum admission requirements to degree studies.",
+                "Duration: 3 years full-time.",
+                "Intake: January.",
+                "Campuses: Rosebank Johannesburg, Cape Town City, Ruimsig Johannesburg.",
+                "Mode of study: Contact (on-site).",
+                "Course code: BOHM0701.",
+                "Credits: 360.",
+                "SAQA ID: 115459.",
+                "Accreditation: The qualification is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF) by the South African Qualifications Authority (SAQA), with the relevant SAQA ID 115459 and NQF level 7. The programme meets the necessary regulatory standards for its level and type. Additionally, Emeris holds accreditation from the British Accreditation Council (BAC), providing international recognition and ensuring that the qualification is credible for students seeking global opportunities."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/bachelor-of-hospitality-management",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Bachelor’s Degree pass with 30% for English; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Brand and Marketing Management (Online)",
+            "slug": "online-brand-and-marketing-management",
+            "qualification_type": "Short Learning Programme",
+            "abbreviation": "BMAM021",
+            "duration_years": null,
+            "nqf_level": null,
+            "required_grade": null,
+            "minimum_pass_type": null,
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Admission requirements: This short learning programmes does not have any formal admission requirements. It is aimed at middle managers working in the brand, marketing and communications industry or anyone wanting to change fields and needing to learn more about brand, marketing and strategy. The short course may also support those with undergraduate degrees in fields other than brand and marketing as a ‘bridge’ to understanding branding concepts and principles when considering further studies in this field.",
+                "Duration: 9 weeks online (including orientation).",
+                "Intake: September.",
+                "Campuses: Online.",
+                "Mode of study: (Online).",
+                "Course code: BMAM021."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/brand-and-marketing-management",
+            "subject_requirements": []
+        },
+        {
+            "name": "Higher Certificate in Business Principles and Practice",
+            "slug": "higher-certificate-in-business-principles-and-practice",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HBP0501",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 30% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 33.3% Senior Certificate (Amended) [SC(a)]: Minimum 30% in LOLT on NSC/SC(a) or 33.3% on SC International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 30% or equivalent for English",
+                "Duration: 1 year full-time.",
+                "Intake: February.",
+                "Campuses: Pretoria Lynnwood, Ruimsig Johannesburg, Sandton Johannesburg, Waterfall Johannesburg, Durban North, Pietermaritzburg, Durban Westville, Nelson Mandela Bay, Cape Town Newlands.",
+                "Mode of study: Contact (on-site), (Online).",
+                "Course code: HBP0501.",
+                "Credits: 120.",
+                "SAQA ID: 71637.",
+                "Accreditation: The IIE Higher Certificate in Business Principles and Practice (HBPP) is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 129-credit qualification on level 5 (SAQA ID: 71637)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/higher-certificate-in-business-principles-and-practice",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Business Principles and Practice (Online)",
+            "slug": "online-higher-certificate-in-business-principles-practice",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HBP0501",
+            "duration_years": 2,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 30% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 33.3% Senior Certificate (Amended) [SC(a)]: Minimum 30% in LOLT on NSC/SC(a) or 33.3% on SC International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 30% or equivalent for English",
+                "Duration: 2 years part-time.",
+                "Intake: February.",
+                "Campuses: Online.",
+                "Mode of study: (Online), Contact (on-site).",
+                "Course code: HBP0501.",
+                "Credits: 120.",
+                "SAQA ID: 71637.",
+                "Accreditation: The IIE Higher Certificate in Business Principles and Practice (HBPP) is accredited by the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 129-credit qualification on level 5 (SAQA ID: 71637)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/higher-certificate-in-business-principles-practice",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Digital Marketing (Online)",
+            "slug": "online-higher-certificate-in-digital-marketing",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HCDM0501",
+            "duration_years": 1.5,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: A National Senior Certificate (NSC) Higher Certificate pass - with 30% for English; OR A National Certificate (Vocational) NC(V) Higher Certificate pass – with 40% in English; OR A Senior Certificate (SC) (Endorsement - none) with 33.3% in English ; OR A Senior Certificate (Amended) SC(A) Higher Certificate pass with - A minimum of 30% in LOLT on NSC/ SC(a) OR with a min. of 33.3% in SC; For international qualifications: A SAQA Evaluation Certificate with NSC L4 equivalence with at least 30% or equivalent for English",
+                "Duration: 18 months part-time.",
+                "Intake: January.",
+                "Campuses: Online.",
+                "Mode of study: (Online).",
+                "Course code: HCDM0501.",
+                "Credits: 120.",
+                "SAQA ID: 111345.",
+                "Accreditation: The Higher Certificate in Digital Marketing is accredited by the Council on Higher Education (CHE) and registered on the National Qualifications Framework (NQF 5) by the South African Qualifications Authority (SAQA ID 111345)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/higher-certificate-in-digital-marketing",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Higher Certificate pass - with 30% for English; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: A National Senior Certificate (NSC) Higher Certificate pass - with 30% for English; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Hospitality Management",
+            "slug": "higher-certificate-in-hospitality-management",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HIH1",
+            "duration_years": 1,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "nsc",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): HC pass with 30% for English; OR National Certificate (Vocational) [NC(V)]: HC pass with 40% for English; OR Senior Certificate (SC): Endorsement pass, with 40% for English; OR Senior Certificate (Amended) [SC(a)]: HC pass with 40% for English; OR For International Qualifications: A SAQA Evaluation Certificate with NSC Level 4 equivalence with at least 40% or equivalent for English.",
+                "Duration: 1 year full-time.",
+                "Intake: February.",
+                "Campuses: Ruimsig Johannesburg, Newlands Cape Town, Rosebank Johannesburg.",
+                "Mode of study: Contact (on-site).",
+                "Course code: HIH1.",
+                "Credits: 120.",
+                "SAQA ID: 115450.",
+                "Accreditation: The IIE Higher Certificate in Hospitality Management is accredited by the Higher Education Quality Council (HEQC) of the Council on Higher Education (CHE) and is registered by the South African Qualifications Authority (SAQA) on the National Qualifications Framework (NQF) as a 120-credit qualification on level 5 (SAQA ID: 115450)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/higher-certificate-in-hospitality-management",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): HC pass with 30% for English; OR"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): HC pass with 30% for English; OR"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Human Resource Practices (Online)",
+            "slug": "online-higher-certificate-in-human-resource-practices",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HHR0501",
+            "duration_years": 2,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 30% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 33.3% Senior Certificate (Amended) [SC(a)]: Minimum 30% in LOLT on NSC/SC(a) or 33.3% on SC International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 30% or equivalent for English",
+                "Duration: 2 years part-time.",
+                "Intake: January / July.",
+                "Campuses: Online.",
+                "Mode of study: (Online).",
+                "Course code: HHR0501.",
+                "Credits: 120.",
+                "SAQA ID: 91728.",
+                "Accreditation: This higher certificate is accredited by the Council of Higher Education (CHE) and is registered by the South African Qualifications Authority on the National Qualifications Framework (NQF) as a 120-credit qualification on Level 5 (SAQA ID No: 91728)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/higher-certificate-in-human-resource-practices",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Logistics and Supply Chain Management (Online)",
+            "slug": "online-higher-certificate-in-logistics-and-supply-chain-management",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HCSL0501",
+            "duration_years": 2,
+            "nqf_level": 5,
+            "required_grade": "Grade 12",
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": false,
+            "notes": [
+                "Source: Emeris qualification page.",
+                "Emeris is an educational brand of The Independent Institute of Education; official qualification pages are hosted on emeris.ac.za.",
+                "Admission score type: Pass type + subject percentage requirements.",
+                "Minimum admission requirements: National Senior Certificate (NSC): Higher Certificate pass with English at 30% National Certificate (Vocational) [NC(V)]: Higher Certificate pass with English at 40% Senior Certificate (SC): No endorsement required, with English at 33.3% Senior Certificate (Amended) [SC(a)]: Minimum 30% in LOLT on NSC/SC(a) or 33.3% on SC International Applicants: SAQA Evaluation Certificate with NSC Level 4 equivalence and at least 30% or equivalent for English",
+                "Duration: 2 years part-time.",
+                "Intake: January and July.",
+                "Campuses: Online.",
+                "Mode of study: (Online).",
+                "Course code: HCSL0501.",
+                "Credits: 120.",
+                "SAQA ID: 101529.",
+                "Accreditation: This higher certificate is accredited by the Council of Higher Education (CHE) and is registered by the South African Qualifications Authority on the National Qualifications Framework (NQF) as a 120-credit qualification on Level 5 (SAQA ID No: 101526)."
+            ],
+            "source_url": "https://www.emeris.ac.za/qualifications/online/higher-certificate-in-logistics-and-supply-chain-management",
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_mark": 30,
+                            "minimum_level": 2,
+                            "note": "Emeris NSC route: National Senior Certificate (NSC): Higher Certificate pass with English at 30%"
                         }
                     ]
                 }
