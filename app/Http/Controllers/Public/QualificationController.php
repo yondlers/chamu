@@ -6,11 +6,12 @@ use App\Http\Controllers\Controller;
 use App\Models\Qualification;
 use App\Models\University;
 use App\Services\Admissions\PublicAdmissionInfoService;
+use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class QualificationController extends Controller
 {
-    public function show(University $university, Qualification $qualification, PublicAdmissionInfoService $admissionInfo): View
+    public function show(Request $request, University $university, Qualification $qualification, PublicAdmissionInfoService $admissionInfo): View
     {
         abort_if((int) $qualification->university_id !== (int) $university->id, 404);
 
@@ -26,6 +27,10 @@ class QualificationController extends Controller
 
         $rules = $admissionInfo->relevantAdmissionRules($qualification);
         $scoreSummary = $admissionInfo->admissionScoreSummary($qualification, $rules);
+        $isTvetCollegeQualification = $admissionInfo->isTvetCollegeQualification($qualification);
+        $collegeAdmissionSummary = $isTvetCollegeQualification
+            ? $admissionInfo->collegeAdmissionSummary($qualification, $rules)
+            : null;
         $requirements = $qualification->qualificationSubjectRequirements
             ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id);
         $closingLabel = $admissionInfo->closingLabel(
@@ -44,8 +49,11 @@ class QualificationController extends Controller
             'university' => $university->slug,
             'qualification' => $qualification->slug,
         ]);
-        $title = $qualification->name.' at '.$university->name.': APS and Requirements | Chamu';
-        $description = 'View the APS, subject requirements, qualification type and admission information for '.$qualification->name.' at '.$university->name.'.';
+        $titleSuffix = $isTvetCollegeQualification ? 'Entry Requirements' : 'APS and Requirements';
+        $title = $qualification->name.' at '.$university->name.': '.$titleSuffix.' | Chamu';
+        $description = $isTvetCollegeQualification
+            ? 'View entry grade, programme type, NQF route, subject checks and college admission notes for '.$qualification->name.' at '.$university->name.'.'
+            : 'View the APS, subject requirements, qualification type and admission information for '.$qualification->name.' at '.$university->name.'.';
 
         return view('public.qualifications.show', [
             'university' => $university,
@@ -56,6 +64,9 @@ class QualificationController extends Controller
             'relatedQualifications' => $relatedQualifications,
             'closingLabel' => $closingLabel,
             'admissionInfo' => $admissionInfo,
+            'isTvetCollegeQualification' => $isTvetCollegeQualification,
+            'collegeAdmissionSummary' => $collegeAdmissionSummary,
+            'originBreadcrumb' => $this->originBreadcrumb($request),
             'seo' => [
                 'title' => $title,
                 'description' => $description,
@@ -95,5 +106,40 @@ class QualificationController extends Controller
                 ],
             ],
         ]);
+    }
+
+    /**
+     * @return array{label: string, url: string}|null
+     */
+    private function originBreadcrumb(Request $request): ?array
+    {
+        if ($request->query('from') !== 'course-match') {
+            return null;
+        }
+
+        $courseMatchPath = route('course-match.index', [], false);
+        $returnTo = $request->query('return_to');
+        $url = $courseMatchPath;
+
+        if (is_string($returnTo) && $returnTo !== '') {
+            $parts = parse_url($returnTo);
+            $path = $parts['path'] ?? null;
+            $host = $parts['host'] ?? null;
+
+            if (
+                is_string($path)
+                && str_starts_with($path, $courseMatchPath)
+                && ($host === null || strcasecmp($host, $request->getHost()) === 0)
+            ) {
+                $url = $path
+                    .(isset($parts['query']) ? '?'.$parts['query'] : '')
+                    .(isset($parts['fragment']) ? '#'.$parts['fragment'] : '');
+            }
+        }
+
+        return [
+            'label' => 'Course matches',
+            'url' => $url,
+        ];
     }
 }

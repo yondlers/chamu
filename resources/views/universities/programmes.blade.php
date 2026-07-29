@@ -151,7 +151,7 @@
                             @endif
 
                             <div class="mt-4 flex flex-wrap gap-2">
-                                <a href="{{ route('courses.show', $qualification->id) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
+                                <a href="{{ route('public.qualifications.show', ['university' => $university->slug, 'qualification' => $qualification->slug]) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
                                     Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                 </a>
                                 <a href="{{ route('course-match.index', ['university_id' => $university->id, 'faculty_id' => $qualification->faculty_id, 'search' => $qualification->name]) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">

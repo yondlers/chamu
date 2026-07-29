@@ -292,6 +292,14 @@
 
             <section class="grid gap-4">
                 @forelse ($matches as $match)
+                    @php
+                        $qualificationUrl = route('public.qualifications.show', [
+                            'university' => $match->university_slug,
+                            'qualification' => $match->slug,
+                            'from' => 'course-match',
+                            'return_to' => request()->fullUrl().'#match-results',
+                        ]);
+                    @endphp
                     <article class="rounded-2xl border {{ $match->is_match ? 'border-emerald-200 bg-emerald-50/40' : ($match->requires_manual_review ? 'border-sky-200 bg-sky-50/40' : 'border-neutral-200 bg-white') }} p-5 soft-card">
                         <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                             <div class="min-w-0">
@@ -312,7 +320,7 @@
                                     <p class="mt-3 rounded-xl bg-white/70 px-3 py-2 text-sm text-neutral-600">{{ $match->notes }}</p>
                                 @endif
                                 <div class="mt-4 flex flex-wrap gap-2">
-                                    <a href="{{ route('courses.show', $match->id) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
+                                    <a href="{{ $qualificationUrl }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
                                         Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                     </a>
                                     <a href="{{ route('universities.programmes', $match->university_id) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">

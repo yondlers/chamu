@@ -11,6 +11,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/community-development-work",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -18,16 +19,22 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Higher Certificate."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Human Resources Management",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/human-resources-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -35,16 +42,22 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Management",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
-            "aps_required": 30,
+            "duration_years": 3.0,
+            "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/diploma-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -52,16 +65,22 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Marketing",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/marketing-2",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -69,16 +88,22 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Office Management and Technology",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://cms.cut.ac.za/Department/business-support-studies",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -86,16 +111,22 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Public Management",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/public-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -103,24 +134,36 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Hospitality Management",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
-            "selection_programme": false,
+            "selection_programme": true,
+            "source_url": "https://www.cut.ac.za/programmes/hospitality-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
                 "APS note: Life Orientation is given a score of 1 point.",
                 "Minimum general APS: 27.",
+                "Selection testing and interviews may be required.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Accountancy",
@@ -130,6 +173,7 @@
             "aps_required": 30,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/management-sciences-in-accountancy",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -137,7 +181,28 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 5
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "Internal Auditing",
@@ -147,6 +212,7 @@
             "aps_required": 30,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/internal-auditing-1",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -154,24 +220,52 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 5
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "Tourism Management",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
+            "duration_years": 3.0,
             "aps_required": 28,
             "aggregate_average_required": null,
-            "selection_programme": false,
+            "selection_programme": true,
+            "source_url": "https://www.cut.ac.za/programmes/tourism-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
                 "APS note: Life Orientation is given a score of 1 point.",
                 "Minimum general APS: 27.",
+                "Selection testing and interviews may be required.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         }
     ]
 }

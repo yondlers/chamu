@@ -11,6 +11,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/design-and-studio-art",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -18,24 +19,39 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 5
+                }
+            ]
         },
         {
             "name": "Language Practice and Media Studies",
-            "qualification_type": "Diploma",
-            "nqf_level": 6,
-            "duration_years": 2.0,
+            "qualification_type": "Bachelor",
+            "nqf_level": 7,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/language-practice-and-media-studies-1",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
                 "APS note: Life Orientation is given a score of 1 point.",
                 "Minimum general APS: 27.",
-                "Original qualification type: Diploma."
+                "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Official South African language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Foundation Phase Teaching",
@@ -45,6 +61,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/foundation-phase-teaching",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -52,7 +69,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Senior Phase and FET Teaching: Computer Science",
@@ -62,6 +88,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/computer-science",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -69,7 +96,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Senior Phase and FET Teaching: Economic and Management Sciences",
@@ -79,6 +115,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/economic-and-management-sciences",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -86,7 +123,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Senior Phase and FET Teaching: Language Education",
@@ -96,6 +142,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/language-education",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -103,7 +150,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Official South African language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Senior Phase and FET Teaching: Mathematics",
@@ -113,6 +169,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/mathematics",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -120,7 +177,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Senior Phase and FET Teaching: Natural Sciences",
@@ -130,6 +200,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/natural-sciences",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -137,7 +208,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Senior Phase and FET Teaching: Technology",
@@ -147,6 +231,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/technology-0",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -154,7 +239,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         }
     ]
 }

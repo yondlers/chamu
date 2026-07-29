@@ -11,6 +11,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/dental-assisting",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -18,7 +19,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Higher Certificate."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Agricultural Management",
@@ -28,6 +38,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/dip-agricultural-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -35,24 +46,55 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Somatology",
-            "qualification_type": "Diploma",
-            "nqf_level": 6,
-            "duration_years": 2.0,
-            "aps_required": 27,
+            "qualification_type": "Bachelor",
+            "nqf_level": 8,
+            "duration_years": 4.0,
+            "aps_required": 30,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/somatology",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
                 "APS note: Life Orientation is given a score of 1 point.",
                 "Minimum general APS: 27.",
-                "Original qualification type: Diploma."
+                "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Health Sciences in Clinical Technology",
@@ -62,6 +104,7 @@
             "aps_required": 30,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/bachelor-health-sciences-clinical-tech",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -69,7 +112,24 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Health Science: Medical Laboratory Sciences",
@@ -79,6 +139,7 @@
             "aps_required": 30,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/bachelor-health-sciences-medical-lab-science",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -86,7 +147,24 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Environmental Health",
@@ -96,6 +174,7 @@
             "aps_required": 30,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/environmental-health-0",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -103,7 +182,24 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         }
     ]
 }

@@ -4607,6 +4607,7 @@ Route::middleware('auth')->group(function () {
                 'qualifications.*',
                 'universities.name as university_name',
                 'universities.abbreviation as university_abbreviation',
+                'universities.slug as university_slug',
                 'universities.default_closing_month',
                 'universities.default_closing_day',
                 'faculties.name as faculty_name',
@@ -5199,110 +5200,22 @@ Route::middleware('auth')->group(function () {
         ]);
     })->name('universities.programmes');
 
-    Route::get('/courses/{qualification}', function (Request $request, int $qualification) {
+    Route::get('/courses/{qualification}', function (int $qualification) {
         $course = DB::table('qualifications')
             ->join('universities', 'universities.id', '=', 'qualifications.university_id')
-            ->join('faculties', 'faculties.id', '=', 'qualifications.faculty_id')
-            ->join('qualification_types', 'qualification_types.id', '=', 'qualifications.qualification_type_id')
             ->where('qualifications.id', $qualification)
             ->select(
-                'qualifications.*',
-                'universities.name as university_name',
-                'universities.abbreviation as university_abbreviation',
-                'universities.logo as university_logo',
-                'universities.website as university_website',
-                'universities.default_closing_month',
-                'universities.default_closing_day',
-                'faculties.name as faculty_name',
-                'faculties.closing_month as faculty_closing_month',
-                'faculties.closing_day as faculty_closing_day',
-                'qualification_types.name as qualification_type_name',
+                'qualifications.slug as qualification_slug',
+                'universities.slug as university_slug',
             )
             ->first();
 
         abort_if($course === null, 404);
 
-        $requirements = DB::table('qualification_subject_requirements')
-            ->where('qualification_id', $course->id)
-            ->orderBy('id')
-            ->get()
-            ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id);
-
-        $monthNames = [
-            1 => 'January', 2 => 'February', 3 => 'March', 4 => 'April',
-            5 => 'May', 6 => 'June', 7 => 'July', 8 => 'August',
-            9 => 'September', 10 => 'October', 11 => 'November', 12 => 'December',
-        ];
-        $closingMonth = $course->closing_month ?? $course->faculty_closing_month ?? $course->default_closing_month;
-        $closingDay = $course->closing_day ?? $course->faculty_closing_day ?? $course->default_closing_day;
-        $applicationYear = now()->year + 1;
-        $admissionRule = DB::table('university_admission_rules')
-            ->join('admission_rules', 'admission_rules.id', '=', 'university_admission_rules.admission_rule_id')
-            ->where('university_admission_rules.university_id', $course->university_id)
-            ->where('admission_rules.is_active', true)
-            ->where(function ($query) use ($course) {
-                $query
-                    ->where('university_admission_rules.qualification_id', $course->id)
-                    ->orWhere(function ($query) use ($course) {
-                        $query
-                            ->whereNull('university_admission_rules.qualification_id')
-                            ->where('university_admission_rules.faculty_id', $course->faculty_id);
-                    })
-                    ->orWhere(function ($query) {
-                        $query
-                            ->whereNull('university_admission_rules.qualification_id')
-                            ->whereNull('university_admission_rules.faculty_id');
-                    });
-            })
-            ->select(
-                'university_admission_rules.priority',
-                'university_admission_rules.faculty_id',
-                'university_admission_rules.qualification_id',
-                'admission_rules.score_type',
-                'admission_rules.score_label',
-                'admission_rules.score_suffix',
-                'admission_rules.minimum_pass_type as rule_minimum_pass_type',
-            )
-            ->get()
-            ->sortBy([
-                fn ($rule) => (int) $rule->priority,
-                fn ($rule) => $rule->qualification_id !== null ? -3 : ($rule->faculty_id !== null ? -2 : -1),
-            ])
-            ->first();
-        $usesAggregateAverage = ($admissionRule->score_type ?? null) === 'aggregate_average';
-        $usesPassType = ($admissionRule->score_type ?? null) === 'pass_type';
-        $requiredPassType = $course->minimum_pass_type ?? $admissionRule->rule_minimum_pass_type ?? null;
-        $passTypeLabels = [
-            'senior_certificate' => 'Senior Certificate pass',
-            'nsc' => 'NSC pass',
-            'higher_certificate' => 'Higher Certificate pass',
-            'diploma' => 'Diploma pass',
-            'bachelor' => 'Bachelor pass',
-        ];
-        $admissionScoreRequired = $usesPassType
-            ? null
-            : ($course->admission_score_required !== null
-                ? (float) $course->admission_score_required
-                : ($usesAggregateAverage
-                    ? ($course->aggregate_average_required === null ? null : (float) $course->aggregate_average_required)
-                    : ($course->aps_required === null ? null : (float) $course->aps_required)));
-        $admissionScoreSuffix = $admissionRule->score_suffix ?? ($usesAggregateAverage ? '%' : '');
-        $admissionScoreDisplay = $usesPassType
-            ? ($passTypeLabels[$requiredPassType] ?? 'Pass required')
-            : ($admissionScoreRequired === null
-                ? 'N/A'
-                : ($admissionScoreSuffix === '%'
-                ? rtrim(rtrim(number_format($admissionScoreRequired, 1), '0'), '.').$admissionScoreSuffix
-                : number_format($admissionScoreRequired, 0)));
-
-        return view('courses.show', [
-            'course' => $course,
-            'requirements' => $requirements,
-            'admissionScoreLabel' => $admissionRule->score_label ?? ($usesAggregateAverage ? 'Aggregate average' : 'APS'),
-            'admissionScoreDisplay' => $admissionScoreDisplay,
-            'closingLabel' => ($closingMonth && $closingDay)
-                ? $closingDay.' '.($monthNames[(int) $closingMonth] ?? '').' '.$applicationYear
-                : 'Not listed',
+        return redirect()->route('public.qualifications.show', [
+            'university' => $course->university_slug,
+            'qualification' => $course->qualification_slug,
+            'from' => 'course-match',
         ]);
     })->name('courses.show');
 

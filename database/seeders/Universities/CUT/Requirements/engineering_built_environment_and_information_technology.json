@@ -11,6 +11,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/information-technology-2",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -18,16 +19,22 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Higher Certificate."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Information Technology (Diploma)",
             "qualification_type": "Diploma",
             "nqf_level": 6,
-            "duration_years": 2.0,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/Programmes/information-technology",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -35,24 +42,59 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "Computer Networking",
-            "qualification_type": "Higher Certificate",
-            "nqf_level": 5,
-            "duration_years": 1.0,
+            "qualification_type": "Diploma",
+            "nqf_level": 6,
+            "duration_years": 3.0,
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/computer-networking",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
                 "APS note: Life Orientation is given a score of 1 point.",
                 "Minimum general APS: 27.",
-                "Original qualification type: Higher Certificate."
+                "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        },
+                        {
+                            "subject": "Information Technology",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "name": "Construction",
@@ -62,6 +104,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/construction",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -69,7 +112,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Higher Certificate."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Renewable Energy Technologies",
@@ -79,6 +131,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/renewable-energy-technologies",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -86,7 +139,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Higher Certificate."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Construction Management",
@@ -96,14 +158,28 @@
             "aps_required": 32,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/construction-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
                 "APS note: Life Orientation is given a score of 1 point.",
                 "Minimum general APS: 27.",
-                "Original qualification type: Bachelor of Construction."
+                "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Health and Safety Management: Construction",
@@ -113,6 +189,7 @@
             "aps_required": 32,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/health-and-safety-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -120,7 +197,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Civil Engineering (Diploma)",
@@ -130,6 +220,7 @@
             "aps_required": 32,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/civil-engineering",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -137,7 +228,16 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Civil Engineering (Bachelor)",
@@ -147,6 +247,7 @@
             "aps_required": 32,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/civil-engineering-0",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -154,7 +255,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Quantity Surveying",
@@ -164,6 +278,7 @@
             "aps_required": 32,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/quantity-surveying",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -171,7 +286,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Hydrology and Water Resources Management",
@@ -181,6 +309,7 @@
             "aps_required": 28,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/hydrology-and-water-resources-management",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -188,7 +317,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Electrical Engineering (Diploma)",
@@ -198,6 +340,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/dp-engineering-technology-in-electrical-engineer",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -205,7 +348,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Electrical Engineering (Bachelor)",
@@ -215,6 +371,7 @@
             "aps_required": 32,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/engineering-technology-in-electrical-engineer",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -222,7 +379,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Mechanical Engineering (Diploma)",
@@ -232,6 +402,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/engineering-technology-mechanical",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -239,7 +410,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Diploma."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Mechanical Engineering (Bachelor)",
@@ -249,6 +433,7 @@
             "aps_required": 32,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/engineering-technology-mechanical-0",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -256,7 +441,20 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Bachelor."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 5
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ]
         },
         {
             "name": "Mathematics for Engineering Technology",
@@ -266,6 +464,7 @@
             "aps_required": 27,
             "aggregate_average_required": null,
             "selection_programme": false,
+            "source_url": "https://www.cut.ac.za/programmes/hc-mathematics-for-engineering-technology",
             "notes": [
                 "Source: CUT 2026 Prospectus of Programmes.",
                 "Admission score type: APS.",
@@ -273,7 +472,32 @@
                 "Minimum general APS: 27.",
                 "Original qualification type: Higher Certificate."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Technical Mathematics",
+                            "minimum_level": 2
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 5
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
