@@ -355,8 +355,11 @@
 
                         <div class="mt-5 grid grid-cols-2 gap-2">
                             <div class="rounded-xl border border-white/10 bg-white p-3 text-neutral-950">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Required {{ $qualificationMatch['admission_score_label'] }}</p>
+                                <p class="text-xs font-bold uppercase text-neutral-500">Required score</p>
                                 <p class="mt-1 text-2xl font-bold">{{ $qualificationMatch['admission_score_required_display'] }}</p>
+                                @if ($qualificationMatch['admission_score_required_display'] !== 'N/A' && $qualificationMatch['admission_score_label'] !== 'Score')
+                                    <p class="mt-1 text-xs font-semibold uppercase text-neutral-500">{{ $qualificationMatch['admission_score_label'] }}</p>
+                                @endif
                             </div>
                             <div class="rounded-xl border border-white/10 bg-white p-3 text-neutral-950">
                                 <p class="text-xs font-bold uppercase text-neutral-500">Your {{ $qualificationMatch['admission_score_label'] }}</p>

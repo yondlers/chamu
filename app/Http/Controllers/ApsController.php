@@ -93,24 +93,112 @@ class ApsController extends Controller
                     'qualifications.id',
                     'qualifications.name',
                     'qualifications.aps_required',
+                    'qualifications.aggregate_average_required',
+                    'qualifications.admission_score_required',
+                    'qualifications.minimum_pass_type',
                     'qualifications.duration_years',
                     'qualifications.is_selection_programme',
                     'universities.id as university_id',
                     'universities.name as university_name',
                     'universities.abbreviation as university_abbreviation',
                     'universities.logo as university_logo',
+                    'faculties.id as faculty_id',
                     'faculties.name as faculty_name',
                     'qualification_types.name as qualification_type_name',
                 );
         };
 
         $courses = $qualificationQuery()
-            ->orderByRaw('qualifications.aps_required IS NULL')
-            ->orderBy('qualifications.aps_required')
+            ->orderByRaw('(qualifications.admission_score_required IS NULL AND qualifications.aggregate_average_required IS NULL AND qualifications.aps_required IS NULL)')
+            ->orderByRaw('COALESCE(qualifications.admission_score_required, qualifications.aggregate_average_required, qualifications.aps_required)')
             ->orderBy('universities.name')
             ->orderBy('qualifications.name')
             ->paginate(25)
             ->appends($request->except(['aps_score', 'page']));
+
+        $courseItems = $courses->getCollection();
+        $admissionRuleAssignments = DB::table('university_admission_rules')
+            ->join('admission_rules', 'admission_rules.id', '=', 'university_admission_rules.admission_rule_id')
+            ->whereIn('university_admission_rules.university_id', $courseItems->pluck('university_id')->unique())
+            ->where('admission_rules.is_active', true)
+            ->select(
+                'university_admission_rules.*',
+                'admission_rules.score_type',
+                'admission_rules.score_label',
+                'admission_rules.score_suffix',
+                'admission_rules.minimum_pass_type as rule_minimum_pass_type',
+            )
+            ->get();
+
+        $admissionRuleForCourse = function (object $course) use ($admissionRuleAssignments): ?object {
+            return $admissionRuleAssignments
+                ->filter(function ($assignment) use ($course) {
+                    if ((int) $assignment->university_id !== (int) $course->university_id) {
+                        return false;
+                    }
+
+                    if ($assignment->qualification_id !== null && (int) $assignment->qualification_id !== (int) $course->id) {
+                        return false;
+                    }
+
+                    if ($assignment->faculty_id !== null && (int) $assignment->faculty_id !== (int) $course->faculty_id) {
+                        return false;
+                    }
+
+                    return true;
+                })
+                ->sortBy([
+                    fn ($assignment) => (int) $assignment->priority,
+                    fn ($assignment) => $assignment->qualification_id !== null ? -3 : ($assignment->faculty_id !== null ? -2 : -1),
+                ])
+                ->first();
+        };
+
+        $passTypeLabels = [
+            'senior_certificate' => 'Senior Certificate pass',
+            'nsc' => 'NSC pass',
+            'higher_certificate' => 'Higher Certificate pass',
+            'diploma' => 'Diploma pass',
+            'bachelor' => 'Bachelor pass',
+        ];
+        $formatScore = fn (float $score, ?string $suffix): string => $suffix === '%'
+            ? rtrim(rtrim(number_format($score, 1), '0'), '.').$suffix
+            : rtrim(rtrim(number_format($score, 1), '0'), '.');
+
+        $courses->through(function ($course) use ($admissionRuleForCourse, $formatScore, $passTypeLabels) {
+            $admissionRule = $admissionRuleForCourse($course);
+            $scoreType = $admissionRule->score_type
+                ?? ($course->aggregate_average_required !== null ? 'aggregate_average' : 'aps');
+            $usesAggregateAverage = $scoreType === 'aggregate_average';
+            $usesPassType = $scoreType === 'pass_type';
+            $scoreSuffix = $admissionRule->score_suffix ?? ($usesAggregateAverage ? '%' : null);
+            $requiredPassType = $course->minimum_pass_type ?? $admissionRule->rule_minimum_pass_type ?? null;
+            $requiredScore = match (true) {
+                $usesPassType => null,
+                $course->admission_score_required !== null => (float) $course->admission_score_required,
+                $course->aggregate_average_required !== null => (float) $course->aggregate_average_required,
+                $course->aps_required !== null => (float) $course->aps_required,
+                default => null,
+            };
+
+            $course->admission_score_label = $admissionRule->score_label
+                ?? match (true) {
+                    $usesAggregateAverage => 'Aggregated average',
+                    $course->admission_score_required !== null => 'Score',
+                    default => 'APS',
+                };
+            $course->admission_score_display = match (true) {
+                $usesPassType && $requiredPassType !== null => $passTypeLabels[$requiredPassType] ?? $requiredPassType,
+                $usesPassType => 'N/A',
+                $requiredScore !== null => $formatScore($requiredScore, $scoreSuffix),
+                default => 'N/A',
+            };
+            $course->admission_score_badge = $course->admission_score_display === 'N/A'
+                ? 'Score N/A'
+                : $course->admission_score_label.' '.$course->admission_score_display;
+
+            return $course;
+        });
 
         return view('aps.index', [
             'search' => $search,

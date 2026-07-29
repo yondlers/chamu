@@ -331,8 +331,11 @@
 
                             <div class="grid min-w-full grid-cols-2 gap-2 sm:min-w-[440px] sm:grid-cols-4">
                                 <div class="rounded-xl border border-neutral-200 bg-white p-3">
-                                    <p class="text-xs font-bold uppercase text-neutral-500">Required {{ $match->admission_score_label }}</p>
+                                    <p class="text-xs font-bold uppercase text-neutral-500">Required score</p>
                                     <p class="mt-1 text-2xl font-bold">{{ $match->admission_score_required_display }}</p>
+                                    @if ($match->admission_score_required_display !== 'N/A' && $match->admission_score_label !== 'Score')
+                                        <p class="mt-1 text-xs font-semibold uppercase text-neutral-500">{{ $match->admission_score_label }}</p>
+                                    @endif
                                     @if ($match->admission_score_variant_label)
                                         <p class="mt-1 text-xs font-semibold text-neutral-500">{{ $match->admission_score_variant_label }}</p>
                                     @endif

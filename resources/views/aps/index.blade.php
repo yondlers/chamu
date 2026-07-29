@@ -328,7 +328,7 @@
 
                                     <div class="min-w-0 flex-1">
                                         <div class="flex flex-wrap items-center gap-2">
-                                            <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-black text-[#01225E]">APS {{ $course->aps_required ?? 'N/A' }}</span>
+                                            <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-black text-[#01225E]">{{ $course->admission_score_badge }}</span>
                                             <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-black text-neutral-700">{{ $course->qualification_type_name }}</span>
                                             @if ($course->is_selection_programme)
                                                 <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-black text-amber-700">Selection programme</span>
@@ -346,9 +346,14 @@
                                 <div class="flex items-start justify-between gap-4 py-3 first:pt-0">
                                     <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
                                         <i data-lucide="gauge" style="width:14px;height:14px;"></i>
-                                        Required APS
+                                        Required score
                                     </dt>
-                                    <dd class="text-right text-2xl font-black text-neutral-950">{{ $course->aps_required ?? 'N/A' }}</dd>
+                                    <dd class="text-right">
+                                        <span class="block text-2xl font-black text-neutral-950">{{ $course->admission_score_display }}</span>
+                                        @if ($course->admission_score_display !== 'N/A' && $course->admission_score_label !== 'Score')
+                                            <span class="mt-0.5 block text-xs font-bold uppercase text-neutral-500">{{ $course->admission_score_label }}</span>
+                                        @endif
+                                    </dd>
                                 </div>
                                 <div class="flex items-start justify-between gap-4 py-3">
                                     <dt class="flex items-center gap-2 text-xs font-black uppercase text-neutral-500">
