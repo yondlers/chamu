@@ -93,6 +93,7 @@ class CourseMatchController extends Controller
             )
             ->get();
 
+        $hasSavedMarks = $results->isNotEmpty();
         $resultBySubjectId = $results->keyBy('subject_id');
         $normalise = fn (string $value): string => strtolower(preg_replace('/[^a-z0-9]+/i', ' ', $value));
 
@@ -377,6 +378,11 @@ class CourseMatchController extends Controller
         $hideNotQualified = $hasStatusFilters ? $request->boolean('hide_not_qualified') : true;
         $showAlmostThere = $hasStatusFilters ? $request->boolean('show_almost_there') : true;
         $showNotQualifiedYet = $hasStatusFilters ? $request->boolean('show_not_qualified_yet') : true;
+        if (! $hasSavedMarks) {
+            $hideNotQualified = true;
+            $showAlmostThere = true;
+            $showNotQualifiedYet = true;
+        }
         $allStatusFiltersSelected = $hideNotQualified && $showAlmostThere && $showNotQualifiedYet;
         $search = trim((string) $request->query('search', ''));
         $perPageOptions = [10, 25, 50, 100];
@@ -793,6 +799,7 @@ class CourseMatchController extends Controller
             'terms' => $terms,
             'termId' => $termId,
             'results' => $results,
+            'hasSavedMarks' => $hasSavedMarks,
             'apsTotal' => $apsTotal,
             'averageMark' => $averageMark,
             'universities' => $universities,

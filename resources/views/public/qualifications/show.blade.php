@@ -412,26 +412,21 @@
                     </section>
                 @else
                     <section class="rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-5 text-white shadow-sm" aria-labelledby="full-match-heading">
-                        <h2 id="full-match-heading" class="text-xl font-bold">
-                            @if ($qualificationAction['kind'] === 'add_marks')
-                                Add marks to check eligibility
-                            @else
-                                {{ $isTvetCollegeQualification ? 'Check your full college eligibility' : 'Check your full subject-level eligibility' }}
-                            @endif
-                        </h2>
+                        <h2 id="full-match-heading" class="text-xl font-bold">{{ $isTvetCollegeQualification ? 'Review college requirements first' : 'Review requirements first' }}</h2>
                         <p class="mt-3 text-sm leading-6 text-white/80">
-                            @if ($qualificationAction['kind'] === 'add_marks')
-                                Add your subject marks once and Chamu will compare them with this qualification's requirements.
-                            @elseif ($isTvetCollegeQualification)
-                                College admission can depend on entry route, subjects, campus, intake and selection notes. Create a free Chamu account to compare your details and save your result.
-                            @else
-                                APS is only part of the admission decision. Create a free Chamu account to enter your subjects and marks, compare them with this qualification's requirements, and save your result.
-                            @endif
+                            Browse the published score, subjects, notes and related qualifications here. Add marks later when you want Chamu to turn this into a personal comparison.
                         </p>
                         <div class="mt-5 grid gap-2">
                             <a href="{{ $qualificationAction['url'] }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-bold text-[#01225E] hover:bg-neutral-100" data-analytics-event="seo_match_action_clicked" data-action-kind="{{ $qualificationAction['kind'] }}" data-qualification-id="{{ $qualification->id }}">
                                 {{ $qualificationAction['label'] }} <i data-lucide="{{ $qualificationAction['icon'] }}" style="width:16px;height:16px;"></i>
                             </a>
+                            @auth
+                                @if ($qualificationAction['kind'] === 'browse_qualifications')
+                                    <a href="{{ route('marks.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
+                                        Add marks when ready <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
+                                    </a>
+                                @endif
+                            @endauth
                             @guest
                                 <a href="{{ route('register') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
                                     Create a Free Account <i data-lucide="user-plus" style="width:16px;height:16px;"></i>

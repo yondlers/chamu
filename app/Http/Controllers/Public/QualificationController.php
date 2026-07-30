@@ -146,18 +146,24 @@ class QualificationController extends Controller
         ?array $originBreadcrumb,
         bool $hasSavedMarks
     ): array {
+        $publicBrowseUrl = route('aps.index', [
+            'university_id' => $university->id,
+        ]);
         $matchUrl = route('course-match.index', [
             'university_id' => $university->id,
             'faculty_id' => $qualification->faculty_id,
             'search' => $qualification->name,
         ]);
+        $browseUrl = route('course-match.index', [
+            'university_id' => $university->id,
+        ]);
 
         if ($request->user() === null) {
             return [
-                'label' => 'Check My Full Eligibility',
-                'url' => $matchUrl,
-                'icon' => 'target',
-                'kind' => 'guest_match',
+                'label' => 'Browse Qualifications',
+                'url' => $publicBrowseUrl,
+                'icon' => 'list-search',
+                'kind' => 'public_browse',
             ];
         }
 
@@ -171,10 +177,10 @@ class QualificationController extends Controller
         }
 
         return [
-            'label' => 'Add Marks',
-            'url' => route('marks.index'),
-            'icon' => 'line-chart',
-            'kind' => 'add_marks',
+            'label' => 'Browse Qualifications',
+            'url' => $browseUrl,
+            'icon' => 'list-search',
+            'kind' => 'browse_qualifications',
         ];
     }
 

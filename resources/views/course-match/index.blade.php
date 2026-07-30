@@ -65,6 +65,7 @@
                 $selectedQualificationType?->name,
                 $search !== '' ? '"'.$search.'"' : null,
             ])->filter()->implode(' · ');
+            $hasSavedMarks = $hasSavedMarks ?? $results->isNotEmpty();
         @endphp
 
     <main class="bg-[#f5f7fb] pb-16 text-neutral-950">
@@ -82,27 +83,31 @@
                     <div class="max-w-3xl">
                         <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase text-white/85 backdrop-blur">
                             <span class="h-2 w-2 rounded-full bg-sky-300"></span>
-                            Full subject match
+                            {{ $hasSavedMarks ? 'Full subject match' : 'Programme preview' }}
                         </div>
                         <h1 class="mt-4 max-w-3xl text-3xl font-black leading-[1.02] text-white sm:mt-5 sm:text-6xl">
-                            {{ $studentFirstName }}, see what your marks unlock.
+                            {{ $studentFirstName }}, {{ $hasSavedMarks ? 'see what your marks unlock.' : 'browse programmes while marks are pending.' }}
                         </h1>
                         <p class="mt-4 max-w-2xl text-sm font-medium leading-6 text-white/75 sm:mt-5 sm:text-lg sm:leading-7">
-                            Chamu compares your saved term marks with university APS, aggregate, and subject rules so the next move is easier to choose.
+                            @if ($hasSavedMarks)
+                                Chamu compares your saved term marks with university APS, aggregate, and subject rules so the next move is easier to choose.
+                            @else
+                                Your subjects are saved. Browse captured programmes now, then add marks when you want a personal APS and subject-level comparison.
+                            @endif
                         </p>
 
                         <div class="mt-6 grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-white/15 bg-white/15 sm:mt-8 sm:grid-cols-4">
                             <div class="bg-white/5 p-4 backdrop-blur">
                                 <p class="text-xs font-black uppercase text-white/55">APS score</p>
-                                <p class="mt-2 text-2xl font-black">{{ $apsTotal }}</p>
+                                <p class="mt-2 text-2xl font-black">{{ $hasSavedMarks ? $apsTotal : 'Pending' }}</p>
                             </div>
                             <div class="bg-white/5 p-4 backdrop-blur">
                                 <p class="text-xs font-black uppercase text-white/55">Average</p>
-                                <p class="mt-2 text-2xl font-black">{{ $averageMark ? number_format($averageMark, 1) : '0.0' }}%</p>
+                                <p class="mt-2 text-2xl font-black">{{ $hasSavedMarks ? (($averageMark ? number_format($averageMark, 1) : '0.0').'%') : 'Pending' }}</p>
                             </div>
                             <div class="bg-white/5 p-4 backdrop-blur">
                                 <p class="text-xs font-black uppercase text-white/55">Matched</p>
-                                <p class="mt-2 text-2xl font-black">{{ $matchedCount }}</p>
+                                <p class="mt-2 text-2xl font-black">{{ $hasSavedMarks ? $matchedCount : 'Pending' }}</p>
                             </div>
                             <div class="bg-white/5 p-4 backdrop-blur">
                                 <p class="text-xs font-black uppercase text-white/55">Visible</p>
@@ -243,25 +248,29 @@
             </div>
 
             <div class="mt-4 flex flex-col gap-3 border-t border-neutral-100 pt-4 md:flex-row md:items-center md:justify-between">
-                <div class="flex flex-col gap-3 md:flex-row md:items-center">
-                    <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
-                        <input type="hidden" name="hide_not_qualified" value="0">
-                        <input type="checkbox" name="hide_not_qualified" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['hide_not_qualified'])>
-                        You qualify
-                    </label>
+                @if ($hasSavedMarks)
+                    <div class="flex flex-col gap-3 md:flex-row md:items-center">
+                        <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
+                            <input type="hidden" name="hide_not_qualified" value="0">
+                            <input type="checkbox" name="hide_not_qualified" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['hide_not_qualified'])>
+                            You qualify
+                        </label>
 
-                    <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
-                        <input type="hidden" name="show_almost_there" value="0">
-                        <input type="checkbox" name="show_almost_there" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['show_almost_there'])>
-                        Almost there
-                    </label>
+                        <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
+                            <input type="hidden" name="show_almost_there" value="0">
+                            <input type="checkbox" name="show_almost_there" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['show_almost_there'])>
+                            Almost there
+                        </label>
 
-                    <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
-                        <input type="hidden" name="show_not_qualified_yet" value="0">
-                        <input type="checkbox" name="show_not_qualified_yet" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['show_not_qualified_yet'])>
-                        Not qualified yet
-                    </label>
-                </div>
+                        <label class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700">
+                            <input type="hidden" name="show_not_qualified_yet" value="0">
+                            <input type="checkbox" name="show_not_qualified_yet" value="1" class="h-4 w-4 accent-[#01225E]" @checked($filters['show_not_qualified_yet'])>
+                            Not qualified yet
+                        </label>
+                    </div>
+                @else
+                    <p class="text-sm font-semibold text-neutral-600">Programme preview. Add marks later for personal match labels.</p>
+                @endif
 
                 <div class="flex items-center gap-3 text-sm font-semibold text-neutral-500">
                     <span>{{ $visibleMatchesCount }} of {{ $totalMatchesBeforeFilters }} shown</span>
@@ -275,15 +284,20 @@
         @include('partials.adsense-home-placement', ['class' => 'mx-auto mt-8 max-w-7xl px-5 lg:px-8'])
 
         <div id="match-results" class="mx-auto mt-8 scroll-mt-24 max-w-7xl px-5 lg:px-8">
-            @if ($results->isEmpty())
-            <section class="rounded-2xl border border-dashed border-neutral-300 bg-white p-8 text-center">
-                <h2 class="text-xl font-bold">Add marks first</h2>
-                <p class="mt-2 text-neutral-500">Course matching needs your term marks so it can calculate APS and compare subject levels.</p>
-                <a href="{{ route('marks.index') }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
-                    Add marks <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
-                </a>
-            </section>
-        @else
+            @unless ($hasSavedMarks)
+                <section class="mb-4 rounded-2xl border border-sky-100 bg-white p-5 shadow-sm">
+                    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                            <h2 class="text-lg font-bold text-neutral-950">Browse qualifications first</h2>
+                            <p class="mt-1 text-sm leading-6 text-neutral-600">Marks are optional for browsing. Add them later when you want Chamu to calculate your APS and compare each subject requirement.</p>
+                        </div>
+                        <a href="{{ route('marks.index', ['term_id' => $termId]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
+                            Add marks when ready <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
+                        </a>
+                    </div>
+                </section>
+            @endunless
+
             <div class="mb-4 flex items-center justify-between rounded-2xl border border-neutral-200 bg-white p-4 text-sm font-semibold text-neutral-500">
                 <span>
                     Showing {{ $matches->firstItem() ?? 0 }}-{{ $matches->lastItem() ?? 0 }} of {{ $matches->total() }}
@@ -300,12 +314,12 @@
                             'return_to' => request()->fullUrl().'#match-results',
                         ]);
                     @endphp
-                    <article class="rounded-2xl border {{ $match->is_match ? 'border-emerald-200 bg-emerald-50/40' : ($match->requires_manual_review ? 'border-sky-200 bg-sky-50/40' : 'border-neutral-200 bg-white') }} p-5 soft-card">
+                    <article class="rounded-2xl border {{ $hasSavedMarks ? ($match->is_match ? 'border-emerald-200 bg-emerald-50/40' : ($match->requires_manual_review ? 'border-sky-200 bg-sky-50/40' : 'border-neutral-200 bg-white')) : 'border-neutral-200 bg-white' }} p-5 soft-card">
                         <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                             <div class="min-w-0">
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <span class="rounded-full {{ $match->is_match ? 'bg-emerald-100 text-emerald-700' : ($match->requires_manual_review ? 'bg-sky-100 text-sky-700' : ($match->is_almost_there ? 'bg-amber-100 text-amber-700' : 'bg-neutral-100 text-neutral-600')) }} px-3 py-1 text-xs font-bold">
-                                        {{ $match->is_match ? 'You qualify' : ($match->requires_manual_review ? 'Review requirements' : ($match->is_almost_there ? 'Almost there' : 'Not qualified yet')) }}
+                                    <span class="rounded-full {{ $hasSavedMarks ? ($match->is_match ? 'bg-emerald-100 text-emerald-700' : ($match->requires_manual_review ? 'bg-sky-100 text-sky-700' : ($match->is_almost_there ? 'bg-amber-100 text-amber-700' : 'bg-neutral-100 text-neutral-600'))) : 'bg-sky-50 text-sky-700' }} px-3 py-1 text-xs font-bold">
+                                        {{ $hasSavedMarks ? ($match->is_match ? 'You qualify' : ($match->requires_manual_review ? 'Review requirements' : ($match->is_almost_there ? 'Almost there' : 'Not qualified yet'))) : 'Programme preview' }}
                                     </span>
                                     @if ($match->is_selection_programme)
                                         <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-600">Selection programme</span>
@@ -341,12 +355,12 @@
                                     @endif
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-white p-3">
-                                    <p class="text-xs font-bold uppercase text-neutral-500">Your {{ $match->admission_score_label }}</p>
-                                    <p class="mt-1 text-2xl font-bold">{{ $match->admission_score_actual_display }}</p>
+                                    <p class="text-xs font-bold uppercase text-neutral-500">{{ $hasSavedMarks ? 'Your '.$match->admission_score_label : 'Your score' }}</p>
+                                    <p class="mt-1 text-2xl font-bold">{{ $hasSavedMarks ? $match->admission_score_actual_display : 'Pending' }}</p>
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-white p-3">
-                                    <p class="text-xs font-bold uppercase text-neutral-500">{{ $match->admission_score_label }} Gap</p>
-                                    <p class="mt-1 text-2xl font-bold">{{ $match->admission_score_gap_display }}</p>
+                                    <p class="text-xs font-bold uppercase text-neutral-500">{{ $hasSavedMarks ? $match->admission_score_label.' Gap' : 'Match check' }}</p>
+                                    <p class="mt-1 text-2xl font-bold">{{ $hasSavedMarks ? $match->admission_score_gap_display : 'Not run' }}</p>
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-white p-3">
                                     <p class="text-xs font-bold uppercase text-neutral-500">Closes</p>
@@ -357,8 +371,18 @@
 
                         <div class="mt-4 grid gap-3 md:grid-cols-2">
                             <div class="rounded-xl border border-neutral-200 bg-white p-4">
-                                <p class="text-sm font-bold text-neutral-950">Met requirements</p>
-                                @if (count($match->met_requirements) > 0)
+                                <p class="text-sm font-bold text-neutral-950">{{ $hasSavedMarks ? 'Met requirements' : 'Requirements to review' }}</p>
+                                @if (! $hasSavedMarks)
+                                    @if (count($match->missing_requirements) > 0)
+                                        <div class="mt-3 flex flex-wrap gap-2">
+                                            @foreach ($match->missing_requirements as $requirement)
+                                                <span class="rounded-full bg-neutral-50 px-3 py-1 text-xs font-bold text-neutral-700">{{ $requirement }}</span>
+                                            @endforeach
+                                        </div>
+                                    @else
+                                        <p class="mt-2 text-sm text-neutral-500">{{ $match->requires_manual_review ? 'Structured requirements are not available for this programme yet.' : 'No subject requirements listed.' }}</p>
+                                    @endif
+                                @elseif (count($match->met_requirements) > 0)
                                     <div class="mt-3 flex flex-wrap gap-2">
                                         @foreach ($match->met_requirements as $requirement)
                                             <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">{{ $requirement }}</span>
@@ -370,8 +394,10 @@
                             </div>
 
                             <div class="rounded-xl border border-neutral-200 bg-white p-4">
-                                <p class="text-sm font-bold text-neutral-950">Still needed</p>
-                                @if ($match->requires_manual_review)
+                                <p class="text-sm font-bold text-neutral-950">{{ $hasSavedMarks ? 'Still needed' : 'Personal match' }}</p>
+                                @if (! $hasSavedMarks)
+                                    <p class="mt-2 text-sm font-semibold text-sky-700">Add marks when you are ready for a personal APS and subject-level check. Until then, browsing stays open.</p>
+                                @elseif ($match->requires_manual_review)
                                     <p class="mt-2 text-sm font-semibold text-sky-700">Check the notes. This programme has requirements that are not fully machine-checkable yet.</p>
                                 @elseif ($match->admission_score_gap === 0 && count($match->missing_requirements) === 0)
                                     <p class="mt-2 text-sm font-semibold text-emerald-700">Nothing missing based on your current marks.</p>
@@ -403,7 +429,6 @@
                 <div class="mt-6 rounded-2xl border border-neutral-200 bg-white p-4">
                     {{ $matches->onEachSide(1)->links() }}
                 </div>
-            @endif
             @endif
         </div>
     </main>
