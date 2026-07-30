@@ -206,7 +206,7 @@
                         <i data-lucide="badge-dollar-sign" style="width:16px;height:16px;"></i>
                         Funding
                     </a>
-                    <a href="{{ route('learn.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('learn.*') || request()->routeIs('content.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('learn.*') || request()->routeIs('content.*')) aria-current="page" @endif>
+                    <a href="{{ route('learn.index') }}" class="hidden {{ $navLinkBase }} {{ request()->routeIs('learn.*') || request()->routeIs('content.*') ? $navLinkActive : $navLinkIdle }}" aria-hidden="true" tabindex="-1" @if (request()->routeIs('learn.*') || request()->routeIs('content.*')) aria-current="page" @endif>
                         <i data-lucide="book-open" style="width:16px;height:16px;"></i>
                         Learn
                     </a>
