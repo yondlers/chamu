@@ -18,9 +18,98 @@
             'sky' => 'border-sky-200 bg-sky-50 text-sky-900',
             'amber' => 'border-amber-200 bg-amber-50 text-amber-950',
         ][$sourceInfo['tone'] ?? 'sky'] ?? 'border-neutral-200 bg-neutral-50 text-neutral-800';
-        $programmeNotes = collect(preg_split('/\R+/', trim((string) $qualification->notes)) ?: [])
-            ->map(fn ($note) => trim($note))
+        $applicationPlanningNoteLabels = [
+            'Eligibility explanation',
+            'Academic requirement',
+            'Document checklist',
+            'Application method',
+            'Closing-date context',
+            'Application safety',
+        ];
+        $programmeNoteSections = \App\Support\ProgrammeNotes::sections($qualification->notes);
+        $programmeNotes = \App\Support\ProgrammeNotes::lines($qualification->notes, $applicationPlanningNoteLabels);
+        $providerName = $university->name;
+        $providerShortName = $university->abbreviation ?: $providerName;
+        $qualificationName = $qualification->name;
+        $entryGradeDisplay = $isTvetCollegeQualification
+            ? ($qualification->requiredGrade?->name ?? 'Confirm in source')
+            : 'Grade 11/12 NSC';
+        $entryGradeContext = $isTvetCollegeQualification
+            ? null
+            : 'Provisional acceptance can use Grade 11 final marks or Grade 12 mid-year marks; final acceptance depends on final Grade 12 NSC results.';
+        $subjectRequirementSummary = $qualification->qualificationSubjectRequirements
+            ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id)
+            ->map(function ($group) use ($admissionInfo) {
+                return $group
+                    ->map(function ($requirement) use ($admissionInfo) {
+                        $label = $requirement->minimum_mark !== null
+                            ? (int) $requirement->minimum_mark.'%'
+                            : $admissionInfo->requirementLabel($requirement);
+
+                        return trim(($requirement->subject_name ?: $requirement->subject?->name ?: 'Subject').' '.$label);
+                    })
+                    ->implode(' or ');
+            })
             ->filter()
+            ->implode('; ');
+        $subjectSentence = $subjectRequirementSummary
+            ? ' Check '.$subjectRequirementSummary.' before applying.'
+            : ' Confirm any subject, portfolio, campus or selection rules before applying.';
+        $eligibilityText = collect([
+            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Eligibility explanation']),
+            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Academic requirement']),
+        ])->filter()->implode(' ');
+
+        if ($eligibilityText === '') {
+            if ($isTvetCollegeQualification && ! empty($collegeAdmissionSummary['intro'])) {
+                $eligibilityText = $collegeAdmissionSummary['intro'];
+            } elseif ($qualification->aps_required !== null || $qualification->admission_score_required !== null) {
+                $eligibilityText = $qualificationName.' lists '.$scoreSummary['label'].' '.$scoreSummary['value'].' for '.$providerShortName.'.'.$subjectSentence;
+            } elseif ($usesPassTypeAdmission) {
+                $eligibilityText = 'Start with the published pass type, English mark and any listed selection conditions for '.$qualificationName.' at '.$providerShortName.'.'.$subjectSentence;
+            } else {
+                $eligibilityText = 'Confirm the published entry route for '.$qualificationName.' at '.$providerShortName.'.'.$subjectSentence;
+            }
+        }
+
+        $documentText = \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Document checklist'])
+            ?: 'For '.$qualificationName.', keep your ID or passport, latest official school results and any '.$providerShortName.' programme-specific documents ready before starting the official application.';
+        $applicationRouteText = collect([
+            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Application method']),
+            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Closing-date context']),
+        ])->filter()->implode(' ');
+        $applicationRouteText = $applicationRouteText !== ''
+            ? $applicationRouteText
+            : 'Use '.$providerName.' official admissions channels for '.$qualificationName.', then confirm the current closing date and faculty or campus instructions on the source page.';
+        $safetyText = \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Application safety'])
+            ?: 'Treat offers, fees and late-application claims carefully. Confirm '.$qualificationName.' admission, funding and placement information through '.$providerShortName.' official channels.';
+        $planningCards = collect([
+            [
+                'title' => 'Eligibility and selection',
+                'icon' => 'clipboard-check',
+                'body' => $eligibilityText,
+            ],
+            [
+                'title' => 'Document checklist',
+                'icon' => 'files',
+                'body' => $documentText,
+            ],
+            [
+                'title' => 'Application route and dates',
+                'icon' => 'send',
+                'body' => $applicationRouteText,
+            ],
+            [
+                'title' => 'Application safety',
+                'icon' => 'shield-check',
+                'body' => $safetyText,
+            ],
+        ])->filter(fn (array $card) => filled($card['body']))->values();
+        $qualificationNotes = collect($isTvetCollegeQualification && $collegeAdmissionSummary ? ($collegeAdmissionSummary['notes'] ?? []) : [])
+            ->merge($programmeNotes)
+            ->map(fn ($note) => trim((string) $note))
+            ->filter()
+            ->unique()
             ->values();
     @endphp
 
@@ -90,7 +179,10 @@
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">{{ $isTvetCollegeQualification || $usesPassTypeAdmission ? 'Entry grade' : 'Grade' }}</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->requiredGrade?->name ?? 'Confirm in source' }}</dd>
+                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $entryGradeDisplay }}</dd>
+                                    @if ($entryGradeContext)
+                                        <p class="mt-1 text-xs font-semibold leading-5 text-neutral-500">{{ $entryGradeContext }}</p>
+                                    @endif
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">Duration</dt>
@@ -125,36 +217,8 @@
                                 </div>
                             @endforeach
                         </div>
-
-                        @if ($collegeAdmissionSummary['notes'] !== [])
-                            <div class="mt-5 rounded-xl bg-amber-50 px-4 py-4 text-sm text-amber-950">
-                                <h3 class="font-bold">Programme notes</h3>
-                                <ul class="mt-3 list-disc space-y-2 pl-5">
-                                    @foreach ($collegeAdmissionSummary['notes'] as $note)
-                                        <li>{{ $note }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
                     </section>
                 @elseif ($usesPassTypeAdmission)
-                    @php
-                        $subjectRequirementSummary = $qualification->qualificationSubjectRequirements
-                            ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id)
-                            ->map(function ($group) use ($admissionInfo) {
-                                return $group
-                                    ->map(function ($requirement) use ($admissionInfo) {
-                                        $label = $requirement->minimum_mark !== null
-                                            ? (int) $requirement->minimum_mark.'%'
-                                            : $admissionInfo->requirementLabel($requirement);
-
-                                        return trim(($requirement->subject_name ?: $requirement->subject?->name ?: 'Subject').' '.$label);
-                                    })
-                                    ->implode(' or ');
-                            })
-                            ->filter()
-                            ->implode('; ');
-                    @endphp
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
                         <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission requirements</h2>
                         <p class="mt-3 max-w-3xl text-sm leading-6 text-neutral-600">
@@ -175,8 +239,8 @@
                             </div>
                             <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <p class="text-xs font-bold uppercase text-neutral-500">Entry grade</p>
-                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $qualification->requiredGrade?->name ?? 'Grade 12 or equivalent' }}</p>
-                                <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">Use equivalent NC(V), SC, SC(A) or international routes where the source lists them.</p>
+                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $entryGradeDisplay }}</p>
+                                <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $entryGradeContext ?: 'Use equivalent NC(V), SC, SC(A) or international routes where the source lists them.' }}</p>
                             </div>
                             <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <p class="text-xs font-bold uppercase text-neutral-500">Duration</p>
@@ -188,16 +252,6 @@
                             </div>
                         </div>
 
-                        @if ($programmeNotes->isNotEmpty())
-                            <div class="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
-                                <h3 class="font-bold">Planning notes</h3>
-                                <div class="mt-3 grid gap-2">
-                                    @foreach ($programmeNotes as $note)
-                                        <p>{{ $note }}</p>
-                                    @endforeach
-                                </div>
-                            </div>
-                        @endif
                     </section>
                 @else
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
@@ -223,34 +277,36 @@
                             </p>
                         @endif
 
-                        @if ($programmeNotes->isNotEmpty())
-                            <div class="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
-                                <h3 class="font-bold">Planning notes</h3>
-                                <div class="mt-3 grid gap-2">
-                                    @foreach ($programmeNotes as $note)
-                                        <p>{{ $note }}</p>
-                                    @endforeach
-                                </div>
-                            </div>
-                        @endif
+                    </section>
+                @endif
+
+                @if ($qualificationNotes->isNotEmpty())
+                    <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="qualification-notes-heading">
+                        <h2 id="qualification-notes-heading" class="text-2xl font-bold text-neutral-950">Qualification Notes</h2>
+                        <div class="mt-4 grid gap-3 text-sm leading-6 text-neutral-600">
+                            @foreach ($qualificationNotes as $note)
+                                <p>{{ $note }}</p>
+                            @endforeach
+                        </div>
                     </section>
                 @endif
 
                 <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="application-planning-heading">
                     <h2 id="application-planning-heading" class="text-2xl font-bold text-neutral-950">Application planning</h2>
-                    <div class="mt-5 grid gap-3 md:grid-cols-3">
-                        <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                            <h3 class="text-sm font-bold text-neutral-950">Eligibility check</h3>
-                            <p class="mt-2 text-sm leading-6 text-neutral-600">Use the published score, subject levels and any notes on this page as a first screen, then confirm selection tests, campus rules and final Grade 12 conditions on the source page.</p>
-                        </article>
-                        <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                            <h3 class="text-sm font-bold text-neutral-950">Document checklist</h3>
-                            <p class="mt-2 text-sm leading-6 text-neutral-600">Have your ID or passport, latest school results, proof of application-fee payment where required, and any international applicant documents ready before starting the official application.</p>
-                        </article>
-                        <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                            <h3 class="text-sm font-bold text-neutral-950">Application safety</h3>
-                            <p class="mt-2 text-sm leading-6 text-neutral-600">Apply through the university's official channels only. Chamu is an independent guide and cannot guarantee admission, placement, funding or late-application availability.</p>
-                        </article>
+                    <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+                        @foreach ($planningCards as $card)
+                            <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <div class="flex items-start gap-3">
+                                    <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-[#01225E]">
+                                        <i data-lucide="{{ $card['icon'] }}" style="width:18px;height:18px;"></i>
+                                    </span>
+                                    <div>
+                                        <h3 class="text-sm font-bold text-neutral-950">{{ $card['title'] }}</h3>
+                                        <p class="mt-2 text-sm leading-6 text-neutral-600">{{ $card['body'] }}</p>
+                                    </div>
+                                </div>
+                            </article>
+                        @endforeach
                     </div>
                 </section>
 
