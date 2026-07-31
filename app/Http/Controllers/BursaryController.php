@@ -13,6 +13,7 @@ use App\Models\User;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
 use App\Models\UserSubjectResult;
+use App\Support\SourceMeta;
 use App\Support\Social\FacebookGraph;
 use App\Support\Social\InstagramGraph;
 use App\Support\Social\LinkedInGraph;
@@ -412,6 +413,19 @@ class BursaryController extends Controller
             $documentRequirements = BursaryDocumentRequirement::defaultEmailSubmissionRequirements();
         }
 
+        $relatedBursaries = $this->relatedBursaries($bursary);
+        $sourceInfo = SourceMeta::make(
+            $bursary->source_url,
+            $bursary->updated_at,
+            $bursary->company_website,
+        );
+        $canonical = route('bursaries.show', ['bursary' => $bursary->id]);
+        $description = Str::limit(
+            $bursary->summary
+                ?: 'View eligibility, documents, closing-date context and application guidance for '.$bursary->title.' on Chamu.',
+            155,
+        );
+
         $latestApplication = null;
         $applicationProfile = null;
         $savedApplicationDocuments = collect();
@@ -452,6 +466,96 @@ class BursaryController extends Controller
             'applicationTablesReady' => $applicationTablesReady,
             'providerEmail' => $providerEmail,
             'providerPostalAddress' => $providerPostalAddress,
+            'relatedBursaries' => $relatedBursaries,
+            'sourceInfo' => $sourceInfo,
+            'seo' => [
+                'title' => $bursary->title.' Eligibility, Documents and Application Details | Chamu',
+                'description' => $description,
+                'canonical' => $canonical,
+                'jsonLd' => [
+                    [
+                        '@context' => 'https://schema.org',
+                        '@type' => 'BreadcrumbList',
+                        'itemListElement' => [
+                            [
+                                '@type' => 'ListItem',
+                                'position' => 1,
+                                'name' => 'Chamu',
+                                'item' => url('/'),
+                            ],
+                            [
+                                '@type' => 'ListItem',
+                                'position' => 2,
+                                'name' => 'Bursaries',
+                                'item' => route('bursaries.index'),
+                            ],
+                            [
+                                '@type' => 'ListItem',
+                                'position' => 3,
+                                'name' => $bursary->title,
+                                'item' => $canonical,
+                            ],
+                        ],
+                    ],
+                    [
+                        '@context' => 'https://schema.org',
+                        '@type' => 'WebPage',
+                        'name' => $bursary->title,
+                        'description' => $description,
+                        'url' => $canonical,
+                    ],
+                ],
+            ],
         ]);
+    }
+
+    private function relatedBursaries(object $bursary)
+    {
+        $today = now()->toDateString();
+        $hasCategory = filled($bursary->category);
+        $hasCompany = filled($bursary->company_id);
+
+        $query = DB::table('bursaries')
+            ->leftJoin('companies', 'companies.id', '=', 'bursaries.company_id')
+            ->select(
+                'bursaries.id',
+                'bursaries.title',
+                'bursaries.category',
+                'bursaries.summary',
+                'bursaries.closing_date',
+                'bursaries.closing_date_label',
+                'companies.name as company_name',
+            )
+            ->where('bursaries.is_active', true)
+            ->where('bursaries.id', '<>', $bursary->id);
+
+        if ($hasCategory || $hasCompany) {
+            $query->where(function ($query) use ($bursary, $hasCategory, $hasCompany) {
+                if ($hasCategory) {
+                    $query
+                        ->where('bursaries.category', $bursary->category)
+                        ->orWhere('bursaries.fields_covered', 'like', '%'.$bursary->category.'%');
+                }
+
+                if ($hasCompany) {
+                    $method = $hasCategory ? 'orWhere' : 'where';
+                    $query->{$method}('bursaries.company_id', $bursary->company_id);
+                }
+            });
+        }
+
+        return $query
+            ->orderByRaw('case when bursaries.category = ? then 0 when bursaries.company_id = ? then 1 else 2 end', [
+                $bursary->category,
+                $bursary->company_id,
+            ])
+            ->orderByRaw(
+                'case when bursaries.closing_date >= ? then 0 when bursaries.closing_date is null then 1 else 2 end',
+                [$today],
+            )
+            ->orderBy('bursaries.closing_date')
+            ->orderBy('bursaries.title')
+            ->limit(6)
+            ->get();
     }
 }

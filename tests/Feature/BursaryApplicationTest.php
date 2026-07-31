@@ -658,7 +658,7 @@ class BursaryApplicationTest extends TestCase
         $response->assertDontSee('receipt-text');
         $response->assertDontSee('How to apply');
         $response->assertDontSee('Apply by email.');
-        $response->assertDontSee('Source');
+        $response->assertSee('Source and review');
     }
 
     public function test_seeded_clockwork_email_bursary_shows_apply_with_chamu_not_apply_link(): void
@@ -673,7 +673,7 @@ class BursaryApplicationTest extends TestCase
         $response->assertSee('Apply with Chamu');
         $response->assertSee('Chamu-managed email submission');
         $response->assertDontSee('Apply Link');
-        $response->assertDontSee('Source');
+        $response->assertSee('Source and review');
     }
 
     public function test_seeded_women_in_it_email_bursary_shows_apply_with_chamu_not_apply_link(): void
@@ -688,7 +688,7 @@ class BursaryApplicationTest extends TestCase
         $response->assertSee('Apply with Chamu');
         $response->assertSee('Chamu-managed email submission');
         $response->assertDontSee('Apply Link');
-        $response->assertDontSee('Source');
+        $response->assertSee('Source and review');
     }
 
     public function test_bursary_list_requires_details_before_application_actions(): void
@@ -800,7 +800,7 @@ class BursaryApplicationTest extends TestCase
         $response->assertSee('Apply with Chamu');
         $response->assertSee('Certified copy of ID document');
         $response->assertDontSee('Apply Link');
-        $response->assertDontSee('Source');
+        $response->assertSee('Source and review');
     }
 
     /**

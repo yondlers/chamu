@@ -35,6 +35,7 @@ class SitemapTest extends TestCase
         $university = $records['university'];
         $otherUniversity = $records['other_university'];
         $qualification = $records['qualification'];
+        $bursaryId = $records['bursary_id'];
 
         $response = $this->get('/sitemap.xml');
         $content = $response->streamedContent();
@@ -46,7 +47,7 @@ class SitemapTest extends TestCase
 
         $response->assertOk();
         $this->assertSame('application/xml; charset=UTF-8', $response->headers->get('Content-Type'));
-        $this->assertStringContainsString('<loc>https://chamu.co.za</loc>', $content);
+        $this->assertStringNotContainsString('<loc>https://chamu.co.za</loc>', $content);
         $this->assertStringContainsString('<loc>https://chamu.co.za/aps</loc>', $content);
         $this->assertStringContainsString('<loc>https://chamu.co.za/learn</loc>', $content);
         $this->assertStringContainsString('<loc>https://chamu.co.za/guides</loc>', $content);
@@ -61,6 +62,10 @@ class SitemapTest extends TestCase
         );
         $this->assertStringContainsString(
             '<loc>'.$expectedQualificationUrl.'</loc>',
+            $content,
+        );
+        $this->assertStringContainsString(
+            '<loc>https://chamu.co.za/bursaries/'.$bursaryId.'</loc>',
             $content,
         );
         $this->assertStringNotContainsString('/login', $content);
@@ -140,7 +145,8 @@ class SitemapTest extends TestCase
 
         $response->assertOk();
         $this->assertSame('application/xml; charset=UTF-8', $response->headers->get('Content-Type'));
-        $this->assertStringContainsString('<loc>https://chamu.co.za</loc>', $content);
+        $this->assertStringNotContainsString('<loc>https://chamu.co.za</loc>', $content);
+        $this->assertStringContainsString('<loc>https://chamu.co.za/aps</loc>', $content);
         $this->assertInstanceOf(SimpleXMLElement::class, simplexml_load_string($content));
     }
 
@@ -183,11 +189,23 @@ class SitemapTest extends TestCase
             'aps_required' => 30,
             'is_selection_programme' => false,
         ]);
+        $bursaryId = DB::table('bursaries')->insertGetId([
+            'company_id' => null,
+            'title' => 'Accounting Support Bursary',
+            'slug' => 'accounting-support-bursary',
+            'category' => 'Accounting',
+            'summary' => 'Funding support for accounting students.',
+            'source_url' => 'https://example.com/accounting-support-bursary',
+            'is_active' => true,
+            'created_at' => $now,
+            'updated_at' => $now,
+        ]);
 
         return [
             'university' => $university,
             'other_university' => $otherUniversity,
             'qualification' => $qualification,
+            'bursary_id' => $bursaryId,
         ];
     }
 

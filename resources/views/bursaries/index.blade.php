@@ -2,6 +2,14 @@
 
 @section('title', 'Bursaries · Chamu')
 
+@push('head')
+    <x-seo-meta
+        title="South African Bursaries and Funding Opportunities - Chamu"
+        description="Browse South African bursaries by provider, field, closing date, eligibility context, and application details on Chamu."
+        :canonical="route('bursaries.index')"
+    />
+@endpush
+
 @section('content')
     @php
         $activeFilterCount = collect([$search, $filters['category'], $filters['company_id']])

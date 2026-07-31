@@ -12,6 +12,18 @@
 @endpush
 
 @section('content')
+    @php
+        $sourceToneClasses = [
+            'emerald' => 'border-emerald-200 bg-emerald-50 text-emerald-900',
+            'sky' => 'border-sky-200 bg-sky-50 text-sky-900',
+            'amber' => 'border-amber-200 bg-amber-50 text-amber-950',
+        ][$sourceInfo['tone'] ?? 'sky'] ?? 'border-neutral-200 bg-neutral-50 text-neutral-800';
+        $programmeNotes = collect(preg_split('/\R+/', trim((string) $qualification->notes)) ?: [])
+            ->map(fn ($note) => trim($note))
+            ->filter()
+            ->values();
+    @endphp
+
     <main class="bg-[#f8fafc] pb-16">
         <section class="border-b border-neutral-200 bg-white">
             <div class="mx-auto max-w-7xl px-4 py-8 sm:px-5 lg:px-8">
@@ -74,15 +86,15 @@
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">NQF</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : ($isTvetCollegeQualification || $usesPassTypeAdmission ? 'See notes' : 'Not listed') }}</dd>
+                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : 'Confirm in source' }}</dd>
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">{{ $isTvetCollegeQualification || $usesPassTypeAdmission ? 'Entry grade' : 'Grade' }}</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->requiredGrade?->name ?? ($isTvetCollegeQualification || $usesPassTypeAdmission ? 'See notes' : 'Not listed') }}</dd>
+                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->requiredGrade?->name ?? 'Confirm in source' }}</dd>
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">Duration</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $durationLabel ?? ($isTvetCollegeQualification || $usesPassTypeAdmission ? 'See notes' : 'Not listed') }}</dd>
+                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $durationLabel ?? 'Confirm in source' }}</dd>
                                 </div>
                             </div>
                             @if ($closingLabel)
@@ -176,8 +188,15 @@
                             </div>
                         </div>
 
-                        @if ($qualification->notes)
-                            <p class="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900">{{ $qualification->notes }}</p>
+                        @if ($programmeNotes->isNotEmpty())
+                            <div class="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
+                                <h3 class="font-bold">Planning notes</h3>
+                                <div class="mt-3 grid gap-2">
+                                    @foreach ($programmeNotes as $note)
+                                        <p>{{ $note }}</p>
+                                    @endforeach
+                                </div>
+                            </div>
                         @endif
                     </section>
                 @else
@@ -186,15 +205,15 @@
                         <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                             <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <p class="text-xs font-bold uppercase text-neutral-500">Published APS</p>
-                                <p class="mt-2 text-2xl font-bold">{{ $qualification->aps_required !== null ? (int) $qualification->aps_required : 'Not listed' }}</p>
+                                <p class="mt-2 text-2xl font-bold">{{ $qualification->aps_required !== null ? (int) $qualification->aps_required : 'Check source' }}</p>
                             </div>
                             <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <p class="text-xs font-bold uppercase text-neutral-500">Admission score</p>
-                                <p class="mt-2 text-2xl font-bold">{{ $qualification->admission_score_required !== null ? rtrim(rtrim(number_format((float) $qualification->admission_score_required, 1), '0'), '.') : 'Not listed' }}</p>
+                                <p class="mt-2 text-2xl font-bold">{{ $qualification->admission_score_required !== null ? rtrim(rtrim(number_format((float) $qualification->admission_score_required, 1), '0'), '.') : 'Check source' }}</p>
                             </div>
                             <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <p class="text-xs font-bold uppercase text-neutral-500">Aggregate average</p>
-                                <p class="mt-2 text-2xl font-bold">{{ $qualification->aggregate_average_required !== null ? rtrim(rtrim(number_format((float) $qualification->aggregate_average_required, 1), '0'), '.').'%' : 'Not listed' }}</p>
+                                <p class="mt-2 text-2xl font-bold">{{ $qualification->aggregate_average_required !== null ? rtrim(rtrim(number_format((float) $qualification->aggregate_average_required, 1), '0'), '.').'%' : 'Check source' }}</p>
                             </div>
                         </div>
 
@@ -204,17 +223,42 @@
                             </p>
                         @endif
 
-                        @if ($qualification->notes)
-                            <p class="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900">{{ $qualification->notes }}</p>
+                        @if ($programmeNotes->isNotEmpty())
+                            <div class="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
+                                <h3 class="font-bold">Planning notes</h3>
+                                <div class="mt-3 grid gap-2">
+                                    @foreach ($programmeNotes as $note)
+                                        <p>{{ $note }}</p>
+                                    @endforeach
+                                </div>
+                            </div>
                         @endif
                     </section>
                 @endif
 
-                @if ((! $isTvetCollegeQualification && ! $usesPassTypeAdmission) || $qualification->admissionScoreVariants->isNotEmpty())
+                <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="application-planning-heading">
+                    <h2 id="application-planning-heading" class="text-2xl font-bold text-neutral-950">Application planning</h2>
+                    <div class="mt-5 grid gap-3 md:grid-cols-3">
+                        <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                            <h3 class="text-sm font-bold text-neutral-950">Eligibility check</h3>
+                            <p class="mt-2 text-sm leading-6 text-neutral-600">Use the published score, subject levels and any notes on this page as a first screen, then confirm selection tests, campus rules and final Grade 12 conditions on the source page.</p>
+                        </article>
+                        <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                            <h3 class="text-sm font-bold text-neutral-950">Document checklist</h3>
+                            <p class="mt-2 text-sm leading-6 text-neutral-600">Have your ID or passport, latest school results, proof of application-fee payment where required, and any international applicant documents ready before starting the official application.</p>
+                        </article>
+                        <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                            <h3 class="text-sm font-bold text-neutral-950">Application safety</h3>
+                            <p class="mt-2 text-sm leading-6 text-neutral-600">Apply through the university's official channels only. Chamu is an independent guide and cannot guarantee admission, placement, funding or late-application availability.</p>
+                        </article>
+                    </div>
+                </section>
+
+                @if ($qualification->admissionScoreVariants->isNotEmpty())
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="variants-heading">
                         <h2 id="variants-heading" class="text-2xl font-bold text-neutral-950">Alternative score variants</h2>
                         <div class="mt-5 grid gap-3">
-                            @forelse ($qualification->admissionScoreVariants as $variant)
+                            @foreach ($qualification->admissionScoreVariants as $variant)
                                 <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                                         <div>
@@ -229,9 +273,7 @@
                                         <p class="mt-2 text-sm text-neutral-600">{{ $variant->notes }}</p>
                                     @endif
                                 </article>
-                            @empty
-                                <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600">No alternative score variants are listed for this qualification.</p>
-                            @endforelse
+                            @endforeach
                         </div>
                     </section>
                 @endif
@@ -278,21 +320,27 @@
                                 @endforeach
                             </article>
                         @empty
-                            <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600">
+                            <div class="rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm font-semibold leading-6 text-sky-950">
                                 @if ($isTvetCollegeQualification)
-                                    No subject-mark requirements are captured for this college programme yet. Use the entry grade/NQF route and programme notes above; matching should stay under manual review where the college source needs confirmation.
+                                    No subject-mark requirements are captured for this college programme yet. Use the entry grade/NQF route and programme notes above, then confirm campus-specific subject rules with the college source.
                                 @else
-                                    No subject requirements are listed for this qualification yet.
+                                    Chamu has not captured structured subject rules for this qualification yet. Before applying, confirm required subjects, minimum marks, selection tests, portfolios, interviews, and closing dates on the source page.
                                 @endif
-                            </p>
+                                @if ($qualification->source_url)
+                                    <a href="{{ $qualification->source_url }}" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
+                                        Check source requirements <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+                                    </a>
+                                @endif
+                            </div>
                         @endforelse
                     </div>
                 </section>
 
-                <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="rules-heading">
-                    <h2 id="rules-heading" class="text-2xl font-bold text-neutral-950">{{ $isTvetCollegeQualification ? 'College matching rule' : 'Relevant admission rules' }}</h2>
-                    <div class="mt-5 grid gap-3">
-                        @forelse ($rules as $rule)
+                @if ($rules->isNotEmpty())
+                    <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="rules-heading">
+                        <h2 id="rules-heading" class="text-2xl font-bold text-neutral-950">{{ $isTvetCollegeQualification ? 'College matching rule' : 'Relevant admission rules' }}</h2>
+                        <div class="mt-5 grid gap-3">
+                            @foreach ($rules as $rule)
                             <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                                     <div>
@@ -321,17 +369,10 @@
                                     <p class="mt-2 text-sm text-neutral-600">{{ $rule->admissionRule->description }}</p>
                                 @endif
                             </article>
-                        @empty
-                            <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600">
-                                @if ($isTvetCollegeQualification)
-                                    No separate college matching rule is listed for this programme.
-                                @else
-                                    No separate admission rule record is listed for this qualification.
-                                @endif
-                            </p>
-                        @endforelse
-                    </div>
-                </section>
+                            @endforeach
+                        </div>
+                    </section>
+                @endif
             </div>
 
             <aside class="grid content-start gap-6">
@@ -435,6 +476,37 @@
                         </div>
                     </section>
                 @endif
+
+                <section class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="source-heading">
+                    <h2 id="source-heading" class="text-xl font-bold text-neutral-950">Source and review</h2>
+                    <div class="mt-4 rounded-xl border p-4 text-sm font-semibold leading-6 {{ $sourceToneClasses }}">
+                        <p class="font-bold">{{ $sourceInfo['label'] }}</p>
+                        <p class="mt-2">{{ $sourceInfo['summary'] }}</p>
+                    </div>
+                    <dl class="mt-4 grid gap-3 text-sm">
+                        <div class="flex items-start justify-between gap-4">
+                            <dt class="font-semibold text-neutral-500">Last reviewed</dt>
+                            <dd class="text-right font-bold text-neutral-950">
+                                @if ($sourceInfo['last_reviewed_machine'])
+                                    <time datetime="{{ $sourceInfo['last_reviewed_machine'] }}">{{ $sourceInfo['last_reviewed'] }}</time>
+                                @else
+                                    {{ $sourceInfo['last_reviewed'] }}
+                                @endif
+                            </dd>
+                        </div>
+                        @if ($sourceInfo['source_host'])
+                            <div class="flex items-start justify-between gap-4">
+                                <dt class="font-semibold text-neutral-500">Source host</dt>
+                                <dd class="break-all text-right font-bold text-neutral-950">{{ $sourceInfo['source_host'] }}</dd>
+                            </div>
+                        @endif
+                    </dl>
+                    @if ($sourceInfo['source_url'])
+                        <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-bold hover:bg-neutral-50">
+                            Open source <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+                        </a>
+                    @endif
+                </section>
 
                 <section class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="related-heading">
                     <h2 id="related-heading" class="text-xl font-bold text-neutral-950">Related qualifications</h2>

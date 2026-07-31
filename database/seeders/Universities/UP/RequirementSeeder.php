@@ -5,6 +5,8 @@ namespace Database\Seeders\Universities\UP;
 use Database\Seeders\UniversityLogoSeeder;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
 
 class RequirementSeeder extends Seeder
 {
@@ -68,8 +70,32 @@ class RequirementSeeder extends Seeder
                         }
                     }
                 }
+
+                $this->seedUndergraduateCatalogue($universityId);
             }
         });
+    }
+
+    private function seedUndergraduateCatalogue(int $universityId): void
+    {
+        $path = database_path('seeders/Universities/UP/undergraduate_catalogue.json');
+
+        if (! file_exists($path)) {
+            return;
+        }
+
+        $catalogue = json_decode(file_get_contents($path), true, 512, JSON_THROW_ON_ERROR);
+
+        foreach (($catalogue['programmes'] ?? []) as $programmeData) {
+            if (! $this->isUndergraduateSource($programmeData['source_url'] ?? null)) {
+                continue;
+            }
+
+            $facultyId = $this->catalogueFacultyId($programmeData['faculty'], $universityId);
+            $qualificationTypeId = $this->qualificationTypeId($programmeData['qualification_type']);
+
+            $this->catalogueQualificationId($programmeData, $universityId, $facultyId, $qualificationTypeId);
+        }
     }
 
     private function countryId(string $countryName): int
@@ -91,19 +117,25 @@ class RequirementSeeder extends Seeder
             ->where('abbreviation', $universityData['abbreviation'])
             ->first();
 
+        $values = [
+            'country_id' => $countryId,
+            'name' => $universityData['university'],
+            'logo' => $universityData['logo']
+                ?? UniversityLogoSeeder::logoFor($universityData['abbreviation'], $existing?->logo),
+            'website' => $universityData['website'] ?? null,
+            'default_closing_month' => $universityData['default_closing_month'] ?? null,
+            'default_closing_day' => $universityData['default_closing_day'] ?? null,
+            'updated_at' => $now,
+            'created_at' => $now,
+        ];
+
+        if (Schema::hasColumn('universities', 'slug')) {
+            $values['slug'] = $this->universitySlug($universityData, $existing);
+        }
+
         DB::table('universities')->updateOrInsert(
             ['abbreviation' => $universityData['abbreviation']],
-            [
-                'country_id' => $countryId,
-                'name' => $universityData['university'],
-                'logo' => $universityData['logo']
-                    ?? UniversityLogoSeeder::logoFor($universityData['abbreviation'], $existing?->logo),
-                'website' => $universityData['website'] ?? null,
-                'default_closing_month' => $universityData['default_closing_month'] ?? null,
-                'default_closing_day' => $universityData['default_closing_day'] ?? null,
-                'updated_at' => $now,
-                'created_at' => $now,
-            ],
+            $values,
         );
 
         return (int) DB::table('universities')
@@ -128,6 +160,21 @@ class RequirementSeeder extends Seeder
         return (int) DB::table('faculties')
             ->where('university_id', $universityId)
             ->where('name', $facultyData['name'])
+            ->value('id');
+    }
+
+    private function catalogueFacultyId(string $name, int $universityId): int
+    {
+        $now = now();
+
+        DB::table('faculties')->updateOrInsert(
+            ['university_id' => $universityId, 'name' => $name],
+            ['updated_at' => $now, 'created_at' => $now],
+        );
+
+        return (int) DB::table('faculties')
+            ->where('university_id', $universityId)
+            ->where('name', $name)
             ->value('id');
     }
 
@@ -156,6 +203,31 @@ class RequirementSeeder extends Seeder
         int $qualificationTypeId
     ): int {
         $now = now();
+        $existing = DB::table('qualifications')
+            ->where('university_id', $universityId)
+            ->where('faculty_id', $facultyId)
+            ->where('name', $qualificationData['name'])
+            ->first();
+
+        $values = [
+            'qualification_type_id' => $qualificationTypeId,
+            'nqf_level_id' => $this->qualificationNqfLevelId($qualificationData, $qualificationTypeId),
+            'abbreviation' => $qualificationData['abbreviation'] ?? null,
+            'duration_years' => $qualificationData['duration_years'] ?? null,
+            'aps_required' => $qualificationData['aps_required'] ?? null,
+            'admission_score_required' => $qualificationData['aps_required'] ?? null,
+            'closing_month' => $qualificationData['closing_month'] ?? null,
+            'closing_day' => $qualificationData['closing_day'] ?? null,
+            'is_selection_programme' => $qualificationData['is_selection_programme'] ?? false,
+            'notes' => $qualificationData['notes'] ?? null,
+            'source_url' => $qualificationData['source_url'] ?? null,
+            'updated_at' => $now,
+            'created_at' => $now,
+        ];
+
+        if (Schema::hasColumn('qualifications', 'slug')) {
+            $values['slug'] = $this->qualificationSlug($qualificationData, $universityId, $existing);
+        }
 
         DB::table('qualifications')->updateOrInsert(
             [
@@ -163,21 +235,7 @@ class RequirementSeeder extends Seeder
                 'faculty_id' => $facultyId,
                 'name' => $qualificationData['name'],
             ],
-            [
-                'qualification_type_id' => $qualificationTypeId,
-                'nqf_level_id' => $this->qualificationNqfLevelId($qualificationData, $qualificationTypeId),
-                'abbreviation' => $qualificationData['abbreviation'] ?? null,
-                'duration_years' => $qualificationData['duration_years'] ?? null,
-                'aps_required' => $qualificationData['aps_required'] ?? null,
-                'admission_score_required' => $qualificationData['aps_required'] ?? null,
-                'closing_month' => $qualificationData['closing_month'] ?? null,
-                'closing_day' => $qualificationData['closing_day'] ?? null,
-                'is_selection_programme' => $qualificationData['is_selection_programme'] ?? false,
-                'notes' => $qualificationData['notes'] ?? null,
-                'source_url' => $qualificationData['source_url'] ?? null,
-                'updated_at' => $now,
-                'created_at' => $now,
-            ],
+            $values,
         );
 
         return (int) DB::table('qualifications')
@@ -185,6 +243,157 @@ class RequirementSeeder extends Seeder
             ->where('faculty_id', $facultyId)
             ->where('name', $qualificationData['name'])
             ->value('id');
+    }
+
+    private function catalogueQualificationId(
+        array $qualificationData,
+        int $universityId,
+        int $facultyId,
+        int $qualificationTypeId
+    ): int {
+        $now = now();
+        $existing = DB::table('qualifications')
+            ->where('university_id', $universityId)
+            ->where('faculty_id', $facultyId)
+            ->where('name', $qualificationData['name'])
+            ->first();
+
+        $values = [
+            'qualification_type_id' => $qualificationTypeId,
+            'nqf_level_id' => $this->qualificationNqfLevelId($qualificationData, $qualificationTypeId),
+            'abbreviation' => $qualificationData['abbreviation'] ?? $existing?->abbreviation,
+            'duration_years' => $qualificationData['duration_years'] ?? $existing?->duration_years,
+            'aps_required' => $existing?->aps_required,
+            'admission_score_required' => $existing?->admission_score_required,
+            'closing_month' => $qualificationData['closing_month'] ?? $existing?->closing_month,
+            'closing_day' => $qualificationData['closing_day'] ?? $existing?->closing_day,
+            'is_selection_programme' => $existing?->is_selection_programme ?? false,
+            'notes' => $this->catalogueNotes($qualificationData, $existing?->aps_required !== null ? $existing?->notes : null),
+            'source_url' => $qualificationData['source_url'] ?? $existing?->source_url,
+            'updated_at' => $now,
+            'created_at' => $now,
+        ];
+
+        if (Schema::hasColumn('qualifications', 'slug')) {
+            $values['slug'] = $this->qualificationSlug($qualificationData, $universityId, $existing);
+        }
+
+        DB::table('qualifications')->updateOrInsert(
+            [
+                'university_id' => $universityId,
+                'faculty_id' => $facultyId,
+                'name' => $qualificationData['name'],
+            ],
+            $values,
+        );
+
+        return (int) DB::table('qualifications')
+            ->where('university_id', $universityId)
+            ->where('faculty_id', $facultyId)
+            ->where('name', $qualificationData['name'])
+            ->value('id');
+    }
+
+    private function universitySlug(array $universityData, ?object $existing): string
+    {
+        if ($existing?->slug) {
+            return $existing->slug;
+        }
+
+        $base = Str::slug((string) ($universityData['slug'] ?? $universityData['university'])) ?: 'university';
+        $slug = $base;
+        $suffix = 2;
+
+        while (DB::table('universities')
+            ->where('slug', $slug)
+            ->when($existing?->id, fn ($query) => $query->where('id', '<>', $existing->id))
+            ->exists()) {
+            $slug = $base.'-'.$suffix;
+            $suffix++;
+        }
+
+        return $slug;
+    }
+
+    private function qualificationSlug(array $qualificationData, int $universityId, ?object $existing): string
+    {
+        if ($existing?->slug) {
+            return $existing->slug;
+        }
+
+        $base = Str::slug((string) ($qualificationData['slug'] ?? $qualificationData['name'])) ?: 'qualification';
+        $slug = $base;
+        $suffix = 2;
+
+        while (DB::table('qualifications')
+            ->where('university_id', $universityId)
+            ->where('slug', $slug)
+            ->when($existing?->id, fn ($query) => $query->where('id', '<>', $existing->id))
+            ->exists()) {
+            $slug = $base.'-'.$suffix;
+            $suffix++;
+        }
+
+        return $slug;
+    }
+
+    private function catalogueNotes(array $qualificationData, ?string $baseNotes): ?string
+    {
+        $notes = [];
+
+        if ($baseNotes !== null && trim($baseNotes) !== '') {
+            $notes[] = trim($baseNotes);
+        }
+
+        if (($qualificationData['official_name'] ?? null) && $qualificationData['official_name'] !== $qualificationData['name']) {
+            $notes[] = 'UP listing title: '.$qualificationData['official_name'].'.';
+        }
+
+        if (($qualificationData['programme_code'] ?? null) !== null) {
+            $notes[] = 'Programme code: '.$qualificationData['programme_code'].'.';
+        }
+
+        if (($qualificationData['career_opportunities'] ?? null) !== null) {
+            $notes[] = 'Career pointers: '.$qualificationData['career_opportunities'];
+        }
+
+        if (($qualificationData['closing_month'] ?? null) !== null && ($qualificationData['closing_day'] ?? null) !== null) {
+            $notes[] = 'Closing-date context: UP\'s 2027 undergraduate listing shows South African applicants closing on '.$this->dateLabel((int) $qualificationData['closing_month'], (int) $qualificationData['closing_day']).'. Confirm the active intake year and late-application availability on the official source page.';
+        }
+
+        $notes[] = 'Application planning: use the official University of Pretoria application channels for applications, fees and uploaded documents. Chamu is an independent guide and cannot guarantee admission, placement or funding.';
+
+        return $notes === [] ? null : implode("\n", array_values(array_unique($notes)));
+    }
+
+    private function dateLabel(int $month, int $day): string
+    {
+        $months = [
+            1 => 'January',
+            2 => 'February',
+            3 => 'March',
+            4 => 'April',
+            5 => 'May',
+            6 => 'June',
+            7 => 'July',
+            8 => 'August',
+            9 => 'September',
+            10 => 'October',
+            11 => 'November',
+            12 => 'December',
+        ];
+
+        return $day.' '.($months[$month] ?? '');
+    }
+
+    private function isUndergraduateSource(?string $sourceUrl): bool
+    {
+        if ($sourceUrl === null) {
+            return false;
+        }
+
+        return str_contains($sourceUrl, '/programmes/undergraduate/')
+            || $sourceUrl === 'https://www.up.ac.za/node/67483';
     }
 
     private function assignAdmissionRule(int $universityId): void

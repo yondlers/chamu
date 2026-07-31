@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Public;
 use App\Http\Controllers\Controller;
 use App\Models\University;
 use App\Services\Admissions\PublicAdmissionInfoService;
+use App\Support\SourceMeta;
 use Illuminate\View\View;
 
 class UniversityController extends Controller
@@ -41,6 +42,7 @@ class UniversityController extends Controller
             'qualificationCount' => $qualificationCount,
             'qualificationPreview' => $qualificationPreview,
             'closingLabel' => $admissionInfo->closingLabel($university->default_closing_month, $university->default_closing_day),
+            'sourceInfo' => SourceMeta::make($university->website, $university->updated_at, $university->website),
             'seo' => [
                 'title' => $title,
                 'description' => $description,

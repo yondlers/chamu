@@ -25,7 +25,6 @@ class SitemapController extends Controller
                 $writer->startElement('urlset');
                 $writer->writeAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
 
-                $this->writeUrl($writer, route('home'));
                 $this->writeStaticPages($writer);
                 echo $writer->flush();
 
@@ -46,6 +45,15 @@ class SitemapController extends Controller
                             'qualification' => $qualification->slug,
                         ]),
                         $this->lastmod($qualification->updated_at),
+                    );
+                    echo $writer->flush();
+                });
+
+                $this->bursaryRows()->each(function (object $bursary) use ($writer): void {
+                    $this->writeUrl(
+                        $writer,
+                        route('bursaries.show', ['bursary' => $bursary->id]),
+                        $this->lastmod($bursary->updated_at),
                     );
                     echo $writer->flush();
                 });
@@ -135,6 +143,22 @@ class SitemapController extends Controller
 
         $this->applyPublicRecordFilters($query, 'qualifications');
         $this->applyPublicRecordFilters($query, 'universities');
+
+        return $query->cursor();
+    }
+
+    private function bursaryRows()
+    {
+        if (! Schema::hasTable('bursaries')) {
+            return collect();
+        }
+
+        $query = DB::table('bursaries')
+            ->select('id', 'updated_at')
+            ->where('is_active', true)
+            ->orderBy('id');
+
+        $this->applyPublicRecordFilters($query, 'bursaries');
 
         return $query->cursor();
     }

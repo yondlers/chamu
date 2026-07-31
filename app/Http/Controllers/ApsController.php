@@ -92,6 +92,7 @@ class ApsController extends Controller
                 ->select(
                     'qualifications.id',
                     'qualifications.name',
+                    'qualifications.slug as qualification_slug',
                     'qualifications.aps_required',
                     'qualifications.aggregate_average_required',
                     'qualifications.admission_score_required',
@@ -100,6 +101,7 @@ class ApsController extends Controller
                     'qualifications.is_selection_programme',
                     'universities.id as university_id',
                     'universities.name as university_name',
+                    'universities.slug as university_slug',
                     'universities.abbreviation as university_abbreviation',
                     'universities.logo as university_logo',
                     'faculties.id as faculty_id',

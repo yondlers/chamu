@@ -5,24 +5,25 @@ namespace Tests\Feature;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use Tests\TestCase;
 
 class ApsTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_aps_landing_state_explains_score_is_required_for_search(): void
+    public function test_aps_landing_state_allows_public_course_browsing(): void
     {
         $this->createLookupRecords();
 
         $response = $this->get(route('aps.index'));
 
         $response->assertOk();
-        $response->assertSee('Enter your APS score first so Chamu can search matching courses.');
-        $response->assertSee('APS is needed before course search');
+        $response->assertSee('Find courses that fit your APS.');
+        $response->assertSee('Courses to explore');
     }
 
-    public function test_aps_university_only_state_prompts_for_score(): void
+    public function test_aps_university_only_state_allows_public_browse(): void
     {
         $records = $this->createLookupRecords();
         $university = $this->createUniversity($records['country_id'], 'University of Johannesburg', 'UJ');
@@ -30,11 +31,11 @@ class ApsTest extends TestCase
         $response = $this->get(route('aps.index', ['university_id' => $university]));
 
         $response->assertOk();
-        $response->assertSee('Nice, now enter your APS to see courses at this university.');
-        $response->assertSee('Required');
+        $response->assertSee('UJ (University of Johannesburg)');
+        $response->assertSee('Courses to explore');
     }
 
-    public function test_university_selection_without_aps_shows_mixed_qualification_preview(): void
+    public function test_university_selection_without_aps_shows_public_qualification_results(): void
     {
         $records = $this->createLookupRecords();
         $typeId = $this->createQualificationType();
@@ -53,9 +54,12 @@ class ApsTest extends TestCase
         $response->assertOk();
         $response->assertSee(route('aps.index', ['university_ids' => [$uj]]).'#search-results', false);
         $response->assertSee('id="search-results" tabindex="-1"', false);
-        $response->assertSee('Qualification preview');
-        $response->assertSee('Enter APS to view more');
-        $response->assertSee('Log in for full match');
+        $response->assertSee('Courses to explore');
+        $response->assertSee('View requirements');
+        $response->assertSee(route('public.qualifications.show', [
+            'university' => 'university-of-johannesburg',
+            'qualification' => 'uj-low-aps-preview',
+        ]), false);
         $response->assertSee('UJ Low APS Preview');
         $response->assertSee('UJ Lower Middle APS Preview');
         $response->assertSee('UJ Middle APS Preview');
@@ -175,6 +179,7 @@ class ApsTest extends TestCase
         return DB::table('universities')->insertGetId([
             'country_id' => $countryId,
             'name' => $name,
+            'slug' => Str::slug($name),
             'abbreviation' => $abbreviation,
             'created_at' => now(),
             'updated_at' => now(),
@@ -205,6 +210,7 @@ class ApsTest extends TestCase
             'faculty_id' => $facultyId,
             'qualification_type_id' => $typeId,
             'name' => $name,
+            'slug' => Str::slug($name),
             'duration_years' => 3,
             'aps_required' => $apsRequired,
             'is_selection_programme' => false,

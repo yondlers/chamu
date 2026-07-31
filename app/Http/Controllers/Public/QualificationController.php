@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Qualification;
 use App\Models\University;
 use App\Services\Admissions\PublicAdmissionInfoService;
+use App\Support\SourceMeta;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -82,6 +83,11 @@ class QualificationController extends Controller
             'qualificationAction' => $qualificationAction,
             'qualificationMatch' => $qualificationMatch,
             'originBreadcrumb' => $originBreadcrumb,
+            'sourceInfo' => SourceMeta::make(
+                $qualification->source_url,
+                $qualification->updated_at,
+                $university->website,
+            ),
             'seo' => [
                 'title' => $title,
                 'description' => $description,

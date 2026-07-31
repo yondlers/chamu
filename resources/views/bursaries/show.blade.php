@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
-@section('title', $bursary->title . ' · Chamu')
+@section('title', $seo['title'] ?? ($bursary->title . ' · Chamu'))
+
+@push('head')
+    @isset($seo)
+        <x-seo-meta
+            :title="$seo['title']"
+            :description="$seo['description']"
+            :canonical="$seo['canonical']"
+            :json-ld="$seo['jsonLd']"
+        />
+    @endisset
+@endpush
 
 @section('content')
     @php
@@ -27,6 +38,35 @@
         $applicationProfile = $applicationProfile ?? null;
         $savedApplicationDocuments = $savedApplicationDocuments ?? collect();
         $profileSpecialCircumstances = $applicationProfile->special_circumstances ?? [];
+        $closingDate = $bursary->closing_date ? \Illuminate\Support\Carbon::parse($bursary->closing_date)->startOfDay() : null;
+        $today = now()->startOfDay();
+        $closingContext = match (true) {
+            $closingDate === null => [
+                'label' => 'Closing date to confirm',
+                'body' => 'Chamu does not have a structured closing date for this bursary yet. Check the provider source before preparing documents.',
+                'tone' => 'amber',
+            ],
+            $closingDate->isSameDay($today) => [
+                'label' => 'Closes today',
+                'body' => 'Submit only if the provider still accepts applications today and you can meet every document requirement.',
+                'tone' => 'amber',
+            ],
+            $closingDate->isPast() => [
+                'label' => 'Closing date has passed',
+                'body' => 'The captured closing date is in the past. Check the provider source for a reopened, extended, or next-cycle application window.',
+                'tone' => 'rose',
+            ],
+            default => [
+                'label' => $closingDate->diffInDays($today).' days left',
+                'body' => 'Use the remaining time to confirm eligibility, prepare certified copies if required, and submit before the provider deadline.',
+                'tone' => 'emerald',
+            ],
+        };
+        $closingContextClasses = [
+            'emerald' => 'border-emerald-200 bg-emerald-50 text-emerald-900',
+            'amber' => 'border-amber-200 bg-amber-50 text-amber-950',
+            'rose' => 'border-rose-200 bg-rose-50 text-rose-900',
+        ][$closingContext['tone']] ?? 'border-neutral-200 bg-neutral-50 text-neutral-800';
 
         if (is_string($profileSpecialCircumstances)) {
             $profileSpecialCircumstances = json_decode($profileSpecialCircumstances, true) ?: [];
@@ -52,6 +92,11 @@
             'Service contract' => $bursary->service_contract,
             'Renewal' => $bursary->renewal,
         ])->filter();
+        $sourceToneClasses = [
+            'emerald' => 'border-emerald-200 bg-emerald-50 text-emerald-900',
+            'sky' => 'border-sky-200 bg-sky-50 text-sky-900',
+            'amber' => 'border-amber-200 bg-amber-50 text-amber-950',
+        ][$sourceInfo['tone'] ?? 'sky'] ?? 'border-neutral-200 bg-neutral-50 text-neutral-800';
 
         if (! $isChamuHandled && $bursary->application_method) {
             $fundingRows->put('How to apply', $bursary->application_method);
@@ -160,7 +205,14 @@
                 <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
                     <h2 class="text-xl font-black">Funding details</h2>
                     @if ($fundingRows->isEmpty())
-                        <p class="mt-3 text-sm font-semibold text-neutral-500">Funding details are not listed yet.</p>
+                        <div class="mt-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm font-semibold leading-6 text-sky-950">
+                            Chamu has not captured the full funding package for this opportunity yet. Before applying, confirm whether the provider covers registration, tuition, books, accommodation, meals, travel, device costs, or a monthly allowance.
+                            @if ($bursary->source_url)
+                                <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
+                                    Check source details <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+                                </a>
+                            @endif
+                        </div>
                     @else
                         <dl class="mt-5 divide-y divide-neutral-200">
                             @foreach ($fundingRows as $label => $value)
@@ -175,6 +227,39 @@
 
                 <section class="grid gap-5 lg:grid-cols-2">
                     <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
+                        <h2 class="text-xl font-black">Application method</h2>
+                        <p class="mt-3 text-sm font-semibold leading-6 text-neutral-700">
+                            @if ($isChamuHandled)
+                                {{ $isPostalSubmission ? 'Chamu can help prepare a printable postal pack, but you still need to post or hand-deliver it according to the provider instructions.' : 'Chamu can help prepare and send this application using the captured provider email route.' }}
+                            @elseif ($bursary->application_method)
+                                {{ $bursary->application_method }}
+                            @elseif ($bursary->apply_url)
+                                This bursary uses a provider application link. Open the official application page and follow the provider instructions there.
+                            @else
+                                Chamu has not captured a complete application method yet. Use the source page to confirm whether the provider accepts online, email, postal, or hand-delivery submissions.
+                            @endif
+                        </p>
+                        @if ($bursary->apply_url)
+                            <a href="{{ $bursary->apply_url }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex items-center gap-2 rounded-lg border border-neutral-300 px-4 py-2 text-sm font-black hover:bg-neutral-50">
+                                Open application route <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+                            </a>
+                        @endif
+                    </article>
+
+                    <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
+                        <h2 class="text-xl font-black">Closing-date context</h2>
+                        <div class="mt-4 rounded-xl border p-4 text-sm font-semibold leading-6 {{ $closingContextClasses }}">
+                            <p class="font-black">{{ $closingContext['label'] }}</p>
+                            <p class="mt-2">{{ $closingContext['body'] }}</p>
+                            @if ($closingDate)
+                                <p class="mt-3 text-xs font-black uppercase">Captured date: <time datetime="{{ $closingDate->toDateString() }}">{{ $closingDate->format('j F Y') }}</time></p>
+                            @endif
+                        </div>
+                    </article>
+                </section>
+
+                <section class="grid gap-5 lg:grid-cols-2">
+                    <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
                         <h2 class="text-xl font-black">Eligibility</h2>
                         @if (count($bursary->eligibility_requirements) > 0)
                             <ul class="mt-5 grid gap-3 text-sm font-medium leading-6 text-neutral-700">
@@ -186,14 +271,18 @@
                                 @endforeach
                             </ul>
                         @else
-                            <p class="mt-3 text-sm font-semibold text-neutral-500">Eligibility requirements are not listed yet.</p>
+                            <div class="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm font-semibold leading-6 text-amber-950">
+                                Chamu has not captured provider-specific eligibility rules for this bursary yet. Confirm citizenship or residency, study level, field of study, institution type, academic performance, financial need, and province or community restrictions before applying.
+                            </div>
                         @endif
                     </article>
 
                     <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
                         <h2 class="text-xl font-black">Academic requirements</h2>
                         @if ($requirements->isEmpty())
-                            <p class="mt-3 text-sm font-semibold leading-6 text-neutral-500">No structured academic requirements have been captured for this bursary yet.</p>
+                            <div class="mt-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm font-semibold leading-6 text-sky-950">
+                                No structured mark rules are captured yet. Treat this as a manual-review bursary: check the provider source for minimum averages, required subjects, study-year limits, and whether latest results or full transcripts are needed.
+                            </div>
                         @else
                             <div class="mt-5 flex flex-wrap gap-2">
                                 @foreach ($requirements as $requirement)
@@ -262,12 +351,14 @@
                             @endforeach
                         </ul>
                     @else
-                        <p class="mt-3 text-sm font-semibold text-neutral-500">Supporting documents are not listed yet.</p>
+                        <div class="mt-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm font-semibold leading-6 text-sky-950">
+                            A complete document checklist is not captured yet. Most bursary applications may ask for an ID copy, latest academic results, proof of registration or acceptance, proof of household income, a CV, and a motivation letter. Confirm the exact list on the provider source before submitting.
+                        </div>
                     @endif
                 </article>
             </div>
 
-            <aside class="lg:sticky lg:top-24 lg:self-start">
+            <aside class="grid content-start gap-5 lg:sticky lg:top-24 lg:self-start">
                 <section class="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm">
                     <p class="text-xs font-black uppercase tracking-[0.14em] text-neutral-500">You are applying for</p>
                     <h2 class="mt-2 text-xl font-black leading-tight text-[#01225E]">{{ $bursary->title }}</h2>
@@ -315,6 +406,61 @@
                         </div>
                     @endif
                 </section>
+
+                <section class="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="source-heading">
+                    <h2 id="source-heading" class="text-lg font-black">Source and review</h2>
+                    <div class="mt-4 rounded-xl border p-4 text-sm font-semibold leading-6 {{ $sourceToneClasses }}">
+                        <p class="font-black">{{ $sourceInfo['label'] }}</p>
+                        <p class="mt-2">{{ $sourceInfo['summary'] }}</p>
+                    </div>
+                    <dl class="mt-4 grid gap-3 text-sm">
+                        <div class="flex items-start justify-between gap-4">
+                            <dt class="font-semibold text-neutral-500">Last reviewed</dt>
+                            <dd class="text-right font-black text-neutral-950">
+                                @if ($sourceInfo['last_reviewed_machine'])
+                                    <time datetime="{{ $sourceInfo['last_reviewed_machine'] }}">{{ $sourceInfo['last_reviewed'] }}</time>
+                                @else
+                                    {{ $sourceInfo['last_reviewed'] }}
+                                @endif
+                            </dd>
+                        </div>
+                        @if ($sourceInfo['source_host'])
+                            <div class="flex items-start justify-between gap-4">
+                                <dt class="font-semibold text-neutral-500">Source host</dt>
+                                <dd class="break-all text-right font-black text-neutral-950">{{ $sourceInfo['source_host'] }}</dd>
+                            </div>
+                        @endif
+                    </dl>
+                    @if ($sourceInfo['source_url'])
+                        <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-black hover:bg-neutral-50">
+                            Open source <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+                        </a>
+                    @endif
+                </section>
+
+                <section class="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="safety-heading">
+                    <h2 id="safety-heading" class="text-lg font-black">Application safety</h2>
+                    <ul class="mt-4 grid gap-3 text-sm font-semibold leading-6 text-neutral-700">
+                        <li class="flex gap-2"><i data-lucide="shield-check" class="mt-0.5 shrink-0 text-emerald-600" style="width:16px;height:16px;"></i>Use official provider portals or verified email addresses.</li>
+                        <li class="flex gap-2"><i data-lucide="badge-alert" class="mt-0.5 shrink-0 text-amber-600" style="width:16px;height:16px;"></i>Do not pay anyone to guarantee funding or fast-track approval.</li>
+                        <li class="flex gap-2"><i data-lucide="file-check-2" class="mt-0.5 shrink-0 text-sky-600" style="width:16px;height:16px;"></i>Keep proof of submission, reference numbers, and sent-email receipts.</li>
+                    </ul>
+                </section>
+
+                @if ($relatedBursaries->isNotEmpty())
+                    <section class="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="related-bursaries-heading">
+                        <h2 id="related-bursaries-heading" class="text-lg font-black">Related bursaries</h2>
+                        <div class="mt-4 grid gap-3">
+                            @foreach ($relatedBursaries as $related)
+                                <a href="{{ route('bursaries.show', ['bursary' => $related->id]) }}" class="block rounded-xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-white">
+                                    <span class="block text-sm font-black text-neutral-950">{{ $related->title }}</span>
+                                    <span class="mt-1 block text-xs font-bold text-neutral-500">{{ $related->company_name ?? 'Provider' }} · {{ $related->category ?? 'Bursary' }}</span>
+                                    <span class="mt-2 block text-xs font-bold text-[#01225E]">{{ $related->closing_date_label ?? 'Closing date to confirm' }}</span>
+                                </a>
+                            @endforeach
+                        </div>
+                    </section>
+                @endif
             </aside>
         </section>
 

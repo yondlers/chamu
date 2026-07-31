@@ -13,7 +13,13 @@
                     {
                         "name": "Bachelor of Administration specialising in Public Administration and International Relations",
                         "qualification_type": "Bachelor Degree",
+                        "nqf_level": 7,
+                        "duration_years": 3,
                         "aps_required": 28,
+                        "closing_month": 6,
+                        "closing_day": 30,
+                        "source_url": "https://www.up.ac.za/programmes/undergraduate/badmin-specialising-public-administration-and-international-relations/2027",
+                        "notes": "Programme scope: this BAdmin route combines public administration, public management and international relations for learners interested in government, diplomacy, policy work, NGOs, public-sector management and related private-sector roles.\nAdmission check: UP publishes APS 28 with English Home Language or English First Additional Language level 5, plus Mathematics level 3 or Mathematical Literacy level 4. Accounting at school is not listed as a subject requirement for this BAdmin route.\nApplication planning: confirm the active intake year on UP's official programme page, then apply through the official UP application portal. Prepare your ID or passport, latest Grade 11 or Grade 12 results, proof of application-fee payment where required, and any international applicant documents that UP asks for.\nClosing-date context: the 2027 UP undergraduate prospectus data lists this EMS programme with a 30 June closing date. Application years can roll over or close earlier when capacity is reached, so use the source page before making a final decision.\nSafety note: Chamu is an independent guide. Do not pay anyone who promises guaranteed admission, and use only official University of Pretoria channels for applications, fees and uploaded documents.",
                         "subject_requirements": [
                             {
                                 "subject": "English Home Language or English First Additional Language",
@@ -306,23 +312,12 @@
                         ]
                     },
                     {
-                        "name": "Higher Certificate in Sports Sciences - One-year programme",
+                        "name": "Higher Certificate in Sports Sciences",
                         "qualification_type": "Higher Certificate",
                         "aps_required": 20,
                         "is_selection_programme": true,
-                        "subject_requirements": [
-                            {
-                                "subject": "English Home Language or English First Additional Language",
-                                "minimum_level": 4
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Higher Certificate in Sports Sciences - Two-year programme",
-                        "qualification_type": "Higher Certificate",
-                        "aps_required": 20,
-                        "is_selection_programme": true,
-                        "notes": "Part-time online programme",
+                        "source_url": "https://www.up.ac.za/programmes/undergraduate/higher-certificate-sports-sciences/2027",
+                        "notes": "UP's 2027 undergraduate listing publishes this as Higher Certificate in Sports Sciences. Confirm the current delivery mode, duration and selection process on the official source page before applying.",
                         "subject_requirements": [
                             {
                                 "subject": "English Home Language or English First Additional Language",

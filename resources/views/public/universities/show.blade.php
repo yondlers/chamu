@@ -12,6 +12,14 @@
 @endpush
 
 @section('content')
+    @php
+        $sourceToneClasses = [
+            'emerald' => 'border-emerald-200 bg-emerald-50 text-emerald-900',
+            'sky' => 'border-sky-200 bg-sky-50 text-sky-900',
+            'amber' => 'border-amber-200 bg-amber-50 text-amber-950',
+        ][$sourceInfo['tone'] ?? 'sky'] ?? 'border-neutral-200 bg-neutral-50 text-neutral-800';
+    @endphp
+
     <main class="bg-[#f8fafc] pb-16">
         <section class="border-b border-neutral-200 bg-white">
             <div class="mx-auto max-w-7xl px-4 py-8 sm:px-5 lg:px-8">
@@ -76,6 +84,26 @@
                                 </div>
                             @endif
                         </dl>
+
+                        <section class="mt-5 border-t border-neutral-200 pt-5" aria-labelledby="source-heading">
+                            <h2 id="source-heading" class="text-sm font-bold text-neutral-950">Source and review</h2>
+                            <div class="mt-3 rounded-xl border p-4 text-sm font-semibold leading-6 {{ $sourceToneClasses }}">
+                                <p class="font-bold">{{ $sourceInfo['label'] }}</p>
+                                <p class="mt-2">{{ $sourceInfo['summary'] }}</p>
+                            </div>
+                            <dl class="mt-4 grid gap-3 text-sm">
+                                <div class="flex items-start justify-between gap-4">
+                                    <dt class="font-semibold text-neutral-500">Last reviewed</dt>
+                                    <dd class="text-right font-bold text-neutral-950">
+                                        @if ($sourceInfo['last_reviewed_machine'])
+                                            <time datetime="{{ $sourceInfo['last_reviewed_machine'] }}">{{ $sourceInfo['last_reviewed'] }}</time>
+                                        @else
+                                            {{ $sourceInfo['last_reviewed'] }}
+                                        @endif
+                                    </dd>
+                                </div>
+                            </dl>
+                        </section>
                     </aside>
                 </div>
             </div>

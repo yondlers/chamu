@@ -312,6 +312,12 @@
 
                         $initials = $course->university_abbreviation
                             ?: Str::of($course->university_name)->substr(0, 3)->upper();
+                        $publicCourseUrl = ($course->university_slug && $course->qualification_slug)
+                            ? route('public.qualifications.show', [
+                                'university' => $course->university_slug,
+                                'qualification' => $course->qualification_slug,
+                            ])
+                            : null;
                     @endphp
                     <article class="group overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-[0_16px_45px_rgba(15,23,42,0.06)] transition hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-[0_22px_60px_rgba(15,23,42,0.10)]">
                         <div class="grid lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -334,10 +340,21 @@
                                                 <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-black text-amber-700">Selection programme</span>
                                             @endif
                                         </div>
-                                        <h3 class="mt-3 text-xl font-black leading-tight text-neutral-950 sm:text-2xl">{{ $course->name }}</h3>
+                                        <h3 class="mt-3 text-xl font-black leading-tight text-neutral-950 sm:text-2xl">
+                                            @if ($publicCourseUrl)
+                                                <a href="{{ $publicCourseUrl }}" class="hover:text-[#01225E]">{{ $course->name }}</a>
+                                            @else
+                                                {{ $course->name }}
+                                            @endif
+                                        </h3>
                                         <p class="mt-1 text-sm font-bold text-neutral-500">
                                             {{ $course->university_abbreviation ?? $course->university_name }} · {{ $course->faculty_name }}
                                         </p>
+                                        @if ($publicCourseUrl)
+                                            <a href="{{ $publicCourseUrl }}" class="mt-4 inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2 text-sm font-black text-neutral-950 hover:bg-neutral-50">
+                                                View requirements <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                                            </a>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
