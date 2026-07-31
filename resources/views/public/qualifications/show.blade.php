@@ -29,10 +29,64 @@
         $programmeNoteSections = \App\Support\ProgrammeNotes::sections($qualification->notes);
         $programmeNotes = \App\Support\ProgrammeNotes::lines($qualification->notes, $applicationPlanningNoteLabels);
         $providerShortName = $university->abbreviation ?: $university->name;
+        $usesAggregateAverageAdmission = ($rules->first()?->admissionRule?->score_type ?? null) === 'aggregate_average';
+        $formatAdmissionValue = fn ($value, ?string $suffix = null) => $value === null
+            ? null
+            : rtrim(rtrim(number_format((float) $value, 1), '0'), '.').($suffix ?? '');
+        $admissionCards = collect();
+
+        if ($usesAggregateAverageAdmission) {
+            if ($qualification->aggregate_average_required !== null) {
+                $admissionCards->push([
+                    'label' => 'Aggregated average',
+                    'value' => $formatAdmissionValue($qualification->aggregate_average_required, '%'),
+                    'hint' => 'NSC aggregate average excluding Life Orientation',
+                ]);
+            }
+        } else {
+            if ($qualification->aps_required !== null) {
+                $admissionCards->push([
+                    'label' => 'Published APS',
+                    'value' => (string) (int) $qualification->aps_required,
+                    'hint' => null,
+                ]);
+            }
+
+            if (
+                $qualification->admission_score_required !== null
+                && (
+                    $qualification->aps_required === null
+                    || (float) $qualification->admission_score_required !== (float) $qualification->aps_required
+                )
+            ) {
+                $admissionCards->push([
+                    'label' => 'Admission score',
+                    'value' => $formatAdmissionValue($qualification->admission_score_required),
+                    'hint' => null,
+                ]);
+            }
+
+            if ($qualification->aggregate_average_required !== null) {
+                $admissionCards->push([
+                    'label' => 'Aggregate average',
+                    'value' => $formatAdmissionValue($qualification->aggregate_average_required, '%'),
+                    'hint' => 'Excluding Life Orientation where the source states this',
+                ]);
+            }
+        }
+
+        if ($admissionCards->isEmpty()) {
+            $admissionCards->push([
+                'label' => 'Admission basis',
+                'value' => 'Check source',
+                'hint' => 'Use the source page for the current published requirement.',
+            ]);
+        }
+
         $entryGradeDisplay = $isTvetCollegeQualification
             ? ($qualification->requiredGrade?->name ?? 'Confirm in source')
-            : 'Grade 11/12 NSC';
-        $entryGradeContext = $isTvetCollegeQualification
+            : ($usesAggregateAverageAdmission ? 'Grade 12 NSC' : 'Grade 11/12 NSC');
+        $entryGradeContext = $isTvetCollegeQualification || $usesAggregateAverageAdmission
             ? null
             : 'Provisional acceptance can use Grade 11 final marks or Grade 12 mid-year marks; final acceptance depends on final Grade 12 NSC results.';
         $subjectRequirementSummary = $qualification->qualificationSubjectRequirements
@@ -56,7 +110,10 @@
         $documentText = 'Prepare your ID or passport, latest results, payment proof if required, and programme-specific documents.';
         $applicationRouteText = 'Apply through '.$providerShortName.' official channels before the listed closing date; programmes can close when full.';
         $safetyText = 'Confirm offers, fees and funding on official channels only. Avoid guaranteed-admission promises.';
-        $planningCards = collect([
+        $showGenericPlanningCards = $isTvetCollegeQualification
+            || $usesPassTypeAdmission
+            || $qualification->qualificationSubjectRequirements->isNotEmpty();
+        $planningCards = $showGenericPlanningCards ? collect([
             [
                 'title' => 'Eligibility and selection',
                 'icon' => 'clipboard-check',
@@ -77,7 +134,7 @@
                 'icon' => 'shield-check',
                 'body' => $safetyText,
             ],
-        ])->filter(fn (array $card) => filled($card['body']))->values();
+        ])->filter(fn (array $card) => filled($card['body']))->values() : collect();
         $qualificationNotes = collect($isTvetCollegeQualification && $collegeAdmissionSummary ? ($collegeAdmissionSummary['notes'] ?? []) : [])
             ->merge($programmeNotes)
             ->map(fn ($note) => trim((string) $note))
@@ -113,6 +170,8 @@
                                 Public college entry information for {{ $qualification->name }} at {{ $university->name }}. TVET programmes can use school grade, equivalent NQF/NC(V)/NATED routes, subject marks, campus availability and selection notes rather than a single university-style APS.
                             @elseif ($usesPassTypeAdmission)
                                 Public admission information for {{ $qualification->name }} at {{ $university->name }}. This qualification is checked against the published pass type, English mark and any listed selection or portfolio notes rather than a single APS total.
+                            @elseif ($usesAggregateAverageAdmission)
+                                Public admission information for {{ $qualification->name }} at {{ $university->name }}. This programme uses the published NSC aggregate average, excluding Life Orientation.
                             @else
                                 Public admission information for {{ $qualification->name }} at {{ $university->name }}. APS and admission scores are useful filters, but universities may also require specific subjects, marks, selection tests, portfolios or other criteria.
                             @endif
@@ -230,18 +289,15 @@
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
                         <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission information</h2>
                         <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Published APS</p>
-                                <p class="mt-2 text-2xl font-bold">{{ $qualification->aps_required !== null ? (int) $qualification->aps_required : 'Check source' }}</p>
-                            </div>
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Admission score</p>
-                                <p class="mt-2 text-2xl font-bold">{{ $qualification->admission_score_required !== null ? rtrim(rtrim(number_format((float) $qualification->admission_score_required, 1), '0'), '.') : 'Check source' }}</p>
-                            </div>
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Aggregate average</p>
-                                <p class="mt-2 text-2xl font-bold">{{ $qualification->aggregate_average_required !== null ? rtrim(rtrim(number_format((float) $qualification->aggregate_average_required, 1), '0'), '.').'%' : 'Check source' }}</p>
-                            </div>
+                            @foreach ($admissionCards as $card)
+                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                    <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
+                                    <p class="mt-2 text-2xl font-bold">{{ $card['value'] }}</p>
+                                    @if ($card['hint'])
+                                        <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $card['hint'] }}</p>
+                                    @endif
+                                </div>
+                            @endforeach
                         </div>
 
                         @if ($qualification->minimum_pass_type)
@@ -264,24 +320,26 @@
                     </section>
                 @endif
 
-                <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="application-planning-heading">
-                    <h2 id="application-planning-heading" class="text-2xl font-bold text-neutral-950">Application planning</h2>
-                    <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-                        @foreach ($planningCards as $card)
-                            <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <div class="flex items-start gap-3">
-                                    <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-[#01225E]">
-                                        <i data-lucide="{{ $card['icon'] }}" style="width:18px;height:18px;"></i>
-                                    </span>
-                                    <div>
-                                        <h3 class="text-sm font-bold text-neutral-950">{{ $card['title'] }}</h3>
-                                        <p class="mt-2 text-sm leading-6 text-neutral-600">{{ $card['body'] }}</p>
+                @if ($planningCards->isNotEmpty())
+                    <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="application-planning-heading">
+                        <h2 id="application-planning-heading" class="text-2xl font-bold text-neutral-950">Application planning</h2>
+                        <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+                            @foreach ($planningCards as $card)
+                                <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                    <div class="flex items-start gap-3">
+                                        <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-[#01225E]">
+                                            <i data-lucide="{{ $card['icon'] }}" style="width:18px;height:18px;"></i>
+                                        </span>
+                                        <div>
+                                            <h3 class="text-sm font-bold text-neutral-950">{{ $card['title'] }}</h3>
+                                            <p class="mt-2 text-sm leading-6 text-neutral-600">{{ $card['body'] }}</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                        @endforeach
-                    </div>
-                </section>
+                                </article>
+                            @endforeach
+                        </div>
+                    </section>
+                @endif
 
                 @if ($qualification->admissionScoreVariants->isNotEmpty())
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="variants-heading">

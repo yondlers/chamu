@@ -36,6 +36,16 @@ abstract class UniversityRequirementSeeder extends Seeder
         return null;
     }
 
+    protected function shouldDeriveAdmissionScoreFromAggregateAverage(array $qualificationData): bool
+    {
+        return true;
+    }
+
+    protected function shouldDeriveAdmissionScoreFromAps(array $qualificationData): bool
+    {
+        return true;
+    }
+
     public function run(): void
     {
         $facultyFiles = glob(database_path($this->requirementsPath())) ?: [];
@@ -470,8 +480,8 @@ abstract class UniversityRequirementSeeder extends Seeder
             ?? $qualificationData['minimum_admission_score']
             ?? $qualificationData['fps_required']
             ?? $qualificationData['FPS_Required']
-            ?? $this->aggregateAverageRequired($qualificationData)
-            ?? $qualificationData['aps_required']
+            ?? ($this->shouldDeriveAdmissionScoreFromAggregateAverage($qualificationData) ? $this->aggregateAverageRequired($qualificationData) : null)
+            ?? ($this->shouldDeriveAdmissionScoreFromAps($qualificationData) ? ($qualificationData['aps_required'] ?? null) : null)
             ?? null;
 
         if ($score === null || $score === '') {

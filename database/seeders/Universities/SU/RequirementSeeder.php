@@ -25,4 +25,14 @@ class RequirementSeeder extends UniversityRequirementSeeder
     {
         return 'nsc_aggregate_excluding_lo';
     }
+
+    protected function shouldDeriveAdmissionScoreFromAggregateAverage(array $qualificationData): bool
+    {
+        return false;
+    }
+
+    protected function shouldDeriveAdmissionScoreFromAps(array $qualificationData): bool
+    {
+        return false;
+    }
 }

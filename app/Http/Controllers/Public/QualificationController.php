@@ -33,6 +33,7 @@ class QualificationController extends Controller
             ? $admissionInfo->collegeAdmissionSummary($qualification, $rules)
             : null;
         $usesPassTypeAdmission = ($rules->first()?->admissionRule?->score_type ?? null) === 'pass_type';
+        $usesAggregateAverageAdmission = ($rules->first()?->admissionRule?->score_type ?? null) === 'aggregate_average';
         $requirements = $qualification->qualificationSubjectRequirements
             ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id);
         $originBreadcrumb = $this->originBreadcrumb($request);
@@ -59,11 +60,16 @@ class QualificationController extends Controller
             'university' => $university->slug,
             'qualification' => $qualification->slug,
         ]);
-        $titleSuffix = $isTvetCollegeQualification || $usesPassTypeAdmission ? 'Entry Requirements' : 'APS and Requirements';
+        $titleSuffix = match (true) {
+            $isTvetCollegeQualification || $usesPassTypeAdmission => 'Entry Requirements',
+            $usesAggregateAverageAdmission => 'Aggregated Average and Requirements',
+            default => 'APS and Requirements',
+        };
         $title = $qualification->name.' at '.$university->name.': '.$titleSuffix.' | Chamu';
         $description = match (true) {
             $isTvetCollegeQualification => 'View entry grade, programme type, NQF route, subject checks and college admission notes for '.$qualification->name.' at '.$university->name.'.',
             $usesPassTypeAdmission => 'View pass type, subject checks, entry grade, NQF level and admission notes for '.$qualification->name.' at '.$university->name.'.',
+            $usesAggregateAverageAdmission => 'View the aggregate average, qualification type, NQF level and admission notes for '.$qualification->name.' at '.$university->name.'.',
             default => 'View the APS, subject requirements, qualification type and admission information for '.$qualification->name.' at '.$university->name.'.',
         };
 
