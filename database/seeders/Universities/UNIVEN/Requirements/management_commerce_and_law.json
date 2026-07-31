@@ -2,196 +2,766 @@
     "faculty": "Faculty of Management, Commerce and Law",
     "university": "University of Venda",
     "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+    "source_url": "https://www.univen.ac.za/wp-content/uploads/2023/03/2024-Undergraduate-Student-Information-Brochure-final-2-003.pdf",
+    "source_reviewed": "Official UNIVEN 2024 Undergraduate Student Information Brochure PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official University of Venda source.",
+    "include_faculty_notes": true,
+    "campus": "Thohoyandou campus",
     "qualifications": [
         {
             "name": "Bachelor of Administration",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 3.0,
             "aps_required": 32,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): MSBAPA.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement in English; Moderate achievement level in any three subjects."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce",
-            "qualification_type": "Bachelor",
-            "duration_years": null,
-            "aps_required": null,
-            "selection_programme": false,
-            "notes": [
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "No specific admission requirements provided in source."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Accounting Sciences",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 35,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBCAS.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 35; Adequate achievement level in English; At least 55% pass in Mathematics if student does not have Matric Accounting; OR at least 50% pass in Mathematics if student has done and passed Accounting with at least 60% in Matric."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Accounting",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBBCA.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Accounting or Mathematics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Business Information Systems",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBBIS.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Moderate achievement in Mathematics OR 75% in Mathematical Literacy; Any two of these subjects: Accounting, Business Studies, Economics, Information Technology or Computer Studies."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Business Management",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBCBM.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Business Studies; Moderate achievement in any two of these subjects: Accounting, Economics, Information Technology and Mathematics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Cost and Management Accounting",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBCMA.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Accounting or Mathematics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Economics",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBBCE.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Economics or Mathematics; Moderate achievement in any two of these subjects: Accounting, Business Studies and Information Technology."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Human Resource Management",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBHRM.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology and Mathematics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Industrial Psychology",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBCIP.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology and Mathematics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Commerce in Tourism Management",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 32,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): MSBCTM.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 32; Adequate achievement level in English; Mathematical Literacy OR moderate achievement in Mathematics; Moderate achievement in any two of these subjects: Accounting, Business Studies, Economics, Information Technology, Geography and Tourism."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Baccalaureus Legum",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 38,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): LWBBL.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 38; Life Orientation excluded from APS."
-            ],
-            "subject_requirements": [
-                {
-                    "subject": "English Home Language or English First Additional Language",
-                    "minimum_level": 5
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Arts in Criminal Justice",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 34,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): LWBACJ.",
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: NSC 34; Life Orientation excluded from APS."
+                "Programme scope: Programme code(s): MSBAPA.",
+                "Eligibility explanation: NSC 32 with adequate achievement in English and moderate achievement level in any three subjects.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
+            ],
+            "abbreviation": "MSBAPA",
+            "possible_careers": [
+                "Office manager",
+                "Public-sector administrator",
+                "Social development manager",
+                "NGO administrator"
             ]
         },
         {
-            "name": "Extended Degree Programmes",
+            "name": "Bachelor of Commerce in Accounting Sciences",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 35,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBCAS.",
+                "Eligibility explanation: NSC 35 with adequate achievement level in English and Mathematics rules linked to whether the applicant has Matric Accounting.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "choices": [
+                        {
+                            "label": "No Matric Accounting route",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_mark": 55
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Matric Accounting route",
+                            "count": 2,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_mark": 50
+                                },
+                                {
+                                    "subject": "Accounting",
+                                    "minimum_mark": 60
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "abbreviation": "MSBCAS",
+            "possible_careers": [
+                "Accountant",
+                "Bookkeeper",
+                "Auditor",
+                "Tax consultant"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Accounting",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBBCA.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English and Accounting or Mathematics.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 4,
+                    "alternative_subject": "Mathematics",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "MSBBCA",
+            "possible_careers": [
+                "Accountant",
+                "Bookkeeper",
+                "Auditor",
+                "Tax consultant"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Business Information Systems",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBBIS.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English, moderate achievement in Mathematics or 75% in Mathematical Literacy, and any two listed commerce/technology subjects.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "choices": [
+                        {
+                            "label": "Mathematics route",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_level": 3
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Mathematical Literacy route",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematical Literacy",
+                                    "minimum_mark": 75
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Economics",
+                        "Information Technology",
+                        "Computer Applications Technology"
+                    ],
+                    "count": 2,
+                    "minimum_level": 3,
+                    "label": "Source also refers to Computer Studies."
+                }
+            ],
+            "abbreviation": "MSBBIS",
+            "possible_careers": [
+                "Business information specialist",
+                "Systems analyst",
+                "Information management officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Business Management",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBCBM.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English, Business Studies, and moderate achievement in any two of Accounting, Economics, Information Technology and Mathematics.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Business Studies",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Accounting",
+                        "Economics",
+                        "Information Technology",
+                        "Mathematics"
+                    ],
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MSBCBM",
+            "possible_careers": [
+                "Business manager",
+                "Small business advisor",
+                "Entrepreneur",
+                "Operations administrator"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Cost and Management Accounting",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBCMA.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English and Accounting or Mathematics.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Accounting",
+                    "minimum_level": 4,
+                    "alternative_subject": "Mathematics",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "MSBCMA",
+            "possible_careers": [
+                "Accountant",
+                "Bookkeeper",
+                "Auditor",
+                "Tax consultant"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Economics",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBBCE.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English, Economics or Mathematics, and moderate achievement in any two of Accounting, Business Studies and Information Technology.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Economics",
+                    "minimum_level": 4,
+                    "alternative_subject": "Mathematics",
+                    "alternative_minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Information Technology"
+                    ],
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MSBBCE",
+            "possible_careers": [
+                "Economist",
+                "Financial institutional worker",
+                "Researcher",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Human Resource Management",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBHRM.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English plus moderate achievement in any two of Accounting, Business Studies, Economics, Information Technology and Mathematics.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Economics",
+                        "Information Technology",
+                        "Mathematics"
+                    ],
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MSBHRM",
+            "possible_careers": [
+                "Human resource practitioner",
+                "Personnel manager",
+                "Industrial relations officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Industrial Psychology",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBCIP.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English plus moderate achievement in any two of Accounting, Business Studies, Economics, Information Technology and Mathematics.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Economics",
+                        "Information Technology",
+                        "Mathematics"
+                    ],
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MSBCIP",
+            "possible_careers": [
+                "Industrial psychology practitioner",
+                "Human resource practitioner",
+                "Personnel manager",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "Bachelor of Commerce in Tourism Management",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 32,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSBCTM.",
+                "Eligibility explanation: NSC 32 with adequate achievement level in English, Mathematical Literacy or moderate achievement in Mathematics, and moderate achievement in any two listed commerce/tourism subjects.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "type": "subject_group_count_choices",
+                    "choices": [
+                        {
+                            "label": "Mathematics route",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematics",
+                                    "minimum_level": 3
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Mathematical Literacy route",
+                            "count": 1,
+                            "subjects": [
+                                {
+                                    "subject": "Mathematical Literacy",
+                                    "minimum_mark": 75
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Accounting",
+                        "Business Studies",
+                        "Economics",
+                        "Information Technology",
+                        "Geography",
+                        "Tourism"
+                    ],
+                    "count": 2,
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MSBCTM",
+            "possible_careers": [
+                "Tourism manager",
+                "Hotel industry manager",
+                "Tourism business advisor"
+            ]
+        },
+        {
+            "name": "Baccalaureus Legum",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 38,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): LWBBL.",
+                "Eligibility explanation: NSC 38 excluding Life Orientation plus at least 60% in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 60
+                }
+            ],
+            "abbreviation": "LWBBL",
+            "possible_careers": [
+                "Advocate",
+                "Attorney",
+                "Prosecutor",
+                "Legal adviser",
+                "Magistrate"
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Criminal Justice",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 34,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): LWBACJ.",
+                "Eligibility explanation: NSC 34 excluding Life Orientation plus at least 50% in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 50
+                }
+            ],
+            "abbreviation": "LWBACJ",
+            "possible_careers": [
+                "Police officer",
+                "Traffic officer",
+                "Criminologist",
+                "Administrative officer in policing"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Administration",
             "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 28,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Faculty career opportunities: Bcom: Accountant, Bookkeeper, Auditor, Tax Manager, Tax Consultant, Personnel Manager, Office Manager, Administrator in national, provincial or local government, Nongovernmental organisations, Business organisations, Social Development Manager, Small Business Manager, Small Business Advisor, Entrepreneur, Tourist and Hotel Industry Manager, Business Management Information Expert, Economist, Financial institutional worker in banking or insurance, Lecturer, Researcher; Law: Advocate, Attorney, Prosecutor, Legal Adviser, Magistrate, Judge, Lawyer in the public and corporate sector, International relations, International organisations, National or international nongovernmental organisations, Academic fields; Criminal Justice: Police Officer, Traffic Officer, Lecturer, Self-employment such as private practice, Criminologist, Administrative Officer in criminology and policing, Researcher.",
-                "Additional UNIVEN requirements: Students who do not qualify for the main degree programme of choice may be considered; Must meet requirements for bachelor's degree in Grade 12 OR have completed Matric with university exemption; APS of 28-31 excluding Life Orientation."
+                "Programme scope: Programme code(s): MSEABA.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [],
+            "abbreviation": "MSEABA",
+            "possible_careers": [
+                "Office manager",
+                "Public-sector administrator",
+                "Social development manager",
+                "NGO administrator"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Commerce in Accounting",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSEBCA.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "MSEBCA",
+            "possible_careers": [
+                "Accountant",
+                "Bookkeeper",
+                "Auditor",
+                "Tax consultant"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Commerce in Business Information Systems",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSEBIS.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "MSEBIS",
+            "possible_careers": [
+                "Business information specialist",
+                "Systems analyst",
+                "Information management officer"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Commerce in Business Management",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSEBCM.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "MSEBCM",
+            "possible_careers": [
+                "Business manager",
+                "Small business advisor",
+                "Entrepreneur",
+                "Operations administrator"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Commerce in Cost and Management Accounting",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSECMA.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "MSECMA",
+            "possible_careers": [
+                "Accountant",
+                "Bookkeeper",
+                "Auditor",
+                "Tax consultant"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Commerce in Economics",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSEBCE.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "MSEBCE",
+            "possible_careers": [
+                "Economist",
+                "Financial institutional worker",
+                "Researcher",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Commerce in Human Resources Management",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSEHRM.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "MSEHRM",
+            "possible_careers": [
+                "Human resource practitioner",
+                "Personnel manager",
+                "Industrial relations officer"
+            ]
+        },
+        {
+            "name": "Extended Bachelor of Commerce in Tourism Management",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 28,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MSECTM.",
+                "Eligibility explanation: For applicants who do not qualify for the main degree but meet bachelor-degree requirements in Grade 12 or hold Matric with university exemption, with APS 28-31 excluding Life Orientation.",
+                "Alternative routes: Extended degree route linked to the Faculty of Management, Commerce and Law list.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "MSECTM",
+            "possible_careers": [
+                "Tourism manager",
+                "Hotel industry manager",
+                "Tourism business advisor"
+            ]
         }
     ]
 }

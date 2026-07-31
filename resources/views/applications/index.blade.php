@@ -84,7 +84,7 @@
                                     Print postal pack <i data-lucide="printer" style="width:16px;height:16px;"></i>
                                 </a>
                                 @if ($application->source_url)
-                                    <a href="{{ $application->source_url }}" target="_blank" rel="noreferrer" class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-neutral-700 ring-1 ring-neutral-200 hover:bg-neutral-100">
+                                    <a href="{{ $application->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-neutral-700 ring-1 ring-neutral-200 hover:bg-neutral-100">
                                         Source instructions <i data-lucide="external-link" style="width:16px;height:16px;"></i>
                                     </a>
                                 @endif

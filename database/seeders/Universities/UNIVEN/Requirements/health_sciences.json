@@ -2,95 +2,254 @@
     "faculty": "Faculty of Health Sciences",
     "university": "University of Venda",
     "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+    "source_url": "https://www.univen.ac.za/wp-content/uploads/2023/03/2024-Undergraduate-Student-Information-Brochure-final-2-003.pdf",
+    "source_reviewed": "Official UNIVEN 2024 Undergraduate Student Information Brochure PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official University of Venda source.",
+    "include_faculty_notes": true,
+    "campus": "Thohoyandou campus",
     "qualifications": [
         {
             "name": "Bachelor of Nursing",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 36,
             "selection_programme": true,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SHBBN.",
-                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
-                "Additional UNIVEN requirements: NSC 36; Adequate achievement in Life Sciences; Adequate achievement in Mathematics; Adequate achievement in English; Adequate achievement in Physical Sciences; Life Orientation excluded from APS; Selection test required; Physical assessment required."
+                "Programme scope: Programme code(s): SHBBN.",
+                "Eligibility explanation: NSC 36 with adequate achievement in Life Sciences, Mathematics, English and Physical Sciences, excluding Life Orientation; selection test and physical assessment are required.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "SHBBN",
+            "possible_careers": [
+                "Professional nurse",
+                "Midwife",
+                "Psychiatric nurse"
+            ]
         },
         {
             "name": "BSc in Nutrition",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 34,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SHBBSN.",
-                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
-                "Additional UNIVEN requirements: NSC 34; Adequate achievement in Life Sciences; Adequate achievement in English; Adequate achievement in Mathematics; Adequate achievement in Physical Sciences or Agricultural Sciences."
+                "Programme scope: Programme code(s): SHBBSN.",
+                "Eligibility explanation: NSC 34 with adequate achievement in Life Sciences, English, Mathematics and Physical Sciences or Agricultural Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4,
+                    "alternative_subject": "Agricultural Sciences",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "SHBBSN",
+            "possible_careers": [
+                "Nutritionist",
+                "Community nutrition worker",
+                "Health promotion practitioner"
+            ]
         },
         {
             "name": "BSc in Biokinetics",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 34,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SHBBSB.",
-                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
-                "Additional UNIVEN requirements: NSC 34; Adequate achievement in Life Sciences; Adequate achievement in English; Adequate achievement in Mathematics; Adequate achievement in Physical Sciences."
+                "Programme scope: Programme code(s): SHBBSB.",
+                "Eligibility explanation: NSC 34 with adequate achievement in Life Sciences, English, Mathematics and Physical Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "SHBBSB",
+            "possible_careers": [
+                "Biokineticist",
+                "Exercise rehabilitation practitioner",
+                "Sport conditioning specialist"
+            ]
         },
         {
             "name": "BSc in Sports and Exercise Science",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 34,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SHBSES.",
-                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
-                "Additional UNIVEN requirements: NSC 34; Adequate achievement in Life Sciences; Adequate achievement in English; Adequate achievement in Physical Sciences."
+                "Programme scope: Programme code(s): SHBSES.",
+                "Eligibility explanation: NSC 34 with adequate achievement in Life Sciences, English and Physical Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "SHBSES",
+            "possible_careers": [
+                "Sport scientist",
+                "Exercise specialist",
+                "Fitness assessment practitioner"
+            ]
         },
         {
             "name": "BSc in Recreation and Leisure Studies",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 34,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SHBRLS.",
-                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
-                "Additional UNIVEN requirements: NSC 34; Adequate achievement in English."
+                "Programme scope: Programme code(s): SHBRLS.",
+                "Eligibility explanation: NSC 34 with adequate achievement in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "SHBRLS",
+            "possible_careers": [
+                "Certified leisure professional",
+                "Recreation programme coordinator",
+                "Community sport and leisure officer"
+            ]
         },
         {
             "name": "Bachelor of Psychology",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 36,
             "selection_programme": true,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SHBBP.",
-                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
-                "Additional UNIVEN requirements: NSC 36; Adequate achievement in English; Selection test required."
+                "Programme scope: Programme code(s): SHBBP.",
+                "Eligibility explanation: NSC 36 with adequate achievement in English; selection test required.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "SHBBP",
+            "possible_careers": [
+                "Registered counsellor",
+                "Psychology support practitioner",
+                "Community mental-health worker"
+            ]
         },
         {
             "name": "Diploma in Nursing",
             "qualification_type": "Diploma",
+            "required_grade": "Grade 12",
             "duration_years": 3.0,
             "aps_required": 28,
             "selection_programme": true,
+            "minimum_pass_type": "diploma",
             "notes": [
-                "Programme code(s): SHDPN.",
-                "Faculty career opportunities: Professional Nurse in private and public sector; Midwife; Psychiatric Nurse; Nutritionist; Registered Counsellor; Biokineticist; Certified Leisure Professional; Recreation and Sport Science Specialist.",
-                "Additional UNIVEN requirements: NSC 28; Life Orientation excluded from APS; Selection test required; Physical assessment required."
+                "Programme scope: Programme code(s): SHDPN.",
+                "Eligibility explanation: NSC 28 excluding Life Orientation, with Life Sciences level 4, English level 4, Mathematics level 3 and Physical Sciences level 4; selection test and physical assessment are required.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
             "subject_requirements": [
                 {
@@ -109,6 +268,11 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "abbreviation": "SHDPN",
+            "possible_careers": [
+                "Enrolled nurse",
+                "Nursing practitioner in public or private health settings"
             ]
         }
     ]

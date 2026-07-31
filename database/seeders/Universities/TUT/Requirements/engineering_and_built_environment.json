@@ -32,7 +32,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "MArch and DArch",
+            "possible_careers": "Architectural technologist, property inspector, building product consultant, specialising in architectural technology, self-employed and private architect"
         },
         {
             "name": "Bachelor of Architecture (Extended)",
@@ -62,7 +67,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "MArch and DArch",
+            "possible_careers": "Architectural technologist, property inspector, building product consultant, specialising in architectural technology, self-employed and private architect"
         },
         {
             "name": "Bachelor of Geomatics",
@@ -100,7 +110,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "PGDip (Geomatics)",
+            "possible_careers": "Survey technologist and route to professional topographic or engineering surveyor, geographic information systems practitioner, photogrammetrist"
         },
         {
             "name": "Bachelor of Engineering Technology (Chemical Engineering)",
@@ -140,7 +155,12 @@
             "recommended_subjects": [
                 "Engineering Graphics and Design",
                 "Mechanical Technology"
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Chemical Engineering",
+            "possible_careers": "Chemical engineering technician and technologist, researcher and developer, fuel- cell technologist, consultant"
         },
         {
             "name": "Bachelor of Engineering Technology (Civil Engineering)",
@@ -180,7 +200,12 @@
             "recommended_subjects": [
                 "Engineering Graphics and Design",
                 "Civil Technology"
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Civil Engineering",
+            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, technologist, construction company, or local, provincial or national government"
         },
         {
             "name": "Bachelor of Engineering Technology (Electrical Engineering)",
@@ -225,7 +250,13 @@
             "recommended_subjects": [
                 "Engineering Graphics and Design",
                 "Electrical Technology"
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "eMalahleni"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Electrical Engineering",
+            "possible_careers": "Design, planning, construction and maintenance of specialised fields systems related to electrical engineering"
         },
         {
             "name": "Bachelor of Engineering Technology (Industrial Engineering)",
@@ -265,7 +296,12 @@
             "recommended_subjects": [
                 "Engineering Graphics and Design",
                 "Mechanical Technology"
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Industrial Engineering",
+            "possible_careers": "Professional technologist, technician, manager, entrepreneur and consultant"
         },
         {
             "name": "Bachelor of Engineering (Materials Engineering - Polymer Technology)",
@@ -301,7 +337,16 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Engineering Graphics and Design",
+                "Mechanical Technology"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Polymer Technology",
+            "possible_careers": "Management of production and processing of raw material, manufacturing and processing of products, development, characterisation and quality assurance of products and raw materials, development of new plastic products and material, marketing and sales of raw materials and products"
         },
         {
             "name": "Bachelor of Engineering Technology (Mechanical Engineering)",
@@ -337,7 +382,16 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Engineering Graphics and Design",
+                "Mechanical Technology"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Mechanical Engineering",
+            "possible_careers": "Mechanical technologist, technician, manager, entrepreneur and consultant"
         },
         {
             "name": "Bachelor of Engineering Technology (Mechatronics Engineering)",
@@ -373,7 +427,16 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Engineering Graphics and Design",
+                "Mechanical Technology"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Mechatronic Engineering",
+            "possible_careers": "Mechanical and Electronic technologist, technician, manager, entrepreneur and consultant"
         },
         {
             "name": "Bachelor of Engineering Technology (Metallurgical Engineering)",
@@ -409,7 +472,16 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Engineering Graphics and Design",
+                "Mechanical Technology"
+            ],
+            "possible_further_studies": "BEngTechHons, MEng and DEng: Metallurgical Engineering",
+            "possible_careers": "Metallurgist, technician, technologist, plant manager, consultant, researcher and developer"
         },
         {
             "name": "Diploma in Geomatics",
@@ -445,7 +517,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "AdvDip and PGDip: Geomatics",
+            "possible_careers": "Survey technologist and route to professional topographic or engineering surveyor, geographic information systems practitioner, photogrammetrist"
         },
         {
             "name": "Diploma in Industrial Design",
@@ -475,7 +552,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "AdvDip (Industrial Design)",
+            "possible_careers": "Junior industrial designer, member of design and development team, junior design entrepreneur. Design skills can be applied across diverse business fields"
         },
         {
             "name": "Higher Certificate in Construction Engineering (Material Test)",
@@ -515,7 +597,12 @@
             "recommended_subjects": [
                 "Civil Technology",
                 "Engineering Graphics and Design"
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "BEngTech (Civil Engineering)",
+            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, construction company, or local, provincial or national government"
         },
         {
             "name": "Higher Certificate in Construction Engineering (Water and Waste)",
@@ -555,16 +642,18 @@
             "recommended_subjects": [
                 "Civil Technology",
                 "Engineering Graphics and Design"
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "BEngTech (Civil Engineering)",
+            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, construction company, or local, provincial or national government"
         },
         {
             "name": "Higher Certificate in Electrical Engineering",
             "qualification_type": "Higher Certificate",
             "duration_years": 1,
             "aps_required": 20,
-            "other_campuses": [
-                "eMalahleni"
-            ],
             "subject_requirements": [
                 {
                     "subject": "English",
@@ -597,7 +686,13 @@
             ],
             "recommended_subjects": [
                 "Electrical Technology"
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "eMalahleni"
+            ],
+            "possible_further_studies": "BEngTech (Electrical Engineering)",
+            "possible_careers": "Design, planning, construction and maintenance of specialised fields systems related to electrical engineering"
         },
         {
             "name": "Higher Certificate in Industrial Engineering",
@@ -636,7 +731,12 @@
             ],
             "recommended_subjects": [
                 "Mechanical Technology"
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "BEngTech (Industrial Engineering)",
+            "possible_careers": "Technician, manager, entrepreneur and consultant"
         },
         {
             "name": "Higher Certificate in Mechanical Engineering",
@@ -674,9 +774,20 @@
                 }
             ],
             "recommended_subjects": [
-                "Mechanical Technology",
-                "Technical Mechanical Technology"
-            ]
+                "Mechanical Technology or Technical: Mechanical Technology"
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "BEngTech (Mechanical Engineering)",
+            "possible_careers": "Technician, manager, entrepreneur and consultant"
         }
+    ],
+    "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
+    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official Tshwane University of Technology source.",
+    "include_faculty_notes": true,
+    "campus": [
+        "Pretoria"
     ]
 }

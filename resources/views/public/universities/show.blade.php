@@ -45,7 +45,7 @@
                                 Check APS options <i data-lucide="target" style="width:17px;height:17px;"></i>
                             </a>
                             @if ($university->website)
-                                <a href="{{ $university->website }}" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
+                                <a href="{{ $university->website }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
                                     University website <i data-lucide="external-link" style="width:17px;height:17px;"></i>
                                 </a>
                             @endif
@@ -103,6 +103,11 @@
                                     </dd>
                                 </div>
                             </dl>
+                            @if ($sourceInfo['source_url'])
+                                <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-bold hover:bg-neutral-50">
+                                    Open source <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+                                </a>
+                            @endif
                         </section>
                     </aside>
                 </div>

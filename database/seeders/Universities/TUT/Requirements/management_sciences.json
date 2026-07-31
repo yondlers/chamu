@@ -14,7 +14,14 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "eMalahleni",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MMSc and DMSc: Administrative Information Management",
+            "possible_careers": "Secretary, administration officer, personal assistant, office manager"
         },
         {
             "name": "Diploma in Business and Information Administration",
@@ -26,6 +33,9 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
+            ],
+            "campuses": [
+                "Pretoria"
             ]
         },
         {
@@ -38,7 +48,12 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, and MMSc: Contact Centre Management",
+            "possible_careers": "Agent, call centre representative, call centre officer, team leader, supervisor, functional leader, strategic manager"
         },
         {
             "name": "Diploma in Entrepreneurship",
@@ -50,7 +65,17 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "eMalahleni",
+                "Polokwane"
+            ],
+            "recommended_subjects": [
+                "Commercial subjects"
+            ],
+            "possible_further_studies": "AdvDip (Entrepreneurship)",
+            "possible_careers": "Creating and building a business, business training consultant, small business development officer"
         },
         {
             "name": "Diploma in Financial Information Systems",
@@ -78,7 +103,16 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Mathematics",
+                "Commercial subjects"
+            ],
+            "possible_further_studies": "AdvDip and PGDip: Credit Management",
+            "possible_careers": "Financial credit analyst, accounts receivable manager, credit and litigation coordinator, credit/debtor clerk in banking sector"
         },
         {
             "name": "Diploma in Hospitality Management",
@@ -90,7 +124,12 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "AdvDip (Hospitality Management), PGDip (Hospitality Management), MMSc (Food Operations Management) and DMSc (Food Operations Management)",
+            "possible_careers": "Manager in the hospitality industry (hotels, guesthouses), entrepreneur, researcher, chef, food and beverage manager, industrial catering service/accommodation manager"
         },
         {
             "name": "Diploma in Human Resource Management",
@@ -102,7 +141,14 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "eMalahleni",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MMSc and DMSc: Human Resources Management",
+            "possible_careers": "Training officer, personnel officer, personnel manager, training officer, labour relations officer"
         },
         {
             "name": "Diploma in Marketing",
@@ -114,7 +160,18 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Mbombela"
+            ],
+            "recommended_subjects": [
+                "Accounting",
+                "Business Studies",
+                "Economics"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MMSc and DMSc: Marketing",
+            "possible_careers": "Sales consultant, sales manager, marketing manager, advertising manager, researcher, customer services, product manager"
         },
         {
             "name": "Diploma in Operations Management",
@@ -126,7 +183,12 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "possible_further_studies": "AdvDip, PGDip and MMSc: Operations Management",
+            "possible_careers": "Inventory controller, materials manager, operations manager, production analyst, process engineer"
         },
         {
             "name": "Diploma in Retail Business Management",
@@ -138,7 +200,13 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "presentation_mode": "Online presentation",
+            "possible_further_studies": "AdvDip (Retail Business Management)",
+            "possible_careers": "Merchandising and sales representative for retail suppliers and wholesalers"
         },
         {
             "name": "Diploma in Sport Management",
@@ -150,7 +218,17 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Accounting",
+                "Business Studies",
+                "Economics"
+            ],
+            "possible_further_studies": "AdvDip and PGDip: Sport Management",
+            "possible_careers": "Sports administrator, club manager, sports marketing agent, sports development officer, promoter, commentator, entrepreneur, sales consultant, market researcher"
         },
         {
             "name": "Diploma in Supply Chain Management",
@@ -162,7 +240,15 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Commercial subjects"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MMSc and DMSc: Supply Chain Management",
+            "possible_careers": "Buyer, materials manager, logistics manager, distribution manager, warehouse manager"
         },
         {
             "name": "Higher Certificate in Administrative Information Management",
@@ -174,7 +260,13 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria"
+            ],
+            "presentation_mode": "Online presentation",
+            "possible_further_studies": "Dip (Administrative Information Management)",
+            "possible_careers": "Secretary, administration officer, personal assistant, office manager"
         },
         {
             "name": "Higher Certificate in Hospitality Management",
@@ -186,6 +278,9 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
+            ],
+            "campuses": [
+                "Pretoria"
             ]
         },
         {
@@ -198,7 +293,17 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
+            ],
+            "campuses": [
+                "Pretoria"
             ]
         }
+    ],
+    "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
+    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official Tshwane University of Technology source.",
+    "include_faculty_notes": true,
+    "campus": [
+        "Pretoria"
     ]
 }

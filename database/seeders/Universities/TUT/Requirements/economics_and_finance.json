@@ -24,7 +24,14 @@
                     "alternative_minimum_level_3": 5
                 }
             ],
-            "notes": "APS 22 with Accounting/Mathematics/Technical Mathematics or APS 24 with Mathematical Literacy."
+            "notes": "APS 22 with Accounting/Mathematics/Technical Mathematics or APS 24 with Mathematical Literacy.",
+            "campuses": [
+                "Ga-Rankuwa",
+                "Mbombela",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip and PGDip: Accounting",
+            "possible_careers": "Financial accountant, auditor, asset manager, administrative service manager, administrative service manager"
         },
         {
             "name": "Diploma in Economics",
@@ -47,7 +54,12 @@
                     "alternative_minimum_level_2": 6
                 }
             ],
-            "notes": "APS 22 with Mathematics/Technical Mathematics or APS 24 with Mathematical Literacy."
+            "notes": "APS 22 with Mathematics/Technical Mathematics or APS 24 with Mathematical Literacy.",
+            "campuses": [
+                "Ga-Rankuwa"
+            ],
+            "possible_further_studies": "AdvDip (Economics), PGDip (Economics) and MEcon (Comparative Local Development)",
+            "possible_careers": "Consultant, financial analyst, entrepreneur, economist, banking, insurance, investment, public sectors in economics and financial management, financial and management consultant"
         },
         {
             "name": "Diploma in Financial Management",
@@ -71,7 +83,14 @@
                     "alternative_subject_3": "Mathematical Literacy",
                     "alternative_minimum_level_3": 5
                 }
-            ]
+            ],
+            "campuses": [
+                "Ga-Rankuwa",
+                "Mbombela",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip (Financial Management), PGDip (Financial Management), MBusiness Studies (Finance) and DBusiness Studies (Finance)",
+            "possible_careers": "Cost and pricing accountant, project accountant, management accountant, financial controller, financial accountant/controllers, business operations manager, budget controller, finance consultants"
         },
         {
             "name": "Diploma in Financial Planning",
@@ -96,7 +115,12 @@
                     "alternative_minimum_level_3": 5
                 }
             ],
-            "notes": "APS 23 with Accounting, APS 22 with Mathematics/Technical Mathematics or APS 24 with Mathematical Literacy."
+            "notes": "APS 23 with Accounting, APS 22 with Mathematics/Technical Mathematics or APS 24 with Mathematical Literacy.",
+            "campuses": [
+                "Ga-Rankuwa"
+            ],
+            "possible_further_studies": "AdvDip (Financial Planning), PGDip (Financial Planning), MBusiness Studies (Finance) and DBusiness Studies (Finance)",
+            "possible_careers": "Junior business analysts, research analysts, financial analysts, business performance analysts, performance and monitoring assistant/manager, financial planner, finance consultants, investment analysts"
         },
         {
             "name": "Diploma in Internal Auditing",
@@ -120,7 +144,14 @@
                     "alternative_subject_3": "Mathematical Literacy",
                     "alternative_minimum_level_3": 5
                 }
-            ]
+            ],
+            "campuses": [
+                "Ga-Rankuwa",
+                "Mbombela",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip (Internal Auditing), PGDip (Internal Auditing), MBusiness Studies (Auditing) and DBusiness Studies (Auditing)",
+            "possible_careers": "Auditor"
         },
         {
             "name": "Higher Certificate in Accounting",
@@ -143,7 +174,19 @@
                     "alternative_minimum_level_2": 4
                 }
             ],
-            "notes": "APS 22 with Mathematics/Technical Mathematics or APS 23 with Mathematical Literacy."
+            "notes": "APS 22 with Mathematics/Technical Mathematics or APS 23 with Mathematical Literacy.",
+            "campuses": [
+                "Ga-Rankuwa"
+            ],
+            "possible_further_studies": "Dip (Accounting), Dip (Internal Auditing), Dip (Financial Management), Dip (Financial Planning) or Dip (Public Finance)",
+            "possible_careers": "Accounting technician, bookkeeper, accounts clerk, tax consultant, financial accountant"
         }
+    ],
+    "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
+    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official Tshwane University of Technology source.",
+    "include_faculty_notes": true,
+    "campus": [
+        "Ga-Rankuwa"
     ]
 }

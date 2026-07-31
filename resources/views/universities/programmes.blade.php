@@ -37,7 +37,7 @@
                         </p>
                         <div class="mt-5 flex flex-wrap gap-2">
                             @if ($university->website)
-                                <a href="{{ $university->website }}" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-neutral-950 hover:bg-neutral-100">
+                                <a href="{{ $university->website }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-neutral-950 hover:bg-neutral-100">
                                     Website <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                                 </a>
                             @endif

@@ -8,6 +8,10 @@ class ProgrammeNotes
 {
     private const LABELS = [
         'Programme scope',
+        'Faculty',
+        'Campus',
+        'Presentation',
+        'Selection format',
         'Eligibility explanation',
         'Academic requirement',
         'Selection context',
@@ -26,6 +30,10 @@ class ProgrammeNotes
         'Exposure context',
         'Practical context',
         'Source note',
+        'Recommended subjects',
+        'Other campuses',
+        'Possible further studies',
+        'Possible careers',
         'Document checklist',
         'Application method',
         'Closing-date context',

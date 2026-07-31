@@ -20,7 +20,10 @@
         @endif
 
         @if ($application->bursary->source_url)
-            <p><strong>Source instructions:</strong><br>{{ $application->bursary->source_url }}</p>
+            <p>
+                <strong>Source instructions:</strong><br>
+                <a href="{{ $application->bursary->source_url }}" target="_blank" rel="noopener noreferrer">{{ $application->bursary->source_url }}</a>
+            </p>
         @endif
 
         @if ($application->applicant_postal_address)

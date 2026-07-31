@@ -142,7 +142,7 @@
                                     Print postal pack <i data-lucide="printer" style="width:16px;height:16px;"></i>
                                 </a>
                                 @if ($bursary->source_url)
-                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-200 px-4 py-2.5 text-sm font-black text-emerald-800 hover:bg-emerald-50">
+                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-200 px-4 py-2.5 text-sm font-black text-emerald-800 hover:bg-emerald-50">
                                         Source instructions <i data-lucide="external-link" style="width:16px;height:16px;"></i>
                                     </a>
                                 @endif
@@ -208,7 +208,7 @@
                         <div class="mt-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm font-semibold leading-6 text-sky-950">
                             Chamu has not captured the full funding package for this opportunity yet. Before applying, confirm whether the provider covers registration, tuition, books, accommodation, meals, travel, device costs, or a monthly allowance.
                             @if ($bursary->source_url)
-                                <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
+                                <a href="{{ $bursary->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
                                     Check source details <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                                 </a>
                             @endif
@@ -240,7 +240,7 @@
                             @endif
                         </p>
                         @if ($bursary->apply_url)
-                            <a href="{{ $bursary->apply_url }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex items-center gap-2 rounded-lg border border-neutral-300 px-4 py-2 text-sm font-black hover:bg-neutral-50">
+                            <a href="{{ $bursary->apply_url }}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 rounded-lg border border-neutral-300 px-4 py-2 text-sm font-black hover:bg-neutral-50">
                                 Open application route <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                             </a>
                         @endif
@@ -389,12 +389,12 @@
                         </div>
                     @else
                         @if ($bursary->apply_url)
-                            <a href="{{ $bursary->apply_url }}" target="_blank" rel="noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 text-sm font-black text-white hover:bg-[#001A48]">
+                            <a href="{{ $bursary->apply_url }}" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 text-sm font-black text-white hover:bg-[#001A48]">
                                 Apply Link <i data-lucide="external-link" style="width:18px;height:18px;"></i>
                             </a>
                         @endif
                         @if ($bursary->source_url)
-                            <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-sm font-black hover:bg-neutral-50">
+                            <a href="{{ $bursary->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-sm font-black hover:bg-neutral-50">
                                 Source <i data-lucide="external-link" style="width:18px;height:18px;"></i>
                             </a>
                         @endif
@@ -432,7 +432,7 @@
                         @endif
                     </dl>
                     @if ($sourceInfo['source_url'])
-                        <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-black hover:bg-neutral-50">
+                        <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-black hover:bg-neutral-50">
                             Open source <i data-lucide="external-link" style="width:16px;height:16px;"></i>
                         </a>
                     @endif
@@ -523,7 +523,7 @@
                                                     @endif
                                                 </div>
                                                 @if ($bursary->source_url)
-                                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="inline-flex w-fit items-center gap-2 rounded-lg border border-amber-300 bg-white px-3 py-2 text-xs font-black text-amber-900 hover:bg-amber-100">
+                                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex w-fit items-center gap-2 rounded-lg border border-amber-300 bg-white px-3 py-2 text-xs font-black text-amber-900 hover:bg-amber-100">
                                                         Source instructions <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                                                     </a>
                                                 @endif
@@ -732,7 +732,7 @@
                                                 <p class="font-black">Postal destination</p>
                                                 <p class="mt-2 whitespace-pre-line">{{ $providerPostalAddress ?: 'Use the provider postal or hand-delivery address shown in the source instructions.' }}</p>
                                                 @if ($bursary->source_url)
-                                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 text-xs font-black text-amber-900 underline">
+                                                    <a href="{{ $bursary->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 text-xs font-black text-amber-900 underline">
                                                         Review source instructions <i data-lucide="external-link" style="width:14px;height:14px;"></i>
                                                     </a>
                                                 @endif

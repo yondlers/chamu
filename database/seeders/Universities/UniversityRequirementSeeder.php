@@ -59,7 +59,7 @@ abstract class UniversityRequirementSeeder extends Seeder
 
                 foreach ($facultyData['qualifications'] as $qualificationData) {
                     $qualificationTypeId = $this->qualificationTypeId($qualificationData['qualification_type']);
-                    $qualificationId = $this->qualificationId($qualificationData, $universityId, $facultyId, $qualificationTypeId, $gradeIdsByName);
+                    $qualificationId = $this->qualificationId($qualificationData, $facultyData, $universityId, $facultyId, $qualificationTypeId, $gradeIdsByName);
 
                     DB::table('qualification_subject_requirements')
                         ->where('qualification_id', $qualificationId)
@@ -324,7 +324,7 @@ abstract class UniversityRequirementSeeder extends Seeder
         return (int) DB::table('qualification_types')->where('name', $name)->value('id');
     }
 
-    private function qualificationId(array $qualificationData, int $universityId, int $facultyId, int $qualificationTypeId, array $gradeIdsByName): int
+    private function qualificationId(array $qualificationData, array $facultyData, int $universityId, int $facultyId, int $qualificationTypeId, array $gradeIdsByName): int
     {
         $now = now();
         $existing = DB::table('qualifications')
@@ -346,8 +346,8 @@ abstract class UniversityRequirementSeeder extends Seeder
             'closing_month' => $this->monthNumber($qualificationData['closing_month'] ?? $qualificationData['application_closing_month'] ?? null),
             'closing_day' => $qualificationData['closing_day'] ?? $qualificationData['application_closing_day'] ?? null,
             'is_selection_programme' => $qualificationData['is_selection_programme'] ?? $qualificationData['selection_programme'] ?? false,
-            'notes' => $this->notes($qualificationData),
-            'source_url' => $qualificationData['source_url'] ?? null,
+            'notes' => $this->notes($qualificationData, $facultyData),
+            'source_url' => $qualificationData['source_url'] ?? $facultyData['source_url'] ?? null,
             'updated_at' => $now,
             'created_at' => $now,
         ];
@@ -516,7 +516,7 @@ abstract class UniversityRequirementSeeder extends Seeder
         return $facultyData['name'] ?? $facultyData['faculty'];
     }
 
-    private function notes(array $qualificationData): ?string
+    private function notes(array $qualificationData, array $facultyData = []): ?string
     {
         $notes = [];
 
@@ -526,12 +526,52 @@ abstract class UniversityRequirementSeeder extends Seeder
                 : $notes[] = $qualificationData['notes'];
         }
 
+        $facultyName = $facultyData['name'] ?? $facultyData['faculty'] ?? null;
+
+        if (($qualificationData['include_faculty_note'] ?? $facultyData['include_faculty_notes'] ?? false) && ! empty($facultyName)) {
+            $notes[] = 'Faculty: '.$facultyName.'.';
+        }
+
+        $campuses = $qualificationData['campuses'] ?? $qualificationData['campus'] ?? null;
+
+        if (! empty($campuses)) {
+            $notes[] = 'Campus: '.$this->listValue($campuses).'.';
+        }
+
+        if (! empty($qualificationData['presentation_mode'])) {
+            $notes[] = 'Presentation: '.$qualificationData['presentation_mode'].'.';
+        } elseif (! empty($qualificationData['delivery_mode'])) {
+            $notes[] = 'Presentation: '.$qualificationData['delivery_mode'].'.';
+        } elseif (! empty($qualificationData['online_presentation'])) {
+            $notes[] = 'Presentation: Online presentation.';
+        }
+
+        if (! empty($qualificationData['audition_required']) && ! Str::contains(Str::lower(implode(' ', $notes)), 'audition')) {
+            $notes[] = 'Selection format: Audition required.';
+        }
+
         if (! empty($qualificationData['recommended_subjects'])) {
             $notes[] = 'Recommended subjects: '.implode(', ', $qualificationData['recommended_subjects']).'.';
         }
 
         if (! empty($qualificationData['other_campuses'])) {
             $notes[] = 'Other campuses: '.implode(', ', $qualificationData['other_campuses']).'.';
+        }
+
+        if (! empty($qualificationData['possible_further_studies'])) {
+            $notes[] = 'Possible further studies: '.$this->listValue($qualificationData['possible_further_studies']).'.';
+        }
+
+        if (! empty($qualificationData['possible_careers'])) {
+            $notes[] = 'Possible careers: '.$this->listValue($qualificationData['possible_careers']).'.';
+        }
+
+        if (! empty($qualificationData['source_reviewed']) || ! empty($facultyData['source_reviewed'])) {
+            $notes[] = 'Source reviewed: '.($qualificationData['source_reviewed'] ?? $facultyData['source_reviewed']).'.';
+        }
+
+        if (! empty($qualificationData['source_confidence']) || ! empty($facultyData['source_confidence'])) {
+            $notes[] = 'Source confidence: '.($qualificationData['source_confidence'] ?? $facultyData['source_confidence']).'.';
         }
 
         foreach (($qualificationData['subject_requirements'] ?? []) as $requirement) {
@@ -545,6 +585,15 @@ abstract class UniversityRequirementSeeder extends Seeder
         }
 
         return $notes === [] ? null : implode(' ', $notes);
+    }
+
+    private function listValue(array|string $value): string
+    {
+        if (is_string($value)) {
+            return $value;
+        }
+
+        return implode(', ', $value);
     }
 
     private function requirementSubjects(array $requirementData): array

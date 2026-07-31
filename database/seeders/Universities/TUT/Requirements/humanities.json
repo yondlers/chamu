@@ -8,9 +8,6 @@
             "name": "Bachelor of Education (Foundation Phase Teaching)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 25,
@@ -35,15 +32,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Intermediate Phase Teaching)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 25,
@@ -80,15 +79,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Agriculture)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -141,15 +142,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Consumer Sciences)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -190,15 +193,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Economic and Management Sciences)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -239,15 +244,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Information Technology)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -272,15 +279,17 @@
                     "subject": "Information Technology",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Mathematics)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -301,15 +310,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Physical Education)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -338,15 +349,17 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Sciences)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -371,15 +384,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Bachelor of Education (Senior Phase and Further Education and Training Teaching) (Specialisation in Technology)",
             "qualification_type": "Bachelor",
             "duration_years": 4,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -428,15 +443,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "BEdHons, MEd and DEd",
+            "possible_careers": "Educator/lecturer, school inspector, representative of Department of Education, life-skills facilitator, guidance counsellor"
         },
         {
             "name": "Diploma (Adult and Community Education and Training) (Specialisation in Civil Technology)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 22,
@@ -481,15 +498,16 @@
                     "subject": "Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "AdvDip (Adult and Community Education and Training Teaching)"
         },
         {
             "name": "Diploma (Adult and Community Education and Training) (Specialisation in Consumer Sciences)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 22,
@@ -518,15 +536,17 @@
                     "subject": "Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "AdvDip (Adult and Community Education and Training Teaching)",
+            "possible_careers": "Child care (Infant and Toddlers), elder care, elementary teacher (teach adult about food and nutrition), dress making/sewing/fashion design, caterers/baking, pottery, interior designing, marketing consumer product within the community, working in family and community service agencies, community service worker, financial consultant."
         },
         {
             "name": "Diploma (Adult and Community Education and Training) (Specialisation in Electrical and Mechanical)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 22,
@@ -563,15 +583,16 @@
                     "subject": "Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "AdvDip (Adult and Community Education and Training Teaching)"
         },
         {
             "name": "Diploma (Correctional and Rehabilitation Studies)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve South"
-            ],
             "application_closing_month": "June",
             "application_closing_day": 15,
             "aps_required": 20,
@@ -592,15 +613,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "possible_further_studies": "AdvDip and PGDip: Correctional and Rehabilitation Studies",
+            "possible_careers": "Correctional services official, skills development officer, manager, security official"
         },
         {
             "name": "Diploma (Integrated Communication)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 20,
@@ -634,15 +657,17 @@
                 "Preference is given to applicants with English level 5 or higher.",
                 "APS 20 applies when Mathematics, Technical Mathematics or Engineering Mathematics N3 is offered.",
                 "APS 21 applies when Mathematical Literacy is offered."
-            ]
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "AdvDip (Integrated Communication)",
+            "possible_careers": "Marketing communication specialist, industrial journalist, public relations practitioner, media planner, communications practitioner, social media strategist, publicity coordinator, account planner/manager, media practitioner, industrial journalist, events coordinator, diplomat, international communication specialist"
         },
         {
             "name": "Diploma (Journalism)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 24,
@@ -655,17 +680,18 @@
             "recommended_subjects": [
                 "Geography",
                 "History",
-                "Third Language",
-                "Any Art-related Subject"
-            ]
+                "third language or any art-related subject"
+            ],
+            "campuses": [
+                "Soshanguve North"
+            ],
+            "possible_further_studies": "AdvDip (Journalism), PGDip (Journalism), MJournalism and DJournalism",
+            "possible_careers": "Journalist in printed media, broadcasting, industrial and online journalism"
         },
         {
             "name": "Diploma (Language Practice)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 20,
@@ -676,22 +702,22 @@
                 }
             ],
             "recommended_subjects": [
-                "Xitsonga",
+                "Afrikaans",
                 "Sepedi",
                 "Setswana",
-                "isiZulu",
-                "isiXhosa",
-                "Afrikaans",
-                "Any additional language"
-            ]
+                "IsiZulu",
+                "Tshivenda or Xitsonga"
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "possible_further_studies": "AdvDip (Language Practice), PGDip (Language Practice), MLanguage Practice and DLanguage Practice",
+            "possible_careers": "General language practitioner, translator, editor or proofreader, language advisor, consultant, technologist, interpreter, language planner, editor, columnist, writer"
         },
         {
             "name": "Diploma (Law)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Pretoria"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 22,
@@ -716,15 +742,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South",
+                "Mbombela"
+            ],
+            "possible_careers": "Costs consultants at cost consulting firms, cost consultant proprietors, paralegals in law firms, paralegals at justice centres (Legal Aid Board), paralegals at the office of the Master of the Supreme Court, paralegals at the Deeds' Office, paralegals at private companies such as Scorpion Legal Protection."
         },
         {
             "name": "Diploma (Legal Support)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Pretoria"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 20,
@@ -733,15 +761,16 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "possible_careers": "Conveyancing secretaries, legal secretaries, paralegals in law firms, paralegals at justice centres (Legal Aid Board), paralegals at the office of the Master of the Supreme Court, paralegals at the Deeds' Office, paralegals at private companies such as Scorpion Legal Protection."
         },
         {
             "name": "Diploma (Policing)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve South"
-            ],
             "application_closing_month": "June",
             "application_closing_day": 15,
             "aps_required": 22,
@@ -766,15 +795,17 @@
             "notes": [
                 "Medical fitness may be required.",
                 "Additional selection processes may apply."
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "possible_further_studies": "AdvDip (Policing), PGDip (Policing), MPolicing and DPolicing",
+            "possible_careers": "Employee of SAPS, reservist, security occupation community policing, municipal and metro police, private investigators"
         },
         {
             "name": "Diploma (Public Affairs)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve South"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 20,
@@ -783,15 +814,19 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South",
+                "Mbombela",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip (Public Affairs), PGDip (Public Affairs), MPublic Affairs and DPublic Affairs",
+            "possible_careers": "Clerk, public official manager"
         },
         {
             "name": "Diploma (Public Management)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve South"
-            ],
             "application_closing_month": "July",
             "application_closing_day": 31,
             "aps_required": 20,
@@ -800,15 +835,19 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South",
+                "Mbombela",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip (Public Affairs). PGDip (Public Affairs), MPublic Affairs and DPublic Affairs",
+            "possible_careers": "Clerk, public official manager"
         },
         {
             "name": "Diploma (Safety Management)",
             "qualification_type": "Diploma",
             "duration_years": 3,
-            "other_campuses": [
-                "Soshanguve South"
-            ],
             "application_closing_month": "June",
             "application_closing_day": 15,
             "aps_required": 20,
@@ -829,15 +868,18 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South",
+                "Polokwane"
+            ],
+            "possible_further_studies": "AdvDip and PGDip: Traffic Safety and Municipal Police Management",
+            "possible_careers": "Road traffic and municipal police official, licensing and registration, road safety, senior position in traffic safety division, traffic chief, metro or municipal police official"
         },
         {
             "name": "Higher Certificate (Contact Centre Management)",
             "qualification_type": "Higher Certificate",
             "duration_years": 1,
-            "other_campuses": [
-                "Soshanguve North"
-            ],
             "application_closing_month": "September",
             "application_closing_day": 30,
             "aps_required": 18,
@@ -846,15 +888,18 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve"
+            ],
+            "presentation_mode": "Online presentation",
+            "possible_further_studies": "Dip (Contact Centre Management)",
+            "possible_careers": "Agent, call centre representative, call centre officer, team leader, supervisor, functional leader, strategic manager"
         },
         {
             "name": "Higher Certificate (Public Administration)",
             "qualification_type": "Higher Certificate",
             "duration_years": 1,
-            "other_campuses": [
-                "Soshanguve South"
-            ],
             "application_closing_month": "September",
             "application_closing_day": 30,
             "aps_required": 18,
@@ -863,7 +908,17 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
+            ],
+            "campuses": [
+                "Soshanguve"
             ]
         }
+    ],
+    "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
+    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official Tshwane University of Technology source.",
+    "include_faculty_notes": true,
+    "campus": [
+        "Soshanguve"
     ]
 }

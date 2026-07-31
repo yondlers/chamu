@@ -38,7 +38,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Arcadia"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAppSci and PhD (Science): Chemistry",
+            "possible_careers": "Chemist, laboratory analyst, technologist. Opportunities for analytical chemistry graduates exist in laboratories, manufacturing and mining industries, research industries, forensic departments, and national science councils."
         },
         {
             "name": "Diploma in Animal Sciences",
@@ -62,7 +68,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Arcadia",
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Agricultural Sciences",
+                "Life Sciences"
+            ],
+            "possible_further_studies": "AdvDip (Animal Sciences), PGDip (Animal Sciences), MAgricSci (Animal Production) and PhD (Science) (Animal Production)",
+            "possible_careers": "Animal production manager, animal production representative, animal production technician, researcher farmer, feedlot manager, lecturer, agricultural journalist"
         },
         {
             "name": "Diploma in Biotechnology",
@@ -90,7 +106,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Arcadia"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAppSci and PhD (Science): Biotechnology",
+            "possible_careers": "Biotechnologist or microbiologist, work in the industry or research labs, microbiology, waste management, beverage production, food production, research"
         },
         {
             "name": "Diploma in Crop Production",
@@ -114,7 +136,18 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Arcadia",
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Agricultural subjects",
+                "Life Sciences",
+                "Physical Sciences"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAgricSci and PhD (Science): Crop Sciences",
+            "possible_careers": "Commercial crop producer, production manager, extension service worker"
         },
         {
             "name": "Diploma in Environmental Sciences",
@@ -138,7 +171,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Arcadia"
+            ],
+            "recommended_subjects": [
+                "Geography",
+                "Life Sciences"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAppSci and PhD (Science): Environmental Sciences",
+            "possible_careers": "Appointed as an environmental officer or environmental technologist within numerous industries that deal with either managing negative changes on the biogeophysical environment or/and investigating existing impacts or potential impacts on the biogeophysical environment. Graduates may also be employed into a number of government departments or state bodies that deal with environmental impacts such as the Department of Environmental Affairs."
         },
         {
             "name": "Diploma in Food Technology",
@@ -174,7 +217,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Arcadia"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAppSci and PhD (Science): Food Technology",
+            "possible_careers": "Food technologist, quality controller, researcher, developer of new products, opportunities in food processing, canning, meat or fish factories, food quality and hygiene"
         },
         {
             "name": "Diploma in Horticulture",
@@ -198,7 +247,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Arcadia",
+                "Pretoria"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAppSci and PhD (Science): Horticulture",
+            "possible_careers": "Horticulturists, maintenance managers, site managers or as grounds superintendents, researchers (developing new cultivars or solving problems) and in the academic world of teaching, learning and education."
         },
         {
             "name": "Diploma in Nature Conservation",
@@ -222,7 +277,19 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Arcadia",
+                "Pretoria"
+            ],
+            "recommended_subjects": [
+                "Agricultural Sciences",
+                "Geography",
+                "Life Sciences",
+                "Physical Sciences or Technical Sciences"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAppSci and PhD (Science): Nature Conservation",
+            "possible_careers": "Conservation manager, conservation researcher, environmental educationist, eco- destination planners, guides, nature conservator, hunting operator"
         },
         {
             "name": "Diploma in Water Science and Technology",
@@ -258,7 +325,16 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Arcadia"
+            ],
+            "recommended_subjects": [
+                "Life Sciences"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MAppSci and PhD (Science): Water Science and Technology",
+            "possible_careers": "Water care technician, water care technologist and process controller"
         },
         {
             "name": "Higher Certificate in Resource and Waste Management",
@@ -270,7 +346,13 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Arcadia"
+            ],
+            "possible_further_studies": "Dip (Environmental Sciences)",
+            "possible_careers": "Water care technician, water care technologist and process controller"
         },
         {
             "name": "Higher Certificate in Water Treatment",
@@ -282,7 +364,21 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "campuses": [
+                "Pretoria",
+                "Arcadia"
+            ],
+            "possible_further_studies": "Dip (Water Science and Technology)",
+            "possible_careers": "Water care technician, water care technologist and process controller"
         }
+    ],
+    "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
+    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official Tshwane University of Technology source.",
+    "include_faculty_notes": true,
+    "campus": [
+        "Arcadia",
+        "Pretoria"
     ]
 }

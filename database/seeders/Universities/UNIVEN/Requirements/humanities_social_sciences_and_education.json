@@ -2,161 +2,55 @@
     "faculty": "Faculty of Humanities, Social Sciences and Education",
     "university": "University of Venda",
     "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+    "source_url": "https://www.univen.ac.za/wp-content/uploads/2023/03/2024-Undergraduate-Student-Information-Brochure-final-2-003.pdf",
+    "source_reviewed": "Official UNIVEN 2024 Undergraduate Student Information Brochure PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official University of Venda source.",
+    "include_faculty_notes": true,
+    "campus": "Thohoyandou campus",
     "qualifications": [
         {
             "name": "Bachelor of Arts (Media Studies)",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 3.0,
             "aps_required": 30,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): HSBAMS.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English or African Languages."
+                "Programme scope: Programme code(s): HSBAMS.",
+                "Eligibility explanation: NSC 30 with adequate achievement in English or an African language.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [],
+            "abbreviation": "HSBAMS",
+            "possible_careers": [
+                "Public relations officer",
+                "Journalist",
+                "TV or radio broadcaster",
+                "Editor",
+                "Information officer"
+            ]
         },
         {
             "name": "Bachelor of Arts (Development Studies)",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 3.0,
             "aps_required": 30,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): HSBADS.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in History or Economics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Arts",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBBA.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Indigenous Knowledge Systems",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBIKS.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Arts in Language Practice",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBALP.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in African Language; Adequate achievement in English."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Arts in International Relations",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBAIR.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in History or Economics; Adequate achievement in English."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Arts, Youth in Development",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBAYD.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Theology",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBBT.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; OR RPL according to University Policy."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Religious Studies",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBARS.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; OR RPL according to University Policy."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Higher Certificate in Music",
-            "qualification_type": "Higher Certificate",
-            "duration_years": 1.0,
-            "aps_required": null,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSCHCM.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC; Adequate achievement in English."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Social Work",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): HSBBSW.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English level 4."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Education in Senior Phase and Further Education and Training",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 36,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SEBESP, SEBECP, SEBELP.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: English 50% plus two subjects at 50% from Mathematics, Physical Sciences and Life Sciences; OR English 50% plus two subjects at 50% from Accounting, Business Studies and Economics; OR English 50% plus two subjects at 50% from History, Geography, Sepedi, Tshivenda, Xitsonga, Siswati or IsiNdebele.",
-                "APS inferred as 36 from the similar UNIVEN Bachelor of Education in Foundation Phase Teaching requirement."
+                "Programme scope: Programme code(s): HSBADS.",
+                "Eligibility explanation: NSC 30 with adequate achievement in English and History or Economics.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
             "subject_requirements": [
                 {
@@ -164,8 +58,324 @@
                     "minimum_level": 4
                 },
                 {
-                    "type": "subject_group_count_choices",
+                    "subject": "History",
                     "minimum_level": 4,
+                    "alternative_subject": "Economics",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSBADS",
+            "possible_careers": [
+                "Community developer",
+                "Development officer",
+                "NGO officer",
+                "Public servant",
+                "Research assistant"
+            ]
+        },
+        {
+            "name": "Bachelor of Arts",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBBA.",
+                "Eligibility explanation: NSC 30 with adequate achievement in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSBBA",
+            "possible_careers": [
+                "Public servant",
+                "Archaeologist",
+                "Politician",
+                "Training officer",
+                "Research assistant"
+            ]
+        },
+        {
+            "name": "Bachelor of Indigenous Knowledge Systems",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBIKS.",
+                "Eligibility explanation: NSC 30 with adequate achievement in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSBIKS",
+            "possible_careers": [
+                "Indigenous knowledge systems practitioner",
+                "Community developer",
+                "Museum or heritage worker",
+                "Research assistant"
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in Language Practice",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBALP.",
+                "Eligibility explanation: NSC 30 with adequate achievement in an African language and English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSBALP",
+            "possible_careers": [
+                "Interpreter",
+                "Translator",
+                "Terminologist",
+                "Proofreader",
+                "Creative writer"
+            ]
+        },
+        {
+            "name": "Bachelor of Arts in International Relations",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBAIR.",
+                "Eligibility explanation: NSC 30 with adequate achievement in History or Economics and English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "History",
+                    "minimum_level": 4,
+                    "alternative_subject": "Economics",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSBAIR",
+            "possible_careers": [
+                "Ambassadorial support officer",
+                "Public servant",
+                "International organisation officer",
+                "NGO officer",
+                "Research assistant"
+            ]
+        },
+        {
+            "name": "Bachelor of Arts, Youth in Development",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBAYD.",
+                "Eligibility explanation: NSC 30 with adequate achievement in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSBAYD",
+            "possible_careers": [
+                "Youth development practitioner",
+                "Social welfare education officer",
+                "Community services officer",
+                "NGO supervisor"
+            ]
+        },
+        {
+            "name": "Bachelor of Theology",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBBT.",
+                "Eligibility explanation: NSC 30 or Recognition of Prior Learning according to university policy.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "HSBBT",
+            "possible_careers": [
+                "Counsellor",
+                "Lecturer",
+                "Community worker",
+                "NGO officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Religious Studies",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBARS.",
+                "Eligibility explanation: NSC 30 or Recognition of Prior Learning according to university policy.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [],
+            "abbreviation": "HSBARS",
+            "possible_careers": [
+                "Counsellor",
+                "Lecturer",
+                "Community worker",
+                "Research assistant"
+            ]
+        },
+        {
+            "name": "Higher Certificate in Music",
+            "qualification_type": "Higher Certificate",
+            "required_grade": "Grade 12",
+            "duration_years": 1.0,
+            "aps_required": null,
+            "selection_programme": false,
+            "minimum_pass_type": "higher_certificate",
+            "notes": [
+                "Programme scope: Programme code(s): HSCHCM.",
+                "Eligibility explanation: NSC with adequate achievement in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSCHCM",
+            "possible_careers": [
+                "Music composer",
+                "Music educator assistant",
+                "Performer",
+                "Community arts worker"
+            ]
+        },
+        {
+            "name": "Bachelor of Social Work",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 30,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): HSBBSW.",
+                "Eligibility explanation: NSC 30 with adequate achievement in English level 4.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "HSBBSW",
+            "possible_careers": [
+                "Social worker",
+                "Counsellor",
+                "Social welfare education officer",
+                "Community services officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Education in Senior Phase and Further Education and Training",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": null,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): SEBESP, SEBECP, SEBELP. Teaching stream choices cover Mathematics/Physical Sciences/Life Sciences, Commerce subjects, or languages and humanities subjects.",
+                "Eligibility explanation: English 50% plus two subjects at 50% from one of the listed school-subject groups. The brochure does not print a separate APS for this row, so applicants should confirm the current APS on the source page.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting.",
+                "Stream detail: The brochure prints stream codes SEBESP, SEBECP and SEBELP for this education route."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 50
+                },
+                {
+                    "type": "subject_group_count_choices",
                     "choices": [
                         {
                             "label": "Mathematics, Physical Sciences and Life Sciences",
@@ -174,7 +384,8 @@
                                 "Mathematics",
                                 "Physical Sciences",
                                 "Life Sciences"
-                            ]
+                            ],
+                            "minimum_mark": 50
                         },
                         {
                             "label": "Accounting, Business Studies and Economics",
@@ -183,43 +394,63 @@
                                 "Accounting",
                                 "Business Studies",
                                 "Economics"
-                            ]
+                            ],
+                            "minimum_mark": 50
                         },
                         {
-                            "label": "History, Geography, Sepedi, Tshivenda, Xitsonga, SiSwati or isiNdebele",
+                            "label": "History, Geography, Sepedi, Tshivenda, Xitsonga, Siswati or IsiNdebele",
                             "count": 2,
                             "subjects": [
                                 "History",
                                 "Geography",
-                                "Sepedi",
-                                "Tshivenda",
-                                "Xitsonga",
-                                "SiSwati",
-                                "isiNdebele"
-                            ]
+                                "Sepedi Home Language",
+                                "Tshivenda Home Language",
+                                "Xitsonga Home Language",
+                                "SiSwati Home Language",
+                                "isiNdebele Home Language"
+                            ],
+                            "minimum_mark": 50
                         }
                     ]
                 }
             ],
-            "admission_score_required": 36,
-            "minimum_pass_type": "bachelor"
+            "abbreviation": "SEBESP/SEBECP/SEBELP",
+            "possible_careers": [
+                "Senior Phase teacher",
+                "FET teacher",
+                "Education officer",
+                "Adult education specialist"
+            ]
         },
         {
             "name": "Bachelor of Education in Foundation Phase Teaching",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
             "aps_required": 36,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SEBEFP.",
-                "Faculty career opportunities: Social Worker; Public Relations Officer; Anthropologist; Psychologist; Information Officer; Interpreter; Lecturer; Translator; Teacher; Vocational Officer; Counsellor; Public Servant; Archaeologist; Politician; Music Composer; Ambassador; Officer in nongovernmental organisations; Training Officer; TV Presenter; Radio Broadcaster; United Nations agencies such as UNESCO and UNICEF; Social Welfare Education Officer; Adult Education Specialist; Environmental Education Specialist; Youth Studies Professional; Journalist; Editor; Terminologist; Proofreader; Creative Writer; Book Reviewer; Tour Guide; Museum Curator; Archivist; Librarian; Community Developer; Extension Officer; Indigenous Knowledge Systems Practitioner.",
-                "Additional UNIVEN requirements: National Senior Certificate with Bachelor endorsement; APS of 36 points; OR Old Senior Certificate with exemption and average symbol D Standard Grade or E Higher Grade in English for Grade 12."
+                "Programme scope: Programme code(s): SEBEFP.",
+                "Eligibility explanation: NSC with Bachelor endorsement and APS 36, with at least 50% in English for Grade 12; the brochure also lists Matric/Grade 12 with Early Childhood Development experience as an alternative context.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
-                    "minimum_level": 4
+                    "minimum_mark": 50
                 }
+            ],
+            "abbreviation": "SEBEFP",
+            "possible_careers": [
+                "Foundation Phase teacher",
+                "Grade R to Grade 3 teacher",
+                "Education officer",
+                "Adult education specialist"
             ]
         }
     ]

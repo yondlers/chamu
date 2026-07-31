@@ -26,7 +26,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South",
+                "eMalahleni",
+                "Polokwane"
+            ],
+            "recommended_subjects": [
+                "Information Technology"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MComputing and DComputing: Computer Science",
+            "possible_careers": "Software developer, web developer, mobile solution developer, database developer, data scientist, system analyst, quality engineer."
         },
         {
             "name": "Diploma in Computer Systems Engineering",
@@ -62,7 +72,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MComputing and DComputing: Computer Systems Engineering",
+            "possible_careers": "Computer systems engineer, electronic engineer, electronics tester, software engineer, software tester, programmer, web developer, systems analyst, network administrator, systems administrator, database administrator, systems support, network planner, data science and cloud computing technologist, system integration specialist, intelligent system technologist."
         },
         {
             "name": "Diploma in Informatics",
@@ -90,7 +105,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MComputing and DComputing: Informatics",
+            "possible_careers": "Business analyst, user acceptance tester, systems trainer, systems tester, support specialist, e-commerce developer, enterprise systems manager, information resource manager, database administrator, project manager, technology consultant, systems analyst."
         },
         {
             "name": "Diploma in Information Technology",
@@ -114,7 +134,12 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MComputing and DComputing: Information Technology",
+            "possible_careers": "Computer network support specialist, network and computer systems administrator, computer network architect, network analyst, network engineer, cybersecurity specialist, data centre technician, digital forensics/ IT Assurance / IT Forensics Specialist, Security Operations Centre (SOC) Engineer, penetration tester, cloud security engineer, Identity and Access Management (IAM) specialist, threat intelligence analyst, wireless communications specialist."
         },
         {
             "name": "Diploma in Multimedia Computing",
@@ -142,7 +167,15 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South"
+            ],
+            "recommended_subjects": [
+                "Information Technology"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MComputing and DComputing: Multimedia Computing",
+            "possible_careers": "Content designer, 3D games programmer, 3D animation creator, virtual reality designer, interactive training systems developer, simulation developer, web developer, user interface and user experience designer, e-learning specialist, hybrid art director, front-end developer."
         },
         {
             "name": "Diploma in Computer Science (Extended)",
@@ -166,7 +199,17 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "campuses": [
+                "Soshanguve South",
+                "eMalahleni",
+                "Polokwane"
+            ],
+            "recommended_subjects": [
+                "Information Technology"
+            ],
+            "possible_further_studies": "AdvDip, PGDip, MComputing and DComputing: Computer Science",
+            "possible_careers": "Software developer, web developer, mobile solution developer, database developer, data scientist, system analyst, quality engineer."
         },
         {
             "name": "Higher Certificate in Information Technology",
@@ -194,7 +237,17 @@
                         }
                     ]
                 }
+            ],
+            "campuses": [
+                "Soshanguve"
             ]
         }
+    ],
+    "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
+    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official Tshwane University of Technology source.",
+    "include_faculty_notes": true,
+    "campus": [
+        "Soshanguve"
     ]
 }

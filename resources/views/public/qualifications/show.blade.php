@@ -28,9 +28,7 @@
         ];
         $programmeNoteSections = \App\Support\ProgrammeNotes::sections($qualification->notes);
         $programmeNotes = \App\Support\ProgrammeNotes::lines($qualification->notes, $applicationPlanningNoteLabels);
-        $providerName = $university->name;
-        $providerShortName = $university->abbreviation ?: $providerName;
-        $qualificationName = $qualification->name;
+        $providerShortName = $university->abbreviation ?: $university->name;
         $entryGradeDisplay = $isTvetCollegeQualification
             ? ($qualification->requiredGrade?->name ?? 'Confirm in source')
             : 'Grade 11/12 NSC';
@@ -52,37 +50,12 @@
             })
             ->filter()
             ->implode('; ');
-        $subjectSentence = $subjectRequirementSummary
-            ? ' Check '.$subjectRequirementSummary.' before applying.'
-            : ' Confirm any subject, portfolio, campus or selection rules before applying.';
-        $eligibilityText = collect([
-            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Eligibility explanation']),
-            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Academic requirement']),
-        ])->filter()->implode(' ');
-
-        if ($eligibilityText === '') {
-            if ($isTvetCollegeQualification && ! empty($collegeAdmissionSummary['intro'])) {
-                $eligibilityText = $collegeAdmissionSummary['intro'];
-            } elseif ($qualification->aps_required !== null || $qualification->admission_score_required !== null) {
-                $eligibilityText = $qualificationName.' lists '.$scoreSummary['label'].' '.$scoreSummary['value'].' for '.$providerShortName.'.'.$subjectSentence;
-            } elseif ($usesPassTypeAdmission) {
-                $eligibilityText = 'Start with the published pass type, English mark and any listed selection conditions for '.$qualificationName.' at '.$providerShortName.'.'.$subjectSentence;
-            } else {
-                $eligibilityText = 'Confirm the published entry route for '.$qualificationName.' at '.$providerShortName.'.'.$subjectSentence;
-            }
-        }
-
-        $documentText = \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Document checklist'])
-            ?: 'For '.$qualificationName.', keep your ID or passport, latest official school results and any '.$providerShortName.' programme-specific documents ready before starting the official application.';
-        $applicationRouteText = collect([
-            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Application method']),
-            \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Closing-date context']),
-        ])->filter()->implode(' ');
-        $applicationRouteText = $applicationRouteText !== ''
-            ? $applicationRouteText
-            : 'Use '.$providerName.' official admissions channels for '.$qualificationName.', then confirm the current closing date and faculty or campus instructions on the source page.';
-        $safetyText = \App\Support\ProgrammeNotes::first($programmeNoteSections, ['Application safety'])
-            ?: 'Treat offers, fees and late-application claims carefully. Confirm '.$qualificationName.' admission, funding and placement information through '.$providerShortName.' official channels.';
+        $eligibilityText = $isTvetCollegeQualification
+            ? 'Use the entry details above as a first screen, then confirm campus space and selection steps.'
+            : 'Use the requirements above as a first screen; provisional review may use Grade 11 or Grade 12 mid-year results.';
+        $documentText = 'Prepare your ID or passport, latest results, payment proof if required, and programme-specific documents.';
+        $applicationRouteText = 'Apply through '.$providerShortName.' official channels before the listed closing date; programmes can close when full.';
+        $safetyText = 'Confirm offers, fees and funding on official channels only. Avoid guaranteed-admission promises.';
         $planningCards = collect([
             [
                 'title' => 'Eligibility and selection',
@@ -150,7 +123,7 @@
                                 {{ $qualificationAction['label'] }} <i data-lucide="{{ $qualificationAction['icon'] }}" style="width:17px;height:17px;"></i>
                             </a>
                             @if ($qualification->source_url)
-                                <a href="{{ $qualification->source_url }}" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
+                                <a href="{{ $qualification->source_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
                                     Source information <i data-lucide="external-link" style="width:17px;height:17px;"></i>
                                 </a>
                             @endif
@@ -383,7 +356,7 @@
                                     Chamu has not captured structured subject rules for this qualification yet. Before applying, confirm required subjects, minimum marks, selection tests, portfolios, interviews, and closing dates on the source page.
                                 @endif
                                 @if ($qualification->source_url)
-                                    <a href="{{ $qualification->source_url }}" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
+                                    <a href="{{ $qualification->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
                                         Check source requirements <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                                     </a>
                                 @endif
@@ -558,7 +531,7 @@
                         @endif
                     </dl>
                     @if ($sourceInfo['source_url'])
-                        <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-bold hover:bg-neutral-50">
+                        <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-bold hover:bg-neutral-50">
                             Open source <i data-lucide="external-link" style="width:16px;height:16px;"></i>
                         </a>
                     @endif

@@ -2,149 +2,1893 @@
     "faculty": "Faculty of Science, Engineering and Agriculture",
     "university": "University of Venda",
     "source": "UNIVEN 2024 Undergraduate Student Information Brochure",
+    "source_url": "https://www.univen.ac.za/wp-content/uploads/2023/03/2024-Undergraduate-Student-Information-Brochure-final-2-003.pdf",
+    "source_reviewed": "Official UNIVEN 2024 Undergraduate Student Information Brochure PDF, reviewed on 31 July 2026",
+    "source_confidence": "High - official University of Venda source.",
+    "include_faculty_notes": true,
+    "campus": "Thohoyandou campus",
     "qualifications": [
         {
-            "name": "Bachelor of Agriculture",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 30,
+            "name": "Diploma in Freshwater Technology",
+            "qualification_type": "Diploma",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 24,
             "selection_programme": false,
+            "minimum_pass_type": "diploma",
             "notes": [
-                "Programme code(s): SCBAGR.",
-                "Streams: Agricultural Economics, Animal Science, Crop Science.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Life Sciences OR Agricultural Sciences; Adequate achievement in Mathematics."
+                "Programme scope: Programme code(s): MNDDFT.",
+                "Eligibility explanation: NSC 24 with Diploma endorsement, 30% in English, 40-49% in four recognised 20-credit NSC subjects, and 50% in Life Sciences, Agricultural Sciences, Physical Sciences or Geography.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 30
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Life Sciences",
+                        "Agricultural Sciences",
+                        "Physical Sciences",
+                        "Geography"
+                    ],
+                    "count": 1,
+                    "minimum_mark": 50
+                }
+            ],
+            "abbreviation": "MNDDFT",
+            "possible_careers": [
+                "Water-quality technician",
+                "Freshwater technology assistant",
+                "Environmental field technician"
+            ]
+        },
+        {
+            "name": "Extended BSc in Biochemistry and Microbiology",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSA.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSA",
+            "possible_careers": [
+                "Biochemist",
+                "Microbiologist",
+                "Laboratory scientist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "Extended BSc in Biochemistry and Biology",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSD.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSD",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Zoologist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "Extended BSc in Microbiology and Botany",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSE.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSE",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Zoologist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "Extended BSc in Mathematics and Applied Mathematics",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSF.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSF",
+            "possible_careers": [
+                "Mathematician",
+                "Statistician",
+                "Data analyst",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "Extended BSc in Financial Mathematics and Applied Mathematics",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSG.",
+                "Eligibility explanation: Diploma-pass extended BSc route with NSC 24, 30% in English, 40-49% in four recognised 20-credit NSC subjects and 50% in one listed science/geography subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 30
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Life Sciences",
+                        "Agricultural Sciences",
+                        "Physical Sciences",
+                        "Geography"
+                    ],
+                    "count": 1,
+                    "minimum_mark": 50,
+                    "label": "At least one listed science/geography subject at 50%."
+                }
+            ],
+            "abbreviation": "MNEBSG",
+            "possible_careers": [
+                "Mathematician",
+                "Statistician",
+                "Data analyst",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "Extended BSc in Mathematics and Physics",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSH.",
+                "Eligibility explanation: Diploma-pass extended BSc route with NSC 24, 30% in English, 40-49% in four recognised 20-credit NSC subjects and 50% in one listed science/geography subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 30
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Life Sciences",
+                        "Agricultural Sciences",
+                        "Physical Sciences",
+                        "Geography"
+                    ],
+                    "count": 1,
+                    "minimum_mark": 50,
+                    "label": "At least one listed science/geography subject at 50%."
+                }
+            ],
+            "abbreviation": "MNEBSH",
+            "possible_careers": [
+                "Physicist",
+                "Laboratory physicist",
+                "Medical physicist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "Extended BSc in Mathematics and Statistics",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSI.",
+                "Eligibility explanation: Diploma-pass extended BSc route with NSC 24, 30% in English, 40-49% in four recognised 20-credit NSC subjects and 50% in one listed science/geography subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 30
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Life Sciences",
+                        "Agricultural Sciences",
+                        "Physical Sciences",
+                        "Geography"
+                    ],
+                    "count": 1,
+                    "minimum_mark": 50,
+                    "label": "At least one listed science/geography subject at 50%."
+                }
+            ],
+            "abbreviation": "MNEBSI",
+            "possible_careers": [
+                "Mathematician",
+                "Statistician",
+                "Data analyst",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "Extended BSc in Physics and Chemistry",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSJ.",
+                "Eligibility explanation: Diploma-pass extended BSc route with NSC 24, 30% in English, 40-49% in four recognised 20-credit NSC subjects and 50% in one listed science/geography subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 30
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Life Sciences",
+                        "Agricultural Sciences",
+                        "Physical Sciences",
+                        "Geography"
+                    ],
+                    "count": 1,
+                    "minimum_mark": 50,
+                    "label": "At least one listed science/geography subject at 50%."
+                }
+            ],
+            "abbreviation": "MNEBSJ",
+            "possible_careers": [
+                "Physicist",
+                "Laboratory physicist",
+                "Medical physicist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "Extended BSc in Chemistry and Mathematics",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSK.",
+                "Eligibility explanation: Diploma-pass extended BSc route with NSC 24, 30% in English, 40-49% in four recognised 20-credit NSC subjects and 50% in one listed science/geography subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 30
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Life Sciences",
+                        "Agricultural Sciences",
+                        "Physical Sciences",
+                        "Geography"
+                    ],
+                    "count": 1,
+                    "minimum_mark": 50,
+                    "label": "At least one listed science/geography subject at 50%."
+                }
+            ],
+            "abbreviation": "MNEBSK",
+            "possible_careers": [
+                "Chemist",
+                "Analytical chemist",
+                "Petrochemist",
+                "Quality controller"
+            ]
+        },
+        {
+            "name": "Extended BSc in Chemistry and Biochemistry",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 24,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSL.",
+                "Eligibility explanation: Diploma-pass extended BSc route with NSC 24, 30% in English, 40-49% in four recognised 20-credit NSC subjects and 50% in one listed science/geography subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 30
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Life Sciences",
+                        "Agricultural Sciences",
+                        "Physical Sciences",
+                        "Geography"
+                    ],
+                    "count": 1,
+                    "minimum_mark": 50,
+                    "label": "At least one listed science/geography subject at 50%."
+                }
+            ],
+            "abbreviation": "MNEBSL",
+            "possible_careers": [
+                "Chemist",
+                "Analytical chemist",
+                "Petrochemist",
+                "Quality controller"
+            ]
+        },
+        {
+            "name": "Extended BSc in Chemistry",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSN.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSN",
+            "possible_careers": [
+                "Chemist",
+                "Analytical chemist",
+                "Petrochemist",
+                "Quality controller"
+            ]
+        },
+        {
+            "name": "Extended BSc in Botany and Zoology",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSO.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSO",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Zoologist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "Extended BSc in Computer Science",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSP.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSP",
+            "possible_careers": [
+                "Software developer",
+                "Systems analyst",
+                "Data analyst",
+                "Information systems specialist"
+            ]
+        },
+        {
+            "name": "Extended BSc in Computer Science and Mathematics",
+            "qualification_type": "Extended Bachelor Degree",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNEBSQ.",
+                "Eligibility explanation: Bachelor-pass extended BSc route with NSC 26 and achievement rating 3 or better in matric English, Mathematics, Physical Sciences and another relevant subject.",
+                "Alternative routes: Science Foundation Programme route.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ],
+            "abbreviation": "MNEBSQ",
+            "possible_careers": [
+                "Software developer",
+                "Systems analyst",
+                "Data analyst",
+                "Information systems specialist"
+            ]
+        },
+        {
+            "name": "BSc in Biochemistry and Microbiology",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSA. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSA",
+            "possible_careers": [
+                "Biochemist",
+                "Microbiologist",
+                "Laboratory scientist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "BSc in Biochemistry and Biology",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSD. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSD",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Zoologist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "BSc in Microbiology and Botany",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSE. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSE",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Zoologist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "BSc in Mathematics and Applied Mathematics",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSF. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSF",
+            "possible_careers": [
+                "Mathematician",
+                "Statistician",
+                "Data analyst",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "BSc in Financial Mathematics and Applied Mathematics",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSG. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSG",
+            "possible_careers": [
+                "Mathematician",
+                "Statistician",
+                "Data analyst",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "BSc in Mathematics and Physics",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSH. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSH",
+            "possible_careers": [
+                "Physicist",
+                "Laboratory physicist",
+                "Medical physicist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "BSc in Mathematics and Statistics",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSI. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSI",
+            "possible_careers": [
+                "Mathematician",
+                "Statistician",
+                "Data analyst",
+                "Lecturer"
+            ]
+        },
+        {
+            "name": "BSc in Physics and Chemistry",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSJ. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSJ",
+            "possible_careers": [
+                "Physicist",
+                "Laboratory physicist",
+                "Medical physicist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "BSc in Chemistry and Mathematics",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSK. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSK",
+            "possible_careers": [
+                "Chemist",
+                "Analytical chemist",
+                "Petrochemist",
+                "Quality controller"
+            ]
+        },
+        {
+            "name": "BSc in Chemistry and Biochemistry",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSL. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSL",
+            "possible_careers": [
+                "Chemist",
+                "Analytical chemist",
+                "Petrochemist",
+                "Quality controller"
+            ]
+        },
+        {
+            "name": "BSc in Chemistry",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSN. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSN",
+            "possible_careers": [
+                "Chemist",
+                "Analytical chemist",
+                "Petrochemist",
+                "Quality controller"
+            ]
+        },
+        {
+            "name": "BSc in Botany and Zoology",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSO. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSO",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Zoologist",
+                "Researcher"
+            ]
+        },
+        {
+            "name": "BSc in Computer Science",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSP. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSP",
+            "possible_careers": [
+                "Software developer",
+                "Systems analyst",
+                "Data analyst",
+                "Information systems specialist"
+            ]
+        },
+        {
+            "name": "BSc in Computer Science and Mathematics",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 3.0,
+            "aps_required": 26,
+            "selection_programme": true,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): MNBBSQ. Named Bachelor of Science stream in the Faculty of Science, Engineering and Agriculture.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 (50-59%) or better in English, Mathematics, Physical Sciences and Life Sciences; equivalent FET Level 4 qualifications may be considered and faculty selection may apply.",
+                "Selection context: Candidates may be subjected to a faculty selection procedure.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "MNBBSQ",
+            "possible_careers": [
+                "Software developer",
+                "Systems analyst",
+                "Data analyst",
+                "Information systems specialist"
+            ]
         },
         {
             "name": "Bachelor of Environmental Sciences",
             "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 3.0,
-            "aps_required": 30,
+            "aps_required": 32,
             "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SCBES.",
-                "Streams: Geography, Hydrology, Ecology, Environmental Management.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Geography; Adequate achievement in Mathematics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Science",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SCBSC.",
-                "Streams: Biochemistry, Biotechnology, Botany, Chemistry, Computer Science, Mathematics, Microbiology, Physics, Statistics, Zoology.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Mathematics; Adequate achievement in Physical Sciences."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Science in Earth Sciences",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SCBESC.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Mathematics; Adequate achievement in Physical Sciences; Geography recommended."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Science in Computer Science",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SCBCS.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Mathematics; Physical Sciences recommended."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Science in Information Systems",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SCBIS.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Mathematics."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Science in Mining and Environmental Geology",
-            "qualification_type": "Bachelor",
-            "duration_years": 3.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SCBMEG.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Mathematics; Adequate achievement in Physical Sciences."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Science in Urban and Regional Planning",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 30,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SCBURP.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 30; Adequate achievement in English; Adequate achievement in Geography; Adequate achievement in Mathematics OR Mathematical Literacy."
-            ],
-            "subject_requirements": []
-        },
-        {
-            "name": "Bachelor of Engineering",
-            "qualification_type": "Bachelor",
-            "duration_years": 4.0,
-            "aps_required": 34,
-            "selection_programme": false,
-            "notes": [
-                "Programme code(s): SCBENG.",
-                "Streams: Civil Engineering, Electrical Engineering.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: NSC 34; Adequate achievement in English."
+                "Programme scope: Programme code(s): ESBBES. Environmental Sciences stream.",
+                "Eligibility explanation: NSC 32 with 50% for English, 40% for Mathematics and Physical Sciences, and 50% for one of Life Sciences, Geography or Agricultural Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
             "subject_requirements": [
                 {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 50
+                },
+                {
                     "subject": "Mathematics",
-                    "minimum_level": 5
+                    "minimum_mark": 40
                 },
                 {
                     "subject": "Physical Sciences",
-                    "minimum_level": 5
+                    "minimum_mark": 40
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_mark": 50,
+                    "alternative_subject": "Geography",
+                    "alternative_minimum_mark": 50,
+                    "alternative_subject_2": "Agricultural Sciences",
+                    "alternative_minimum_mark_2": 50
                 }
+            ],
+            "abbreviation": "ESBBES",
+            "possible_careers": [
+                "Environmental officer",
+                "Environmental consultant",
+                "Nature conservationist",
+                "Meteorologist"
             ]
         },
         {
-            "name": "Extended BSc Programme",
-            "qualification_type": "Extended Bachelor Degree",
+            "name": "Bachelor of Earth Sciences in Mining and Environmental Geology",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
             "duration_years": 4.0,
-            "aps_required": null,
-            "selection_programme": true,
+            "aps_required": 35,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
             "notes": [
-                "Programme code(s): SCEBSC.",
-                "Faculty career opportunities: Agricultural Scientist; Agricultural Economist; Agronomist; Animal Scientist; Crop Scientist; Environmental Scientist; Ecologist; Hydrologist; GIS Specialist; Geologist; Mining Geologist; Urban and Regional Planner; Software Developer; Systems Analyst; Data Analyst; Statistician; Biotechnologist; Microbiologist; Chemist; Physicist; Research Scientist; Civil Engineer; Electrical Engineer; Environmental Consultant.",
-                "Additional UNIVEN requirements: APS below mainstream requirement but meeting extended programme criteria; Selection according to University policy."
+                "Programme scope: Programme code(s): ESBMEG. Environmental Sciences stream.",
+                "Eligibility explanation: NSC 35 with 50% in English, 60% in Mathematics and Physical Sciences, and adequate achievement in at least three listed subjects.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
             ],
-            "subject_requirements": []
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 50
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Agricultural Sciences",
+                        "Accounting",
+                        "Life Sciences",
+                        "Economics",
+                        "Geography"
+                    ],
+                    "count": 3,
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "ESBMEG",
+            "possible_careers": [
+                "Environmental geologist",
+                "Mining geologist",
+                "Hydrologist",
+                "GIS technician"
+            ]
+        },
+        {
+            "name": "Bachelor of Earth Sciences in Hydrology and Water Resources",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 35,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): ESBHWR. Environmental Sciences stream.",
+                "Eligibility explanation: NSC 35 with 60% in English, Mathematics and Physical Sciences, and adequate achievement in at least three listed subjects.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 60
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Agricultural Sciences",
+                        "Accounting",
+                        "Life Sciences",
+                        "Economics",
+                        "Geography"
+                    ],
+                    "count": 3,
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "ESBHWR",
+            "possible_careers": [
+                "Environmental geologist",
+                "Mining geologist",
+                "Hydrologist",
+                "GIS technician"
+            ]
+        },
+        {
+            "name": "Bachelor of Urban and Regional Planning",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 35,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): ESBURP. Environmental Sciences stream.",
+                "Eligibility explanation: NSC 35 with 50% in English and Mathematics, 60% in Physical Sciences, and adequate achievement in at least three listed subjects.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 50
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 50
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_mark": 60
+                },
+                {
+                    "type": "subject_group_count",
+                    "subjects": [
+                        "Agricultural Sciences",
+                        "Accounting",
+                        "Life Sciences",
+                        "Economics",
+                        "Geography"
+                    ],
+                    "count": 3,
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "ESBURP",
+            "possible_careers": [
+                "Urban and regional planner",
+                "Transport route planner",
+                "Building planner",
+                "Mine planner"
+            ]
+        },
+        {
+            "name": "Bachelor of Environmental Sciences in Disaster Risk Reduction",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 35,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): ESBDRR. Environmental Sciences stream.",
+                "Eligibility explanation: NSC 35 with 50% in English, 60% in Geography, 60% in Mathematics and/or Life Sciences, plus adequate achievement in Physical Sciences and Economics.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_mark": 50
+                },
+                {
+                    "subject": "Geography",
+                    "minimum_mark": 60
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_mark": 60,
+                    "alternative_subject": "Life Sciences",
+                    "alternative_minimum_mark": 60
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Economics",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "ESBDRR",
+            "possible_careers": [
+                "Disaster risk officer",
+                "Environmental consultant",
+                "GIS technician",
+                "Public-sector risk officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture (Agricultural Economics)",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBAAE. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with achievement level 4 in Mathematics, Physical Sciences and English, and level 4 in either Life Sciences or Agricultural Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4,
+                    "alternative_subject": "Agricultural Sciences",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBAAE",
+            "possible_careers": [
+                "Agricultural economist",
+                "Farmer",
+                "Extension officer",
+                "Research officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture (Agribusiness Management)",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBAAM. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 or better in English, Mathematics, Physical Sciences and Life Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBAAM",
+            "possible_careers": [
+                "Agricultural economist",
+                "Farmer",
+                "Extension officer",
+                "Research officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture (Animal Science)",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBAAS. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 or better in English, Mathematics, Physical Sciences and Life Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBAAS",
+            "possible_careers": [
+                "Animal scientist",
+                "Farmer",
+                "Extension officer",
+                "Research officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture (Horticultural Sciences)",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBAHS. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 or better in English, Mathematics, Physical Sciences and Life Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBAHS",
+            "possible_careers": [
+                "Horticultural scientist",
+                "Farm manager",
+                "Extension officer",
+                "Research officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agriculture (Plant Production)",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBAPP. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 or better in English, Mathematics, Physical Sciences and Life Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBAPP",
+            "possible_careers": [
+                "Plant production specialist",
+                "Agronomist",
+                "Farm manager",
+                "Research officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Soil Science",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBASS. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with achievement rating 4 or better in English, Mathematics, Physical Sciences and Life Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBASS",
+            "possible_careers": [
+                "Soil scientist",
+                "Land-use planner",
+                "Consultant",
+                "Research officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Forestry",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBFOR. Agriculture stream.",
+                "Eligibility explanation: Same as for BSc in Agriculture in the brochure: NSC 26 with relevant science and mathematics subjects.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBFOR",
+            "possible_careers": [
+                "Forestry officer",
+                "Land-use planner",
+                "Conservation worker",
+                "Research officer"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Food Science and Technology",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBFST. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with Mathematics and Physical Sciences, achievement level 4 in English, and level 4 in either Life Sciences or Agricultural Sciences.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4,
+                    "alternative_subject": "Agricultural Sciences",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBFST",
+            "possible_careers": [
+                "Food technologist",
+                "Quality control manager",
+                "Laboratory technician"
+            ]
+        },
+        {
+            "name": "Bachelor of Science in Agricultural and Biosystems Engineering",
+            "qualification_type": "Bachelor",
+            "required_grade": "Grade 12",
+            "duration_years": 4.0,
+            "aps_required": 26,
+            "selection_programme": false,
+            "minimum_pass_type": "bachelor",
+            "notes": [
+                "Programme scope: Programme code(s): AGBABE. Agriculture stream.",
+                "Eligibility explanation: NSC 26 with Mathematics, Physical Sciences and Life Sciences or Agricultural Sciences, plus achievement level 4 in English.",
+                "Document checklist: Upload an ID or passport, Grade 11 final results or Grade 12 results/matric certificate, academic record and certificate of good conduct if previously registered at a tertiary institution, international study/residence/medical-insurance/SAQA documents where applicable, and proof of the R100 application fee.",
+                "Application method: South African undergraduate applicants use the UNIVEN online application wizard with a South African ID number, cellphone number, email address and card payment details. Previous online applicants must download the form from the website and submit it with supporting documents.",
+                "Closing-date context: The 2024 brochure states that applications for admission closed on 27 September 2023 for that intake; confirm the current-cycle closing date on UNIVEN before applying.",
+                "Application safety: Use univen.ac.za and official UNIVEN admissions contacts only. The brochure says no email applications are entertained for current South African online applicants.",
+                "Source note: Official 2024 undergraduate brochure; verify current intake dates, selection steps and document rules on UNIVEN before submitting."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "English Home Language or English First Additional Language",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4,
+                    "alternative_subject": "Agricultural Sciences",
+                    "alternative_minimum_level": 4
+                }
+            ],
+            "abbreviation": "AGBABE",
+            "possible_careers": [
+                "Agricultural engineer",
+                "Biosystems engineer",
+                "Consultant",
+                "Research officer"
+            ]
         }
     ]
 }

@@ -16,6 +16,11 @@ class RequirementSeeder extends UniversityRequirementSeeder
         return 'Tshwane University of Technology';
     }
 
+    protected function website(): ?string
+    {
+        return 'https://www.tut.ac.za';
+    }
+
     protected function requirementsPath(): string
     {
         return 'seeders/Universities/TUT/Requirements/*.json';
