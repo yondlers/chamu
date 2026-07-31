@@ -1,23 +1,28 @@
 {
     "faculty": "School of Health Care Sciences",
     "university": "Sefako Makgatho Health Sciences University",
-    "source": "SMU 2025/2026 Prospectus",
+    "source": "SMU Prospectus 2026/2027 and Health Care Sciences Undergraduate Admission Requirements",
     "qualifications": [
         {
             "name": "Bachelor of Nursing and Midwifery",
             "qualification_type": "Bachelor",
             "abbreviation": "BNAM",
             "duration_years": 4,
-            "aps_required": 26,
+            "aps_required": 25,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/",
             "notes": [
-                "The prospectus narrative and the APS table differ for Life Sciences and English.",
-                "The narrative states that Life Sciences and English require Level 5, while the table displays Level 4.",
-                "The stricter published narrative requirement is used for matching.",
-                "Published combined core APS requirement: 18.",
-                "Applicants should confirm the current requirement directly with SMU.",
-                "Requires one additional NSC subject at Level 4 and one additional NSC subject at Level 3."
+                "Programme scope: Four-year professional nursing and midwifery degree preparing graduates for general nursing science and midwifery roles in public, private, primary health care and related settings.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement and APS 25, or a minimum combined score of 16 across Life Sciences, Mathematics, Physical Sciences and English, with the published subject levels listed below.",
+                "Source note: The prospectus page narrative mentions Life Sciences and English at Level 5, while the live SMU Health Care Sciences admissions table lists Life Sciences and English at Level 4 with total APS 25. This seed follows the live official admissions page and records the discrepancy for manual confirmation.",
+                "Professional registration: Admitted students must register with the South African Nursing Council as student nurses within 30 days of admission and pay the prescribed fee.",
+                "Document checklist: Prepare identity document, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, SANC-related registration documents when admitted, and any SMU Registrar or School of Health Care Sciences documents.",
+                "Application method: Apply through official SMU undergraduate application channels and follow registrar communication for selection and SANC registration steps.",
+                "Closing-date context: Confirm the current SMU undergraduate application deadline for the admission year; selection is merit-based and limited by training capacity.",
+                "Application safety: Do not pay anyone promising nursing placement or SANC registration shortcuts. Confirm offers and registration requirements through SMU and SANC channels.",
+                "Source reviewed: Official SMU Health Care Sciences Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, page 24, reviewed on 31 July 2026.",
+                "Source confidence: High for the live SMU admissions table; manual confirmation recommended because the prospectus narrative/table conflict on Nursing subject levels."
             ],
             "subject_requirements": [
                 {
@@ -30,22 +35,27 @@
                 },
                 {
                     "subject": "Life Sciences",
-                    "minimum_level": 5
+                    "minimum_level": 4
                 },
                 {
                     "one_of": [
                         {
                             "subject": "English Home Language",
-                            "minimum_level": 5
+                            "minimum_level": 4
                         },
                         {
                             "subject": "English First Additional Language",
-                            "minimum_level": 5
+                            "minimum_level": 4
                         }
                     ]
                 },
                 {
                     "subject": "Life Orientation",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
                     "minimum_level": 3
                 }
             ]
@@ -58,8 +68,18 @@
             "aps_required": 25,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/",
             "notes": [
-                "Requires two additional NSC subjects at Level 3."
+                "Programme scope: Full-time four-year Occupational Therapy degree. Occupational therapists help clients regain or develop skills for self-care, health management, work, learning, play, leisure and social participation.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 25, Life Sciences, Mathematics, Physical Sciences and English at Level 4, Life Orientation at Level 3, and two additional subjects at Level 3.",
+                "Selection context: Students are selected on merit by a selection committee. Students with a Bachelor of Health Sciences or BSc qualification, SMU internal transfers and foreign qualifications may be considered under the published selection rules.",
+                "Professional context: After completing the degree, candidates must register with the Health Professions Council of South Africa where professional requirements apply.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, SAQA evaluation for foreign qualifications where applicable, and any SMU School of Health Care Sciences documents.",
+                "Application method: Apply through official SMU undergraduate application channels and follow School of Health Care Sciences selection communication.",
+                "Closing-date context: Confirm the current SMU undergraduate deadline before applying; admission is limited by practical training capacity and committee selection.",
+                "Application safety: Do not pay outside agents for therapy placement, guaranteed selection or SAQA shortcuts. Use official SMU and SAQA channels only.",
+                "Source reviewed: Official SMU Health Care Sciences Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, pages 25-26, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -88,6 +108,11 @@
                 },
                 {
                     "subject": "Life Orientation",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
                     "minimum_level": 3
                 }
             ]
@@ -100,8 +125,18 @@
             "aps_required": 28,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/",
             "notes": [
-                "Requires two additional NSC subjects at Level 4."
+                "Programme scope: Four-year physiotherapy degree focused on assessing, treating and preventing human movement disorders, pain and dysfunction across clinical, community, industry and school-related settings.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 28, Life Sciences, Mathematics, Physical Sciences, English, Life Orientation and two additional subjects all at Level 4.",
+                "Selection context: Practical training capacity is limited. Applicants who choose Physiotherapy as first choice are given preference for selection according to the live SMU page.",
+                "Career context: Published settings include public and private hospitals, clinics, private practice, community health centres, day-care centres, schools for children with special needs, nursing homes, sports teams, research units and occupational health units.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, and any documents requested by SMU for selection or clinical training readiness.",
+                "Application method: Apply through official SMU undergraduate application channels and make the programme choice carefully because first-choice preference is published.",
+                "Closing-date context: Confirm the current SMU undergraduate application deadline before applying; final selection depends on merit, first-choice preference and training capacity.",
+                "Application safety: Do not pay anyone for guaranteed selection, hospital placement or clinical access. Confirm all steps through official SMU channels.",
+                "Source reviewed: Official SMU Health Care Sciences Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, page 26, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -131,6 +166,11 @@
                 {
                     "subject": "Life Orientation",
                     "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
                 }
             ]
         },
@@ -141,12 +181,18 @@
             "aps_required": 25,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/",
             "notes": [
-                "Applicants must meet the selection criteria set by the Department of Speech-Language Pathology and Audiology.",
-                "Applicants may be required to observe audiology practice at hospitals, clinics or private practices.",
-                "Admission is limited because of practical training capacity.",
-                "Requires two additional NSC subjects at Level 3.",
-                "The language group below represents the published Home Language or First Additional Language requirement."
+                "Programme scope: Audiology degree for work in prevention, identification, assessment, treatment and counselling for hearing, balance and communication-related disorders.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 25, Mathematics Level 4, English Level 4, Life Sciences Level 4, one home language or first additional language at Level 4, Life Orientation Level 3, and two additional subjects at Level 3.",
+                "Selection context: Applicants must comply with criteria determined by the Department of Speech-Language Pathology and Audiology. Practical training capacity limits the number of admissions.",
+                "Exposure context: The prospectus says students are required to observe audiology practice at hospitals, clinics or private practices before initial selection.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, and any observation, selection or health-care exposure evidence requested by SMU.",
+                "Application method: Apply through official SMU undergraduate application channels and follow Department of Speech-Language Pathology and Audiology selection instructions.",
+                "Closing-date context: Confirm the current SMU undergraduate deadline before applying; observation and selection steps can require preparation before final offers.",
+                "Application safety: Do not pay anyone promising observation letters, practical placement or guaranteed admission. Confirm any requested exposure with legitimate hospitals, clinics, private practices and SMU.",
+                "Source reviewed: Official SMU Health Care Sciences Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, pages 26-27, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -195,12 +241,17 @@
                         "SiSwati First Additional Language",
                         "Tshivenda Home Language",
                         "Tshivenda First Additional Language",
-                        "Xitsonga Home Language",
-                        "Xitsonga First Additional Language"
+                        "\u0058itsonga Home Language",
+                        "\u0058itsonga First Additional Language"
                     ]
                 },
                 {
                     "subject": "Life Orientation",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
                     "minimum_level": 3
                 }
             ]
@@ -208,16 +259,22 @@
         {
             "name": "Bachelor of Speech-Language Pathology",
             "qualification_type": "Bachelor",
-            "abbreviation": null,
+            "abbreviation": "BSLP01",
             "aps_required": 25,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/",
             "notes": [
-                "Applicants must meet the selection criteria set by the Department of Speech-Language Pathology and Audiology.",
-                "Applicants may be required to observe speech-language pathology practice at hospitals, clinics or private practices.",
-                "Admission is limited because of practical training capacity.",
-                "Requires two additional NSC subjects at Level 3.",
-                "The language group below represents the published Home Language or First Additional Language requirement."
+                "Programme scope: Speech-Language Pathology degree for prevention, identification, assessment and treatment of communication, speech, language, voice, feeding and swallowing disorders.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 25, Mathematics Level 4, English Level 4, Life Sciences Level 4, one home language or first additional language at Level 4, Life Orientation Level 3, and two additional subjects at Level 3.",
+                "Selection context: Applicants must comply with criteria determined by the Department of Speech-Language Pathology and Audiology. Practical training capacity limits the number of admissions.",
+                "Exposure context: The prospectus says students are required to observe speech-language pathology practice at hospitals, clinics or private practices before initial selection.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, and any observation, selection or health-care exposure evidence requested by SMU.",
+                "Application method: Apply through official SMU undergraduate application channels and follow Department of Speech-Language Pathology and Audiology selection instructions.",
+                "Closing-date context: Confirm the current SMU undergraduate deadline before applying; observation and selection steps can require preparation before final offers.",
+                "Application safety: Do not pay anyone promising observation letters, practical placement or guaranteed admission. Confirm any requested exposure with legitimate hospitals, clinics, private practices and SMU.",
+                "Source reviewed: Official SMU Health Care Sciences Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, pages 27-28, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -266,12 +323,17 @@
                         "SiSwati First Additional Language",
                         "Tshivenda Home Language",
                         "Tshivenda First Additional Language",
-                        "Xitsonga Home Language",
-                        "Xitsonga First Additional Language"
+                        "\u0058itsonga Home Language",
+                        "\u0058itsonga First Additional Language"
                     ]
                 },
                 {
                     "subject": "Life Orientation",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
                     "minimum_level": 3
                 }
             ]
@@ -284,11 +346,19 @@
             "aps_required": 25,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/health-care-sciences/health-care-sciences-undergraduate-admission-requirements/",
             "notes": [
-                "Programme structure includes a 34-week integrated internship.",
-                "The fourth year includes a 23-week continuous internship.",
-                "A one-year community service period is required after training.",
-                "Requires two additional NSC subjects at Level 3."
+                "Programme scope: Four-year dietetics degree with 34 weeks of integrated internship, including a 23-week continuous internship during the fourth year.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 25, Mathematics Level 4, Physical Sciences Level 4, Life Sciences Level 4, English Level 4, Life Orientation Level 3, and two additional subjects at Level 3.",
+                "Selection context: Practical reasons limit the number of applicants who can be admitted. Students are selected on merit by a selection committee.",
+                "Professional context: Qualified dietitians register with the Health Professions Council of South Africa, and the prospectus notes a one-year community service period after training.",
+                "Career context: Published career settings include hospitals, health care centres, medical and pharmaceutical companies, food services, catering companies and private practice.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, any USAf/SAQA exemption documents where applicable, and documents requested by SMU for selection or clinical training.",
+                "Application method: Apply through official SMU undergraduate application channels and follow School of Health Care Sciences selection communication.",
+                "Closing-date context: Confirm the current SMU undergraduate application deadline before applying; selection is merit-based and limited by training capacity.",
+                "Application safety: Do not pay anyone promising dietetics placement, internship access or guaranteed admission. Confirm all offers through official SMU channels.",
+                "Source reviewed: Official SMU Health Care Sciences Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, page 28, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -317,6 +387,11 @@
                 },
                 {
                     "subject": "Life Orientation",
+                    "minimum_level": 3
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
                     "minimum_level": 3
                 }
             ]

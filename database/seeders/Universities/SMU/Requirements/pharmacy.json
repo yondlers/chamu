@@ -1,7 +1,7 @@
 {
     "faculty": "School of Pharmacy",
     "university": "Sefako Makgatho Health Sciences University",
-    "source": "SMU 2025/2026 Prospectus",
+    "source": "SMU Prospectus 2026/2027 and Pharmacy Undergraduate Admission Requirements",
     "qualifications": [
         {
             "name": "Bachelor of Pharmacy",
@@ -11,19 +11,20 @@
             "aps_required": 32,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/pharmacy/pharmacy-undergraduate-admission-requirements/",
             "notes": [
-                "Applicants should indicate BPharm as their first-choice programme.",
-                "Applicants must hold or be eligible for a matriculation certificate or matriculation exemption.",
-                "Meeting the minimum APS does not guarantee admission.",
-                "Selection is competitive because the programme has limited capacity.",
-                "Candidates are screened and ranked using their academic results.",
-                "The BPharm programme uses an integrated, thematic and hybrid problem-based modular teaching approach.",
-                "A Levels route for foreign applicants: Mathematics, Physical Science, Biology and English with minimum symbol C, plus a matriculation exemption certificate from Universities South Africa.",
-                "Mature-age applicant backgrounds include formally trained pharmacy assistants, pharmacy technicians, or applicants with appropriate NQF-recognised training; Mathematics, Life Sciences, Physical Sciences and English are required at Level 5.",
-                "Transfer applicants may include applicants with incomplete Health Sciences or Bachelor of Science degrees; minimum university average is 65%; admission is ranked and subject to available space.",
-                "Graduate applicants may include applicants with a Health Sciences degree or Bachelor of Science degree; minimum selection score is 12 points.",
-                "Graduate academic transcript scoring: 75% and above = 24 points; 70% to 74% = 16 points; 65% to 69% = 12 points; 60% to 64% = 8 points; 55% to 59% = 4 points; 54% and below = 0 points.",
-                "Requires one additional NSC subject at Level 4, with Accounting preferred, and one additional NSC subject at Level 4, with Economics preferred."
+                "Programme scope: Four-year BPharm degree using an integrated, thematic, hybrid problem-based modular teaching approach.",
+                "Eligibility explanation: NSC applicants need APS 32, Mathematics, Physical Sciences, Life Sciences and English at Level 5, Life Orientation at Level 4, and two additional subjects at Level 4. Accounting and Economics are preferred additional subjects.",
+                "Selection context: Applicants should list BPharm as their first-choice programme. Meeting the minimum APS does not guarantee admission because capacity is limited and compliant applicants are screened and ranked by academic results.",
+                "Professional registration: Students admitted to first year must register with the South African Pharmacy Council before 31 March of the relevant academic year.",
+                "Alternative routes: The official page also lists pre-2008 matric, A-Level, mature-age, graduate and transfer routes. Mature-age applicants need relevant NQF-recognised training and Mathematics, Life Sciences, Physical Sciences and English at Level 5. Graduate and transfer applicants are ranked competitively and normally need strong university performance, including a 65% average where the published route requires it.",
+                "Graduate scoring context: The official page scores academic transcripts from 0 to 24 points by percentage band; candidates with 12 points qualify for selection consideration.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of school-leaving qualification or exemption, academic transcripts for transfer/graduate routes, SAQA/USAf documents for foreign or non-NSC routes, and SAPC registration documents after admission.",
+                "Application method: Apply through official SMU undergraduate application channels and choose BPharm as first choice if this is the intended route.",
+                "Closing-date context: Confirm the current SMU undergraduate application deadline for the admission year; SAPC first-year registration has a published 31 March deadline after admission.",
+                "Application safety: Do not pay anyone promising guaranteed BPharm selection, SAPC registration or transfer placement. Confirm all offers and registration steps through official SMU and SAPC channels.",
+                "Source reviewed: Official SMU Pharmacy Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, pages 20-23, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -53,7 +54,33 @@
                 {
                     "subject": "Life Orientation",
                     "minimum_level": 4
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
                 }
+            ]
+        },
+        {
+            "name": "Online Higher Certificate in Vaccinology",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HCERT (VACC)",
+            "duration_years": 1,
+            "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/3d-flip-book/smu-prospectus-2026_2027/",
+            "notes": [
+                "Programme scope: Online Higher Certificate in Vaccinology at NQF Level 5 with 120 credits. Published minimum duration is 1 year and maximum duration is 2 years.",
+                "Eligibility explanation: This is not a direct Grade 12 school-leaver route. Applicants must be registered General Nurses and Midwives with the South African Nursing Council, or hold a three-year health sciences qualification that includes vaccination training from a tertiary institution registered with the Health Professions Council of South Africa.",
+                "Selection context: Priority is given to in-service health care workers currently working in vaccination or planning to work in vaccination. Applicants are required to write a motivation explaining why they should be accepted.",
+                "Curriculum context: The prospectus describes two blocks and 11 modules covering infectious disease immunology, vaccinology, vaccine manufacturing and distribution, EPI-SA, epidemiology, vaccination schedules, cold chain, safe vaccine administration, adverse events, advocacy, and monitoring and evaluation.",
+                "Practical context: Modules 6 to 11 include practical assignments based on vaccination practice. Students who can produce evidence of competence may submit it for possible exemption from those practical assignments, while the virtual communication component remains mandatory.",
+                "Document checklist: Prepare identity document or passport, SANC registration proof or HPCSA-linked health sciences qualification proof, academic transcript or certificate, employment or in-service context where relevant, evidence of vaccination-practice competence where applicable, and a motivation letter.",
+                "Application method: Apply only through official SMU or School of Pharmacy channels for the certificate and follow any SAVIC or School of Pharmacy instructions linked from SMU.",
+                "Closing-date context: Confirm the current certificate registration and application deadline in the official SMU General Calendar or School of Pharmacy notices before applying.",
+                "Application safety: Do not pay unofficial agents for funding, practical exemptions or acceptance. Confirm funding and registration instructions through official SMU, SAVIC, SANC or HPCSA-linked channels.",
+                "Source reviewed: SMU Prospectus 2026/2027 booklet, pages 18-19, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU prospectus; programme-specific live admission page not found in the undergraduate page body."
             ]
         }
     ]

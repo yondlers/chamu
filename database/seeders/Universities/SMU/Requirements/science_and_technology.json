@@ -1,157 +1,28 @@
 {
     "faculty": "School of Science and Technology",
     "university": "Sefako Makgatho Health Sciences University",
-    "source": "SMU 2025/2026 Prospectus",
+    "source": "SMU Prospectus 2026/2027 and Science and Technology Undergraduate Admission Requirements",
     "qualifications": [
-        {
-            "name": "Diploma in Emergency Medical Care",
-            "qualification_type": "Diploma",
-            "abbreviation": "DIP EMC",
-            "duration_years": 2,
-            "aps_required": 18,
-            "minimum_pass_type": "diploma",
-            "selection_programme": true,
-            "notes": [
-                "Requires a Diploma endorsement.",
-                "Applicant must pass a medical fitness evaluation.",
-                "Applicant must pass a physical fitness evaluation.",
-                "Requires two additional NSC subjects at Level 3."
-            ],
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_level": 3
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_level": 3
-                        }
-                    ]
-                },
-                {
-                    "subject": "Mathematics",
-                    "minimum_level": 3
-                },
-                {
-                    "subject": "Life Sciences",
-                    "minimum_level": 3
-                },
-                {
-                    "subject": "Physical Sciences",
-                    "minimum_level": 3
-                }
-            ]
-        },
-        {
-            "name": "Higher Certificate in Emergency Medical Care",
-            "qualification_type": "Higher Certificate",
-            "abbreviation": "HCERT EMC",
-            "duration_years": 1,
-            "aps_required": 15,
-            "minimum_pass_type": "higher_certificate",
-            "selection_programme": true,
-            "notes": [
-                "Requires a Higher Certificate endorsement.",
-                "Applicant must pass a medical fitness evaluation.",
-                "Applicant must pass a physical fitness evaluation.",
-                "Requires two additional NSC subjects at Level 3."
-            ],
-            "subject_requirements": [
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_level": 3
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_level": 3
-                        }
-                    ]
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Mathematics",
-                            "minimum_level": 3
-                        },
-                        {
-                            "subject": "Mathematical Literacy",
-                            "minimum_level": 4
-                        }
-                    ]
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "Life Sciences",
-                            "minimum_level": 3
-                        },
-                        {
-                            "subject": "Physical Sciences",
-                            "minimum_level": 3
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Bachelor of Diagnostic Radiography",
-            "qualification_type": "Bachelor",
-            "abbreviation": "B RAD",
-            "duration_years": 4,
-            "minimum_pass_type": "bachelor",
-            "selection_programme": true,
-            "notes": [
-                "Maximum published duration: 6 years.",
-                "Applicant must have an NSC qualifying them for degree studies.",
-                "Applicant must also meet the general university admission criteria.",
-                "Published minimum core-subject APS: 16.",
-                "Published remaining subject points: 6.",
-                "The provided table does not display a total minimum APS for this programme."
-            ],
-            "subject_requirements": [
-                {
-                    "subject": "Mathematics",
-                    "minimum_level": 4
-                },
-                {
-                    "subject": "Physical Sciences",
-                    "minimum_level": 4
-                },
-                {
-                    "subject": "Life Sciences",
-                    "minimum_level": 4
-                },
-                {
-                    "one_of": [
-                        {
-                            "subject": "English Home Language",
-                            "minimum_level": 4
-                        },
-                        {
-                            "subject": "English First Additional Language",
-                            "minimum_level": 4
-                        }
-                    ]
-                },
-                {
-                    "subject": "Life Orientation",
-                    "minimum_level": 3
-                }
-            ]
-        },
         {
             "name": "Bachelor of Science",
             "qualification_type": "Bachelor",
             "abbreviation": "BSc",
+            "aps_required": 25,
             "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/science-and-technology/science-and-technology-undergraduate-admission-requirements/",
             "notes": [
-                "Fields of study mentioned: Chemistry and Chemical Technology; Biochemistry and Chemical Technology.",
-                "The prospectus does not display a total minimum APS for this programme in the provided table.",
-                "Requires two additional NSC subjects at Level 4."
+                "Programme scope: Normal BSc route in the School of Science and Technology. Published streams include Life Sciences, Mathematical Sciences, Physical Sciences, and Occupational and Environmental Health Sciences.",
+                "Stream detail: Life Sciences majors include Biology, Chemistry, Biochemistry and Physiology. Mathematical Sciences majors include Mathematics, Applied Mathematics, Statistics, Computer Science and Physics. Physical Sciences majors include Physics, Chemistry, Biochemistry and Mathematics. Occupational and Environmental Health Sciences includes Environmental and Occupational Psychology and Pathophysiology.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 25, English Level 4, Mathematics Level 5, Life Sciences Level 4, Physical Sciences Level 4, and two other NSC subjects at Level 4.",
+                "Stream-placement context: After satisfying the general BSc admission requirements and subject to space, students need Level 5 in the relevant stream subject: Life Sciences for Life Sciences, Mathematics for Mathematical Sciences, Physical Sciences for Physical Sciences, and Life Sciences for Occupational and Environmental Health Sciences.",
+                "Career context: SMU prospectus career areas include laboratories, pharmaceutical and mining industries, biotechnology, environmental work, ICT, data analysis, teaching, research, medical physics and related scientific roles.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, any USAf/SAQA exemption documents for non-NSC routes, and any stream-selection documents requested by SMU.",
+                "Application method: Apply through official SMU undergraduate application channels, choose the BSc route, and confirm stream availability with the School of Science and Technology.",
+                "Closing-date context: Confirm the current SMU undergraduate deadline for the admission year before applying. Stream placement can depend on space after admission requirements are met.",
+                "Application safety: Do not pay anyone promising guaranteed stream placement, laboratory access or admission. Confirm all requirements and offers through official SMU channels.",
+                "Source reviewed: Official SMU Science and Technology Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, pages 29-30, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -177,6 +48,11 @@
                             "minimum_level": 4
                         }
                     ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
                 }
             ]
         },
@@ -185,12 +61,22 @@
             "qualification_type": "Extended Bachelor Degree",
             "abbreviation": "BSc-ECP",
             "duration_years": 4,
+            "aps_required": 24,
             "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/science-and-technology/science-and-technology-undergraduate-admission-requirements/",
             "notes": [
-                "The extended curriculum programme runs over four years.",
-                "Fields of study mentioned: Chemistry and Chemical Technology; Biochemistry and Chemical Technology.",
-                "The prospectus does not display a total minimum APS for this programme in the provided table.",
-                "Requires two additional NSC subjects at Level 4."
+                "Programme scope: Extended BSc curriculum programme running over 4 years in the School of Science and Technology.",
+                "Stream detail: Published extended streams include Life Sciences with Biology, Chemistry, Biochemistry and Physiology; Mathematical Sciences with Mathematics, Statistics, Computer Science and Physics; and Physical Sciences with Physics, Chemistry, Biochemistry and Mathematics.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 24, English Level 4, Mathematics Level 4, Life Sciences Level 4, Physical Sciences Level 4, and two other NSC subjects at Level 4.",
+                "Selection context: The extended curriculum route is for applicants who meet the ECP admission criteria and is subject to space and SMU academic rules.",
+                "Career context: The extended route leads into the same broad science pathways as the BSc, including scientific laboratories, biotechnology, environmental work, ICT, data analysis, teaching, research and physical sciences roles.",
+                "Document checklist: Prepare identity document or passport, Grade 11 and final Grade 12 results, proof of Bachelor endorsement, any USAf/SAQA exemption documents for non-NSC routes, and documents requested by SMU for ECP placement.",
+                "Application method: Apply through official SMU undergraduate application channels and confirm whether the ECP stream is available for the intended admission year.",
+                "Closing-date context: Confirm the current annual SMU undergraduate deadline before applying; ECP offers depend on eligibility, ranking and available spaces.",
+                "Application safety: Do not pay outside agents for ECP admission or stream placement. Use only official SMU channels and written SMU communication.",
+                "Source reviewed: Official SMU Science and Technology Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, pages 29-30, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -216,6 +102,11 @@
                             "minimum_level": 4
                         }
                     ]
+                },
+                {
+                    "type": "additional_subjects",
+                    "count": 2,
+                    "minimum_level": 4
                 }
             ]
         }

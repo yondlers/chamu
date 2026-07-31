@@ -1,7 +1,7 @@
 {
     "faculty": "School of Medicine",
     "university": "Sefako Makgatho Health Sciences University",
-    "source": "SMU 2025/2026 Prospectus",
+    "source": "SMU Prospectus 2026/2027 and Medicine Undergraduate Admission Requirements",
     "qualifications": [
         {
             "name": "Bachelor of Medicine and Bachelor of Surgery",
@@ -11,12 +11,17 @@
             "aps_required": 38,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/medicine/medicine-undergraduate-admission-requirements/",
             "notes": [
-                "Maximum published duration: 8 years.",
-                "Admission is highly competitive.",
-                "Meeting the minimum requirements does not guarantee admission.",
-                "Applicants may be admitted at a higher level than the published minimum requirements.",
-                "Requires one additional NSC subject at Level 5 and one additional NSC subject at Level 4."
+                "Programme scope: Professional medicine degree for the medical doctor route, with a published minimum duration of 6 years and maximum duration of 8 years.",
+                "Eligibility explanation: NSC applicants need an APS of at least 38, Bachelor endorsement, Mathematics, Physical Sciences, Life Sciences and English at Level 6, Life Orientation at Level 5, plus one additional subject at Level 5 and one additional subject at Level 4.",
+                "Selection context: SMU uses phased pre-selection and final Grade 12 selection. Meeting the minimum APS and subject levels does not guarantee admission because spaces are limited and applicants are ranked competitively.",
+                "Document checklist: Prepare certified identity document or passport, Grade 11 results when applying during matric, final Grade 12 results when released, proof of school-leaving qualification, USAf or SAQA/matric exemption where applicable, and any documents requested by the SMU Registrar or School of Medicine.",
+                "Application method: Apply through the official SMU undergraduate application and enrolment channels, keep the applicant profile updated, and respond only to official SMU requests for results or supporting documents.",
+                "Closing-date context: Confirm the current annual undergraduate application deadline on the official SMU application portal or admissions notices before applying; final firm offers are considered after Grade 12 results and space availability.",
+                "Application safety: Use official SMU and Universities South Africa channels for application and exemption matters. Do not pay anyone who promises guaranteed admission, reserved spaces or help bypassing the selection committee.",
+                "Source reviewed: SMU Prospectus 2026/2027 booklet, page 13, cross-checked against the official Medicine Undergraduate Admission Requirements page on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -57,13 +62,18 @@
             "aps_required": 32,
             "minimum_pass_type": "bachelor",
             "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/medicine/medicine-undergraduate-admission-requirements/",
             "notes": [
-                "The extended curriculum route has a one-year foundation programme followed by the mainstream MBChB.",
-                "Reserved for South African Black learners from Quintile 1 and Quintile 2 schools.",
-                "Applicant must not previously have participated in tertiary education.",
-                "Applicant must have been unable to obtain admission into the mainstream six-year MBChB programme.",
-                "Only approximately 50 spaces are available on a competitive basis.",
-                "Requires two additional NSC subjects at Level 4."
+                "Programme scope: One-year medicine foundation route followed by the mainstream MBChB programme, giving a total planned route of 7 years.",
+                "Eligibility explanation: Reserved for South African Black learners from Quintile 1 and Quintile 2 schools who have not previously participated in tertiary education and could not secure a mainstream MBChB place.",
+                "Selection context: Approximately 50 MBChB-ECP spaces are available and selection happens after mainstream MBChB selection. Applicants are assessed on academic performance and non-quantifiable background factors linked to the foundation programme policy.",
+                "Academic requirement: Published minimum APS is 32, with Physical Sciences, Life Sciences, Mathematics and English Language at Level 5, Life Orientation at Level 4, and two additional subjects at Level 4. The live SMU page notes that a learner may be considered with English Level 4 if the overall APS remains competitive.",
+                "Document checklist: Prepare identity document, Grade 11 and final Grade 12 results, proof of school quintile where requested, school-leaving documents, and any SMU Registrar or School of Medicine supporting documents.",
+                "Application method: Apply through the official SMU undergraduate application route and follow SMU communication for ECP consideration; applicants who do not meet the ECP policy criteria are declined.",
+                "Closing-date context: Confirm the current SMU application deadline each admission cycle; ECP selection follows completion of mainstream MBChB selection and depends on final results and available places.",
+                "Application safety: Do not pay anyone claiming they can place a learner into the ECP route or change school-quintile eligibility. Use only official SMU communication.",
+                "Source reviewed: SMU Prospectus 2026/2027 booklet, page 14, cross-checked against the official Medicine Undergraduate Admission Requirements page on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
             ],
             "subject_requirements": [
                 {
@@ -93,6 +103,182 @@
                 {
                     "subject": "Life Orientation",
                     "minimum_level": 4
+                }
+            ]
+        },
+        {
+            "name": "Bachelor of Diagnostic Radiography",
+            "qualification_type": "Bachelor",
+            "abbreviation": "B RAD",
+            "duration_years": 4,
+            "aps_required": 25,
+            "minimum_pass_type": "bachelor",
+            "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/medicine/medicine-undergraduate-admission-requirements/",
+            "notes": [
+                "Programme scope: Diagnostic radiography degree with a published minimum duration of 4 years and maximum duration of 6 years. Clinical training is done at accredited hospitals in Gauteng, Limpopo and North West.",
+                "Eligibility explanation: NSC applicants need Bachelor endorsement, APS 25, and at least Level 4 in English, Mathematics, Physical Sciences and Life Sciences. The live SMU page also lists a preselection score of 19 across the four core subjects plus Life Orientation.",
+                "Selection context: Pre-selection may be based on Grade 11 results, with final selection determined by Grade 12 performance, merit and available spaces. The Medicine page lists a total intake of 40 students.",
+                "Career context: Published advancement areas include ultrasonography, mammography, radiotherapy, nuclear medicine and honours specialisations such as CT and MRI.",
+                "Document checklist: Prepare identity document, Grade 11 and Grade 12 results, proof of Bachelor endorsement, any USAf/SAQA exemption documents for non-NSC routes, and any clinical placement or health-related documents SMU requests.",
+                "Application method: Apply through the official SMU undergraduate application route and choose the radiography programme where available; follow SMU Registrar or School of Medicine instructions for preselection and final offers.",
+                "Closing-date context: Check the current SMU undergraduate application deadline for the admission year before applying. Final offers depend on Grade 12 results and the published intake.",
+                "Application safety: Do not pay third parties for hospital placement, guaranteed selection or application shortcuts. Confirm all requirements on the official SMU source.",
+                "Source reviewed: Official SMU Medicine Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, page 15, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
+            ],
+            "subject_requirements": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 4
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 4
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Life Orientation",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Diploma in Emergency Medical Care",
+            "qualification_type": "Diploma",
+            "abbreviation": "DIP EMC",
+            "duration_years": 2,
+            "aps_required": 18,
+            "minimum_pass_type": "diploma",
+            "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/medicine/medicine-undergraduate-admission-requirements/",
+            "notes": [
+                "Programme scope: Two-year Emergency Medical Care diploma leading to mid-level emergency care work and registration with the HPCSA as a Paramedic where all professional requirements are met.",
+                "Eligibility explanation: NSC applicants need a Diploma endorsement, total APS 18, English at Level 3 as first language or Level 4 as second language, Mathematics at Level 3, Life Sciences at Level 3, Physical Sciences at Level 3, and two additional subjects at Level 3. Mathematical Literacy is not applicable for this diploma route.",
+                "Selection context: Applicants must pass SMU medical fitness and physical fitness evaluations in addition to meeting academic requirements.",
+                "Alternative routes: The official page also lists Senior Certificate and NC(V) routes. NC(V) applicants must have 60% in English, Mathematics, Life Sciences and Physical Sciences.",
+                "Document checklist: Prepare identity document, school results, proof of Diploma endorsement or equivalent, any NC(V) or Senior Certificate documents, and medical/physical fitness documents when SMU requests them.",
+                "Application method: Apply through official SMU undergraduate application channels and follow the School of Medicine or Emergency Medical Care instructions for fitness assessments.",
+                "Closing-date context: Confirm the current SMU deadline for the admission year before applying; fitness assessment scheduling can affect readiness even when academic marks qualify.",
+                "Application safety: Fitness evaluations and application instructions must come from SMU or its appointed channels. Do not pay outside agents promising guaranteed EMC selection.",
+                "Source reviewed: Official SMU Medicine Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, page 14, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Life Sciences",
+                    "minimum_level": 3
+                },
+                {
+                    "subject": "Physical Sciences",
+                    "minimum_level": 3
+                }
+            ]
+        },
+        {
+            "name": "Higher Certificate in Emergency Medical Care",
+            "qualification_type": "Higher Certificate",
+            "abbreviation": "HCERT EMC",
+            "duration_years": 1,
+            "aps_required": 15,
+            "minimum_pass_type": "higher_certificate",
+            "selection_programme": true,
+            "source_url": "https://www.smu.ac.za/schools/medicine/medicine-undergraduate-admission-requirements/",
+            "notes": [
+                "Programme scope: One-year Emergency Medical Care higher certificate leading to entry-level emergency care work and registration with the HPCSA as an Emergency Care Assistant where all professional requirements are met.",
+                "Eligibility explanation: NSC applicants need a Higher Certificate endorsement. Published total is 15 points with Mathematics or 16 points with Mathematical Literacy, with English at Level 3, Mathematics at Level 3 or Mathematical Literacy at Level 4, Life Sciences or Physical Sciences at Level 3, and two additional subjects at Level 3.",
+                "Selection context: Applicants must pass SMU medical fitness and physical fitness evaluations in addition to the academic route.",
+                "Alternative routes: The official page also lists Senior Certificate and NC(V) routes; NC(V) applicants must have at least 50% in English, Mathematics, and Life Sciences or Physical Sciences.",
+                "Document checklist: Prepare identity document, school results, proof of Higher Certificate endorsement or equivalent, any NC(V) or Senior Certificate documents, and medical/physical fitness documents when requested by SMU.",
+                "Application method: Apply through official SMU undergraduate application channels and follow the School of Medicine or Emergency Medical Care instructions for fitness assessments.",
+                "Closing-date context: Confirm the current SMU deadline for the admission year before applying; fitness assessment scheduling can affect readiness even when academic marks qualify.",
+                "Application safety: Use only official SMU communication for the fitness and application process. Do not pay anyone promising guaranteed selection.",
+                "Source reviewed: Official SMU Medicine Undergraduate Admission Requirements page and SMU Prospectus 2026/2027 booklet, pages 14-15, reviewed on 31 July 2026.",
+                "Source confidence: High - official SMU website and official SMU prospectus."
+            ],
+            "subject_requirements": [
+                {
+                    "one_of": [
+                        {
+                            "subject": "English Home Language",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "English First Additional Language",
+                            "minimum_level": 3
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Mathematics",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Mathematical Literacy",
+                            "minimum_level": 4
+                        }
+                    ]
+                },
+                {
+                    "one_of": [
+                        {
+                            "subject": "Life Sciences",
+                            "minimum_level": 3
+                        },
+                        {
+                            "subject": "Physical Sciences",
+                            "minimum_level": 3
+                        }
+                    ]
+                }
+            ],
+            "admission_score_variants": [
+                {
+                    "subject": "Mathematics",
+                    "minimum_level": 3,
+                    "admission_score_required": 15,
+                    "label": "Mathematics route",
+                    "notes": "Published total APS is 15 when Mathematics is used."
+                },
+                {
+                    "subject": "Mathematical Literacy",
+                    "minimum_level": 4,
+                    "admission_score_required": 16,
+                    "label": "Mathematical Literacy route",
+                    "notes": "Published total APS is 16 when Mathematical Literacy is used."
                 }
             ]
         }
