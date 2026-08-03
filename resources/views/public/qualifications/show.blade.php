@@ -243,8 +243,87 @@
             </div>
         </section>
 
-        <div class="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-5 lg:grid-cols-[minmax(0,1fr)_340px] lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 py-8 sm:px-5 lg:px-8">
             <div class="grid gap-6">
+                @if ($qualificationMatch)
+                    @php
+                        $statusBadgeClasses = [
+                            'success' => 'bg-emerald-50 text-emerald-700',
+                            'warning' => 'bg-amber-50 text-amber-700',
+                            'review' => 'bg-sky-50 text-sky-700',
+                            'danger' => 'bg-rose-50 text-rose-700',
+                        ][$qualificationMatch['status_tone']] ?? 'bg-white text-[#01225E]';
+                    @endphp
+                    <section class="rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-6 text-white shadow-sm" aria-labelledby="saved-mark-heading">
+                        <span class="inline-flex rounded-full px-3 py-1 text-xs font-bold {{ $statusBadgeClasses }}">
+                            {{ $qualificationMatch['status_label'] }}
+                        </span>
+                        <h2 id="saved-mark-heading" class="mt-3 text-2xl font-bold">Your saved-mark check</h2>
+                        <p class="mt-3 max-w-3xl text-sm leading-6 text-white/80">
+                            Compared with your saved subjects and marks{{ $qualificationMatch['term_label'] ? ' from '.$qualificationMatch['term_label'] : '' }}.
+                        </p>
+
+                        <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                            <div class="rounded-xl border border-white/10 bg-white p-4 text-neutral-950">
+                                <p class="text-xs font-bold uppercase text-neutral-500">Required score</p>
+                                <p class="mt-1 text-2xl font-bold">{{ $qualificationMatch['admission_score_required_display'] }}</p>
+                                @if ($qualificationMatch['admission_score_required_display'] !== 'N/A' && $qualificationMatch['admission_score_label'] !== 'Score')
+                                    <p class="mt-1 text-xs font-semibold uppercase text-neutral-500">{{ $qualificationMatch['admission_score_label'] }}</p>
+                                @endif
+                            </div>
+                            <div class="rounded-xl border border-white/10 bg-white p-4 text-neutral-950">
+                                <p class="text-xs font-bold uppercase text-neutral-500">Your {{ $qualificationMatch['admission_score_label'] }}</p>
+                                <p class="mt-1 text-2xl font-bold">{{ $qualificationMatch['admission_score_actual_display'] }}</p>
+                            </div>
+                            <div class="rounded-xl border border-white/10 bg-white p-4 text-neutral-950">
+                                <p class="text-xs font-bold uppercase text-neutral-500">{{ $qualificationMatch['admission_score_label'] }} gap</p>
+                                <p class="mt-1 text-2xl font-bold">{{ $qualificationMatch['admission_score_gap_display'] }}</p>
+                            </div>
+                            <div class="rounded-xl border border-white/10 bg-white p-4 text-neutral-950">
+                                <p class="text-xs font-bold uppercase text-neutral-500">Closes</p>
+                                <p class="mt-1 text-sm font-bold">{{ $qualificationMatch['closing_label'] }}</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 grid gap-3 lg:grid-cols-2">
+                            <div class="rounded-xl bg-white p-4 text-neutral-950">
+                                <p class="text-sm font-bold">Still needed</p>
+                                @if ($qualificationMatch['requires_manual_review'])
+                                    <p class="mt-2 text-sm font-semibold text-sky-700">Check the published notes. This qualification has requirements that are not fully machine-checkable yet.</p>
+                                @elseif ($qualificationMatch['admission_score_gap'] === 0.0 && count($qualificationMatch['missing_requirements']) === 0 && count($qualificationMatch['missing_score_components']) === 0)
+                                    <p class="mt-2 text-sm font-semibold text-emerald-700">Nothing missing based on your current marks.</p>
+                                @else
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        @if ($qualificationMatch['admission_score_gap'] > 0)
+                                            <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">
+                                                {{ $qualificationMatch['admission_score_label'] }}
+                                                {{ $qualificationMatch['admission_score_type'] === 'pass_type' ? $qualificationMatch['admission_score_gap_display'] : '+'.$qualificationMatch['admission_score_gap_display'] }}
+                                            </span>
+                                        @endif
+                                        @foreach ($qualificationMatch['missing_requirements'] as $requirement)
+                                            <span class="rounded-full bg-rose-50 px-3 py-1 text-xs font-bold text-rose-700">{{ $requirement }}</span>
+                                        @endforeach
+                                        @foreach ($qualificationMatch['missing_score_components'] as $component)
+                                            <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-bold text-sky-700">{{ $component }}</span>
+                                        @endforeach
+                                    </div>
+                                @endif
+                            </div>
+
+                            @if (count($qualificationMatch['met_requirements']) > 0)
+                                <div class="rounded-xl bg-white p-4 text-neutral-950">
+                                    <p class="text-sm font-bold">Met requirements</p>
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        @foreach ($qualificationMatch['met_requirements'] as $requirement)
+                                            <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">{{ $requirement }}</span>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                    </section>
+                @endif
+
                 @if ($isTvetCollegeQualification && $collegeAdmissionSummary)
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
                         <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission Requirements</h2>
@@ -507,143 +586,37 @@
                 @endif
             </div>
 
-            <aside class="grid content-start gap-6">
-                @if ($qualificationMatch)
-                    @php
-                        $statusBadgeClasses = [
-                            'success' => 'bg-emerald-50 text-emerald-700',
-                            'warning' => 'bg-amber-50 text-amber-700',
-                            'review' => 'bg-sky-50 text-sky-700',
-                            'danger' => 'bg-rose-50 text-rose-700',
-                        ][$qualificationMatch['status_tone']] ?? 'bg-white text-[#01225E]';
-                    @endphp
-                    <section class="rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-5 text-white shadow-sm" aria-labelledby="full-match-heading">
-                        <span class="inline-flex rounded-full px-3 py-1 text-xs font-bold {{ $statusBadgeClasses }}">
-                            {{ $qualificationMatch['status_label'] }}
-                        </span>
-                        <h2 id="full-match-heading" class="mt-3 text-xl font-bold">Your saved-mark check</h2>
-                        <p class="mt-3 text-sm leading-6 text-white/80">
-                            Compared with your saved subjects and marks{{ $qualificationMatch['term_label'] ? ' from '.$qualificationMatch['term_label'] : '' }}.
-                        </p>
-
-                        <div class="mt-5 grid grid-cols-2 gap-2">
-                            <div class="rounded-xl border border-white/10 bg-white p-3 text-neutral-950">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Required score</p>
-                                <p class="mt-1 text-2xl font-bold">{{ $qualificationMatch['admission_score_required_display'] }}</p>
-                                @if ($qualificationMatch['admission_score_required_display'] !== 'N/A' && $qualificationMatch['admission_score_label'] !== 'Score')
-                                    <p class="mt-1 text-xs font-semibold uppercase text-neutral-500">{{ $qualificationMatch['admission_score_label'] }}</p>
-                                @endif
-                            </div>
-                            <div class="rounded-xl border border-white/10 bg-white p-3 text-neutral-950">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Your {{ $qualificationMatch['admission_score_label'] }}</p>
-                                <p class="mt-1 text-2xl font-bold">{{ $qualificationMatch['admission_score_actual_display'] }}</p>
-                            </div>
-                            <div class="rounded-xl border border-white/10 bg-white p-3 text-neutral-950">
-                                <p class="text-xs font-bold uppercase text-neutral-500">{{ $qualificationMatch['admission_score_label'] }} gap</p>
-                                <p class="mt-1 text-2xl font-bold">{{ $qualificationMatch['admission_score_gap_display'] }}</p>
-                            </div>
-                            <div class="rounded-xl border border-white/10 bg-white p-3 text-neutral-950">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Closes</p>
-                                <p class="mt-1 text-sm font-bold">{{ $qualificationMatch['closing_label'] }}</p>
-                            </div>
-                        </div>
-
-                        <div class="mt-4 rounded-xl bg-white p-4 text-neutral-950">
-                            <p class="text-sm font-bold">Still needed</p>
-                            @if ($qualificationMatch['requires_manual_review'])
-                                <p class="mt-2 text-sm font-semibold text-sky-700">Check the published notes. This qualification has requirements that are not fully machine-checkable yet.</p>
-                            @elseif ($qualificationMatch['admission_score_gap'] === 0.0 && count($qualificationMatch['missing_requirements']) === 0 && count($qualificationMatch['missing_score_components']) === 0)
-                                <p class="mt-2 text-sm font-semibold text-emerald-700">Nothing missing based on your current marks.</p>
-                            @else
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    @if ($qualificationMatch['admission_score_gap'] > 0)
-                                        <span class="rounded-full bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700">
-                                            {{ $qualificationMatch['admission_score_label'] }}
-                                            {{ $qualificationMatch['admission_score_type'] === 'pass_type' ? $qualificationMatch['admission_score_gap_display'] : '+'.$qualificationMatch['admission_score_gap_display'] }}
-                                        </span>
-                                    @endif
-                                    @foreach ($qualificationMatch['missing_requirements'] as $requirement)
-                                        <span class="rounded-full bg-rose-50 px-3 py-1 text-xs font-bold text-rose-700">{{ $requirement }}</span>
-                                    @endforeach
-                                    @foreach ($qualificationMatch['missing_score_components'] as $component)
-                                        <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-bold text-sky-700">{{ $component }}</span>
-                                    @endforeach
-                                </div>
-                            @endif
-                        </div>
-
-                        @if (count($qualificationMatch['met_requirements']) > 0)
-                            <div class="mt-3 rounded-xl bg-white p-4 text-neutral-950">
-                                <p class="text-sm font-bold">Met requirements</p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    @foreach ($qualificationMatch['met_requirements'] as $requirement)
-                                        <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">{{ $requirement }}</span>
-                                    @endforeach
-                                </div>
-                            </div>
-                        @endif
-                    </section>
-                @else
-                    <section class="rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-5 text-white shadow-sm" aria-labelledby="full-match-heading">
-                        <h2 id="full-match-heading" class="text-xl font-bold">{{ $isTvetCollegeQualification ? 'Review college requirements first' : 'Review requirements first' }}</h2>
-                        <p class="mt-3 text-sm leading-6 text-white/80">
-                            Browse the published score, subjects, notes and related qualifications here. Add marks later when you want Chamu to turn this into a personal comparison.
-                        </p>
-                        <div class="mt-5 grid gap-2">
-                            <a href="{{ $qualificationAction['url'] }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-bold text-[#01225E] hover:bg-neutral-100" data-analytics-event="seo_match_action_clicked" data-action-kind="{{ $qualificationAction['kind'] }}" data-qualification-id="{{ $qualification->id }}">
-                                {{ $qualificationAction['label'] }} <i data-lucide="{{ $qualificationAction['icon'] }}" style="width:16px;height:16px;"></i>
-                            </a>
-                            @auth
-                                @if ($qualificationAction['kind'] === 'browse_qualifications')
-                                    <a href="{{ route('marks.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
-                                        Add marks when ready <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
-                                    </a>
-                                @endif
-                            @endauth
-                            @guest
-                                <a href="{{ route('register') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
-                                    Create a Free Account <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
-                                </a>
-                            @endguest
-                        </div>
-                    </section>
-                @endif
-
-                <section class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="source-heading">
-                    <h2 id="source-heading" class="text-xl font-bold text-neutral-950">Source and review</h2>
-                    <div class="mt-4 rounded-xl border p-4 text-sm font-semibold leading-6 {{ $sourceToneClasses }}">
-                        <p class="font-bold">{{ $sourceInfo['label'] }}</p>
-                        <p class="mt-2">{{ $sourceInfo['summary'] }}</p>
-                    </div>
-                    <dl class="mt-4 grid gap-3 text-sm">
-                        <div class="flex items-start justify-between gap-4">
-                            <dt class="font-semibold text-neutral-500">Last reviewed</dt>
-                            <dd class="text-right font-bold text-neutral-950">
-                                @if ($sourceInfo['last_reviewed_machine'])
-                                    <time datetime="{{ $sourceInfo['last_reviewed_machine'] }}">{{ $sourceInfo['last_reviewed'] }}</time>
-                                @else
-                                    {{ $sourceInfo['last_reviewed'] }}
-                                @endif
-                            </dd>
-                        </div>
-                        @if ($sourceInfo['source_host'])
-                            <div class="flex items-start justify-between gap-4">
-                                <dt class="font-semibold text-neutral-500">Source host</dt>
-                                <dd class="break-all text-right font-bold text-neutral-950">{{ $sourceInfo['source_host'] }}</dd>
-                            </div>
-                        @endif
-                    </dl>
-                    @if ($sourceInfo['source_url'])
-                        <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-bold hover:bg-neutral-50">
-                            Open source <i data-lucide="external-link" style="width:16px;height:16px;"></i>
-                        </a>
-                    @endif
-                </section>
-
-            </aside>
         </div>
 
-        <section class="mx-auto max-w-7xl px-4 pb-10 sm:px-5 lg:px-8" aria-labelledby="related-heading">
+        @unless ($qualificationMatch)
+            <section class="mx-auto max-w-7xl px-4 pb-6 sm:px-5 lg:px-8" aria-labelledby="review-requirements-heading">
+                <div class="rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-6 text-white shadow-sm">
+                    <h2 id="review-requirements-heading" class="text-2xl font-bold">{{ $isTvetCollegeQualification ? 'Review college requirements first' : 'Review requirements first' }}</h2>
+                    <p class="mt-3 max-w-3xl text-sm leading-6 text-white/80">
+                        Browse the published score, subjects, notes and related qualifications here. Add marks later when you want Chamu to turn this into a personal comparison.
+                    </p>
+                    <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                        <a href="{{ $qualificationAction['url'] }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-bold text-[#01225E] hover:bg-neutral-100" data-analytics-event="seo_match_action_clicked" data-action-kind="{{ $qualificationAction['kind'] }}" data-qualification-id="{{ $qualification->id }}">
+                            {{ $qualificationAction['label'] }} <i data-lucide="{{ $qualificationAction['icon'] }}" style="width:16px;height:16px;"></i>
+                        </a>
+                        @auth
+                            @if ($qualificationAction['kind'] === 'browse_qualifications')
+                                <a href="{{ route('marks.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
+                                    Add marks when ready <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
+                                </a>
+                            @endif
+                        @endauth
+                        @guest
+                            <a href="{{ route('register') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
+                                Create a Free Account <i data-lucide="user-plus" style="width:16px;height:16px;"></i>
+                            </a>
+                        @endguest
+                    </div>
+                </div>
+            </section>
+        @endunless
+
+        <section class="mx-auto max-w-7xl px-4 pb-6 sm:px-5 lg:px-8" aria-labelledby="related-heading">
             <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
                 <h2 id="related-heading" class="text-2xl font-bold text-neutral-950">Related qualifications</h2>
                 <div class="mt-5 grid gap-3">
@@ -664,6 +637,39 @@
                         <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600">No related qualifications are listed yet.</p>
                     @endforelse
                 </div>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 pb-10 sm:px-5 lg:px-8" aria-labelledby="source-heading">
+            <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
+                <h2 id="source-heading" class="text-2xl font-bold text-neutral-950">Source and review</h2>
+                <div class="mt-4 rounded-xl border p-4 text-sm font-semibold leading-6 {{ $sourceToneClasses }}">
+                    <p class="font-bold">{{ $sourceInfo['label'] }}</p>
+                    <p class="mt-2">{{ $sourceInfo['summary'] }}</p>
+                </div>
+                <dl class="mt-4 grid gap-3 text-sm sm:grid-cols-2">
+                    <div class="flex items-start justify-between gap-4">
+                        <dt class="font-semibold text-neutral-500">Last reviewed</dt>
+                        <dd class="text-right font-bold text-neutral-950">
+                            @if ($sourceInfo['last_reviewed_machine'])
+                                <time datetime="{{ $sourceInfo['last_reviewed_machine'] }}">{{ $sourceInfo['last_reviewed'] }}</time>
+                            @else
+                                {{ $sourceInfo['last_reviewed'] }}
+                            @endif
+                        </dd>
+                    </div>
+                    @if ($sourceInfo['source_host'])
+                        <div class="flex items-start justify-between gap-4">
+                            <dt class="font-semibold text-neutral-500">Source host</dt>
+                            <dd class="break-all text-right font-bold text-neutral-950">{{ $sourceInfo['source_host'] }}</dd>
+                        </div>
+                    @endif
+                </dl>
+                @if ($sourceInfo['source_url'])
+                    <a href="{{ $sourceInfo['source_url'] }}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-3 text-sm font-bold hover:bg-neutral-50">
+                        Open source <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+                    </a>
+                @endif
             </div>
         </section>
     </main>
