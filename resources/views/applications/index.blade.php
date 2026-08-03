@@ -34,6 +34,10 @@
                     $deliveryIcon = $application->delivery_type === 'postal' ? 'package-check' : 'mail-check';
                     $applicationDate = $application->submitted_at ?? $application->created_at;
                     $documentsCount = (int) $application->documents_count;
+                    $providerEmailLog = $application->emailLogs->firstWhere('email_type', 'bursary_application_provider');
+                    $receiptEmailLog = $application->emailLogs->firstWhere('email_type', 'bursary_application_receipt');
+                    $providerOpenedAt = $providerEmailLog?->last_opened_at;
+                    $receiptOpenedAt = $receiptEmailLog?->last_opened_at;
                 @endphp
 
                 <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
@@ -50,10 +54,10 @@
                                 </span>
                             </div>
 
-                            <h2 class="mt-4 text-2xl font-black leading-tight">{{ $application->bursary_title }}</h2>
-                            <p class="mt-1 font-semibold text-neutral-500">{{ $application->company_name ?? 'Bursary provider' }}</p>
+                            <h2 class="mt-4 text-2xl font-black leading-tight">{{ $application->bursary?->title ?? 'Bursary application' }}</h2>
+                            <p class="mt-1 font-semibold text-neutral-500">{{ $application->bursary?->company?->name ?? 'Bursary provider' }}</p>
 
-                            <div class="mt-4 grid gap-3 text-sm text-neutral-600 sm:grid-cols-2 lg:grid-cols-3">
+                            <div class="mt-4 grid gap-3 text-sm text-neutral-600 sm:grid-cols-2 lg:grid-cols-4">
                                 <div class="rounded-xl bg-neutral-50 p-3">
                                     <p class="text-xs font-black uppercase tracking-[0.12em] text-neutral-500">Documents</p>
                                     <p class="mt-1 font-bold text-neutral-900">{{ $documentsCount }} {{ \Illuminate\Support\Str::plural('document', $documentsCount) }}</p>
@@ -61,10 +65,28 @@
                                 <div class="rounded-xl bg-neutral-50 p-3">
                                     <p class="text-xs font-black uppercase tracking-[0.12em] text-neutral-500">Receipt</p>
                                     <p class="mt-1 font-bold text-neutral-900">{{ $application->receipt_sent_at ? 'Receipt emailed' : 'Receipt pending' }}</p>
+                                    @if ($receiptOpenedAt)
+                                        <p class="mt-1 text-xs font-semibold text-emerald-700">Opened {{ $receiptOpenedAt->format('d M Y') }}</p>
+                                    @endif
                                 </div>
                                 <div class="rounded-xl bg-neutral-50 p-3">
                                     <p class="text-xs font-black uppercase tracking-[0.12em] text-neutral-500">Applied</p>
                                     <p class="mt-1 font-bold text-neutral-900">{{ $applicationDate ? \Illuminate\Support\Carbon::parse($applicationDate)->format('d M Y') : 'Not dated' }}</p>
+                                </div>
+                                <div class="rounded-xl bg-neutral-50 p-3">
+                                    <p class="text-xs font-black uppercase tracking-[0.12em] text-neutral-500">Provider opened</p>
+                                    @if ($application->delivery_type === 'postal')
+                                        <p class="mt-1 font-bold text-neutral-900">Not emailed</p>
+                                    @elseif ($providerOpenedAt)
+                                        <p class="mt-1 font-bold text-emerald-800">{{ $providerOpenedAt->format('d M Y') }}</p>
+                                        <p class="mt-1 text-xs font-semibold text-neutral-500">{{ (int) $providerEmailLog->open_count }} {{ \Illuminate\Support\Str::plural('open', (int) $providerEmailLog->open_count) }}</p>
+                                    @elseif ($providerEmailLog?->status === 'sent')
+                                        <p class="mt-1 font-bold text-neutral-900">Not opened yet</p>
+                                    @elseif ($providerEmailLog?->status === 'failed')
+                                        <p class="mt-1 font-bold text-rose-700">Email failed</p>
+                                    @else
+                                        <p class="mt-1 font-bold text-neutral-900">No signal yet</p>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -83,8 +105,8 @@
                                 <a href="{{ route('applications.postal-pack', $application->id) }}" target="_blank" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-black text-white hover:bg-[#001A48]">
                                     Print postal pack <i data-lucide="printer" style="width:16px;height:16px;"></i>
                                 </a>
-                                @if ($application->source_url)
-                                    <a href="{{ $application->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-neutral-700 ring-1 ring-neutral-200 hover:bg-neutral-100">
+                                @if ($application->bursary?->source_url)
+                                    <a href="{{ $application->bursary->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-neutral-700 ring-1 ring-neutral-200 hover:bg-neutral-100">
                                         Source instructions <i data-lucide="external-link" style="width:16px;height:16px;"></i>
                                     </a>
                                 @endif

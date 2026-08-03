@@ -115,4 +115,9 @@ return [
         'name' => env('MAIL_FROM_NAME', env('APP_NAME', 'Laravel')),
     ],
 
+    'archive' => [
+        'address' => env('MAIL_ARCHIVE_ADDRESS'),
+        'name' => env('MAIL_ARCHIVE_NAME', 'Chamu Email Archive'),
+    ],
+
 ];

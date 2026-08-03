@@ -13,6 +13,7 @@ use App\Models\User;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
 use App\Models\UserSubjectResult;
+use App\Support\Email\EmailDeliveryLogger;
 use App\Support\Social\FacebookGraph;
 use App\Support\Social\InstagramGraph;
 use App\Support\Social\LinkedInGraph;
@@ -182,6 +183,8 @@ class AuthController extends Controller
         try {
             Mail::to($user->email)->send(new WelcomeToChamu($user->first_name ?: $user->name, $userType->name));
         } catch (Throwable $exception) {
+            EmailDeliveryLogger::markFailed($user->email, WelcomeToChamu::class, null, $exception);
+
             report($exception);
         }
 

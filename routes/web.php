@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AccountController as AdminAccountController;
 use App\Http\Controllers\Admin\ActivityLogController as AdminActivityLogController;
 use App\Http\Controllers\Admin\AuditLogController as AdminAuditLogController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\EmailLogController as AdminEmailLogController;
 use App\Http\Controllers\Admin\SiteVisitController as AdminSiteVisitController;
 use App\Http\Controllers\Admin\SocialController as AdminSocialController;
 use App\Http\Controllers\ApplicationController;
@@ -16,6 +17,7 @@ use App\Http\Controllers\ContentController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseMatchController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EmailOpenController;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\LearningController;
 use App\Http\Controllers\MarkController;
@@ -39,6 +41,7 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/privacy-policy', 'pages.privacy')->name('privacy');
 Route::redirect('/privacy', '/privacy-policy');
 Route::view('/terms', 'pages.terms')->name('terms');
+Route::get('/emails/open/{trackingId}', EmailOpenController::class)->name('emails.open');
 
 Route::get('/guides', [GuideController::class, 'index'])->name('guides.index');
 Route::get('/guides/{guide}', [GuideController::class, 'show'])->name('guides.show');
@@ -104,6 +107,8 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->name('admin.')->gro
 
     Route::get('/accounts', [AdminAccountController::class, 'index'])->name('accounts.index');
     Route::get('/accounts/{user}', [AdminAccountController::class, 'show'])->name('accounts.show');
+    Route::get('/emails', [AdminEmailLogController::class, 'index'])->name('emails.index');
+    Route::get('/emails/{emailLog}', [AdminEmailLogController::class, 'show'])->name('emails.show');
     Route::get('/site-visits', [AdminSiteVisitController::class, 'index'])->name('site-visits.index');
     Route::get('/site-visits/{siteVisit}', [AdminSiteVisitController::class, 'show'])->name('site-visits.show');
     Route::get('/activity-logs', [AdminActivityLogController::class, 'index'])->name('activity-logs.index');

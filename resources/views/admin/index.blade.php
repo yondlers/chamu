@@ -17,6 +17,9 @@
                 <a href="{{ route('admin.audit-logs.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                     Audit <i data-lucide="file-search" style="width:16px;height:16px;"></i>
                 </a>
+                <a href="{{ route('admin.emails.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
+                    Emails <i data-lucide="mail-check" style="width:16px;height:16px;"></i>
+                </a>
                 <a href="{{ route('admin.site-visits.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                     Visits <i data-lucide="activity" style="width:16px;height:16px;"></i>
                 </a>
@@ -26,7 +29,7 @@
             </div>
         </div>
 
-        <section class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <section class="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Active now</p>
                 <p class="mt-2 text-3xl font-bold">{{ number_format($activeVisitorCount) }}</p>
@@ -41,6 +44,11 @@
                 <p class="text-xs font-bold uppercase text-neutral-500">Audit logs</p>
                 <p class="mt-2 text-3xl font-bold">{{ number_format($totalAuditLogs) }}</p>
                 <p class="mt-1 text-xs font-semibold text-neutral-500">All admin-visible events</p>
+            </div>
+            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
+                <p class="text-xs font-bold uppercase text-neutral-500">Emails</p>
+                <p class="mt-2 text-3xl font-bold">{{ number_format($totalEmailLogs) }}</p>
+                <p class="mt-1 text-xs font-semibold text-neutral-500">Outbound records</p>
             </div>
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Accounts</p>

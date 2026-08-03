@@ -48,6 +48,10 @@ class AuditLogController extends Controller
             'auditLogs' => $auditLogs,
             'totalAuditLogs' => AuditLog::count(),
             'markAuditLogs' => AuditLog::where('event', 'marks.updated')->count(),
+            'applicationEmailAuditLogs' => AuditLog::whereIn('event', [
+                'bursary_application.email_sent',
+                'bursary_application.email_failed',
+            ])->count(),
         ]);
             
     }

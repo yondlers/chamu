@@ -126,6 +126,12 @@
                 'active' => request()->routeIs('admin.audit-logs.*'),
             ],
             [
+                'label' => 'Emails',
+                'href' => route('admin.emails.index'),
+                'icon' => 'mail-check',
+                'active' => request()->routeIs('admin.emails.*'),
+            ],
+            [
                 'label' => 'Accounts',
                 'href' => route('admin.accounts.index'),
                 'icon' => 'users',

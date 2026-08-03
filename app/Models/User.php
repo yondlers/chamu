@@ -115,6 +115,11 @@ class User extends Authenticatable
         return $this->hasMany(AuditLog::class, 'user_id');
     }
 
+    public function emailLogs(): HasMany
+    {
+        return $this->hasMany(EmailLog::class, 'user_id');
+    }
+
     public function bursaryApplications(): HasMany
     {
         return $this->hasMany(BursaryApplication::class, 'user_id');

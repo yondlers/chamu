@@ -6,6 +6,7 @@ use App\Models\Curriculum;
 use App\Models\Grade;
 use App\Models\User;
 use App\Models\UserType;
+use App\Support\Email\EmailDeliveryLogger;
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
@@ -111,6 +112,8 @@ Artisan::command('mail:test-welcome {email : Email address to receive the welcom
     try {
         Mail::to($email)->send(new WelcomeToChamu($firstName, $accountType));
     } catch (\Throwable $exception) {
+        EmailDeliveryLogger::markFailed($email, WelcomeToChamu::class, null, $exception);
+
         $this->error('Welcome email could not be sent: '.$exception->getMessage());
 
         return Command::FAILURE;

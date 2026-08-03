@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <section class="mb-6 grid gap-3 md:grid-cols-2">
+        <section class="mb-6 grid gap-3 md:grid-cols-3">
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Total audit records</p>
                 <p class="mt-2 text-3xl font-bold">{{ number_format($totalAuditLogs) }}</p>
@@ -23,6 +23,10 @@
             <div class="rounded-2xl border border-neutral-200 bg-white p-4">
                 <p class="text-xs font-bold uppercase text-neutral-500">Mark updates</p>
                 <p class="mt-2 text-3xl font-bold">{{ number_format($markAuditLogs) }}</p>
+            </div>
+            <div class="rounded-2xl border border-neutral-200 bg-white p-4">
+                <p class="text-xs font-bold uppercase text-neutral-500">Application emails</p>
+                <p class="mt-2 text-3xl font-bold">{{ number_format($applicationEmailAuditLogs) }}</p>
             </div>
         </section>
 

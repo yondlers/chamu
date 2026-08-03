@@ -55,6 +55,11 @@ class BursaryApplication extends Model
         return $this->hasMany(BursaryApplicationDocument::class, 'bursary_application_id');
     }
 
+    public function emailLogs(): HasMany
+    {
+        return $this->hasMany(EmailLog::class, 'bursary_application_id');
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id');

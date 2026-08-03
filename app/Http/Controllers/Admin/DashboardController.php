@@ -7,6 +7,7 @@ use App\Mail\WelcomeToChamu;
 use App\Models\AuditLog;
 use App\Models\Bursary;
 use App\Models\BursaryDocumentRequirement;
+use App\Models\EmailLog;
 use App\Models\SiteVisit;
 use App\Models\SocialPost;
 use App\Models\SocialPostResponse;
@@ -63,6 +64,7 @@ class DashboardController extends Controller
         $totalAccounts = User::count();
         $totalVisits = SiteVisit::count();
         $totalAuditLogs = AuditLog::count();
+        $totalEmailLogs = EmailLog::count();
         $totalSocialChannels = count($socialChannels);
         $accounts = User::query()
             ->with(['userType', 'curriculum', 'grade', 'province'])
@@ -84,6 +86,7 @@ class DashboardController extends Controller
             'totalAccounts' => $totalAccounts,
             'totalVisits' => $totalVisits,
             'totalAuditLogs' => $totalAuditLogs,
+            'totalEmailLogs' => $totalEmailLogs,
             'totalSocialChannels' => $totalSocialChannels,
             'socialChannels' => $socialChannels,
             'accounts' => $accounts,

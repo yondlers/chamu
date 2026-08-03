@@ -10,6 +10,7 @@ use App\Models\BursaryApplicationDocument;
 use App\Models\BursaryDocumentRequirement;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
+use App\Support\Email\EmailDeliveryLogger;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
@@ -241,16 +242,33 @@ class BursaryApplicationController extends Controller
             return $application->load(['bursary.company', 'documents.requirement', 'user']);
         });
 
-        try {
-            if ($deliveryType === 'email') {
+        if ($deliveryType === 'email') {
+            try {
                 Mail::to($providerEmail)->send(new BursaryApplicationSubmitted($application));
+            } catch (Throwable $exception) {
+                EmailDeliveryLogger::markFailed($providerEmail, BursaryApplicationSubmitted::class, $application, $exception);
+
+                $application->forceFill([
+                    'status' => 'failed',
+                    'metadata' => array_merge($application->metadata ?? [], [
+                        'mail_error' => $exception->getMessage(),
+                    ]),
+                ])->save();
+
+                report($exception);
+
+                return back()
+                    ->withInput($request->except('documents'))
+                    ->withErrors(['application' => 'We saved your application, but the email could not be sent. Please try again.']);
             }
+        }
 
-            $application->forceFill([
-                'status' => $deliveryType === 'postal' ? 'postal_ready' : 'submitted',
-                'submitted_at' => now(),
-            ])->save();
+        $application->forceFill([
+            'status' => $deliveryType === 'postal' ? 'postal_ready' : 'submitted',
+            'submitted_at' => now(),
+        ])->save();
 
+        try {
             Mail::to($application->applicant_email)->send(new BursaryApplicationReceipt(
                 $application->fresh(['bursary.company', 'documents.requirement', 'user'])
             ));
@@ -259,20 +277,21 @@ class BursaryApplicationController extends Controller
                 'receipt_sent_at' => now(),
             ])->save();
         } catch (Throwable $exception) {
+            EmailDeliveryLogger::markFailed($application->applicant_email, BursaryApplicationReceipt::class, $application, $exception);
+
             $application->forceFill([
-                'status' => 'failed',
                 'metadata' => array_merge($application->metadata ?? [], [
-                    'mail_error' => $exception->getMessage(),
+                    'receipt_mail_error' => $exception->getMessage(),
                 ]),
             ])->save();
 
             report($exception);
 
-            return back()
-                ->withInput($request->except('documents'))
-                ->withErrors(['application' => $deliveryType === 'postal'
-                    ? 'We saved your postal pack, but the receipt email could not be sent. Please try again.'
-                    : 'We saved your application, but the email could not be sent. Please try again.']);
+            return redirect()
+                ->route('bursaries.show', $bursary)
+                ->with('status', $deliveryType === 'postal'
+                    ? 'Chamu prepared your postal bursary pack. The receipt email could not be sent, but you can print the pack from your applications.'
+                    : 'Chamu sent your bursary application. The receipt email could not be sent, but your application history still shows the submission.');
         }
 
         return redirect()

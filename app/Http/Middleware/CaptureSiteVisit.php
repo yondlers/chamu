@@ -40,6 +40,7 @@ class CaptureSiteVisit
     {
         return in_array($request->method(), ['GET', 'HEAD'], true)
             && ! $request->is('admin*')
+            && ! $request->routeIs('emails.open')
             && ! $request->is('up')
             && ! $request->is('favicon.ico')
             && ! $request->is('images/*')
