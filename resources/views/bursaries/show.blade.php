@@ -447,22 +447,33 @@
                     </ul>
                 </section>
 
-                @if ($relatedBursaries->isNotEmpty())
-                    <section class="rounded-xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="related-bursaries-heading">
-                        <h2 id="related-bursaries-heading" class="text-lg font-black">Related bursaries</h2>
-                        <div class="mt-4 grid gap-3">
-                            @foreach ($relatedBursaries as $related)
-                                <a href="{{ route('bursaries.show', ['bursary' => $related->id]) }}" class="block rounded-xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-white">
-                                    <span class="block text-sm font-black text-neutral-950">{{ $related->title }}</span>
-                                    <span class="mt-1 block text-xs font-bold text-neutral-500">{{ $related->company_name ?? 'Provider' }} · {{ $related->category ?? 'Bursary' }}</span>
-                                    <span class="mt-2 block text-xs font-bold text-[#01225E]">{{ $related->closing_date_label ?? 'Closing date to confirm' }}</span>
-                                </a>
-                            @endforeach
-                        </div>
-                    </section>
-                @endif
             </aside>
         </section>
+
+        @if ($relatedBursaries->isNotEmpty())
+            <section class="mx-auto max-w-7xl px-5 pb-10 lg:px-8" aria-labelledby="related-bursaries-heading">
+                <div class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
+                    <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                        <div>
+                            <h2 id="related-bursaries-heading" class="text-2xl font-black">Related bursaries</h2>
+                            <p class="mt-2 text-sm font-semibold text-neutral-500">Similar funding opportunities based on provider, field or category.</p>
+                        </div>
+                        <a href="{{ route('bursaries.index', ['category' => $bursary->category]) }}" class="inline-flex w-fit items-center gap-2 text-sm font-black text-[#01225E] hover:text-[#001A48]">
+                            Browse more <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                        </a>
+                    </div>
+                    <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                        @foreach ($relatedBursaries as $related)
+                            <a href="{{ route('bursaries.show', ['bursary' => $related->id]) }}" class="block rounded-xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-white">
+                                <span class="block text-sm font-black text-neutral-950">{{ $related->title }}</span>
+                                <span class="mt-1 block text-xs font-bold text-neutral-500">{{ $related->company_name ?? 'Provider' }} · {{ $related->category ?? 'Bursary' }}</span>
+                                <span class="mt-2 block text-xs font-bold text-[#01225E]">{{ $related->closing_date_label ?? 'Closing date to confirm' }}</span>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        @endif
 
         @auth
             @if ($canApplyWithChamu)

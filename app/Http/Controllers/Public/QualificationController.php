@@ -50,7 +50,7 @@ class QualificationController extends Controller
         );
         $durationLabel = $this->durationLabel($qualification->duration_years);
         $relatedQualifications = $university->qualifications()
-            ->with(['faculty', 'qualificationType'])
+            ->with(['university', 'faculty', 'qualificationType'])
             ->whereKeyNot($qualification->id)
             ->when($qualification->faculty_id !== null, fn ($query) => $query->where('faculty_id', $qualification->faculty_id))
             ->orderBy('name')

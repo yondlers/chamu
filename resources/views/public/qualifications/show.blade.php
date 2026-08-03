@@ -640,20 +640,31 @@
                     @endif
                 </section>
 
-                <section class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" aria-labelledby="related-heading">
-                    <h2 id="related-heading" class="text-xl font-bold text-neutral-950">Related qualifications</h2>
-                    <div class="mt-4 grid gap-3">
-                        @forelse ($relatedQualifications as $related)
-                            <a href="{{ route('public.qualifications.show', ['university' => $university->slug, 'qualification' => $related->slug]) }}" class="block rounded-xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-white">
-                                <span class="block font-bold text-neutral-950">{{ $related->name }}</span>
-                                <span class="mt-1 block text-sm font-semibold text-neutral-500">{{ $related->qualificationType?->name ?? 'Qualification' }}</span>
-                            </a>
-                        @empty
-                            <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600">No related qualifications are listed yet.</p>
-                        @endforelse
-                    </div>
-                </section>
             </aside>
         </div>
+
+        <section class="mx-auto max-w-7xl px-4 pb-10 sm:px-5 lg:px-8" aria-labelledby="related-heading">
+            <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
+                <h2 id="related-heading" class="text-2xl font-bold text-neutral-950">Related qualifications</h2>
+                <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                    @forelse ($relatedQualifications as $related)
+                        @php
+                            $relatedUniversity = $related->university ?? $university;
+                            $relatedUniversityName = $relatedUniversity->abbreviation ?: $relatedUniversity->name;
+                            $relatedUniversitySlug = $relatedUniversity->slug ?: $university->slug;
+                        @endphp
+                        <a href="{{ route('public.qualifications.show', ['university' => $relatedUniversitySlug, 'qualification' => $related->slug]) }}" class="block rounded-xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-white">
+                            <span class="block font-bold text-neutral-950">{{ $related->name }}</span>
+                            <span class="mt-1 block text-sm font-semibold text-neutral-500">{{ $relatedUniversityName }} / {{ $related->qualificationType?->name ?? 'Qualification' }}</span>
+                            @if ($related->faculty)
+                                <span class="mt-2 block text-xs font-bold uppercase text-[#01225E]">{{ $related->faculty->name }}</span>
+                            @endif
+                        </a>
+                    @empty
+                        <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600 md:col-span-2 xl:col-span-3">No related qualifications are listed yet.</p>
+                    @endforelse
+                </div>
+            </div>
+        </section>
     </main>
 @endsection
