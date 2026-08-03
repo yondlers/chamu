@@ -71,6 +71,7 @@ class SitemapController extends Controller
     private function writeStaticPages(XMLWriter $writer): void
     {
         $routeNames = [
+            'home',
             'aps.index',
             'learn.index',
             'guides.index',
