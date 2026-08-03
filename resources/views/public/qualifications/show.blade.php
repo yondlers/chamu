@@ -89,6 +89,41 @@
         $entryGradeContext = $isTvetCollegeQualification || $usesAggregateAverageAdmission
             ? null
             : 'Provisional acceptance can use Grade 11 final marks or Grade 12 mid-year marks; final acceptance depends on final Grade 12 NSC results.';
+        $qualificationDetailCards = collect([
+            [
+                'label' => 'Type',
+                'value' => $qualification->qualificationType?->name ?? 'Not listed',
+                'hint' => null,
+            ],
+            [
+                'label' => 'NQF',
+                'value' => $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : 'Confirm in source',
+                'hint' => null,
+            ],
+            [
+                'label' => 'Entry grade',
+                'value' => $entryGradeDisplay,
+                'hint' => $entryGradeContext,
+            ],
+            [
+                'label' => 'Duration',
+                'value' => $durationLabel ?? 'Confirm in source',
+                'hint' => null,
+            ],
+        ]);
+
+        if ($closingLabel) {
+            $qualificationDetailCards->push([
+                'label' => 'Application closing date',
+                'value' => $closingLabel,
+                'hint' => null,
+            ]);
+        }
+
+        $collegeAdmissionCards = collect($collegeAdmissionSummary['cards'] ?? [])
+            ->reject(fn (array $card) => in_array($card['label'] ?? '', ['Entry grade / NQF route', 'Programme type', 'NQF'], true))
+            ->values();
+
         $eligibilityText = $isTvetCollegeQualification
             ? 'Use the entry details above as a first screen, then confirm campus space and selection steps.'
             : 'Use the requirements above as a first screen; provisional review may use Grade 11 or Grade 12 mid-year results.';
@@ -203,35 +238,6 @@
                             <h2 class="mt-1 text-lg font-bold leading-snug text-neutral-950">{{ $university->name }}</h2>
                         </div>
 
-                        <dl class="grid gap-3">
-                            <div class="mt-5 grid grid-cols-2 gap-3">
-                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                    <dt class="text-xs font-bold uppercase text-neutral-500">Type</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->qualificationType?->name ?? 'Not listed' }}</dd>
-                                </div>
-                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                    <dt class="text-xs font-bold uppercase text-neutral-500">NQF</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : 'Confirm in source' }}</dd>
-                                </div>
-                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                    <dt class="text-xs font-bold uppercase text-neutral-500">Entry grade</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $entryGradeDisplay }}</dd>
-                                    @if ($entryGradeContext)
-                                        <p class="mt-1 text-xs font-semibold leading-5 text-neutral-500">{{ $entryGradeContext }}</p>
-                                    @endif
-                                </div>
-                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                    <dt class="text-xs font-bold uppercase text-neutral-500">Duration</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $durationLabel ?? 'Confirm in source' }}</dd>
-                                </div>
-                            </div>
-                            @if ($closingLabel)
-                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                    <dt class="text-xs font-bold uppercase text-neutral-500">Application closing date</dt>
-                                    <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $closingLabel }}</dd>
-                                </div>
-                            @endif
-                        </dl>
                     </aside>
                 </div>
             </div>
@@ -245,7 +251,16 @@
                         <p class="mt-3 max-w-3xl text-sm leading-6 text-neutral-600">{{ $collegeAdmissionSummary['intro'] }}</p>
 
                         <div class="mt-5 grid gap-3">
-                            @foreach ($collegeAdmissionSummary['cards'] as $card)
+                            @foreach ($qualificationDetailCards as $card)
+                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                    <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
+                                    <p class="mt-2 text-xl font-bold text-neutral-950">{{ $card['value'] }}</p>
+                                    @if ($card['hint'])
+                                        <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $card['hint'] }}</p>
+                                    @endif
+                                </div>
+                            @endforeach
+                            @foreach ($collegeAdmissionCards as $card)
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
                                     <p class="mt-2 text-xl font-bold text-neutral-950">{{ $card['value'] }}</p>
@@ -268,11 +283,15 @@
                                     <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $scoreSummary['source'] }}</p>
                                 @endif
                             </div>
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Entry grade</p>
-                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $entryGradeDisplay }}</p>
-                                <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $entryGradeContext ?: 'Use equivalent NC(V), SC, SC(A) or international routes where the source lists them.' }}</p>
-                            </div>
+                            @foreach ($qualificationDetailCards as $card)
+                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                    <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
+                                    <p class="mt-2 text-xl font-bold text-neutral-950">{{ $card['value'] }}</p>
+                                    @if ($card['hint'])
+                                        <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $card['hint'] }}</p>
+                                    @endif
+                                </div>
+                            @endforeach
                         </div>
 
                     </section>
@@ -284,6 +303,15 @@
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
                                     <p class="mt-2 text-2xl font-bold">{{ $card['value'] }}</p>
+                                    @if ($card['hint'])
+                                        <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $card['hint'] }}</p>
+                                    @endif
+                                </div>
+                            @endforeach
+                            @foreach ($qualificationDetailCards as $card)
+                                <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                    <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
+                                    <p class="mt-2 text-xl font-bold text-neutral-950">{{ $card['value'] }}</p>
                                     @if ($card['hint'])
                                         <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $card['hint'] }}</p>
                                     @endif
