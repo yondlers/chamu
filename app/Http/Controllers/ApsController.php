@@ -2,42 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\WelcomeToChamu;
-use App\Models\AuditLog;
 use App\Models\Bursary;
-use App\Models\BursaryDocumentRequirement;
-use App\Models\SiteVisit;
-use App\Models\SocialPost;
-use App\Models\SocialPostResponse;
-use App\Models\User;
-use App\Models\UserApplicationDocument;
-use App\Models\UserApplicationProfile;
-use App\Models\UserSubjectResult;
-use App\Support\Social\FacebookGraph;
-use App\Support\Social\InstagramGraph;
-use App\Support\Social\LinkedInGraph;
-use App\Support\Social\SocialImageStorage;
-use App\Support\Social\SocialMediaConfig;
-use App\Support\Social\ThreadsGraph;
+use App\Models\Qualification;
+use App\Models\University;
+use App\Models\UniversityAdmissionRule;
+use App\Services\Algorithm\MostAppliedQualificationAlgorithm;
 use Illuminate\Http\Request;
-use Illuminate\Http\UploadedFile;
 use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Str;
-use Illuminate\Validation\Rule;
-use Illuminate\Validation\Rules\Password;
-use Throwable;
 
 class ApsController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, MostAppliedQualificationAlgorithm $mostAppliedQualificationAlgorithm)
     {
         if ($request->user() !== null) {
             return redirect()->route('course-match.index', $request->query());
@@ -56,8 +33,8 @@ class ApsController extends Controller
             $requestedUniversityIds[] = $legacyUniversityId;
         }
 
-        $universities = DB::table('universities')
-            ->select('id', 'name', 'abbreviation', 'logo')
+        $universities = University::query()
+            ->select('id', 'name', 'slug', 'abbreviation', 'logo')
             ->orderBy('name')
             ->get();
         $validUniversityIds = $universities
@@ -70,71 +47,52 @@ class ApsController extends Controller
             ->unique()
             ->intersect($validUniversityIds)
             ->values();
-        $qualificationCount = DB::table('qualifications')->count();
-        $bursaryCount = Schema::hasTable('bursaries') ? DB::table('bursaries')->count() : 0;
+        $qualificationCount = Qualification::query()->count();
+        $bursaryCount = Schema::hasTable('bursaries') ? Bursary::query()->count() : 0;
+        $isInitialApsLoad = count($request->query()) === 0;
 
         $qualificationQuery = function () use ($selectedUniversityIds, $search) {
-            return DB::table('qualifications')
-                ->join('universities', 'universities.id', '=', 'qualifications.university_id')
-                ->join('faculties', 'faculties.id', '=', 'qualifications.faculty_id')
-                ->join('qualification_types', 'qualification_types.id', '=', 'qualifications.qualification_type_id')
-                ->when($selectedUniversityIds->isNotEmpty(), fn ($query) => $query->whereIn('qualifications.university_id', $selectedUniversityIds->all()))
+            return Qualification::query()
+                ->with([
+                    'faculty:id,name',
+                    'qualificationType:id,name,abbreviation',
+                    'university:id,name,slug,abbreviation,logo',
+                ])
+                ->when($selectedUniversityIds->isNotEmpty(), fn ($query) => $query->whereIn('university_id', $selectedUniversityIds->all()))
                 ->when($search !== '', function ($query) use ($search) {
                     $query->where(function ($query) use ($search) {
                         $query
-                            ->where('qualifications.name', 'like', '%'.$search.'%')
-                            ->orWhere('faculties.name', 'like', '%'.$search.'%')
-                            ->orWhere('qualification_types.name', 'like', '%'.$search.'%')
-                            ->orWhere('universities.name', 'like', '%'.$search.'%')
-                            ->orWhere('universities.abbreviation', 'like', '%'.$search.'%');
+                            ->where('name', 'like', '%'.$search.'%')
+                            ->orWhereHas('faculty', fn ($query) => $query->where('name', 'like', '%'.$search.'%'))
+                            ->orWhereHas('qualificationType', fn ($query) => $query->where('name', 'like', '%'.$search.'%'))
+                            ->orWhereHas('university', function ($query) use ($search) {
+                                $query
+                                    ->where('name', 'like', '%'.$search.'%')
+                                    ->orWhere('abbreviation', 'like', '%'.$search.'%');
+                            });
                     });
-                })
-                ->select(
-                    'qualifications.id',
-                    'qualifications.name',
-                    'qualifications.slug as qualification_slug',
-                    'qualifications.aps_required',
-                    'qualifications.aggregate_average_required',
-                    'qualifications.admission_score_required',
-                    'qualifications.minimum_pass_type',
-                    'qualifications.duration_years',
-                    'qualifications.is_selection_programme',
-                    'universities.id as university_id',
-                    'universities.name as university_name',
-                    'universities.slug as university_slug',
-                    'universities.abbreviation as university_abbreviation',
-                    'universities.logo as university_logo',
-                    'faculties.id as faculty_id',
-                    'faculties.name as faculty_name',
-                    'qualification_types.name as qualification_type_name',
-                );
+                });
         };
 
-        $courses = $qualificationQuery()
-            ->orderByRaw('(qualifications.admission_score_required IS NULL AND qualifications.aggregate_average_required IS NULL AND qualifications.aps_required IS NULL)')
-            ->orderByRaw('COALESCE(qualifications.admission_score_required, qualifications.aggregate_average_required, qualifications.aps_required)')
-            ->orderBy('universities.name')
-            ->orderBy('qualifications.name')
-            ->paginate(25)
-            ->appends($request->except(['aps_score', 'page']));
+        $allCourses = $qualificationQuery()->get();
+        $courses = $isInitialApsLoad
+            ? $this->paginateCourseCollection(
+                $mostAppliedQualificationAlgorithm->rankForFirstScreen($allCourses),
+                $request,
+                total: $allCourses->count()
+            )
+            : $this->paginateCourseCollection($this->sortCoursesForStandardListing($allCourses), $request);
 
         $courseItems = $courses->getCollection();
-        $admissionRuleAssignments = DB::table('university_admission_rules')
-            ->join('admission_rules', 'admission_rules.id', '=', 'university_admission_rules.admission_rule_id')
-            ->whereIn('university_admission_rules.university_id', $courseItems->pluck('university_id')->unique())
-            ->where('admission_rules.is_active', true)
-            ->select(
-                'university_admission_rules.*',
-                'admission_rules.score_type',
-                'admission_rules.score_label',
-                'admission_rules.score_suffix',
-                'admission_rules.minimum_pass_type as rule_minimum_pass_type',
-            )
+        $admissionRuleAssignments = UniversityAdmissionRule::query()
+            ->with('admissionRule')
+            ->whereIn('university_id', $courseItems->pluck('university_id')->unique()->values()->all())
+            ->whereHas('admissionRule', fn ($query) => $query->where('is_active', true))
             ->get();
 
-        $admissionRuleForCourse = function (object $course) use ($admissionRuleAssignments): ?object {
+        $admissionRuleForCourse = function (Qualification $course) use ($admissionRuleAssignments): ?UniversityAdmissionRule {
             return $admissionRuleAssignments
-                ->filter(function ($assignment) use ($course) {
+                ->filter(function (UniversityAdmissionRule $assignment) use ($course) {
                     if ((int) $assignment->university_id !== (int) $course->university_id) {
                         return false;
                     }
@@ -167,14 +125,15 @@ class ApsController extends Controller
             ? rtrim(rtrim(number_format($score, 1), '0'), '.').$suffix
             : rtrim(rtrim(number_format($score, 1), '0'), '.');
 
-        $courses->through(function ($course) use ($admissionRuleForCourse, $formatScore, $passTypeLabels) {
+        $courses->through(function (Qualification $course) use ($admissionRuleForCourse, $formatScore, $passTypeLabels) {
             $admissionRule = $admissionRuleForCourse($course);
-            $scoreType = $admissionRule->score_type
+            $rule = $admissionRule?->admissionRule;
+            $scoreType = $rule?->score_type
                 ?? ($course->aggregate_average_required !== null ? 'aggregate_average' : 'aps');
             $usesAggregateAverage = $scoreType === 'aggregate_average';
             $usesPassType = $scoreType === 'pass_type';
-            $scoreSuffix = $admissionRule->score_suffix ?? ($usesAggregateAverage ? '%' : null);
-            $requiredPassType = $course->minimum_pass_type ?? $admissionRule->rule_minimum_pass_type ?? null;
+            $scoreSuffix = $rule?->score_suffix ?? ($usesAggregateAverage ? '%' : null);
+            $requiredPassType = $course->minimum_pass_type ?? $rule?->minimum_pass_type ?? null;
             $requiredScore = match (true) {
                 $usesPassType => null,
                 $course->admission_score_required !== null => (float) $course->admission_score_required,
@@ -183,7 +142,14 @@ class ApsController extends Controller
                 default => null,
             };
 
-            $course->admission_score_label = $admissionRule->score_label
+            $course->setAttribute('qualification_slug', $course->slug);
+            $course->setAttribute('university_name', $course->university?->name);
+            $course->setAttribute('university_slug', $course->university?->slug);
+            $course->setAttribute('university_abbreviation', $course->university?->abbreviation);
+            $course->setAttribute('university_logo', $course->university?->logo);
+            $course->setAttribute('faculty_name', $course->faculty?->name);
+            $course->setAttribute('qualification_type_name', $course->qualificationType?->name);
+            $course->admission_score_label = $rule?->score_label
                 ?? match (true) {
                     $usesAggregateAverage => 'Aggregated average',
                     $course->admission_score_required !== null => 'Score',
@@ -212,6 +178,60 @@ class ApsController extends Controller
                 'university_id' => $selectedUniversityIds->first(),
                 'university_ids' => $selectedUniversityIds->all(),
             ],
+        ]);
+    }
+
+    /**
+     * @param  Collection<int, Qualification>  $courses
+     * @return Collection<int, Qualification>
+     */
+    private function sortCoursesForStandardListing(Collection $courses): Collection
+    {
+        return $courses
+            ->sort(function (Qualification $first, Qualification $second) {
+                return $this->standardCourseSortValue($first) <=> $this->standardCourseSortValue($second);
+            })
+            ->values();
+    }
+
+    /**
+     * @return array{0: int, 1: float, 2: string, 3: string}
+     */
+    private function standardCourseSortValue(Qualification $course): array
+    {
+        $score = $this->courseAdmissionScore($course);
+
+        return [
+            $score === null ? 1 : 0,
+            $score ?? PHP_INT_MAX,
+            strtolower((string) $course->university?->name),
+            strtolower((string) $course->name),
+        ];
+    }
+
+    private function courseAdmissionScore(Qualification $course): ?float
+    {
+        return match (true) {
+            $course->admission_score_required !== null => (float) $course->admission_score_required,
+            $course->aggregate_average_required !== null => (float) $course->aggregate_average_required,
+            $course->aps_required !== null => (float) $course->aps_required,
+            default => null,
+        };
+    }
+
+    /**
+     * @param  Collection<int, Qualification>  $courses
+     */
+    private function paginateCourseCollection(Collection $courses, Request $request, int $perPage = 25, ?int $total = null): LengthAwarePaginator
+    {
+        $page = max(1, LengthAwarePaginator::resolveCurrentPage());
+        $items = $courses
+            ->slice(($page - 1) * $perPage, $perPage)
+            ->values();
+
+        return new LengthAwarePaginator($items, $total ?? $courses->count(), $perPage, $page, [
+            'path' => $request->url(),
+            'query' => $request->except(['aps_score', 'page']),
         ]);
     }
 }
