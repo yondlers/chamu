@@ -462,7 +462,7 @@
                             Browse more <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                         </a>
                     </div>
-                    <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                    <div class="mt-5 grid gap-3">
                         @foreach ($relatedBursaries as $related)
                             <a href="{{ route('bursaries.show', ['bursary' => $related->id]) }}" class="block rounded-xl border border-neutral-200 bg-neutral-50 p-4 hover:bg-white">
                                 <span class="block text-sm font-black text-neutral-950">{{ $related->title }}</span>

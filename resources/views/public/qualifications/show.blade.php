@@ -646,7 +646,7 @@
         <section class="mx-auto max-w-7xl px-4 pb-10 sm:px-5 lg:px-8" aria-labelledby="related-heading">
             <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
                 <h2 id="related-heading" class="text-2xl font-bold text-neutral-950">Related qualifications</h2>
-                <div class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                <div class="mt-5 grid gap-3">
                     @forelse ($relatedQualifications as $related)
                         @php
                             $relatedUniversity = $related->university ?? $university;
@@ -661,7 +661,7 @@
                             @endif
                         </a>
                     @empty
-                        <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600 md:col-span-2 xl:col-span-3">No related qualifications are listed yet.</p>
+                        <p class="rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-4 text-sm text-neutral-600">No related qualifications are listed yet.</p>
                     @endforelse
                 </div>
             </div>
