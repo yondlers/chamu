@@ -20,4 +20,9 @@ class RequirementSeeder extends UniversityRequirementSeeder
     {
         return 'seeders/Universities/UJ/Requirements/*.json';
     }
+
+    protected function defaultSourceUrl(): ?string
+    {
+        return 'https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf';
+    }
 }
