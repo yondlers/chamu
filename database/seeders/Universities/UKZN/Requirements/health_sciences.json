@@ -187,6 +187,9 @@
             "qualification_type": "Bachelor",
             "duration_years": 6.0,
             "aps_required": null,
+            "aggregate_average_required": 65,
+            "admission_rule_code": "nsc_aggregate_including_lo",
+            "admission_rule_notes": "UKZN Degree Requirements Guide lists Medicine and Surgery with no APS range and an aggregate of 65%.",
             "selection_programme": false,
             "notes": [
                 "CAO codes: KN-M-MBC.",

@@ -2,6 +2,8 @@
 
 namespace Database\Seeders\Universities;
 
+use App\Models\AdmissionRule;
+use App\Models\UniversityAdmissionRule;
 use Database\Seeders\UniversityLogoSeeder;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -10,6 +12,8 @@ use Illuminate\Support\Str;
 
 abstract class UniversityRequirementSeeder extends Seeder
 {
+    use SeedsCareerRelationships;
+
     abstract protected function abbreviation(): string;
 
     abstract protected function universityName(): string;
@@ -46,6 +50,16 @@ abstract class UniversityRequirementSeeder extends Seeder
         return true;
     }
 
+    protected function defaultSourceUrl(): ?string
+    {
+        return null;
+    }
+
+    protected function qualificationAdmissionRuleCode(array $qualificationData, array $facultyData): ?string
+    {
+        return $qualificationData['admission_rule_code'] ?? null;
+    }
+
     public function run(): void
     {
         $facultyFiles = glob(database_path($this->requirementsPath())) ?: [];
@@ -70,6 +84,24 @@ abstract class UniversityRequirementSeeder extends Seeder
                 foreach ($facultyData['qualifications'] as $qualificationData) {
                     $qualificationTypeId = $this->qualificationTypeId($qualificationData['qualification_type']);
                     $qualificationId = $this->qualificationId($qualificationData, $facultyData, $universityId, $facultyId, $qualificationTypeId, $gradeIdsByName);
+                    $qualificationAdmissionRuleCode = $this->qualificationAdmissionRuleCode($qualificationData, $facultyData);
+
+                    if ($qualificationAdmissionRuleCode !== null) {
+                        $this->assignQualificationAdmissionRule(
+                            $universityId,
+                            $facultyId,
+                            $qualificationId,
+                            $gradeIdsByName['Grade 12'] ?? null,
+                            $qualificationAdmissionRuleCode,
+                            $qualificationData['admission_rule_notes'] ?? null,
+                        );
+                    }
+
+                    $this->syncCareerRelationships(
+                        $qualificationId,
+                        $qualificationData,
+                        $qualificationData['source_url'] ?? $facultyData['source_url'] ?? $this->defaultSourceUrl(),
+                    );
 
                     DB::table('qualification_subject_requirements')
                         ->where('qualification_id', $qualificationId)
@@ -302,6 +334,43 @@ abstract class UniversityRequirementSeeder extends Seeder
         );
     }
 
+    private function assignQualificationAdmissionRule(
+        int $universityId,
+        int $facultyId,
+        int $qualificationId,
+        ?int $gradeId,
+        string $admissionRuleCode,
+        ?string $notes = null
+    ): void {
+        $admissionRule = AdmissionRule::all()
+            ->first(fn (AdmissionRule $rule) => $rule->code === $admissionRuleCode);
+
+        if ($admissionRule === null) {
+            return;
+        }
+
+        $universityAdmissionRule = UniversityAdmissionRule::all()
+            ->first(function (UniversityAdmissionRule $rule) use ($universityId, $facultyId, $qualificationId, $admissionRule): bool {
+                return (int) $rule->university_id === $universityId
+                    && (int) $rule->faculty_id === $facultyId
+                    && (int) $rule->qualification_id === $qualificationId
+                    && (int) $rule->admission_rule_id === (int) $admissionRule->id;
+            }) ?? new UniversityAdmissionRule;
+
+        $universityAdmissionRule->fill([
+            'admission_rule_id' => $admissionRule->id,
+            'university_id' => $universityId,
+            'faculty_id' => $facultyId,
+            'qualification_id' => $qualificationId,
+            'grade_id' => $gradeId,
+            'priority' => 10,
+            'is_default' => false,
+            'overrides' => null,
+            'notes' => $notes,
+        ]);
+        $universityAdmissionRule->save();
+    }
+
     private function facultyId(array $facultyData, int $universityId): int
     {
         $now = now();
@@ -357,7 +426,7 @@ abstract class UniversityRequirementSeeder extends Seeder
             'closing_day' => $qualificationData['closing_day'] ?? $qualificationData['application_closing_day'] ?? null,
             'is_selection_programme' => $qualificationData['is_selection_programme'] ?? $qualificationData['selection_programme'] ?? false,
             'notes' => $this->notes($qualificationData, $facultyData),
-            'source_url' => $qualificationData['source_url'] ?? $facultyData['source_url'] ?? null,
+            'source_url' => $qualificationData['source_url'] ?? $facultyData['source_url'] ?? $this->defaultSourceUrl(),
             'updated_at' => $now,
             'created_at' => $now,
         ];
@@ -570,10 +639,6 @@ abstract class UniversityRequirementSeeder extends Seeder
 
         if (! empty($qualificationData['possible_further_studies'])) {
             $notes[] = 'Possible further studies: '.$this->listValue($qualificationData['possible_further_studies']).'.';
-        }
-
-        if (! empty($qualificationData['possible_careers'])) {
-            $notes[] = 'Possible careers: '.$this->listValue($qualificationData['possible_careers']).'.';
         }
 
         if (! empty($qualificationData['source_reviewed']) || ! empty($facultyData['source_reviewed'])) {

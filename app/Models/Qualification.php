@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
 
@@ -86,6 +87,18 @@ class Qualification extends Model
     public function qualificationSubjectRequirements(): HasMany
     {
         return $this->hasMany(QualificationSubjectRequirement::class, 'qualification_id');
+    }
+
+    public function careers(): BelongsToMany
+    {
+        return $this->belongsToMany(Career::class, 'career_qualification', 'qualification_id', 'career_id')
+            ->withPivot(['sort_order', 'notes'])
+            ->withTimestamps();
+    }
+
+    public function careerQualifications(): HasMany
+    {
+        return $this->hasMany(CareerQualification::class, 'qualification_id');
     }
 
     public function admissionScoreVariants(): HasMany

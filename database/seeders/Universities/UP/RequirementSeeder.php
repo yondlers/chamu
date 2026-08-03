@@ -2,6 +2,7 @@
 
 namespace Database\Seeders\Universities\UP;
 
+use Database\Seeders\Universities\SeedsCareerRelationships;
 use Database\Seeders\UniversityLogoSeeder;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -10,6 +11,8 @@ use Illuminate\Support\Str;
 
 class RequirementSeeder extends Seeder
 {
+    use SeedsCareerRelationships;
+
     /**
      * Seed the University of Pretoria undergraduate admission requirements.
      */
@@ -94,7 +97,13 @@ class RequirementSeeder extends Seeder
             $facultyId = $this->catalogueFacultyId($programmeData['faculty'], $universityId);
             $qualificationTypeId = $this->qualificationTypeId($programmeData['qualification_type']);
 
-            $this->catalogueQualificationId($programmeData, $universityId, $facultyId, $qualificationTypeId);
+            $qualificationId = $this->catalogueQualificationId($programmeData, $universityId, $facultyId, $qualificationTypeId);
+
+            $this->syncCareerRelationships(
+                $qualificationId,
+                $programmeData,
+                $programmeData['source_url'] ?? null,
+            );
         }
     }
 
@@ -351,10 +360,6 @@ class RequirementSeeder extends Seeder
 
         if (($qualificationData['programme_code'] ?? null) !== null) {
             $notes[] = 'Programme code: '.$qualificationData['programme_code'].'.';
-        }
-
-        if (($qualificationData['career_opportunities'] ?? null) !== null) {
-            $notes[] = 'Career pointers: '.$qualificationData['career_opportunities'];
         }
 
         if (($qualificationData['closing_month'] ?? null) !== null && ($qualificationData['closing_day'] ?? null) !== null) {

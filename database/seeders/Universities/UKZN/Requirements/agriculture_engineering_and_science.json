@@ -15,6 +15,20 @@
                 "APS range: 48-30.",
                 "Additional UKZN requirements: NSC Degree."
             ],
+            "possible_careers": [
+                {
+                    "name": "AI Engineer",
+                    "salary_expectation": "1,350,000 ZAR p.a"
+                },
+                {
+                    "name": "Software Architect",
+                    "salary_expectation": "650,000 ZAR p.a"
+                },
+                {
+                    "name": "Network Engineer",
+                    "salary_expectation": "350,000 ZAR p.a"
+                }
+            ],
             "subject_requirements": [
                 {
                     "subject": "Mathematics",

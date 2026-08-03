@@ -89,21 +89,6 @@
         $entryGradeContext = $isTvetCollegeQualification || $usesAggregateAverageAdmission
             ? null
             : 'Provisional acceptance can use Grade 11 final marks or Grade 12 mid-year marks; final acceptance depends on final Grade 12 NSC results.';
-        $subjectRequirementSummary = $qualification->qualificationSubjectRequirements
-            ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id)
-            ->map(function ($group) use ($admissionInfo) {
-                return $group
-                    ->map(function ($requirement) use ($admissionInfo) {
-                        $label = $requirement->minimum_mark !== null
-                            ? (int) $requirement->minimum_mark.'%'
-                            : $admissionInfo->requirementLabel($requirement);
-
-                        return trim(($requirement->subject_name ?: $requirement->subject?->name ?: 'Subject').' '.$label);
-                    })
-                    ->implode(' or ');
-            })
-            ->filter()
-            ->implode('; ');
         $eligibilityText = $isTvetCollegeQualification
             ? 'Use the entry details above as a first screen, then confirm campus space and selection steps.'
             : 'Use the requirements above as a first screen; provisional review may use Grade 11 or Grade 12 mid-year results.';
@@ -140,6 +125,22 @@
             ->map(fn ($note) => trim((string) $note))
             ->filter()
             ->unique()
+            ->values();
+        $universityLogoSrc = null;
+        $universityLogo = trim((string) $university->logo);
+
+        if ($universityLogo !== '') {
+            $logoIsAbsolute = str_starts_with($universityLogo, 'http://')
+                || str_starts_with($universityLogo, 'https://')
+                || str_starts_with($universityLogo, '/');
+
+            $universityLogoSrc = $logoIsAbsolute ? $universityLogo : asset($universityLogo);
+        }
+
+        $universityInitials = strtoupper(substr(preg_replace('/[^A-Za-z0-9]/', '', (string) ($university->abbreviation ?: $university->name)) ?: 'UNI', 0, 3));
+        $possibleCareers = $qualification->careers
+            ->filter(fn ($career) => $career->is_active)
+            ->sortBy(fn ($career) => sprintf('%010d|%s', (int) ($career->pivot?->sort_order ?? 0), $career->name))
             ->values();
     @endphp
 
@@ -189,18 +190,21 @@
                         </div>
                     </div>
 
-                    <aside class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" aria-label="Qualification summary">
-                        <dl class="grid gap-3">
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <dt class="text-xs font-bold uppercase text-neutral-500">{{ $isTvetCollegeQualification ? $collegeAdmissionSummary['summary_label'] : $scoreSummary['label'] }}</dt>
-                                <dd class="mt-2 text-3xl font-bold text-neutral-950">{{ $isTvetCollegeQualification ? $collegeAdmissionSummary['summary_value'] : $scoreSummary['value'] }}</dd>
-                                @if ($isTvetCollegeQualification)
-                                    <p class="mt-1 text-xs font-semibold text-neutral-500">{{ $collegeAdmissionSummary['summary_source'] }}</p>
-                                @elseif ($scoreSummary['source'])
-                                    <p class="mt-1 text-xs font-semibold text-neutral-500">{{ $scoreSummary['source'] }}</p>
+                    <aside class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" aria-label="University and qualification summary">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="flex h-32 w-full items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 p-5">
+                                @if ($universityLogoSrc)
+                                    <img src="{{ $universityLogoSrc }}" alt="{{ $university->name }} logo" class="max-h-24 max-w-full object-contain">
+                                @else
+                                    <span class="text-3xl font-black text-[#01225E]">{{ $universityInitials }}</span>
                                 @endif
                             </div>
-                            <div class="grid grid-cols-2 gap-3">
+                            <p class="mt-4 text-xs font-bold uppercase text-neutral-500">University</p>
+                            <h2 class="mt-1 text-lg font-bold leading-snug text-neutral-950">{{ $university->name }}</h2>
+                        </div>
+
+                        <dl class="grid gap-3">
+                            <div class="mt-5 grid grid-cols-2 gap-3">
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <dt class="text-xs font-bold uppercase text-neutral-500">Type</dt>
                                     <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->qualificationType?->name ?? 'Not listed' }}</dd>
@@ -210,7 +214,7 @@
                                     <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : 'Confirm in source' }}</dd>
                                 </div>
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                    <dt class="text-xs font-bold uppercase text-neutral-500">{{ $isTvetCollegeQualification || $usesPassTypeAdmission ? 'Entry grade' : 'Grade' }}</dt>
+                                    <dt class="text-xs font-bold uppercase text-neutral-500">Entry grade</dt>
                                     <dd class="mt-2 text-sm font-bold text-neutral-950">{{ $entryGradeDisplay }}</dd>
                                     @if ($entryGradeContext)
                                         <p class="mt-1 text-xs font-semibold leading-5 text-neutral-500">{{ $entryGradeContext }}</p>
@@ -237,10 +241,10 @@
             <div class="grid gap-6">
                 @if ($isTvetCollegeQualification && $collegeAdmissionSummary)
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
-                        <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Entry requirements</h2>
+                        <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission Requirements</h2>
                         <p class="mt-3 max-w-3xl text-sm leading-6 text-neutral-600">{{ $collegeAdmissionSummary['intro'] }}</p>
 
-                        <div class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                        <div class="mt-5 grid gap-3">
                             @foreach ($collegeAdmissionSummary['cards'] as $card)
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
@@ -252,11 +256,11 @@
                     </section>
                 @elseif ($usesPassTypeAdmission)
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
-                        <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission requirements</h2>
+                        <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission Requirements</h2>
                         <p class="mt-3 max-w-3xl text-sm leading-6 text-neutral-600">
                             This qualification is checked by pass type and published subject marks rather than APS points.
                         </p>
-                        <div class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                        <div class="mt-5 grid gap-3">
                             <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <p class="text-xs font-bold uppercase text-neutral-500">{{ $scoreSummary['label'] }}</p>
                                 <p class="mt-2 text-xl font-bold text-neutral-950">{{ $scoreSummary['value'] }}</p>
@@ -265,30 +269,17 @@
                                 @endif
                             </div>
                             <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Subject rule</p>
-                                <p class="mt-2 text-base font-bold leading-6 text-neutral-950">{{ $subjectRequirementSummary ?: 'See notes' }}</p>
-                                <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">Alternative school-leaving routes may have different language percentages.</p>
-                            </div>
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                 <p class="text-xs font-bold uppercase text-neutral-500">Entry grade</p>
                                 <p class="mt-2 text-xl font-bold text-neutral-950">{{ $entryGradeDisplay }}</p>
                                 <p class="mt-2 text-xs font-semibold leading-5 text-neutral-500">{{ $entryGradeContext ?: 'Use equivalent NC(V), SC, SC(A) or international routes where the source lists them.' }}</p>
-                            </div>
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <p class="text-xs font-bold uppercase text-neutral-500">Duration</p>
-                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $durationLabel ?? 'See notes' }}</p>
-                            </div>
-                            <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <p class="text-xs font-bold uppercase text-neutral-500">NQF</p>
-                                <p class="mt-2 text-xl font-bold text-neutral-950">{{ $qualification->nqfLevel?->level ? 'Level '.$qualification->nqfLevel->level : 'See notes' }}</p>
                             </div>
                         </div>
 
                     </section>
                 @else
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="admission-heading">
-                        <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission information</h2>
-                        <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                        <h2 id="admission-heading" class="text-2xl font-bold text-neutral-950">Admission Requirements</h2>
+                        <div class="mt-5 grid gap-3">
                             @foreach ($admissionCards as $card)
                                 <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                                     <p class="text-xs font-bold uppercase text-neutral-500">{{ $card['label'] }}</p>
@@ -308,6 +299,64 @@
 
                     </section>
                 @endif
+
+                <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="requirements-heading">
+                    <h2 id="requirements-heading" class="text-2xl font-bold text-neutral-950">Subject Requirements</h2>
+                    <div class="mt-5 grid gap-3">
+                        @forelse ($requirements as $group)
+                            <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <h3 class="text-sm font-bold text-neutral-950">
+                                    {{ $admissionInfo->requirementGroupHeading($group) }}
+                                </h3>
+                                @php
+                                    $choiceGroups = $admissionInfo->requirementChoiceGroups($group);
+                                @endphp
+                                @if ($choiceGroups !== [])
+                                    <div class="mt-3 grid gap-2">
+                                        @foreach ($choiceGroups as $choiceGroup)
+                                            <div class="rounded-lg bg-white px-3 py-2">
+                                                <p class="text-xs font-bold text-neutral-700">{{ $choiceGroup['label'] }}</p>
+                                                <div class="mt-2 flex flex-wrap gap-2">
+                                                    @foreach ($choiceGroup['requirements'] as $requirement)
+                                                        <span class="rounded-full bg-neutral-50 px-3 py-1 text-xs font-bold text-neutral-700">
+                                                            {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
+                                                            {{ $usesPassTypeAdmission && $requirement->minimum_mark !== null ? (int) $requirement->minimum_mark.'%' : $admissionInfo->requirementLabel($requirement) }}
+                                                        </span>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                @else
+                                    <div class="mt-3 flex flex-wrap gap-2">
+                                        @foreach ($group as $requirement)
+                                            <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-neutral-700">
+                                                {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
+                                                {{ $usesPassTypeAdmission && $requirement->minimum_mark !== null ? (int) $requirement->minimum_mark.'%' : $admissionInfo->requirementLabel($requirement) }}
+                                            </span>
+                                        @endforeach
+                                    </div>
+                                @endif
+                                @foreach ($admissionInfo->requirementNotes($group) as $note)
+                                    <p class="mt-2 text-sm text-neutral-600">{{ $note }}</p>
+                                @endforeach
+                            </article>
+                        @empty
+                            <div class="rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm font-semibold leading-6 text-sky-950">
+                                @if ($isTvetCollegeQualification)
+                                    No subject-mark requirements are captured for this college programme yet. Use the entry grade/NQF route and programme notes above, then confirm campus-specific subject rules with the college source.
+                                @else
+                                    Chamu has not captured structured subject rules for this qualification yet. Before applying, confirm required subjects, minimum marks, selection tests, portfolios, interviews, and closing dates on the source page.
+                                @endif
+                                @if ($qualification->source_url)
+                                    <a href="{{ $qualification->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
+                                        Check source requirements <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+                                    </a>
+                                @endif
+                            </div>
+                        @endforelse
+                    </div>
+                </section>
 
                 @if ($qualificationNotes->isNotEmpty())
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="qualification-notes-heading">
@@ -365,67 +414,9 @@
                     </section>
                 @endif
 
-                <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="requirements-heading">
-                    <h2 id="requirements-heading" class="text-2xl font-bold text-neutral-950">Subject requirements</h2>
-                    <div class="mt-5 grid gap-3">
-                        @forelse ($requirements as $group)
-                            <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <h3 class="text-sm font-bold text-neutral-950">
-                                    {{ $admissionInfo->requirementGroupHeading($group) }}
-                                </h3>
-                                @php
-                                    $choiceGroups = $admissionInfo->requirementChoiceGroups($group);
-                                @endphp
-                                @if ($choiceGroups !== [])
-                                    <div class="mt-3 grid gap-2">
-                                        @foreach ($choiceGroups as $choiceGroup)
-                                            <div class="rounded-lg bg-white px-3 py-2">
-                                                <p class="text-xs font-bold text-neutral-700">{{ $choiceGroup['label'] }}</p>
-                                                <div class="mt-2 flex flex-wrap gap-2">
-                                                    @foreach ($choiceGroup['requirements'] as $requirement)
-                                                        <span class="rounded-full bg-neutral-50 px-3 py-1 text-xs font-bold text-neutral-700">
-                                                            {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
-                                                            {{ $usesPassTypeAdmission && $requirement->minimum_mark !== null ? (int) $requirement->minimum_mark.'%' : $admissionInfo->requirementLabel($requirement) }}
-                                                        </span>
-                                                    @endforeach
-                                                </div>
-                                            </div>
-                                        @endforeach
-                                    </div>
-                                @else
-                                    <div class="mt-3 flex flex-wrap gap-2">
-                                        @foreach ($group as $requirement)
-                                            <span class="rounded-full bg-white px-3 py-1 text-xs font-bold text-neutral-700">
-                                                {{ $requirement->subject_name ?: $requirement->subject?->name ?: 'Subject' }}
-                                                {{ $usesPassTypeAdmission && $requirement->minimum_mark !== null ? (int) $requirement->minimum_mark.'%' : $admissionInfo->requirementLabel($requirement) }}
-                                            </span>
-                                        @endforeach
-                                    </div>
-                                @endif
-                                @foreach ($admissionInfo->requirementNotes($group) as $note)
-                                    <p class="mt-2 text-sm text-neutral-600">{{ $note }}</p>
-                                @endforeach
-                            </article>
-                        @empty
-                            <div class="rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm font-semibold leading-6 text-sky-950">
-                                @if ($isTvetCollegeQualification)
-                                    No subject-mark requirements are captured for this college programme yet. Use the entry grade/NQF route and programme notes above, then confirm campus-specific subject rules with the college source.
-                                @else
-                                    Chamu has not captured structured subject rules for this qualification yet. Before applying, confirm required subjects, minimum marks, selection tests, portfolios, interviews, and closing dates on the source page.
-                                @endif
-                                @if ($qualification->source_url)
-                                    <a href="{{ $qualification->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 font-black text-[#01225E] underline">
-                                        Check source requirements <i data-lucide="external-link" style="width:15px;height:15px;"></i>
-                                    </a>
-                                @endif
-                            </div>
-                        @endforelse
-                    </div>
-                </section>
-
                 @if ($rules->isNotEmpty())
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="rules-heading">
-                        <h2 id="rules-heading" class="text-2xl font-bold text-neutral-950">{{ $isTvetCollegeQualification ? 'College matching rule' : 'Relevant admission rules' }}</h2>
+                        <h2 id="rules-heading" class="text-2xl font-bold text-neutral-950">{{ $isTvetCollegeQualification ? 'College matching rule' : 'Relevant Admission Rules' }}</h2>
                         <div class="mt-5 grid gap-3">
                             @foreach ($rules as $rule)
                             <article class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
@@ -457,6 +448,32 @@
                                 @endif
                             </article>
                             @endforeach
+                        </div>
+                    </section>
+                @endif
+
+                @if ($possibleCareers->isNotEmpty())
+                    <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="possible-careers-heading">
+                        <h2 id="possible-careers-heading" class="text-2xl font-bold text-neutral-950">Possible Careers</h2>
+                        <div class="mt-5 overflow-x-auto">
+                            <table class="min-w-full table-auto text-left">
+                                <tbody>
+                                    <tr>
+                                        @foreach ($possibleCareers as $career)
+                                            <th scope="col" class="min-w-44 pb-2 pr-6 align-top text-sm font-bold text-neutral-950">
+                                                {{ $career->name }}
+                                            </th>
+                                        @endforeach
+                                    </tr>
+                                    <tr>
+                                        @foreach ($possibleCareers as $career)
+                                            <td class="min-w-44 pr-6 align-top text-sm font-semibold leading-6 text-neutral-600">
+                                                {{ $career->salary_expectation ?: 'Salary expectation to be confirmed' }}
+                                            </td>
+                                        @endforeach
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </section>
                 @endif

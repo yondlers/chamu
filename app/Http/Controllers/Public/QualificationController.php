@@ -22,6 +22,7 @@ class QualificationController extends Controller
             'qualificationType',
             'nqfLevel',
             'requiredGrade',
+            'careers',
             'qualificationSubjectRequirements' => fn ($query) => $query->orderBy('id'),
             'admissionScoreVariants' => fn ($query) => $query->orderBy('admission_score_required')->orderBy('id'),
         ]);
