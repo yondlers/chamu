@@ -284,17 +284,26 @@
                             'X-CSRF-TOKEN': csrf,
                             'X-Requested-With': 'XMLHttpRequest',
                         },
-                        body: JSON.stringify({
-                            message,
-                            chat_id: chatId,
-                        }),
+                        body: JSON.stringify(
+                            chatId
+                                ? { message, chat_id: chatId }
+                                : { message }
+                        ),
                     });
 
-                    const data = await response.json();
+                    let data = {};
+                    try {
+                        data = await response.json();
+                    } catch (parseError) {
+                        data = {};
+                    }
                     setTyping(false);
 
                     if (!response.ok) {
-                        appendMessage('assistant', data.message || 'Something went wrong. Please try again.');
+                        appendMessage(
+                            'assistant',
+                            data.message || 'Something went wrong. Please try again.'
+                        );
                     } else {
                         chatId = data.chat.id;
                         appendMessage('assistant', data.assistant_message.content);

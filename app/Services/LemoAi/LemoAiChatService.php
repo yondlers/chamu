@@ -79,10 +79,10 @@ class LemoAiChatService
 
     private function generateReply(Chat $chat, string $message): string
     {
-        $context = $this->knowledge->buildContext($message);
-        $history = $this->historyForGemini($chat);
-
         try {
+            $context = $this->knowledge->buildContext($message);
+            $history = $this->historyForGemini($chat);
+
             $model = Gemini::generativeModel(model: 'gemini-2.0-flash')
                 ->withSystemInstruction(Content::parse($this->systemInstruction($context)));
 
@@ -100,6 +100,10 @@ class LemoAiChatService
 
             if (str_contains($detail, 'prepayment') || str_contains($detail, 'billing') || str_contains($detail, 'credit')) {
                 return 'Lemo AI cannot reach Gemini right now because the project billing credits need attention in Google AI Studio. Browse APS and Funding on Chamu in the meantime.';
+            }
+
+            if (str_contains($detail, 'api key') || str_contains($detail, 'api_key') || str_contains($detail, 'unauthenticated')) {
+                return 'Lemo AI is missing a valid Gemini API key on the server. Please set GEMINI_API_KEY and try again.';
             }
 
             return 'Lemo AI is temporarily unavailable. Please try again in a moment, or browse APS and Funding on Chamu while I reconnect.';

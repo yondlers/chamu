@@ -8,6 +8,7 @@ use App\Services\LemoAi\LemoAiChatService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
 
@@ -48,31 +49,51 @@ class LemoAiController extends Controller
 
     public function storeMessage(Request $request): JsonResponse
     {
-        $validated = $request->validate([
-            'message' => ['required', 'string', 'min:1', 'max:4000'],
-            'chat_id' => ['nullable', 'integer', 'exists:chats,id'],
-        ]);
+        try {
+            if (! $this->chatTablesReady()) {
+                return response()->json([
+                    'message' => 'Lemo AI storage is not ready yet. Please run database migrations on the server.',
+                ], 503);
+            }
 
-        $chat = null;
+            $validated = $request->validate([
+                'message' => ['required', 'string', 'min:1', 'max:4000'],
+                'chat_id' => ['nullable', 'integer', 'exists:chats,id'],
+            ]);
 
-        if (! empty($validated['chat_id'])) {
-            $chat = Chat::query()->findOrFail($validated['chat_id']);
-            $this->authorizeChat($request, $chat);
-        } else {
-            $chat = $this->lemoAi->createChat(Auth::user(), $this->guestToken($request));
+            $chatId = $validated['chat_id'] ?? null;
+
+            if (filled($chatId)) {
+                $chat = Chat::query()->findOrFail($chatId);
+                $this->authorizeChat($request, $chat);
+            } else {
+                $chat = $this->lemoAi->createChat(Auth::user(), $this->guestToken($request));
+            }
+
+            $result = $this->lemoAi->sendMessage($chat, trim($validated['message']));
+
+            return response()->json([
+                'chat' => [
+                    'id' => $result['chat']->id,
+                    'title' => $result['chat']->title,
+                    'url' => route('lemo-ai.show', $result['chat']),
+                ],
+                'user_message' => $this->messagePayload($result['user_message']),
+                'assistant_message' => $this->messagePayload($result['assistant_message']),
+            ]);
+        } catch (\Illuminate\Validation\ValidationException $exception) {
+            throw $exception;
+        } catch (\Symfony\Component\HttpKernel\Exception\HttpExceptionInterface $exception) {
+            throw $exception;
+        } catch (\Throwable $exception) {
+            report($exception);
+
+            return response()->json([
+                'message' => app()->hasDebugModeEnabled()
+                    ? $exception->getMessage()
+                    : 'Lemo AI hit a server problem while saving this chat. Please try again in a moment.',
+            ], 500);
         }
-
-        $result = $this->lemoAi->sendMessage($chat, trim($validated['message']));
-
-        return response()->json([
-            'chat' => [
-                'id' => $result['chat']->id,
-                'title' => $result['chat']->title,
-                'url' => route('lemo-ai.show', $result['chat']),
-            ],
-            'user_message' => $this->messagePayload($result['user_message']),
-            'assistant_message' => $this->messagePayload($result['assistant_message']),
-        ]);
     }
 
     private function renderChat(Request $request, ?Chat $chat): View
@@ -129,6 +150,15 @@ class LemoAiController extends Controller
         }
 
         return $token;
+    }
+
+    private function chatTablesReady(): bool
+    {
+        return Schema::hasTable('chats')
+            && Schema::hasTable('chat_messages')
+            && Schema::hasColumn('chats', 'user_id')
+            && Schema::hasColumn('chats', 'guest_token')
+            && Schema::hasColumn('chats', 'title');
     }
 
     /**
