@@ -16,10 +16,21 @@ class ChatMessage extends Model
         'chat_id',
         'role',
         'content',
+        'provider',
+        'model',
     ];
 
     public function chat(): BelongsTo
     {
         return $this->belongsTo(Chat::class, 'chat_id');
+    }
+
+    public function providerLabel(): ?string
+    {
+        if ($this->role !== 'assistant' || blank($this->provider) || $this->provider === 'system') {
+            return null;
+        }
+
+        return app(\App\Services\LemoAi\LemoAiRouter::class)->labelFor($this->provider, $this->model);
     }
 }

@@ -39,6 +39,28 @@
             word-break: break-word;
             line-height: 1.65;
         }
+        .lemo-provider-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: .3rem;
+            margin-top: .55rem;
+            padding: .15rem .5rem;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            background: #e8eef8;
+            color: #01225E;
+        }
+        .lemo-provider-tag.is-groq {
+            background: #ecfdf5;
+            color: #047857;
+        }
+        .lemo-provider-tag.is-system {
+            background: #f3f4f6;
+            color: #525252;
+        }
         .lemo-typing span {
             display: inline-block;
             width: 6px;
@@ -64,11 +86,15 @@
                 'id' => $message->id,
                 'role' => $message->role,
                 'content' => $message->content,
+                'provider' => $message->provider,
+                'provider_label' => $message->providerLabel(),
             ])->values()
             : collect([[
                 'id' => 'greeting',
                 'role' => 'assistant',
                 'content' => $greeting,
+                'provider' => null,
+                'provider_label' => null,
             ]]);
     @endphp
 
@@ -166,6 +192,13 @@
                                 <p class="mb-1 text-[11px] font-bold uppercase tracking-[0.14em] text-[#01225E]/80">Lemo AI</p>
                             @endif
                             <div class="lemo-message-body">{{ $message['content'] }}</div>
+                            @if ($message['role'] === 'assistant' && ! empty($message['provider_label']))
+                                <span @class([
+                                    'lemo-provider-tag',
+                                    'is-groq' => ($message['provider'] ?? null) === 'groq',
+                                    'is-system' => ($message['provider'] ?? null) === 'system',
+                                ])>{{ $message['provider_label'] }}</span>
+                            @endif
                         </div>
                     </div>
                 @endforeach
@@ -216,13 +249,20 @@
                 .replaceAll('"', '&quot;')
                 .replaceAll("'", '&#039;');
 
-            const appendMessage = (role, content) => {
+            const providerTagHtml = (provider, label) => {
+                if (!label) return '';
+                const extra = provider === 'groq' ? ' is-groq' : (provider === 'system' ? ' is-system' : '');
+                return `<span class="lemo-provider-tag${extra}">${escapeHtml(label)}</span>`;
+            };
+
+            const appendMessage = (role, content, meta = {}) => {
                 const wrap = document.createElement('div');
                 wrap.className = `flex ${role === 'user' ? 'justify-end' : 'justify-start'}`;
                 wrap.innerHTML = `
                     <div class="max-w-[min(42rem,92%)] px-4 py-3 text-sm sm:text-[15px] ${role === 'user' ? 'lemo-bubble-user' : 'lemo-bubble-assistant'}">
                         ${role === 'assistant' ? '<p class="mb-1 text-[11px] font-bold uppercase tracking-[0.14em] text-[#01225E]/80">Lemo AI</p>' : ''}
                         <div class="lemo-message-body">${escapeHtml(content)}</div>
+                        ${role === 'assistant' ? providerTagHtml(meta.provider, meta.provider_label) : ''}
                     </div>
                 `;
                 messagesEl.appendChild(wrap);
@@ -302,11 +342,15 @@
                     if (!response.ok) {
                         appendMessage(
                             'assistant',
-                            data.message || 'Something went wrong. Please try again.'
+                            data.message || 'Something went wrong. Please try again.',
+                            { provider: 'system', provider_label: 'System' }
                         );
                     } else {
                         chatId = data.chat.id;
-                        appendMessage('assistant', data.assistant_message.content);
+                        appendMessage('assistant', data.assistant_message.content, {
+                            provider: data.assistant_message.provider,
+                            provider_label: data.assistant_message.provider_label,
+                        });
                         if (window.history && data.chat.url) {
                             window.history.replaceState({}, '', data.chat.url);
                         }

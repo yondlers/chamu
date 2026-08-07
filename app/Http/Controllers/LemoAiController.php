@@ -162,7 +162,7 @@ class LemoAiController extends Controller
     }
 
     /**
-     * @return array{id:int, role:string, content:string, created_at:?string}
+     * @return array{id:int, role:string, content:string, provider:?string, model:?string, provider_label:?string, created_at:?string}
      */
     private function messagePayload(ChatMessage $message): array
     {
@@ -170,6 +170,9 @@ class LemoAiController extends Controller
             'id' => $message->id,
             'role' => $message->role,
             'content' => $message->content,
+            'provider' => $message->provider,
+            'model' => $message->model,
+            'provider_label' => $message->providerLabel(),
             'created_at' => optional($message->created_at)?->toIso8601String(),
         ];
     }

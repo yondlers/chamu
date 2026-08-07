@@ -5,11 +5,7 @@ namespace App\Services\LemoAi;
 use App\Models\Chat;
 use App\Models\ChatMessage;
 use App\Models\User;
-use Gemini\Data\Content;
-use Gemini\Enums\Role;
-use Gemini\Laravel\Facades\Gemini;
 use Illuminate\Support\Str;
-use Throwable;
 
 class LemoAiChatService
 {
@@ -17,6 +13,7 @@ class LemoAiChatService
 
     public function __construct(
         private readonly LemoAiKnowledgeService $knowledge,
+        private readonly LemoAiRouter $router,
     ) {}
 
     public function createChat(?User $user, ?string $guestToken = null): Chat
@@ -33,6 +30,8 @@ class LemoAiChatService
             'chat_id' => $chat->id,
             'role' => 'assistant',
             'content' => self::GREETING,
+            'provider' => 'system',
+            'model' => 'greeting',
         ]);
         $greeting->save();
 
@@ -63,7 +62,9 @@ class LemoAiChatService
         $assistantMessage = new ChatMessage([
             'chat_id' => $chat->id,
             'role' => 'assistant',
-            'content' => $reply,
+            'content' => $reply['content'],
+            'provider' => $reply['provider'],
+            'model' => $reply['model'],
         ]);
         $assistantMessage->save();
 
@@ -77,64 +78,57 @@ class LemoAiChatService
         ];
     }
 
-    private function generateReply(Chat $chat, string $message): string
+    /**
+     * @return array{content:string, provider:string, model:string, label:string}
+     */
+    private function generateReply(Chat $chat, string $message): array
     {
-        try {
-            $context = $this->knowledge->buildContext($message);
-            $history = $this->historyForGemini($chat);
+        $context = $this->knowledge->buildContext($message);
+        $history = $this->historyForRouter($chat);
 
-            $model = Gemini::generativeModel(model: 'gemini-flash-latest')
-                ->withSystemInstruction(Content::parse($this->systemInstruction($context)));
-
-            $chatSession = $model->startChat(history: $history);
-            $response = $chatSession->sendMessage($message);
-            $text = trim((string) $response->text());
-
-            return $text !== ''
-                ? $text
-                : 'I could not generate a clear answer just now. Please try asking again about a university, APS requirement, or bursary.';
-        } catch (Throwable $exception) {
-            report($exception);
-
-            $detail = Str::lower($exception->getMessage());
-
-            if (str_contains($detail, 'prepayment') || str_contains($detail, 'billing') || str_contains($detail, 'credit')) {
-                return 'Lemo AI cannot reach Gemini right now because the project billing credits need attention in Google AI Studio. Browse APS and Funding on Chamu in the meantime.';
-            }
-
-            if (str_contains($detail, 'api key') || str_contains($detail, 'api_key') || str_contains($detail, 'unauthenticated')) {
-                return 'Lemo AI is missing a valid Gemini API key on the server. Please set GEMINI_API_KEY and try again.';
-            }
-
-            return 'Lemo AI is temporarily unavailable. Please try again in a moment, or browse APS and Funding on Chamu while I reconnect.';
-        }
+        return $this->router->generate(
+            systemInstruction: $this->systemInstruction($context),
+            history: $history,
+            userMessage: $message,
+        );
     }
 
     /**
-     * @return list<Content>
+     * @return list<array{role:string, content:string}>
      */
-    private function historyForGemini(Chat $chat): array
+    private function historyForRouter(Chat $chat): array
     {
         $messages = $chat->messages()
             ->where('role', '!=', 'system')
             ->orderBy('id')
             ->get();
 
-        // Exclude the user message just saved; sendMessage adds the latest turn.
+        // Exclude the user message just saved; the router adds the latest turn.
         $messages = $messages->slice(0, max(0, $messages->count() - 1))->values();
 
         $history = [];
 
         foreach ($messages as $message) {
-            if ($message->role === 'user') {
-                $history[] = Content::parse(part: $message->content, role: Role::USER);
-            } elseif ($message->role === 'assistant') {
-                $history[] = Content::parse(part: $message->content, role: Role::MODEL);
+            if (! in_array($message->role, ['user', 'assistant'], true)) {
+                continue;
             }
+
+            // Skip the initial greeting so providers get a clean conversation start.
+            if (
+                $message->role === 'assistant'
+                && $history === []
+                && $message->content === self::GREETING
+            ) {
+                continue;
+            }
+
+            $history[] = [
+                'role' => $message->role,
+                'content' => $message->content,
+            ];
         }
 
-        // Gemini chat history must start with a user turn when non-empty.
-        while ($history !== [] && ($history[0]->role ?? null) !== Role::USER) {
+        while ($history !== [] && ($history[0]['role'] ?? null) !== 'user') {
             array_shift($history);
         }
 
