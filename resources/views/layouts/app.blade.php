@@ -212,7 +212,7 @@
                 @else
                     <a href="{{ route('aps.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*')) aria-current="page" @endif>
                         <i data-lucide="target" style="width:16px;height:16px;"></i>
-                        APS
+                        Course
                     </a>
                     <a href="{{ route('funding.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('funding.*') || request()->routeIs('bursaries.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('funding.*') || request()->routeIs('bursaries.*')) aria-current="page" @endif>
                         <i data-lucide="badge-dollar-sign" style="width:16px;height:16px;"></i>
@@ -220,7 +220,7 @@
                     </a>
                     <a href="{{ route('lemo-ai.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('lemo-ai.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('lemo-ai.*')) aria-current="page" @endif>
                         <i data-lucide="sparkles" style="width:16px;height:16px;"></i>
-                        Lemo AI
+                        AI
                     </a>
                     <a href="{{ route('learn.index') }}" class="hidden {{ $navLinkBase }} {{ request()->routeIs('learn.*') || request()->routeIs('content.*') ? $navLinkActive : $navLinkIdle }}" aria-hidden="true" tabindex="-1" @if (request()->routeIs('learn.*') || request()->routeIs('content.*')) aria-current="page" @endif>
                         <i data-lucide="book-open" style="width:16px;height:16px;"></i>
@@ -236,7 +236,7 @@
                     </a>
                     <a href="{{ route('login') }}" class="{{ $navLinkBase }} {{ request()->routeIs('login') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('login')) aria-current="page" @endif>
                         <i data-lucide="log-in" style="width:16px;height:16px;"></i>
-                        Log in
+                        Login
                     </a>
                     <a href="{{ route('register') }}" class="{{ $navLinkBase }} {{ request()->routeIs('register') ? $navLinkActive : 'border-[#01225E] bg-[#01225E] text-white hover:bg-[#001A48]' }}" @if (request()->routeIs('register')) aria-current="page" @endif>
                         Sign up
