@@ -83,7 +83,7 @@ class LemoAiChatService
             $context = $this->knowledge->buildContext($message);
             $history = $this->historyForGemini($chat);
 
-            $model = Gemini::generativeModel(model: 'gemini-2.0-flash')
+            $model = Gemini::generativeModel(model: 'gemini-flash-latest')
                 ->withSystemInstruction(Content::parse($this->systemInstruction($context)));
 
             $chatSession = $model->startChat(history: $history);
