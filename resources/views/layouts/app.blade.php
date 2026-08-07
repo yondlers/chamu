@@ -70,6 +70,12 @@
                 'active' => request()->routeIs('funding.*') || request()->routeIs('bursaries.*'),
             ],
             [
+                'label' => 'Lemo AI',
+                'href' => route('lemo-ai.index'),
+                'icon' => 'sparkles',
+                'active' => request()->routeIs('lemo-ai.*'),
+            ],
+            [
                 'label' => 'Dashboard',
                 'href' => route('dashboard.index'),
                 'icon' => 'home',
@@ -212,6 +218,10 @@
                         <i data-lucide="badge-dollar-sign" style="width:16px;height:16px;"></i>
                         Funding
                     </a>
+                    <a href="{{ route('lemo-ai.index') }}" class="{{ $navLinkBase }} {{ request()->routeIs('lemo-ai.*') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('lemo-ai.*')) aria-current="page" @endif>
+                        <i data-lucide="sparkles" style="width:16px;height:16px;"></i>
+                        Lemo AI
+                    </a>
                     <a href="{{ route('learn.index') }}" class="hidden {{ $navLinkBase }} {{ request()->routeIs('learn.*') || request()->routeIs('content.*') ? $navLinkActive : $navLinkIdle }}" aria-hidden="true" tabindex="-1" @if (request()->routeIs('learn.*') || request()->routeIs('content.*')) aria-current="page" @endif>
                         <i data-lucide="book-open" style="width:16px;height:16px;"></i>
                         Learn
@@ -238,24 +248,27 @@
 
     @yield('content')
 
-    <footer class="border-t border-neutral-200 bg-white">
-        <div class="mx-auto grid max-w-7xl gap-6 px-5 py-8 text-sm text-neutral-600 sm:grid-cols-[1fr_auto] sm:items-center lg:px-8">
-            <div>
-                <a href="{{ url('/') }}" class="inline-flex items-center gap-2 font-bold text-neutral-950">
-                    <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-8 w-8 rounded-lg object-contain">
-                    Chamu
-                </a>
-                <p class="mt-2 max-w-2xl leading-6">South African learner tools for APS planning, study practice, bursary discovery, and university requirement checks.</p>
+    @hasSection('hide_footer')
+    @else
+        <footer class="border-t border-neutral-200 bg-white">
+            <div class="mx-auto grid max-w-7xl gap-6 px-5 py-8 text-sm text-neutral-600 sm:grid-cols-[1fr_auto] sm:items-center lg:px-8">
+                <div>
+                    <a href="{{ url('/') }}" class="inline-flex items-center gap-2 font-bold text-neutral-950">
+                        <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-8 w-8 rounded-lg object-contain">
+                        Chamu
+                    </a>
+                    <p class="mt-2 max-w-2xl leading-6">South African learner tools for APS planning, study practice, bursary discovery, and university requirement checks.</p>
+                </div>
+                <nav aria-label="Footer" class="flex flex-wrap gap-x-4 gap-y-2 font-semibold">
+                    <a href="{{ route('guides.index') }}" class="hover:text-neutral-950">Guides</a>
+                    <a href="{{ route('about') }}" class="hover:text-neutral-950">About</a>
+                    <a href="{{ route('contact') }}" class="hover:text-neutral-950">Contact</a>
+                    <a href="{{ route('privacy') }}" class="hover:text-neutral-950">Privacy</a>
+                    <a href="{{ route('terms') }}" class="hover:text-neutral-950">Terms</a>
+                </nav>
             </div>
-            <nav aria-label="Footer" class="flex flex-wrap gap-x-4 gap-y-2 font-semibold">
-                <a href="{{ route('guides.index') }}" class="hover:text-neutral-950">Guides</a>
-                <a href="{{ route('about') }}" class="hover:text-neutral-950">About</a>
-                <a href="{{ route('contact') }}" class="hover:text-neutral-950">Contact</a>
-                <a href="{{ route('privacy') }}" class="hover:text-neutral-950">Privacy</a>
-                <a href="{{ route('terms') }}" class="hover:text-neutral-950">Terms</a>
-            </nav>
-        </div>
-    </footer>
+        </footer>
+    @endif
 
     <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 opacity-0 pointer-events-none bg-neutral-900 text-white px-5 py-3 rounded-xl text-sm font-medium shadow-lg max-w-[90vw] text-center"></div>
 

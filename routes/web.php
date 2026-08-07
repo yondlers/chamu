@@ -20,6 +20,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmailOpenController;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\LearningController;
+use App\Http\Controllers\LemoAiController;
 use App\Http\Controllers\MarkController;
 use App\Http\Controllers\PracticeController;
 use App\Http\Controllers\ProfileController;
@@ -132,6 +133,11 @@ Route::get('/bursaries/{bursary}', [BursaryController::class, 'show'])->name('bu
 Route::post('/bursaries/{bursary}/apply', [BursaryApplicationController::class, 'store'])
     ->middleware('auth')
     ->name('bursaries.apply');
+
+Route::get('/lemo-ai', [LemoAiController::class, 'index'])->name('lemo-ai.index');
+Route::get('/lemo-ai/{chat}', [LemoAiController::class, 'show'])->name('lemo-ai.show');
+Route::post('/lemo-ai/chats', [LemoAiController::class, 'store'])->name('lemo-ai.chats.store');
+Route::post('/lemo-ai/messages', [LemoAiController::class, 'storeMessage'])->name('lemo-ai.messages.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/tools', [ToolController::class, 'index'])->name('tools.index');
