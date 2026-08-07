@@ -163,8 +163,11 @@ class LemoAiRouter
     {
         return match ($model) {
             'llama-3.3-70b-versatile' => 'Llama 3.3',
+            'gemini-flash-lite-latest' => 'Flash Lite',
             'gemini-flash-latest' => 'Flash',
             'gemini-2.5-flash' => '2.5 Flash',
+            'gemini-2.0-flash-lite' => '2.0 Flash Lite',
+            'gemini-2.0-flash' => '2.0 Flash',
             'gemini-1.5-flash-latest', 'gemini-1.5-flash' => '1.5 Flash',
             default => $model ? (string) $model : 'AI',
         };

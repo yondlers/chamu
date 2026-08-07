@@ -6,7 +6,10 @@ return [
 
     'gemini_models' => array_values(array_filter(array_map(
         'trim',
-        explode(',', (string) env('LEMO_GEMINI_MODELS', 'gemini-flash-latest,gemini-2.5-flash'))
+        explode(',', (string) env(
+            'LEMO_GEMINI_MODELS',
+            'gemini-flash-lite-latest,gemini-flash-latest,gemini-2.5-flash,gemini-2.0-flash-lite'
+        ))
     ))),
 
     'groq' => [
