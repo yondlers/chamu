@@ -5,7 +5,10 @@ namespace App\Services\LemoAi;
 use App\Models\Chat;
 use App\Models\ChatMessage;
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
+use Throwable;
 
 class LemoAiChatService
 {
@@ -26,14 +29,12 @@ class LemoAiChatService
         ]);
         $chat->save();
 
-        $greeting = new ChatMessage([
-            'chat_id' => $chat->id,
+        $this->storeMessage($chat, [
             'role' => 'assistant',
             'content' => self::GREETING,
             'provider' => 'system',
             'model' => 'greeting',
         ]);
-        $greeting->save();
 
         return $chat->load('messages');
     }
@@ -43,12 +44,10 @@ class LemoAiChatService
      */
     public function sendMessage(Chat $chat, string $message): array
     {
-        $userMessage = new ChatMessage([
-            'chat_id' => $chat->id,
+        $userMessage = $this->storeMessage($chat, [
             'role' => 'user',
             'content' => $message,
         ]);
-        $userMessage->save();
 
         if ($chat->title === 'New chat' || blank($chat->title)) {
             $chat->title = Str::limit($message, 60);
@@ -57,16 +56,28 @@ class LemoAiChatService
         $chat->last_message_at = now();
         $chat->save();
 
-        $reply = $this->generateReply($chat, $message);
+        try {
+            $reply = $this->generateReply($chat, $message);
+        } catch (Throwable $exception) {
+            report($exception);
+            Log::error('[Lemo AI] Reply generation failed', [
+                'error' => $exception->getMessage(),
+            ]);
 
-        $assistantMessage = new ChatMessage([
-            'chat_id' => $chat->id,
+            $reply = [
+                'content' => 'Lemo AI hit a temporary problem generating a reply. Please try again in a moment.',
+                'provider' => 'system',
+                'model' => 'fallback',
+                'label' => 'System',
+            ];
+        }
+
+        $assistantMessage = $this->storeMessage($chat, [
             'role' => 'assistant',
             'content' => $reply['content'],
             'provider' => $reply['provider'],
             'model' => $reply['model'],
         ]);
-        $assistantMessage->save();
 
         $chat->last_message_at = now();
         $chat->save();
@@ -79,11 +90,48 @@ class LemoAiChatService
     }
 
     /**
+     * @param  array{role:string, content:string, provider?:?string, model?:?string}  $attributes
+     */
+    private function storeMessage(Chat $chat, array $attributes): ChatMessage
+    {
+        $payload = [
+            'chat_id' => $chat->id,
+            'role' => $attributes['role'],
+            'content' => $attributes['content'],
+        ];
+
+        if ($this->supportsProviderColumns()) {
+            $payload['provider'] = $attributes['provider'] ?? null;
+            $payload['model'] = $attributes['model'] ?? null;
+        }
+
+        $message = new ChatMessage($payload);
+        $message->save();
+
+        return $message;
+    }
+
+    private function supportsProviderColumns(): bool
+    {
+        return Schema::hasColumn('chat_messages', 'provider')
+            && Schema::hasColumn('chat_messages', 'model');
+    }
+
+    /**
      * @return array{content:string, provider:string, model:string, label:string}
      */
     private function generateReply(Chat $chat, string $message): array
     {
-        $context = $this->knowledge->buildContext($message);
+        try {
+            $context = $this->knowledge->buildContext($message);
+        } catch (Throwable $exception) {
+            report($exception);
+            Log::warning('[Lemo AI] Knowledge context failed; continuing without DB context', [
+                'error' => $exception->getMessage(),
+            ]);
+            $context = 'No live Chamu database context was available for this question.';
+        }
+
         $history = $this->historyForRouter($chat);
 
         return $this->router->generate(

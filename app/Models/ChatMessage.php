@@ -31,6 +31,10 @@ class ChatMessage extends Model
             return null;
         }
 
-        return app(\App\Services\LemoAi\LemoAiRouter::class)->labelFor($this->provider, $this->model);
+        try {
+            return app(\App\Services\LemoAi\LemoAiRouter::class)->labelFor($this->provider, $this->model);
+        } catch (\Throwable) {
+            return null;
+        }
     }
 }

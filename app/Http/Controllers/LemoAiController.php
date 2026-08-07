@@ -88,10 +88,23 @@ class LemoAiController extends Controller
         } catch (\Throwable $exception) {
             report($exception);
 
+            $detail = Str::lower($exception->getMessage());
+            $message = 'Lemo AI hit a server problem while saving this chat. Please try again in a moment.';
+
+            if (
+                str_contains($detail, 'no such column')
+                || str_contains($detail, 'unknown column')
+                || str_contains($detail, 'chat_messages')
+            ) {
+                $message = 'Lemo AI database is missing recent chat columns. Run `php artisan migrate --force` on the server, then retry.';
+            } elseif (str_contains($detail, 'groq') || str_contains($detail, 'gemini')) {
+                $message = 'Lemo AI could not reach Gemini or Groq right now. Please retry in a minute.';
+            }
+
             return response()->json([
                 'message' => app()->hasDebugModeEnabled()
                     ? $exception->getMessage()
-                    : 'Lemo AI hit a server problem while saving this chat. Please try again in a moment.',
+                    : $message,
             ], 500);
         }
     }
@@ -158,7 +171,10 @@ class LemoAiController extends Controller
             && Schema::hasTable('chat_messages')
             && Schema::hasColumn('chats', 'user_id')
             && Schema::hasColumn('chats', 'guest_token')
-            && Schema::hasColumn('chats', 'title');
+            && Schema::hasColumn('chats', 'title')
+            && Schema::hasColumn('chat_messages', 'chat_id')
+            && Schema::hasColumn('chat_messages', 'role')
+            && Schema::hasColumn('chat_messages', 'content');
     }
 
     /**
