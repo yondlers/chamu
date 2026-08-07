@@ -1,4 +1,11 @@
 <?php return array (
+  'google-gemini-php/laravel' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Gemini\\Laravel\\ServiceProvider',
+    ),
+  ),
   'laravel/pail' => 
   array (
     'providers' => 
