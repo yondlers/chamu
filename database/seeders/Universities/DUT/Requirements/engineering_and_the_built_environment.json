@@ -1,7 +1,7 @@
 {
     "faculty": "Engineering and the Built Environment",
     "university": "Durban University of Technology",
-    "source": "DUT Student Course Guide 2026",
+    "source": "DUT Study Opportunities 2027",
     "qualifications": [
         {
             "name": "Bachelor Built Environment: Urban and Regional Planning",
@@ -12,16 +12,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BUR.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two of the following at Level 4: Geography, History, Physical Sciences, Life Sciences; One 20-credit subject that is not a language: Level 4.",
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two of the following at Level 4: Geography, History, Physical Sciences, Life Sciences; One 20-credit subject that is nota language: Level 4.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 99018.",
+                "Duration: 3 years.",
+                "Programme: Urban and regional planners work withina diverse range of activities in which they develop land use plans and deploy tools in order to develop and help create communities and improve existing areas. Planners engage with the effects of population growth, migration, and their impact on settlements, including towns, cities, and city regions within the constitutional mandate of the country and its laws. The typical work of an urban and regional planner includes: \u2022 Meeting with communities, public officials and developers about development plans and land use, \u2022 Administering government policies and plans that affect land uses, for example the Nat",
+                "Career opportunities: Urban and regional planning is projected to grow as the momentum for implementing the National Development Plan takes shape and has been identified as a scarce skill. Planners are typically employed in the private sector, planning firms, local provincial authorities, and service organisations. Both technical planners and professional planners work in government departments at municipal, provincial and national levels and in state owned enterprises. In the private sector, there are career opportunities in planning firms and a range of other sect",
+                "NB: Applicant\u2019s will be required to sit for a suitable placement test, as part of the entry requirement to this programme. In addition to the above, the DUT general rules will apply with regard to admission requirements based on work experience, age and maturity, and admission via Recognition of Prior Learning (RPL). The admission of international students will be according to DUT\u2019s Admission\u2019s policy for International Students and General Rules. Please Note: Due to thel imited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable. NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -45,7 +51,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Urban"
+            ]
         },
         {
             "name": "Bachelor of Engineering Technology in Chemical Engineering",
@@ -56,16 +66,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-ECH.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 98955.",
+                "Duration: 3 years.",
+                "Programme: The learning programme consists of a coherent assembly of knowledge areas associated with chemical engineering practice, these include mathematics, natural sciences, engineering sciences, design and synthesis, computing and IT, and relevant complementary studies. This assembly of knowledge areas providesa viable platform for further studies and lifelong learning and will produce graduates who can function in today\u2019s fast changing, dynamic and evolving industrial marketplace. The broad training in natural and mathematical sciences, coupled with a strong foundation in chemical engineering principles, will produce graduates that are highly nume",
+                "Career opportunities: A Chemical Engineering Technologist is employed in chemical plants for the purpose of research and development; economic evaluation; chemical engineering design; plant operations and management; project management and product marketing. Why do Chemical Engineering at Durban University of Technology? The mission of the Department of Chemical Engineering is primarily to provide a relevant program, maintaina strong balance between theory and practice, establish and maintain partnerships with industry and excel in research and development with tec",
+                "NB: NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning. Applicants with a NSC will be ranked according to the sum of their scores for Mathematics and Physical Science, subject to a minimum combined score of 100%. Prospective applicants may also present an NQF level 6 Diploma in Engineering for entry into the degree programme. A possibility of transfer of credits for cognitive previous studies would be considered dependent on the discipline and nature of the Diploma being presented. NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -101,7 +117,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Chemical Engineering Technologist"
+            ]
         },
         {
             "name": "Bachelor of Engineering Technology in Electronic Engineering",
@@ -112,16 +132,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BGL.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 99599.",
+                "Duration: 3 years.",
+                "Programme:: What Is Mechanical Engineering? In almost every aspect of modern life, from the air-conditioned offices to the modern industrial plants, from the simplest components the aerospace industry, one sees the work of mechanical engineers who continue to develop and apply new knowledge and technology to improve the quality of life of humankind. Mechanical Engineering is one of the widest forms of all industrial based occupations, ranging across every stage of the manufacturing process and includes design, draughting, assembly, quality assurance, plant operation, maintenance and management. Today's mechanical engineer is heavily involved in the dev",
+                "Career opportunities: Where Does He/she Work? Graduates of this programme would be eligible to register with ECSA as a Professional Engineering Technologist. Owing to the ubiquitous nature, he/she is to be found in all manner of industries: those making steel and bricks; building oilrigs and dams; refining oil and sugar; offering services, such as those provided by Eskom, in the automotive industry such as Toyota, and the water boards and other government organisations. Opportunities also exist in the Maritime industry. In each of these industrial sectors you willf",
+                "NB: 1. NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics 2. The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning. 3. Applicants with a NSC will be ranked according to the sum of their scores for Mathematics and Physical Science, subject to a minimum combined score of 100%. 4. Prospective applicants may also present an NQF level 6 Diploma in Engineering for entry into the degree programme. A possibility of transfer of credits for cognitive previous studies would be considered dependent on the discipline and nature of the Diploma being presented. Thereafter, selections are made at NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -141,7 +167,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Mechanical Engineering Technologist"
+            ]
         },
         {
             "name": "Bachelor of Engineering Technology in Industrial Engineering",
@@ -152,16 +182,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BIE.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 99639.",
+                "Duration: 3 years.",
+                "Programme: The purpose of the Bachelor of Engineering Technology in Industrial Engineering (BEng Tech Industrial Engineering) is to equip the students with the necessary knowledge, understanding, skills and abilities in the field of industrial engineering. Graduates from this program would be able to register with the Engineering Council of South Africa as a candidate-engineering technologist. The duration of this programme is3 years full time study. The programme will also prepare students for further study at the postgraduate levels. Why Industrial Engineering? Industrial engineering is a discipline within the field of engineering that is focused ond",
+                "Career opportunities: Industrial engineering technologists are employed over a vast array of industries operating within various sectors of the economy. Examples of such include the manufacturing sector, retail sector, banking sector etc. Industrial engineering technologists add value to any organization that they join and as such are much sought after. Personal Qualities Required The individual must be: \u2022 Self-motivated, structured and organized. \u2022 A critical thinker with active listening skills and a good verbal communicator. \u2022 Able to function well withina team",
+                "NB: 1. NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics 2. The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning. 3. Applicants with an NSC will be ranked according to the sum of their scores for Mathematics and Physical Science, subject to a minimum combined score of 100%. 4. Prospective applicants may also present an NQF level 6 Diploma in Engineering for entry into the degree programme. A possibility of transfer of credits for cognitive previous studies would be considered dependent on the discipline and nature of the Diploma being presented. NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -197,7 +233,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Industrial Engineering Technologist"
+            ]
         },
         {
             "name": "Bachelor of Engineering Technology in Mechanical Engineering",
@@ -208,16 +248,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BGM.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 99599.",
+                "Duration: 3 years.",
+                "Programme:: What Is Mechanical Engineering? In almost every aspect of modern life, from the air-conditioned offices to the modern industrial plants, from the simplest components the aerospace industry, one sees the work of mechanical engineers who continue to develop and apply new knowledge and technology to improve the quality of life of humankind. Mechanical Engineering is one of the widest forms of all industrial based occupations, ranging across every stage of the manufacturing process and includes design, draughting, assembly, quality assurance, plant operation, maintenance and management. Today's mechanical engineer is heavily involved in the dev",
+                "Career opportunities: Where Does He/she Work? Graduates of this programme would be eligible to register with ECSA as a Professional Engineering Technologist. Owing to the ubiquitous nature, he/she is to be found in all manner of industries: those making steel and bricks; building oilrigs and dams; refining oil and sugar; offering services, such as those provided by Eskom, in the automotive industry such as Toyota, and the water boards and other government organisations. Opportunities also exist in the Maritime industry. In each of these industrial sectors you willf",
+                "NB: 1. NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics 2. The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning. 3. Applicants with a NSC will be ranked according to the sum of their scores for Mathematics and Physical Science, subject to a minimum combined score of 100%. 4. Prospective applicants may also present an NQF level 6 Diploma in Engineering for entry into the degree programme. A possibility of transfer of credits for cognitive previous studies would be considered dependent on the discipline and nature of the Diploma being presented. Thereafter, selections are made at NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -253,7 +299,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Mechanical Engineering Technologist"
+            ]
         },
         {
             "name": "Bachelor of Engineering Technology in Power Engineering",
@@ -264,16 +314,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BGH.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 99611.",
+                "Duration: 3 years.",
+                "Programme: This career is related to the generation and distribution of electricity for power, heat and light. The technologist in this field is concerned with designing, developing, installing, fault- finding and testing of electrical moto rs, generators, alternators, transformers, transmission lines, cables, and switchgear. He can also work as a consultant in his own right to design and manage electrical projects when he has registered as a Professional Technologist. Working Conditions The technologist is not office bound but can be called upon to work on plant and installations at times, both indoor and outdoor. Hours are generally regular but, in em",
+                "Career opportunities: The Electrical Power Technologist is mainly employed by organisations such as ESKOM, EThekwini Municipality, ISCOR, SIEMENS, ALUSAF, manufacturers of electrical appliances and contractors. Many registered technologists also work as self-employed consultants or are employed at consulting firms. Prospects are good and the work increasingly challenging in a time when electrical technology is developing rapidly. The Bachelor of Engineering Technology is the first step in a process of advancement to Professional Technologist.",
+                "NB: 1. NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics 2. The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning. 3. Applicants with a NSC will be ranked according to the sum of their scores for Mathematics and Physical Science, subject to a minimum combined score of 100%. 4. Prospective applicants may also present an NQF level 6 Diploma in Engineering for entry into the degree pro gramme. A possibility of transfer of credits for cognitive previous studies would be considered dependent on the discipline and nature of the Diploma being NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -309,7 +365,15 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "ESKOM",
+                "EThekwini Municipality",
+                "ISCOR",
+                "SIEMENS",
+                "ALUSAF"
+            ]
         },
         {
             "name": "Bachelor of the Built Environment in Architecture",
@@ -320,16 +384,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BAT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 101515.",
+                "Duration: 3 years.",
+                "Programme: The BBE (Architecture) is a three-year full-time programme. Its specific purpose is to build the necessary knowledge, understanding, abilities and skills required to register as a candidate architectural technologist with SACAP once graduated. To register with the professional council, an additional period of mentorship and professional practice examinations need to be completed. Vision Developing Architectural Minds to respond to context and inspire society. Mission We shall adopta learning paradigm focussing on finding and solving challenges in the build environment. We endeavour to achieve this through broad collaboration and the appropri",
+                "Career opportunities: The Department of Architecture enjoys validation (accreditation) by the South African Council for the Architectural Profession (SACAP). The Architectural Professions Act 44 of 2000 (referred to as the Act hereafter) allows for graduates to register in the following professional categories: \u2022 National Diploma (Architectural Technology) - Candidate Architectural Technologist \u2022 Bachelor of the Built Environment (Architecture) \u2013 Candidate Architectural Technologist \u2022 BTech (Architectural Technology) - Candidate Senior Architectural Technologist \u2022 B",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -345,7 +415,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Architectural Technologist"
+            ]
         },
         {
             "name": "Bachelor of the Built Environment in Construction Studies",
@@ -356,16 +430,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BBU.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 101515.",
+                "Duration: 3 years.",
+                "Programme: The Bachelor of the Built Environment in Construction Studies will provide a generic undergraduate qualification that will equip students with a broad knowledge and understanding of the construction process that will not only enable them to enter one of the diverse industries but will also allow them to specialize in either Quantity Surveying or Construction Management at honours level.",
+                "Career opportunities: Career opportunities exist in Construction Companies, Private Professional Practices, Banks, Government Departments, etc. in the areas of Quantity Surveying, Construction and Construction Project Management",
+                "NB: 1. NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics 2. The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning. Life Orientation is excluded. 3. Applicants with a NSC will be ranked according to the sum of their scores for Mathematics and Physical Science, subject to a minimum combined score of 100%. 4. Prospective applicants may presenta cognate level 6 Diploma for entry into the BBE (Construction Studies) programme. Credit transfer will be NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -401,7 +481,12 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Construction Manager",
+                "Construction Technologist"
+            ]
         },
         {
             "name": "Bachelor of the Built Environment in Geomatics",
@@ -412,16 +497,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BBE.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two recognised 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 101432.",
+                "Duration: 3 years.",
+                "Programme: The programme will train competent, responsible, and accountable surveyors who can be registered as professional surveyors. They will be qualified to work independently, perform advanced surveying skills and managea survey practice. The need exists for the training of specialists in the field of engineering surveying to provide for the academic requirements as set out by the South African Geomatics Council so that candidates can register as Engineering Surveying Technologists and to produce qualified entrepreneurs in the surveying field who can contribute positively to the development of the South African economy. The duration of this progra",
+                "Career opportunities: Employment opportunities within the private sector are Land Surveying firms, Engineering Surveying firms, Mining companies, Hydrographic companies, surveying engineering consultants and contractors. Opportunities also exist in the public sector, with municipalities: quasi-government and government departments such as: Eskom, Transnet, Department of Transport, Water Affairs, and Department of Rural Development and Land Affairs.",
+                "NB: NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning Applicants with a NSC will be ranked according to the sum of their scores for Mathema tics and Physical Science, subject to a minimum combined score of 100%. Prospective applicants may also present an NQF level 6 Diploma in Engineering for entry into the degree programme. A possibility of transfer of credits for cognitive previous studies would be considered dependent on the discipline and nature of the Diploma being presented. NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -441,7 +532,14 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Eskom",
+                "Transnet",
+                "Water Affairs",
+                "Land Affairs"
+            ]
         },
         {
             "name": "Bachelor of Engineering Technology in Civil Engineering",
@@ -452,16 +550,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BNC.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 98955.",
+                "Duration: 3 years.",
+                "Programme: The learning programme consists of a coherent assembly of knowledge areas associated with chemical engineering practice, these include mathematics, natural sciences, engineering sciences, design and synthesis, computing and IT, and relevant complementary studies. This assembly of knowledge areas providesa viable platform for further studies and lifelong learning and will produce graduates who can function in today\u2019s fast changing, dynamic and evolving industrial marketplace. The broad training in natural and mathematical sciences, coupled with a strong foundation in chemical engineering principles, will produce graduates that are highly nume",
+                "Career opportunities: A Chemical Engineering Technologist is employed in chemical plants for the purpose of research and development; economic evaluation; chemical engineering design; plant operations and management; project management and product marketing. Why do Chemical Engineering at Durban University of Technology? The mission of the Department of Chemical Engineering is primarily to provide a relevant program, maintaina strong balance between theory and practice, establish and maintain partnerships with industry and excel in research and development with tec",
+                "NB: NSC Mathematical Literacy will not be accepted as a substitute for the subject NSC Mathematics The exit certificate of the candidate must qualify the candidate for degree study at an institution of higher learning. Applicants with a NSC will be ranked according to the sum of their scores for Mathematics and Physical Science, subject to a minimum combined score of 100%. Prospective applicants may also present an NQF level 6 Diploma in Engineering for entry into the degree programme. A possibility of transfer of credits for cognitive previous studies would be considered dependent on the discipline and nature of the Diploma being presented. NB: The course structure and requisite modules are subject to alteration."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -497,7 +601,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Chemical Engineering Technologist"
+            ]
         },
         {
             "name": "Diploma in Engineering Technology in Civil Engineering",
@@ -508,16 +616,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-DNC.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 99026.",
+                "Duration: 3 years.",
+                "Programme: Most Civil Engineering Technicians and Technologists are employed in industry in one of the two traditional areas, namely Building Industry or the Civil Engineering Industry, and may be involved in planning, designing or constructing. Within each of these areas, Technicians and Engineers may be employed either in Consulting offices, for a local authority or for a contractor. The Construction industry as a whole, plans, designs, constructs and maintains what is sometimes referred to as the built environment. This is not only houses, schools and multi -storey structures, but also roads, airports, tunnels, dams, water supplies, sewerage works, s",
+                "Career opportunities: Most Civil Engineering Technicians and Technologists are employed in Industry, namely Building industry or Civil engineering industry, and may be involved in planning, designing, or constructing.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -553,7 +667,12 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Most Civil Engineering Technicians",
+                "Technologists are employed in Industry"
+            ]
         },
         {
             "name": "Diploma in Built Environment in Construction Studies",
@@ -564,16 +683,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-DBE.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 112383.",
+                "Duration: 3 years.",
+                "Programme: Most Diplomates with Construction qualifications are employed in industry in one of the two traditional areas, namely Building Industry in the Contracting Sector or the Consultant Sector in Quantity Surveying or Construction and Project Management. In addition, Construction Diplomates may also be employed in different levels of government from national Departments through Provincial and Local authorities. The Construction industry as a whole, plans, designs The construction industry offers thousands of unique and challenging positions in the new South Africa and throughout the world, and the opening to these is througha qualification as and",
+                "Career opportunities: Most Diplomates with Built Environment (Construction Studies) are employed in Industry, namely Building industry or Quantity Surveying, Construction Project Management, Construction Management, or public service.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -609,7 +734,12 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Construction Project Management",
+                "Construction Management"
+            ]
         },
         {
             "name": "Diploma in Pulp and Paper Technology",
@@ -620,16 +750,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DPP.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3.",
                 "Programme-specific APS guide: Engineering and Built Environment minimum APS 32.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 111384.",
+                "Duration: 3 years.",
+                "Programme: Pulp and Paper technology is a specialist field of chemical engineering, which involves the study of the processes required for the conversion of raw materials such as wood, into pulp and paper products. Pulp and paper products are indispensable in our daily lives; products such as newspapers, toilet tissue, books, boxes, etc. are an essential component of modern civilization and it is impossible to imagine life without them. A Pulp and paper technologist must havea wide variety of talents. He/she must understand how and whya given process works, in order to set up and operate equipment in the process. A pulp and paper technologist area cr",
+                "Career opportunities: Process controllers, supervisors, pulp and paper technologist. Once established in the industry, graduates could move into many different aspects of the pulp and paper business.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -649,7 +785,13 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 32
+            "admission_score_required": 32,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Process controllers"
+            ]
         }
-    ]
+    ],
+    "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+    "source_reviewed": "2026-08"
 }

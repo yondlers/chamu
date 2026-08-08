@@ -1,7 +1,7 @@
 {
     "faculty": "Management Sciences",
     "university": "Durban University of Technology",
-    "source": "DUT Student Course Guide 2026",
+    "source": "DUT Study Opportunities 2027",
     "qualifications": [
         {
             "name": "Diploma in Management Sciences: Business Administration (DBN Campus)",
@@ -12,14 +12,19 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-MN3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Management Sciences, specialising in Business Administration, has been developed to equip students with the generic organisational knowledge, skills, and abilities to makea meaningful contribution to the success of any organisation. The programme will equip students with analytical, conceptual, and technical skills in the major areas of management, financial management and administrative management. Students who complete the diploma will gain adequate knowledge to entera wide variety of fields such as retailing, manufacturing, insurance, banking, logistics, and marketing. The qualification offers a wider scope for job opportu",
+                "Career opportunities: Entrepreneur, administration, banking, wholesale and retail sectors, financial management, government services, government administration, education management, hospital admin istration, customer service, transportation, property and real estate, supply chain management, and insurance."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -50,6 +55,10 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Entrepreneur"
             ]
         },
         {
@@ -61,14 +70,19 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-MN3.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Management Sciences, specialising in Business Administration, has been developed to equip students with the generic organisational knowledge, skills, and abilities to makea meaningful contribution to the success of any organisation. The programme will equip students with analytical, conceptual, and technical skills in the major areas of management, financial management and administrative management. Students who complete the diploma will gain adequate knowledge to entera wide variety of fields such as retailing, manufacturing, insurance, banking, logistics, and marketing. The qualification offers a wider scope for job opportu",
+                "Career opportunities: Entrepreneur, administration, banking, wholesale and retail sectors, financial management, government services, government administration, education management, hospital admin istration, customer service, transportation, property and real estate, supply chain management, and insurance."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -99,6 +113,10 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Entrepreneur"
             ]
         },
         {
@@ -110,14 +128,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BL3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: This programme introduces students to the main aspects of business law and the compliance function within an organisation. It designed to provide students with an understanding of the law relating to business in general and contracts in particular, as well as the specific standards, regulations and requirements in terms of relevant legislation, and its application, in order to enable students to analyse and solve problems relating to an organisation's compliance. The program is designed to equip students with the knowledge, skills, attitudes and competencies they will require at the confluence of the legal and business framework. This will be",
+                "Career opportunities: Compliance officers/managers; contract officers/managers and other roles in business requiring legal knowledge. Please note: This programme does not equip students to practice as an attorney or advocate.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -148,6 +172,10 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Compliance officers"
             ]
         },
         {
@@ -159,15 +187,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-MB5.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
                 "Programme note: Extended Curriculum Programme.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 4 years.",
+                "Programme: The Diploma in Management Sciences, specialising in Business Administration, has been developed to equip students with the generic organisational knowledge, skills, and abilities to makea meaningful contribution to the success of any organisation. The programme will equip students with analytical, conceptual, and technical skills in the major areas of management, financial management and administrative management. Students who complete the diploma will gain adequate knowledge to entera wide variety of fields such as retailing, manufacturing, insurance, banking, logistics, and marketing. The qualification offers a wider scope for job opportu",
+                "Career opportunities: Entrepreneur, administration, banking, wholesale and retail sectors, financial management, government services, government administration, education management, hospital admin istration, customer service, transportation, property and real estate, supply chain management, and insurance."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -198,6 +231,10 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Entrepreneur"
             ]
         },
         {
@@ -209,14 +246,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HR3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: The function of a Human Resources Manager varies according to the size and type of company for which he/she works, but essentially, he/she plans and executes policies relating to all phases of personnel activity. As labour costs represent the single greatest cost in any organization it is, important that every effort be made to make the best use of every employee and ensure optimum productivity through correct selection, training and promotion. It is the Human Resources Manager's function to provide his/her employer with a highly trained, well-motivated worker and to ensure that the employee has the best use made of his/her talents and poten",
+                "Career opportunities: The personnel field is a rapidly developing field in South Africa. It is recognized thata well- trained and highly motivated labour force is becoming increasing in order to improve productivity. Entrants to Human Resources Management are usually known as Personnel Officers and become managers after gaining experience. They may remain in the general personnel field or specialize in specific aspects of personnel management, training or industrial relations. This diploma will be useful to people who operationalise some aspects of the core process",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -247,6 +290,11 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Human Resources Officer",
+                "HR Administrator"
             ]
         },
         {
@@ -258,14 +306,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-HR3.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: The function of a Human Resources Manager varies according to the size and type of company for which he/she works, but essentially, he/she plans and executes policies relating to all phases of personnel activity. As labour costs represent the single greatest cost in any organization it is, important that every effort be made to make the best use of every employee and ensure optimum productivity through correct selection, training and promotion. It is the Human Resources Manager's function to provide his/her employer with a highly trained, well-motivated worker and to ensure that the employee has the best use made of his/her talents and poten",
+                "Career opportunities: The personnel field is a rapidly developing field in South Africa. It is recognized thata well- trained and highly motivated labour force is becoming increasing in order to improve productivity. Entrants to Human Resources Management are usually known as Personnel Officers and become managers after gaining experience. They may remain in the general personnel field or specialize in specific aspects of personnel management, training or industrial relations. This diploma will be useful to people who operationalise some aspects of the core process",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -296,6 +350,11 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Human Resources Officer",
+                "HR Administrator"
             ]
         },
         {
@@ -307,15 +366,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HRY.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Programme note: Part-time.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: The function of a Human Resources Manager varies according to the size and type of company for which he/she works, but essentially, he/she plans and executes policies relating to all phases of personnel activity. As labour costs represent the single greatest cost in any organization it is, important that every effort be made to make the best use of every employee and ensure optimum productivity through correct selection, training and promotion. It is the Human Resources Manager's function to provide his/her employer with a highly trained, well-motivated worker and to ensure that the employee has the best use made of his/her talents and poten",
+                "Career opportunities: The personnel field is a rapidly developing field in South Africa. It is recognized thata well- trained and highly motivated labour force is becoming increasing in order to improve productivity. Entrants to Human Resources Management are usually known as Personnel Officers and become managers after gaining experience. They may remain in the general personnel field or specialize in specific aspects of personnel management, training or industrial relations. This diploma will be useful to people who operationalise some aspects of the core process",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -346,6 +411,11 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Human Resources Officer",
+                "HR Administrator"
             ]
         },
         {
@@ -357,14 +427,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-MK3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: Marketing is the business of planning and developing appropriate products or services that will satisfy the wants and needs of the market as well as planning and implementing the marketing programme. Many confuse the term marketing with selling and advertising. Whilst both of these aspects are included in the marketing function, they account for onlya part of the total marketing effort. Marketing is the business discipline responsible for: a) Identifying the people who make upa marketb) Analysing and identifying the needs and wants of these people. c) Planning the development of appropriate products or services that will satisfy these want",
+                "Career opportunities: Marketing Manager, Sales Manager, Sales Consultant, Advertising Manager, Researcher.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -395,6 +471,14 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Marketing Manager",
+                "Sales Manager",
+                "Sales Consultant",
+                "Advertising Manager",
+                "Researcher"
             ]
         },
         {
@@ -406,14 +490,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-PD3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: There are various good reasons why the student should study diploma in management sciences: operations management. One is that operations management activities are at the core of all business organisations, regardless of the industry they are occupying. Operations management covers areas such as customer service, quality assurance, production planning and control, scheduling, job design, inventory management, and many more. Production/operations management is about management and all managers need to possess the knowledge and skills to effectively plan, organise, lead, and control the resources of the organisation. Within the manufacturing se",
+                "Career opportunities: The programme prepares the student for positions such as trainee production/operations manager, work -study officer, quality controller, customer services, materials manager, and production foreman/superintendent and quality consultant.",
+                "NB: If the number of applications exceeds the number of places available, the department reserves the right to apply a ranking sy stem to select students. Please Note: Due to the limited number of places availab le, meeting the minimum requirements does not guarantee a place. Final selection is"
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -444,6 +534,13 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "operations manager",
+                "work -study officer",
+                "materials manager",
+                "quality consultant"
             ]
         },
         {
@@ -455,15 +552,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-PDY.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Programme note: Part-time.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: There are various good reasons why the student should study diploma in management sciences: operations management. One is that operations management activities are at the core of all business organisations, regardless of the industry they are occupying. Operations management covers areas such as customer service, quality assurance, production planning and control, scheduling, job design, inventory management, and many more. Production/operations management is about management and all managers need to possess the knowledge and skills to effectively plan, organise, lead, and control the resources of the organisation. Within the manufacturing se",
+                "Career opportunities: The programme prepares the student for positions such as trainee production/operations manager, work -study officer, quality controller, customer services, materials manager, and production foreman/superintendent and quality consultant.",
+                "NB: If the number of applications exceeds the number of places available, the department reserves the right to apply a ranking sy stem to select students. Please Note: Due to the limited number of places availab le, meeting the minimum requirements does not guarantee a place. Final selection is"
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -494,6 +597,13 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "operations manager",
+                "work -study officer",
+                "materials manager",
+                "quality consultant"
             ]
         },
         {
@@ -505,14 +615,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-MP3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: Public Relations is a strategic communication process used to help forge effective two-way communication between an organisation and its various publics. Communication and/or Public Relations Practitioners are responsible for planning and executing programmes to establish and maintaina favourable image for their employer among the public or groups with which it comes into contact. This communication may be face- to-face with individuals or through the mass media of radio, television, press and the Internet. Students are equipped with various skills such as writing, speaking, research and establishing relationships, all of which are important",
+                "Career opportunities: Public Relations Practitioner, Media Officer, Events Manager, Communication Officer, Promotions Officer, Strategist, Fund Raiser, Social Media Strategist, Digital Account Manager, Brand Manager, Copywriter, Corporate Communications.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -543,6 +659,15 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Relations Practitioner",
+                "Media Officer",
+                "Events Manager",
+                "Communication Officer",
+                "Promotions Officer",
+                "Strategist"
             ]
         },
         {
@@ -554,14 +679,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-MP3.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: Public Relations is a strategic communication process used to help forge effective two-way communication between an organisation and its various publics. Communication and/or Public Relations Practitioners are responsible for planning and executing programmes to establish and maintaina favourable image for their employer among the public or groups with which it comes into contact. This communication may be face- to-face with individuals or through the mass media of radio, television, press and the Internet. Students are equipped with various skills such as writing, speaking, research and establishing relationships, all of which are important",
+                "Career opportunities: Public Relations Practitioner, Media Officer, Events Manager, Communication Officer, Promotions Officer, Strategist, Fund Raiser, Social Media Strategist, Digital Account Manager, Brand Manager, Copywriter, Corporate Communications.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -592,6 +723,15 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Relations Practitioner",
+                "Media Officer",
+                "Events Manager",
+                "Communication Officer",
+                "Promotions Officer",
+                "Strategist"
             ]
         },
         {
@@ -603,14 +743,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-RB3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 94830.",
+                "Duration: 3 years.",
+                "Programme: Retail is one of the fastest expanding sectors in the South African economy, employing one out of every five economically active people. Yet it is not always considered as a career option. Perhaps it is because retailing is sucha common part of our everyday lives that it is often taken for granted. Retailing is the sale of goods and services to the ultimate consumer for personal, family or household use. The scope of retail is broad with the result thata career in the field can end up in various areas. Career options range from in - store positions to various alternatives in regional and head offices as well as distribution centres. The Dip",
+                "Career opportunities: Most retail companies have opportunities in a number of areas such as store operations, finance and administration, buying and planning, logistics, human resources, marketing and IT. Entry Requirement (Diploma in Management Sciences: Retail Management)",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -641,6 +787,11 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Retail Manager",
+                "Store Manager"
             ]
         },
         {
@@ -652,14 +803,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-RM3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3.",
+                "NQF Level: 6.",
+                "SAQA ID: 97884.",
+                "Duration: 3 years.",
+                "Programme: The aim of the Diploma is to prepare students for careers in the public sector. The object is to prepare students for entry into niche areas of the different spheres of government, and to offer invaluable guidance on managerial competencies for those preparing to enter higher levels of the public sector. Owing to the accelerated changes and transformation in Government in South African, with particular emphasis on best practices and good governance, the programme is structured and geared to address inter alia, management, development, and delivery of programmes of reconstruction and development. The programme is designed to offer both practic",
+                "Career opportunities: Administrative officer, Manager (e.g., Human Resources, Supply chain), Procurement Officer, Disaster & Risk Practitioner (at all levels of government), Local Government Consultant, Divisional Head, Assistant Director.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -682,6 +839,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Administrator",
+                "Public Sector Manager",
+                "Municipal Officer"
             ]
         },
         {
@@ -693,14 +856,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-GV3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3.",
+                "NQF Level: 6.",
+                "SAQA ID: 97884.",
+                "Duration: 3 years.",
+                "Programme: The aim of the Diploma is to prepare students for careers in the public sector. The object is to prepare students for entry into niche areas of the different spheres of government, and to offer invaluable guidance on managerial competencies for those preparing to enter higher levels of the public sector. Owing to the accelerated changes and transformation in Government in South African, with particular emphasis on best practices and good governance, the programme is structured and geared to address inter alia, management, development, and delivery of programmes of reconstruction and development. The programme is designed to offer both practic",
+                "Career opportunities: Administrative officer, Manager (e.g., Human Resources, Supply chain), Procurement Officer, Disaster & Risk Practitioner (at all levels of government), Local Government Consultant, Divisional Head, Assistant Director.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -723,6 +892,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Administrator",
+                "Public Sector Manager",
+                "Municipal Officer"
             ]
         },
         {
@@ -734,14 +909,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-PM3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3.",
+                "NQF Level: 6.",
+                "SAQA ID: 97884.",
+                "Duration: 3 years.",
+                "Programme: The aim of the Diploma is to prepare students for careers in the public sector. The object is to prepare students for entry into niche areas of the different spheres of government, and to offer invaluable guidance on managerial competencies for those preparing to enter higher levels of the public sector. Owing to the accelerated changes and transformation in Government in South African, with particular emphasis on best practices and good governance, the programme is structured and geared to address inter alia, management, development, and delivery of programmes of reconstruction and development. The programme is designed to offer both practic",
+                "Career opportunities: Administrative officer, Manager (e.g., Human Resources, Supply chain), Procurement Officer, Disaster & Risk Practitioner (at all levels of government), Local Government Consultant, Divisional Head, Assistant Director.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -764,6 +945,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Administrator",
+                "Public Sector Manager",
+                "Municipal Officer"
             ]
         },
         {
@@ -775,14 +962,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-PM3.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three recognised 20-credit subjects at Level 3."
+                "Additional DUT requirements: NSC Diploma pass; Three recognised 20-credit subjects at Level 3.",
+                "NQF Level: 6.",
+                "SAQA ID: 97884.",
+                "Duration: 3 years.",
+                "Programme: The aim of the Diploma is to prepare students for careers in the public sector. The object is to prepare students for entry into niche areas of the different spheres of government, and to offer invaluable guidance on managerial competencies for those preparing to enter higher levels of the public sector. Owing to the accelerated changes and transformation in Government in South African, with particular emphasis on best practices and good governance, the programme is structured and geared to address inter alia, management, development, and delivery of programmes of reconstruction and development. The programme is designed to offer both practic",
+                "Career opportunities: Administrative officer, Manager (e.g., Human Resources, Supply chain), Procurement Officer, Disaster & Risk Practitioner (at all levels of government), Local Government Consultant, Divisional Head, Assistant Director.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -805,6 +998,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Administrator",
+                "Public Sector Manager",
+                "Municipal Officer"
             ]
         },
         {
@@ -816,14 +1015,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-SC3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3.",
+                "NQF Level: 6.",
+                "SAQA ID: 97884.",
+                "Duration: 3 years.",
+                "Programme: The aim of the Diploma is to prepare students for careers in the public sector. The object is to prepare students for entry into niche areas of the different spheres of government, and to offer invaluable guidance on managerial competencies for those preparing to enter higher levels of the public sector. Owing to the accelerated changes and transformation in Government in South African, with particular emphasis on best practices and good governance, the programme is structured and geared to address inter alia, management, development, and delivery of programmes of reconstruction and development. The programme is designed to offer both practic",
+                "Career opportunities: Administrative officer, Manager (e.g., Human Resources, Supply chain), Procurement Officer, Disaster & Risk Practitioner (at all levels of government), Local Government Consultant, Divisional Head, Assistant Director.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -846,6 +1051,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Administrator",
+                "Public Sector Manager",
+                "Municipal Officer"
             ]
         },
         {
@@ -857,14 +1068,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-SC3.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3."
+                "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3.",
+                "NQF Level: 6.",
+                "SAQA ID: 97884.",
+                "Duration: 3 years.",
+                "Programme: The aim of the Diploma is to prepare students for careers in the public sector. The object is to prepare students for entry into niche areas of the different spheres of government, and to offer invaluable guidance on managerial competencies for those preparing to enter higher levels of the public sector. Owing to the accelerated changes and transformation in Government in South African, with particular emphasis on best practices and good governance, the programme is structured and geared to address inter alia, management, development, and delivery of programmes of reconstruction and development. The programme is designed to offer both practic",
+                "Career opportunities: Administrative officer, Manager (e.g., Human Resources, Supply chain), Procurement Officer, Disaster & Risk Practitioner (at all levels of government), Local Government Consultant, Divisional Head, Assistant Director.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -887,6 +1104,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Public Administrator",
+                "Public Sector Manager",
+                "Municipal Officer"
             ]
         },
         {
@@ -898,16 +1121,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-CKM.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3; Not more than one language.",
                 "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
-                "Subject requirements updated from DUT entry requirements PDF: English HL 3/FAL 4, Maths 3/Maths Lit 4, Accounting 4, plus two listed subjects at level 4."
+                "NQF Level: 6.",
+                "SAQA ID: 109284.",
+                "Duration: 3 years.",
+                "Programme: A Diploma in Catering Management will contribute to addressing the growing demand for knowledge and skilled catering personnel. The programme offers an appropriate balance of theoretical knowledge and practical skills, and the inclusion of one - year work integrated learning component ensures that qualifying learners are better prepared to enter the world of work. Personal Qualities Required As there are also very important non-academic requirements associated with, beinga successful manager of chefs, it is essential that you pay special attention to the development of the following characteristics while you are at the Hotel School: \u2022 Commun",
+                "Career opportunities: The positions and organisations in which learners can be employed upon completion of the Diploma in Catering Management, include, but not limited, to the following: catering manager/supervisor, chef de parties, restaurant supervisors and event coordinators for various food service unitsi.e., hotels, hospitals, schools, prisons, cruise liners, universities and canteens.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -949,6 +1177,12 @@
                         "Tourism"
                     ]
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "to the following: catering manager",
+                "supervisor",
+                "chef de parties"
             ]
         },
         {
@@ -960,7 +1194,7 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HPM.",
                 "Campus: DBN Campus.",
@@ -968,9 +1202,14 @@
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in Hospitality minimum APS 22, English level 3, Mathematics/Mathematical Literacy level 3.",
                 "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
-                "Subject requirements updated from DUT entry requirements PDF: English HL 3/FAL 4, Maths 3/Maths Lit 4, one listed subject at level 4, plus two 20-credit subjects at level 4."
+                "NQF Level: 6.",
+                "SAQA ID: 110953.",
+                "Duration: 3 years.",
+                "Programme: Good hospitality management is about ensuring high standards in businesses, which provide hospitality as their core product, mainly in respect of accommodation, food and beverage and events man agement. Banqueting/Conferencing and leisure activities are associated with the programme. Although establishments vary with regard to business emphasis and target markets, a common commitment to service excellence is essential. A career, which depends upon service as its cornerstone is the challenge of every general manager and his/her team. It is their duty to ensure that guests leave the hospitality environment as a satisfied and well- disposed cust",
+                "Career opportunities: The Diploma in Hospitality Management is set to produce well -grounded graduates who will be able to occupy entry-level positions in a wide variety of sectors within the hospitality industry, inter alia, accommodation establishments, food service sector, events and conferencing, transport catering and welfare catering. Typical jobs include chefs, food service supervisors, front office personnel, guest relations, event co-ordinators, housekeepers, catering supervisors, bartenders, sommeliers and many positions that are more relevant.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -1014,6 +1253,11 @@
                     "count": 2,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Hospitality Manager",
+                "Hotel Supervisor"
             ]
         },
         {
@@ -1025,14 +1269,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DTM.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 2 OR Mathematical Literacy: Level 3 OR Accounting; Three recognised 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 2 OR Mathematical Literacy: Level 3 OR Accounting; Three recognised 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 109284.",
+                "Duration: 3 years.",
+                "Programme: A Diploma in Catering Management will contribute to addressing the growing demand for knowledge and skilled catering personnel. The programme offers an appropriate balance of theoretical knowledge and practical skills, and the inclusion of one - year work integrated learning component ensures that qualifying learners are better prepared to enter the world of work. Personal Qualities Required As there are also very important non-academic requirements associated with, beinga successful manager of chefs, it is essential that you pay special attention to the development of the following characteristics while you are at the Hotel School: \u2022 Commun",
+                "Career opportunities: The positions and organisations in which learners can be employed upon completion of the Diploma in Catering Management, include, but not limited, to the following: catering manager/supervisor, chef de parties, restaurant supervisors and event coordinators for various food service unitsi.e., hotels, hospitals, schools, prisons, cruise liners, universities and canteens.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -1043,6 +1293,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "to the following: catering manager",
+                "supervisor",
+                "chef de parties"
             ]
         },
         {
@@ -1054,14 +1310,19 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-ET3.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; One 20-credit subject at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; One 20-credit subject at Level 3; Not more than one language.",
+                "SAQA ID: 119069.",
+                "Duration: 3 years.",
+                "Programme: Ecotourism is a branch of tourism that is directed towards conservation of natural environments and protection of the local communities against exploitation by tourists. This distinct branch of tourism is important due to its ability to make significant contribution to vulnerable and finite natural environmental resources, thus contributing positively to the environmental, social, cultural and economic well-being of destinations and local communities around the world. Thus, the Diploma in Ecotourism will address the need for knowledge and skilled employees in the growing field of ecotourism. Upon completion of the Diploma in Ecotourism, studen",
+                "Career opportunities: The Diploma in Ecotourism is designed to enhance the employability of students by providing them with the basic and intermediate knowledge and skills pertaining to ecotourism, which will enable them to occupy various positions in the ecotourism sector. Students will be equipped with the appropriate knowledge and skills to work as Tourism Project Officers, Heritage Site Managers, and Park Rangers; trainee tour/field guides, trainee conservation officers.",
+                "NB: If the number of applications exceeds the number of places available, the department reserves the right to apply a ranking system to select students. Use the NSC rating system below to determine the rating level."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -1100,7 +1361,15 @@
                     "count": 1,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Ecotourism Manager",
+                "Tourism Officer",
+                "Conservation Tourism Guide"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+    "source_reviewed": "2026-08"
 }

@@ -20,4 +20,9 @@ class RequirementSeeder extends UniversityRequirementSeeder
     {
         return 'seeders/Universities/DUT/Requirements/*.json';
     }
+
+    protected function defaultSourceUrl(): ?string
+    {
+        return 'https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf';
+    }
 }

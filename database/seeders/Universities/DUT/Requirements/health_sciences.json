@@ -1,7 +1,7 @@
 {
     "faculty": "Health Sciences",
     "university": "Durban University of Technology",
-    "source": "DUT Student Course Guide 2026",
+    "source": "DUT Study Opportunities 2027",
     "qualifications": [
         {
             "name": "Bachelor of Child and Youth Care",
@@ -12,15 +12,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-CYC.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Four 20-credit subjects at Level 4; Not more than one language.",
-                "Programme-specific APS guide: Health Sciences minimum APS 28."
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "NQF Level: 8.",
+                "SAQA ID: 94178.",
+                "Duration: 4 years.",
+                "Programme: \u201cChild and youth care work is work with children and youth as whole persons, in order to promote their social competence and healthy development, by participating in and using their day-to-day environments and life experiences and through the development of therapeutic relationships, most importantly with the particular child or youth who is the focus of attention\u201d. - Anglin, J. 1995. Child and Youth Care: A Unique Profession. The Child Care Worker, 13(2):10-11. Feb. The four-year professional Bachelor of Child and Youth Care degree aims to provide students with skills, knowledge and experience of working in a variety of child and youth care",
+                "Career opportunities: At present, the areas in which learners and graduates work include the following: Residential child and youth care/treatment centres (e.g. children\u2019s homes, substance abuse programmes) \u2022 State facilities (e.g., places of safety, secure care; special schools) \u2022 Probation programmes \u2022 Street shelters and outreach programmes \u2022 Educare centres \u2022 Community development projects \u2022 Assistant Probation officers in law courts \u2022 Day-care and play-care centres \u2022 Hospitals caring for abandoned children \u2022 Mediators and facilitators in \u201cat risk\u201d communities \u2022",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -32,7 +38,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Graduate Professional"
+            ]
         },
         {
             "name": "Bachelor of Health Sciences in Environmental Health",
@@ -43,15 +53,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-EVH.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language.",
-                "Programme-specific APS guide: Health Sciences minimum APS 28."
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "NQF Level: 8.",
+                "SAQA ID: 94797.",
+                "Duration: 4 years.",
+                "Programme: Environmental Health Practitioners (EHPs) are health professionals who derive their expertise froma comprehensive knowledge of the physical, biological, and social sciences. These sciences allow them to perform as efficient practitioners in the field of Environmental Health. He or she will bea valuable member of the community who will have the skills required to advise people and to invest igate, evaluate and control the many facets that affect the environment in which we live. As a result, a career as an EHP is dynamic and incorporates many different fields of interest. EHPs are concerned with the external environment and will deal with to",
+                "Career opportunities: Popular employers are private companies, municipal health departments, and state health, parastatals, provincial, and national government departments. Others include large food manufacturers, industries, mines and some hotel groups and environmental consultancies.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -75,7 +91,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Environmental Health Practitioner"
+            ]
         },
         {
             "name": "Bachelor of Health Sciences in Radiography: Diagnostic",
@@ -86,14 +106,20 @@
             "closing_day": 31,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-RAD.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language.",
+                "NQF Level: 8.",
+                "SAQA ID: 94832.",
+                "Duration: 4 years.",
+                "Programme: The Department of Radiography offers three discipline specific degrees namely: 1. Bachelor of Health Sciences in Diagnostic Radiography, 2. Bachelor of Health Sciences in Diagnostic Sonography, and 3. Bachelor of Health Sciences in Radiotherapy and Oncology. Bachelor of Health Sciences in Diagnostic Radiography Qualification Code: BHDRD1 SAQA ID: 94832 Radiography is the creation of radiographs; photographs made by exposinga photographic film or other image receptors to X- rays. Since X-rays penetrate solid objects, but are slightly attenuated by them, the picture resulting from the exposure reveals the internal structure of the object. A ra",
+                "Career opportunities: Work may be sought in provincial and private institutions, in Sou th Africa, as well as in most countries abroad. Radiographers may also open their own practices in accordance with the requirements of the Health Professions Council of South Africa (HPCSA). Service Conditions The province/private practices and/or Durban University of Technology reserves the right to terminate and/or deregister the student from the academic/clinical programme if his/her clinical, professional and/or academic progress, respectively, are deemed unsatisfactory. The",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -116,6 +142,10 @@
                     "count": 1,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Work may be sought in provincial"
             ]
         },
         {
@@ -127,14 +157,20 @@
             "closing_day": 31,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-RAS.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language.",
+                "NQF Level: 8.",
+                "SAQA ID: 94832.",
+                "Duration: 4 years.",
+                "Programme: The Department of Radiography offers three discipline specific degrees namely: 1. Bachelor of Health Sciences in Diagnostic Radiography, 2. Bachelor of Health Sciences in Diagnostic Sonography, and 3. Bachelor of Health Sciences in Radiotherapy and Oncology. Bachelor of Health Sciences in Diagnostic Radiography Qualification Code: BHDRD1 SAQA ID: 94832 Radiography is the creation of radiographs; photographs made by exposinga photographic film or other image receptors to X- rays. Since X-rays penetrate solid objects, but are slightly attenuated by them, the picture resulting from the exposure reveals the internal structure of the object. A ra",
+                "Career opportunities: Work may be sought in provincial and private institutions, in Sou th Africa, as well as in most countries abroad. Radiographers may also open their own practices in accordance with the requirements of the Health Professions Council of South Africa (HPCSA). Service Conditions The province/private practices and/or Durban University of Technology reserves the right to terminate and/or deregister the student from the academic/clinical programme if his/her clinical, professional and/or academic progress, respectively, are deemed unsatisfactory. The",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -157,6 +193,10 @@
                     "count": 1,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Work may be sought in provincial"
             ]
         },
         {
@@ -168,14 +208,20 @@
             "closing_day": 31,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-RTO.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language.",
+                "NQF Level: 8.",
+                "SAQA ID: 94832.",
+                "Duration: 4 years.",
+                "Programme: The Department of Radiography offers three discipline specific degrees namely: 1. Bachelor of Health Sciences in Diagnostic Radiography, 2. Bachelor of Health Sciences in Diagnostic Sonography, and 3. Bachelor of Health Sciences in Radiotherapy and Oncology. Bachelor of Health Sciences in Diagnostic Radiography Qualification Code: BHDRD1 SAQA ID: 94832 Radiography is the creation of radiographs; photographs made by exposinga photographic film or other image receptors to X- rays. Since X-rays penetrate solid objects, but are slightly attenuated by them, the picture resulting from the exposure reveals the internal structure of the object. A ra",
+                "Career opportunities: Work may be sought in provincial and private institutions, in Sou th Africa, as well as in most countries abroad. Radiographers may also open their own practices in accordance with the requirements of the Health Professions Council of South Africa (HPCSA). Service Conditions The province/private practices and/or Durban University of Technology reserves the right to terminate and/or deregister the student from the academic/clinical programme if his/her clinical, professional and/or academic progress, respectively, are deemed unsatisfactory. The",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -198,6 +244,10 @@
                     "count": 1,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Work may be sought in provincial"
             ]
         },
         {
@@ -209,15 +259,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DCT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 3; Not more than one language.",
-                "Programme-specific APS guide: Health Sciences minimum APS 28."
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "NQF Level: 8.",
+                "SAQA ID: 96409.",
+                "Duration: 4 years.",
+                "Career opportunities: A Clinical Technologist can be employed in provincial and private hospitals in either Critical Ca re units, Lung Function units, Renal/Dialysis units, EEG and Sleep Laboratories, Cardio-thoracic surgery, Cardiac Catheterisation Laboratory & Cardiac Clinic or Assisted Reproductive Biology Laboratories.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -241,7 +296,16 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Lung Function units",
+                "Renal",
+                "Dialysis units",
+                "EEG",
+                "Sleep Laboratories",
+                "Cardio-thoracic surgery"
+            ]
         },
         {
             "name": "Bachelor of Health Sciences in Emergency Medical Care",
@@ -252,14 +316,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HS4.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language.",
+                "NQF Level: 8.",
+                "SAQA ID: 83366.",
+                "Duration: 4 years.",
+                "Programme: Paramedics are health care professionals who are registered with the Professional Board of Emergency Care Practitioners of the Health Professions Council of South Africa. Paramedics are responsible for providing pre-hospital advanced life support and rescue services to critically ill or injured patients. This involves gaining access to the patient in a wide range of environments, providing emergency care in the field and transporting them to an appropriate medical facility. Paramedics also care for patients undergoing transfer between medical facilities. The programme consists of both theoretical and practical components. The programme doesn",
+                "Career opportunities: Employment opportunities exist in private and public emergency medical services, fire departments, the military and a range of support industries. E ntry Requirements (BHS in EMC)",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -282,6 +352,12 @@
                     "count": 2,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Paramedic",
+                "Emergency Care Practitioner",
+                "Rescue Practitioner"
             ]
         },
         {
@@ -293,15 +369,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HM4.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two additional 20-credit subjects at Level 4; Not more than one language.",
-                "Programme-specific APS guide: Health Sciences minimum APS 28."
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "NQF Level: 8.",
+                "SAQA ID: 94553.",
+                "Duration: 4 years.",
+                "Programme: Homoeopathy is a legally recognised profession and is becoming increasingly important in South African healthcare provision. It a medical approach that respects the wisdom of the body, with the emphasis on holistic healthcare. Homoeopathy uses medicines that stimulate the body's own immune- and defence systems to initiate the healing process. It is an approach that is widely recognised to be safe, and it has the potential to be very effective in preventing and treating various acute and chronic diseases. As a primary-contact practitioner, a homoeopath manages all aspects of patient healthcare, including diagnosis, treatment and management, as",
+                "Career opportunities: The comprehensive nature of training allows graduates to find employment in the private sector as private practitioners, in the industrial sector, or in the public sector within multi- disciplinary and hospital-related environments. The comprehensive nature of training allows graduates to find employment primarily in the private sector as private practitioners, and to a lesser extent in the industrial sector, as well as some limited opportunities in the public sector within multi-disciplinary environments. Degree Structure The Bachelor of Healt",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -325,7 +407,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Homoeopath"
+            ]
         },
         {
             "name": "Bachelor of Health Sciences in Chiropractic",
@@ -336,15 +422,21 @@
             "closing_day": 15,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-CHI.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two additional 20-credit subjects at Level 4; Not more than one language.",
-                "Programme-specific APS guide: Health Sciences minimum APS 28."
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "NQF Level: 9.",
+                "SAQA ID: 117033.",
+                "Duration: 4 years.",
+                "Programme: Manipulation of the spine can be traced to the earliest practitioners in the history of healing. Hippocrates (400 BC), the \u201cfather of medicine\u201d, developed theories of the spine's mechanics and its relation to the overall health of the body by making use of manipulations, as did many famous physicians after him. Through the intervening centuries, the theory that the spine was in some way central to good health was probably more consistently held than any other medical theory. However, it was with the founding in 1895 of chiropractic by David Daniel Palmer that the specific form of spinal manipulation known as \u201cspinal adjustment\u201d came into bein",
+                "Career opportunities: Most of the newly qualified chiropractors will go into private practice on their own or into partnership with existing practitioners.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -368,7 +460,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Chiropractor"
+            ]
         },
         {
             "name": "Bachelor of Health Sciences in Medical Laboratory Science",
@@ -379,15 +475,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BLS.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 3; Not more than one language.",
-                "Programme-specific APS guide: Health Sciences minimum APS 28."
+                "Programme-specific APS guide: Health Sciences minimum APS 28.",
+                "NQF Level: 8.",
+                "SAQA ID: 101689.",
+                "Duration: 4 years.",
+                "Programme: Medical laboratory Science is a profession of highly knowledgeable and skilled individuals who perform clinical laboratory tests on patient samples. The service offered by Medical laboratory Scientist is an important component of patient health care, as the results obtained from these laboratory tests area vital tool in the diagnosis, treatment and prevention of disease. Based ona variety of placement assessments, successful applicants for study towardsa Bachelor of Health Sciences degree will be accepted intoa four-year minimum study period. A partnership between the Medical Laboratory Science programme, the National Health Laboratory Se",
+                "Career opportunities: The qualifying learner will be able to organise and perform laboratory operations in clinical diagnostic laboratories and related fields in compliance with statutory requirements for ethics, safety and quality assurance. Supervisory, management and research skills are developed. The Medical Laboratory Science degree that will be offered at DUT will at the onset, offer the following specialization options: Clinical Pathology, Haematology 3, Medical Microbiology 3, Clinical Chemistry 3, Immunohematology 2, Cytology and Histopathology 2. Other spe",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -411,7 +513,16 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Haematology 3",
+                "Medical Microbiology 3",
+                "Clinical Chemistry 3",
+                "Immunohematology 2",
+                "Cytology",
+                "Histopathology 2. Other spe"
+            ]
         },
         {
             "name": "Bachelor in Nursing",
@@ -422,14 +533,19 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-BN1.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two additional 20-credit subjects at Level 4; Only one of the additional subjects may be an additional language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two additional 20-credit subjects at Level 4; Only one of the additional subjects may be an additional language.",
+                "NQF Level: 8.",
+                "SAQA ID: 76925.",
+                "Duration: 4 years.",
+                "Programme: The academic programme extends over a period of four years of full-time study, of which the first two years provides the future professional nurse with a comprehensive foundation in basic sciences; including basic medical sciences and social sciences. Attendance at lectures, clinical health settings, including community settings and laboratories will form the basic pattern. The final year will includea foundation in conducting research in nursing with specific focus in primary health care (PHC) settings. Hence, more than 50% of clinical learning placements will take place in community and primary care settings. The last semester of the program",
+                "Career opportunities: The four-year Bachelor of Health Science degree qualifies you as a general nurse and midwife (community, psychiatry) and opens opportunities for working as a general nurse in any clinical setting. Further career prospects are to continue postgraduates\u2019 studies, specialising in clinical nursing, management, or academia."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -460,6 +576,12 @@
                     "count": 2,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Professional Nurse",
+                "Primary Health Care Nurse",
+                "Clinical Nurse"
             ]
         },
         {
@@ -471,16 +593,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-ST3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Any two additional 20-credit subjects at Level 3; Only one of the additional subjects may be a language.",
+                "Additional DUT requirements: NSC Diploma pass; Any two additional 20-credit subjects at Level 3; Only one of the additional subjects may bea language.",
                 "Programme-specific APS guide: Health Sciences minimum APS 28.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 99725.",
+                "Duration: 4 years.",
+                "Programme: In keeping with the faculty\u2019s mission and goals, the programme aims to provide high standards of teaching and innovative lear ning strategies thereby producing ethical, skilful, and quality Stomatologist who can promote and represent their profession locally, nationally, and internationally. Graduates will have the capacity to apply leadership and entrepreneurial skills thereby responding to the national imperatives of creating employment opportunities. The Stomatologist will promote social responsibility through community engagement and research activities. The programme aims to encourage and improve relationships will all other health care",
+                "Career opportunities: Owning, running, or working in a spa/salon/clinic or health hydro, international, and national shipping liners, game lodges and wellness centres, exercise as well as advising clients on nutritionally balanced eating programmes. Marketing and training positions are also available in national and international cosmetic companies, and equipment houses and retail outlets.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -508,7 +636,12 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Somatologist",
+                "Skincare Therapist"
+            ]
         },
         {
             "name": "Higher Certificate in Dental Assisting",
@@ -519,16 +652,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HDA.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Higher Certificate.",
                 "Additional DUT requirements: NSC Higher Certificate pass; Two 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Health Sciences minimum APS 28.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 5.",
+                "SAQA ID: 97879.",
+                "Duration: 1 year.",
+                "Programme: Dental assistants requirea variety of diverse skills ranging from secretarial to clinical skills. They are involved in everything from reception duties to data capturing, dealing with patients and medical aid schemes, however their primary task is assisting the dentist with dental procedure be it surgical, impression taking for dentures, orthodontics, fillings or extractions. One of the most important functions of a Dental Assistant is infection control, ensuring the proper sterilization of instruments and ultimately making sure that all the necessary precautions have been taken to ensure patient, dental assistant and dentist are protected.",
+                "Career opportunities: Career opportunities exist in South Africa at present. Employment opportunities exist for dental assistants in private practice, in the public hospitals as well as in the medical division of the defence force, medical aid companies, sales representatives for dental supply companies and dental laboratories. Experienced dental assistants also readily find employment internationally.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -564,7 +703,13 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 28
+            "admission_score_required": 28,
+            "duration_years": 1.0,
+            "possible_careers": [
+                "Dental Assistant"
+            ]
         }
-    ]
+    ],
+    "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+    "source_reviewed": "2026-08"
 }

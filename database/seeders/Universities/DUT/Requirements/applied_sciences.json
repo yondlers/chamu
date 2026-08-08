@@ -1,7 +1,7 @@
 {
     "faculty": "Applied Sciences",
     "university": "Durban University of Technology",
-    "source": "DUT Student Course Guide 2026",
+    "source": "DUT Study Opportunities 2027",
     "qualifications": [
         {
             "name": "Bachelor of Applied Science in Biotechnology",
@@ -12,14 +12,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BBT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 97809.",
+                "Duration: 3 years.",
+                "Programme: Biotechnology is the application of living organisms or the individual cellular components of these organisms for commercial purposes or environmental control. A person working in the field of biotechnology will have to havea working knowledge of such disciplines as biochemistry, microbiology, bioprocess engineering, genetics, molecular biology, and mathematics. The degree prepares applicants with focused knowledge, practical skills, attitudes, and values necessary for the technological application of biological systems, living organisms, or derivatives thereof, to make or modify products or processes for specific use in the biotechnology wo",
+                "Career opportunities: Graduates may seek employment in industrial and research laboratories such as drug and pharmaceutical research, public funded laboratories, chemicals, environmental control, water and waste management, energy, food processing and bioprocessing industries.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -42,6 +48,12 @@
                     "count": 1,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Biotechnologist",
+                "Laboratory Technologist",
+                "Research Assistant"
             ]
         },
         {
@@ -53,14 +65,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BFS.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; One 20-credit subject at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 101564.",
+                "Duration: 3 years.",
+                "Programme: The purpose of the programme is to focus on generation of knowledge and expertise in the emerging areas of science and technology by developing state-of-the-art knowledge and skills to produce quality manpower needed within the field of food science for societal and industrial benefit. The Food Science and Technology program is driven by the development of theoretical knowledge base as well as the business needs of the food industry. It involvesa flexible model where the course content would continuously evolve with the rapid changes occurring within the field of Food Science without compromising on the basis tools in the area. In South Afri",
+                "Career opportunities: Food Scientist work predominantly in a laboratory or industrial environment and may be employed as quality inspectors, laboratory analysts, researchers, product development scientists, packaging scientists, auditors of food factories and suppliers. Food scientists may eventually specialize in one of the following areas: quality assurance /quality control; product research and development, production management and quality management. Promotion opportunities to supervisory or management positions are possible, provided food industry professional",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -83,6 +101,12 @@
                     "count": 1,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Food Technologist",
+                "Quality Assurance Officer",
+                "Product Development Technologist"
             ]
         },
         {
@@ -94,16 +118,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BSY.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree pass; Two 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 119966.",
+                "Duration: 3 years.",
+                "Programme: The purpose of this qualification is to equip graduates with the necessary theoretical and scientific knowledge of relevant disciplines and fields of study to be used in an academic or specialized context. The Bachelor of Applied Science in Industrial Chemistry aims to provide a unique blend of practical applications and theory which immerses students intoa wide range of the fastest growing technological fields in South Africa. The theoretical underpinnings of this qualification havea core discipline of the chemical sciences. Thorough grounding in the knowledge, scientific theory, principles and skills of this qualification will be inculcat",
+                "Career opportunities: Employment may be found in a laboratory or production process as well as chemical and laboratory sales. Industries such as detergent, petroleum, plastics, food, pharmaceuticals, mining, water treatment, metallurgy and educational instit utions employ graduates from this course. Graduates may work in a practical application such as quality control and testing, ora theoretical field such as research and development, with chemists and other technologists or technicians. Quality control and assurance is a field with a growing demand for these grad"
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -123,7 +152,13 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Analytical Chemist",
+                "Laboratory Analyst",
+                "Chemical Technician"
+            ]
         },
         {
             "name": "Bachelor of Applied Science in Textile Science",
@@ -134,16 +169,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-ATT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 111358.",
+                "Duration: 3 years.",
+                "Programme: The three-year qualification in Textile Science is designed to prepare individuals for a wide range of specialist career opportunities in the industrial manufacture of textile fibres, yarns, and fabrics, as well as the colouration and finishing thereof, as well as major fashion retail stores, government sectors and research institutions, this is based ona foundation in mathematics, chemistry and physics. During the first two years of study, students learna broad range of manufacturing routes including the manufacture of the main fibre types, the principle yarn manufacturing processes, and the knitting, nonwoven, and woven fabric manufacturi",
+                "Career opportunities: Excellent opportunities exist in various divisions within textile manufacturing and associated companies such as planning production, fabric development, marketing, and quality control departments as well as major fashion retail stores and government sectors. Promotion routes after further study and work experience may in due course lead to senior appointments in production and marketing areas of the manufacturing industry, Clothing industry, Salesperson and Advisor.",
+                "Please Note: Due to the limited number of placesa vailable, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -163,7 +204,13 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Clothing industry",
+                "Salesperson",
+                "Advisor"
+            ]
         },
         {
             "name": "Bachelor of Sport Science and Management",
@@ -174,14 +221,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-SSM.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4.",
+                "NQF Level: 7.",
+                "SAQA ID: 109085.",
+                "Duration: 3 years.",
+                "Programme: The Bachelor of Sport Science and Management is a multidisciplinary qualification, drawing on fields such as physiology and biomechanics to understand what is happening in an athlete's body; exercise conditioning to improve performance and sports management to understand the financial and operational sides of the sports industry. A sports science degree could provide you with the professional knowledge and training you need whether you like the idea of being involved in the world of sports celebrities or want to help all kinds of people improve their lives through sports participation or health and wellness. Areas of Specialization Graduates",
+                "Career opportunities: Sport Scientist, Sport Manager, Fitness Coach.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -212,6 +265,12 @@
                     "count": 3,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Sport Scientist",
+                "Sport Manager",
+                "Fitness Coach"
             ]
         },
         {
@@ -223,16 +282,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-SL3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Any Business Management OR Commerce subject: Level 4; Two 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 97687.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Shipping and Logistics representsa level of qualification that recognises the ability to gain and apply a range of focused, specialised, skills and understanding. Graduates of the diploma would be able to display competence in the application of knowledge in a broad range of varied work activities associated with a career in shipping and logistics.",
+                "Career opportunities: A number of employment opportunities exist within the shore-based sector of the maritime industry. These include port agency, stevedoring, clearing, and forwarding, surveying, warehousing, project management and terminal management.",
+                "Please Note: Due to the limitedn umber of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -248,7 +313,13 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Shipping Officer",
+                "Logistics Coordinator",
+                "Freight Clerk"
+            ]
         },
         {
             "name": "Diploma in Analytical Chemistry",
@@ -259,16 +330,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-CH3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 98010.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Analytical Chemistry representsa level of qualification that recognizes the specialized knowledge, skills and understanding designed to meet the needs of various chemical industries. Graduates of the diploma would be able to display competence in the application of knowledge in a broad range of varied work activities associated with a career in the Chemical and Allied Industries involving detergents, petroleum, plastics, food, pharmaceuticals, mining, water treatment, metallurgy and, in addition, educational institutions may employ graduates from this course. Graduates are required for specific practical applications such asq",
+                "Career opportunities: There is a growing demand for graduates in this field. Industries are supportive of the furthering education of graduates hence opportunities exist for graduates to pursue further educational qualifications. Graduates may also apply for associate membership of South African Chemical Institute (SACI). SACI is associated with the South African Council for Natural Scientific Professions (SACNASP). The following link refers: http://www.sacnasp.org.za/about- us/voluntary-associations.html",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -288,7 +365,13 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Analytical Chemist",
+                "Laboratory Analyst",
+                "Chemical Technician"
+            ]
         },
         {
             "name": "Diploma in Clothing Management",
@@ -299,16 +382,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-CLM.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 105108.",
+                "Duration: 3 years.",
+                "Programme: The qualification in Clothing Management is designed to prepare individuals for a wide range of specialist career opportunities in the apparel and related industries, retail sector and the informal sector. This qualification develops students\u2019 knowledge and skills relating to the technology of sewn products. This includes design development and production through to sales, as well as the management and business skills required for a career in the apparel industry. FAQs 1. Is therea future for the clothing industry? The South African apparel industry is stabilising and expecting to begin to grow as it is one of the main SA industries offering",
+                "Career opportunities: There are job opportunities in the apparel and other related industries for graduates in management, product development, production, work- study, planning, quality, garment technology and other areas. Employment in South Africa is available in four main industrial sectors: \u2022 formal manufacturers (established apparel manufacturers), \u2022 informal sector (small to micro enterprises and entrepreneurs), \u2022 retail (centralised buying and store management), and \u2022 allied industries (footwear, training, selling equipment and computers). Opportunities also",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -320,7 +409,12 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Clothing Production Manager",
+                "Garment Technologist"
+            ]
         },
         {
             "name": "Diploma in Consumer Sciences in Food and Nutrition",
@@ -331,16 +425,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DFN.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 110205.",
+                "Duration: 3 years.",
+                "Career opportunities: Employment opportunities are in a variety of roles, e.g.: In food companies as customer development consultant in sales; product development; recipe development; fresh produce development technology; innovation chefs; consumer affairs consultant; in food safety and quality assurance. Food Production: Food Production Managers. In food retail, graduates can fill positions in food buying, food product management, and delicatessen management, fresh product development and brand development, Fresh Food, Delicatessen and Bakery Managers. Food Service",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guara nteea place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -396,7 +495,13 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Fresh Food",
+                "Delicatessen",
+                "Bakery Managers. Food Service"
+            ]
         },
         {
             "name": "Diploma in Nautical Science",
@@ -407,16 +512,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-NS3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 94831.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Nautical Studies representsa level of qualification that recognises the ability to gain and apply a range of focused, specialised, skills and understanding. Graduates of the diploma would be able to display competence in the application of knowledge in a broad range of varied work activities associated with an international career at sea.",
+                "Career opportunities: The first line of employment may lie withina shipping company or with Transnet National Ports Authority (TNPA), where the graduate will enter the industry as a Deck Cadet, and on completion of the requisite sea-time, further study/training and ancillary courses, could one day aspire to the command of an ocean-going vessel or work in a number of divisions within TNPA (including tugs, pilotage, dredging and vessel traffic services). Opportunities also exist with in the South African Navy (SAN). However, the student will need to meet the stringen",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -436,7 +547,13 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Deck Officer",
+                "Seafarer",
+                "Ship Officer"
+            ]
         },
         {
             "name": "Diploma in Sustainable Horticulture and Landscaping",
@@ -447,16 +564,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-SHL.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Two 20-credit subjects at Level 3.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 97807.",
+                "Duration: 3 years.",
+                "Programme: One of the most rapid growth areas in the field of agriculture is that of horticulture. Horticulture includes producing, processing and marketing fruits, vegetables, and ornamental plants (turf grass, flowers, shrubs and trees grown and used for their beauty). Landscape horticulture includes the production, marketing, and maintenance of landscape plants. Ranging from simple garden design to more sophisticated architectural designs, landscaping involves the organizing and enriching outdoor space by placing plants and structures in an agreeable and useful relationship with the nature. Sustainable horticulture and Landscaping are dependent ona",
+                "Career opportunities: There are various sources of employment for individuals trained in horticultural practices and Landscaping. These businesses include greenhouses, nurseries, Garden Centre\u2019s, golf courses, municipal parks departments, government departments, orchards, floral design shops, grounds maintenance operations, vegetable and fruit production and marketing, or self- employment. Horticulturists also work in the wholesale or retail trade (sales), as researchers, Ground\u2019s superintendents or Green Keepers.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -484,7 +607,12 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Garden Centre\u2019s",
+                "Ground\u2019s superintendents or Green Keepers"
+            ]
         },
         {
             "name": "Higher Certificate Sport Management Science",
@@ -495,14 +623,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-SMS.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Higher Certificate.",
-                "Additional DUT requirements: NSC Higher Certificate pass; Not more than one language."
+                "Additional DUT requirements: NSC Higher Certificate pass; Not more than one language.",
+                "NQF Level: 5.",
+                "SAQA ID: 99614.",
+                "Duration: 1 year.",
+                "Programme: The Higher Certificate in Sport Management Science qualification will empower graduates to obtain the necessary knowledge, skills, and practical ability to function within the sport environment. The programme will provide a unique blend of sport science, coaching and management. Areas of Specialization Graduates can specialize in the following areas: Sport Marketing and Management, Sport Business Administration, Coaching Principles and Teaching, Physical Activity to Children, National Federation Coaching Courses, Anatomy and Physiology, Entrepreneurship, Project Management. Duration This programme is offered ona one-year full time basis.",
+                "Career opportunities: Sport Scientist, Sport Manager, Fitness Coach.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -528,6 +662,12 @@
                         }
                     ]
                 }
+            ],
+            "duration_years": 1.0,
+            "possible_careers": [
+                "Sport Scientist",
+                "Sport Manager",
+                "Fitness Coach"
             ]
         },
         {
@@ -539,18 +679,31 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HAS.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Higher Certificate.",
                 "Additional DUT requirements: NSC Higher Certificate pass; English: Level 4 AND Mathematics: Level 3 AND Physical Sciences: Level 3; OR English: Level 4 AND Technical Mathematics: Level 3 AND Technical Sciences: Level 3.",
                 "Programme-specific APS guide: Applied Sciences minimum APS 30.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 5.",
+                "SAQA ID: 117922.",
+                "Duration: 1 year.",
+                "Programme: The Higher Certificate Applied Sciences is a 128 credit, NQF Level 5 qualification designed to address shortcomings in perfor mance in Mathematics and Physical Science at high school. Applicants to the Faculties of Engineering and the Built Environment, and Applied Sciences, who meet all of the admission requirements except Mathematics and Physical Science will be considered for admission to the HC. The programme offers modules in Mathematics, Physics and Statistics designed to addressa lack of proficiency in Mathematics and Physical Science while simultaneously exploring elective modules in Engineering and the Built Environment and in Appli",
+                "Career opportunities: Laboratory Assistant, Applied Science Technician.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [],
-            "admission_score_required": 30
+            "admission_score_required": 30,
+            "duration_years": 1.0,
+            "possible_careers": [
+                "Laboratory Assistant",
+                "Applied Science Technician"
+            ]
         }
-    ]
+    ],
+    "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+    "source_reviewed": "2026-08"
 }

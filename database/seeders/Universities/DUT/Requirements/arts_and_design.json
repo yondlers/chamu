@@ -1,7 +1,7 @@
 {
     "faculty": "Arts and Design",
     "university": "Durban University of Technology",
-    "source": "DUT Student Course Guide 2026",
+    "source": "DUT Study Opportunities 2027",
     "qualifications": [
         {
             "name": "Bachelor of Applied Arts in Commercial Photography",
@@ -12,16 +12,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-COP.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Four recognised 20-credit subjects at Level 4.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 108985.",
+                "Duration: 3 years.",
+                "Programme: The Bachelor of Applied Arts in Commercial Photography provides students with a comprehensive choice of traditional and digital photography projects, studio-based tuition, and location phot ography. The Photography Programme covers diverse genres in photography: portraiture, advertising, industrial, fashion, contemporary, street, documentary, landscape, lifestyle, architecture, social, editorial, food, photojournalism, medical, and scientific photography. Each genre of specialisation will have experienced lecturers and professionals who introduce students to exciting ideas in contemporary image making. This programme contains modules introduc",
+                "Career opportunities: Commercial Photographer, Photo Editor."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -33,7 +38,12 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Commercial Photographer",
+                "Photo Editor"
+            ]
         },
         {
             "name": "Bachelor of Applied Arts in Screen Arts and Technology",
@@ -44,14 +54,19 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-C-SAT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Four 20-credit subjects at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Four 20-credit subjects at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 112050.",
+                "Duration: 3 years.",
+                "Programme: The Bachelor of Applied Arts in Screen Arts and Technology prepares individuals to work in the television industry as programme- makers. Classes take the form of both theory and practical projects. Areas of learning include researching, scripting, set design, camera operation, lighting, sound mixing, vision mixing, editing, production management, and directing. Projects completed include documentaries, commercials, music videos, dramas, studio-based magazine programmes, sitcoms, and outside broadcasts. This is a 3- year, full-time qualification and includes the following focus areas: Introduction to Television Students are given an overviewo",
+                "Career opportunities: Graduates have been employed by SABC, Super Sport, Survivor, etc. Some graduates have opened their own businesses, and some have become directors, camera operators, writers, and production managers."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -70,6 +85,11 @@
                     "count": 4,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Super Sport",
+                "Survivor"
             ]
         },
         {
@@ -81,16 +101,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-C-BDV.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Four 20-credit subjects at Level 4; Not more than one language.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 101607.",
+                "Duration: 3 years.",
+                "Programme: Bachelor of Design in Visual Communication Design programme is designed to prepare students for a place in the world of visual communication, design, digital design, and advertising. It will help students develop an individual creative ability as well as a recognition and understanding of current market demands, trends, and technology requirements. To provide a Visual Communication Design education that enables graduates to be creatively, intellectually, technically, and professionally competitive as graphic designers and visual communicators to the level of local and international standards. To prepare learners with knowledge and skills for",
+                "Career opportunities: As a first degree, it is expected that most graduates of this qualification may potentially seek employment or self -employment in any of the sub-fields of Visual Communication Design as broadly defined and evolving, including but not limited to design and illustration for print media and advertising; animation, web - and multi-media design, online design, product design, and other specialisations. The qualification will also enable graduates to pursue further studies at the Honours level."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -102,7 +127,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "As a first degree"
+            ]
         },
         {
             "name": "Bachelor of Education in Senior Phase and FET Teaching: Economic and Management Sciences",
@@ -113,14 +142,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-EDE.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Bachelor of Education.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 109294.",
+                "Duration: 4 years.",
+                "Programme: \u201cYour future in Teaching starts here.\u201d The School of Education offers a four-year full-time professional Bachelor of Education in Senior Phase and Further Education and Training Teaching (B Ed SP & FET) Degree spread over eight (8) semesters. The qualification will enable the qualifying student to be competent in facilitating teaching and learning within one of the selected specialisation areas [Economics and Management Sciences; Natural Sciences, Technology and Languages] in the Senior Phase and Further Education and Training Phase]",
+                "Career opportunities: On completion of the B Ed (SP & FET), you may apply to the Department of Education (DoE) Department of Basic Education, which controls National Education, for employment at a government school or choose to be employed at a private Institution. Graduates may also enrol for further study, e.g., B Ed (Hons) Degree.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -135,6 +170,12 @@
                     "count": 3,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Secondary School Teacher",
+                "FET Phase Teacher",
+                "Senior Phase Teacher"
             ]
         },
         {
@@ -146,14 +187,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-EET.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Bachelor of Education.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 109294.",
+                "Duration: 4 years.",
+                "Programme: \u201cYour future in Teaching starts here.\u201d The School of Education offers a four-year full-time professional Bachelor of Education in Senior Phase and Further Education and Training Teaching (B Ed SP & FET) Degree spread over eight (8) semesters. The qualification will enable the qualifying student to be competent in facilitating teaching and learning within one of the selected specialisation areas [Economics and Management Sciences; Natural Sciences, Technology and Languages] in the Senior Phase and Further Education and Training Phase]",
+                "Career opportunities: On completion of the B Ed (SP & FET), you may apply to the Department of Education (DoE) Department of Basic Education, which controls National Education, for employment at a government school or choose to be employed at a private Institution. Graduates may also enrol for further study, e.g., B Ed (Hons) Degree.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -184,6 +231,12 @@
                     "count": 3,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Secondary School Teacher",
+                "FET Phase Teacher",
+                "Senior Phase Teacher"
             ]
         },
         {
@@ -195,14 +248,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-EMT.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Bachelor of Education.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; OR Mathematical Literacy: Level 5; Three 20-credit subjects at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; OR Mathematical Literacy: Level 5; Three 20-credit subjects at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 109294.",
+                "Duration: 4 years.",
+                "Programme: \u201cYour future in Teaching starts here.\u201d The School of Education offers a four-year full-time professional Bachelor of Education in Senior Phase and Further Education and Training Teaching (B Ed SP & FET) Degree spread over eight (8) semesters. The qualification will enable the qualifying student to be competent in facilitating teaching and learning within one of the selected specialisation areas [Economics and Management Sciences; Natural Sciences, Technology and Languages] in the Senior Phase and Further Education and Training Phase]",
+                "Career opportunities: On completion of the B Ed (SP & FET), you may apply to the Department of Education (DoE) Department of Basic Education, which controls National Education, for employment at a government school or choose to be employed at a private Institution. Graduates may also enrol for further study, e.g., B Ed (Hons) Degree.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -237,6 +296,12 @@
                     "count": 3,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Secondary School Teacher",
+                "FET Phase Teacher",
+                "Senior Phase Teacher"
             ]
         },
         {
@@ -248,14 +313,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-EDL.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Bachelor of Education.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4.",
+                "NQF Level: 7.",
+                "SAQA ID: 109294.",
+                "Duration: 4 years.",
+                "Programme: \u201cYour future in Teaching starts here.\u201d The School of Education offers a four-year full-time professional Bachelor of Education in Senior Phase and Further Education and Training Teaching (B Ed SP & FET) Degree spread over eight (8) semesters. The qualification will enable the qualifying student to be competent in facilitating teaching and learning within one of the selected specialisation areas [Economics and Management Sciences; Natural Sciences, Technology and Languages] in the Senior Phase and Further Education and Training Phase]",
+                "Career opportunities: On completion of the B Ed (SP & FET), you may apply to the Department of Education (DoE) Department of Basic Education, which controls National Education, for employment at a government school or choose to be employed at a private Institution. Graduates may also enrol for further study, e.g., B Ed (Hons) Degree.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -278,6 +349,12 @@
                     "count": 3,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Secondary School Teacher",
+                "FET Phase Teacher",
+                "Senior Phase Teacher"
             ]
         },
         {
@@ -289,14 +366,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-EDN.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Bachelor of Education.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; Two 20-credit subjects at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 109294.",
+                "Duration: 4 years.",
+                "Programme: \u201cYour future in Teaching starts here.\u201d The School of Education offers a four-year full-time professional Bachelor of Education in Senior Phase and Further Education and Training Teaching (B Ed SP & FET) Degree spread over eight (8) semesters. The qualification will enable the qualifying student to be competent in facilitating teaching and learning within one of the selected specialisation areas [Economics and Management Sciences; Natural Sciences, Technology and Languages] in the Senior Phase and Further Education and Training Phase]",
+                "Career opportunities: On completion of the B Ed (SP & FET), you may apply to the Department of Education (DoE) Department of Basic Education, which controls National Education, for employment at a government school or choose to be employed at a private Institution. Graduates may also enrol for further study, e.g., B Ed (Hons) Degree.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -323,6 +406,12 @@
                     "count": 2,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Secondary School Teacher",
+                "FET Phase Teacher",
+                "Senior Phase Teacher"
             ]
         },
         {
@@ -334,14 +423,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-ECT.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Bachelor of Education.",
-                "Additional DUT requirements: NSC Degree/Bachelor's pass; OR Mathematical Literacy: Level 5; Four 20-credit subjects at Level 4; Not more than one language."
+                "Additional DUT requirements: NSC Degree/Bachelor's pass; OR Mathematical Literacy: Level 5; Four 20-credit subjects at Level 4; Not more than one language.",
+                "NQF Level: 7.",
+                "SAQA ID: 109294.",
+                "Duration: 4 years.",
+                "Programme: \u201cYour future in Teaching starts here.\u201d The School of Education offers a four-year full-time professional Bachelor of Education in Senior Phase and Further Education and Training Teaching (B Ed SP & FET) Degree spread over eight (8) semesters. The qualification will enable the qualifying student to be competent in facilitating teaching and learning within one of the selected specialisation areas [Economics and Management Sciences; Natural Sciences, Technology and Languages] in the Senior Phase and Further Education and Training Phase] Specialisation: Civil Technology (BEDTE2).",
+                "Career opportunities: On completion of the B Ed (SP & FET), you may apply to the Department of Education (DoE) Department of Basic Education, which controls National Education, for employment at a government school or choose to be employed at a private Institution. Graduates may also enrol for further study, e.g., B Ed (Hons) Degree.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -372,6 +467,12 @@
                     "count": 4,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Civil Technology Teacher",
+                "Senior Phase Technology Teacher",
+                "FET Technology Teacher"
             ]
         },
         {
@@ -383,16 +484,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-C-BJO.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Three 20-credit subjects at Level 4.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 111451.",
+                "Duration: 3 years.",
+                "Programme: A journalist gathers processes and presents news and current affairs material in the public interest for broad audience consumption. Media channels include radio, television, online, newspapers and magazines in beats such as Africa, arts, business, courts and crime, culture, health, human rights, fashion, labour, politics, sport, technology, travel, and tourism. Editorial positions offer exciting career development potential. Freelance journalists can enjoy greater flexibility in their work. Personal Qualities Required The following skills and values are essential for good journalism practice. Excellent English language skills, both spoken an",
+                "Career opportunities: News and feature writing for newspapers, magazines, and current affairs websites providesa major source of employment. Developments in radio and television present numerous opportunities. Advertising and public relations companies are also keen to employ good writers.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guara nteea place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -408,7 +515,11 @@
                     "minimum_level": 4
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "News"
+            ]
         },
         {
             "name": "Diploma in Drama",
@@ -419,14 +530,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DR3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
-                "Additional DUT requirements: NSC Diploma pass; Another language; Three 20-credit subjects at Level 3; Not more than one language."
+                "Additional DUT requirements: NSC Diploma pass; Another language; Three 20-credit subjects at Level 3; Not more than one language.",
+                "NQF Level: 6.",
+                "SAQA ID: 100799.",
+                "Duration: 3 years.",
+                "Programme: Develop Your Craft in Performance and Theatre Explore the art of performance and theatre -making at DUT. The Diploma in Drama develops the creative and professional skills required for a career in the performing arts industry. The programme focuses on the holistic development of the actor/performer while also introducing students to theatre theory, text analysis, performance practice and communication skills. Students learn in a training environment combining theoretical study with practical performance work. The programme enables students to develop strong communication, performance and creative collaboration skills applicable tot he arts,",
+                "Career opportunities: Actor, Drama Practitioner, Theatre Technician.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -437,6 +554,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Actor",
+                "Drama Practitioner",
+                "Theatre Technician"
             ]
         },
         {
@@ -448,16 +571,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-B-DIF.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; English; Four 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 103087.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Fashion Design will not only support traditional design but also strive to educate and equip students with practical skills and applied knowledge to meet the needs of industry and the requirements of employers. The aim of the programme will be to develop graduates who can demonstrate focused knowledge and skills in the fashion/clothing and other related fields. An in- depth specialisation of knowledge, together with practical skills and collaboration with industry experts, will enable graduates to entera number of career paths, such as pattern technology, design and trend forecasting, retail and merchandising and/or fashion bu",
+                "Career opportunities: The possible career opportunities include being self-employed (as a bespoke designer, freelance pattern technologist, or CAD artist), a commercial designer in a clothing manufacturer, a buyer or merchandiser, tre nd forecasters, visual merchandisers and/or an academic. Opportunities exist in performing arts, film, and television companies. One can enjoy recognition at a young age and becomea senior designer or reach executive level in a fashion house. In large companies\u2019 designers are usually sent to overseas trade shows in the major centreso",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "type": "additional_subjects",
@@ -465,7 +594,14 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "being self-employed (as a bespoke designer",
+                "freelance pattern technologist",
+                "or CAD artist)",
+                "a buyer or merchandiser"
+            ]
         },
         {
             "name": "Diploma in Fine Art",
@@ -476,16 +612,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-C-DFA.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; English; Four 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 100802.",
+                "Duration: 3 years.",
+                "Programme: The programme is designed to develop the learners\u2019 unique creative talent and understanding of the role art plays in the world througha variety of disciplines. Since its establishment in 1884, the Fine Art Programme at the Durban University of Technology has maintained its position as one of the best in Southern Africa. It is proud of its students who have gone on to excel in their chosen fields, the high standards set by the staff, all professional artists in their own right and of the excellent facilities that the department has to offer. The programme is offered full-time and the department is situated on the City Campus (Painting, Prin",
+                "Career opportunities: The field is diverse and challenging. On completion of the programme, the student will be qualified and prepared to embark ona career as a professional artist working individually froma private studio or in collaboration with other artists to produce work of exhibition standard for galleries and collections of fine art throughout the country. A recent survey has indicated that most of our past students have been gainfully employed as self-employed professional artists or within the educational or design fields as lecturers, technical art advi"
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "type": "additional_subjects",
@@ -493,7 +634,11 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "The field is diverse"
+            ]
         },
         {
             "name": "Diploma in Interior Design",
@@ -504,16 +649,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-C-ID3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Four recognised 20-credit subjects at Level 3.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 111012.",
+                "Duration: 3 years.",
+                "Programme: The Interior Design Programme hasa strong tradition of preparing students for the demands of the design industry, with graduates recognized for their excellence both nationally and internationally. It equips students with the skills to plan and develop the aesthetic and functional aspects of a wide range of spaces, including corporate, retail, commercial, and residential environments such as restaurants, shops, exhibition spaces, offices, hotels, and private homes. The programme emphasizes both creative and technical competence. Students gaina comprehensive understanding of lighting, air conditioning, plumbing, construction methods, materia",
+                "Career opportunities: Graduates of Interior Design can pursue careers acrossa wide range of sectors, including interior design studios, architectu ral practices, retail and exhibition design, and furniture or product design. Opportunities also exist with developers, contractors, and fit- out companies. With experience, graduates may work as independent consultants or establish their own design practice."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -525,7 +675,11 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Interior Designer"
+            ]
         },
         {
             "name": "Diploma in Jewellery Design and Manufacture",
@@ -536,16 +690,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-C-DJM.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; English; Four 20-credit subjects at Level 3; Not more than one language.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 100800.",
+                "Duration: 3 years.",
+                "Programme: The traditional training for a jeweller\u2019s career was an apprenticeship at a recognized master jeweller\u2019s workshop. Through the innovations of mass production, it became necessary to train people for all the aspects of the highly specialized production processes of the factories. The University\u2019s instructional programme trains students in designing, manufacturing, and marketing jewellery, the basic principles for a successful career in the jewellery business. On completion of the instructional programme, graduates will have no difficulties in coping with the variety of manufacturing and designing functions, especially if they have obtained th",
+                "Career opportunities: The jewellery industry is experiencinga period of growth due to the relaxation of previous harsh taxation laws and a concerted expansion drive from the industry. Good career opportunities exist for properly trained, highly motivated and talented people. The departmental emphasis on entrepreneurship has led to a number of past students establishing their own successful businesses. The internet provides even more opportunities in terms of marketing your products. Duration This programme is offered ona full-time basis for three years."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "type": "additional_subjects",
@@ -553,7 +712,12 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Jewellery Designer",
+                "Jewellery Manufacturer"
+            ]
         },
         {
             "name": "Diploma in Language Practice",
@@ -564,7 +728,7 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DLP.",
                 "Campus: DBN Campus.",
@@ -572,9 +736,15 @@
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3.",
                 "Additional DUT requirements: IsiZulu OR IsiXhosa OR Afrikaans Home Language: Level 4 OR First Additional Language: Level 5.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 109819.",
+                "Duration: 3 years.",
+                "Programme: The South African Constitution recognizes 11 official languages in South Africa. Since 1994, indigenous languages have hada rare opportunity to thrive. There is, therefore, an increasing demand for language practitioners. The purpose of this qualification is to provide a professional skills and competencies to the people who work in the various fields of languages. Such people are referred to as Language Practitioners, and companies, government departments or international agencies employ them. The qualification in Language Practice means that learners will be capable of: \u2022 Performing professional communication functions effectively in at le",
+                "Career opportunities: Language practitioners can work as language facilitators in small, medium, and large institutions. Government departments and municipal offices all over South Africa, as well as international organizations and agencies, also employa number of Language Practitioners. Interpreters are in demand at conferences, public events, in courts, and in the tourism industry. A person with a Diploma in Language Practice enters the industry as a Junior Language Practitioner. As he/she gains more experience he/she can becomea Senior/Principal Chief Language",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -594,7 +764,12 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 3.0,
+            "possible_careers": [
+                "a Junior Language Practitioner. As he",
+                "Principal Chief Language"
+            ]
         },
         {
             "name": "Higher Certificate: Performing Arts Technology",
@@ -605,16 +780,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-HP2.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Higher Certificate.",
                 "Additional DUT requirements: NSC Higher Certificate pass; Three 20-credit subjects other than Life Orientation at Level 3; Only one of the three subjects may be an additional language.",
                 "Programme-specific APS guide: Arts and Design minimum APS 24.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 5.",
+                "SAQA ID: 119963.",
+                "Duration: 1 year.",
+                "Programme: Train for a career behind the scenes The Higher Certificate in Performing Arts Technology prepares students for careers in the technical and backstage areas of theatre, live events and performance production. The programme introduces students to core areas of theatre design, lighting, sound, technical production and stage management while also developing workplace communication and entrepreneurial skills relevant to the creative industries. Students gain practical experience in stagecraft, equipment operation and working as a backstage crew member in preparationf or entry-level roles in the performing arts sector \u2013 particularly in relationt",
+                "Career opportunities: Actor, Drama Practitioner, Theatre Technician."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -630,7 +810,15 @@
                     "minimum_level": 3
                 }
             ],
-            "admission_score_required": 24
+            "admission_score_required": 24,
+            "duration_years": 1.0,
+            "possible_careers": [
+                "Actor",
+                "Drama Practitioner",
+                "Theatre Technician"
+            ]
         }
-    ]
+    ],
+    "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+    "source_reviewed": "2026-08"
 }

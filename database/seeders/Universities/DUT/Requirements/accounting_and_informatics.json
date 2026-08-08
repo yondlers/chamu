@@ -1,7 +1,7 @@
 {
     "faculty": "Accounting and Informatics",
     "university": "Durban University of Technology",
-    "source": "DUT Student Course Guide 2026",
+    "source": "DUT Study Opportunities 2027",
     "qualifications": [
         {
             "name": "Bachelor of Information and Communications Technology",
@@ -12,16 +12,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BIT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; At least three designated 20-credit subjects at Level 4; Not more than one language.",
                 "APS updated from DUT APS requirements summary: bachelor ICT-related programmes treated as degree-level minimum APS 28; verify programme-specific selection with DUT.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 104534.",
+                "Duration: 3 years.",
+                "Programme: The Bachelor of ICT degree was formulated to reflect the latest workplace- based needs of the ICT industry in ensuring that qualifying learners can access employment opportunities within the industry. It is grounded in a fundamental body of computing knowledge.",
+                "Career opportunities: ICT Specialist, Software Developer, Systems Analyst.",
+                "Selection Procedure: These requirements represent the minimum and students will be ranked according to a points system based on the rating code Please Note: Due to the limit ed number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -36,6 +42,12 @@
                     "count": 3,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "ICT Specialist",
+                "Software Developer",
+                "Systems Analyst"
             ]
         },
         {
@@ -47,16 +59,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-IoT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Bachelor.",
                 "Additional DUT requirements: NSC Degree/Bachelor's pass; Two designated 20-credit subjects at Level 4; Not more than one language.",
                 "APS updated from DUT APS requirements summary: bachelor ICT-related programmes treated as degree-level minimum APS 28; verify programme-specific selection with DUT.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 7.",
+                "SAQA ID: 104534.",
+                "Duration: 3 years.",
+                "Programme: The Bachelor of ICT degree was formulated to reflect the latest workplace- based needs of the ICT industry in ensuring that qualifying learners can access employment opportunities within the industry. It is grounded in a fundamental body of computing knowledge.",
+                "Career opportunities: ICT Specialist, Software Developer, Systems Analyst.",
+                "Selection Procedure: These requirements represent the minimum and students will be ranked according to a points system based on the rating code Please Note: Due to the limit ed number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "subject": "English Home Language or English First Additional Language",
@@ -83,6 +101,12 @@
                     "count": 2,
                     "minimum_level": 4
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "ICT Specialist",
+                "Software Developer",
+                "Systems Analyst"
             ]
         },
         {
@@ -94,16 +118,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-APD.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 94697.",
+                "Duration: 3 years.",
+                "Programme: The purpose of the diploma is to provide a professional, vocational or career focused qualification for the ICT industry. The knowledge emphasizes general principles and applications. Further, the diploma will develop learners who can demonstrate focused knowledge and skills to design and produce software productsandsystemstomeetspecifiedneedssothattheyworkreliablyandtheir production and maintenance is cost effective. This specialization expands the purpose of the qualification by enablinga graduate (diplomat) to conceptualize, design, implement& test application development solutions to address industry related ICT initiatives.",
+                "Career opportunities: Careers in the ICT Industry range from highly technical positions such as Software or Web Developers or Systems Analysis.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -129,6 +159,13 @@
                         }
                     ]
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Software Developer",
+                "Web Developer",
+                "Systems Analyst",
+                "Applications Developer"
             ]
         },
         {
@@ -140,16 +177,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-APD.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 94697.",
+                "Duration: 3 years.",
+                "Programme: The purpose of the diploma is to provide a professional, vocational or career focused qualification for the ICT industry. The knowledge emphasizes general principles and applications. Further, the diploma will develop learners who can demonstrate focused knowledge and skills to design and produce software productsandsystemstomeetspecifiedneedssothattheyworkreliablyandtheir production and maintenance is cost effective. This specialization expands the purpose of the qualification by enablinga graduate (diplomat) to conceptualize, design, implement& test application development solutions to address industry related ICT initiatives.",
+                "Career opportunities: Careers in the ICT Industry range from highly technical positions such as Software or Web Developers or Systems Analysis.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -175,6 +218,13 @@
                         }
                     ]
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Software Developer",
+                "Web Developer",
+                "Systems Analyst",
+                "Applications Developer"
             ]
         },
         {
@@ -186,7 +236,7 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-APF.",
                 "Campus: DBN Campus.",
@@ -194,9 +244,15 @@
                 "Programme note: 4 Year Foundation Programme.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 94697.",
+                "Duration: 4 years.",
+                "Programme: The purpose of the diploma is to provide a professional, vocational or career focused qualification for the ICT industry. The knowledge emphasizes general principles and applications. Further, the diploma will develop learners who can demonstrate focused knowledge and skills to design and produce software productsandsystemstomeetspecifiedneedssothattheyworkreliablyandtheir production and maintenance is cost effective. This specialization expands the purpose of the qualification by enablinga graduate (diplomat) to conceptualize, design, implement& test application development solutions to address industry related ICT initiatives.",
+                "Career opportunities: Careers in the ICT Industry range from highly technical positions such as Software or Web Developers or Systems Analysis.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -222,6 +278,13 @@
                         }
                     ]
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Software Developer",
+                "Web Developer",
+                "Systems Analyst",
+                "Applications Developer"
             ]
         },
         {
@@ -233,16 +296,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BUA.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 97709.",
+                "Duration: 3 years.",
+                "Programme: A career in ICT is a career path of endless opportunities and diversity. The Diploma in ICT offers the opportunity to work in any industry, anywhere in the world. Careers in the ICT Industry range from highly technical positions such as Software or Web Developers or Systems Analysis. Students wishing to pursue this career path must have the character and perseverance to work in dynamic environments. A basic skill that tends to categorize an ICT specialist is the ability to think and express oneself logically; therefore, students possessing these skills would be ideal candidates for this programme.",
+                "Career opportunities: ICT Specialist, Software Developer, Systems Analyst.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -268,6 +337,12 @@
                         }
                     ]
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "ICT Specialist",
+                "Software Developer",
+                "Systems Analyst"
             ]
         },
         {
@@ -279,16 +354,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-I-BUA.",
                 "Campus: Indumiso Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in IT minimum APS 24, Mathematics level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 97709.",
+                "Duration: 3 years.",
+                "Programme: A career in ICT is a career path of endless opportunities and diversity. The Diploma in ICT offers the opportunity to work in any industry, anywhere in the world. Careers in the ICT Industry range from highly technical positions such as Software or Web Developers or Systems Analysis. Students wishing to pursue this career path must have the character and perseverance to work in dynamic environments. A basic skill that tends to categorize an ICT specialist is the ability to think and express oneself logically; therefore, students possessing these skills would be ideal candidates for this programme.",
+                "Career opportunities: ICT Specialist, Software Developer, Systems Analyst.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -314,6 +395,12 @@
                         }
                     ]
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "ICT Specialist",
+                "Software Developer",
+                "Systems Analyst"
             ]
         },
         {
@@ -325,15 +412,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BI3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Excluding Life Orientation; Not more than one language.",
-                "APS filled from DUT APS requirements summary as an Accounting and Informatics diploma-level minimum where a programme-specific APS was absent; verify with DUT."
+                "NQF Level: 6.",
+                "SAQA ID: 97803.",
+                "Duration: 3 years.",
+                "Programme: The purpose of the qualification is to develop students with specific core knowledge, skills and career training in Business and Information Management who become life- long learners and engaged citizens aspiring to pursue career employment and professional growth both locally and internationally. The student will be competent in administration and business applications programs. The programme also enablesa student to pursue career pathways in administration in the various business environments. The qualified learner will have the competence to deliver an effective information service in a global environment towards meeting the requirements",
+                "Career opportunities: Business Information Administrator, Information Systems Clerk, Office Systems Coordinator.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -364,6 +456,12 @@
                     "count": 4,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Business Information Administrator",
+                "Information Systems Clerk",
+                "Office Systems Coordinator"
             ]
         },
         {
@@ -375,15 +473,20 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-BI3.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Excluding Life Orientation; Not more than one language.",
-                "APS filled from DUT APS requirements summary as an Accounting and Informatics diploma-level minimum where a programme-specific APS was absent; verify with DUT."
+                "NQF Level: 6.",
+                "SAQA ID: 97803.",
+                "Duration: 3 years.",
+                "Programme: The purpose of the qualification is to develop students with specific core knowledge, skills and career training in Business and Information Management who become life- long learners and engaged citizens aspiring to pursue career employment and professional growth both locally and internationally. The student will be competent in administration and business applications programs. The programme also enablesa student to pursue career pathways in administration in the various business environments. The qualified learner will have the competence to deliver an effective information service in a global environment towards meeting the requirements",
+                "Career opportunities: Business Information Administrator, Information Systems Clerk, Office Systems Coordinator.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -414,27 +517,39 @@
                     "count": 4,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Business Information Administrator",
+                "Information Systems Clerk",
+                "Office Systems Coordinator"
             ]
         },
         {
             "name": "Diploma in Accounting (DBN Campus)",
             "qualification_type": "Diploma",
-            "aps_required": 21,
+            "aps_required": 26,
             "aggregate_average_required": null,
             "closing_month": 9,
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DAT.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 101909.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Accounting is a three-year qualification to provide applied accountancy knowledge and skills that will develop the applied competence of the student in preparation of a career in the accounting and business fields. It will be enabling students to perform reporting functions, rendering taxation services and management advisory services on an accounting technician level as well as to provide a basis for further learning. The qualification also serves as progression towards South African Institute of Professional Accountants (SAIPA) membership. The Diploma in Accounting offers the opportunity to work in any industry anywhere in th",
+                "Career opportunities: On completion of their studies, graduates will be able to apply for the following positions: Accounting Technician, Bookkeeper, Accounts Clerk, Assistant Financial Accountant and Financial Accountant and many other related positions. The training offered prepares the student for a job anywhere in the world, since internationally acceptable software, textbooks, and training methods are used in our programmes.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -456,27 +571,41 @@
                     "subject": "Accounting",
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Accounting Technician",
+                "Bookkeeper",
+                "Accounts Clerk",
+                "Assistant Financial Accountant",
+                "Financial Accountant"
             ]
         },
         {
             "name": "Diploma in Accounting (PMB Campus)",
             "qualification_type": "Diploma",
-            "aps_required": 21,
+            "aps_required": 26,
             "aggregate_average_required": null,
             "closing_month": 9,
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-DAT.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 101909.",
+                "Duration: 3 years.",
+                "Programme: The Diploma in Accounting is a three-year qualification to provide applied accountancy knowledge and skills that will develop the applied competence of the student in preparation of a career in the accounting and business fields. It will be enabling students to perform reporting functions, rendering taxation services and management advisory services on an accounting technician level as well as to provide a basis for further learning. The qualification also serves as progression towards South African Institute of Professional Accountants (SAIPA) membership. The Diploma in Accounting offers the opportunity to work in any industry anywhere in th",
+                "Career opportunities: On completion of their studies, graduates will be able to apply for the following positions: Accounting Technician, Bookkeeper, Accounts Clerk, Assistant Financial Accountant and Financial Accountant and many other related positions. The training offered prepares the student for a job anywhere in the world, since internationally acceptable software, textbooks, and training methods are used in our programmes.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -498,18 +627,26 @@
                     "subject": "Accounting",
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Accounting Technician",
+                "Bookkeeper",
+                "Accounts Clerk",
+                "Assistant Financial Accountant",
+                "Financial Accountant"
             ]
         },
         {
             "name": "Diploma in Accounting (4 Year Foundation Programme, DBN Campus)",
             "qualification_type": "Diploma",
-            "aps_required": 21,
+            "aps_required": 24,
             "aggregate_average_required": null,
             "closing_month": 9,
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DA4.",
                 "Campus: DBN Campus.",
@@ -517,9 +654,15 @@
                 "Programme note: 4 Year Foundation Programme.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 101909.",
+                "Duration: 4 years.",
+                "Programme: The Diploma in Accounting is a three-year qualification to provide applied accountancy knowledge and skills that will develop the applied competence of the student in preparation of a career in the accounting and business fields. It will be enabling students to perform reporting functions, rendering taxation services and management advisory services on an accounting technician level as well as to provide a basis for further learning. The qualification also serves as progression towards South African Institute of Professional Accountants (SAIPA) membership. The Diploma in Accounting offers the opportunity to work in any industry anywhere in th",
+                "Career opportunities: On completion of their studies, graduates will be able to apply for the following positions: Accounting Technician, Bookkeeper, Accounts Clerk, Assistant Financial Accountant and Financial Accountant and many other related positions. The training offered prepares the student for a job anywhere in the world, since internationally acceptable software, textbooks, and training methods are used in our programmes.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -541,18 +684,26 @@
                     "subject": "Accounting",
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Accounting Technician",
+                "Bookkeeper",
+                "Accounts Clerk",
+                "Assistant Financial Accountant",
+                "Financial Accountant"
             ]
         },
         {
             "name": "Diploma in Accounting (4 Year Foundation Programme, PMB Campus)",
             "qualification_type": "Diploma",
-            "aps_required": 21,
+            "aps_required": 24,
             "aggregate_average_required": null,
             "closing_month": 9,
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-DA4.",
                 "Campus: PMB Campus.",
@@ -560,9 +711,15 @@
                 "Programme note: 4 Year Foundation Programme.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
                 "APS and key subjects updated from DUT APS requirements summary: Diploma in Accounting minimum APS 24, Mathematics level 3, Accounting level 3, English level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 101909.",
+                "Duration: 4 years.",
+                "Programme: The Diploma in Accounting is a three-year qualification to provide applied accountancy knowledge and skills that will develop the applied competence of the student in preparation of a career in the accounting and business fields. It will be enabling students to perform reporting functions, rendering taxation services and management advisory services on an accounting technician level as well as to provide a basis for further learning. The qualification also serves as progression towards South African Institute of Professional Accountants (SAIPA) membership. The Diploma in Accounting offers the opportunity to work in any industry anywhere in th",
+                "Career opportunities: On completion of their studies, graduates will be able to apply for the following positions: Accounting Technician, Bookkeeper, Accounts Clerk, Assistant Financial Accountant and Financial Accountant and many other related positions. The training offered prepares the student for a job anywhere in the world, since internationally acceptable software, textbooks, and training methods are used in our programmes.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -584,6 +741,14 @@
                     "subject": "Accounting",
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Accounting Technician",
+                "Bookkeeper",
+                "Accounts Clerk",
+                "Assistant Financial Accountant",
+                "Financial Accountant"
             ]
         },
         {
@@ -595,17 +760,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-BI4.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Programme note: 4 Year Foundation Programme.",
                 "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Excluding Life Orientation; Not more than one language.",
-                "APS filled from DUT APS requirements summary as an Accounting and Informatics diploma-level minimum where a programme-specific APS was absent; verify with DUT.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 97803.",
+                "Duration: 3 years.",
+                "Programme: The purpose of the qualification is to develop students with specific core knowledge, skills and career training in Business and Information Management who become life- long learners and engaged citizens aspiring to pursue career employment and professional growth both locally and internationally. The student will be competent in administration and business applications programs. The programme also enablesa student to pursue career pathways in administration in the various business environments. The qualified learner will have the competence to deliver an effective information service in a global environment towards meeting the requirements",
+                "Career opportunities: Business Information Administrator, Information Systems Clerk, Office Systems Coordinator.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -636,6 +806,12 @@
                     "count": 4,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Business Information Administrator",
+                "Information Systems Clerk",
+                "Office Systems Coordinator"
             ]
         },
         {
@@ -647,15 +823,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DIA.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 4 and three 20-credit subjects at Level 3; OR Mathematics: Level 3 OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3; Not more than one language.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 101431.",
+                "Duration: 3 years.",
+                "Programme: The Diploma is a three-year programme in the Faculty of Accounting and Informatics. It is designed to provide students with knowledge of internal auditing. The internal auditor may be employed in any organization that has an internal audit department.",
+                "Career opportunities: This qualification serves as the academic progression toward professional qualifications and membership with the Institute of Internal Auditors (IIA) globally and with South Africa.",
+                "Selection Procedure: Meeting the minimum entry requirements does not automatically guarantee acceptance. It depends on the number of applicants and number of places allowed by DUT. A ranking system is used for admission to the Department of Auditing and Tax. Applicants are selected in order of merit, based on the subject list above, ona first- come first-served basis and may include an interview. Students who meet the minimum entrance requirements will be ranked according to rating criteria; The National Senior Certificate point would be used for each qualifying subject to determinea \u201ccombined score\u201d for candidates. The \u201ccombined score \u201d would thereafter be used as rating criteria for ranking of candidates. Candidates with highest score, in-line with the enrolment plan, would be given first preference. Please Note: Those applicants who meet the minimum requirements but whose overall points rating could put them at risk could still be placed Please Note: Due to the limited number of places available, meeting the minimum requirements do es not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -679,6 +861,12 @@
                     "count": 2,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Internal Auditor",
+                "Audit Clerk",
+                "Compliance Officer"
             ]
         },
         {
@@ -690,16 +878,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DI4.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Programme note: 4 Year Foundation Programme.",
                 "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 4 and three 20-credit subjects at Level 3; OR Mathematics: Level 3 OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3; Not more than one language.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 101431.",
+                "Duration: 4 years.",
+                "Programme: The Diploma is a three-year programme in the Faculty of Accounting and Informatics. It is designed to provide students with knowledge of internal auditing. The internal auditor may be employed in any organization that has an internal audit department.",
+                "Career opportunities: This qualification serves as the academic progression toward professional qualifications and membership with the Institute of Internal Auditors (IIA) globally and with South Africa.",
+                "Selection Procedure: Meeting the minimum entry requirements does not automatically guarantee acceptance. It depends on the number of applicants and number of places allowed by DUT. A ranking system is used for admission to the Department of Auditing and Tax. Applicants are selected in order of merit, based on the subject list above, ona first- come first-served basis and may include an interview. Students who meet the minimum entrance requirements will be ranked according to rating criteria; The National Senior Certificate point would be used for each qualifying subject to determinea \u201ccombined score\u201d for candidates. The \u201ccombined score \u201d would thereafter be used as rating criteria for ranking of candidates. Candidates with highest score, in-line with the enrolment plan, would be given first preference. Please Note: Those applicants who meet the minimum requirements but whose overall points rating could put them at risk could still be placed Please Note: Due to the limited number of places available, meeting the minimum requirements do es not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -723,6 +917,12 @@
                     "count": 2,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Internal Auditor",
+                "Audit Clerk",
+                "Compliance Officer"
             ]
         },
         {
@@ -734,16 +934,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-LS3.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Four 20-credit subjects at Level 3; Not more than one language.",
-                "APS filled from DUT APS requirements summary as a diploma-level minimum where a programme-specific APS was absent; verify with DUT.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 111835.",
+                "Duration: 3 years.",
+                "Programme: This is a three-year qualification. The Diploma in Library and Information Studies qualification has been designed in line with the technological developments and new trends in bibliographic control and metadata developments in terms of tools and current practices in the Library and Informat ion Science/Studies (LIS) sector. Persons achieving this qualification will be competent at applying information organisation, information retrieval and inform ation dissemination strategies effectively and consistently in the process of providing an information service to a general user population. This qualification is intended for persons who will work",
+                "Career opportunities: This qualification in Library and Information Studies prepares you to becomea member of a profession that is active in information and knowledge environments. For example, library and information professionals serve in the education sector, the public library, in research communities and health sectors as well as large industries and businesses. The three-year Diploma qualification prepares the graduate to becomea prospective member of a public service profession. Library and information work are dynamic therefore the prospective student need",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -774,6 +979,12 @@
                     "count": 4,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Librarian",
+                "Information Officer",
+                "Records Manager"
             ]
         },
         {
@@ -785,15 +996,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-MAC.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 3 OR Accounting: Level 4 AND three 20-credit subjects at Level 3; OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 110829.",
+                "Duration: 3 years.",
+                "Programme: The qualification is designed to meet the needs of industry by equipping students with the relevant theory and practical based training in the field of Management Accounting and associated disciplines. This qualification is formally endorsed by the Chartered Institute of Management Accountants (CIMA).",
+                "Career opportunities: Career opportunities exist in the Accounting and related fields. Diplomates can enter the job market in the private/public sector as Cost Clerks, Assistant Financial/Management Accountants, Budget Officers, and Finance Officers.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -817,6 +1034,14 @@
                     "count": 2,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Cost Clerks",
+                "Assistant Financial",
+                "Management Accountants",
+                "Budget Officers",
+                "Finance Officers"
             ]
         },
         {
@@ -828,15 +1053,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-P-MAC.",
                 "Campus: PMB Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Mathematics: Level 3 OR Accounting: Level 4 AND three 20-credit subjects at Level 3; OR Mathematical Literacy: Level 5 AND Accounting: Level 4 AND two 20-credit subjects at Level 3.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 110829.",
+                "Duration: 3 years.",
+                "Programme: The qualification is designed to meet the needs of industry by equipping students with the relevant theory and practical based training in the field of Management Accounting and associated disciplines. This qualification is formally endorsed by the Chartered Institute of Management Accountants (CIMA).",
+                "Career opportunities: Career opportunities exist in the Accounting and related fields. Diplomates can enter the job market in the private/public sector as Cost Clerks, Assistant Financial/Management Accountants, Budget Officers, and Finance Officers.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -860,6 +1091,14 @@
                     "count": 2,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Cost Clerks",
+                "Assistant Financial",
+                "Management Accountants",
+                "Budget Officers",
+                "Finance Officers"
             ]
         },
         {
@@ -871,15 +1110,21 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DTA.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 105731.",
+                "Duration: 3 years.",
+                "Programme: Diploma in Taxation is a three-year programme in the Faculty of Accounting and Informatics. It is designed to provide students with knowledge of taxation and auditing.",
+                "Career opportunities: This qualification serves as the academic progression towards the membership with South African Institute of Professional Accountants. Student can work as Tax practitioners or employed in the financial departments.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -914,6 +1159,12 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 3.0,
+            "possible_careers": [
+                "Tax Practitioner",
+                "Tax Clerk",
+                "Assistant Accountant"
             ]
         },
         {
@@ -925,16 +1176,22 @@
             "closing_day": 30,
             "selection_programme": false,
             "notes": [
-                "Source: DUT Student Course Guide 2026.",
+                "Source: DUT Study Opportunities 2027.",
                 "Admission score type: NSC Points.",
                 "CAO code: DU-D-DT6.",
                 "Campus: DBN Campus.",
                 "Original qualification type: Diploma.",
                 "Programme note: 4 Year Foundation Programme.",
                 "Additional DUT requirements: NSC Diploma pass; Three 20-credit subjects at Level 3; Not more than one language.",
-                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows."
+                "APS updated from user-provided DUT inspect list containing 100 programme-specific APS rows.",
+                "NQF Level: 6.",
+                "SAQA ID: 105731.",
+                "Duration: 4 years.",
+                "Programme: Diploma in Taxation is a three-year programme in the Faculty of Accounting and Informatics. It is designed to provide students with knowledge of taxation and auditing.",
+                "Career opportunities: This qualification serves as the academic progression towards the membership with South African Institute of Professional Accountants. Student can work as Tax practitioners or employed in the financial departments.",
+                "Please Note: Due to the limited number of places available, meeting the minimum requirements does not guarantee a place. Final selection is made subject to the availability of places, academic results and other entry requirements where applicable."
             ],
-            "source_url": null,
+            "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
             "subject_requirements": [
                 {
                     "one_of": [
@@ -969,7 +1226,15 @@
                     "count": 3,
                     "minimum_level": 3
                 }
+            ],
+            "duration_years": 4.0,
+            "possible_careers": [
+                "Tax Practitioner",
+                "Tax Clerk",
+                "Assistant Accountant"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.dut.ac.za/wp-content/uploads/2026/06/Study-Opportunities-2027.pdf",
+    "source_reviewed": "2026-08"
 }
