@@ -112,7 +112,7 @@
                     </div>
 
                     <div>
-                        <label for="province_id" class="block text-sm font-semibold mb-2">Province <span class="font-normal text-neutral-400">(optional)</span></label>
+                        <label for="province_id" class="block text-sm font-semibold mb-2">Province</label>
                         <select id="province_id" name="province_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                             <option value="">Choose province</option>
                             @foreach ($provinces as $province)
