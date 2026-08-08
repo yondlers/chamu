@@ -1,7 +1,7 @@
 {
     "faculty": "Art, Design and Architecture",
     "university": "University of Johannesburg",
-    "source": "2026 Undergraduate Prospectus",
+    "source": "UJ Undergraduate Prospectus 2026",
     "qualifications": [
         {
             "name": "B Architecture",
@@ -25,6 +25,12 @@
                     "subject": "Mathematics",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Architectural professionals",
+                "Design of built environments",
+                "Technological resolution and management of building design and construction"
             ]
         },
         {
@@ -53,6 +59,15 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Communication Designer",
+                "Poster design",
+                "Book and magazine design",
+                "Corporate identity design",
+                "Packaging design",
+                "Website design"
             ]
         },
         {
@@ -81,6 +96,21 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Interaction Designer",
+                "User Experience Designer",
+                "User Interface Designer",
+                "Service Designer",
+                "Music Video Designer",
+                "Multimedia Animator",
+                "Motion Graphics Designer",
+                "Information Designer",
+                "Video Editor",
+                "Video Compositor",
+                "Digital Photographer",
+                "Digital Media Consultant"
             ]
         },
         {
@@ -109,6 +139,13 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Industrial Designer",
+                "Product Designer",
+                "Furniture Designer",
+                "Consumer Product Designer"
             ]
         },
         {
@@ -137,6 +174,12 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Interior Designer",
+                "Spatial Designer",
+                "Interior Space Planner"
             ]
         },
         {
@@ -165,6 +208,14 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Fashion Designer",
+                "Fashion Entrepreneur",
+                "Pattern Engineer",
+                "Fashion Buyer",
+                "Fashion Stylist"
             ]
         },
         {
@@ -196,6 +247,19 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Professional Artist",
+                "Art Educator",
+                "Art Gallery or Museum Curator",
+                "Art Consultant",
+                "Arts Writer",
+                "Art Critic",
+                "Researcher",
+                "Journalist",
+                "Printmaker",
+                "Visual Events Manager"
             ]
         },
         {
@@ -224,6 +288,12 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Architectural Practitioner",
+                "Simple building design",
+                "Technological detailing"
             ]
         },
         {
@@ -252,6 +322,13 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Fashion Production Graduate",
+                "Clothing Manufacturing",
+                "Retail",
+                "Quality Assurance"
             ]
         },
         {
@@ -283,7 +360,16 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Jewellery Designer",
+                "Jewellery Manufacturer",
+                "Commercial Jewellery Production",
+                "Contemporary Jewellery Manufacturing"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+    "source_reviewed": "2026-08"
 }

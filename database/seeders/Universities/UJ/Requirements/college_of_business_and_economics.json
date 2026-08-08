@@ -1,7 +1,7 @@
 {
     "faculty": "College of Business and Economics",
     "university": "University of Johannesburg",
-    "source": "2026 Undergraduate Prospectus",
+    "source": "UJ Undergraduate Prospectus 2026",
     "qualifications": [
         {
             "name": "Accounting CA",
@@ -26,6 +26,10 @@
                     "subject": "Mathematics",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Chartered Accountant CA(SA)"
             ]
         },
         {
@@ -58,6 +62,12 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "General Manager",
+                "Financial Manager",
+                "Leadership positions in the hospitality industry"
             ]
         },
         {
@@ -90,6 +100,14 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Human Resource Practitioner",
+                "HRM Personnel Manager",
+                "HRM Personnel Officer",
+                "Training Manager",
+                "Recruitment and Selection Officer"
             ]
         },
         {
@@ -122,6 +140,20 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Entrepreneur",
+                "Travel Agent",
+                "Tour Guide",
+                "Tour Operator",
+                "Event and Conference Organiser",
+                "Public Relations",
+                "Marketing",
+                "Leisure Activity Co-ordinator",
+                "Visa Consultant",
+                "Researcher",
+                "Tourism Development Consultant"
             ]
         },
         {
@@ -154,6 +186,14 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Public Manager",
+                "State Department roles",
+                "Provincial Department roles",
+                "Municipal roles",
+                "Public, private and NGO sector administrative and managerial positions"
             ]
         },
         {
@@ -179,6 +219,13 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Financial Manager",
+                "Accountant",
+                "Internal Auditor",
+                "Tax Consultant"
             ]
         },
         {
@@ -208,6 +255,19 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Training Manager",
+                "HRD Manager",
+                "Employment Relations Manager",
+                "Product Development Manager",
+                "Branch Manager",
+                "General Manager",
+                "Change Facilitator",
+                "Management Consultant",
+                "Entrepreneur",
+                "Business Innovator"
             ]
         },
         {
@@ -233,6 +293,14 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Economist",
+                "Econometrician",
+                "Economic Analyst",
+                "Forecaster",
+                "Economic Planner"
             ]
         },
         {
@@ -262,6 +330,15 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Business Owner",
+                "Marketing Manager",
+                "Manager",
+                "Consultant",
+                "Business Manager",
+                "Financial Manager"
             ]
         },
         {
@@ -287,6 +364,14 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Financial Manager",
+                "Stockbroker",
+                "Accountant",
+                "Financial Consultant",
+                "Investment Advisor"
             ]
         },
         {
@@ -319,6 +404,10 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Specialist HR Practitioner"
             ]
         },
         {
@@ -351,6 +440,14 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Information Manager",
+                "Knowledge Manager",
+                "Researcher",
+                "Competitive Intelligence Officer",
+                "Records Manager"
             ]
         },
         {
@@ -380,6 +477,17 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "IT Project Manager",
+                "Business Analyst",
+                "IT Manager",
+                "Business Intelligence Expert",
+                "Chief Information Officer",
+                "Database Administrator",
+                "Systems Analyst",
+                "IT Consultant"
             ]
         },
         {
@@ -409,6 +517,18 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Advertising Manager",
+                "Brand Manager",
+                "Customer Relationship Manager",
+                "Marketing Manager",
+                "Marketing Researcher",
+                "Customer Services Manager",
+                "Marketing Consultant",
+                "Media Planner",
+                "Sales Manager"
             ]
         },
         {
@@ -438,6 +558,12 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Logistics Manager",
+                "Consultant",
+                "Production Manager"
             ]
         },
         {
@@ -467,6 +593,13 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 6
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Financial Manager",
+                "Accountant",
+                "Internal Auditor",
+                "Tax Consultant"
             ]
         },
         {
@@ -499,6 +632,20 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Management opportunities in various industries",
+                "Training Manager",
+                "HRD Manager",
+                "Employment Relations Manager",
+                "Product Development Manager",
+                "Branch Manager",
+                "General Manager",
+                "Change Facilitator",
+                "Management Consultant",
+                "Entrepreneur",
+                "Business Innovator"
             ]
         },
         {
@@ -528,6 +675,14 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 6
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Economist",
+                "Econometrician",
+                "Economic Analyst",
+                "Forecaster",
+                "Economic Planner"
             ]
         },
         {
@@ -557,6 +712,14 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 6
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Financial Manager",
+                "Stockbroker",
+                "Accountant",
+                "Financial Consultant",
+                "Investment Advisor"
             ]
         },
         {
@@ -589,6 +752,12 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Accounting Technician",
+                "Bookkeeper",
+                "Cost Accountant"
             ]
         },
         {
@@ -621,6 +790,11 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "IT Practitioner",
+                "Business technology solutions"
             ]
         },
         {
@@ -653,6 +827,12 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Financial Operations Administrator",
+                "Operations Analyst",
+                "Risk and Compliance Officer"
             ]
         },
         {
@@ -685,6 +865,14 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Food and beverage operations",
+                "Private catering",
+                "Executive catering",
+                "Food and beverage marketing",
+                "Food and beverage training"
             ]
         },
         {
@@ -717,6 +905,11 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Purchasing Manager",
+                "Warehouse Manager"
             ]
         },
         {
@@ -749,6 +942,18 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Advertising",
+                "Brand Management",
+                "Customer Relationship Manager",
+                "Marketing Manager",
+                "Marketing Researcher",
+                "Customer Services",
+                "Marketing Consulting",
+                "Media Planner",
+                "Sales Manager"
             ]
         },
         {
@@ -781,6 +986,17 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Human Resource Officer",
+                "Employee Benefits Officer",
+                "Health and Wellness Official",
+                "Recruitment and Selection Official",
+                "Human Resource Researcher",
+                "Training and Development Officer",
+                "Change Facilitator",
+                "Organisational Development Practitioner"
             ]
         },
         {
@@ -813,6 +1029,17 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Buyer",
+                "Store Manager",
+                "Layout Specialist",
+                "Visual Merchandiser",
+                "Product Category Manager",
+                "Sales Manager",
+                "Retail Software Developer",
+                "Business Owner"
             ]
         },
         {
@@ -845,6 +1072,14 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Entrepreneur",
+                "Business Owner",
+                "Business Advisor",
+                "Business Manager",
+                "Social Entrepreneur"
             ]
         },
         {
@@ -877,6 +1112,11 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Tourism operations",
+                "Tourism management"
             ]
         },
         {
@@ -909,6 +1149,10 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Transportation Manager"
             ]
         },
         {
@@ -940,6 +1184,11 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Purchasing Manager",
+                "Warehouse Manager"
             ]
         },
         {
@@ -971,6 +1220,17 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Human Resource Officer",
+                "Employee Benefits Officer",
+                "Health and Wellness Official",
+                "Recruitment and Selection Official",
+                "Human Resource Researcher",
+                "Training and Development Officer",
+                "Change Facilitator",
+                "Organisational Development Practitioner"
             ]
         },
         {
@@ -1002,6 +1262,14 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Entrepreneur",
+                "Business Owner",
+                "Business Advisor",
+                "Business Manager",
+                "Social Entrepreneur"
             ]
         },
         {
@@ -1033,6 +1301,10 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Transportation Manager"
             ]
         },
         {
@@ -1057,6 +1329,13 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Financial Manager",
+                "Accountant",
+                "Internal Auditor",
+                "Tax Consultant"
             ]
         },
         {
@@ -1088,7 +1367,16 @@
                     "subject": "Technical Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "HRM Personnel Manager",
+                "HRM Personnel Officer",
+                "Training Manager",
+                "Recruitment and Selection Officer"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+    "source_reviewed": "2026-08"
 }

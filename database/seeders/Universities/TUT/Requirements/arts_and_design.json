@@ -18,7 +18,8 @@
                 "Arts Campus"
             ],
             "possible_further_studies": "AdvDip, PGDip, MArt and Design, and DArt and Design: Commercial Photography",
-            "possible_careers": "Photographer employed by an organisation or doing freelance work: portraiture, advertising, fashion, press, editorial, industrial, architecture, fine art"
+            "possible_careers": "Photographer employed by an organisation or doing freelance work: portraiture, advertising, fashion, press, editorial, industrial, architecture, fine art",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Fashion Design and Technology",
@@ -35,7 +36,8 @@
                 "Arts Campus"
             ],
             "possible_further_studies": "AdvDip, PGDip, MArt and Design, and DArt and Design: Fashion Design and Technology",
-            "possible_careers": "Fashion designer; Digital & Manual pattern cutter; Digital & Manual pattern grader; Manual and digital pattern making; Garment technologist; Wardrobe assistant; Visual retail merchandiser; Fashion retail merchandiser; Fashion retail buyer; Fashion entrepreneur"
+            "possible_careers": "Fashion designer; Digital & Manual pattern cutter; Digital & Manual pattern grader; Manual and digital pattern making; Garment technologist; Wardrobe assistant; Visual retail merchandiser; Fashion retail merchandiser; Fashion retail buyer; Fashion entrepreneur",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Fine and Applied Arts",
@@ -52,7 +54,8 @@
                 "Arts Campus"
             ],
             "possible_further_studies": "AdvDip, PGDip, MArt and Design, and DArt and Design: Fine and Applied Arts",
-            "possible_careers": "Product developer in glass/ceramics/fibre; Designer in glass/ceramics/fibre; Crafter in glass/ceramics/fibre; Painter; Sculptor; Installation artist; Printmaker; Ceramist; Fibre artist; Glass artist; Muralist; Museum/gallery guide; Museum/gallery curator; Illustrator"
+            "possible_careers": "Product developer in glass/ceramics/fibre; Designer in glass/ceramics/fibre; Crafter in glass/ceramics/fibre; Painter; Sculptor; Installation artist; Printmaker; Ceramist; Fibre artist; Glass artist; Muralist; Museum/gallery guide; Museum/gallery curator; Illustrator",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Integrated Communication Design",
@@ -69,7 +72,8 @@
                 "Arts Campus"
             ],
             "possible_further_studies": "AdvDip, PGDip, MArt and Design, and DArt and Design: Integrated Communication Design",
-            "possible_careers": "Design artist in the public and private sectors, e.g. layout artist, visualiser, illustrator, package designer. Producer, creative director, art director, technical director, games designer, interface designer and interactive writer."
+            "possible_careers": "Design artist in the public and private sectors, e.g. layout artist, visualiser, illustrator, package designer. Producer, creative director, art director, technical director, games designer, interface designer and interactive writer.",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Interior Design",
@@ -92,7 +96,8 @@
                 "Arts Campus"
             ],
             "possible_further_studies": "AdvDip, PGDip, MArt and Design, and DArt and Design: Interior Design",
-            "possible_careers": "Residential design; Office design; Community and education design; Healthcare design; Architectural and interior design consultancies; Interior stylist; Project manager; Shopfitter draughtsman; Independent interior design practice"
+            "possible_careers": "Residential design; Office design; Community and education design; Healthcare design; Architectural and interior design consultancies; Interior stylist; Project manager; Shopfitter draughtsman; Independent interior design practice",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Jewellery Design and Manufacture",
@@ -109,7 +114,8 @@
                 "Arts Campus"
             ],
             "possible_further_studies": "AdvDip, PGDip, MArt and Design, and DArt and Design: Jewellery Design and Manufacture",
-            "possible_careers": "CAD designer; Advanced bench worker; Product developer; Setter; CAM practitioner; 3D wax printer technician; Artist jeweller; Restorer; Jewellery retailer; Product representative; Caster; Wax carver; Jewellery renderer; Model maker"
+            "possible_careers": "CAD designer; Advanced bench worker; Product developer; Setter; CAM practitioner; 3D wax printer technician; Artist jeweller; Restorer; Jewellery retailer; Product representative; Caster; Wax carver; Jewellery renderer; Model maker",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Motion Picture Production",
@@ -126,7 +132,8 @@
                 "Arts Campus"
             ],
             "possible_further_studies": "AdvDip, PGDip, MMotion Picture Production, and DMotion Picture Production",
-            "possible_careers": "Film producer; Film director; Scriptwriter; VFX editor; Camera operator; Location manager; Production assistant; Broadcast journalist; Production manager; Assistant director; Film editor; Cinematographer; Lighting technician; Programme researcher; Sound technician; Production coordinator"
+            "possible_careers": "Film producer; Film director; Scriptwriter; VFX editor; Camera operator; Location manager; Production assistant; Broadcast journalist; Production manager; Assistant director; Film editor; Cinematographer; Lighting technician; Programme researcher; Sound technician; Production coordinator",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Music",
@@ -145,7 +152,8 @@
             ],
             "possible_further_studies": "AdvDip, PGDip, MPerforming Arts, and DPerforming Arts",
             "possible_careers": "Choral conductor; Chorus member; Composer; Creative entrepreneur; Film-score composer; Jazz musician; Jingle writer; Music producer; Opera singer; Performing Arts maker; Performing Arts reviewer; Theatre maker",
-            "audition_required": true
+            "audition_required": true,
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Performing Arts",
@@ -164,7 +172,8 @@
             ],
             "possible_further_studies": "AdvDip, PGDip, MPerforming Arts, and DPerforming Arts",
             "possible_careers": "Actor; Applied Theatre practitioner; Creative entrepreneur; Director; Lighting/sound operator; Media performer (radio and television); Musical Theatre performer; Performing Arts maker; Performing Arts reviewer; Performing Arts technician; Physical Theatre practitioner; Production manager; Scriptwriter; Stage manager; Stage technical crew; Theatre maker; Theatre technician; Voice-over artist",
-            "audition_required": true
+            "audition_required": true,
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Higher Certificate in Music",
@@ -183,14 +192,16 @@
             ],
             "possible_further_studies": "Dip (Performing Arts)",
             "possible_careers": "Jazz Musician, Music Producer, Opera Singer",
-            "audition_required": true
+            "audition_required": true,
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         }
     ],
     "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
-    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_reviewed": "2026-08",
     "source_confidence": "High - official Tshwane University of Technology source.",
     "include_faculty_notes": true,
     "campus": [
         "Arts Campus"
-    ]
+    ],
+    "source": "TUT First Year Course Information 2027"
 }

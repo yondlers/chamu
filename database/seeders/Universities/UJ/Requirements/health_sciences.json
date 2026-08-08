@@ -1,7 +1,7 @@
 {
     "faculty": "Health Sciences",
     "university": "University of Johannesburg",
-    "source": "2026 Undergraduate Prospectus",
+    "source": "UJ Undergraduate Prospectus 2026",
     "qualifications": [
         {
             "name": "Bachelor of Biokinetics - Biokinetics",
@@ -30,6 +30,14 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Biokineticist",
+                "Exercise-based treatment of orthopaedic injuries and chronic diseases",
+                "Health promotion",
+                "Wellness",
+                "Disease prevention"
             ]
         },
         {
@@ -64,6 +72,11 @@
                     "subject": "Life Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Diagnostic Radiographer",
+                "Use x-ray and MRI equipment to produce diagnostic images"
             ]
         },
         {
@@ -98,6 +111,11 @@
                     "subject": "Life Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Diagnostic Ultrasound Practitioner",
+                "Use high-frequency sound waves to produce images of body structures"
             ]
         },
         {
@@ -132,6 +150,11 @@
                     "subject": "Life Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Nuclear Medicine Practitioner",
+                "Use radio-nuclides to diagnose and treat diseases"
             ]
         },
         {
@@ -166,6 +189,11 @@
                     "subject": "Life Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Radiation Therapist",
+                "Use high-energy radiation to treat cancer"
             ]
         },
         {
@@ -200,6 +228,10 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Chiropractor"
             ]
         },
         {
@@ -234,6 +266,14 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Acupuncturist",
+                "Health and wellness industry roles",
+                "Patient-services coordinator in multidisciplinary practice",
+                "Retail and pharmacy assistant",
+                "Health and lifestyle journalist"
             ]
         },
         {
@@ -268,6 +308,12 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Emergency Care Practitioner",
+                "Emergency care and rescue specialist",
+                "Public and private emergency services"
             ]
         },
         {
@@ -306,6 +352,11 @@
                     "subject": "Life Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Medical Laboratory Scientist",
+                "Analysis and interpretation of clinical specimens"
             ]
         },
         {
@@ -340,6 +391,10 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Podiatrist"
             ]
         },
         {
@@ -373,6 +428,12 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Professional Nurse",
+                "Midwife",
+                "Community and patient care"
             ]
         },
         {
@@ -406,6 +467,19 @@
                     "subject": "Life Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Optometrist",
+                "Primary eye care",
+                "Paediatric optometry",
+                "Low vision",
+                "Contact lens fitting",
+                "Research",
+                "Academia",
+                "Hospital settings",
+                "Public health initiatives",
+                "Private practice"
             ]
         },
         {
@@ -440,6 +514,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Environmental Health Practitioner",
+                "Occupational Health and Safety Officer",
+                "Water Quality Manager",
+                "Waste Manager"
             ]
         },
         {
@@ -482,6 +563,14 @@
                     "subject": "Technical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Sport Scientist",
+                "Sport Coach",
+                "Fitness Instructor",
+                "Health and Lifestyle Instructor or Consultant",
+                "Performance Analyst"
             ]
         },
         {
@@ -508,6 +597,17 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Sport Manager",
+                "Sport Marketer",
+                "Sport Administrator",
+                "Sport Events Organiser",
+                "Sport Promoter",
+                "Coach",
+                "Researcher",
+                "Exercise Scientist"
             ]
         },
         {
@@ -537,7 +637,19 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Sports Administrator",
+                "Facilities Manager",
+                "Professional Coach",
+                "Fitness Trainer",
+                "Sports Marketer",
+                "Sports Sponsorship Manager",
+                "Events Manager and Marketer"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+    "source_reviewed": "2026-08"
 }

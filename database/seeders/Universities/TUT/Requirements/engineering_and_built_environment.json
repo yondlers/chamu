@@ -37,7 +37,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "MArch and DArch",
-            "possible_careers": "Architectural technologist, property inspector, building product consultant, specialising in architectural technology, self-employed and private architect"
+            "possible_careers": "Architectural technologist, property inspector, building product consultant, specialising in architectural technology, self-employed and private architect",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Architecture (Extended)",
@@ -72,7 +73,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "MArch and DArch",
-            "possible_careers": "Architectural technologist, property inspector, building product consultant, specialising in architectural technology, self-employed and private architect"
+            "possible_careers": "Architectural technologist, property inspector, building product consultant, specialising in architectural technology, self-employed and private architect",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Geomatics",
@@ -115,7 +117,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "PGDip (Geomatics)",
-            "possible_careers": "Survey technologist and route to professional topographic or engineering surveyor, geographic information systems practitioner, photogrammetrist"
+            "possible_careers": "Survey technologist and route to professional topographic or engineering surveyor, geographic information systems practitioner, photogrammetrist",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering Technology (Chemical Engineering)",
@@ -160,7 +163,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Chemical Engineering",
-            "possible_careers": "Chemical engineering technician and technologist, researcher and developer, fuel- cell technologist, consultant"
+            "possible_careers": "Chemical engineering technician and technologist, researcher and developer, fuel- cell technologist, consultant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering Technology (Civil Engineering)",
@@ -205,7 +209,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Civil Engineering",
-            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, technologist, construction company, or local, provincial or national government"
+            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, technologist, construction company, or local, provincial or national government",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering Technology (Electrical Engineering)",
@@ -256,7 +261,8 @@
                 "eMalahleni"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Electrical Engineering",
-            "possible_careers": "Design, planning, construction and maintenance of specialised fields systems related to electrical engineering"
+            "possible_careers": "Design, planning, construction and maintenance of specialised fields systems related to electrical engineering",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering Technology (Industrial Engineering)",
@@ -301,7 +307,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Industrial Engineering",
-            "possible_careers": "Professional technologist, technician, manager, entrepreneur and consultant"
+            "possible_careers": "Professional technologist, technician, manager, entrepreneur and consultant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering (Materials Engineering - Polymer Technology)",
@@ -346,7 +353,8 @@
                 "Mechanical Technology"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Polymer Technology",
-            "possible_careers": "Management of production and processing of raw material, manufacturing and processing of products, development, characterisation and quality assurance of products and raw materials, development of new plastic products and material, marketing and sales of raw materials and products"
+            "possible_careers": "Management of production and processing of raw material, manufacturing and processing of products, development, characterisation and quality assurance of products and raw materials, development of new plastic products and material, marketing and sales of raw materials and products",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering Technology (Mechanical Engineering)",
@@ -391,7 +399,8 @@
                 "Mechanical Technology"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Mechanical Engineering",
-            "possible_careers": "Mechanical technologist, technician, manager, entrepreneur and consultant"
+            "possible_careers": "Mechanical technologist, technician, manager, entrepreneur and consultant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering Technology (Mechatronics Engineering)",
@@ -433,10 +442,12 @@
             ],
             "recommended_subjects": [
                 "Engineering Graphics and Design",
+                "Electrical Technology",
                 "Mechanical Technology"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Mechatronic Engineering",
-            "possible_careers": "Mechanical and Electronic technologist, technician, manager, entrepreneur and consultant"
+            "possible_careers": "Mechanical and Electronic technologist, technician, manager, entrepreneur and consultant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Bachelor of Engineering Technology (Metallurgical Engineering)",
@@ -481,7 +492,8 @@
                 "Mechanical Technology"
             ],
             "possible_further_studies": "BEngTechHons, MEng and DEng: Metallurgical Engineering",
-            "possible_careers": "Metallurgist, technician, technologist, plant manager, consultant, researcher and developer"
+            "possible_careers": "Metallurgist, technician, technologist, plant manager, consultant, researcher and developer",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Geomatics",
@@ -522,7 +534,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "AdvDip and PGDip: Geomatics",
-            "possible_careers": "Survey technologist and route to professional topographic or engineering surveyor, geographic information systems practitioner, photogrammetrist"
+            "possible_careers": "Survey technologist and route to professional topographic or engineering surveyor, geographic information systems practitioner, photogrammetrist",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Industrial Design",
@@ -557,7 +570,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "AdvDip (Industrial Design)",
-            "possible_careers": "Junior industrial designer, member of design and development team, junior design entrepreneur. Design skills can be applied across diverse business fields"
+            "possible_careers": "Junior industrial designer, member of design and development team, junior design entrepreneur. Design skills can be applied across diverse business fields",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Higher Certificate in Construction Engineering (Material Test)",
@@ -602,7 +616,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "BEngTech (Civil Engineering)",
-            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, construction company, or local, provincial or national government"
+            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, construction company, or local, provincial or national government",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Higher Certificate in Construction Engineering (Water and Waste)",
@@ -647,7 +662,8 @@
                 "Pretoria"
             ],
             "possible_further_studies": "BEngTech (Civil Engineering)",
-            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, construction company, or local, provincial or national government"
+            "possible_careers": "Construction manager or supervisor, project manager, technician in civil engineering working for a civil engineering consultant, construction company, or local, provincial or national government",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Higher Certificate in Electrical Engineering",
@@ -692,7 +708,8 @@
                 "eMalahleni"
             ],
             "possible_further_studies": "BEngTech (Electrical Engineering)",
-            "possible_careers": "Design, planning, construction and maintenance of specialised fields systems related to electrical engineering"
+            "possible_careers": "Design, planning, construction and maintenance of specialised fields systems related to electrical engineering",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Higher Certificate in Industrial Engineering",
@@ -730,13 +747,15 @@
                 }
             ],
             "recommended_subjects": [
+                "Engineering Graphics and Design",
                 "Mechanical Technology"
             ],
             "campuses": [
                 "Pretoria"
             ],
             "possible_further_studies": "BEngTech (Industrial Engineering)",
-            "possible_careers": "Technician, manager, entrepreneur and consultant"
+            "possible_careers": "Technician, manager, entrepreneur and consultant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Higher Certificate in Mechanical Engineering",
@@ -774,20 +793,23 @@
                 }
             ],
             "recommended_subjects": [
-                "Mechanical Technology or Technical: Mechanical Technology"
+                "Engineering Graphics and Design",
+                "Mechanical Technology"
             ],
             "campuses": [
                 "Pretoria"
             ],
             "possible_further_studies": "BEngTech (Mechanical Engineering)",
-            "possible_careers": "Technician, manager, entrepreneur and consultant"
+            "possible_careers": "Technician, manager, entrepreneur and consultant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         }
     ],
     "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
-    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_reviewed": "2026-08",
     "source_confidence": "High - official Tshwane University of Technology source.",
     "include_faculty_notes": true,
     "campus": [
         "Pretoria"
-    ]
+    ],
+    "source": "TUT First Year Course Information 2027"
 }

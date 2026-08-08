@@ -31,7 +31,8 @@
                 "Polokwane"
             ],
             "possible_further_studies": "AdvDip and PGDip: Accounting",
-            "possible_careers": "Financial accountant, auditor, asset manager, administrative service manager, administrative service manager"
+            "possible_careers": "Financial accountant, auditor, asset manager, administrative service manager, administrative service manager",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Economics",
@@ -59,7 +60,8 @@
                 "Ga-Rankuwa"
             ],
             "possible_further_studies": "AdvDip (Economics), PGDip (Economics) and MEcon (Comparative Local Development)",
-            "possible_careers": "Consultant, financial analyst, entrepreneur, economist, banking, insurance, investment, public sectors in economics and financial management, financial and management consultant"
+            "possible_careers": "Consultant, financial analyst, entrepreneur, economist, banking, insurance, investment, public sectors in economics and financial management, financial and management consultant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Financial Management",
@@ -90,7 +92,8 @@
                 "Polokwane"
             ],
             "possible_further_studies": "AdvDip (Financial Management), PGDip (Financial Management), MBusiness Studies (Finance) and DBusiness Studies (Finance)",
-            "possible_careers": "Cost and pricing accountant, project accountant, management accountant, financial controller, financial accountant/controllers, business operations manager, budget controller, finance consultants"
+            "possible_careers": "Cost and pricing accountant, project accountant, management accountant, financial controller, financial accountant/controllers, business operations manager, budget controller, finance consultants",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Financial Planning",
@@ -120,7 +123,8 @@
                 "Ga-Rankuwa"
             ],
             "possible_further_studies": "AdvDip (Financial Planning), PGDip (Financial Planning), MBusiness Studies (Finance) and DBusiness Studies (Finance)",
-            "possible_careers": "Junior business analysts, research analysts, financial analysts, business performance analysts, performance and monitoring assistant/manager, financial planner, finance consultants, investment analysts"
+            "possible_careers": "Junior business analysts, research analysts, financial analysts, business performance analysts, performance and monitoring assistant/manager, financial planner, finance consultants, investment analysts",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Diploma in Internal Auditing",
@@ -151,7 +155,8 @@
                 "Polokwane"
             ],
             "possible_further_studies": "AdvDip (Internal Auditing), PGDip (Internal Auditing), MBusiness Studies (Auditing) and DBusiness Studies (Auditing)",
-            "possible_careers": "Auditor"
+            "possible_careers": "Auditor",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         },
         {
             "name": "Higher Certificate in Accounting",
@@ -179,14 +184,16 @@
                 "Ga-Rankuwa"
             ],
             "possible_further_studies": "Dip (Accounting), Dip (Internal Auditing), Dip (Financial Management), Dip (Financial Planning) or Dip (Public Finance)",
-            "possible_careers": "Accounting technician, bookkeeper, accounts clerk, tax consultant, financial accountant"
+            "possible_careers": "Accounting technician, bookkeeper, accounts clerk, tax consultant, financial accountant",
+            "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf"
         }
     ],
     "source_url": "https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf",
-    "source_reviewed": "Official TUT First Year Course Information 2027 PDF, reviewed on 31 July 2026",
+    "source_reviewed": "2026-08",
     "source_confidence": "High - official Tshwane University of Technology source.",
     "include_faculty_notes": true,
     "campus": [
         "Ga-Rankuwa"
-    ]
+    ],
+    "source": "TUT First Year Course Information 2027"
 }

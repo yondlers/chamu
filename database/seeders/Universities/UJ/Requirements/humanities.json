@@ -1,7 +1,7 @@
 {
     "faculty": "Humanities",
     "university": "University of Johannesburg",
-    "source": "2026 Undergraduate Prospectus",
+    "source": "UJ Undergraduate Prospectus 2026",
     "qualifications": [
         {
             "name": "Bachelor of Social Work - Social Work",
@@ -24,6 +24,13 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Social Worker in private sector",
+                "Social Worker in welfare organisations",
+                "Social Worker in government organisations",
+                "Social Worker in non-governmental organisations"
             ]
         },
         {
@@ -52,6 +59,21 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Anthropologist",
+                "Ethicist",
+                "Social Responsibility Officer",
+                "Manager of Multicultural and Gender Affairs",
+                "General Manager",
+                "Teacher",
+                "Human Resources Development",
+                "Public Governance",
+                "Civil Service",
+                "Politics",
+                "Financial Sector",
+                "Journalist"
             ]
         },
         {
@@ -76,6 +98,21 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Language Practitioner",
+                "Translator",
+                "Text Editor",
+                "Interpreter",
+                "Language Planner",
+                "Language Manager",
+                "Lexicographer",
+                "Terminologist",
+                "Copy Writer",
+                "Journalist",
+                "Subtitler",
+                "Plain Language Specialist"
             ]
         },
         {
@@ -103,6 +140,20 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Apprentice Data Analyst",
+                "Researcher",
+                "Account Manager",
+                "Sales Data Management and Development",
+                "Business Development",
+                "Trainee Analyst",
+                "Import/Export Administrator",
+                "Financial Operations",
+                "Information Management",
+                "Economic Analysis",
+                "Postgraduate Study"
             ]
         },
         {
@@ -127,6 +178,12 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Municipalities",
+                "Government departments such as Department of Social Development",
+                "Non-governmental organisations focusing on development work"
             ]
         },
         {
@@ -159,6 +216,15 @@
                         }
                     ]
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Social development practitioner",
+                "Social change practitioner",
+                "Researcher of social change",
+                "Activist",
+                "Foreign service",
+                "Enterprise and organisational development"
             ]
         },
         {
@@ -191,6 +257,18 @@
                         }
                     ]
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Teaching English to speakers of other languages",
+                "Training",
+                "Research",
+                "Administration",
+                "Business communication in the public sector",
+                "Market research",
+                "Interpreting",
+                "Translating",
+                "Academic career"
             ]
         },
         {
@@ -223,6 +301,21 @@
                         }
                     ]
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Language Practitioner",
+                "Translator",
+                "Text Editor",
+                "Interpreter",
+                "Language Planner",
+                "Language Manager",
+                "Lexicographer",
+                "Terminologist",
+                "Copy Writer",
+                "Journalist",
+                "Subtitler",
+                "Plain Language Specialist"
             ]
         },
         {
@@ -255,6 +348,21 @@
                         }
                     ]
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Brand Manager",
+                "Social Media Strategist",
+                "Digital Data Analyst",
+                "Online Advertising Planner",
+                "Digital Marketing Manager",
+                "Advertising Specialist",
+                "Public Relations Specialist",
+                "Media Planner",
+                "Development Officer",
+                "Communication Officer",
+                "Communication and Reputation Manager",
+                "Stakeholder Manager"
             ]
         },
         {
@@ -277,6 +385,11 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Public Relations Practitioner",
+                "Organisation communication strategy"
             ]
         },
         {
@@ -299,7 +412,14 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Public Relations Practitioner",
+                "Organisation communication strategy"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+    "source_reviewed": "2026-08"
 }

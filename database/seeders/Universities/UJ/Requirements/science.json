@@ -1,7 +1,7 @@
 {
     "faculty": "Science",
     "university": "University of Johannesburg",
-    "source": "2026 Undergraduate Prospectus",
+    "source": "UJ Undergraduate Prospectus 2026",
     "qualifications": [
         {
             "name": "Bachelor of Science in Information Technology - Information Technology",
@@ -26,6 +26,19 @@
                     "subject": "Mathematics",
                     "minimum_level": 6
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Systems Analyst",
+                "Network Manager",
+                "Programmer",
+                "Web Developer",
+                "Web Master",
+                "Database Administrator",
+                "Software Engineer",
+                "Computer Graphics Designer",
+                "Information Technology Manager",
+                "Researcher"
             ]
         },
         {
@@ -51,6 +64,19 @@
                     "subject": "Mathematics",
                     "minimum_level": 6
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Systems Analyst",
+                "Network Manager",
+                "Programmer",
+                "Web Developer",
+                "Web Master",
+                "Database Administrator",
+                "Software Engineer",
+                "Computer Graphics Designer",
+                "Information Technology Manager",
+                "Researcher"
             ]
         },
         {
@@ -76,6 +102,21 @@
                     "subject": "Mathematics",
                     "minimum_level": 7
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Security Architect",
+                "Knowledge Manager",
+                "Cyber Crime Investigator",
+                "All-Source Analyst",
+                "IT Investment or Portfolio Manager",
+                "Systems Analyst",
+                "Network Manager",
+                "Programmer",
+                "Web Developer",
+                "Web Master",
+                "Database Administrator",
+                "Software Engineer"
             ]
         },
         {
@@ -108,6 +149,12 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Analyst",
+                "Technologist",
+                "Researcher"
             ]
         },
         {
@@ -140,6 +187,14 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Ecologist",
+                "Nature Conservation Scientist",
+                "Forensic Scientist"
             ]
         },
         {
@@ -172,6 +227,20 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Biologist",
+                "Nature Conservationist",
+                "Environmentalist",
+                "Ethno-Botanist",
+                "Ecologist",
+                "Entomologist",
+                "Pathologist",
+                "Parasitologist",
+                "Geneticist",
+                "Food Technologist",
+                "Zoologist"
             ]
         },
         {
@@ -204,6 +273,18 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Zoologist",
+                "Biochemist",
+                "Nature Conservationist",
+                "Environmentalist",
+                "Ecologist",
+                "Entomologist",
+                "Pathologist",
+                "Geneticist",
+                "Food Technologist"
             ]
         },
         {
@@ -236,6 +317,12 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Zoologist",
+                "Chemical Technologist",
+                "Researcher"
             ]
         },
         {
@@ -268,6 +355,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Geo-Zoologist",
+                "Population Geneticist",
+                "Environmental Ecologist",
+                "Environmental Specialist"
             ]
         },
         {
@@ -300,6 +394,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Geo-Zoologist",
+                "Population Geneticist",
+                "Environmental Ecologist",
+                "Environmental Specialist"
             ]
         },
         {
@@ -332,6 +433,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Zoologist",
+                "Forensic Pathologist",
+                "Geneticist",
+                "Parasitologist"
             ]
         },
         {
@@ -364,6 +472,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Biochemist",
+                "Researcher",
+                "Forensic Analyst",
+                "Biotechnologist"
             ]
         },
         {
@@ -396,6 +511,12 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Psychologist",
+                "Forensic Pathologist",
+                "Researcher"
             ]
         },
         {
@@ -428,6 +549,14 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Location Analyst",
+                "Town Planner",
+                "Geo-Information Specialist",
+                "Environmental Rehabilitation Manager",
+                "Geomorphologist"
             ]
         },
         {
@@ -460,6 +589,15 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Geographer",
+                "Geologist",
+                "Mineralogist",
+                "Regional Planner",
+                "Site Analyst",
+                "GIS Specialist"
             ]
         },
         {
@@ -492,6 +630,15 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Geographer",
+                "Geologist",
+                "Mineralogist",
+                "Regional Planner",
+                "Site Analyst",
+                "Geographical Information Specialist"
             ]
         },
         {
@@ -520,6 +667,12 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Computer Programmer",
+                "Systems Analyst",
+                "Mathematical Modulator"
             ]
         },
         {
@@ -548,6 +701,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Mathematician",
+                "Data Compiler",
+                "Data Interpreter",
+                "Biometrician"
             ]
         },
         {
@@ -576,6 +736,11 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Software Specialist in high-tech industry",
+                "Designer of medical monitors"
             ]
         },
         {
@@ -601,6 +766,17 @@
                     "subject": "Mathematics",
                     "minimum_level": 7
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Actuary",
+                "Actuarial Analyst",
+                "Quantitative Analyst",
+                "Risk Manager",
+                "Investment Manager",
+                "Credit Ratings Analyst",
+                "Statistician",
+                "Academic"
             ]
         },
         {
@@ -633,6 +809,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Scientist in food and water sectors",
+                "Scientist in biomedical sectors",
+                "Scientist in biotechnological sectors",
+                "Scientist in agricultural sectors"
             ]
         },
         {
@@ -662,6 +845,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Chemist",
+                "Researcher",
+                "Technologist",
+                "Problem Solver"
             ]
         },
         {
@@ -691,6 +881,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Physicist",
+                "Researcher",
+                "Chemistry Technologist",
+                "Forensic Researcher"
             ]
         },
         {
@@ -723,6 +920,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Geochemist",
+                "Geologist",
+                "Forensic Scientist",
+                "Exploration Expert"
             ]
         },
         {
@@ -752,6 +956,12 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Geomathematician",
+                "Geologist",
+                "Problem Analyst"
             ]
         },
         {
@@ -781,6 +991,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Physicist",
+                "Geophysicist",
+                "Geohydrologist",
+                "Geologist"
             ]
         },
         {
@@ -810,6 +1027,11 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Problem Solver",
+                "Researcher in Astronomy and Energy Sources"
             ]
         },
         {
@@ -839,6 +1061,11 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Problem Solver",
+                "Researcher in Astronomy and Energy Sources"
             ]
         },
         {
@@ -864,6 +1091,19 @@
                     "subject": "Mathematics",
                     "minimum_level": 5
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Systems Analyst",
+                "Network Manager",
+                "Programmer",
+                "Web Developer",
+                "Web Master",
+                "Database Administrator",
+                "Software Engineer",
+                "Computer Graphics Designer",
+                "Information Technology Manager",
+                "Researcher"
             ]
         },
         {
@@ -896,6 +1136,12 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Analyst",
+                "Technologist",
+                "Researcher"
             ]
         },
         {
@@ -928,6 +1174,14 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Biologist",
+                "Botanist",
+                "Ecologist",
+                "Nature Conservation Scientist",
+                "Forensic Scientist"
             ]
         },
         {
@@ -960,6 +1214,14 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Location Analyst",
+                "Town Planner",
+                "Geo-Information Specialist",
+                "Environmental Rehabilitation Manager",
+                "Geomorphologist"
             ]
         },
         {
@@ -988,6 +1250,12 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Computer Programmer",
+                "Systems Analyst",
+                "Mathematical Modulator"
             ]
         },
         {
@@ -1020,6 +1288,11 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Scientist in food and water sectors",
+                "Scientist in biomedical, biotechnological and agricultural sectors"
             ]
         },
         {
@@ -1049,6 +1322,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Chemist",
+                "Researcher",
+                "Technologist",
+                "Problem Solver"
             ]
         },
         {
@@ -1078,6 +1358,11 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Problem Solver",
+                "Researcher in Astronomy and Energy Sources"
             ]
         },
         {
@@ -1115,6 +1400,10 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Analytical Chemist"
             ]
         },
         {
@@ -1156,6 +1445,10 @@
                     "subject": "Life Sciences",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Biotechnologist"
             ]
         },
         {
@@ -1197,7 +1490,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 3
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Food Technologist"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+    "source_reviewed": "2026-08"
 }

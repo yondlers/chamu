@@ -25,4 +25,9 @@ class RequirementSeeder extends UniversityRequirementSeeder
     {
         return 'seeders/Universities/TUT/Requirements/*.json';
     }
+
+    protected function defaultSourceUrl(): ?string
+    {
+        return 'https://www.tut.ac.za/media/tshwane-interim/site-content/documents/First-Year-Course_Information.pdf';
+    }
 }

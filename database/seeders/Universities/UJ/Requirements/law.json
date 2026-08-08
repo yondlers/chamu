@@ -1,7 +1,7 @@
 {
     "faculty": "Law",
     "university": "University of Johannesburg",
-    "source": "2026 Undergraduate Prospectus",
+    "source": "UJ Undergraduate Prospectus 2026",
     "qualifications": [
         {
             "name": "BA Law",
@@ -33,6 +33,11 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Legal Advisor",
+                "Career in Public Administration"
             ]
         },
         {
@@ -62,6 +67,11 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Legal Advisor",
+                "Career in Commerce"
             ]
         },
         {
@@ -94,7 +104,18 @@
                     "subject": "Mathematical Literacy",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+            "possible_careers": [
+                "Advocate",
+                "Attorney",
+                "State Advocate",
+                "Legal Advisor",
+                "Magistrate",
+                "Public Prosecutor"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.uj.ac.za/wp-content/uploads/2025/03/2026-undergraduate-prospectus.pdf",
+    "source_reviewed": "2026-08"
 }
