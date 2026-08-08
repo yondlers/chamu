@@ -18,6 +18,19 @@
             'sky' => 'border-sky-200 bg-sky-50 text-sky-900',
             'amber' => 'border-amber-200 bg-amber-50 text-amber-950',
         ][$sourceInfo['tone'] ?? 'sky'] ?? 'border-neutral-200 bg-neutral-50 text-neutral-800';
+
+        $universityLogoSrc = null;
+        $universityLogo = trim((string) $university->logo);
+
+        if ($universityLogo !== '') {
+            $logoIsAbsolute = str_starts_with($universityLogo, 'http://')
+                || str_starts_with($universityLogo, 'https://')
+                || str_starts_with($universityLogo, '/');
+
+            $universityLogoSrc = $logoIsAbsolute ? $universityLogo : asset($universityLogo);
+        }
+
+        $universityInitials = strtoupper(substr(preg_replace('/[^A-Za-z0-9]/', '', (string) ($university->abbreviation ?: $university->name)) ?: 'UNI', 0, 3));
     @endphp
 
     <main class="bg-[#f8fafc] pb-16">
@@ -31,24 +44,42 @@
 
                 <div class="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
                     <div>
-                        <p class="inline-flex items-center gap-2 rounded-full bg-[#01225E]/10 px-3 py-1 text-xs font-bold uppercase text-[#01225E]">
-                            <i data-lucide="building-2" style="width:14px;height:14px;"></i>
-                            University
-                        </p>
-                        <h1 class="mt-4 max-w-4xl text-3xl font-bold leading-tight text-neutral-950 sm:text-5xl">{{ $university->name }}</h1>
-                        <p class="mt-4 max-w-3xl text-base leading-7 text-neutral-600">
-                            Explore qualifications, faculties and published admission information captured for {{ $university->abbreviation ?: $university->name }}. APS can help narrow your options, but subject requirements and selection rules still matter.
-                        </p>
+                        <div class="flex flex-col gap-5 sm:flex-row sm:items-start">
+                            <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl border border-neutral-200 bg-neutral-50 p-3">
+                                @if ($universityLogoSrc)
+                                    <img
+                                        src="{{ $universityLogoSrc }}"
+                                        alt="{{ $university->name }} logo"
+                                        class="max-h-full max-w-full object-contain"
+                                        onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                                    >
+                                    <span class="hidden text-2xl font-black text-[#01225E]">{{ $universityInitials }}</span>
+                                @else
+                                    <span class="text-2xl font-black text-[#01225E]">{{ $universityInitials }}</span>
+                                @endif
+                            </div>
 
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <a href="{{ route('aps.index', ['university_id' => $university->id]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]" data-analytics-event="seo_full_match_started" data-source-page-type="university">
-                                Check APS options <i data-lucide="target" style="width:17px;height:17px;"></i>
-                            </a>
-                            @if ($university->website)
-                                <a href="{{ $university->website }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
-                                    University website <i data-lucide="external-link" style="width:17px;height:17px;"></i>
-                                </a>
-                            @endif
+                            <div class="min-w-0">
+                                <p class="inline-flex items-center gap-2 rounded-full bg-[#01225E]/10 px-3 py-1 text-xs font-bold uppercase text-[#01225E]">
+                                    <i data-lucide="building-2" style="width:14px;height:14px;"></i>
+                                    University
+                                </p>
+                                <h1 class="mt-4 max-w-4xl text-3xl font-bold leading-tight text-neutral-950 sm:text-5xl">{{ $university->name }}</h1>
+                                <p class="mt-4 max-w-3xl text-base leading-7 text-neutral-600">
+                                    Explore qualifications, faculties and published admission information captured for {{ $university->abbreviation ?: $university->name }}. APS can help narrow your options, but subject requirements and selection rules still matter.
+                                </p>
+
+                                <div class="mt-6 flex flex-wrap gap-3">
+                                    <a href="{{ route('aps.index', ['university_id' => $university->id]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 text-sm font-bold text-white hover:bg-[#001A48]" data-analytics-event="seo_full_match_started" data-source-page-type="university">
+                                        Check APS options <i data-lucide="target" style="width:17px;height:17px;"></i>
+                                    </a>
+                                    @if ($university->website)
+                                        <a href="{{ $university->website }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
+                                            University website <i data-lucide="external-link" style="width:17px;height:17px;"></i>
+                                        </a>
+                                    @endif
+                                </div>
+                            </div>
                         </div>
                     </div>
 

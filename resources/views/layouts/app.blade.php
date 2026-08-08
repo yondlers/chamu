@@ -58,10 +58,10 @@
         $navLinkActive = 'border-neutral-950 bg-neutral-950 text-white shadow-sm';
         $studentNavItems = [
             [
-                'label' => 'APS',
+                'label' => 'Varsity',
                 'href' => route('course-match.index'),
                 'icon' => 'target',
-                'active' => request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') || request()->routeIs('course-match.*') || request()->routeIs('courses.*') || request()->routeIs('universities.*'),
+                'active' => request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') || request()->routeIs('course-match.*') || request()->routeIs('courses.*') || request()->routeIs('universities.*') || request()->routeIs('public.universities.*') || request()->routeIs('public.qualifications.*'),
             ],
             [
                 'label' => 'Funding',

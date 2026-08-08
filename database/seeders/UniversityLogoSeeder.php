@@ -22,7 +22,7 @@ class UniversityLogoSeeder extends Seeder
         'UCT' => 'https://uct.ac.za/themes/custom/blip_uct/logo.svg',
         'UFH' => 'https://www.ufh.ac.za/wp-content/uploads/2024/08/UFH-Logo-web.svg',
         'UFS' => 'https://www.ufs.ac.za/images/librariesprovider5/ufs_redesign_2021/ufsheaderlogo.svg',
-        'UJ' => 'https://www.uj.ac.za/wp-content/uploads/2026/03/uj_logo.jpg',
+        'UJ' => 'images/universities/uj.svg',
         'UKZN' => 'https://ukzn.ac.za/wp-content/uploads/2020/03/Transp_bg.png',
         'UL' => 'https://www.ul.ac.za/wp-content/uploads/2023/10/university-of-limpopo-logo.png',
         'UMP' => 'https://www.ump.ac.za/images/logo.png',
@@ -42,6 +42,7 @@ class UniversityLogoSeeder extends Seeder
         ],
         'UJ' => [
             'https://pure.uj.ac.za/skin/headerImage/',
+            'https://www.uj.ac.za/wp-content/uploads/2026/03/uj_logo.jpg',
         ],
     ];
 
