@@ -136,16 +136,78 @@
             @endif
         </section>
 
-        <section id="qualification-preview" class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8" aria-labelledby="qualifications-heading">
+        <section id="qualifications" class="mx-auto max-w-7xl px-4 sm:px-5 lg:px-8" aria-labelledby="qualifications-heading">
             <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                    <h2 id="qualifications-heading" class="text-2xl font-bold text-neutral-950">Qualification examples</h2>
-                    <p class="mt-1 text-sm text-neutral-600">A public preview of captured programmes and published admission information.</p>
+                    <h2 id="qualifications-heading" class="text-2xl font-bold text-neutral-950">Qualifications</h2>
+                    <p class="mt-1 text-sm text-neutral-600">Search and browse all captured programmes and published admission information for {{ $university->abbreviation ?: $university->name }}.</p>
                 </div>
             </div>
 
+            <form method="GET" action="{{ route('public.universities.show', ['university' => $university->slug]) }}" class="mt-5 rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
+                <input type="hidden" name="page" value="1">
+                <div class="grid gap-3 lg:grid-cols-[1.2fr_1fr_1fr_170px_auto]">
+                    <div>
+                        <label for="search" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
+                            <i data-lucide="search" style="width:14px;height:14px;"></i>
+                            Search programmes
+                        </label>
+                        <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Programme, faculty, type" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
+                    </div>
+
+                    <div>
+                        <label for="faculty_id" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
+                            <i data-lucide="layers" style="width:14px;height:14px;"></i>
+                            Faculty
+                        </label>
+                        <select id="faculty_id" name="faculty_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
+                            <option value="">All faculties</option>
+                            @foreach ($faculties as $faculty)
+                                <option value="{{ $faculty->id }}" @selected((int) $filters['faculty_id'] === $faculty->id)>{{ $faculty->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="qualification_type_id" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
+                            <i data-lucide="award" style="width:14px;height:14px;"></i>
+                            Type
+                        </label>
+                        <select id="qualification_type_id" name="qualification_type_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
+                            <option value="">All types</option>
+                            @foreach ($qualificationTypes as $type)
+                                <option value="{{ $type->id }}" @selected((int) $filters['qualification_type_id'] === $type->id)>{{ $type->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="per_page" class="mb-2 flex items-center gap-1.5 text-xs font-bold uppercase text-neutral-500">
+                            <i data-lucide="list" style="width:14px;height:14px;"></i>
+                            Per page
+                        </label>
+                        <select id="per_page" name="per_page" class="w-full rounded-xl border border-neutral-300 px-4 py-3 font-semibold outline-none focus:border-[#01225E]">
+                            @foreach ($perPageOptions as $option)
+                                <option value="{{ $option }}" @selected($perPage === $option)>{{ $option }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="flex items-end">
+                        <button type="submit" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48]">
+                            Filter <i data-lucide="sliders-horizontal" style="width:18px;height:18px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex flex-col gap-2 border-t border-neutral-100 pt-4 text-sm font-semibold text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
+                    <span>Showing {{ $qualifications->firstItem() ?? 0 }}-{{ $qualifications->lastItem() ?? 0 }} of {{ $qualifications->total() }} programmes</span>
+                    <a href="{{ route('public.universities.show', ['university' => $university->slug]) }}" class="text-[#01225E] hover:underline">Reset filters</a>
+                </div>
+            </form>
+
             <div class="mt-5 grid gap-4">
-                @forelse ($qualificationPreview as $qualification)
+                @forelse ($qualifications as $qualification)
                     <article class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
                         <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                             <div class="min-w-0">
@@ -188,11 +250,29 @@
                     </article>
                 @empty
                     <section class="rounded-2xl border border-dashed border-neutral-300 bg-white p-8 text-center">
-                        <h3 class="text-xl font-bold">No public qualifications listed yet</h3>
-                        <p class="mt-2 text-neutral-600">Chamu has this university record, but no qualification records are available for public browsing yet.</p>
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-neutral-100 text-neutral-500">
+                            <i data-lucide="search-x" style="width:22px;height:22px;"></i>
+                        </div>
+                        <h3 class="mt-4 text-xl font-bold">{{ $qualificationCount > 0 ? 'No programmes found' : 'No public qualifications listed yet' }}</h3>
+                        <p class="mt-2 text-neutral-600">
+                            {{ $qualificationCount > 0
+                                ? 'Try a different search term or clear the filters.'
+                                : 'Chamu has this university record, but no qualification records are available for public browsing yet.' }}
+                        </p>
+                        @if ($qualificationCount > 0)
+                            <a href="{{ route('public.universities.show', ['university' => $university->slug]) }}" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white">
+                                Clear filters <i data-lucide="rotate-ccw" style="width:18px;height:18px;"></i>
+                            </a>
+                        @endif
                     </section>
                 @endforelse
             </div>
+
+            @if ($qualifications->hasPages())
+                <div class="mt-6 rounded-2xl border border-neutral-200 bg-white p-4">
+                    {{ $qualifications->onEachSide(1)->links() }}
+                </div>
+            @endif
         </section>
     </main>
 @endsection

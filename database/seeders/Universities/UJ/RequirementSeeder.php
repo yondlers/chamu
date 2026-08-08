@@ -16,6 +16,11 @@ class RequirementSeeder extends UniversityRequirementSeeder
         return 'University of Johannesburg';
     }
 
+    protected function website(): ?string
+    {
+        return 'https://www.uj.ac.za';
+    }
+
     protected function requirementsPath(): string
     {
         return 'seeders/Universities/UJ/Requirements/*.json';
