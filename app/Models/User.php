@@ -140,9 +140,19 @@ class User extends Authenticatable
         return $this->hasMany(UserApplicationDocument::class, 'user_id');
     }
 
+    public function tutorApplication(): HasOne
+    {
+        return $this->hasOne(TutorApplication::class, 'user_id');
+    }
+
     public function userType(): BelongsTo
     {
         return $this->belongsTo(UserType::class, 'user_type_id');
+    }
+
+    public function isTutor(): bool
+    {
+        return strtolower((string) ($this->userType?->name ?? '')) === 'tutor';
     }
 
     public function charadeSessions(): HasMany

@@ -43,8 +43,8 @@ class ProfileController extends Controller
 
         $userTypes = DB::table('user_types')
             ->select('id', 'name')
-            ->whereIn('name', ['pupil', 'student', 'teacher', 'parent'])
-            ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 when 'teacher' then 3 when 'parent' then 4 else 5 end")
+            ->whereIn('name', ['pupil', 'student', 'tutor', 'teacher', 'parent'])
+            ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 when 'tutor' then 3 when 'teacher' then 4 when 'parent' then 5 else 6 end")
             ->get();
 
         $curriculums = DB::table('curriculums')
@@ -90,7 +90,7 @@ class ProfileController extends Controller
 
         $userType = DB::table('user_types')
             ->where('id', $data['user_type_id'])
-            ->whereIn('name', ['pupil', 'student', 'teacher', 'parent'])
+            ->whereIn('name', ['pupil', 'student', 'tutor', 'teacher', 'parent'])
             ->first(['id', 'name']);
 
         if ($userType === null) {

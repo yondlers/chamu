@@ -4,18 +4,23 @@
 
 @section('content')
     @php
-        $defaultUserType = $userTypes->firstWhere('name', 'pupil') ?? $userTypes->first();
+        $defaultUserType = $defaultUserType ?? ($userTypes->firstWhere('name', 'pupil') ?? $userTypes->first());
         $selectedUserTypeId = (int) old('user_type_id', optional($defaultUserType)->id);
         $accountTypes = [
             'pupil' => [
-                'label' => 'Pupil (High School)',
-                'copy' => 'Subjects, marks, APS, and course match.',
+                'label' => 'Pupil',
+                'copy' => 'High school subjects, marks, APS, and course match.',
                 'icon' => 'school',
             ],
             'student' => [
-                'label' => 'Student (University/College)',
-                'copy' => 'Bursaries, funding, and course browsing.',
+                'label' => 'Student',
+                'copy' => 'University or college funding and study planning.',
                 'icon' => 'graduation-cap',
+            ],
+            'tutor' => [
+                'label' => 'Tutor',
+                'copy' => 'Teach learners online or in person across South Africa.',
+                'icon' => 'presentation',
             ],
         ];
     @endphp
@@ -23,8 +28,8 @@
     <main class="min-h-screen grid lg:grid-cols-[1fr_520px] bg-white">
         @include('auth.partials.campus-carousel', [
             'eyebrow' => 'Quick sign up',
-            'heading' => 'Create your account first. Add grade and marks next.',
-            'copy' => 'Pupils set subjects and latest marks on one screen after sign up. Courses stay open even if you skip.',
+            'heading' => 'Create your account first. Choose pupil, student, or tutor.',
+            'copy' => 'Basic details on this screen. Tutors continue with a guided application after sign up.',
         ])
 
         <section class="flex items-center justify-center px-5 py-10">
@@ -35,14 +40,14 @@
                 </a>
 
                 <h1 class="text-3xl font-bold">Create account</h1>
-                <p class="mt-2 text-neutral-500">Pick pupil or student, then finish in under a minute.</p>
+                <p class="mt-2 text-neutral-500">Pick pupil, student, or tutor, then finish in under a minute.</p>
 
                 <form method="POST" action="{{ route('register.store') }}" class="mt-8 space-y-5">
                     @csrf
 
                     <div>
-                        <label class="block text-sm font-semibold mb-2">Account type</label>
-                        <div class="grid gap-3 sm:grid-cols-2">
+                        <label class="block text-sm font-semibold mb-2">I am a</label>
+                        <div class="grid gap-3">
                             @foreach ($userTypes as $userType)
                                 @php
                                     $accountType = $accountTypes[$userType->name] ?? [
@@ -65,11 +70,15 @@
                                         class="sr-only js-account-type-radio"
                                         required
                                     >
-                                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#01225E] text-white">
-                                        <i data-lucide="{{ $accountType['icon'] }}" style="width:18px;height:18px;"></i>
+                                    <span class="flex items-start gap-3">
+                                        <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#01225E] text-white">
+                                            <i data-lucide="{{ $accountType['icon'] }}" style="width:18px;height:18px;"></i>
+                                        </span>
+                                        <span>
+                                            <span class="block font-bold text-neutral-950">{{ $accountType['label'] }}</span>
+                                            <span class="mt-1 block text-sm font-semibold text-neutral-500">{{ $accountType['copy'] }}</span>
+                                        </span>
                                     </span>
-                                    <span class="mt-3 block font-bold text-neutral-950">{{ $accountType['label'] }}</span>
-                                    <span class="mt-1 block text-sm font-semibold text-neutral-500">{{ $accountType['copy'] }}</span>
                                 </label>
                             @endforeach
                         </div>

@@ -31,6 +31,7 @@ use App\Http\Controllers\Public\UniversityController as PublicUniversityControll
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\ToolController;
+use App\Http\Controllers\TutorApplicationController;
 use App\Http\Controllers\UniversityProgrammeController;
 use Illuminate\Support\Facades\Route;
 
@@ -154,6 +155,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/subjects/welcome', [SubjectController::class, 'welcome'])->name('subjects.welcome');
     Route::get('/subjects', [SubjectController::class, 'index'])->name('subjects.index');
     Route::put('/subjects', [SubjectController::class, 'update'])->name('subjects.update');
+    Route::get('/tutor/welcome', [TutorApplicationController::class, 'welcome'])->name('tutor.application.welcome');
+    Route::get('/tutor/application', [TutorApplicationController::class, 'show'])->name('tutor.application.show');
+    Route::put('/tutor/application', [TutorApplicationController::class, 'update'])->name('tutor.application.update');
+    Route::get('/tutor/coming-soon', [TutorApplicationController::class, 'comingSoon'])->name('tutor.application.coming-soon');
     Route::get('/course-match', [CourseMatchController::class, 'index'])->name('course-match.index');
     Route::get('/universities/{university}/programmes', [UniversityProgrammeController::class, 'index'])->name('universities.programmes');
     Route::get('/courses/{qualification}', [CourseController::class, 'show'])->name('courses.show');

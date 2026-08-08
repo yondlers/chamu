@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Schema;
 
 class SiteVisit extends Model
 {
@@ -36,8 +37,15 @@ class SiteVisit extends Model
 
     public function pageLabel(): string
     {
-        if ($this->isApsUniversityOnlyVisit()) {
-            return 'APS page, university selected, no APS yet';
+        $path = parse_url($this->url ?? '', PHP_URL_PATH) ?: '';
+        $query = $this->queryParameters();
+
+        if ($this->isCourseBrowseVisit($path)) {
+            $filters = $this->filterSummary($query);
+
+            return $filters === []
+                ? 'Course browse'
+                : 'Course browse · '.implode(' · ', $filters);
         }
 
         return $this->url ?? 'Unknown page';
@@ -57,49 +65,134 @@ class SiteVisit extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    private function isApsUniversityOnlyVisit(): bool
+    private function isCourseBrowseVisit(string $path): bool
     {
-        $path = parse_url($this->url ?? '', PHP_URL_PATH) ?: '';
+        return in_array($this->route_name, ['aps.index', 'course-match.index'], true)
+            || in_array($path, ['/aps', '/course-match'], true);
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function queryParameters(): array
+    {
         $queryString = parse_url($this->url ?? '', PHP_URL_QUERY) ?: '';
         $query = [];
         parse_str($queryString, $query);
 
-        if ($this->route_name !== 'aps.index' && $path !== '/aps') {
-            return false;
-        }
-
-        return $this->hasUniversityFilter($query) && ! $this->hasFilledApsScore($query);
+        return $query;
     }
 
     /**
-     * @param array<string, mixed> $query
+     * @param  array<string, mixed>  $query
+     * @return list<string>
      */
-    private function hasUniversityFilter(array $query): bool
+    private function filterSummary(array $query): array
     {
-        if (isset($query['university_id']) && trim((string) $query['university_id']) !== '') {
-            return true;
+        $parts = [];
+
+        $universityLabels = $this->universityFilterLabels($query);
+        if ($universityLabels !== []) {
+            $parts[] = count($universityLabels) === 1
+                ? 'University: '.$universityLabels[0]
+                : 'Universities: '.implode(', ', $universityLabels);
+        }
+
+        $facultyId = $this->firstFilledScalar($query['faculty_id'] ?? null);
+        if ($facultyId !== null && Schema::hasTable('faculties')) {
+            $facultyName = Faculty::query()->where('id', $facultyId)->value('name');
+            $parts[] = 'Faculty: '.($facultyName ?: '#'.$facultyId);
+        }
+
+        $qualificationTypeId = $this->firstFilledScalar($query['qualification_type_id'] ?? null);
+        if ($qualificationTypeId !== null && Schema::hasTable('qualification_types')) {
+            $typeName = QualificationType::query()->where('id', $qualificationTypeId)->value('name');
+            $parts[] = 'Type: '.($typeName ?: '#'.$qualificationTypeId);
+        }
+
+        $termId = $this->firstFilledScalar($query['term_id'] ?? null);
+        if ($termId !== null && Schema::hasTable('terms')) {
+            $termName = Term::query()->where('id', $termId)->value('name');
+            $parts[] = 'Term: '.($termName ?: '#'.$termId);
+        }
+
+        $search = $this->firstFilledScalar($query['search'] ?? null);
+        if ($search !== null) {
+            $parts[] = 'Search: "'.$search.'"';
+        }
+
+        return $parts;
+    }
+
+    /**
+     * @param  array<string, mixed>  $query
+     * @return list<string>
+     */
+    private function universityFilterLabels(array $query): array
+    {
+        $ids = collect();
+
+        $singleId = $this->firstFilledScalar($query['university_id'] ?? null);
+        if ($singleId !== null && is_numeric($singleId)) {
+            $ids->push((int) $singleId);
         }
 
         $universityIds = $query['university_ids'] ?? null;
-
         if (is_array($universityIds)) {
-            return collect($universityIds)
-                ->contains(fn ($id) => trim((string) $id) !== '');
+            foreach ($universityIds as $id) {
+                if (is_numeric($id) && (int) $id > 0) {
+                    $ids->push((int) $id);
+                }
+            }
+        } elseif ($universityIds !== null && is_numeric($universityIds) && (int) $universityIds > 0) {
+            $ids->push((int) $universityIds);
         }
 
-        return $universityIds !== null && trim((string) $universityIds) !== '';
+        $ids = $ids->unique()->values();
+
+        if ($ids->isEmpty() || ! Schema::hasTable('universities')) {
+            return $ids->map(fn (int $id) => '#'.$id)->all();
+        }
+
+        $universities = University::query()
+            ->whereIn('id', $ids->all())
+            ->get(['id', 'name', 'abbreviation'])
+            ->keyBy('id');
+
+        return $ids->map(function (int $id) use ($universities) {
+            $university = $universities->get($id);
+
+            if ($university === null) {
+                return '#'.$id;
+            }
+
+            if (filled($university->abbreviation) && $university->abbreviation !== $university->name) {
+                return $university->abbreviation.' ('.$university->name.')';
+            }
+
+            return $university->name;
+        })->all();
     }
 
-    /**
-     * @param array<string, mixed> $query
-     */
-    private function hasFilledApsScore(array $query): bool
+    private function firstFilledScalar(mixed $value): ?string
     {
-        if (! isset($query['aps_score'])) {
-            return false;
+        if (is_array($value)) {
+            foreach ($value as $item) {
+                $filled = $this->firstFilledScalar($item);
+                if ($filled !== null) {
+                    return $filled;
+                }
+            }
+
+            return null;
         }
 
-        return ! is_array($query['aps_score'])
-            && trim((string) $query['aps_score']) !== '';
+        if ($value === null) {
+            return null;
+        }
+
+        $trimmed = trim((string) $value);
+
+        return $trimmed === '' ? null : $trimmed;
     }
 }

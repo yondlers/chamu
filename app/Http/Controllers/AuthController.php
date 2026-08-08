@@ -72,32 +72,32 @@ class AuthController extends Controller
             
     }
 
-    public function showRegister()
+    public function showRegister(Request $request)
     {
         $publicUserTypes = [
             'pupil' => 'High school learner account for studying, practice, notes, and exams.',
             'student' => 'University or college student account for funding and study planning.',
+            'tutor' => 'Tutor account for offering subject tutoring to learners across South Africa.',
         ];
 
         if (Schema::hasTable('user_types')) {
-            DB::table('user_types')->insertOrIgnore(
-                collect($publicUserTypes)
-                    ->map(fn ($description, $name) => [
-                        'name' => $name,
+            foreach ($publicUserTypes as $name => $description) {
+                DB::table('user_types')->updateOrInsert(
+                    ['name' => $name],
+                    [
                         'description' => $description,
                         'created_at' => now(),
                         'updated_at' => now(),
-                    ])
-                    ->values()
-                    ->all()
-            );
+                    ]
+                );
+            }
         }
 
         $userTypes = Schema::hasTable('user_types')
             ? DB::table('user_types')
                 ->select('id', 'name')
                 ->whereIn('name', array_keys($publicUserTypes))
-                ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 else 3 end")
+                ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 when 'tutor' then 3 else 4 end")
                 ->get()
             : collect();
 
@@ -123,12 +123,18 @@ class AuthController extends Controller
                 ->get()
             : collect();
 
+        $preferredType = strtolower((string) $request->query('type', ''));
+        $defaultUserType = $userTypes->firstWhere('name', $preferredType)
+            ?? $userTypes->firstWhere('name', 'pupil')
+            ?? $userTypes->first();
+
         return view('auth.register', [
             'userTypes' => $userTypes,
             'curriculums' => $curriculums,
             'grades' => $grades,
             'provinces' => $provinces,
             'defaultCurriculum' => $curriculums->firstWhere('abbreviation', 'CAPS') ?? $curriculums->first(),
+            'defaultUserType' => $defaultUserType,
         ]);
             
     }
@@ -149,7 +155,7 @@ class AuthController extends Controller
 
         $userType = DB::table('user_types')
             ->where('id', $data['user_type_id'])
-            ->whereIn('name', ['pupil', 'student'])
+            ->whereIn('name', ['pupil', 'student', 'tutor'])
             ->first(['id', 'name']);
         $countryId = DB::table('countries')->where('name', 'South Africa')->value('id') ?? DB::table('countries')->value('id');
 
@@ -175,7 +181,7 @@ class AuthController extends Controller
         ]);
 
         try {
-            Mail::to($user->email)->send(new WelcomeToChamu($user->first_name ?: $user->name, $userType->name));
+            Mail::to($user->email)->send(new WelcomeToChamu($user->first_name ?: $user->name, $userType->name === 'tutor' ? 'student' : $userType->name));
         } catch (Throwable $exception) {
             EmailDeliveryLogger::markFailed($user->email, WelcomeToChamu::class, null, $exception);
 
@@ -185,9 +191,21 @@ class AuthController extends Controller
         Auth::login($user);
         $request->session()->regenerate();
 
+        $redirectRoute = match ($userType->name) {
+            'pupil' => 'subjects.welcome',
+            'tutor' => 'tutor.application.welcome',
+            default => 'bursaries.index',
+        };
+
+        $status = match ($userType->name) {
+            'pupil' => 'Welcome. Add your latest subjects and marks when you are ready.',
+            'tutor' => 'Welcome. Complete your tutor profile when you are ready — you can save and continue later.',
+            default => 'Your student account is ready for bursary applications.',
+        };
+
         return redirect()
-            ->route($userType->name === 'pupil' ? 'subjects.welcome' : 'bursaries.index')
-            ->with('status', $userType->name === 'pupil' ? 'Welcome. Add your latest subjects and marks when you are ready.' : 'Your student account is ready for bursary applications.');
+            ->route($redirectRoute)
+            ->with('status', $status);
     }
 
     public function logout(Request $request)

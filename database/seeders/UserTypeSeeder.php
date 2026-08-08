@@ -22,6 +22,10 @@ class UserTypeSeeder extends Seeder
                 'description' => 'University or college student account for funding and study planning.',
             ],
             [
+                'name' => 'tutor',
+                'description' => 'Tutor account for offering subject tutoring to learners.',
+            ],
+            [
                 'name' => 'teacher',
                 'description' => 'Teacher account for supporting students and learning content.',
             ],

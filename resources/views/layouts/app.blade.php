@@ -58,7 +58,7 @@
         $navLinkActive = 'border-neutral-950 bg-neutral-950 text-white shadow-sm';
         $studentNavItems = [
             [
-                'label' => 'Varsity',
+                'label' => 'Course',
                 'href' => route('course-match.index'),
                 'icon' => 'target',
                 'active' => request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') || request()->routeIs('course-match.*') || request()->routeIs('courses.*') || request()->routeIs('universities.*') || request()->routeIs('public.universities.*') || request()->routeIs('public.qualifications.*'),
@@ -151,6 +151,25 @@
             ],
         ];
         $navItems = $isAdminPortal ? $adminNavItems : $studentNavItems;
+        $authUser = auth()->user();
+        $authUserType = strtolower((string) ($authUser?->userType?->name ?? ''));
+        $tutorApplicationsReady = Illuminate\Support\Facades\Schema::hasTable('tutor_applications');
+        $tutorApplication = ($authUser && $tutorApplicationsReady) ? $authUser->tutorApplication : null;
+        $showBecomeTutor = $tutorApplicationsReady && ! $isAdminPortal && (
+            ! auth()->check()
+            || ($authUserType !== 'tutor' && ! ($tutorApplication?->isSubmitted() ?? false))
+            || ($authUserType === 'tutor' && ($tutorApplication === null || $tutorApplication->isDraft()))
+        );
+        $becomeTutorHref = ! auth()->check()
+            ? route('register', ['type' => 'tutor'])
+            : (
+                ($tutorApplication?->isSubmitted() ?? false)
+                    ? route('tutor.application.coming-soon')
+                    : route('tutor.application.welcome')
+            );
+        $becomeTutorLabel = auth()->check() && $tutorApplication && $tutorApplication->isDraft() && filled($tutorApplication->headline)
+            ? 'Continue Tutor App'
+            : 'Become Tutor';
     @endphp
 
     <header class="sticky top-0 z-40 w-full border-b border-neutral-200 bg-white/95 backdrop-blur">
@@ -169,6 +188,17 @@
                         <span class="hidden shrink-0 items-center rounded-full bg-orange-50 px-3 py-1.5 text-sm font-semibold text-orange-700 sm:inline-flex">{{ auth()->user()->streak }} day streak</span>
                         <span class="hidden shrink-0 items-center rounded-full bg-emerald-50 px-3 py-1.5 text-sm font-semibold text-emerald-700 sm:inline-flex">{{ number_format(auth()->user()->points) }} pts</span>
                     @endunless
+
+                    @if ($showBecomeTutor)
+                        <a
+                            href="{{ $becomeTutorHref }}"
+                            @class([$navLinkBase, request()->routeIs('tutor.application.*') ? $navLinkActive : 'border-[#01225E] bg-[#01225E] text-white hover:bg-[#001A48]'])
+                            @if (request()->routeIs('tutor.application.*')) aria-current="page" @endif
+                        >
+                            <i data-lucide="presentation" style="width:16px;height:16px;"></i>
+                            {{ $becomeTutorLabel }}
+                        </a>
+                    @endif
 
                     @foreach ($navItems as $item)
                         <a
@@ -234,11 +264,17 @@
                         <i data-lucide="info" style="width:16px;height:16px;"></i>
                         About
                     </a>
+                    @if ($showBecomeTutor)
+                        <a href="{{ $becomeTutorHref }}" class="{{ $navLinkBase }} border-[#01225E] bg-[#01225E] text-white hover:bg-[#001A48]">
+                            <i data-lucide="presentation" style="width:16px;height:16px;"></i>
+                            Become Tutor
+                        </a>
+                    @endif
                     <a href="{{ route('login') }}" class="{{ $navLinkBase }} {{ request()->routeIs('login') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('login')) aria-current="page" @endif>
                         <i data-lucide="log-in" style="width:16px;height:16px;"></i>
                         Login
                     </a>
-                    <a href="{{ route('register') }}" class="{{ $navLinkBase }} {{ request()->routeIs('register') ? $navLinkActive : 'border-[#01225E] bg-[#01225E] text-white hover:bg-[#001A48]' }}" @if (request()->routeIs('register')) aria-current="page" @endif>
+                    <a href="{{ route('register') }}" class="{{ $navLinkBase }} {{ request()->routeIs('register') ? $navLinkActive : $navLinkIdle }}" @if (request()->routeIs('register')) aria-current="page" @endif>
                         Sign up
                     </a>
                 @endauth
