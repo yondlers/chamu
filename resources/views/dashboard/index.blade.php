@@ -181,8 +181,8 @@
                 <div class="mt-5 rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-6 text-center">
                     <p class="font-bold">No APS history yet</p>
                     <p class="mt-1 text-sm text-neutral-500">Add marks for your terms and your APS trend will appear here.</p>
-                    <a href="{{ route('marks.index') }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
-                        Add marks <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                    <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2.5 text-sm font-semibold text-white">
+                        Add subjects & marks <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                     </a>
                 </div>
             @else
@@ -229,7 +229,7 @@
             <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <div class="flex items-center justify-between gap-3">
                 <h2 class="text-xl font-bold">Subjects for APS and Funding</h2>
-                    <a href="{{ route('subjects.index') }}" class="text-sm font-bold text-[#01225E]">Edit</a>
+                    <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="text-sm font-bold text-[#01225E]">Edit</a>
                 </div>
                 <div class="mt-4 flex flex-wrap gap-2">
                     @forelse ($selectedSubjects as $subject)
@@ -243,7 +243,7 @@
             <article class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <div class="flex items-center justify-between gap-3">
                     <h2 class="text-xl font-bold">Marks for matching</h2>
-                    <a href="{{ route('marks.index') }}" class="text-sm font-bold text-[#01225E]">Update</a>
+                    <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="text-sm font-bold text-[#01225E]">Update</a>
                 </div>
                 <p class="mt-1 text-sm text-neutral-500">{{ optional($latestTerm)->name ?? 'No term marks yet' }}</p>
                 <div class="mt-4 space-y-2">

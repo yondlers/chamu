@@ -12,7 +12,7 @@
             </div>
             @auth
                 <div class="flex flex-wrap gap-2">
-                    <a href="{{ route('marks.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
+                    <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                         Edit marks <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
                     </a>
                     <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-[#01225E] px-4 py-2 font-semibold text-white hover:bg-[#001A48]">

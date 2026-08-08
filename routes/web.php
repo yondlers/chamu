@@ -151,6 +151,7 @@ Route::middleware('auth')->group(function () {
     Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::get('/profile/application', [ProfileController::class, 'application'])->name('profile.application');
     Route::put('/profile/application', [ProfileController::class, 'updateApplication'])->name('profile.application.update');
+    Route::get('/subjects/welcome', [SubjectController::class, 'welcome'])->name('subjects.welcome');
     Route::get('/subjects', [SubjectController::class, 'index'])->name('subjects.index');
     Route::put('/subjects', [SubjectController::class, 'update'])->name('subjects.update');
     Route::get('/course-match', [CourseMatchController::class, 'index'])->name('course-match.index');

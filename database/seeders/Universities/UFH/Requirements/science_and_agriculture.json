@@ -1,7 +1,7 @@
 {
     "faculty": "Science and Agriculture",
     "university": "University of Fort Hare",
-    "source": "UFH Study at the University of Fort Hare 2024",
+    "source": "UFH Study Guide 2027",
     "qualifications": [
         {
             "name": "Bachelor of Science",
@@ -10,6 +10,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -17,7 +18,8 @@
                 "ITS programme code: 40000.",
                 "SAQA ID: 19236.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -64,6 +66,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Scientist",
+                "Laboratory Analyst",
+                "Research Assistant"
             ]
         },
         {
@@ -73,6 +81,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -82,7 +91,8 @@
                 "SAQA ID: 19236.",
                 "UFH APS excludes Life Orientation from the count.",
                 "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -121,6 +131,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Scientist",
+                "Laboratory Analyst",
+                "Research Assistant"
             ]
         },
         {
@@ -130,6 +146,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -138,7 +155,8 @@
                 "ITS programme code: 71522.",
                 "SAQA ID: 100997.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -185,6 +203,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Soil Scientist",
+                "Agricultural Scientist"
             ]
         },
         {
@@ -194,6 +217,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -204,7 +228,8 @@
                 "SAQA ID: 100997.",
                 "UFH APS excludes Life Orientation from the count.",
                 "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -243,6 +268,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Soil Scientist",
+                "Agricultural Scientist"
             ]
         },
         {
@@ -252,6 +282,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -260,7 +291,8 @@
                 "ITS programme code: 71523.",
                 "SAQA ID: 100998.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -307,6 +339,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Horticulturist",
+                "Crop Production Specialist"
             ]
         },
         {
@@ -316,6 +353,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -326,7 +364,8 @@
                 "SAQA ID: 100998.",
                 "UFH APS excludes Life Orientation from the count.",
                 "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -365,6 +404,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Horticulturist",
+                "Crop Production Specialist"
             ]
         },
         {
@@ -374,6 +418,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -382,7 +427,8 @@
                 "ITS programme code: 71524.",
                 "SAQA ID: 101000.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -429,6 +475,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Crop Scientist",
+                "Agronomist"
             ]
         },
         {
@@ -438,6 +489,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -448,7 +500,8 @@
                 "SAQA ID: 101000.",
                 "UFH APS excludes Life Orientation from the count.",
                 "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -487,6 +540,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Crop Scientist",
+                "Agronomist"
             ]
         },
         {
@@ -496,6 +554,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -504,7 +563,8 @@
                 "ITS programme code: 71525.",
                 "SAQA ID: 100996.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -551,6 +611,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Animal Scientist",
+                "Livestock Production Specialist"
             ]
         },
         {
@@ -560,6 +625,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -570,7 +636,8 @@
                 "SAQA ID: 100996.",
                 "UFH APS excludes Life Orientation from the count.",
                 "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -609,6 +676,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Animal Scientist",
+                "Livestock Production Specialist"
             ]
         },
         {
@@ -618,6 +690,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -626,7 +699,8 @@
                 "ITS programme code: 71526.",
                 "SAQA ID: 100999.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -673,6 +747,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Pasture Scientist",
+                "Rangeland Manager"
             ]
         },
         {
@@ -682,6 +761,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -692,7 +772,8 @@
                 "SAQA ID: 100999.",
                 "UFH APS excludes Life Orientation from the count.",
                 "Additional UFH requirement: Mathematics AND Physical Science: Level 3 in either Mathematics or Physical Science, but the second one must be at Level 4.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -731,6 +812,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Pasture Scientist",
+                "Rangeland Manager"
             ]
         },
         {
@@ -740,6 +826,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -748,7 +835,8 @@
                 "ITS programme code: 71521.",
                 "SAQA ID: 100995.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -791,6 +879,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Economist",
+                "Economic Analyst",
+                "Policy Analyst"
             ]
         },
         {
@@ -800,6 +894,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -809,7 +904,8 @@
                 "ITS programme code: 71421.",
                 "SAQA ID: 100995.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -852,6 +948,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Economist",
+                "Economic Analyst",
+                "Policy Analyst"
             ]
         },
         {
@@ -861,6 +963,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -869,7 +972,8 @@
                 "SAQA ID: 3393.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -904,6 +1008,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Agricultural Officer",
+                "Farm Manager",
+                "Agricultural Advisor"
             ]
         },
         {
@@ -913,6 +1023,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -922,7 +1033,8 @@
                 "SAQA ID: 3393.",
                 "APS note: 28 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -957,6 +1069,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Agricultural Officer",
+                "Farm Manager",
+                "Agricultural Advisor"
             ]
         },
         {
@@ -966,6 +1084,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -975,7 +1094,8 @@
                 "SAQA ID: 100994.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -1010,6 +1130,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Agricultural Extension Officer",
+                "Rural Development Officer"
             ]
         },
         {
@@ -1019,6 +1144,7 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ML means Mathematical Literacy.",
                 "The extended programme follows the same structure as the mainstream programme but is extended over a longer period with additional academic support.",
                 "Final student selection is strictly on merit.",
@@ -1029,7 +1155,8 @@
                 "SAQA ID: 100994.",
                 "APS note: 28 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: msmith@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -1064,7 +1191,15 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Agricultural Extension Officer",
+                "Rural Development Officer"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+    "source_reviewed": "2026-08",
+    "contact_email": "msmith@ufh.ac.za"
 }

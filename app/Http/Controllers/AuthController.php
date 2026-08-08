@@ -159,18 +159,12 @@ class AuthController extends Controller
                 ->withInput($request->except('password', 'password_confirmation'));
         }
 
-        if ($userType->name === 'pupil' && empty($data['curriculum_id'])) {
-            return back()
-                ->withErrors(['curriculum_id' => 'Choose your curriculum for a high school pupil account.'])
-                ->withInput($request->except('password', 'password_confirmation'));
-        }
-
         $user = User::create([
             'user_type_id' => $userType->id,
             'country_id' => $countryId,
             'province_id' => $data['province_id'] ?? null,
-            'curriculum_id' => $userType->name === 'pupil' ? $data['curriculum_id'] : null,
-            'grade_id' => $userType->name === 'pupil' ? ($data['grade_id'] ?? null) : null,
+            'curriculum_id' => null,
+            'grade_id' => null,
             'name' => trim($data['first_name'].' '.($data['last_name'] ?? '')),
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'] ?? null,
@@ -192,9 +186,8 @@ class AuthController extends Controller
         $request->session()->regenerate();
 
         return redirect()
-            ->route($userType->name === 'pupil' ? 'subjects.index' : 'bursaries.index')
-            ->with('status', $userType->name === 'pupil' ? 'Select your subjects to personalize Chamu.' : 'Your student account is ready for bursary applications.');
-            
+            ->route($userType->name === 'pupil' ? 'subjects.welcome' : 'bursaries.index')
+            ->with('status', $userType->name === 'pupil' ? 'Welcome. Add your latest subjects and marks when you are ready.' : 'Your student account is ready for bursary applications.');
     }
 
     public function logout(Request $request)

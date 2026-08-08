@@ -16,8 +16,18 @@ class RequirementSeeder extends UniversityRequirementSeeder
         return 'University of Fort Hare';
     }
 
+    protected function website(): ?string
+    {
+        return 'https://www.ufh.ac.za';
+    }
+
     protected function requirementsPath(): string
     {
         return 'seeders/Universities/UFH/Requirements/*.json';
+    }
+
+    protected function defaultSourceUrl(): ?string
+    {
+        return 'https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf';
     }
 }

@@ -9,12 +9,12 @@
         $accountTypes = [
             'pupil' => [
                 'label' => 'Pupil (High School)',
-                'copy' => 'For learners using subjects, marks, and APS tools.',
+                'copy' => 'Subjects, marks, APS, and course match.',
                 'icon' => 'school',
             ],
             'student' => [
                 'label' => 'Student (University/College)',
-                'copy' => 'For tertiary bursaries and funding applications.',
+                'copy' => 'Bursaries, funding, and course browsing.',
                 'icon' => 'graduation-cap',
             ],
         ];
@@ -22,9 +22,9 @@
 
     <main class="min-h-screen grid lg:grid-cols-[1fr_520px] bg-white">
         @include('auth.partials.campus-carousel', [
-            'eyebrow' => 'Student account',
-            'heading' => 'Save your grade, subjects, points, and progress.',
-            'copy' => 'Registration uses the same curriculum and grade data seeded into the database.',
+            'eyebrow' => 'Quick sign up',
+            'heading' => 'Create your account first. Add grade and marks next.',
+            'copy' => 'Pupils set subjects and latest marks on one screen after sign up. Courses stay open even if you skip.',
         ])
 
         <section class="flex items-center justify-center px-5 py-10">
@@ -35,7 +35,7 @@
                 </a>
 
                 <h1 class="text-3xl font-bold">Create account</h1>
-                <p class="mt-2 text-neutral-500">Create an account for school tools or bursary applications.</p>
+                <p class="mt-2 text-neutral-500">Pick pupil or student, then finish in under a minute.</p>
 
                 <form method="POST" action="{{ route('register.store') }}" class="mt-8 space-y-5">
                     @csrf
@@ -111,31 +111,8 @@
                         @enderror
                     </div>
 
-                    <div id="high-school-fields" class="grid sm:grid-cols-2 gap-4">
-                        <div>
-                            <label for="curriculum_id" class="block text-sm font-semibold mb-2">Curriculum</label>
-                            <select id="curriculum_id" name="curriculum_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
-                                @foreach ($curriculums as $curriculum)
-                                    <option value="{{ $curriculum->id }}" @selected((int) old('curriculum_id', optional($defaultCurriculum)->id) === $curriculum->id)>
-                                        {{ $curriculum->abbreviation ?: $curriculum->name }}
-                                    </option>
-                                @endforeach
-                            </select>
-                            @error('curriculum_id')
-                                <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-                        <div>
-                            <label for="grade_id" class="block text-sm font-semibold mb-2">Grade</label>
-                            <select id="grade_id" name="grade_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]"></select>
-                            @error('grade_id')
-                                <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-                    </div>
-
                     <div>
-                        <label for="province_id" class="block text-sm font-semibold mb-2">Province</label>
+                        <label for="province_id" class="block text-sm font-semibold mb-2">Province <span class="font-normal text-neutral-400">(optional)</span></label>
                         <select id="province_id" name="province_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
                             <option value="">Choose province</option>
                             @foreach ($provinces as $province)
@@ -176,41 +153,10 @@
 
 @push('scripts')
     <script>
-        const grades = @json($grades->values());
-        const curriculumSelect = document.getElementById('curriculum_id');
-        const gradeSelect = document.getElementById('grade_id');
-        const selectedGradeId = '{{ old('grade_id') }}';
-        const highSchoolFields = document.getElementById('high-school-fields');
         const accountTypeRadios = [...document.querySelectorAll('.js-account-type-radio')];
         const accountTypeCards = [...document.querySelectorAll('.js-account-type-card')];
 
-        const refreshGrades = () => {
-            const curriculumId = Number(curriculumSelect.value);
-            const rows = grades.filter((grade) => Number(grade.curriculum_id) === curriculumId);
-
-            gradeSelect.innerHTML = '';
-
-            rows.forEach((grade) => {
-                const option = document.createElement('option');
-                option.value = grade.id;
-                option.textContent = grade.name;
-                option.selected = String(grade.id) === selectedGradeId || (!selectedGradeId && grade.name === 'Grade 12');
-                gradeSelect.appendChild(option);
-            });
-        };
-
-        curriculumSelect.addEventListener('change', refreshGrades);
-        refreshGrades();
-
         const refreshAccountType = () => {
-            const selected = accountTypeRadios.find((radio) => radio.checked);
-            const isPupil = selected?.dataset.userTypeName === 'pupil';
-
-            highSchoolFields.classList.toggle('hidden', !isPupil);
-            curriculumSelect.required = isPupil;
-            curriculumSelect.disabled = !isPupil;
-            gradeSelect.disabled = !isPupil;
-
             accountTypeCards.forEach((card) => {
                 const isSelected = card.querySelector('.js-account-type-radio')?.checked;
                 card.classList.toggle('is-selected', Boolean(isSelected));

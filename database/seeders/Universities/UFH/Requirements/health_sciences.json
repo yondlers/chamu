@@ -1,7 +1,7 @@
 {
     "faculty": "Health Sciences",
     "university": "University of Fort Hare",
-    "source": "UFH Study at the University of Fort Hare 2024",
+    "source": "UFH Study Guide 2027",
     "qualifications": [
         {
             "name": "Bachelor of Health Sciences in Human Movement Science",
@@ -10,11 +10,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ITS programme code: 84001.",
                 "SAQA ID: 115314.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: pnhlumayo@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -49,6 +51,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Biokineticist",
+                "Sport Scientist",
+                "Fitness Specialist"
             ]
         },
         {
@@ -58,11 +66,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ITS programme code: 84033.",
                 "SAQA ID: 101706.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: pnhlumayo@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -101,6 +111,11 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Speech-Language Pathologist",
+                "Speech Therapist"
             ]
         },
         {
@@ -110,11 +125,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ITS programme code: 84040.",
                 "SAQA ID: 117790.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: pnhlumayo@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -153,7 +170,15 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Professional Nurse",
+                "Community Health Nurse"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+    "source_reviewed": "2026-08",
+    "contact_email": "pnhlumayo@ufh.ac.za"
 }

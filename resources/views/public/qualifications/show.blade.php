@@ -614,7 +614,7 @@
                         </a>
                         @auth
                             @if ($qualificationAction['kind'] === 'browse_qualifications')
-                                <a href="{{ route('marks.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
+                                <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-4 py-3 text-sm font-bold text-white hover:bg-white/10">
                                     Add marks when ready <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
                                 </a>
                             @endif

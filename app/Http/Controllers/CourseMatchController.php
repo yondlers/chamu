@@ -41,57 +41,59 @@ class CourseMatchController extends Controller
     {
         $user = $request->user();
 
-        if ($user->grade_id === null) {
-            return redirect()
-                ->route('profile.edit')
-                ->with('status', 'Choose your grade before matching courses.');
+        $selectedSubjects = collect();
+        $terms = collect();
+        $termId = null;
+        $results = collect();
+
+        if ($user->grade_id !== null) {
+            $selectedSubjects = DB::table('user_subject_preferences')
+                ->join('subjects', 'subjects.id', '=', 'user_subject_preferences.subject_id')
+                ->where('user_subject_preferences.user_id', $user->id)
+                ->where('user_subject_preferences.grade_id', $user->grade_id)
+                ->select('subjects.id', 'subjects.name', 'subjects.code', 'subjects.abbreviation')
+                ->orderBy('subjects.name')
+                ->get();
+
+            $gradeName = DB::table('grades')->where('id', $user->grade_id)->value('name');
+            $allowedTermNames = $gradeName === 'Grade 12'
+                ? ['Term 1', 'Term 2', 'Term 3', 'NSC']
+                : ['Term 1', 'Term 2', 'Term 3', 'Term 4'];
+
+            $terms = DB::table('terms')
+                ->where('curriculum_id', $user->curriculum_id)
+                ->where('grade_id', $user->grade_id)
+                ->whereIn('name', $allowedTermNames)
+                ->orderByRaw("case name when 'Term 1' then 1 when 'Term 2' then 2 when 'Term 3' then 3 when 'Term 4' then 4 when 'NSC' then 4 else 5 end")
+                ->get(['id', 'name']);
+
+            $latestResultTermId = DB::table('user_subject_results')
+                ->where('user_id', $user->id)
+                ->where('grade_id', $user->grade_id)
+                ->whereNotNull('mark')
+                ->orderByDesc('term_id')
+                ->value('term_id');
+
+            $termId = $request->integer('term_id') ?: ($latestResultTermId ?: optional($terms->first())->id);
+
+            if ($termId) {
+                $results = DB::table('user_subject_results')
+                    ->join('subjects', 'subjects.id', '=', 'user_subject_results.subject_id')
+                    ->where('user_subject_results.user_id', $user->id)
+                    ->where('user_subject_results.grade_id', $user->grade_id)
+                    ->where('user_subject_results.term_id', $termId)
+                    ->whereNotNull('user_subject_results.mark')
+                    ->select(
+                        'user_subject_results.subject_id',
+                        'user_subject_results.mark',
+                        'user_subject_results.aps_score',
+                        'subjects.name',
+                        'subjects.code',
+                        'subjects.abbreviation',
+                    )
+                    ->get();
+            }
         }
-
-        $selectedSubjects = DB::table('user_subject_preferences')
-            ->join('subjects', 'subjects.id', '=', 'user_subject_preferences.subject_id')
-            ->where('user_subject_preferences.user_id', $user->id)
-            ->where('user_subject_preferences.grade_id', $user->grade_id)
-            ->select('subjects.id', 'subjects.name', 'subjects.code', 'subjects.abbreviation')
-            ->orderBy('subjects.name')
-            ->get();
-
-        if ($selectedSubjects->isEmpty()) {
-            return redirect()
-                ->route('subjects.index')
-                ->with('status', 'Select your subjects before matching courses.');
-        }
-
-        $terms = DB::table('terms')
-            ->where('curriculum_id', $user->curriculum_id)
-            ->where('grade_id', $user->grade_id)
-            ->orderBy('from_date')
-            ->orderBy('name')
-            ->get(['id', 'name']);
-
-        $latestResultTermId = DB::table('user_subject_results')
-            ->where('user_id', $user->id)
-            ->where('grade_id', $user->grade_id)
-            ->whereNotNull('mark')
-            ->orderByDesc('term_id')
-            ->value('term_id');
-
-        $termId = $request->integer('term_id') ?: ($latestResultTermId ?: optional($terms->first())->id);
-
-        $results = DB::table('user_subject_results')
-            ->join('subjects', 'subjects.id', '=', 'user_subject_results.subject_id')
-            ->where('user_subject_results.user_id', $user->id)
-            ->where('user_subject_results.grade_id', $user->grade_id)
-            ->where('user_subject_results.term_id', $termId)
-            ->whereNotNull('user_subject_results.mark')
-            ->select(
-                'user_subject_results.subject_id',
-                'user_subject_results.mark',
-                'user_subject_results.aps_score',
-                'subjects.name',
-                'subjects.code',
-                'subjects.abbreviation',
-            )
-            ->get();
 
         $hasSavedMarks = $results->isNotEmpty();
         $resultBySubjectId = $results->keyBy('subject_id');

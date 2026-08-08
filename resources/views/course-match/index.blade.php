@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <div class="mt-5 flex gap-2">
-                            <a href="{{ route('marks.index') }}" class="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-white px-3 py-2 text-sm font-black text-[#01225E] hover:bg-white/90">
+                            <a href="{{ route('subjects.index', ['manage' => 1, 'term_id' => $termId]) }}" class="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-white px-3 py-2 text-sm font-black text-[#01225E] hover:bg-white/90">
                                 Marks <i data-lucide="line-chart" style="width:15px;height:15px;"></i>
                             </a>
                             <a href="{{ route('dashboard.index') }}" class="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-white/25 px-3 py-2 text-sm font-black text-white hover:bg-white/10">
@@ -291,8 +291,8 @@
                             <h2 class="text-lg font-bold text-neutral-950">Browse qualifications first</h2>
                             <p class="mt-1 text-sm leading-6 text-neutral-600">Marks are optional for browsing. Add them later when you want Chamu to calculate your APS and compare each subject requirement.</p>
                         </div>
-                        <a href="{{ route('marks.index', ['term_id' => $termId]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
-                            Add marks when ready <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
+                        <a href="{{ route('subjects.index', array_filter(['manage' => 1, 'term_id' => $termId])) }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold text-neutral-950 hover:bg-neutral-50">
+                            Add subjects & marks <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
                         </a>
                     </div>
                 </section>

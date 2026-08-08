@@ -18,7 +18,7 @@
             <div>
                 <p class="text-sm font-semibold text-[#01225E]">Account</p>
                 <h1 class="text-3xl font-bold mt-1">Profile details</h1>
-                <p class="mt-2 text-neutral-500">Update personal information, school context, subjects, marks, and APS scores.</p>
+                <p class="mt-2 text-neutral-500">Update personal information, school context, and open subjects & marks from here.</p>
             </div>
             @if (session('status'))
                 <p class="rounded-xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700">{{ session('status') }}</p>
@@ -116,20 +116,13 @@
             </div>
         </form>
 
-        <section class="mt-8 grid gap-5 md:grid-cols-3">
-            <a href="{{ route('subjects.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
+        <section class="mt-8 grid gap-5 md:grid-cols-2">
+            <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
                 <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
                     <i data-lucide="list-checks" style="width:22px;height:22px;"></i>
                 </span>
-                <h2 class="font-bold text-xl">Choose subjects</h2>
-                <p class="mt-2 text-sm text-neutral-500">Select only the subjects you take. Search will use this list after login.</p>
-            </a>
-            <a href="{{ route('marks.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
-                <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
-                    <i data-lucide="line-chart" style="width:22px;height:22px;"></i>
-                </span>
-                <h2 class="font-bold text-xl">Add term marks</h2>
-                <p class="mt-2 text-sm text-neutral-500">Capture marks by term. APS is calculated automatically.</p>
+                <h2 class="font-bold text-xl">Subjects & marks</h2>
+                <p class="mt-2 text-sm text-neutral-500">Update grade, term, subjects, and marks together. APS is calculated automatically.</p>
             </a>
             <a href="{{ route('profile.application') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
                 <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">

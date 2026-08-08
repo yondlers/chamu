@@ -1,7 +1,7 @@
 {
     "faculty": "Education",
     "university": "University of Fort Hare",
-    "source": "UFH Study at the University of Fort Hare 2024",
+    "source": "UFH Study Guide 2027",
     "qualifications": [
         {
             "name": "Bachelor of Education Senior and FET Phase - Agriculture",
@@ -10,12 +10,14 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "Specialisation: Agriculture.",
                 "ITS programme code: 500491.",
                 "SAQA ID: 112523.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: nmagocoba@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -54,6 +56,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Educator",
+                "School Teacher",
+                "Education Officer"
             ]
         },
         {
@@ -63,12 +71,14 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "Specialisation: Commerce.",
                 "ITS programme code: 500492.",
                 "SAQA ID: 112523.",
                 "APS note: 27 with Mathematics.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 2 subjects at Level 4, 50-59%.",
+                "Faculty contact: nmagocoba@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -110,6 +120,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Educator",
+                "School Teacher",
+                "Education Officer"
             ]
         },
         {
@@ -119,11 +135,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "Specialisation: Science.",
                 "ITS programme code: 500493.",
                 "SAQA ID: 112523.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: nmagocoba@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -166,6 +184,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Educator",
+                "School Teacher",
+                "Education Officer"
             ]
         },
         {
@@ -175,11 +199,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "Specialisation: Social Science.",
                 "ITS programme code: 500494.",
                 "SAQA ID: 112523.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: nmagocoba@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -230,6 +256,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Educator",
+                "School Teacher",
+                "Education Officer"
             ]
         },
         {
@@ -239,11 +271,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ITS programme code: 50045.",
                 "SAQA ID: 103090.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: nmagocoba@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -294,6 +328,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Educator",
+                "School Teacher",
+                "Education Officer"
             ]
         },
         {
@@ -303,11 +343,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ITS programme code: 50046.",
                 "SAQA ID: 99690.",
                 "APS note: 29 with Mathematical Literacy.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 3 subjects at Level 4, 50-59%.",
+                "Faculty contact: nmagocoba@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -358,7 +400,16 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Educator",
+                "School Teacher",
+                "Education Officer"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+    "source_reviewed": "2026-08",
+    "contact_email": "nmagocoba@ufh.ac.za"
 }

@@ -1,7 +1,7 @@
 {
     "faculty": "Law",
     "university": "University of Fort Hare",
-    "source": "UFH Study at the University of Fort Hare 2024",
+    "source": "UFH Study Guide 2027",
     "qualifications": [
         {
             "name": "Bachelor of Laws",
@@ -10,10 +10,12 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ITS programme code: 21525.",
                 "SAQA ID: 15578.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%.",
+                "Faculty contact: lawenquiries@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -48,6 +50,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Attorney",
+                "Advocate",
+                "Legal Advisor"
             ]
         },
         {
@@ -57,12 +65,14 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "Programme note: Extended Programme.",
                 "ITS programme code: 21526.",
                 "SAQA ID: 15578.",
                 "APS note: 28 with Mathematical Literacy or Technical Mathematics.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%.",
+                "Faculty contact: lawenquiries@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -97,6 +107,12 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Attorney",
+                "Advocate",
+                "Legal Advisor"
             ]
         },
         {
@@ -106,11 +122,13 @@
             "minimum_pass_type": "bachelor",
             "selection_programme": false,
             "notes": [
+                "Source: UFH Study Guide 2027.",
                 "ITS programme code: 21527.",
                 "SAQA ID: 15573.",
                 "APS note: 29 with Mathematical Literacy or Technical Mathematics.",
                 "UFH APS excludes Life Orientation from the count.",
-                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%."
+                "Additional UFH requirement: Other subjects: 4 subjects at Level 4, 50-59%.",
+                "Faculty contact: lawenquiries@ufh.ac.za."
             ],
             "subject_requirements": [
                 {
@@ -145,7 +163,16 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
+            ],
+            "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+            "possible_careers": [
+                "Legal Advisor",
+                "Compliance Officer",
+                "Corporate Legal Officer"
             ]
         }
-    ]
+    ],
+    "source_url": "https://www.ufh.ac.za/wp-content/uploads/2026/06/Study-Guide-2027.pdf",
+    "source_reviewed": "2026-08",
+    "contact_email": "lawenquiries@ufh.ac.za"
 }
