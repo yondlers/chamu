@@ -145,6 +145,16 @@ class User extends Authenticatable
         return $this->hasOne(TutorApplication::class, 'user_id');
     }
 
+    public function tutorBookingsAsLearner(): HasMany
+    {
+        return $this->hasMany(TutorBooking::class, 'learner_user_id');
+    }
+
+    public function tutorReviewsWritten(): HasMany
+    {
+        return $this->hasMany(TutorReview::class, 'reviewer_user_id');
+    }
+
     public function userType(): BelongsTo
     {
         return $this->belongsTo(UserType::class, 'user_type_id');

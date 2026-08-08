@@ -20,7 +20,7 @@
                     <p class="text-sm font-bold uppercase tracking-[0.18em] text-white/70">Application received</p>
                     <h1 class="mt-4 text-4xl font-black leading-[1.05] sm:text-6xl">Coming soon.</h1>
                     <p class="mt-5 max-w-xl text-base font-medium leading-7 text-white/75 sm:text-lg">
-                        Thanks{{ $firstName ? ', '.$firstName : '' }}. We will let you know when the Tutor section is ready.
+                        Thanks{{ $firstName ? ', '.$firstName : '' }}. Your tutor status is {{ $application->tutorStatus?->name ?? 'pending' }}. We will let you know when the Tutor section is ready.
                     </p>
 
                     <div class="mt-8 flex flex-col gap-3 sm:flex-row">

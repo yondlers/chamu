@@ -110,4 +110,9 @@ class Qualification extends Model
     {
         return $this->hasMany(UniversityAdmissionRule::class, 'qualification_id');
     }
+
+    public function tutorApplications(): HasMany
+    {
+        return $this->hasMany(TutorApplication::class, 'qualification_id');
+    }
 }

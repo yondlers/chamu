@@ -115,4 +115,19 @@ class Subject extends Model
     {
         return $this->hasMany(UserSubjectResult::class, 'subject_id');
     }
+
+    public function tutorApplicationSubjects(): HasMany
+    {
+        return $this->hasMany(TutorApplicationSubject::class, 'subject_id');
+    }
+
+    public function tutorMarks(): HasMany
+    {
+        return $this->hasMany(TutorMark::class, 'subject_id');
+    }
+
+    public function tutorBookings(): HasMany
+    {
+        return $this->hasMany(TutorBooking::class, 'subject_id');
+    }
 }

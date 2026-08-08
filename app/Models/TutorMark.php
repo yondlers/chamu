@@ -6,18 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class TutorApplicationSubject extends Model
+class TutorMark extends Model
 {
     use HasFactory;
 
-    protected $table = 'tutor_application_subjects';
+    protected $table = 'tutor_marks';
 
     protected $fillable = [
         'tutor_application_id',
         'subject_id',
-        'subject_name',
         'subject_other',
-        'hourly_rate',
+        'mark',
+        'year',
         'level',
         'sort_order',
     ];
@@ -25,7 +25,8 @@ class TutorApplicationSubject extends Model
     protected function casts(): array
     {
         return [
-            'hourly_rate' => 'decimal:2',
+            'mark' => 'integer',
+            'year' => 'integer',
             'sort_order' => 'integer',
         ];
     }
@@ -46,6 +47,6 @@ class TutorApplicationSubject extends Model
             return (string) $this->subject_other;
         }
 
-        return (string) ($this->subject?->name ?? $this->subject_name ?? 'Subject');
+        return (string) ($this->subject?->name ?? 'Subject');
     }
 }

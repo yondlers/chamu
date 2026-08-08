@@ -64,4 +64,9 @@ class University extends Model
     {
         return $this->hasMany(UniversityAdmissionRule::class, 'university_id');
     }
+
+    public function tutorApplications(): HasMany
+    {
+        return $this->hasMany(TutorApplication::class, 'university_id');
+    }
 }
