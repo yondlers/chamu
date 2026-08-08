@@ -16,6 +16,9 @@ class Chat extends Model
     protected $fillable = [
         'user_id',
         'guest_token',
+        'ip_address',
+        'user_agent',
+        'device_type',
         'title',
         'last_message_at',
     ];
@@ -35,5 +38,23 @@ class Chat extends Model
     public function messages(): HasMany
     {
         return $this->hasMany(ChatMessage::class, 'chat_id');
+    }
+
+    public function participantLabel(): string
+    {
+        if ($this->user !== null && filled($this->user->name)) {
+            return $this->user->name;
+        }
+
+        if ($this->user_id !== null) {
+            return 'User #'.$this->user_id;
+        }
+
+        return $this->ip_address ?: 'Guest visitor';
+    }
+
+    public function isGuest(): bool
+    {
+        return $this->user_id === null;
     }
 }

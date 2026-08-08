@@ -32,7 +32,7 @@ class LemoAiController extends Controller
 
     public function store(Request $request): JsonResponse
     {
-        $chat = $this->lemoAi->createChat(Auth::user(), $this->guestToken($request));
+        $chat = $this->lemoAi->createChat(Auth::user(), $this->guestToken($request), $this->visitorMeta($request));
 
         return response()->json([
             'chat' => [
@@ -67,7 +67,7 @@ class LemoAiController extends Controller
                 $chat = Chat::query()->findOrFail($chatId);
                 $this->authorizeChat($request, $chat);
             } else {
-                $chat = $this->lemoAi->createChat(Auth::user(), $this->guestToken($request));
+                $chat = $this->lemoAi->createChat(Auth::user(), $this->guestToken($request), $this->visitorMeta($request));
             }
 
             $result = $this->lemoAi->sendMessage($chat, trim($validated['message']));
@@ -163,6 +163,43 @@ class LemoAiController extends Controller
         }
 
         return $token;
+    }
+
+    /**
+     * @return array{ip_address:?string, user_agent:?string, device_type:string}
+     */
+    private function visitorMeta(Request $request): array
+    {
+        $userAgent = $request->userAgent();
+
+        return [
+            'ip_address' => $request->ip(),
+            'user_agent' => filled($userAgent) ? Str::limit($userAgent, 1000, '') : null,
+            'device_type' => $this->deviceType($userAgent),
+        ];
+    }
+
+    private function deviceType(?string $userAgent): string
+    {
+        $agent = strtolower($userAgent ?? '');
+
+        if ($agent === '') {
+            return 'unknown';
+        }
+
+        if (str_contains($agent, 'bot') || str_contains($agent, 'crawler') || str_contains($agent, 'spider')) {
+            return 'bot';
+        }
+
+        if (str_contains($agent, 'ipad') || str_contains($agent, 'tablet')) {
+            return 'tablet';
+        }
+
+        if (str_contains($agent, 'mobile') || str_contains($agent, 'iphone') || str_contains($agent, 'android')) {
+            return 'mobile';
+        }
+
+        return 'desktop';
     }
 
     private function chatTablesReady(): bool

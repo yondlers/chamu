@@ -19,14 +19,25 @@ class LemoAiChatService
         private readonly LemoAiRouter $router,
     ) {}
 
-    public function createChat(?User $user, ?string $guestToken = null): Chat
+    /**
+     * @param  array{ip_address?:?string, user_agent?:?string, device_type?:?string}  $visitor
+     */
+    public function createChat(?User $user, ?string $guestToken = null, array $visitor = []): Chat
     {
-        $chat = new Chat([
+        $attributes = [
             'user_id' => $user?->id,
             'guest_token' => $user ? null : $guestToken,
             'title' => 'New chat',
             'last_message_at' => now(),
-        ]);
+        ];
+
+        if ($this->supportsVisitorColumns()) {
+            $attributes['ip_address'] = $visitor['ip_address'] ?? null;
+            $attributes['user_agent'] = $visitor['user_agent'] ?? null;
+            $attributes['device_type'] = $visitor['device_type'] ?? null;
+        }
+
+        $chat = new Chat($attributes);
         $chat->save();
 
         $this->storeMessage($chat, [
@@ -115,6 +126,13 @@ class LemoAiChatService
     {
         return Schema::hasColumn('chat_messages', 'provider')
             && Schema::hasColumn('chat_messages', 'model');
+    }
+
+    private function supportsVisitorColumns(): bool
+    {
+        return Schema::hasColumn('chats', 'ip_address')
+            && Schema::hasColumn('chats', 'user_agent')
+            && Schema::hasColumn('chats', 'device_type');
     }
 
     /**

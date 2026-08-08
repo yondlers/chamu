@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\ActivityLogController as AdminActivityLogControll
 use App\Http\Controllers\Admin\AuditLogController as AdminAuditLogController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\EmailLogController as AdminEmailLogController;
+use App\Http\Controllers\Admin\LemoAiChatController as AdminLemoAiChatController;
 use App\Http\Controllers\Admin\SiteVisitController as AdminSiteVisitController;
 use App\Http\Controllers\Admin\SocialController as AdminSocialController;
 use App\Http\Controllers\ApplicationController;
@@ -110,6 +111,8 @@ Route::middleware(['auth', 'super.admin'])->prefix('admin')->name('admin.')->gro
     Route::get('/accounts/{user}', [AdminAccountController::class, 'show'])->name('accounts.show');
     Route::get('/emails', [AdminEmailLogController::class, 'index'])->name('emails.index');
     Route::get('/emails/{emailLog}', [AdminEmailLogController::class, 'show'])->name('emails.show');
+    Route::get('/lemo-ai', [AdminLemoAiChatController::class, 'index'])->name('lemo-ai.index');
+    Route::get('/lemo-ai/{chat}', [AdminLemoAiChatController::class, 'show'])->name('lemo-ai.show');
     Route::get('/site-visits', [AdminSiteVisitController::class, 'index'])->name('site-visits.index');
     Route::get('/site-visits/{siteVisit}', [AdminSiteVisitController::class, 'show'])->name('site-visits.show');
     Route::get('/activity-logs', [AdminActivityLogController::class, 'index'])->name('activity-logs.index');
