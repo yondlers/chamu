@@ -563,22 +563,35 @@
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="possible-careers-heading">
                         <h2 id="possible-careers-heading" class="text-2xl font-bold text-neutral-950">Possible Careers</h2>
                         <div class="mt-5 overflow-x-auto">
-                            <table class="min-w-full table-auto text-left">
+                            <table class="min-w-full table-fixed text-left">
+                                <colgroup>
+                                    <col class="w-1/3">
+                                    <col class="w-1/3">
+                                    <col class="w-1/3">
+                                </colgroup>
                                 <tbody>
-                                    <tr>
-                                        @foreach ($possibleCareers as $career)
-                                            <th scope="col" class="min-w-44 pb-2 pr-6 align-top text-sm font-bold text-neutral-950">
-                                                {{ $career->name }}
-                                            </th>
-                                        @endforeach
-                                    </tr>
-                                    <tr>
-                                        @foreach ($possibleCareers as $career)
-                                            <td class="min-w-44 pr-6 align-top text-sm font-semibold leading-6 text-neutral-600">
-                                                {{ $career->salary_expectation ?: 'Salary expectation to be confirmed' }}
-                                            </td>
-                                        @endforeach
-                                    </tr>
+                                    @foreach ($possibleCareers->chunk(3) as $careerRow)
+                                        <tr>
+                                            @foreach ($careerRow as $career)
+                                                <th scope="col" class="pb-2 pr-6 align-top text-sm font-bold text-neutral-950 {{ $loop->parent->first ? '' : 'pt-5' }}">
+                                                    {{ $career->name }}
+                                                </th>
+                                            @endforeach
+                                            @for ($i = $careerRow->count(); $i < 3; $i++)
+                                                <th class="pb-2 pr-6 {{ $loop->first ? '' : 'pt-5' }}" aria-hidden="true"></th>
+                                            @endfor
+                                        </tr>
+                                        <tr>
+                                            @foreach ($careerRow as $career)
+                                                <td class="pr-6 align-top text-sm font-semibold leading-6 text-neutral-600">
+                                                    {{ $career->salary_expectation ?: 'Salary expectation to be confirmed' }}
+                                                </td>
+                                            @endforeach
+                                            @for ($i = $careerRow->count(); $i < 3; $i++)
+                                                <td class="pr-6" aria-hidden="true"></td>
+                                            @endfor
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
