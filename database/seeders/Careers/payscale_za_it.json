@@ -1,0 +1,602 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "IT, software & technology",
+    "collected_at": "2026-08-10",
+    "careers": [
+        {
+            "name": "Software Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Software_Developer/Salary",
+            "salary_expectation": "R121k – R669k / year (avg R346,140)",
+            "description": "Software developers develop computer applications that allow users to perform specific tasks on computers or other devices. They may also develop or customize existing systems that run devices or control networks."
+        },
+        {
+            "name": "Software Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Software_Engineer/Salary",
+            "salary_expectation": "R121k – R769k / year (avg R410,541)",
+            "description": "In the world of software design and development, a software engineer plays a key role. The engineer is typically the person who helps to develop the ways that software functions created by a software design team will work."
+        },
+        {
+            "name": "Support Technician, Information Technology (IT)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Support_Technician%2C_Information_Technology_(IT)/Salary",
+            "salary_expectation": "R74k – R336k / year (avg R172,914)",
+            "description": "Support technicians in the information technology field are required to maintain the computers, network servers and phone technology in business settings. They often work daily with the hardware, repairing or replacing defective equipment."
+        },
+        {
+            "name": "Business Analyst, IT",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Analyst%2C_IT/Salary",
+            "salary_expectation": "R147k – R742k / year (avg R403,728)",
+            "description": "A business analyst, IT, focuses on improving operations that involve information technology within a company. The business analyst offers consultation to management in an effort to help the company become more effective."
+        },
+        {
+            "name": "Information Technology (IT) Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Technology_(IT)_Manager/Salary",
+            "salary_expectation": "R140k – R1m / year (avg R478,555)",
+            "description": "An information technology (IT) manager supervises their company's computer infrastructure and related areas of concern. He or she may oversee teams that manage network technology, IT security and the software platforms used by the company."
+        },
+        {
+            "name": "Data Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Data_Scientist/Salary",
+            "salary_expectation": "R207k – R809k / year (avg R460,138)",
+            "description": null
+        },
+        {
+            "name": "Project Manager, Information Technology (IT)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Project_Manager%2C_Information_Technology_(IT)/Salary",
+            "salary_expectation": "R76k – R883k / year (avg R494,840)",
+            "description": "Project managers in information technology (IT) are tasked with planning certain types of projects within a company and ensuring that they are executed and on-track through every stage of the process. This job may require daily evaluations of employees, as well as leadership and motivation, in order to achieve particular goals."
+        },
+        {
+            "name": "Senior Software Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Software_Engineer/Salary",
+            "salary_expectation": "R504k – R1m / year (avg R829,539)",
+            "description": "A senior software engineer typically has a background in computer science, web development, and/or engineering. A bachelor's degree in any of those fields is generally considered a plus, as is experience working in web development."
+        },
+        {
+            "name": "Data Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Data_Engineer/Salary",
+            "salary_expectation": "R119k – R882k / year (avg R460,556)",
+            "description": "Data engineers typically work in an indoor office setting, and a college degree in computer science, engineering, or a related field is often a minimum requirement for this position. Computer skills, particularly with Linux systems, and three to five years of prior work experience may also be required."
+        },
+        {
+            "name": "Systems Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Systems_Administrator/Salary",
+            "salary_expectation": "R58k – R516k / year (avg R271,569)",
+            "description": "Systems administrators - also called sysadmins - are responsible for ensuring their organization's computer systems are well maintained and operate reliably. Tasks performed by systems administrators include performing regular systems and security monitoring, handling backup procedures and helping set up, maintain and delete user accounts as required."
+        },
+        {
+            "name": "Sr. Software Engineer / Developer / Programmer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sr._Software_Engineer_%2F_Developer_%2F_Programmer/Salary",
+            "salary_expectation": "R364k – R1m / year (avg R729,964)",
+            "description": "Sr. software engineers/developers/programmers are in charge of a team of computer professionals who develop the different software programs sold by software companies or used by various businesses. As the head of this department, they must be able to solve problems that even the intelligent people whom they work with may not be able to handle."
+        },
+        {
+            "name": "Business Intelligence (BI) Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Intelligence_(BI)_Developer/Salary",
+            "salary_expectation": "R228k – R783k / year (avg R419,733)",
+            "description": "Business intelligence developers must be data experts, as they work primarily with databases and different types of software. Often abbreviated as BI developer, this job involves developing and fine tuning IT solutions."
+        },
+        {
+            "name": "Junior Software Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Software_Engineer/Salary",
+            "salary_expectation": "R112k – R396k / year (avg R245,171)",
+            "description": "A junior software engineer designs codes for new software and also modifies current software. They are responsible for correcting defects and debugging software."
+        },
+        {
+            "name": "Test / Quality Assurance (QA) Engineer (Computer Software)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Test_%2F_Quality_Assurance_(QA)_Engineer_(Computer_Software)/Salary",
+            "salary_expectation": "R129k – R610k / year (avg R265,390)",
+            "description": null
+        },
+        {
+            "name": "Software Engineer / Developer / Programmer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Software_Engineer_%2F_Developer_%2F_Programmer/Salary",
+            "salary_expectation": "R116k – R756k / year (avg R348,827)",
+            "description": "Software engineer/developer/programmers may work in one major industry or in a vast array of different industries. Some may work for companies that produce and sell exactly what they work with."
+        },
+        {
+            "name": "Information Technology (IT) Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Technology_(IT)_Consultant/Salary",
+            "salary_expectation": "R72k – R802k / year (avg R267,187)",
+            "description": "Information technology (IT) consultants work for various organizations. Their job is to advise clients on how to use information technology, in order to meet their business objectives effectively and efficiently."
+        },
+        {
+            "name": "Cyber Security Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Cyber_Security_Analyst/Salary",
+            "salary_expectation": "R20k – R572k / year (avg R245,533)",
+            "description": null
+        },
+        {
+            "name": "Business Intelligence (BI) Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Intelligence_(BI)_Analyst/Salary",
+            "salary_expectation": "R220k – R714k / year (avg R425,523)",
+            "description": "Business intelligence (BI) analysts help guide and improve the way that businesses' management staff foster collaboration within and between departments. Minimum educational requirements generally include a bachelor's degree in business administration or computer engineering."
+        },
+        {
+            "name": "Web Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Web_Developer/Salary",
+            "salary_expectation": "R31k – R413k / year (avg R180,238)",
+            "description": "Most of the time, web developers work in an office. Web developers build the backbone of websites."
+        },
+        {
+            "name": "Network Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Network_Technician/Salary",
+            "salary_expectation": "R95k – R300k / year (avg R146,939)",
+            "description": "Network technicians work with vendors, programmers, and customers to aid with installation and troubleshooting needs. Key tasks include troubleshooting hardware, software and network problems; configuring and installing operating systems; and training users."
+        },
+        {
+            "name": "Full Stack Software Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Full_Stack_Software_Developer/Salary",
+            "salary_expectation": "R42k – R767k / year (avg R347,203)",
+            "description": null
+        },
+        {
+            "name": "Test Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Test_Analyst/Salary",
+            "salary_expectation": "R220k – R621k / year (avg R422,472)",
+            "description": "The test analyst works as part of a larger team with the goal of ensuring quality, product performance, and excellence in operations. This may include identifying inefficiencies or deterrents to workflow, as well as proposing solutions."
+        },
+        {
+            "name": "Information Technology (IT) Support Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Technology_(IT)_Support_Specialist/Salary",
+            "salary_expectation": "R72k – R511k / year (avg R245,792)",
+            "description": "The information technology (IT) support specialist is a generalist position devoted to all aspects of computer set-up, installation, troubleshooting, service, upgrades, and maintenance. The position can also include handling how computers connect to each other or the rest of the network."
+        },
+        {
+            "name": "Product Owner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Owner/Salary",
+            "salary_expectation": "R303k – R1m / year (avg R617,495)",
+            "description": "The product owner plays a leadership role in their organization, usually a software company. Common employers for product owners include software companies, particularly those developing new software or providing support to other companies."
+        },
+        {
+            "name": "Solutions Architect",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Solutions_Architect/Salary",
+            "salary_expectation": "R101k – R1m / year (avg R598,719)",
+            "description": "Solutions architects are in charge of creating, designing, and implementing arrangements within a business. They help to build new systems needed by the company and must be able to identify the business' current problems and future technological goals."
+        },
+        {
+            "name": "Network Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Network_Engineer/Salary",
+            "salary_expectation": "R118k – R681k / year (avg R306,150)",
+            "description": "The work of network engineers revolves around their employers' computer network designs and implementations, and they are salaried instead of paid on an hourly basis. They generally work in offices to troubleshoot problems related to their company's enterprise-wide network, and they must ensure that their systems' security and firewall software is up-to-date."
+        },
+        {
+            "name": "Technical Support Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Support_Specialist/Salary",
+            "salary_expectation": "R117k – R715k / year (avg R316,882)",
+            "description": "A technical support specialist consults with other employees and identifies technology problems; they then propose or collaborate on solutions. In some companies, this position requires the specialist to write programs to improve the efficiency and productivity of the systems already in place."
+        },
+        {
+            "name": "Team Leader, IT",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Team_Leader%2C_IT/Salary",
+            "salary_expectation": "R207k – R1m / year (avg R412,822)",
+            "description": "IT team leaders generally work either for companies which operate in the IT field or companies in a variety of fields which simply require IT assistance. This job covers an abundance of duties, and some common tasks may include designing, installing, and maintaining security and other IT systems, creating software and hardware, managing a website, carrying out data collection, managing search engine advertising, automating tasks, and providing general technical support to end-users."
+        },
+        {
+            "name": "Front End Developer / Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Front_End_Developer_%2F_Engineer/Salary",
+            "salary_expectation": "R57k – R653k / year (avg R303,212)",
+            "description": "A front end developer/engineer is in charge of managing complex details about projects that require analyzing design requirements, as well as recommending technical solutions to make projects scalable, maintainable, and efficient. They also debug websites to fix mistakes in the code to make sure they are error-free for network administrators and end users."
+        },
+        {
+            "name": "Database Administrator (DBA)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Database_Administrator_(DBA)/Salary",
+            "salary_expectation": "R51k – R727k / year (avg R256,023)",
+            "description": "A database administrator (DBA) is an IT professional who ensures that the software used to manage a database is properly maintained to allow rapid access when needed. Because constant access, searches, traffic are likely to have a damaging effect on any company database, the DBA works to maintain the efficiency of the servers."
+        },
+        {
+            "name": "Java Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Java_Developer/Salary",
+            "salary_expectation": "R118k – R878k / year (avg R439,551)",
+            "description": "Java developers create complex web-based applications. Some examples include animated drop-down menus, images that change as a mouse moves over them, and sounds that play when clicked."
+        },
+        {
+            "name": "SAP Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=SAP_Consultant/Salary",
+            "salary_expectation": "R116k – R1m / year (avg R351,515)",
+            "description": "SAP consultants analyze, design, and configure new computer software and systems in accordance with their employers' or clients' specifications, as well as write programs such as forms, specifications, and interfaces. They also test new interfaces to ensure that system workflows are optimized and interact with end-users to make changes as requested and obtain feedback."
+        },
+        {
+            "name": "Systems Engineer, IT",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Systems_Engineer%2C_IT/Salary",
+            "salary_expectation": "R194k – R677k / year (avg R357,393)",
+            "description": "A systems engineer (IT) is in charge of creating computer systems for clients and a system to debug systems with glitches or problems. Systems engineers (IT) also are in charge of creating the most efficient program for each client; in some cases, they will work on robotic machinery and computer chips."
+        },
+        {
+            "name": "Systems Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Systems_Analyst/Salary",
+            "salary_expectation": "R200k – R818k / year (avg R423,824)",
+            "description": "People who wish to work as systems analysts must be able to think outside the box, finding effective solutions for businesses and other clients. They must be adept at investigating problems and fixing them in the most efficient way possible."
+        },
+        {
+            "name": "Certified ScrumMaster (CSM)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Certified_ScrumMaster_(CSM)/Salary",
+            "salary_expectation": "R323k – R858k / year (avg R519,041)",
+            "description": null
+        },
+        {
+            "name": "Technical Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Consultant/Salary",
+            "salary_expectation": "R167k – R668k / year (avg R359,697)",
+            "description": "Most technical consultants are hired for projects requiring significant knowledge in a particular technical area. They are usually hired through a consulting or staffing firm, and they often must be able to learn components such as software quickly when placed within a company."
+        },
+        {
+            "name": "Information Technology Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Technology_Specialist/Salary",
+            "salary_expectation": "R49k – R915k / year (avg R353,796)",
+            "description": "Information technology specialists work closely with a variety of technology products, from their design to regular repair and upkeep. They generally provide their services as-needed for their companies regarding software, hardware, and databases and, depending on a specialist's skill, he/she may also create entire databases and programs for either individual or corporate needs."
+        },
+        {
+            "name": "Development Operations (DevOps) Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Development_Operations_(DevOps)_Engineer/Salary",
+            "salary_expectation": "R131k – R965k / year (avg R463,219)",
+            "description": "Development operations (DevOps) engineers typically work full-time in a company's headquarters and are responsible for the production and ongoing maintenance of a website platform. They also manage cloud infrastructure and system administration and work with teams to identify and repair issues on an as-needed basis, so strong communication skills are important in this position."
+        },
+        {
+            "name": "Senior Project Manager, IT",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Project_Manager%2C_IT/Salary",
+            "salary_expectation": "R590k – R1m / year (avg R995,692)",
+            "description": "Senior project managers must be well organized, extremely responsible, and capable of working with a wide variety of other people. Senior IT project managers work in a fast paced and frequently changing industry, and must work very hard to keep up with the responsibilities they are tasked with."
+        },
+        {
+            "name": "Technical Support Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Support_Engineer/Salary",
+            "salary_expectation": "R71k – R537k / year (avg R223,110)",
+            "description": "Technical support engineers are responsible for answering incoming phone calls and e-mails from customers and addressing their questions and concerns regarding the company's products and services, as well as troubleshooting any technical problems they may have. They also address concerns brought up by other departments within the company, such as operations and sales."
+        },
+        {
+            "name": "Actuary",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Actuary/Salary",
+            "salary_expectation": "R201k – R1m / year (avg R606,288)",
+            "description": "Actuaries play a key role in insurance companies by serving as analysts who help determine whether the company should issue an insurance policy and what the premium for that policy should be. They use a great deal of statistical analysis in their work, as they examine huge amounts of data related to costing and trends."
+        },
+        {
+            "name": "Help Desk Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Help_Desk_Technician/Salary",
+            "salary_expectation": "R16k – R290k / year (avg R148,243)",
+            "description": "Help desk technicians are needed by virtually every company that produces or uses sophisticated computer equipment. When either customers or colleagues run into technical problems, the help desk technician identifies, troubleshoots, and resolves the issue."
+        },
+        {
+            "name": ".NET Software Developer / Programmer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=.NET_Software_Developer_%2F_Programmer/Salary",
+            "salary_expectation": "R179k – R874k / year (avg R423,437)",
+            "description": "A .NET Software Engineer will typically write code to generate web pages, access databases and business logic servers. They write, modify and debug software for web sites."
+        },
+        {
+            "name": "Business Systems Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Systems_Analyst/Salary",
+            "salary_expectation": "R236k – R791k / year (avg R482,374)",
+            "description": "Business systems analysts are responsible for the analysis, adjustment and restructuring of different aspects of a business. It is a business systems analyst's responsibility to ensure that a business's structure is meeting top output efficiency."
+        },
+        {
+            "name": "Quality Assurance (QA) Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Assurance_(QA)_Engineer/Salary",
+            "salary_expectation": "R148k – R613k / year (avg R368,078)",
+            "description": "A quality assurance engineer creates tests to find any problems with software before the product is launched. They identify and analyze any bugs found during testing and document them."
+        },
+        {
+            "name": "Lead Software Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lead_Software_Engineer/Salary",
+            "salary_expectation": "R505k – R1m / year (avg R954,243)",
+            "description": "A lead software engineer holds many responsibilities, primarily developing and testing software programs. Responsibilities for a lead software engineer can vary vastly depending on the company, department, and infrastructure of the employer."
+        },
+        {
+            "name": "Quality Assurance Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Assurance_Analyst/Salary",
+            "salary_expectation": "R96k – R571k / year (avg R222,429)",
+            "description": "Quality assurance analysts are typically tasked with testing products to ensure that they meet the standards that a company is looking for. This means that the product is reliable, functional, and user-friendly."
+        },
+        {
+            "name": "Senior Systems Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Systems_Engineer/Salary",
+            "salary_expectation": "R305k – R1m / year (avg R691,739)",
+            "description": "The senior systems engineer tends to involve more design and build-out work than an standard systems administrator position. While both jobs contain responsibilities for day-to-day administration and upkeep of servers and storage, a senior systems engineer will also have been the one who original designed the solution; this can range anywhere from choosing a server platform to details related to processors, RAM and network cards."
+        },
+        {
+            "name": "SQL Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=SQL_Developer/Salary",
+            "salary_expectation": "R161k – R885k / year (avg R394,881)",
+            "description": "A SQL developer, also known as a structured query language developer, supports custom web application development. They implement changes using tables, stored procedures, views, and indexes."
+        },
+        {
+            "name": "Product Manager, Software",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Manager%2C_Software/Salary",
+            "salary_expectation": "R297k – R981k / year (avg R563,953)",
+            "description": "Product managers for software are in charge of managing software products' development. They are responsible for facilitating communication among relevant internal personnel and relevant external parties, including with their organization's implementation and support teams to eliminate programming issues that may arise in different environments."
+        },
+        {
+            "name": "Service Desk Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Service_Desk_Analyst/Salary",
+            "salary_expectation": "R113k – R310k / year (avg R178,570)",
+            "description": "Service desk analysts are in charge of assessing and resolving customers' application- and software-related issues, as well as referring requests to other departments as needed. Among their responsibilities are receiving support requests from end users, collecting information from users using a variety of support tools, and working with other analysts as needed."
+        },
+        {
+            "name": "ScrumMaster",
+            "source_url": "https://www.payscale.com/research/ZA/Job=ScrumMaster/Salary",
+            "salary_expectation": "R252k – R913k / year (avg R528,902)",
+            "description": "A scrummaster's main responsibility is making sure that the day-to-day operations related to software development are performed effectively and efficiently. They support a cross-functional team to remove obstacles that could hinder progress, build strong relationships with program owners and application users, and ensure the successful delivery of all tasks and projects."
+        },
+        {
+            "name": "Application Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Application_Developer/Salary",
+            "salary_expectation": "R118k – R745k / year (avg R305,882)",
+            "description": "Application developers help companies keep up with the latest technologies and developments on the web. As online technology becomes increasingly important, all types of businesses are seeking application developers--from banks to universities, news channels to hospitals."
+        },
+        {
+            "name": "Senior Test Analyst (Computer Software)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Test_Analyst_(Computer_Software)/Salary",
+            "salary_expectation": "R417k – R738k / year (avg R543,268)",
+            "description": "Senior test analyst for computer software hold an advanced computer programming position within their company. They test and provide feedback on software as part of their company's workflow for designing programs; the type of programs this analyst tests may include anything from the space launch software to security coding for antivirus software, depending on their employer."
+        },
+        {
+            "name": "Business Analyst, Software",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Analyst%2C_Software/Salary",
+            "salary_expectation": "R144k – R704k / year (avg R380,221)",
+            "description": "A software business analyst analyzes software that has been implemented within their company, reporting on its efficiency and developing ideas to solve any problems encountered. They may also be given a problem and expected to come up with software that can remedy the issue."
+        },
+        {
+            "name": "Head of IT & Infrastructure",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Head_of_IT_%26_Infrastructure/Salary",
+            "salary_expectation": "R650k – R2m / year (avg R999,971)",
+            "description": "Heads of information technology (IT) and infrastructure are responsible for managing all IT requests within their organization, as well as planning and deploying infrastructure features for their organization. They are in charge of evaluating hardware and software platforms, analyzing their performance, and recommending changes based on their experience and project requirements."
+        },
+        {
+            "name": "Software Development Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Software_Development_Manager/Salary",
+            "salary_expectation": "R490k – R1m / year (avg R967,926)",
+            "description": "A software development manager is in charge of designing and developing software systems for medical, military, business, scientific, and general computing applications. They are also in charge of modifying existing software that may contain errors or that needs an upgrade."
+        },
+        {
+            "name": "Web Designer & Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Web_Designer_%26_Developer/Salary",
+            "salary_expectation": "R88k – R444k / year (avg R204,550)",
+            "description": "A web designer and developer is responsible for the creation, maintenance, and development of a company’s website. Web designers and developers work within creative teams to provide high-quality, accessible, original ideas about their company's website and its associated features."
+        },
+        {
+            "name": "Computer / Network Support Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Computer_%2F_Network_Support_Technician/Salary",
+            "salary_expectation": "R27k – R334k / year (avg R123,830)",
+            "description": "A Computer/Network Support Technician’s main responsibility is to provide technical support to the computer and network operations. This includes initially receiving problem calls from users either online or by telephone and troubleshooting the problem until it is resolved."
+        },
+        {
+            "name": "Program Manager, IT",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Program_Manager%2C_IT/Salary",
+            "salary_expectation": "R515k – R2m / year (avg R1,057,092)",
+            "description": "An information technology (IT) program manager is an administrative position for a company with an IT department. This position incorporates elements of managerial work and technical skill, with the manager directing a team of IT specialists."
+        },
+        {
+            "name": "Information Technology (IT) Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Technology_(IT)_Director/Salary",
+            "salary_expectation": "R133k – R2m / year (avg R1,188,556)",
+            "description": "Information technology (IT) directors are responsible for managing and directing IT operations for their companies and providing leadership and technical advice to lead their departments. They may also be responsible for developing effective strategies for deploying technology and software, testing hardware devices and applications before introducing them to management, and managing schedules and deployment contracts."
+        },
+        {
+            "name": "Technical Services Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Services_Manager/Salary",
+            "salary_expectation": "R220k – R982k / year (avg R482,026)",
+            "description": "Technical services managers may work in a variety of different industries or fields, including accounting and computer technology. They have multiple duties and are in charge of many technical issues within their company."
+        },
+        {
+            "name": "Senior Data Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Data_Scientist/Salary",
+            "salary_expectation": "R175k – R1m / year (avg R822,232)",
+            "description": null
+        },
+        {
+            "name": "Operations Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Operations_Analyst/Salary",
+            "salary_expectation": "R153k – R506k / year (avg R322,955)",
+            "description": "An operations analyst typically performs duties related to the development and implementation of business practices that ensure optimal performance. The specific duties of an operations analyst can be as varied as the business world itself, but generally an operations analyst is tasked with evaluating and updating procedures, practices, and operations."
+        },
+        {
+            "name": "Technical Support Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Support_Consultant/Salary",
+            "salary_expectation": "R98k – R429k / year (avg R170,668)",
+            "description": "Technical support consultants provide technical support and consultation to businesses and companies. In some cases, they are also managers that offer technical and scientific information for their employer."
+        },
+        {
+            "name": "Support Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Support_Engineer/Salary",
+            "salary_expectation": "R97k – R491k / year (avg R280,147)",
+            "description": null
+        },
+        {
+            "name": "Systems Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Systems_Specialist/Salary",
+            "salary_expectation": "R27k – R757k / year (avg R360,000)",
+            "description": "Systems specialists work in a field where it is best to get a four year bachelor’s degree in computer science or other similar area of study. Additional certifications and specialty job training will be needed in order to constantly keep abreast of current technology."
+        },
+        {
+            "name": "eCommerce Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=eCommerce_Manager/Salary",
+            "salary_expectation": "R116k – R677k / year (avg R362,377)",
+            "description": null
+        },
+        {
+            "name": "Technical Project Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Project_Manager/Salary",
+            "salary_expectation": "R288k – R985k / year (avg R588,231)",
+            "description": "The principal role of a technical project manager is to develop and maintain a technology project plan, which outlines a project's tasks, milestone dates, status, and allocation of resources to stakeholders and other interested parties. The technical project manager is responsible for clearly defining and quantifying each step, as well as establishing concrete deadlines for each project milestone and deliverable."
+        },
+        {
+            "name": "Technical Support Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Support_Technician/Salary",
+            "salary_expectation": "R100k – R424k / year (avg R198,874)",
+            "description": "Technical support technicians are the technology gurus who drive the integrated technology troubleshooting for a business. Usually working as part of a team, a technical support technician may troubleshoot and repair systems for the company he or she works for, or may be a specialist who troubleshoots systems for customers either through a phone call or by making a visit to the customer's location."
+        },
+        {
+            "name": "Application Support Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Application_Support_Analyst/Salary",
+            "salary_expectation": "R118k – R654k / year (avg R361,164)",
+            "description": "Application support analysts assist users of computer and mobile applications. They must be able to think creatively in order to implement improvements, and they may also be involved in installing new software and making updates."
+        },
+        {
+            "name": "Applications Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Applications_Engineer/Salary",
+            "salary_expectation": "R190k – R829k / year (avg R480,663)",
+            "description": "Applications engineers work in many different industries and create, implement and maintain computer applications and software tailored to an organization's or customer's needs. This can be done by either modifying current software or completely designing a new project."
+        },
+        {
+            "name": "Junior Network Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Network_Administrator/Salary",
+            "salary_expectation": "R161 – R252k / year (avg R157,143)",
+            "description": "Junior network administrators not only set up computer networks for the organization, but are also responsible for monitoring and updating networks, establishing new networks, providing network security, and educating non-network employees on proper computer usage and maintenance. Junior network administrators are also in charge of purchasing computers and computer components, as well as software needed for day-to-day company operations."
+        },
+        {
+            "name": "Network Administrator, IT",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Network_Administrator%2C_IT/Salary",
+            "salary_expectation": "R93k – R533k / year (avg R252,167)",
+            "description": "Network administrators, IT are responsible for keeping their organization's computer network up to date. They must make sure that their system runs smoothly and efficiently."
+        },
+        {
+            "name": "Senior Database Administrator (DBA)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Database_Administrator_(DBA)/Salary",
+            "salary_expectation": "R199k – R1m / year (avg R520,998)",
+            "description": "Senior database administrators work as team leaders with computer engineering teams in order to create database architecture to accomplish the necessary goals of specialized computer software. Senior database administrators have very clear educational goals: they need a bachelor's degree in computer science or in similar fields."
+        },
+        {
+            "name": "Digital Strategist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Digital_Strategist/Salary",
+            "salary_expectation": "R133k – R645k / year (avg R334,526)",
+            "description": "A digital strategist generally works cooperatively with other members of a strategy team to create long-term goals and plans for their products. This is a job for a creative and innovative thinker that understands technology and the people who use it."
+        },
+        {
+            "name": "Senior Solutions Architect",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Solutions_Architect/Salary",
+            "salary_expectation": "R636k – R2m / year (avg R1,037,668)",
+            "description": "The position of a senior solutions architect demands leadership and exceptional mentoring abilities, as they work closely with teams of developers and junior solution architects in order to deliver high-quality products and services. Senior solutions architects work primarily indoors and are responsible for technical pre-sales support, achieving sales goals, and providing input regarding solutions, structure, and growth."
+        },
+        {
+            "name": "Salesforce Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Salesforce_Administrator/Salary",
+            "salary_expectation": "R14k – R610k / year (avg R244,522)",
+            "description": null
+        },
+        {
+            "name": "Data Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Data_Manager/Salary",
+            "salary_expectation": "R215k – R1m / year (avg R452,442)",
+            "description": "Data managers are responsible for handling database systems, and they develop policies, ideas, procedures, and (as needed) assign tasks to other employees. Data managers interact with a number of individuals within the company, from data entry clerks to corporate executives."
+        },
+        {
+            "name": "Sr. Network Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sr._Network_Engineer/Salary",
+            "salary_expectation": "R180k – R1m / year (avg R561,885)",
+            "description": "Senior network engineers design and create computer networks within an organization and ensure that they are working properly. In some cases, they also maintain networks for third-party clients."
+        },
+        {
+            "name": "Technical Support Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Support_Manager/Salary",
+            "salary_expectation": "R36k – R883k / year (avg R372,191)",
+            "description": "Technical support managers supervise a company's technical support. They must provide their team with strong leadership and direction to increase productivity."
+        },
+        {
+            "name": "C# Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=C%23_Developer/Salary",
+            "salary_expectation": "R96k – R775k / year (avg R305,808)",
+            "description": "C# developers work with C# technology in an application development role within a company. Often, this includes tasks such as the development or emplacement of software platforms within a company’s internal software architecture, the development of web portals, and similar efforts."
+        },
+        {
+            "name": "Network Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Network_Administrator/Salary",
+            "salary_expectation": "R25k – R578k / year (avg R213,663)",
+            "description": "Network administrators are responsible for the upkeep of computer hardware and software systems. They usually focus on the network components within their company."
+        },
+        {
+            "name": "Software Test Lead",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Software_Test_Lead/Salary",
+            "salary_expectation": "R418k – R894k / year (avg R649,648)",
+            "description": "The role of a software test lead is to effectively lead a test team. In this role, the lead must understand how to effectively implement a testing process while holding a manager's leadership duties."
+        },
+        {
+            "name": "Systems Engineer (Computer Networking / IT)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Systems_Engineer_(Computer_Networking_%2F_IT)/Salary",
+            "salary_expectation": "R154k – R640k / year (avg R300,109)",
+            "description": "Systems engineers (computer networking/IT) are responsible for the development and modification of computer networks. They work in the information technology department of businesses."
+        },
+        {
+            "name": "Penetration Tester",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Penetration_Tester/Salary",
+            "salary_expectation": "R24k – R742k / year (avg R254,341)",
+            "description": "The integrity of internal systems connected with the wider Internet is crucial to the operations of many organizations, from financial institutions to health care companies to government agencies. Organizations often employ cybersecurity experts to help protect their vital systems from malicious attacks."
+        },
+        {
+            "name": "Support Engineer, Information Technology (IT)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Support_Engineer%2C_Information_Technology_(IT)/Salary",
+            "salary_expectation": "R121k – R432k / year (avg R228,000)",
+            "description": "An information technology (IT) support engineer ensures that all of the technological systems that the company uses are maintained and operational. The day-to-day activities of an IT support engineer vary, as new problems and issues may arise because of general wear-and-tear or new problems in software and technology."
+        },
+        {
+            "name": "System Administrator, Computer / Network",
+            "source_url": "https://www.payscale.com/research/ZA/Job=System_Administrator%2C_Computer_%2F_Network/Salary",
+            "salary_expectation": "R97k – R517k / year (avg R206,792)",
+            "description": "A computer/network system administrator is responsible for the maintenance of the technological systems of an organization. The position typically requires a B.A. in a field such as computer science or information technology, and related engineering certifications (for example by Microsoft or Cisco) are also preferred."
+        },
+        {
+            "name": "Software Quality Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Software_Quality_Analyst/Salary",
+            "salary_expectation": "R209k – R502k / year (avg R309,113)",
+            "description": "Software quality analysts evaluate software to ensure that it is user-friendly and does not have any bugs. Those in this position may also assist with designing and providing suggestions regarding the software's improvement."
+        },
+        {
+            "name": "Content Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Content_Manager/Salary",
+            "salary_expectation": "R138k – R474k / year (avg R249,122)",
+            "description": null
+        },
+        {
+            "name": "Information Technology (IT) Auditor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Technology_(IT)_Auditor/Salary",
+            "salary_expectation": "R156k – R797k / year (avg R330,000)",
+            "description": "An information technology (IT) auditor performs in-depth analysis to monitor the performance of specific technological functions designated by management. To perform the audit, they must apply sound methodology to gather evidential data."
+        },
+        {
+            "name": "Quality Assurance (QA) / Test Automation Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Assurance_(QA)_%2F_Test_Automation_Engineer/Salary",
+            "salary_expectation": "R49k – R594k / year (avg R322,477)",
+            "description": "Quality assurance (QA)/test automation engineers are in charge of supervising quality standards and automation efforts for their organization. They are responsible for correct equipment operation and output, and one of their main responsibilities includes creating test cases for future production tasks."
+        },
+        {
+            "name": "Search Engine Optimization (SEO) Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Search_Engine_Optimization_(SEO)_Specialist/Salary",
+            "salary_expectation": "R64k – R433k / year (avg R251,629)",
+            "description": "Search engine optimization (SEO) specialists help develop and/or implement an SEO strategy for their organization. They ensure their company appears early in the search results for relevant keywords within a wide variety of search engines."
+        },
+        {
+            "name": "Senior Data Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Data_Engineer/Salary",
+            "salary_expectation": "R73k – R2m / year (avg R895,750)",
+            "description": null
+        },
+        {
+            "name": "Cloud Solutions Architect",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Cloud_Solutions_Architect/Salary",
+            "salary_expectation": "R6 – R970k / year (avg R305,209)",
+            "description": null
+        },
+        {
+            "name": "Graduate Software Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graduate_Software_Engineer/Salary",
+            "salary_expectation": "R69k – R416k / year (avg R225,000)",
+            "description": "A graduate software engineer is a job for someone has recently graduated from a software engineering program. This person can have graduated from a bachelor's, master's, or PhD program."
+        },
+        {
+            "name": "Network Operations Center (NOC) Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Network_Operations_Center_(NOC)_Engineer/Salary",
+            "salary_expectation": "R59k – R273k / year (avg R203,326)",
+            "description": "Network operations center (NOC) engineers are in charge of providing engineering support for network connectivity issues, as well as working as a liaison for carriers and other information technology (IT) technicians in their organization. They are responsible for solving and preventing data outages with wired and wireless system connection hardware."
+        },
+        {
+            "name": "Senior Java Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Java_Developer/Salary",
+            "salary_expectation": "R544k – R1m / year (avg R805,409)",
+            "description": "A senior java developer must be highly skilled in the Java programming language. The job generally requires at least a bachelor's degree in computer science or a related field."
+        },
+        {
+            "name": "SAP Basis Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=SAP_Basis_Administrator/Salary",
+            "salary_expectation": "R60k – R944k / year (avg R380,000)",
+            "description": "SAP Basis administrators are central figures in companies' IT departments. These professionals use an in-depth understanding of SAP, its database, hardware platform and operating system to conduct monitoring and troubleshooting in an effective, efficient manner."
+        }
+    ]
+}
