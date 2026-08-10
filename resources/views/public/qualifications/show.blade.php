@@ -574,13 +574,7 @@
                                         <tr>
                                             @foreach ($careerRow as $career)
                                                 <th scope="col" class="pb-2 pr-6 align-top text-sm font-bold text-neutral-950 {{ $loop->parent->first ? '' : 'pt-5' }}">
-                                                    @if (filled($career->source_url))
-                                                        <a href="{{ $career->source_url }}" target="_blank" rel="noopener noreferrer" class="text-[#01225E] underline decoration-[#01225E]/30 underline-offset-2 hover:decoration-[#01225E]">
-                                                            {{ $career->name }}
-                                                        </a>
-                                                    @else
-                                                        {{ $career->name }}
-                                                    @endif
+                                                    {{ $career->name }}
                                                 </th>
                                             @endforeach
                                             @for ($i = $careerRow->count(); $i < 3; $i++)
