@@ -142,6 +142,7 @@ class DatabaseSeeder extends Seeder
             UfhRequirementSeeder::class,
             UniversityLogoSeeder::class,
             BursarySeeder::class,
+            CareerSeeder::class,
         ]);
 
         $pupilUserTypeId = DB::table('user_types')

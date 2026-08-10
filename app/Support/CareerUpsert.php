@@ -42,7 +42,7 @@ class CareerUpsert
             'name' => $this->preferredDisplayName($displayName, $career->name),
             'salary_expectation' => $this->preferFilled($attributes['salary_expectation'] ?? null, $career->salary_expectation),
             'description' => $this->preferFilled($attributes['description'] ?? null, $career->description),
-            'source_url' => $this->preferFilled($attributes['source_url'] ?? null, $career->source_url),
+            'source_url' => $this->resolveSourceUrl($attributes['source_url'] ?? null, $career->source_url),
             'is_active' => $attributes['is_active'] ?? true,
         ]);
         $career->save();
@@ -87,7 +87,7 @@ class CareerUpsert
                 'name' => $this->preferredDisplayName($displayName, $existing->name),
                 'salary_expectation' => $this->preferFilled($attributes['salary_expectation'] ?? null, $existing->salary_expectation),
                 'description' => $this->preferFilled($attributes['description'] ?? null, $existing->description),
-                'source_url' => $this->preferFilled($attributes['source_url'] ?? null, $existing->source_url),
+                'source_url' => $this->resolveSourceUrl($attributes['source_url'] ?? null, $existing->source_url),
                 'is_active' => $attributes['is_active'] ?? $existing->is_active,
             ]);
             $existing->save();
@@ -111,8 +111,8 @@ class CareerUpsert
                 ? ($attributes['description'] ?: $career->description)
                 : $career->description,
             'source_url' => array_key_exists('source_url', $attributes)
-                ? ($attributes['source_url'] ?: $career->source_url)
-                : $career->source_url,
+                ? $this->resolveSourceUrl($attributes['source_url'] ?? null, $career->source_url)
+                : $this->resolveSourceUrl(null, $career->source_url),
             'is_active' => $attributes['is_active'] ?? $career->is_active,
         ]);
         $career->save();
@@ -198,7 +198,7 @@ class CareerUpsert
             $keeper->fill([
                 'salary_expectation' => $this->preferFilled($keeper->salary_expectation, $duplicate->salary_expectation),
                 'description' => $this->preferFilled($keeper->description, $duplicate->description),
-                'source_url' => $this->preferFilled($keeper->source_url, $duplicate->source_url),
+                'source_url' => $this->resolveSourceUrl($duplicate->source_url, $keeper->source_url),
                 'is_active' => $keeper->is_active || $duplicate->is_active,
             ]);
             $keeper->save();
@@ -212,6 +212,70 @@ class CareerUpsert
     public function forgetCache(): void
     {
         $this->cacheByMatchKey = null;
+    }
+
+    /**
+     * Career source_url is only for salary providers (PayScale today).
+     * University programme pages belong on the qualification, not the career.
+     */
+    public function isSalarySourceUrl(?string $url): bool
+    {
+        if (! filled($url)) {
+            return false;
+        }
+
+        $host = Str::lower((string) parse_url($url, PHP_URL_HOST));
+
+        return str_contains($host, 'payscale.com');
+    }
+
+    /**
+     * Keep / accept only salary-provider URLs. Non-salary URLs (university pages, PDFs) are ignored.
+     */
+    public function resolveSourceUrl(?string $incoming, ?string $existing): ?string
+    {
+        if ($this->isSalarySourceUrl($incoming)) {
+            return $incoming;
+        }
+
+        if ($this->isSalarySourceUrl($existing)) {
+            return $existing;
+        }
+
+        return null;
+    }
+
+    /**
+     * Clear university / non-salary source URLs from existing career rows.
+     */
+    public function clearNonSalarySources(): int
+    {
+        $cleared = 0;
+
+        Career::query()
+            ->whereNotNull('source_url')
+            ->where('source_url', '!=', '')
+            ->orderBy('id')
+            ->chunkById(200, function ($careers) use (&$cleared): void {
+                foreach ($careers as $career) {
+                    if ($this->isSalarySourceUrl($career->source_url)) {
+                        continue;
+                    }
+
+                    $career->source_url = null;
+                    $career->save();
+                    $cleared++;
+                }
+            });
+
+        $this->forgetCache();
+
+        return $cleared;
+    }
+
+    private function preferFilled(mixed $primary, mixed $fallback): mixed
+    {
+        return filled($primary) ? $primary : $fallback;
     }
 
     private function warmCache(): void
@@ -374,10 +438,5 @@ class CareerUpsert
         }
 
         return $word;
-    }
-
-    private function preferFilled(mixed $primary, mixed $fallback): mixed
-    {
-        return filled($primary) ? $primary : $fallback;
     }
 }

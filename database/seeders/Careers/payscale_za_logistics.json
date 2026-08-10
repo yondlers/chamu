@@ -1,0 +1,608 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "Logistics, transport & supply chain",
+    "collected_at": "2026-08-10",
+    "careers": [
+        {
+            "name": "Logistics Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Logistics_Supervisor/Salary",
+            "salary_expectation": "R100k – R372k / year (avg R229,571)",
+            "description": "Logistics supervisors, also commonly known as supply chain managers, are primarily responsible for overseeing the many steps required to deliver a finished product to the consumer. For example, they oversee aspects of raw material acquisition, processing and manufacturing, product storage, movement of products among distribution centers and retail sites, and customer service."
+        },
+        {
+            "name": "Delivery Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Delivery_Driver/Hourly_Rate",
+            "salary_expectation": "R25 – R71 / hour (avg R40.13)",
+            "description": "The primary role of a delivery driver is transportation. Delivery drivers typically operate a vehicle of some sort to deliver goods and other items to customers, clients, or other businesses."
+        },
+        {
+            "name": "Warehouse Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Warehouse_Manager/Salary",
+            "salary_expectation": "R39k – R689k / year (avg R281,411)",
+            "description": "A warehouse manager has many responsibilities, all of which consist of maintaining and receiving equipment. A warehouse manager must also supervise the staff of the warehouse, along with working with them to complete tasks."
+        },
+        {
+            "name": "Forklift Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Forklift_Operator/Hourly_Rate",
+            "salary_expectation": "R26 – R62 / hour (avg R42.09)",
+            "description": "A fork lift operator is tasked with distributing, transporting, and accounting for merchandise, material, and/or equipment in industrial settings. They work in a variety of industries, such as manufacturing, construction, food services, and general storage."
+        },
+        {
+            "name": "Forklift Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Forklift_Driver/Hourly_Rate",
+            "salary_expectation": "R25 – R61 / hour (avg R39.02)",
+            "description": "A forklift driver often works in a warehouse, at a construction site, or in a retail environment. The forklift driver may place items onto the forklift, so this job sometimes requires the ability to lift heavy items."
+        },
+        {
+            "name": "Yard Foreman",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Yard_Foreman/Salary",
+            "salary_expectation": "R79k – R380k / year (avg R219,652)",
+            "description": "A yard foreman is similar to a manager, but they are usually in charge of both unskilled and skilled laborers. The main responsibility of a yard foreman is to ensure that the workers are performing their tasks correctly and that the laborers are trained to do things safely and efficiently."
+        },
+        {
+            "name": "Warehouse Worker",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Warehouse_Worker/Hourly_Rate",
+            "salary_expectation": "R22 – R51 / hour (avg R32.97)",
+            "description": "Warehouse workers facilitate the distribution of goods into, within and out of their warehouse. They load and unload trucks, place goods in storage and move inventory as needed."
+        },
+        {
+            "name": "Heavy / Tractor-Trailer Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Heavy_%2F_Tractor-Trailer_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R8k – R204k / year (avg R68,784)",
+            "description": null
+        },
+        {
+            "name": "Heavy Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Heavy_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R31 – R81 / hour (avg R54.94)",
+            "description": null
+        },
+        {
+            "name": "Packer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Packer/Hourly_Rate",
+            "salary_expectation": "R19 – R42 / hour (avg R27.14)",
+            "description": "A packer is charged with making sure that a company's shipments are sent to customers with the proper labeling and correct inventory inside the package. They are tasked with wrapping and sealing the shipment once the proper items are inside and ensuring that the package is tagged properly and sent to the correct place, along with being marked with a weight and time-stamped."
+        },
+        {
+            "name": "Warehouse Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Warehouse_Assistant/Salary",
+            "salary_expectation": "R21 – R51 / hour (avg R35.59)",
+            "description": null
+        },
+        {
+            "name": "Van Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Van_Driver/Hourly_Rate",
+            "salary_expectation": "R22 – R59 / hour (avg R36.10)",
+            "description": "A van driver operates a larger-sized vehicle that is normally not quite large enough to be considered a truck. Companies hire van drivers to execute deliveries and pickups; transportation companies hire van drivers to shuttle passengers, such as at airports or for hotels."
+        },
+        {
+            "name": "Driver/Sales Worker",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Driver%2FSales_Worker/Hourly_Rate",
+            "salary_expectation": "R20 – R63 / hour (avg R38.74)",
+            "description": null
+        },
+        {
+            "name": "Bus Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Bus_Driver/Hourly_Rate",
+            "salary_expectation": "R4k – R244k / year (avg R102,409)",
+            "description": "Bus drivers operate buses, transporting passengers from one place to another. There are many different types of bus drivers, from public transit to school buses; depending on their job, a driver's duties may vary."
+        },
+        {
+            "name": "Fuel Attendant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fuel_Attendant/Hourly_Rate",
+            "salary_expectation": "R21 – R36 / hour (avg R30.27)",
+            "description": "Fuel attendants work at gas stations and are responsible for attending to customer vehicle needs. They may work morning, afternoon, or overnight shifts depending on the employer, customer demand, and the employees' arranged schedule."
+        },
+        {
+            "name": "Material Handler",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Material_Handler/Hourly_Rate",
+            "salary_expectation": "R30 – R76 / hour (avg R46.97)",
+            "description": "Material handlers work in warehouses and other merchandise distribution points. They frequently move products to where they are needed most, whether that be from the production line to storage areas or from storage areas to shipment points for delivery to customers."
+        },
+        {
+            "name": "Supply Chain Planner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Planner/Salary",
+            "salary_expectation": "R201k – R643k / year (avg R384,834)",
+            "description": "A supply chain planner is responsible for ensuring that a company receives the materials or supplies they need quickly, efficiently, and within budget. To do this, they must monitor the company's inventories and track the performance of current supply methods."
+        },
+        {
+            "name": "Commercial Pilot",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Commercial_Pilot/Salary",
+            "salary_expectation": "R20k – R835k / year (avg R297,417)",
+            "description": "Most of the time, commercial pilots work for airlines. They must ensure that flight operations are conducted in a safe and efficient manner."
+        },
+        {
+            "name": "Supply Chain Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Analyst/Salary",
+            "salary_expectation": "R193k – R585k / year (avg R343,611)",
+            "description": "A supply chain analyst is responsible for improving the performance of an operation by figuring out what is needed for a certain project and coordinating with other employees - such as engineers and quality assurance professionals - to implement and test their new supply chain methods. These supply chain analysts must be able to look at substantial amounts of data and problem-solve why problems within supply chains exist."
+        },
+        {
+            "name": "Fuel Tanker Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fuel_Tanker_Driver/Hourly_Rate",
+            "salary_expectation": "R25 – R103 / hour (avg R60.55)",
+            "description": "Fuel tanker drivers work on the road, transporting fuel from the designated pick-up point to the customers' locations. A driver may work for a single company or as an independent contractor working directly with customers."
+        },
+        {
+            "name": "Driver Helper",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Driver_Helper/Salary",
+            "salary_expectation": "R19 – R84 / hour (avg R33.60)",
+            "description": "Driver helpers are tasked with helping to load and unload equipment onto vehicles. In some jobs, they may accompany the driver to various job sites to assist with lifting, pulling out from driveways and parking lots, and watching traffic at intersections."
+        },
+        {
+            "name": "Fleet Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fleet_Manager/Salary",
+            "salary_expectation": "R98k – R633k / year (avg R307,907)",
+            "description": "Fleet managers work for companies that have a fleet (or fleets) of vehicles. Most of these companies are businesses that deliver packages to customers or ship items in bulk to certain companies."
+        },
+        {
+            "name": "Excavator Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Excavator_Operator/Hourly_Rate",
+            "salary_expectation": "R31 – R60 / hour (avg R45.53)",
+            "description": "An excavator operator operates heavy machinery to move materials and clear ground, digging holes and trenches to prepare sites for construction. They may also be required to occasionally perform maintenance on the machines."
+        },
+        {
+            "name": "Tanker Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tanker_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R35 – R209 / hour (avg R61.16)",
+            "description": null
+        },
+        {
+            "name": "Overhead Crane Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Overhead_Crane_Operator/Hourly_Rate",
+            "salary_expectation": "R26 – R104 / hour (avg R56.46)",
+            "description": "Overhead crane operators generally work outside for construction companies or inside for warehouses, and are responsible for operating overhead cranes using remote-controlled equipment to transport goods. They are required to wear various safety gear, such as protective clothing, hard hats, special shoes, etc."
+        },
+        {
+            "name": "Crane Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Crane_Operator/Hourly_Rate",
+            "salary_expectation": "R25 – R84 / hour (avg R46)",
+            "description": "A crane operator uses a crane to lift and move equipment and/or materials around a job site. In addition to the responsibilities associated with the operation of the crane, they must also perform inspections of the equipment before and after its use to ensure it is in working order."
+        },
+        {
+            "name": "Airline Pilot, Copilot, or Flight Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Airline_Pilot%2C_Copilot%2C_or_Flight_Engineer/Salary",
+            "salary_expectation": "R20k – R1m / year (avg R425,000)",
+            "description": "Airline pilots, copilots, and flight engineers generally perform jobs comprising the same duties. They ensure the safe flight of aircraft from one place to another by physically piloting and landing a variety of aircraft."
+        },
+        {
+            "name": "Gas Station Attendant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Gas_Station_Attendant/Hourly_Rate",
+            "salary_expectation": "R20 – R38 / hour (avg R29.95)",
+            "description": "Gas station attendants are responsible for taking money from customers making purchases from a gas station. In addition to fuel, customers may be purchasing food, toiletries, lottery tickets, and other items."
+        },
+        {
+            "name": "Helicopter Pilot",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Helicopter_Pilot/Salary",
+            "salary_expectation": "R62k – R986k / year (avg R498,585)",
+            "description": "Helicopter pilots are primarily responsible for ensuring the smooth and safe operation of helicopters before, during, and after flight missions. They work in a variety of areas, such as health and safety (including in rescue work, forest fire fighting, and health transport operations), law enforcement, news gathering, tourism, and commercial transport."
+        },
+        {
+            "name": "Shipping Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Shipping_Coordinator/Salary",
+            "salary_expectation": "R123k – R450k / year (avg R274,689)",
+            "description": "Shipping coordinators are responsible for ensuring that inbound and outbound shipments meet customer and company standards. Additionally, these professionals must verify that counts of items being shipped and received are accurate, as well as ensure that monthly inventory counts are performed correctly."
+        },
+        {
+            "name": "A/Z Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=A%2FZ_Driver/Hourly_Rate",
+            "salary_expectation": "R28 – R103 / hour (avg R52.16)",
+            "description": null
+        },
+        {
+            "name": "Supply Chain Intern",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Intern/Salary",
+            "salary_expectation": "R24k – R190k / year (avg R81,563)",
+            "description": null
+        },
+        {
+            "name": "Dump Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Dump_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R7k – R227k / year (avg R95,000)",
+            "description": null
+        },
+        {
+            "name": "Shuttle Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Shuttle_Driver/Hourly_Rate",
+            "salary_expectation": "R1k – R279k / year (avg R80,422)",
+            "description": null
+        },
+        {
+            "name": "Supply Chain Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Specialist/Salary",
+            "salary_expectation": "R191k – R1m / year (avg R354,296)",
+            "description": "A supply chain specialist ensures that supplies and inventory are ordered, received, replenished, and kept at appropriate levels so the business could function properly. They are a main point of contact for suppliers, and they make sure any questions by members on their organization on those suppliers are dealt with in an effective and timely manner."
+        },
+        {
+            "name": "Logistics Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Logistics_Engineer/Salary",
+            "salary_expectation": "R337k – R1m / year (avg R448,489)",
+            "description": "Logistics engineers are in charge of planning and coordinating all logistics operations for their organization. They are responsible for engineering logistics processes, ensuring they use fewer company resources while increasing profitability."
+        },
+        {
+            "name": "Replenishment Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Replenishment_Analyst/Salary",
+            "salary_expectation": "R49 – R332k / year (avg R217,000)",
+            "description": "Replenishment analysts manage the inventory for a company or specific department within it and are responsible for forecasting the demand for certain materials and products, followed by purchasing and replenishing them. They may make both short- and long-term forecasts by conducting statistical analyses, and in-stock items should be balanced and kept at an optimal level at all times."
+        },
+        {
+            "name": "Shipping & Receiving Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Shipping_%26_Receiving_Supervisor/Salary",
+            "salary_expectation": "R61k – R235k / year (avg R110,400)",
+            "description": null
+        },
+        {
+            "name": "Inventory Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Inventory_Supervisor/Salary",
+            "salary_expectation": "R153k – R364k / year (avg R220,000)",
+            "description": "An inventory supervisor focuses mainly on inventory accuracy. This means when all is said and done, the inventory supervisor is the person to check with if there is some kind of inventory question or concern."
+        },
+        {
+            "name": "Packer / Packager, Hand",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Packer_%2F_Packager%2C_Hand/Hourly_Rate",
+            "salary_expectation": "R12 – R57 / hour (avg R24.72)",
+            "description": "A hand packer or packager is typically a person who packs a variety of products and materials. This position is found in a variety of manufacturing facilities of all sizes and within many industries."
+        },
+        {
+            "name": "Supply Chain Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Consultant/Salary",
+            "salary_expectation": "R154k – R710k / year (avg R304,431)",
+            "description": "Supply chain consultants work with the senior director to help develop, market, promote, and implement different supply chain consulting strategies for their company to achieve effective and efficient business processes. They are also responsible for coming up with ideas on how to reduce supply expenses and optimizing clinical resource utilization for each member of the organization."
+        },
+        {
+            "name": "Truck Crane Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Truck_Crane_Operator/Hourly_Rate",
+            "salary_expectation": "R30 – R98 / hour (avg R63)",
+            "description": "Truck crane operator positions are commonly found in the shipping and construction industries, though there are many other companies that hire individuals for this position as well. This job typically involves operating a specific piece of equipment, using it to efficiently load and unload cargo and/or other materials."
+        },
+        {
+            "name": "Shipping Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Shipping_Manager/Salary",
+            "salary_expectation": "R26k – R907k / year (avg R468,647)",
+            "description": "Warehouse settings of companies can be chaotic, and their many parts must work in cohesion for the proper facilitation of shipping. Orders must be brought in, filled, and shipped out, and shipping managers are responsible for ensuring that these tasks are coordinated so that the warehouse runs smoothly and all packages are sent and received on-time."
+        },
+        {
+            "name": "Supply Chain Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Supervisor/Salary",
+            "salary_expectation": "R95k – R569k / year (avg R263,612)",
+            "description": "A supply chain supervisor's main responsibility is providing hands-on leadership to subordinates, directing the team members under their supervision to meet organizational goals. They provide instruction and training for their subordinates, as well as establish procedures and schedules."
+        },
+        {
+            "name": "Bus Driver, School",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Bus_Driver%2C_School/Salary",
+            "salary_expectation": "R4k – R198k / year (avg R61,520)",
+            "description": "School bus drivers transport children from home to school (and on occasion, from school to athletic events and field trips). These individuals generally need to have a chauffeur's license, which are typically issued after passing driving and written tests with larger vehicles in the relevant class."
+        },
+        {
+            "name": "Tractor Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tractor_Operator/Hourly_Rate",
+            "salary_expectation": "R17 – R60k / hour (avg R25.44)",
+            "description": null
+        },
+        {
+            "name": "Air Traffic Controller",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Air_Traffic_Controller/Salary",
+            "salary_expectation": "R12k – R357k / year (avg R250,493)",
+            "description": "An air traffic controller directs traffic in the air and on the ground. The air traffic controller alerts pilots as to obstructions that might be in their path, such as other aircraft and bad weather."
+        },
+        {
+            "name": "Mobile Crane Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mobile_Crane_Operator/Hourly_Rate",
+            "salary_expectation": "R34 – R99 / hour (avg R74.03)",
+            "description": "A mobile crane operator is primarily responsible for operating a traveling crane, which lifts, moves, positions, and repositions loads. This person may travel to various job sites or to various departments within the same job site."
+        },
+        {
+            "name": "Route Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Route_Driver/Hourly_Rate",
+            "salary_expectation": "R15k – R245k / year (avg R100,057)",
+            "description": "Route drivers complete tasks along a specific route designated by their organization. Examples of routes performed in this position include waste collection, shuttle drivers, sales, and customer service."
+        },
+        {
+            "name": "Taxi Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Taxi_Driver/Salary",
+            "salary_expectation": "R8 – R194 / hour (avg R24.02)",
+            "description": "Taxi drivers transport passengers to requested locations via taxi, generally within a defined area of service. For most positions, drivers use company cabs, though there are some services that require the taxi driver to use their personal car."
+        },
+        {
+            "name": "Transportation Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Transportation_Manager/Salary",
+            "salary_expectation": "R24k – R1m / year (avg R352,886)",
+            "description": "Transportation managers oversee all transportation issues for their company from shipping and receiving supplies to transporting employees to meetings to calculating per mile travel costs. Companies rely on transportation managers to keep costs low and efficiently manage transportation-related issues."
+        },
+        {
+            "name": "Loader",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Loader/Hourly_Rate",
+            "salary_expectation": "R24 – R97 / hour (avg R39.00)",
+            "description": "Loaders hold a physically demanding position requiring the ability to work long hours with continuous attention to detail, as well as the ability to use equipment such as a forklift and handcart. Typical tasks performed by loaders include securely loading and unloading product and items while maintaining accurate inventory and transfer reports."
+        },
+        {
+            "name": "Shipper, Receiver, Packer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Shipper%2C_Receiver%2C_Packer/Hourly_Rate",
+            "salary_expectation": "R12 – R73 / hour (avg R25.96)",
+            "description": "Shipper/receiver/packer positions are often found in warehouse environments. This job requires labeling, packing, and shipping packages in accordance with regulations set by local, state, federal, and sometimes international laws."
+        },
+        {
+            "name": "Tow Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tow_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R4k – R124k / year (avg R85,000)",
+            "description": null
+        },
+        {
+            "name": "Airline Captain",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Airline_Captain/Salary",
+            "salary_expectation": "R19k – R2m / year (avg R800,000)",
+            "description": "Airline captains are responsible for safely flying the aircraft to its destination. In a commercial airliner, captains fly with a co-pilot who can fly the plane should something happen to the captain."
+        },
+        {
+            "name": "Commercial Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Commercial_Truck_Driver/Salary",
+            "salary_expectation": "R111k – R173k / year (avg R124,275)",
+            "description": null
+        },
+        {
+            "name": "Distribution Center Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Distribution_Center_Manager/Salary",
+            "salary_expectation": "R128k – R1m / year (avg R539,545)",
+            "description": "Distribution center managers are responsible for all aspects related to the receiving, storing, and shipping of goods to and from a distribution center. This is a key position in supply chain management, and distribution center managers are responsible for ensuring that, upon receipt, goods are properly stored in an orderly and safe manner to maintain product quality, worker safety, and future ease of access."
+        },
+        {
+            "name": "Distribution Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Distribution_Supervisor/Salary",
+            "salary_expectation": "R60k – R457k / year (avg R249,913)",
+            "description": "Distribution supervisors are responsible for supervising and coordinating all subordinate workers' activities, which may include storing, receiving, shipping, picking, and conducting inventory for items. These supervisors are in charge of making sure that information is correct for all items handled by their department and/or organization."
+        },
+        {
+            "name": "Light Or Delivery Services Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Light_Or_Delivery_Services_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R8 – R56 / hour (avg R33.50)",
+            "description": null
+        },
+        {
+            "name": "Medium Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Medium_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R23 – R71 / hour (avg R44.72)",
+            "description": null
+        },
+        {
+            "name": "Concrete Mixer Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Concrete_Mixer_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R1 – R70 / hour (avg R43.32)",
+            "description": null
+        },
+        {
+            "name": "Transportation Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Transportation_Coordinator/Salary",
+            "salary_expectation": "R77k – R368k / year (avg R181,777)",
+            "description": "The transportation coordinator works to optimize the transportation and suppliers network for their organization. Their main objective is to ensure that all incoming and outgoing deliveries are made on time."
+        },
+        {
+            "name": "Package Handler",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Package_Handler/Hourly_Rate",
+            "salary_expectation": "R6k – R25k / year (avg R7,859)",
+            "description": "The people who help facilitate on-time deliveries for cargo carriers are package handlers; large companies that ship large quantities of goods each day also employ package handlers. The handler's main job is to load and unload packages, boxes, and general freight from trucks or other delivery vehicles."
+        },
+        {
+            "name": "Shift Manager, Distribution Center (DC)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Shift_Manager%2C_Distribution_Center_(DC)/Salary",
+            "salary_expectation": "R23k – R1m / year (avg R420,000)",
+            "description": null
+        },
+        {
+            "name": "Asset Management Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Asset_Management_Coordinator/Salary",
+            "salary_expectation": "R6k – R715k / year (avg R218,500)",
+            "description": "Asset management coordinators are in charge of coordinating and supporting the strategic development of assets for their organization. They are responsible for managing and completing all administrative processes related to asset management, and one of their main duties include organizing and managing all related records."
+        },
+        {
+            "name": "Chauffeur",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chauffeur/Salary",
+            "salary_expectation": "R12k – R222k / year (avg R98,870)",
+            "description": "Chauffeurs are responsible for all aspects of providing luxury transportation to a client. This is a highly visible service position, and chauffeurs must follow all driving laws while keeping to their client's schedule."
+        },
+        {
+            "name": "Fleet Manager, Trucking & Transportation",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fleet_Manager%2C_Trucking_%26_Transportation/Salary",
+            "salary_expectation": "R85k – R364k / year (avg R244,168)",
+            "description": null
+        },
+        {
+            "name": "Fleet Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fleet_Supervisor/Salary",
+            "salary_expectation": "R25k – R370k / year (avg R234,948)",
+            "description": "Fleet supervisors work for a variety of companies which maintain fleets, which are large numbers of vehicles to be dispatched. These vehicles may be rented or owned by the company, and fleet supervisors commonly work in parcel delivery, ambulance services, and car rental companies, among other areas."
+        },
+        {
+            "name": "Front End Loader Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Front_End_Loader_Operator/Hourly_Rate",
+            "salary_expectation": "R32 – R70 / hour (avg R47.25)",
+            "description": "A front end loader operator is a heavy equipment operator who is usually found on demolition or roadway construction team. Quarries and general contractors also use dedicated personnel to work as operators for this machinery."
+        },
+        {
+            "name": "Truck Owner / Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Truck_Owner_%2F_Operator/Salary",
+            "salary_expectation": "R7 – R355 / hour (avg R97.44)",
+            "description": "Professional truck owners/operators typically own semi-trailer trucks which may have a flatbed, box, tank, or other container to transport goods depending on what types of items are transported. Some materials may be hazardous, so the hazardous/tanker endorsement is often required."
+        },
+        {
+            "name": "Warehouse Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Warehouse_Coordinator/Salary",
+            "salary_expectation": "R33k – R354k / year (avg R186,869)",
+            "description": "A warehouse coordinator is the person who is primarily responsible for overseeing the daily, overall operations within a warehouse. This is a position which can require long hours, and overtime may be necessary."
+        },
+        {
+            "name": "Bus Driver, Transit and Intercity",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Bus_Driver%2C_Transit_and_Intercity/Salary",
+            "salary_expectation": "R25 – R73 / hour (avg R57.50)",
+            "description": "In order to qualify for a job as a transit and intercity bus driver, applicants must pass a special driving test to demonstrate that they possess the necessary skills to safely operate a transit bus, which is typically significantly larger and longer than other vehicles."
+        },
+        {
+            "name": "Pizza Delivery Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Pizza_Delivery_Driver/Hourly_Rate",
+            "salary_expectation": "R1 – R26 / hour (avg R19.65)",
+            "description": "Pizza Delivery Drivers are individuals who are highly motivated and able to work unsupervised for long periods of time. A Pizza Delivery Driver's daily activities include delivering pizzas and other ordered items to customers."
+        },
+        {
+            "name": "Tower Crane Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tower_Crane_Operator/Hourly_Rate",
+            "salary_expectation": "R45 – R74 / hour (avg R58.98)",
+            "description": "Tower crane operators are specialists in the construction industry who operate a specific piece of heavy machinery that lifts, transports and moves construction equipment and materials all over their construction site. These materials are needed to build concrete foundations, floors, walls, decks, roofs and other parts of high-rise buildings and other multistory structures."
+        },
+        {
+            "name": "Train Conductor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Train_Conductor/Salary",
+            "salary_expectation": "R460 – R426k / year (avg R270,000)",
+            "description": "Train conductors are responsible for managing the crew and operations of passenger/freight trains. These conductors are also in charge of tasks which do not involve actual operation of the train, such as inspecting cars before departure to ensure that they are intact and functioning properly."
+        },
+        {
+            "name": "Warehouse Associate",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Warehouse_Associate/Hourly_Rate",
+            "salary_expectation": "R28k – R153k / year (avg R133,411)",
+            "description": "A warehouse associate performs a variety of jobs in a company's warehouse that require manual labor. Some tasks can include handling and boxing products, labeling them correctly, and doing basic packing work."
+        },
+        {
+            "name": "Train Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Train_Engineer/Salary",
+            "salary_expectation": "R568 – R497k / year (avg R354,212)",
+            "description": "A train engineer operates a freight or passenger train. This includes navigating toward a station and maneuvering within a train yard."
+        },
+        {
+            "name": "Aircraft Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Aircraft_Engineer/Salary",
+            "salary_expectation": "R111k – R695k / year (avg R318,000)",
+            "description": "An aircraft engineer is the person responsible for ensuring that airplanes within a fleet of air services providers are properly maintained, repaired, and safe for flight. The engineer performs a variety of daily inspections on different aircraft, logs the results of any anomalies or tests performed on the airplanes, and performs or oversees any necessary repairs and re-inspections."
+        },
+        {
+            "name": "Assistant Warehouse Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Warehouse_Manager/Salary",
+            "salary_expectation": "R214k – R270k / year (avg R240,000)",
+            "description": "Most companies which sell physical goods require warehouse premises. Larger warehouses often have not only a warehouse manager to supervise this area, but also an assistant warehouse manager who reports directly to that person."
+        },
+        {
+            "name": "First Officer (Aircraft)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=First_Officer_(Aircraft)/Salary",
+            "salary_expectation": "R265k – R540k / year (avg R323,889)",
+            "description": "In commercial aviation, most airlines and many freight companies will have two persons in the cockpit of flights, due either to company policy or mandates of aviation authorities. While the pilot or pilot-in-command is responsible for the flight, the \"first officer\" is his/her second-in-command who assists the pilot in in various capacities throughout the flight."
+        },
+        {
+            "name": "Logistics Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Logistics_Analyst/Salary",
+            "salary_expectation": "R180k – R581k / year (avg R350,000)",
+            "description": "Logistics is a catch-all term used by businesses to describe the means by which they get their goods or services to market. A logistics analyst studies all aspects of this supply chain, from manufacturing capacities to storage facilities (and, with perishable goods, shelf life) to shipping and distribution."
+        },
+        {
+            "name": "Transportation Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Transportation_Supervisor/Salary",
+            "salary_expectation": "R123k – R364k / year (avg R227,399)",
+            "description": "Transportation supervisors are responsible for all aspects of the delivery of goods and maintenance for the delivery crew. They receive order delivery information from a distribution center manager and schedule appropriate delivery routes and schedules according to their drivers' availability."
+        },
+        {
+            "name": "Warehouse Material Handler",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Warehouse_Material_Handler/Hourly_Rate",
+            "salary_expectation": "R12k – R73k / year (avg R19,000)",
+            "description": "A warehouse material handler is part of a team performing several functions necessary to maintain a well-organized warehouse. On the shipping side of warehouse operations, the material handler receives orders and uses a forklift to retrieve pallets for order fulfillment."
+        },
+        {
+            "name": "Allocation Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Allocation_Analyst/Salary",
+            "salary_expectation": "R70k – R181k / year (avg R167,973)",
+            "description": "An allocation analyst typically works in a retail environment and their primary responsibility is to ensure that their company has a suitable amount of products available to the customers. This is achieved by creating product availability plans for various seasons, as well as monitoring (and accounting for) fluctuations throughout the year."
+        },
+        {
+            "name": "Ambulance Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Ambulance_Driver/Salary",
+            "salary_expectation": "R9k – R182k / year (avg R118,000)",
+            "description": null
+        },
+        {
+            "name": "Concrete Pump Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Concrete_Pump_Operator/Hourly_Rate",
+            "salary_expectation": "R11k – R155k / year (avg R17,500)",
+            "description": "Typically, a concrete pump operator is associated with large cement mixers, but pump operators also work with other heavy rigs. These include trucks with boom attachments that can help the operator to precisely pump concrete into hard-to-reach areas at a construction site."
+        },
+        {
+            "name": "Fuel Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fuel_Truck_Driver/Hourly_Rate",
+            "salary_expectation": "R60 – R75 / hour (avg R71.25)",
+            "description": "A fuel truck driver is required to safely operate a tank wagon or tractor trailer with hazardous materials. At all times, these drivers must know and follow all required safety regulations, including in inclement weather."
+        },
+        {
+            "name": "Garbage Man",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Garbage_Man/Salary",
+            "salary_expectation": "R5k – R60k / year (avg R13,000)",
+            "description": "Garbage men are more professionally known as \"refuse collectors,\" and their main responsibility is to drive along assigned routes and collect trash and recycling. Most garbage men work early in the morning, and their main \"tool\" is a garbage truck with hydraulic lifts, which allow the truck to pick up trash containers."
+        },
+        {
+            "name": "Sanitation Worker",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sanitation_Worker/Salary",
+            "salary_expectation": "R21 – R29 / hour (avg R27.51)",
+            "description": "Sanitation workers carry out tasks relating to the sanitation and upkeep of facilities and facets of operation within a company. The duties of a sanitation worker vary based on what is needed within a company; some examples include sanitation of various equipment used, proper disposal of waste, and the sanitation of work areas."
+        },
+        {
+            "name": "Tug Boat Captain",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tug_Boat_Captain/Salary",
+            "salary_expectation": "R356k – R727k / year (avg R600,000)",
+            "description": "The position of tug boat captain requires a demonstrated ability to multitask, as well as strong leadership and command skills. A tug boat captain has the legal responsibility and accountability for the safe operation of a tug boat under a variety of challenging conditions and situations."
+        },
+        {
+            "name": "Commercial Pilot, Jet",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Commercial_Pilot%2C_Jet/Salary",
+            "salary_expectation": "R305k – R972k / year (avg R576,000)",
+            "description": "While we may think of commercial airline pilots as the person on the other side of the microphone when we take a flight on a jumbo jet, in reality those jobs are at the top of the heap in this profession. Many commercial jet pilots fly for dedicated freight or shipping companies."
+        },
+        {
+            "name": "Fleet Supervisor, Trucking & Transportation",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fleet_Supervisor%2C_Trucking_%26_Transportation/Salary",
+            "salary_expectation": "R102k – R226k / year (avg R112,614)",
+            "description": null
+        },
+        {
+            "name": "Loading Machine Operator, Underground Mining",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Loading_Machine_Operator%2C_Underground_Mining/Hourly_Rate",
+            "salary_expectation": "R0 – R35 / hour (avg R35.00)",
+            "description": null
+        },
+        {
+            "name": "Medical Equipment Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Medical_Equipment_Driver/Salary",
+            "salary_expectation": "R2k – R116k / year (avg R79,482)",
+            "description": "Medical equipment drivers typically work independently and are responsible for the timely delivery of medical equipment to hospitals and doctors' offices. These drivers must be able to lift heavy equipment up to 75 pounds independently and push up to 500 pounds with assistance, and they also keep up-to-date inventories of the materials on their trucks to ensure timely deliveries."
+        },
+        {
+            "name": "OTR Truck Driver",
+            "source_url": "https://www.payscale.com/research/ZA/Job=OTR_Truck_Driver/Salary",
+            "salary_expectation": "R0 – R32 / hour (avg R31.88)",
+            "description": null
+        },
+        {
+            "name": "Supply Chain/Warehouse Process Improvement Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain%2FWarehouse_Process_Improvement_Manager/Salary",
+            "salary_expectation": "R29k – R672k / year (avg R238,000)",
+            "description": "Supply chain/warehouse process improvement managers must be able to lead others while brainstorming new ideas for their organizations. These managers are responsible for hiring and firing staff, prioritizing customers, planning and executing performance-improvement initiatives, and coordinating with a variety of employees, as well as training new staff and ensuring their capabilities for certain positions."
+        },
+        {
+            "name": "Bus Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Bus_Operator/Salary",
+            "salary_expectation": "R0 – R111k / year (avg R110,824)",
+            "description": "A bus operator is the person who drives and operates buses and shuttles, typically for local area transit and transportation services and companies. Bus operators typically work regular routes but must be familiar with the areas they drive and the regular stops along them."
+        },
+        {
+            "name": "Chief Pilot (Aircraft)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chief_Pilot_(Aircraft)/Salary",
+            "salary_expectation": "R491k – R763k / year (avg R601,000)",
+            "description": "Chief pilots (aircraft) oversee the overall operations of an aviation department. This includes managing flight and ground personnel, coordinating maintenance, and scheduling flights."
+        },
+        {
+            "name": "Commercial Pilot, Non-Jet",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Commercial_Pilot%2C_Non-Jet/Salary",
+            "salary_expectation": "R292k – R768k / year (avg R500,000)",
+            "description": "Non-jet commercial pilots often work for corporations and wealthy individuals and must have the FAA Commercial License with Instrument Rating and First Class medical, as well as a certain number of total flight hours and the FCC-restricted radiotelephone operator permit. Strong communication skills are essential in this position to work well with others, and pre-flight inspections are usually necessary to ensure that navigation, safety, and operating systems are working properly."
+        },
+        {
+            "name": "Flight Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Flight_Coordinator/Salary",
+            "salary_expectation": "R12k – R238k / year (avg R15,260)",
+            "description": "Flight coordinators work primarily for the military, airline companies, and corporations which maintain their own airplanes and/or helicopters. These coordinators schedule and coordinate flight activity in accordance with standard operating procedures and General Operating and Flight Rules (14 CFR Part 91) issued by the Federal Aviation Administration (FAA), and also provide schedules and itineraries to flight crew, such as pilots, flight attendants, and flight engineers."
+        }
+    ]
+}

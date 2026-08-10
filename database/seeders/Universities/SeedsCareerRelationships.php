@@ -28,7 +28,8 @@ trait SeedsCareerRelationships
             $result = $this->careerUpsert()->upsert($entry['name'], [
                 'salary_expectation' => $entry['salary_expectation'],
                 'description' => $entry['description'],
-                'source_url' => $entry['source_url'],
+                // Career source_url is reserved for salary providers (PayScale).
+                // University programme pages stay on the qualification.
                 'is_active' => true,
             ]);
 
@@ -94,13 +95,13 @@ trait SeedsCareerRelationships
         $upsert = $this->careerUpsert();
 
         return collect($rawCareers)
-            ->map(function ($career, int $index) use ($sourceUrl) {
+            ->map(function ($career, int $index) {
                 if (is_string($career)) {
                     return [
                         'name' => $career,
                         'salary_expectation' => null,
                         'description' => null,
-                        'source_url' => $sourceUrl,
+                        'source_url' => null,
                         'sort_order' => $index + 1,
                     ];
                 }
@@ -119,7 +120,8 @@ trait SeedsCareerRelationships
                     'name' => $name,
                     'salary_expectation' => $career['salary_expectation'] ?? $career['salary'] ?? null,
                     'description' => $career['description'] ?? null,
-                    'source_url' => $career['source_url'] ?? $sourceUrl,
+                    // Ignore university/programme source URLs on careers.
+                    'source_url' => null,
                     'sort_order' => $career['sort_order'] ?? $index + 1,
                     'notes' => $career['notes'] ?? null,
                 ];
