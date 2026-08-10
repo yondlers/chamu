@@ -6,7 +6,7 @@
         {
             "name": "Bachelor of Dental Surgery",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 40,
             "selection_programme": false,
             "notes": [
@@ -33,12 +33,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "Bachelor of Oral Health",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -69,7 +70,8 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         }
     ]
 }

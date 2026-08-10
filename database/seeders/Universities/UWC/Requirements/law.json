@@ -6,7 +6,7 @@
         {
             "name": "Bachelor of Laws",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 37,
             "selection_programme": false,
             "notes": [
@@ -32,12 +32,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BCom Law",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -54,12 +55,13 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "Bachelor of Arts in Law",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 37,
             "selection_programme": false,
             "notes": [
@@ -85,7 +87,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         }
     ]
 }

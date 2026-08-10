@@ -6,7 +6,7 @@
         {
             "name": "Bachelor of Social Work",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 34,
             "selection_programme": false,
             "notes": [
@@ -39,12 +39,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "Bachelor of Community Development",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -69,12 +70,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BA Sport, Recreation and Exercise Science",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -99,12 +101,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Dietetics and Nutrition",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -133,12 +136,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Sport and Exercise Science",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -167,12 +171,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Occupational Therapy",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -201,12 +206,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Physiotherapy",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 39,
             "selection_programme": false,
             "notes": [
@@ -239,12 +245,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "B Nursing and Midwifery",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 4,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -273,7 +280,8 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         }
     ]
 }

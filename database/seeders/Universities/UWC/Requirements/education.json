@@ -6,7 +6,7 @@
         {
             "name": "BEd Accounting (FET), Economic and Management Sciences (SP) and Mathematics (SP)",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -48,12 +48,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BEd Mathematics (SP), Mathematical Literacy (SP and FET) and Natural Science (SP)",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -91,12 +92,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BEd Languages (SP and FET) and Life Orientation (SP)",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -135,12 +137,13 @@
                     "subject": "Life Orientation",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BEd Languages (SP and FET) and Mathematics (SP)",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -175,12 +178,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BEd Languages (SP and FET) and Social Sciences (SP)",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -227,12 +231,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BEd Foundation Phase Teaching",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -258,7 +263,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         }
     ]
 }

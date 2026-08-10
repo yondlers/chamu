@@ -6,7 +6,7 @@
         {
             "name": "BSc Environmental and Water Science",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -35,12 +35,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Biotechnology",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -69,12 +70,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Biodiversity and Conservation Biology",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -103,12 +105,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Medical Bioscience",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -129,12 +132,13 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Chemical Sciences",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -155,12 +159,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Applied Geology",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -181,12 +186,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Physical Science",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -207,12 +213,13 @@
                     "subject": "Physical Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Mathematical and Statistical Sciences",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -245,12 +252,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BSc Computer Science",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 33,
             "selection_programme": false,
             "notes": [
@@ -283,12 +291,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "Bachelor of Pharmacy",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 38,
             "selection_programme": false,
             "notes": [
@@ -313,7 +322,8 @@
                     "subject": "Life Sciences",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         }
     ]
 }

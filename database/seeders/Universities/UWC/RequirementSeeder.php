@@ -16,8 +16,18 @@ class RequirementSeeder extends UniversityRequirementSeeder
         return 'University of the Western Cape';
     }
 
+    protected function website(): ?string
+    {
+        return 'https://www.uwc.ac.za';
+    }
+
     protected function requirementsPath(): string
     {
         return 'seeders/Universities/UWC/Requirements/*.json';
+    }
+
+    protected function defaultSourceUrl(): ?string
+    {
+        return 'https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf';
     }
 }

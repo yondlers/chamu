@@ -6,7 +6,7 @@
         {
             "name": "BAdmin",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -32,12 +32,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BCom",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -55,12 +56,13 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BCom Financial Accounting",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -78,12 +80,13 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BCom Information Systems",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -101,12 +104,13 @@
                     "subject": "Mathematics",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BCom Accounting",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 3,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -120,12 +124,13 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 4
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BCom (4 Year Stream)",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 4,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -151,12 +156,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         },
         {
             "name": "BCom Accounting (4 Year Stream)",
             "qualification_type": "Bachelor",
-            "duration_years": null,
+            "duration_years": 4,
             "aps_required": 30,
             "selection_programme": false,
             "notes": [
@@ -170,7 +176,8 @@
                     "subject": "English Home Language or English First Additional Language",
                     "minimum_level": 3
                 }
-            ]
+            ],
+            "source_url": "https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf"
         }
     ]
 }
