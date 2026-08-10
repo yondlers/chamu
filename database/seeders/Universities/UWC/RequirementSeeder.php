@@ -28,6 +28,6 @@ class RequirementSeeder extends UniversityRequirementSeeder
 
     protected function defaultSourceUrl(): ?string
     {
-        return 'https://uwc-za.b-cdn.net/files/files/Admission-Requirements-2025.pdf';
+        return 'https://www.uwc.ac.za/files/files/SEMU-8-Panel-Print-Admissions-2027.pdf';
     }
 }
