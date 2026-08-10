@@ -185,8 +185,8 @@
       "stream_code": null,
       "field": "Accounting Sciences",
       "college": "College of Accounting Sciences",
-      "aps": null,
-      "saqa_id": null,
+      "aps": 18,
+      "saqa_id": "83289",
       "source_url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Undergraduate-qualifications/Qualifications/All-qualifications/Diploma-in-Accounting-Sciences-%2898200%29",
       "purpose": "Develops accounting, reporting, management accounting, internal auditing, taxation and small-business management competence.",
       "career_examples": [
@@ -197,7 +197,7 @@
         "Costing Clerk"
       ],
       "admission": {
-        "minimum_aps": null,
+        "minimum_aps": 18,
         "required_endorsement": "Diploma endorsement",
         "language_requirement": "At least 50% in the language of teaching and learning for the NSC route",
         "mathematics": {

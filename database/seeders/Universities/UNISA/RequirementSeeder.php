@@ -178,7 +178,7 @@ class RequirementSeeder extends Seeder
                 'duration_years' => $qualification['minimum_nominal_years'] ?? null,
                 'aps_required' => $programmeRecord['admission']['minimum_aps'] ?? null,
                 'aggregate_average_required' => null,
-                'admission_score_required' => null,
+                'admission_score_required' => $programmeRecord['admission']['minimum_aps'] ?? null,
                 'minimum_pass_type' => $this->minimumPassType($qualification),
                 'is_selection_programme' => true,
                 'notes' => $this->notes($programmeRecord),
