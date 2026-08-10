@@ -58,10 +58,33 @@
     $featuredUniversities = $selectedUniversities->isNotEmpty()
         ? $selectedUniversities
         : $universities->take(8);
-    $heroFilterSummary = collect([
-        $universityFilterLabel,
-        $search !== '' ? '"'.$search.'"' : null,
-    ])->filter()->implode(' · ');
+    $sortOptions = [
+        'default' => 'Default',
+        'closing' => 'Closing date',
+        'score' => 'Required score',
+        'level' => 'Qualification level',
+        'duration' => 'Duration',
+    ];
+    $sortLabel = $sortOptions[$sort] ?? 'Default';
+    $courseQuery = function (?array $universityIds = null, ?string $searchValue = null, ?string $sortValue = null) use ($selectedUniversityIds, $search, $sort): array {
+        $query = [];
+        $resolvedUniversityIds = $universityIds ?? $selectedUniversityIds->all();
+
+        if ($resolvedUniversityIds !== []) {
+            $query['university_ids'] = array_values($resolvedUniversityIds);
+        }
+
+        if (filled($searchValue ?? $search)) {
+            $query['search'] = $searchValue ?? $search;
+        }
+
+        $resolvedSort = $sortValue ?? $sort;
+        if (filled($resolvedSort) && $resolvedSort !== 'default') {
+            $query['sort'] = $resolvedSort;
+        }
+
+        return $query;
+    };
 @endphp
 
 @push('styles')
@@ -134,59 +157,35 @@
             </div>
 
             <div class="mx-auto max-w-7xl px-5 pb-10 pt-8 sm:pb-16 sm:pt-16 lg:px-8 lg:pb-20 lg:pt-20">
-                <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-end">
-                    <div class="max-w-3xl">
-                        <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase text-white/85 backdrop-blur">
-                            <span class="h-2 w-2 rounded-full bg-sky-300"></span>
-                            APS match
-                        </div>
-                        <h1 class="mt-4 max-w-3xl text-3xl font-black leading-[1.02] text-white sm:mt-5 sm:text-6xl">
-                            Find courses that fit your APS.
-                        </h1>
-                        <p class="mt-4 max-w-2xl text-sm font-medium leading-6 text-white/75 sm:mt-5 sm:text-lg sm:leading-7">
-                            Search {{ number_format($qualificationCount) }} captured programmes across South African universities, then move into funding when the course path feels right.
-                        </p>
-
-                        <div class="mt-6 grid max-w-2xl grid-cols-3 divide-x divide-white/15 border-y border-white/15 py-3 sm:mt-8 sm:py-4">
-                            <div class="pr-4">
-                                <p class="text-xl font-black sm:text-2xl">{{ number_format($universities->count()) }}</p>
-                                <p class="mt-1 text-xs font-bold uppercase text-white/55">University & Colleges</p>
-                            </div>
-                            <div class="px-4">
-                                <p class="text-xl font-black sm:text-2xl">{{ number_format($qualificationCount) }}</p>
-                                <p class="mt-1 text-xs font-bold uppercase text-white/55">Programmes</p>
-                            </div>
-                            <div class="pl-4">
-                                <p class="text-xl font-black sm:text-2xl">{{ number_format($bursaryCount) }}</p>
-                                <p class="mt-1 text-xs font-bold uppercase text-white/55">Bursaries</p>
-                            </div>
-                        </div>
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase text-white/85 backdrop-blur">
+                        <span class="h-2 w-2 rounded-full bg-sky-300"></span>
+                        APS match
                     </div>
+                    <h1 class="mt-4 max-w-3xl text-3xl font-black leading-[1.02] text-white sm:mt-5 sm:text-6xl">
+                        Find your Course
+                    </h1>
 
-                    <div class="hidden rounded-lg border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur lg:block">
-                        <div class="flex items-center justify-between gap-4">
-                            <div>
-                                <p class="text-xs font-bold uppercase text-white/55">Current search</p>
-                                <p class="mt-2 text-lg font-black">{{ $heroFilterSummary }}</p>
-                            </div>
-                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-sky-300 text-[#07111f]">
-                                <i data-lucide="target" style="width:22px;height:22px;"></i>
-                            </span>
+                    <div class="mt-6 grid max-w-2xl grid-cols-3 divide-x divide-white/15 border-y border-white/15 py-3 sm:mt-8 sm:py-4">
+                        <div class="pr-4">
+                            <p class="text-xl font-black sm:text-2xl">{{ number_format($universities->count()) }}</p>
+                            <p class="mt-1 text-xs font-bold uppercase text-white/55">University & Colleges</p>
                         </div>
-                        <div class="mt-5 space-y-3 border-t border-white/15 pt-5">
-                            <div class="flex items-center justify-between gap-4 text-sm">
-                                <span class="font-semibold text-white/65">Course results</span>
-                                <span class="font-black">{{ number_format($totalCourses) }}</span>
-                            </div>
-                            <div class="flex items-center justify-between gap-4 text-sm">
-                                <span class="font-semibold text-white/65">Subject match</span>
-                                <span class="font-black">{{ auth()->check() ? 'Enabled' : 'Optional' }}</span>
-                            </div>
+                        <div class="px-4">
+                            <p class="text-xl font-black sm:text-2xl">{{ number_format($qualificationCount) }}</p>
+                            <p class="mt-1 text-xs font-bold uppercase text-white/55">Programmes</p>
+                        </div>
+                        <div class="pl-4">
+                            <p class="text-xl font-black sm:text-2xl">{{ number_format($bursaryCount) }}</p>
+                            <p class="mt-1 text-xs font-bold uppercase text-white/55">Bursaries</p>
                         </div>
                     </div>
                 </div>
 
                 <form method="GET" action="{{ route('aps.index') }}#search-results" class="mt-6 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)] sm:mt-8">
+                    @if ($sort !== 'default')
+                        <input type="hidden" name="sort" value="{{ $sort }}">
+                    @endif
                     <div class="grid gap-2 lg:grid-cols-[1.35fr_1.15fr_auto]">
                         <div class="relative rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2.5 sm:px-4 sm:py-3" data-university-multiselect>
                             <label id="university_filter_label" class="flex items-center gap-1.5 text-xs font-black uppercase text-neutral-500">
@@ -272,7 +271,7 @@
                                     : 'border-white/20 bg-white/10 text-white/80 hover:bg-white/20';
                             @endphp
                             <a
-                                href="{{ route('aps.index', ['university_ids' => [$university->id]]) }}#search-results"
+                                href="{{ route('aps.index', $courseQuery([$university->id])) }}#search-results"
                                 class="inline-flex shrink-0 items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-black transition {{ $featuredUniversityClass }}"
                             >
                                 <span class="grid h-5 w-5 place-items-center overflow-hidden rounded-full bg-white/90 text-[10px] text-[#01225E]">
@@ -291,12 +290,58 @@
         </section>
 
         <section id="search-results" tabindex="-1" class="mx-auto mt-8 scroll-mt-24 max-w-7xl px-5 focus:outline-none lg:px-8">
-            <div class="mb-5">
-                <p class="text-xs font-black uppercase text-[#01225E]">Course list</p>
-                <h2 class="mt-1 text-2xl font-black text-neutral-950">Courses to explore</h2>
-                <p class="mt-1 text-sm font-bold text-neutral-500">
-                    {{ number_format($totalCourses) }} courses found{{ $selectedUniversityScopeLabel }}
-                </p>
+            <div class="mb-5 flex flex-col gap-3 rounded-lg border border-neutral-200 bg-white px-4 py-3 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-neutral-700">
+                    <p class="inline-flex items-center gap-1.5 font-semibold">
+                        <span class="font-black text-neutral-950">{{ number_format($totalCourses) }}</span>
+                        results
+                        <i data-lucide="info" class="text-neutral-400" style="width:14px;height:14px;" title="{{ number_format($totalCourses) }} courses found{{ $selectedUniversityScopeLabel }}"></i>
+                    </p>
+                    <span class="hidden h-4 w-px bg-neutral-200 sm:block" aria-hidden="true"></span>
+                    <p class="font-semibold">
+                        <span class="font-black text-neutral-950">{{ number_format($universities->count()) }}</span>
+                        universities
+                    </p>
+                    <span class="hidden h-4 w-px bg-neutral-200 sm:block" aria-hidden="true"></span>
+                    <p class="font-semibold">
+                        <span class="font-black text-neutral-950">{{ number_format($qualificationCount) }}</span>
+                        programmes
+                    </p>
+                </div>
+
+                <div class="relative shrink-0" data-course-sort>
+                    <button
+                        type="button"
+                        class="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm font-semibold text-neutral-800 hover:bg-neutral-100 sm:w-auto"
+                        data-course-sort-trigger
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                    >
+                        <span>
+                            <span class="font-black text-neutral-950">Sort by:</span>
+                            <span data-course-sort-label>{{ $sortLabel }}</span>
+                        </span>
+                        <i data-lucide="chevron-down" class="text-neutral-400" style="width:16px;height:16px;"></i>
+                    </button>
+
+                    <div class="absolute right-0 z-20 mt-2 hidden min-w-[14rem] overflow-hidden rounded-lg border border-neutral-200 bg-white py-1 shadow-xl" data-course-sort-panel role="listbox">
+                        @foreach ($sortOptions as $value => $label)
+                            <a
+                                href="{{ route('aps.index', $courseQuery(null, $search ?: null, $value)) }}#search-results"
+                                class="flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold hover:bg-neutral-50 {{ $sort === $value ? 'bg-neutral-50 text-[#01225E]' : 'text-neutral-700' }}"
+                                data-course-sort-option
+                                data-value="{{ $value }}"
+                                role="option"
+                                aria-selected="{{ $sort === $value ? 'true' : 'false' }}"
+                            >
+                                <span>{{ $label }}</span>
+                                @if ($sort === $value)
+                                    <i data-lucide="check" style="width:14px;height:14px;"></i>
+                                @endif
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
             </div>
 
             <section class="grid gap-4">
@@ -558,5 +603,38 @@
                 }
             });
         }
+
+        (() => {
+            const sort = document.querySelector('[data-course-sort]');
+            if (! sort) return;
+
+            const trigger = sort.querySelector('[data-course-sort-trigger]');
+            const panel = sort.querySelector('[data-course-sort-panel]');
+            if (! trigger || ! panel) return;
+
+            const open = () => {
+                panel.classList.remove('hidden');
+                trigger.setAttribute('aria-expanded', 'true');
+            };
+            const close = () => {
+                panel.classList.add('hidden');
+                trigger.setAttribute('aria-expanded', 'false');
+            };
+
+            trigger.addEventListener('click', () => {
+                const isOpen = ! panel.classList.contains('hidden');
+                if (isOpen) {
+                    close();
+                    return;
+                }
+                open();
+            });
+
+            document.addEventListener('click', (event) => {
+                if (! sort.contains(event.target)) {
+                    close();
+                }
+            });
+        })();
     </script>
 @endpush

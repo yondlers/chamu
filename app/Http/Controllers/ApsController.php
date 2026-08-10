@@ -21,6 +21,10 @@ class ApsController extends Controller
         }
 
         $search = trim((string) $request->query('search', ''));
+        $sort = strtolower(trim((string) $request->query('sort', 'default')));
+        if (! in_array($sort, ['default', 'closing', 'score', 'level', 'duration'], true)) {
+            $sort = 'default';
+        }
         $requestedUniversityIds = $request->query('university_ids', []);
 
         if (! is_array($requestedUniversityIds)) {
@@ -57,6 +61,7 @@ class ApsController extends Controller
                     'faculty:id,name',
                     'qualificationType:id,name,abbreviation',
                     'university:id,name,slug,abbreviation,logo',
+                    'nqfLevel:id,level,name,sort_order',
                 ])
                 ->when($selectedUniversityIds->isNotEmpty(), fn ($query) => $query->whereIn('university_id', $selectedUniversityIds->all()))
                 ->when($search !== '', function ($query) use ($search) {
@@ -75,14 +80,19 @@ class ApsController extends Controller
         };
 
         $allCourses = $qualificationQuery()->get();
-        $courses = $isInitialApsLoad
-            ? $this->paginateCourseCollection(
-                $mostAppliedQualificationAlgorithm->rankForFirstScreen($allCourses),
-                $request,
-                total: $allCourses->count()
-            )
-            : $this->paginateCourseCollection($this->sortCoursesForStandardListing($allCourses), $request);
-
+        $sortedCourses = match (true) {
+            $isInitialApsLoad => $mostAppliedQualificationAlgorithm->rankForFirstScreen($allCourses),
+            $sort === 'closing' => $this->sortCoursesByClosingDate($allCourses),
+            $sort === 'score' => $this->sortCoursesByRequiredScore($allCourses),
+            $sort === 'level' => $this->sortCoursesByQualificationLevel($allCourses),
+            $sort === 'duration' => $this->sortCoursesByDuration($allCourses),
+            default => $this->sortCoursesForStandardListing($allCourses),
+        };
+        $courses = $this->paginateCourseCollection(
+            $sortedCourses,
+            $request,
+            total: $isInitialApsLoad ? $allCourses->count() : null,
+        );
         $courseItems = $courses->getCollection();
         $admissionRuleAssignments = UniversityAdmissionRule::query()
             ->with('admissionRule')
@@ -170,6 +180,7 @@ class ApsController extends Controller
 
         return view('aps.index', [
             'search' => $search,
+            'sort' => $sort,
             'universities' => $universities,
             'qualificationCount' => $qualificationCount,
             'bursaryCount' => $bursaryCount,
@@ -194,6 +205,108 @@ class ApsController extends Controller
             ->values();
     }
 
+    /**
+     * @param  Collection<int, Qualification>  $courses
+     * @return Collection<int, Qualification>
+     */
+    private function sortCoursesByClosingDate(Collection $courses): Collection
+    {
+        return $courses
+            ->sort(function (Qualification $first, Qualification $second) {
+                return $this->courseClosingSortValue($first) <=> $this->courseClosingSortValue($second);
+            })
+            ->values();
+    }
+
+    /**
+     * @param  Collection<int, Qualification>  $courses
+     * @return Collection<int, Qualification>
+     */
+    private function sortCoursesByRequiredScore(Collection $courses): Collection
+    {
+        return $courses
+            ->sort(function (Qualification $first, Qualification $second) {
+                $firstScore = $this->courseAdmissionScore($first);
+                $secondScore = $this->courseAdmissionScore($second);
+
+                return [
+                    $firstScore === null ? 1 : 0,
+                    $firstScore ?? PHP_INT_MAX,
+                    strtolower((string) $first->name),
+                ] <=> [
+                    $secondScore === null ? 1 : 0,
+                    $secondScore ?? PHP_INT_MAX,
+                    strtolower((string) $second->name),
+                ];
+            })
+            ->values();
+    }
+
+    /**
+     * @param  Collection<int, Qualification>  $courses
+     * @return Collection<int, Qualification>
+     */
+    private function sortCoursesByQualificationLevel(Collection $courses): Collection
+    {
+        return $courses
+            ->sort(function (Qualification $first, Qualification $second) {
+                $firstLevel = $first->nqfLevel?->level;
+                $secondLevel = $second->nqfLevel?->level;
+
+                return [
+                    $firstLevel === null ? 1 : 0,
+                    $firstLevel ?? PHP_INT_MAX,
+                    $first->nqfLevel?->sort_order ?? PHP_INT_MAX,
+                    strtolower((string) $first->name),
+                ] <=> [
+                    $secondLevel === null ? 1 : 0,
+                    $secondLevel ?? PHP_INT_MAX,
+                    $second->nqfLevel?->sort_order ?? PHP_INT_MAX,
+                    strtolower((string) $second->name),
+                ];
+            })
+            ->values();
+    }
+
+    /**
+     * @param  Collection<int, Qualification>  $courses
+     * @return Collection<int, Qualification>
+     */
+    private function sortCoursesByDuration(Collection $courses): Collection
+    {
+        return $courses
+            ->sort(function (Qualification $first, Qualification $second) {
+                $firstDuration = $first->duration_years !== null ? (float) $first->duration_years : null;
+                $secondDuration = $second->duration_years !== null ? (float) $second->duration_years : null;
+
+                return [
+                    $firstDuration === null ? 1 : 0,
+                    $firstDuration ?? PHP_INT_MAX,
+                    strtolower((string) $first->name),
+                ] <=> [
+                    $secondDuration === null ? 1 : 0,
+                    $secondDuration ?? PHP_INT_MAX,
+                    strtolower((string) $second->name),
+                ];
+            })
+            ->values();
+    }
+
+    /**
+     * @return array{0: int, 1: int, 2: int, 3: string}
+     */
+    private function courseClosingSortValue(Qualification $course): array
+    {
+        $month = $course->closing_month !== null ? (int) $course->closing_month : null;
+        $day = $course->closing_day !== null ? (int) $course->closing_day : null;
+
+        return [
+            ($month === null || $day === null) ? 1 : 0,
+            $month ?? PHP_INT_MAX,
+            $day ?? PHP_INT_MAX,
+            strtolower((string) $course->name),
+        ];
+    }
     /**
      * @return array{0: int, 1: float, 2: string, 3: string}
      */
