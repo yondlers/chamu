@@ -11,11 +11,22 @@
 @endpush
 
 @php
-    $selectedUniversityIds = collect($filters['university_ids'] ?? [])
+    $selectedUniversityIds = collect($selectedUniversityIds ?? $filters['university_ids'] ?? [])
         ->map(fn ($id) => (int) $id)
         ->filter()
         ->unique()
         ->values();
+    $selectedFacultyIds = collect($selectedFacultyIds ?? [])
+        ->map(fn ($id) => (int) $id)
+        ->filter()
+        ->unique()
+        ->values();
+    $selectedQualificationTypeIds = collect($selectedQualificationTypeIds ?? [])
+        ->map(fn ($id) => (int) $id)
+        ->filter()
+        ->unique()
+        ->values();
+    $selectedFilters = collect($selectedFilters ?? []);
     $universityLabel = function ($university) {
         if (! $university) {
             return 'All universities';
@@ -66,12 +77,22 @@
         'duration' => 'Duration',
     ];
     $sortLabel = $sortOptions[$sort] ?? 'Default';
-    $courseQuery = function (?array $universityIds = null, ?string $searchValue = null, ?string $sortValue = null) use ($selectedUniversityIds, $search, $sort): array {
+    $typeBadgeClass = [
+        'university' => 'bg-sky-100 text-sky-800',
+        'faculty' => 'bg-violet-100 text-violet-800',
+        'qualification' => 'bg-amber-100 text-amber-800',
+    ];
+    $typeLabel = [
+        'university' => 'University',
+        'faculty' => 'Faculty',
+        'qualification' => 'Qualification',
+    ];
+    $courseQuery = function (?array $tokens = null, ?string $searchValue = null, ?string $sortValue = null) use ($selectedFilters, $search, $sort): array {
         $query = [];
-        $resolvedUniversityIds = $universityIds ?? $selectedUniversityIds->all();
+        $resolvedTokens = $tokens ?? $selectedFilters->pluck('token')->all();
 
-        if ($resolvedUniversityIds !== []) {
-            $query['university_ids'] = array_values($resolvedUniversityIds);
+        if ($resolvedTokens !== []) {
+            $query['filter'] = array_values($resolvedTokens);
         }
 
         if (filled($searchValue ?? $search)) {
@@ -86,7 +107,6 @@
         return $query;
     };
 @endphp
-
 @push('styles')
     <style>
         .aps-hero-slide {
@@ -165,113 +185,225 @@
                     <h1 class="mt-4 max-w-3xl text-3xl font-black leading-[1.02] text-white sm:mt-5 sm:text-6xl">
                         Find your Course
                     </h1>
-
-                    <div class="mt-6 grid max-w-2xl grid-cols-3 divide-x divide-white/15 border-y border-white/15 py-3 sm:mt-8 sm:py-4">
-                        <div class="pr-4">
-                            <p class="text-xl font-black sm:text-2xl">{{ number_format($universities->count()) }}</p>
-                            <p class="mt-1 text-xs font-bold uppercase text-white/55">University & Colleges</p>
-                        </div>
-                        <div class="px-4">
-                            <p class="text-xl font-black sm:text-2xl">{{ number_format($qualificationCount) }}</p>
-                            <p class="mt-1 text-xs font-bold uppercase text-white/55">Programmes</p>
-                        </div>
-                        <div class="pl-4">
-                            <p class="text-xl font-black sm:text-2xl">{{ number_format($bursaryCount) }}</p>
-                            <p class="mt-1 text-xs font-bold uppercase text-white/55">Bursaries</p>
-                        </div>
-                    </div>
                 </div>
 
-                <form method="GET" action="{{ route('aps.index') }}#search-results" class="mt-6 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)] sm:mt-8">
+                <form method="GET" action="{{ route('aps.index') }}#search-results" class="mt-6 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)] sm:mt-8" data-course-filter-form>
                     @if ($sort !== 'default')
                         <input type="hidden" name="sort" value="{{ $sort }}">
                     @endif
-                    <div class="grid gap-2 lg:grid-cols-[1.35fr_1.15fr_auto]">
-                        <div class="relative rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2.5 sm:px-4 sm:py-3" data-university-multiselect>
-                            <label id="university_filter_label" class="flex items-center gap-1.5 text-xs font-black uppercase text-neutral-500">
-                                <i data-lucide="building-2" style="width:14px;height:14px;"></i>
-                                Universities
+                    <div class="grid gap-2 lg:grid-cols-[minmax(0,1fr)_auto]">
+                        <div class="relative rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3" data-course-filter>
+                            <label for="course-filter-input" class="flex items-center gap-1.5 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">
+                                <i data-lucide="search" style="width:14px;height:14px;"></i>
+                                Search
                             </label>
-                            <button type="button" aria-labelledby="university_filter_label" aria-expanded="false" class="mt-1.5 flex w-full items-center justify-between gap-3 bg-transparent text-left text-base font-black text-neutral-950 outline-none sm:mt-2" data-university-trigger>
-                                <span class="min-w-0 truncate" data-university-summary>{{ $universityFilterLabel }}</span>
-                                <i data-lucide="chevron-down" class="shrink-0 text-neutral-400" style="width:18px;height:18px;"></i>
-                            </button>
 
-                            <div class="absolute left-0 right-0 z-50 mt-4 hidden overflow-hidden rounded-lg border border-neutral-200 bg-white text-neutral-950 shadow-2xl" data-university-panel>
-                                <div class="border-b border-neutral-100 bg-white p-2">
-                                    <input type="search" autocomplete="off" placeholder="Search university" class="h-11 w-full rounded-xl border border-neutral-200 px-3 text-sm font-semibold outline-none focus:border-[#01225E]" data-university-search>
-                                    <div class="mt-2 flex items-center justify-between gap-3 px-1">
-                                        <span class="text-xs font-bold text-neutral-500" data-university-count>{{ $selectedUniversities->count() }} selected</span>
-                                        <button type="button" class="text-xs font-bold text-[#01225E] hover:underline" data-university-clear>Clear</button>
-                                    </div>
-                                </div>
-                                <div class="max-h-80 overflow-y-auto p-2">
-                                    <button type="button" class="mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50" data-university-clear data-university-option data-search="all universities">
-                                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-neutral-100 text-xs font-black text-neutral-700">ALL</span>
-                                        <span>
-                                            <span class="block text-neutral-950">All universities</span>
-                                            <span class="block text-xs font-semibold text-neutral-500">Every captured programme</span>
+                            <div class="mt-2 flex min-h-[28px] flex-wrap items-center gap-2" data-course-filter-control>
+                                <div class="contents" data-course-filter-tags>
+                                    @foreach ($selectedFilters as $selectedFilter)
+                                        <span
+                                            class="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-2.5 py-1 text-xs font-black text-neutral-800"
+                                            data-course-filter-tag
+                                            data-token="{{ $selectedFilter['token'] }}"
+                                            data-type="{{ $selectedFilter['type'] }}"
+                                            data-value="{{ $selectedFilter['value'] }}"
+                                            @if (! empty($selectedFilter['university_id'])) data-university-id="{{ $selectedFilter['university_id'] }}" @endif
+                                            @if (! empty($selectedFilter['faculty_ids'])) data-faculty-ids="{{ implode(',', $selectedFilter['faculty_ids']) }}" @endif
+                                        >
+                                            <span class="rounded-full px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] {{ $typeBadgeClass[$selectedFilter['type']] ?? 'bg-neutral-100 text-neutral-700' }}">
+                                                {{ $typeLabel[$selectedFilter['type']] ?? 'Filter' }}
+                                            </span>
+                                            <span>{{ $selectedFilter['label'] }}</span>
+                                            <button type="button" class="grid h-4 w-4 place-items-center rounded-full text-neutral-400 hover:bg-neutral-100 hover:text-neutral-700" data-course-filter-remove aria-label="Remove {{ $selectedFilter['label'] }}">
+                                                <i data-lucide="x" style="width:12px;height:12px;"></i>
+                                            </button>
+                                            <input type="hidden" name="filter[]" value="{{ $selectedFilter['token'] }}">
                                         </span>
-                                    </button>
-                                    @foreach ($universities as $university)
-                                        @php
-                                            $label = $universityLabel($university);
-                                        @endphp
-                                        <label class="flex cursor-pointer items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50" data-university-option data-search="{{ $label }} {{ $university->name }} {{ $university->abbreviation }}">
-                                            <input type="checkbox" name="university_ids[]" value="{{ $university->id }}" class="peer sr-only" data-university-checkbox data-label="{{ $label }}" @checked($selectedUniversityIds->contains((int) $university->id))>
-                                            <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-neutral-300 bg-white text-white peer-checked:border-[#01225E] peer-checked:bg-[#01225E]">
-                                                <i data-lucide="check" style="width:14px;height:14px;"></i>
-                                            </span>
-                                            <span class="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-neutral-200 bg-white text-xs font-black text-[#01225E]">
-                                                @if ($university->logo)
-                                                    <img src="{{ asset($university->logo) }}" alt="{{ $university->name }} logo" class="h-full w-full object-contain p-1">
-                                                @else
-                                                    {{ $universityInitials($university) }}
-                                                @endif
-                                            </span>
-                                            <span class="min-w-0">
-                                                <span class="block truncate text-neutral-950">{{ $university->abbreviation ?: $university->name }}</span>
-                                                <span class="block truncate text-xs font-semibold text-neutral-500">{{ $university->name }}</span>
-                                            </span>
-                                        </label>
                                     @endforeach
-                                    <p class="hidden px-3 py-2 text-sm font-semibold text-neutral-500" data-university-empty>No universities found</p>
                                 </div>
-                                <div class="border-t border-neutral-100 bg-neutral-50 p-2">
-                                    <button type="button" class="flex h-10 w-full items-center justify-center rounded-xl bg-[#01225E] text-sm font-bold text-white hover:bg-[#001A48]" data-university-done>Done</button>
+
+                                <input
+                                    id="course-filter-input"
+                                    name="search"
+                                    type="search"
+                                    value="{{ $search }}"
+                                    autocomplete="off"
+                                    placeholder="{{ $selectedFilters->isEmpty() ? 'Search university, faculty, qualification' : 'Add another…' }}"
+                                    class="min-w-[12rem] flex-1 bg-transparent text-base font-bold outline-none placeholder:text-neutral-400"
+                                    data-course-filter-input
+                                    aria-expanded="false"
+                                    aria-controls="course-filter-panel"
+                                    role="combobox"
+                                >
+                            </div>
+
+                            <div id="course-filter-panel" class="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-50 hidden overflow-hidden rounded-lg border border-neutral-200 bg-white text-neutral-950 shadow-2xl" data-course-filter-panel>
+                                <div class="max-h-80 overflow-y-auto p-2">
+                                    <div data-course-filter-group data-group="university">
+                                        <p class="px-3 py-2 text-[11px] font-black uppercase tracking-[0.16em] text-neutral-400">Universities</p>
+                                        <p class="px-3 pb-2 text-xs font-semibold text-neutral-500">Leave empty for all universities</p>
+                                        @foreach ($universities as $university)
+                                            @php
+                                                $token = $filterTypeUniversity.':'.$university->id;
+                                                $isSelected = $selectedUniversityIds->contains((int) $university->id);
+                                                $label = $university->abbreviation ?: $university->name;
+                                            @endphp
+                                            <button
+                                                type="button"
+                                                class="flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50 {{ $isSelected ? 'bg-sky-50' : '' }}"
+                                                data-course-filter-option
+                                                data-index="{{ $filterTypeUniversity }}"
+                                                data-type="university"
+                                                data-value="{{ $university->id }}"
+                                                data-label="{{ $label }}"
+                                                data-token="{{ $token }}"
+                                                data-search="{{ $university->name }} {{ $university->abbreviation }}"
+                                                data-selected="{{ $isSelected ? 'true' : 'false' }}"
+                                            >
+                                                <span class="min-w-0">
+                                                    <span class="block truncate text-neutral-950">{{ $label }}</span>
+                                                    <span class="mt-0.5 block truncate text-xs font-semibold text-neutral-500">{{ $university->name }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-sky-800">University · {{ $filterTypeUniversity }}</span>
+                                                </span>
+                                                <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-sky-700" style="width:16px;height:16px;" data-course-filter-check></i>
+                                            </button>
+                                        @endforeach
+                                    </div>
+
+                                    <div class="mt-1 border-t border-neutral-100 pt-1" data-course-filter-group data-group="faculty">
+                                        <p class="px-3 py-2 text-[11px] font-black uppercase tracking-[0.16em] text-neutral-400">Faculties</p>
+                                        <p class="px-3 pb-2 text-xs font-semibold text-neutral-500 {{ $selectedUniversityIds->isNotEmpty() ? 'hidden' : '' }}" data-course-filter-locked data-locked-for="faculty">
+                                            Select a university to unlock faculties
+                                        </p>
+                                        @foreach ($faculties as $faculty)
+                                            @php
+                                                $token = $filterTypeFaculty.':'.$faculty->id;
+                                                $isSelected = $selectedFacultyIds->contains((int) $faculty->id);
+                                                $label = ($faculty->university?->abbreviation ? $faculty->university->abbreviation.' · ' : '').$faculty->name;
+                                                $isUnlocked = $selectedUniversityIds->contains((int) $faculty->university_id);
+                                            @endphp
+                                            <button
+                                                type="button"
+                                                class="flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50 {{ $isSelected ? 'bg-violet-50' : '' }} {{ $isUnlocked ? '' : 'hidden' }}"
+                                                data-course-filter-option
+                                                data-index="{{ $filterTypeFaculty }}"
+                                                data-type="faculty"
+                                                data-value="{{ $faculty->id }}"
+                                                data-label="{{ $label }}"
+                                                data-token="{{ $token }}"
+                                                data-search="{{ $faculty->name }} {{ $faculty->university?->abbreviation }} {{ $faculty->university?->name }}"
+                                                data-university-id="{{ $faculty->university_id }}"
+                                                data-requires="university"
+                                                data-selected="{{ $isSelected ? 'true' : 'false' }}"
+                                            >
+                                                <span class="min-w-0">
+                                                    <span class="block truncate text-neutral-950">{{ $label }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-violet-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-violet-800">Faculty · {{ $filterTypeFaculty }}</span>
+                                                </span>
+                                                <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-violet-700" style="width:16px;height:16px;" data-course-filter-check></i>
+                                            </button>
+                                        @endforeach
+                                    </div>
+
+                                    <div class="mt-1 border-t border-neutral-100 pt-1" data-course-filter-group data-group="qualification">
+                                        <p class="px-3 py-2 text-[11px] font-black uppercase tracking-[0.16em] text-neutral-400">Qualifications</p>
+                                        <p class="px-3 pb-2 text-xs font-semibold text-neutral-500 {{ $selectedFacultyIds->isNotEmpty() ? 'hidden' : '' }}" data-course-filter-locked data-locked-for="qualification">
+                                            Select a faculty to unlock qualification types
+                                        </p>
+                                        @foreach ($qualificationTypes as $type)
+                                            @php
+                                                $token = $filterTypeQualification.':'.$type->id;
+                                                $isSelected = $selectedQualificationTypeIds->contains((int) $type->id);
+                                                $facultyIdsForType = collect($qualificationTypeFacultyIds->get($type->id, []));
+                                                $isUnlocked = $selectedFacultyIds->intersect($facultyIdsForType)->isNotEmpty();
+                                            @endphp
+                                            <button
+                                                type="button"
+                                                class="flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50 {{ $isSelected ? 'bg-amber-50' : '' }} {{ $isUnlocked ? '' : 'hidden' }}"
+                                                data-course-filter-option
+                                                data-index="{{ $filterTypeQualification }}"
+                                                data-type="qualification"
+                                                data-value="{{ $type->id }}"
+                                                data-label="{{ $type->name }}"
+                                                data-token="{{ $token }}"
+                                                data-search="{{ $type->name }}"
+                                                data-faculty-ids="{{ $facultyIdsForType->implode(',') }}"
+                                                data-requires="faculty"
+                                                data-selected="{{ $isSelected ? 'true' : 'false' }}"
+                                            >
+                                                <span class="min-w-0">
+                                                    <span class="block truncate text-neutral-950">{{ $type->name }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-amber-800">Qualification · {{ $filterTypeQualification }}</span>
+                                                </span>
+                                                <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-amber-700" style="width:16px;height:16px;" data-course-filter-check></i>
+                                            </button>
+                                        @endforeach
+                                    </div>
+
+                                    <p class="hidden px-3 py-2 text-sm font-semibold text-neutral-500" data-course-filter-empty>No matches</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2.5 sm:px-4 sm:py-3">
-                            <label for="search" class="flex items-center gap-1.5 text-xs font-black uppercase text-neutral-500">
-                                <i data-lucide="search" style="width:14px;height:14px;"></i>
-                                Course keyword
-                            </label>
-                            <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Engineering, medicine, accounting" class="mt-1.5 w-full bg-transparent text-base font-black text-neutral-950 outline-none placeholder:text-neutral-400 sm:mt-2">
-                        </div>
-
-                        <button class="inline-flex min-h-14 items-center justify-center gap-2 rounded-lg bg-[#01225E] px-6 text-base font-black text-white shadow-[0_12px_28px_rgba(1,34,94,0.28)] hover:bg-[#001A48] sm:min-h-[76px]">
-                            Find courses <i data-lucide="search" style="width:18px;height:18px;"></i>
+                        <button type="submit" class="inline-flex min-h-[76px] items-center justify-center gap-2 rounded-lg bg-[#01225E] px-6 text-base font-black text-white shadow-[0_12px_28px_rgba(1,34,94,0.28)] hover:bg-[#001A48]">
+                            Search <i data-lucide="search" style="width:18px;height:18px;"></i>
                         </button>
                     </div>
 
-                    <div class="mt-3 border-t border-neutral-100 px-1 pt-3 text-xs font-bold text-neutral-500 sm:text-sm">
+                    <div class="mt-3 flex flex-col gap-3 border-t border-neutral-100 px-1 pt-3 text-sm font-bold text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
                         <span>{{ number_format($totalCourses) }} courses found{{ $selectedUniversityScopeLabel }}</span>
+                        <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-1.5 text-[#01225E] hover:text-[#001A48]">
+                            Reset filters <i data-lucide="refresh-cw" style="width:14px;height:14px;"></i>
+                        </a>
                     </div>
                 </form>
 
                 @if ($featuredUniversities->isNotEmpty())
-                    <div class="no-scrollbar mt-4 flex gap-2 overflow-x-auto pb-1">
+                    <div class="no-scrollbar mt-4 flex gap-2 overflow-x-auto pb-1" data-course-filter-pills>
                         @foreach ($featuredUniversities as $university)
                             @php
+                                $universityToken = $filterTypeUniversity.':'.$university->id;
                                 $isSelectedFeaturedUniversity = $selectedUniversityIds->contains((int) $university->id);
+                                if ($isSelectedFeaturedUniversity) {
+                                    $remainingFacultyIds = $selectedFilters
+                                        ->where('type', 'faculty')
+                                        ->reject(fn ($filter) => (int) ($filter['university_id'] ?? 0) === (int) $university->id)
+                                        ->pluck('value')
+                                        ->map(fn ($id) => (int) $id)
+                                        ->values();
+                                    $pillTokens = $selectedFilters
+                                        ->reject(function ($filter) use ($universityToken, $university, $remainingFacultyIds) {
+                                            if ($filter['token'] === $universityToken) {
+                                                return true;
+                                            }
+
+                                            if (($filter['type'] ?? '') === 'faculty' && (int) ($filter['university_id'] ?? 0) === (int) $university->id) {
+                                                return true;
+                                            }
+
+                                            if (($filter['type'] ?? '') === 'qualification') {
+                                                return collect($filter['faculty_ids'] ?? [])->intersect($remainingFacultyIds)->isEmpty();
+                                            }
+
+                                            return false;
+                                        })
+                                        ->pluck('token')
+                                        ->values()
+                                        ->all();
+                                } else {
+                                    $pillTokens = $selectedFilters->pluck('token')->push($universityToken)->unique()->values()->all();
+                                }
                                 $featuredUniversityClass = $isSelectedFeaturedUniversity
                                     ? 'border-sky-300 bg-sky-300 text-[#07111f]'
                                     : 'border-white/20 bg-white/10 text-white/80 hover:bg-white/20';
                             @endphp
                             <a
-                                href="{{ route('aps.index', $courseQuery([$university->id])) }}#search-results"
+                                href="{{ route('aps.index', $courseQuery($pillTokens)) }}#search-results"
+                                data-course-filter-pill
+                                data-token="{{ $universityToken }}"
+                                data-type="university"
+                                data-value="{{ $university->id }}"
+                                data-label="{{ $university->abbreviation ?: $university->name }}"
                                 class="inline-flex shrink-0 items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-black transition {{ $featuredUniversityClass }}"
                             >
                                 <span class="grid h-5 w-5 place-items-center overflow-hidden rounded-full bg-white/90 text-[10px] text-[#01225E]">
@@ -470,7 +602,7 @@
                     <div class="university-marquee-track flex gap-3 px-4">
                         @foreach ([false, true] as $duplicate)
                             @foreach ($universities as $university)
-                                <a href="{{ route('aps.index', ['university_ids' => [$university->id]]) }}#search-results" @if ($duplicate) aria-hidden="true" tabindex="-1" @endif class="flex w-64 shrink-0 items-center gap-3 rounded-lg border border-neutral-200 bg-white px-4 py-3 hover:border-[#01225E]/40 hover:bg-blue-50/50">
+                                <a href="{{ route('aps.index', $courseQuery([$filterTypeUniversity.':'.$university->id])) }}#search-results" @if ($duplicate) aria-hidden="true" tabindex="-1" @endif class="flex w-64 shrink-0 items-center gap-3 rounded-lg border border-neutral-200 bg-white px-4 py-3 hover:border-[#01225E]/40 hover:bg-blue-50/50">
                                     <span class="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-neutral-200 bg-white text-xs font-black text-[#01225E]">
                                         @if ($university->logo)
                                             <img src="{{ asset($university->logo) }}" alt="{{ $university->name }} logo" class="h-full w-full object-contain p-1.5">
@@ -496,101 +628,348 @@
 
 @push('scripts')
     <script>
-        document.querySelectorAll('[data-university-multiselect]').forEach((multiselect) => {
-            const trigger = multiselect.querySelector('[data-university-trigger]');
-            const panel = multiselect.querySelector('[data-university-panel]');
-            const search = multiselect.querySelector('[data-university-search]');
-            const summary = multiselect.querySelector('[data-university-summary]');
-            const countLabel = multiselect.querySelector('[data-university-count]');
-            const empty = multiselect.querySelector('[data-university-empty]');
-            const done = multiselect.querySelector('[data-university-done]');
-            const checkboxes = Array.from(multiselect.querySelectorAll('[data-university-checkbox]'));
-            const options = Array.from(multiselect.querySelectorAll('[data-university-option]'));
-            const clearButtons = Array.from(multiselect.querySelectorAll('[data-university-clear]'));
+        (() => {
+            const root = document.querySelector('[data-course-filter]');
+            const form = document.querySelector('[data-course-filter-form]');
+            if (! root || ! form) return;
+
+            const input = root.querySelector('[data-course-filter-input]');
+            const panel = root.querySelector('[data-course-filter-panel]');
+            const tags = root.querySelector('[data-course-filter-tags]');
+            const empty = root.querySelector('[data-course-filter-empty]');
+            const options = Array.from(root.querySelectorAll('[data-course-filter-option]'));
+            const groups = Array.from(root.querySelectorAll('[data-course-filter-group]'));
+            const pills = Array.from(document.querySelectorAll('[data-course-filter-pill]'));
+            const badgeClasses = {
+                university: 'bg-sky-100 text-sky-800',
+                faculty: 'bg-violet-100 text-violet-800',
+                qualification: 'bg-amber-100 text-amber-800',
+            };
+            const typeLabels = {
+                university: 'University',
+                faculty: 'Faculty',
+                qualification: 'Qualification',
+            };
+            const selectedClass = {
+                university: 'bg-sky-50',
+                faculty: 'bg-violet-50',
+                qualification: 'bg-amber-50',
+            };
 
             const normalise = (value) => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+            const refreshIcons = () => {
+                if (window.lucide) window.lucide.createIcons();
+            };
+            const tagNodes = () => Array.from(tags.querySelectorAll('[data-course-filter-tag]'));
+            const selectedTokens = () => tagNodes().map((tag) => tag.dataset.token);
+            const selectedValues = (type) => tagNodes()
+                .filter((tag) => tag.dataset.type === type)
+                .map((tag) => String(tag.dataset.value));
+
             const open = () => {
                 panel.classList.remove('hidden');
-                trigger.setAttribute('aria-expanded', 'true');
+                input.setAttribute('aria-expanded', 'true');
+                syncCascade();
+                filterOptions();
             };
             const close = () => {
                 panel.classList.add('hidden');
-                trigger.setAttribute('aria-expanded', 'false');
+                input.setAttribute('aria-expanded', 'false');
+            };
+
+            const syncOptionState = (token, selected) => {
+                const option = options.find((item) => item.dataset.token === token);
+                if (! option) return;
+
+                option.dataset.selected = selected ? 'true' : 'false';
+                Object.values(selectedClass).forEach((className) => option.classList.remove(className));
+                if (selected && selectedClass[option.dataset.type]) {
+                    option.classList.add(selectedClass[option.dataset.type]);
+                }
+                option.querySelector('[data-course-filter-check]')?.classList.toggle('hidden', ! selected);
+            };
+
+            const syncPillState = (token, selected) => {
+                const pill = pills.find((item) => item.dataset.token === token);
+                if (! pill) return;
+
+                pill.classList.toggle('border-sky-300', selected);
+                pill.classList.toggle('bg-sky-300', selected);
+                pill.classList.toggle('text-[#07111f]', selected);
+                pill.classList.toggle('border-white/20', ! selected);
+                pill.classList.toggle('bg-white/10', ! selected);
+                pill.classList.toggle('text-white/80', ! selected);
+                pill.classList.toggle('hover:bg-white/20', ! selected);
+            };
+
+            const updatePlaceholder = () => {
+                input.placeholder = selectedTokens().length === 0
+                    ? 'Search university, faculty, qualification'
+                    : 'Add another…';
+            };
+
+            const pruneDependentTags = () => {
+                const universityIds = new Set(selectedValues('university'));
+                const facultyIds = new Set(
+                    tagNodes()
+                        .filter((tag) => tag.dataset.type === 'faculty' && universityIds.has(String(tag.dataset.universityId)))
+                        .map((tag) => String(tag.dataset.value))
+                );
+                const staleTokens = tagNodes()
+                    .filter((tag) => {
+                        if (tag.dataset.type === 'faculty') {
+                            return ! universityIds.has(String(tag.dataset.universityId));
+                        }
+
+                        if (tag.dataset.type === 'qualification') {
+                            const allowedFacultyIds = String(tag.dataset.facultyIds || '')
+                                .split(',')
+                                .filter(Boolean);
+
+                            return ! allowedFacultyIds.some((id) => facultyIds.has(String(id)));
+                        }
+
+                        return false;
+                    })
+                    .map((tag) => tag.dataset.token);
+
+                staleTokens.forEach((token) => removeTag(token, false));
+            };
+            const syncCascade = () => {
+                const universityIds = new Set(selectedValues('university'));
+                const facultyIds = new Set(selectedValues('faculty'));
+
+                options.forEach((option) => {
+                    let unlocked = true;
+
+                    if (option.dataset.requires === 'university') {
+                        unlocked = universityIds.has(String(option.dataset.universityId));
+                    }
+
+                    if (option.dataset.requires === 'faculty') {
+                        const allowedFacultyIds = String(option.dataset.facultyIds || '')
+                            .split(',')
+                            .filter(Boolean);
+                        unlocked = allowedFacultyIds.some((id) => facultyIds.has(String(id)));
+                    }
+
+                    option.dataset.unlocked = unlocked ? 'true' : 'false';
+                    if (! unlocked && option.dataset.selected === 'true') {
+                        removeTag(option.dataset.token, false);
+                    }
+                });
+
+                root.querySelectorAll('[data-course-filter-locked]').forEach((lock) => {
+                    const lockedFor = lock.dataset.lockedFor;
+                    if (lockedFor === 'faculty') {
+                        lock.classList.toggle('hidden', universityIds.size > 0);
+                    }
+                    if (lockedFor === 'qualification') {
+                        lock.classList.toggle('hidden', facultyIds.size > 0);
+                    }
+                });
+            };
+
+            const addTag = (optionLike) => {
+                const dataset = optionLike.dataset || optionLike;
+                const token = dataset.token;
+                if (! token || selectedTokens().includes(token)) return;
+
+                const type = dataset.type || 'university';
+                const tag = document.createElement('span');
+                tag.className = 'inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-2.5 py-1 text-xs font-black text-neutral-800';
+                tag.dataset.courseFilterTag = '';
+                tag.dataset.token = token;
+                tag.dataset.type = type;
+                tag.dataset.value = dataset.value || '';
+                if (dataset.universityId) tag.dataset.universityId = dataset.universityId;
+                if (dataset.facultyIds) tag.dataset.facultyIds = dataset.facultyIds;
+
+                tag.innerHTML = `
+                    <span class="rounded-full px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] ${badgeClasses[type] || 'bg-neutral-100 text-neutral-700'}">${typeLabels[type] || 'Filter'}</span>
+                    <span></span>
+                    <button type="button" class="grid h-4 w-4 place-items-center rounded-full text-neutral-400 hover:bg-neutral-100 hover:text-neutral-700" data-course-filter-remove aria-label="Remove filter">
+                        <i data-lucide="x" style="width:12px;height:12px;"></i>
+                    </button>
+                    <input type="hidden" name="filter[]" value="">
+                `;
+                tag.querySelector('span:nth-child(2)').textContent = dataset.label || '';
+                tag.querySelector('input[type="hidden"]').value = token;
+                tags.appendChild(tag);
+
+                syncOptionState(token, true);
+                syncPillState(token, true);
+                pruneDependentTags();
+                syncCascade();
+                updatePlaceholder();
+                refreshIcons();
+            };
+
+            const removeTag = (token, cascade = true) => {
+                const tag = tagNodes().find((item) => item.dataset.token === token);
+                if (! tag) return;
+
+                const type = tag.dataset.type;
+                const universityId = tag.dataset.universityId;
+                tag.remove();
+                syncOptionState(token, false);
+                syncPillState(token, false);
+
+                if (cascade && type === 'university') {
+                    tagNodes()
+                        .filter((item) => item.dataset.type === 'faculty' && String(item.dataset.universityId) === String(universityId))
+                        .forEach((item) => removeTag(item.dataset.token, false));
+                    pruneDependentTags();
+                }
+
+                if (cascade) {
+                    pruneDependentTags();
+                    syncCascade();
+                }
+
+                updatePlaceholder();
+            };
+
+            const toggleOption = (option) => {
+                const token = option.dataset.token;
+                if (! token) return;
+
+                if (selectedTokens().includes(token)) {
+                    removeTag(token);
+                    return;
+                }
+
+                if (option.dataset.requires && option.dataset.unlocked === 'false') {
+                    return;
+                }
+
+                addTag(option);
             };
 
             const filterOptions = () => {
-                const query = normalise(search?.value);
+                const query = normalise(input.value);
                 let visibleCount = 0;
 
                 options.forEach((option) => {
-                    const haystack = normalise(option.dataset.search || option.textContent);
-                    const isVisible = query === '' || haystack.includes(query);
+                    const unlocked = option.dataset.unlocked !== 'false';
+                    const haystack = normalise(option.dataset.search || option.dataset.label);
+                    const matchesQuery = query === '' || haystack.includes(query);
+                    const isVisible = unlocked && matchesQuery;
                     option.classList.toggle('hidden', ! isVisible);
-                    visibleCount += isVisible ? 1 : 0;
+                    if (isVisible) visibleCount += 1;
                 });
 
-                empty.classList.toggle('hidden', visibleCount > 0);
-            };
-
-            const updateSummary = () => {
-                const selected = checkboxes.filter((checkbox) => checkbox.checked);
-                const selectedCount = selected.length;
-
-                summary.textContent = selectedCount === 0
-                    ? 'All universities'
-                    : (selectedCount === 1 ? selected[0].dataset.label : `${selectedCount} universities selected`);
-                countLabel.textContent = `${selectedCount} selected`;
-            };
-
-            const clearSelection = () => {
-                checkboxes.forEach((checkbox) => {
-                    checkbox.checked = false;
+                groups.forEach((group) => {
+                    const hasVisible = Array.from(group.querySelectorAll('[data-course-filter-option]'))
+                        .some((option) => ! option.classList.contains('hidden'));
+                    const lock = group.querySelector('[data-course-filter-locked]');
+                    const lockVisible = lock && ! lock.classList.contains('hidden');
+                    group.classList.toggle('hidden', ! hasVisible && ! lockVisible);
                 });
-                updateSummary();
+
+                empty.classList.toggle('hidden', visibleCount > 0 || groups.some((group) => {
+                    const lock = group.querySelector('[data-course-filter-locked]');
+                    return lock && ! lock.classList.contains('hidden') && ! group.classList.contains('hidden');
+                }));
             };
 
-            trigger.addEventListener('click', () => {
-                const isOpen = ! panel.classList.contains('hidden');
+            const firstVisibleOption = () => options.find((option) => ! option.classList.contains('hidden'));
 
-                if (isOpen) {
+            root.querySelector('[data-course-filter-control]')?.addEventListener('click', (event) => {
+                if (event.target.closest('[data-course-filter-remove]')) return;
+                open();
+                input.focus();
+            });
+
+            input.addEventListener('focus', open);
+            input.addEventListener('input', () => {
+                open();
+                filterOptions();
+            });
+
+            input.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
                     close();
                     return;
                 }
 
-                open();
-                filterOptions();
-                search?.focus();
-            });
-
-            search?.addEventListener('input', filterOptions);
-            search?.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                    close();
+                if (event.key === 'Backspace' && input.value === '') {
+                    const current = selectedTokens();
+                    const last = current[current.length - 1];
+                    if (last) {
+                        event.preventDefault();
+                        removeTag(last);
+                        filterOptions();
+                    }
+                    return;
                 }
 
                 if (event.key === 'Enter') {
-                    event.preventDefault();
+                    const option = firstVisibleOption();
+                    if (option && ! panel.classList.contains('hidden') && normalise(input.value) !== '') {
+                        event.preventDefault();
+                        toggleOption(option);
+                        input.value = '';
+                        filterOptions();
+                    }
                 }
             });
 
-            checkboxes.forEach((checkbox) => {
-                checkbox.addEventListener('change', updateSummary);
+            options.forEach((option) => {
+                option.addEventListener('click', () => {
+                    toggleOption(option);
+                    input.value = '';
+                    filterOptions();
+                    input.focus();
+                });
             });
 
-            clearButtons.forEach((button) => {
-                button.addEventListener('click', clearSelection);
+            tags.addEventListener('click', (event) => {
+                const button = event.target.closest('[data-course-filter-remove]');
+                if (! button) return;
+
+                const tag = button.closest('[data-course-filter-tag]');
+                if (! tag) return;
+
+                event.preventDefault();
+                removeTag(tag.dataset.token);
+                filterOptions();
+                input.focus();
             });
 
-            done?.addEventListener('click', close);
+            pills.forEach((pill) => {
+                pill.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const option = options.find((item) => item.dataset.token === pill.dataset.token);
+                    if (option) {
+                        toggleOption(option);
+                    } else if (selectedTokens().includes(pill.dataset.token)) {
+                        removeTag(pill.dataset.token);
+                    } else {
+                        addTag({
+                            dataset: {
+                                token: pill.dataset.token,
+                                type: pill.dataset.type,
+                                value: pill.dataset.value,
+                                label: pill.dataset.label,
+                            },
+                        });
+                    }
+
+                    input.value = '';
+                    form.requestSubmit();
+                });
+            });
 
             document.addEventListener('click', (event) => {
-                if (! multiselect.contains(event.target)) {
+                if (! root.contains(event.target)) {
                     close();
                 }
             });
 
-            updateSummary();
-        });
+            syncCascade();
+            updatePlaceholder();
+        })();
 
         const searchResultsTarget = document.getElementById('search-results');
 

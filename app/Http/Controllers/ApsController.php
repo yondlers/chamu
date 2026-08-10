@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Bursary;
+use App\Models\Faculty;
 use App\Models\Qualification;
+use App\Models\QualificationType;
 use App\Models\University;
 use App\Models\UniversityAdmissionRule;
 use App\Services\Algorithm\MostAppliedQualificationAlgorithm;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class ApsController extends Controller
@@ -20,21 +23,66 @@ class ApsController extends Controller
             return redirect()->route('course-match.index', $request->query());
         }
 
+        $filterTypeUniversity = 0;
+        $filterTypeFaculty = 1;
+        $filterTypeQualification = 2;
         $search = trim((string) $request->query('search', ''));
         $sort = strtolower(trim((string) $request->query('sort', 'default')));
         if (! in_array($sort, ['default', 'closing', 'score', 'level', 'duration'], true)) {
             $sort = 'default';
         }
-        $requestedUniversityIds = $request->query('university_ids', []);
 
-        if (! is_array($requestedUniversityIds)) {
-            $requestedUniversityIds = [$requestedUniversityIds];
+        $rawFilters = $request->query('filter', []);
+        if (! is_array($rawFilters)) {
+            $rawFilters = filled($rawFilters) ? [$rawFilters] : [];
         }
 
+        $legacyUniversityIds = $request->query('university_ids', []);
+        if (! is_array($legacyUniversityIds)) {
+            $legacyUniversityIds = [$legacyUniversityIds];
+        }
         $legacyUniversityId = $request->integer('university_id') ?: null;
-
         if ($legacyUniversityId !== null) {
-            $requestedUniversityIds[] = $legacyUniversityId;
+            $legacyUniversityIds[] = $legacyUniversityId;
+        }
+        foreach ($legacyUniversityIds as $legacyUniversity) {
+            if (is_numeric($legacyUniversity) && (int) $legacyUniversity > 0) {
+                $rawFilters[] = $filterTypeUniversity.':'.(int) $legacyUniversity;
+            }
+        }
+
+        $selectedUniversityIds = [];
+        $selectedFacultyIds = [];
+        $selectedQualificationTypeIds = [];
+
+        foreach ($rawFilters as $rawFilter) {
+            if (! is_string($rawFilter) || ! str_contains($rawFilter, ':')) {
+                continue;
+            }
+
+            [$typeIndex, $value] = explode(':', $rawFilter, 2);
+            $typeIndex = (int) $typeIndex;
+            $value = trim($value);
+
+            if ($value === '' || ! ctype_digit($value)) {
+                continue;
+            }
+
+            $id = (int) $value;
+
+            if ($typeIndex === $filterTypeUniversity) {
+                $selectedUniversityIds[] = $id;
+                continue;
+            }
+
+            if ($typeIndex === $filterTypeFaculty) {
+                $selectedFacultyIds[] = $id;
+                continue;
+            }
+
+            if ($typeIndex === $filterTypeQualification) {
+                $selectedQualificationTypeIds[] = $id;
+            }
         }
 
         $universities = University::query()
@@ -43,19 +91,69 @@ class ApsController extends Controller
             ->get();
         $validUniversityIds = $universities
             ->pluck('id')
-            ->map(fn ($id) => (int) $id);
-        $selectedUniversityIds = collect($requestedUniversityIds)
-            ->filter(fn ($id) => is_numeric($id))
             ->map(fn ($id) => (int) $id)
-            ->filter(fn ($id) => $id > 0)
+            ->all();
+
+        $faculties = Faculty::query()
+            ->with('university:id,name,abbreviation')
+            ->orderBy('name')
+            ->get(['id', 'name', 'university_id']);
+
+        $qualificationTypes = QualificationType::query()
+            ->orderBy('name')
+            ->get(['id', 'name']);
+
+        $qualificationTypeFacultyIds = DB::table('qualifications')
+            ->whereNotNull('qualification_type_id')
+            ->whereNotNull('faculty_id')
+            ->select('qualification_type_id', 'faculty_id')
+            ->distinct()
+            ->get()
+            ->groupBy('qualification_type_id')
+            ->map(fn (Collection $rows) => $rows
+                ->pluck('faculty_id')
+                ->map(fn ($id) => (int) $id)
+                ->unique()
+                ->values()
+                ->all());
+
+        $selectedUniversityIds = collect($selectedUniversityIds)
             ->unique()
-            ->intersect($validUniversityIds)
+            ->filter(fn (int $id) => in_array($id, $validUniversityIds, true))
             ->values();
+
+        $facultiesById = $faculties->keyBy('id');
+        $selectedFacultyIds = collect($selectedFacultyIds)
+            ->unique()
+            ->filter(function (int $id) use ($facultiesById, $selectedUniversityIds) {
+                $faculty = $facultiesById->get($id);
+
+                if ($faculty === null || $selectedUniversityIds->isEmpty()) {
+                    return false;
+                }
+
+                return $selectedUniversityIds->contains((int) $faculty->university_id);
+            })
+            ->values();
+
+        $selectedQualificationTypeIds = collect($selectedQualificationTypeIds)
+            ->unique()
+            ->filter(function (int $id) use ($qualificationTypeFacultyIds, $selectedFacultyIds, $qualificationTypes) {
+                if ($selectedFacultyIds->isEmpty() || ! $qualificationTypes->contains('id', $id)) {
+                    return false;
+                }
+
+                $facultyIds = collect($qualificationTypeFacultyIds->get($id, []));
+
+                return $facultyIds->intersect($selectedFacultyIds)->isNotEmpty();
+            })
+            ->values();
+
         $qualificationCount = Qualification::query()->count();
         $bursaryCount = Schema::hasTable('bursaries') ? Bursary::query()->count() : 0;
         $isInitialApsLoad = count($request->query()) === 0;
 
-        $qualificationQuery = function () use ($selectedUniversityIds, $search) {
+        $qualificationQuery = function () use ($selectedUniversityIds, $selectedFacultyIds, $selectedQualificationTypeIds, $search) {
             return Qualification::query()
                 ->with([
                     'faculty:id,name',
@@ -64,6 +162,8 @@ class ApsController extends Controller
                     'nqfLevel:id,level,name,sort_order',
                 ])
                 ->when($selectedUniversityIds->isNotEmpty(), fn ($query) => $query->whereIn('university_id', $selectedUniversityIds->all()))
+                ->when($selectedFacultyIds->isNotEmpty(), fn ($query) => $query->whereIn('faculty_id', $selectedFacultyIds->all()))
+                ->when($selectedQualificationTypeIds->isNotEmpty(), fn ($query) => $query->whereIn('qualification_type_id', $selectedQualificationTypeIds->all()))
                 ->when($search !== '', function ($query) use ($search) {
                     $query->where(function ($query) use ($search) {
                         $query
@@ -78,7 +178,6 @@ class ApsController extends Controller
                     });
                 });
         };
-
         $allCourses = $qualificationQuery()->get();
         $sortedCourses = match (true) {
             $isInitialApsLoad => $mostAppliedQualificationAlgorithm->rankForFirstScreen($allCourses),
@@ -178,16 +277,96 @@ class ApsController extends Controller
             return $course;
         });
 
+        $universitiesById = $universities->keyBy('id');
+        $qualificationTypesById = $qualificationTypes->keyBy('id');
+
+        $selectedFilters = $selectedUniversityIds
+            ->map(function (int $universityId) use ($universitiesById, $filterTypeUniversity) {
+                $university = $universitiesById->get($universityId);
+
+                if ($university === null) {
+                    return null;
+                }
+
+                $label = $university->abbreviation && $university->abbreviation !== $university->name
+                    ? $university->abbreviation
+                    : $university->name;
+
+                return [
+                    'index' => $filterTypeUniversity,
+                    'type' => 'university',
+                    'value' => (string) $universityId,
+                    'label' => $label,
+                    'token' => $filterTypeUniversity.':'.$universityId,
+                    'university_id' => $universityId,
+                ];
+            })
+            ->filter()
+            ->concat(
+                $selectedFacultyIds->map(function (int $facultyId) use ($facultiesById, $filterTypeFaculty) {
+                    $faculty = $facultiesById->get($facultyId);
+
+                    if ($faculty === null) {
+                        return null;
+                    }
+
+                    $universityAbbreviation = $faculty->university?->abbreviation;
+                    $label = $universityAbbreviation
+                        ? $universityAbbreviation.' · '.$faculty->name
+                        : $faculty->name;
+
+                    return [
+                        'index' => $filterTypeFaculty,
+                        'type' => 'faculty',
+                        'value' => (string) $facultyId,
+                        'label' => $label,
+                        'token' => $filterTypeFaculty.':'.$facultyId,
+                        'university_id' => (int) $faculty->university_id,
+                    ];
+                })->filter()->values()
+            )
+            ->concat(
+                $selectedQualificationTypeIds->map(function (int $typeId) use ($qualificationTypesById, $filterTypeQualification, $qualificationTypeFacultyIds) {
+                    $type = $qualificationTypesById->get($typeId);
+
+                    if ($type === null) {
+                        return null;
+                    }
+
+                    return [
+                        'index' => $filterTypeQualification,
+                        'type' => 'qualification',
+                        'value' => (string) $typeId,
+                        'label' => $type->name,
+                        'token' => $filterTypeQualification.':'.$typeId,
+                        'faculty_ids' => $qualificationTypeFacultyIds->get($typeId, []),
+                    ];
+                })->filter()->values()
+            )
+            ->values();
+
         return view('aps.index', [
             'search' => $search,
             'sort' => $sort,
             'universities' => $universities,
+            'faculties' => $faculties,
+            'qualificationTypes' => $qualificationTypes,
+            'qualificationTypeFacultyIds' => $qualificationTypeFacultyIds,
             'qualificationCount' => $qualificationCount,
             'bursaryCount' => $bursaryCount,
             'courses' => $courses,
+            'selectedFilters' => $selectedFilters,
+            'selectedUniversityIds' => $selectedUniversityIds->all(),
+            'selectedFacultyIds' => $selectedFacultyIds->all(),
+            'selectedQualificationTypeIds' => $selectedQualificationTypeIds->all(),
+            'filterTypeUniversity' => $filterTypeUniversity,
+            'filterTypeFaculty' => $filterTypeFaculty,
+            'filterTypeQualification' => $filterTypeQualification,
             'filters' => [
                 'university_id' => $selectedUniversityIds->first(),
                 'university_ids' => $selectedUniversityIds->all(),
+                'faculty_ids' => $selectedFacultyIds->all(),
+                'qualification_type_ids' => $selectedQualificationTypeIds->all(),
             ],
         ]);
     }
