@@ -4,7 +4,7 @@
 
 @section('content')
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-8">
-        <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-500 hover:text-neutral-900">
+        <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-2 text-sm font-semibold text-neutral-500 hover:text-neutral-900">
             <i data-lucide="arrow-left" style="width:16px;height:16px;"></i>
             Course matches
         </a>

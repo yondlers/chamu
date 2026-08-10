@@ -21,7 +21,7 @@
         </div>
 
         <section class="mb-6 grid gap-4 md:grid-cols-2">
-            <a href="{{ route('course-match.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
+            <a href="{{ route('aps.index') }}" class="rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
                 <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700">
                     <i data-lucide="target" style="width:20px;height:20px;"></i>
                 </span>

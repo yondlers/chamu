@@ -53,7 +53,7 @@ class CourseController extends Controller
         return redirect()->route('public.qualifications.show', [
             'university' => $course->university_slug,
             'qualification' => $course->qualification_slug,
-            'from' => 'course-match',
+            'from' => 'aps',
         ]);
             
     }

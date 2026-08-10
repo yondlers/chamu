@@ -68,9 +68,9 @@
         $studentNavItems = [
             [
                 'label' => 'Course',
-                'href' => route('course-match.index'),
+                'href' => route('aps.index'),
                 'icon' => 'target',
-                'active' => request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') || request()->routeIs('course-match.*') || request()->routeIs('courses.*') || request()->routeIs('universities.*') || request()->routeIs('public.universities.*') || request()->routeIs('public.qualifications.*'),
+                'active' => request()->routeIs('aps.*') || request()->routeIs('aps-calculator.*') || request()->routeIs('courses.*') || request()->routeIs('universities.*') || request()->routeIs('public.universities.*') || request()->routeIs('public.qualifications.*'),
             ],
             [
                 'label' => 'Funding',

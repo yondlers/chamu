@@ -159,32 +159,29 @@ class QualificationController extends Controller
         ?array $originBreadcrumb,
         bool $hasSavedMarks
     ): array {
-        $publicBrowseUrl = route('aps.index', [
+        $browseUrl = route('aps.index', [
             'university_id' => $university->id,
         ]);
-        $matchUrl = route('course-match.index', [
+        $matchUrl = route('aps.index', array_filter([
             'university_id' => $university->id,
             'faculty_id' => $qualification->faculty_id,
             'search' => $qualification->name,
-        ]);
-        $browseUrl = route('course-match.index', [
-            'university_id' => $university->id,
-        ]);
+        ]));
 
-        if ($request->user() === null) {
+        if ($originBreadcrumb) {
             return [
-                'label' => 'Browse Qualifications',
-                'url' => $publicBrowseUrl,
-                'icon' => 'list-search',
-                'kind' => 'public_browse',
+                'label' => 'Back to courses',
+                'url' => $originBreadcrumb['url'],
+                'icon' => 'arrow-left',
+                'kind' => 'saved_match',
             ];
         }
 
-        if ($hasSavedMarks) {
+        if ($request->user() !== null && $hasSavedMarks) {
             return [
-                'label' => $originBreadcrumb ? 'Back to Course matches' : 'View My Matches',
-                'url' => $originBreadcrumb['url'] ?? $matchUrl,
-                'icon' => $originBreadcrumb ? 'arrow-left' : 'target',
+                'label' => 'Browse courses',
+                'url' => $matchUrl,
+                'icon' => 'target',
                 'kind' => 'saved_match',
             ];
         }
@@ -193,7 +190,7 @@ class QualificationController extends Controller
             'label' => 'Browse Qualifications',
             'url' => $browseUrl,
             'icon' => 'list-search',
-            'kind' => 'browse_qualifications',
+            'kind' => $request->user() === null ? 'public_browse' : 'browse_qualifications',
         ];
     }
 
@@ -202,13 +199,13 @@ class QualificationController extends Controller
      */
     private function originBreadcrumb(Request $request): ?array
     {
-        if ($request->query('from') !== 'course-match') {
+        if (! in_array($request->query('from'), ['aps', 'course-match'], true)) {
             return null;
         }
 
-        $courseMatchPath = route('course-match.index', [], false);
+        $apsPath = route('aps.index', [], false);
         $returnTo = $request->query('return_to');
-        $url = $courseMatchPath;
+        $url = $apsPath;
 
         if (is_string($returnTo) && $returnTo !== '') {
             $parts = parse_url($returnTo);
@@ -217,9 +214,13 @@ class QualificationController extends Controller
 
             if (
                 is_string($path)
-                && str_starts_with($path, $courseMatchPath)
+                && (str_starts_with($path, $apsPath) || str_starts_with($path, '/course-match'))
                 && ($host === null || strcasecmp($host, $request->getHost()) === 0)
             ) {
+                if (str_starts_with($path, '/course-match')) {
+                    $path = $apsPath.substr($path, strlen('/course-match'));
+                }
+
                 $url = $path
                     .(isset($parts['query']) ? '?'.$parts['query'] : '')
                     .(isset($parts['fragment']) ? '#'.$parts['fragment'] : '');
@@ -227,7 +228,7 @@ class QualificationController extends Controller
         }
 
         return [
-            'label' => 'Course matches',
+            'label' => 'Courses',
             'url' => $url,
         ];
     }

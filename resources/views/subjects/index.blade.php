@@ -20,7 +20,7 @@
                 <p class="mt-2 text-neutral-500">Choose your grade and term, pick subjects, then enter your most recent marks on this one screen.</p>
             </div>
             <div class="flex flex-wrap gap-2">
-                <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
+                <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                     <i data-lucide="graduation-cap" style="width:16px;height:16px;"></i>
                     Courses
                 </a>
@@ -191,7 +191,7 @@
             </section>
 
             <div class="flex justify-end gap-3">
-                <a href="{{ route('course-match.index') }}" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">Browse courses</a>
+                <a href="{{ route('aps.index') }}" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">Browse courses</a>
                 <button id="save-subjects-button" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-500">
                     Save subjects & marks <i data-lucide="save" style="width:18px;height:18px;"></i>
                 </button>

@@ -30,7 +30,7 @@
                         <a href="{{ route('subjects.index', ['continue' => 1]) }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-black text-[#01225E] hover:bg-white/90">
                             Add subjects & marks <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
                         </a>
-                        <a href="{{ route('course-match.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-5 py-3.5 text-sm font-black text-white hover:bg-white/10">
+                        <a href="{{ route('aps.index') }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-5 py-3.5 text-sm font-black text-white hover:bg-white/10">
                             Browse courses first
                         </a>
                     </div>

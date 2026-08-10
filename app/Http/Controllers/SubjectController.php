@@ -311,7 +311,7 @@ class SubjectController extends Controller
 
         if (! $manage) {
             return redirect()
-                ->route('course-match.index', ['term_id' => $data['term_id']])
+                ->route('aps.index')
                 ->with('status', 'Subjects and latest marks saved. You can browse courses any time.');
         }
 

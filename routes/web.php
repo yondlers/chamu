@@ -16,7 +16,6 @@ use App\Http\Controllers\BursaryApplicationController;
 use App\Http\Controllers\BursaryController;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\CourseController;
-use App\Http\Controllers\CourseMatchController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmailOpenController;
 use App\Http\Controllers\GuideController;
@@ -133,6 +132,9 @@ Route::scopeBindings()->group(function () {
 });
 
 Route::get('/aps', [ApsController::class, 'index'])->name('aps.index');
+Route::get('/course-match', function (\Illuminate\Http\Request $request) {
+    return redirect()->route('aps.index', $request->query(), 301);
+});
 Route::get('/bursaries', [BursaryController::class, 'index'])->name('bursaries.index');
 Route::get('/bursaries/{bursary}', [BursaryController::class, 'show'])->name('bursaries.show');
 Route::post('/bursaries/{bursary}/apply', [BursaryApplicationController::class, 'store'])
@@ -164,7 +166,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/tutor/lookups/qualifications', [TutorApplicationController::class, 'searchQualifications'])->name('tutor.lookups.qualifications');
     Route::get('/tutor/lookups/subjects', [TutorApplicationController::class, 'searchSubjects'])->name('tutor.lookups.subjects');
     Route::get('/tutor/bookings', [TutorBookingController::class, 'index'])->name('tutor.bookings.index');
-    Route::get('/course-match', [CourseMatchController::class, 'index'])->name('course-match.index');
     Route::get('/universities/{university}/programmes', [UniversityProgrammeController::class, 'index'])->name('universities.programmes');
     Route::get('/courses/{qualification}', [CourseController::class, 'show'])->name('courses.show');
     Route::get('/marks', [MarkController::class, 'index'])->name('marks.index');

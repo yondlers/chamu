@@ -5,9 +5,9 @@
 @section('content')
     <main class="mx-auto max-w-7xl px-5 py-8 lg:px-8">
         <div class="mb-5 flex flex-wrap items-center gap-3 text-sm font-semibold text-neutral-500">
-            <a href="{{ route('course-match.index') }}" class="inline-flex items-center gap-2 hover:text-neutral-900">
+            <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-2 hover:text-neutral-900">
                 <i data-lucide="arrow-left" style="width:16px;height:16px;"></i>
-                Course matches
+                Courses
             </a>
         </div>
 
@@ -41,8 +41,8 @@
                                     Website <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                                 </a>
                             @endif
-                            <a href="{{ route('course-match.index', ['university_id' => $university->id]) }}" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 text-sm font-bold text-white hover:bg-white/10">
-                                Match my marks <i data-lucide="target" style="width:15px;height:15px;"></i>
+                            <a href="{{ route('aps.index', ['university_id' => $university->id]) }}" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2 text-sm font-bold text-white hover:bg-white/10">
+                                Browse courses <i data-lucide="target" style="width:15px;height:15px;"></i>
                             </a>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                 <a href="{{ route('public.qualifications.show', ['university' => $university->slug, 'qualification' => $qualification->slug]) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
                                     Details <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
                                 </a>
-                                <a href="{{ route('course-match.index', ['university_id' => $university->id, 'faculty_id' => $qualification->faculty_id, 'search' => $qualification->name]) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
+                                <a href="{{ route('aps.index', ['university_id' => $university->id, 'faculty_id' => $qualification->faculty_id, 'search' => $qualification->name]) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-semibold hover:bg-neutral-50">
                                     Check fit <i data-lucide="target" style="width:16px;height:16px;"></i>
                                 </a>
                             </div>

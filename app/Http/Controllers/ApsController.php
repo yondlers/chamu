@@ -19,10 +19,6 @@ class ApsController extends Controller
 {
     public function index(Request $request, MostAppliedQualificationAlgorithm $mostAppliedQualificationAlgorithm)
     {
-        if ($request->user() !== null) {
-            return redirect()->route('course-match.index', $request->query());
-        }
-
         $filterTypeUniversity = 0;
         $filterTypeFaculty = 1;
         $filterTypeQualification = 2;
@@ -49,6 +45,16 @@ class ApsController extends Controller
             if (is_numeric($legacyUniversity) && (int) $legacyUniversity > 0) {
                 $rawFilters[] = $filterTypeUniversity.':'.(int) $legacyUniversity;
             }
+        }
+
+        $legacyFacultyId = $request->integer('faculty_id') ?: null;
+        if ($legacyFacultyId !== null) {
+            $rawFilters[] = $filterTypeFaculty.':'.$legacyFacultyId;
+        }
+
+        $legacyQualificationTypeId = $request->integer('qualification_type_id') ?: null;
+        if ($legacyQualificationTypeId !== null) {
+            $rawFilters[] = $filterTypeQualification.':'.$legacyQualificationTypeId;
         }
 
         $selectedUniversityIds = [];
@@ -117,12 +123,22 @@ class ApsController extends Controller
                 ->values()
                 ->all());
 
+        $facultiesById = $faculties->keyBy('id');
+
+        // Faculty selections imply their parent universities so cascading filters stay valid.
+        foreach ($selectedFacultyIds as $facultyId) {
+            $faculty = $facultiesById->get($facultyId);
+
+            if ($faculty !== null) {
+                $selectedUniversityIds[] = (int) $faculty->university_id;
+            }
+        }
+
         $selectedUniversityIds = collect($selectedUniversityIds)
             ->unique()
             ->filter(fn (int $id) => in_array($id, $validUniversityIds, true))
             ->values();
 
-        $facultiesById = $faculties->keyBy('id');
         $selectedFacultyIds = collect($selectedFacultyIds)
             ->unique()
             ->filter(function (int $id) use ($facultiesById, $selectedUniversityIds) {
