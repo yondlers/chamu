@@ -2,16 +2,13 @@
 
 namespace Database\Seeders\Universities;
 
-use App\Models\Career;
 use App\Models\CareerQualification;
+use App\Support\CareerUpsert;
 use Illuminate\Support\Str;
 
 trait SeedsCareerRelationships
 {
-    /**
-     * @var array<string, Career>
-     */
-    private array $careerCacheByName = [];
+    private ?CareerUpsert $careerUpsert = null;
 
     protected function syncCareerRelationships(int $qualificationId, array $qualificationData, ?string $sourceUrl = null): void
     {
@@ -22,13 +19,24 @@ trait SeedsCareerRelationships
         }
 
         $entries = $this->careerEntries($qualificationData, $sourceUrl);
-        $currentLinks = CareerQualification::all()
+        $currentLinks = CareerQualification::query()
             ->where('qualification_id', $qualificationId)
-            ->values();
+            ->get();
         $activeCareerIds = [];
 
         foreach ($entries as $index => $entry) {
-            $career = $this->careerFor($entry);
+            $result = $this->careerUpsert()->upsert($entry['name'], [
+                'salary_expectation' => $entry['salary_expectation'],
+                'description' => $entry['description'],
+                'source_url' => $entry['source_url'],
+                'is_active' => true,
+            ]);
+
+            if ($result === null) {
+                continue;
+            }
+
+            $career = $result['career'];
             $activeCareerIds[] = (int) $career->id;
 
             $link = $currentLinks->first(fn (CareerQualification $currentLink) => (int) $currentLink->career_id === (int) $career->id)
@@ -46,6 +54,11 @@ trait SeedsCareerRelationships
         $currentLinks
             ->reject(fn (CareerQualification $currentLink) => in_array((int) $currentLink->career_id, $activeCareerIds, true))
             ->each(fn (CareerQualification $currentLink) => $currentLink->delete());
+    }
+
+    private function careerUpsert(): CareerUpsert
+    {
+        return $this->careerUpsert ??= new CareerUpsert;
     }
 
     private function hasCareerData(array $qualificationData): bool
@@ -78,11 +91,13 @@ trait SeedsCareerRelationships
             return [];
         }
 
+        $upsert = $this->careerUpsert();
+
         return collect($rawCareers)
             ->map(function ($career, int $index) use ($sourceUrl) {
                 if (is_string($career)) {
                     return [
-                        'name' => $this->cleanCareerName($career),
+                        'name' => $career,
                         'salary_expectation' => null,
                         'description' => null,
                         'source_url' => $sourceUrl,
@@ -101,7 +116,7 @@ trait SeedsCareerRelationships
                 }
 
                 return [
-                    'name' => $this->cleanCareerName($name),
+                    'name' => $name,
                     'salary_expectation' => $career['salary_expectation'] ?? $career['salary'] ?? null,
                     'description' => $career['description'] ?? null,
                     'source_url' => $career['source_url'] ?? $sourceUrl,
@@ -109,8 +124,12 @@ trait SeedsCareerRelationships
                     'notes' => $career['notes'] ?? null,
                 ];
             })
-            ->filter(fn ($career) => is_array($career) && $this->careerNameIsUsable($career['name']))
-            ->unique(fn ($career) => Str::lower($career['name']))
+            ->filter(function ($career) use ($upsert) {
+                return is_array($career)
+                    && is_string($career['name'] ?? null)
+                    && $upsert->normalizeName($career['name']) !== null;
+            })
+            ->unique(fn ($career) => $upsert->matchKey($career['name']))
             ->take(12)
             ->values()
             ->all();
@@ -179,59 +198,5 @@ trait SeedsCareerRelationships
             ->filter()
             ->values()
             ->all();
-    }
-
-    private function cleanCareerName(string $name): string
-    {
-        $name = Str::squish($name);
-        $name = preg_replace('/^(careers?|career opportunities?|graduates (can )?(become|work as|are employed as|follow careers in)|roles? include)\s*:?\s*/i', '', $name) ?? $name;
-        $name = trim($name, " \t\n\r\0\x0B.-");
-
-        return ucfirst($name);
-    }
-
-    private function careerNameIsUsable(string $name): bool
-    {
-        if ($name === '' || Str::length($name) < 3 || Str::length($name) > 90) {
-            return false;
-        }
-
-        return ! Str::contains(Str::lower($name), [
-            'applicants',
-            'course prepares',
-            'degree programme',
-            'employment opportunities',
-            'graduates ',
-            'programme ',
-            'students ',
-            'the course',
-        ]);
-    }
-
-    /**
-     * @param  array{name: string, salary_expectation: string|null, description: string|null, source_url: string|null}  $entry
-     */
-    private function careerFor(array $entry): Career
-    {
-        if ($this->careerCacheByName === []) {
-            $this->careerCacheByName = Career::all()
-                ->keyBy(fn (Career $career) => Str::lower($career->name))
-                ->all();
-        }
-
-        $cacheKey = Str::lower($entry['name']);
-        $career = $this->careerCacheByName[$cacheKey] ?? new Career(['name' => $entry['name']]);
-        $career->fill([
-            'name' => $entry['name'],
-            'salary_expectation' => $entry['salary_expectation'] ?: $career->salary_expectation,
-            'description' => $entry['description'] ?: $career->description,
-            'source_url' => $entry['source_url'] ?: $career->source_url,
-            'is_active' => true,
-        ]);
-        $career->save();
-
-        $this->careerCacheByName[$cacheKey] = $career;
-
-        return $career;
     }
 }
