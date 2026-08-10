@@ -63,9 +63,19 @@ class ProfileController extends Controller
             ->orderBy('name')
             ->get();
 
+        if (Schema::hasTable('user_roles')) {
+            $user->loadMissing(['roles:id,name', 'userType:id,name']);
+        } else {
+            $user->loadMissing(['userType:id,name']);
+        }
+
         return view('profile.edit', [
             'user' => $user,
             'userTypes' => $userTypes,
+            'selectedRoles' => $user->roleNames()
+                ->intersect(['pupil', 'student', 'tutor'])
+                ->values()
+                ->all(),
             'curriculums' => $curriculums,
             'grades' => $grades,
             'provinces' => $provinces,
@@ -82,43 +92,74 @@ class ProfileController extends Controller
             'last_name' => ['nullable', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255', 'alpha_dash', 'unique:users,username,'.$user->id],
             'email' => ['required', 'email', 'max:255', 'unique:users,email,'.$user->id],
-            'user_type_id' => ['required', 'exists:user_types,id'],
+            'roles' => ['required', 'array', 'min:1'],
+            'roles.*' => ['string', Rule::in(['pupil', 'student', 'tutor', 'teacher', 'parent'])],
+            'user_type_id' => ['nullable', 'exists:user_types,id'],
             'curriculum_id' => ['nullable', 'exists:curriculums,id'],
             'grade_id' => ['nullable', 'exists:grades,id'],
             'province_id' => ['nullable', 'exists:provinces,id'],
         ]);
 
-        $userType = DB::table('user_types')
-            ->where('id', $data['user_type_id'])
-            ->whereIn('name', ['pupil', 'student', 'tutor', 'teacher', 'parent'])
-            ->first(['id', 'name']);
+        $roles = collect($data['roles'])
+            ->map(fn ($role) => strtolower((string) $role))
+            ->unique()
+            ->values();
 
-        if ($userType === null) {
+        foreach (['teacher', 'parent'] as $extraRole) {
+            if ($user->hasRole($extraRole)) {
+                $roles->push($extraRole);
+            }
+        }
+
+        $roles = $roles->unique()->values();
+
+        $primaryType = null;
+        if (! empty($data['user_type_id'])) {
+            $primaryType = DB::table('user_types')
+                ->where('id', $data['user_type_id'])
+                ->whereIn('name', $roles->all())
+                ->first(['id', 'name']);
+        }
+
+        if ($primaryType === null) {
+            $preferredOrder = ['pupil', 'student', 'tutor', 'teacher', 'parent'];
+            $primaryName = collect($preferredOrder)->first(fn ($role) => $roles->contains($role)) ?? $roles->first();
+            $primaryType = DB::table('user_types')
+                ->where('name', $primaryName)
+                ->first(['id', 'name']);
+        }
+
+        if ($primaryType === null) {
             return back()
-                ->withErrors(['user_type_id' => 'Choose a valid user type.'])
+                ->withErrors(['roles' => 'Choose at least one valid account role.'])
                 ->withInput();
         }
 
-        if ($userType->name === 'pupil' && empty($data['curriculum_id'])) {
+        $isPupil = $roles->contains('pupil');
+
+        if ($isPupil && empty($data['curriculum_id'])) {
             return back()
                 ->withErrors(['curriculum_id' => 'Choose your curriculum for a high school pupil account.'])
                 ->withInput();
         }
 
         $user->forceFill([
-            'user_type_id' => $data['user_type_id'],
-            'curriculum_id' => $userType->name === 'pupil' ? $data['curriculum_id'] : null,
-            'grade_id' => $userType->name === 'pupil' ? ($data['grade_id'] ?? null) : null,
+            'user_type_id' => $primaryType->id,
+            'curriculum_id' => $isPupil ? ($data['curriculum_id'] ?? $user->curriculum_id) : $user->curriculum_id,
+            'grade_id' => $isPupil ? ($data['grade_id'] ?? $user->grade_id) : $user->grade_id,
             'province_id' => $data['province_id'] ?? null,
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'] ?? null,
             'username' => $data['username'],
             'email' => $data['email'],
+            'name' => trim($data['first_name'].' '.($data['last_name'] ?? '')),
         ])->save();
+
+        $user->syncRoles($roles->all(), $primaryType->name);
 
         return redirect()
             ->route('profile.edit')
-            ->with('status', 'Profile updated.');
+            ->with('status', 'Profile updated. Shared application details stay available across Pupil, Student, and Tutor.');
             
     }
 

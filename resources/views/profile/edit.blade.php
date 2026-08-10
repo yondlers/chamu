@@ -7,10 +7,14 @@
         $userTypeLabels = [
             'pupil' => 'Pupil (High School)',
             'student' => 'Student (University/College)',
+            'tutor' => 'Tutor',
             'teacher' => 'Teacher',
             'parent' => 'Parent',
         ];
-        $selectedUserTypeId = (int) old('user_type_id', $user->user_type_id);
+        $selectedRoles = collect(old('roles', $selectedRoles ?? $user->roleNames()->all()))
+            ->map(fn ($role) => strtolower((string) $role))
+            ->values()
+            ->all();
     @endphp
 
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-10">
@@ -18,7 +22,7 @@
             <div>
                 <p class="text-sm font-semibold text-[#01225E]">Account</p>
                 <h1 class="text-3xl font-bold mt-1">Profile details</h1>
-                <p class="mt-2 text-neutral-500">Update personal information, school context, and open subjects & marks from here.</p>
+                <p class="mt-2 text-neutral-500">You can be a Pupil, Student, and Tutor on one account. Shared details and documents carry across bursary and tutor applications.</p>
             </div>
             @if (session('status'))
                 <p class="rounded-xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700">{{ session('status') }}</p>
@@ -63,20 +67,40 @@
             </section>
 
             <section class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card">
-                <h2 class="font-bold text-xl mb-5">Learning profile</h2>
+                <h2 class="font-bold text-xl mb-2">Account roles</h2>
+                <p class="mb-5 text-sm text-neutral-500">Select every path you use. Province, contact details, institution info, and saved documents are shared across them.</p>
 
-                <div class="grid md:grid-cols-2 gap-5">
-                    <div>
-                        <label for="user_type_id" class="block text-sm font-semibold mb-2">User type</label>
-                        <select id="user_type_id" name="user_type_id" required class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
-	                            @foreach ($userTypes as $userType)
-	                                <option value="{{ $userType->id }}" @selected((int) old('user_type_id', $user->user_type_id) === $userType->id)>
-	                                    {{ $userTypeLabels[$userType->name] ?? Str::of($userType->name)->title() }}
-	                                </option>
-	                            @endforeach
-	                        </select>
-                        @error('user_type_id') <p class="mt-2 text-sm text-red-600">{{ $message }}</p> @enderror
-                    </div>
+                <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    @foreach ($userTypes as $userType)
+                        @if (in_array($userType->name, ['pupil', 'student', 'tutor'], true))
+                            <label class="flex cursor-pointer items-start gap-3 rounded-xl border border-neutral-200 px-4 py-3 hover:border-[#01225E]">
+                                <input
+                                    type="checkbox"
+                                    name="roles[]"
+                                    value="{{ $userType->name }}"
+                                    data-role-name="{{ $userType->name }}"
+                                    class="mt-1 rounded border-neutral-300 text-[#01225E] focus:ring-[#01225E] role-checkbox"
+                                    @checked(in_array($userType->name, $selectedRoles, true))
+                                >
+                                <span>
+                                    <span class="block text-sm font-bold">{{ $userTypeLabels[$userType->name] ?? Str::of($userType->name)->title() }}</span>
+                                    <span class="mt-1 block text-xs text-neutral-500">
+                                        @if ($userType->name === 'pupil')
+                                            Subjects, marks, and undergrad lookup
+                                        @elseif ($userType->name === 'student')
+                                            Bursaries and university applications
+                                        @else
+                                            Tutor application and learner bookings
+                                        @endif
+                                    </span>
+                                </span>
+                            </label>
+                        @endif
+                    @endforeach
+                </div>
+                @error('roles') <p class="mt-3 text-sm text-red-600">{{ $message }}</p> @enderror
+
+                <div class="mt-6 grid md:grid-cols-2 gap-5">
                     <div>
                         <label for="province_id" class="block text-sm font-semibold mb-2">Province</label>
                         <select id="province_id" name="province_id" class="w-full rounded-xl border border-neutral-300 px-4 py-3 outline-none focus:border-[#01225E]">
@@ -116,20 +140,27 @@
             </div>
         </form>
 
-        <section class="mt-8 grid gap-5 md:grid-cols-2">
+        <section class="mt-8 grid gap-5 md:grid-cols-3">
             <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
                 <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
                     <i data-lucide="list-checks" style="width:22px;height:22px;"></i>
                 </span>
                 <h2 class="font-bold text-xl">Subjects & marks</h2>
-                <p class="mt-2 text-sm text-neutral-500">Update grade, term, subjects, and marks together. APS is calculated automatically.</p>
+                <p class="mt-2 text-sm text-neutral-500">Pupil path: update grade, subjects, and marks. Used for APS and tutor mark prefill.</p>
             </a>
             <a href="{{ route('profile.application') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
                 <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
                     <i data-lucide="folder-check" style="width:22px;height:22px;"></i>
                 </span>
-                <h2 class="font-bold text-xl">Application profile</h2>
-                <p class="mt-2 text-sm text-neutral-500">Save bursary details and documents so Apply with Chamu is quicker.</p>
+                <h2 class="font-bold text-xl">Shared application pack</h2>
+                <p class="mt-2 text-sm text-neutral-500">Phone, address, institution, and documents reused for bursaries and tutoring.</p>
+            </a>
+            <a href="{{ route('tutor.application.welcome') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
+                <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
+                    <i data-lucide="presentation" style="width:22px;height:22px;"></i>
+                </span>
+                <h2 class="font-bold text-xl">Become a tutor</h2>
+                <p class="mt-2 text-sm text-neutral-500">Start or continue your tutor application with province and contact details already filled in.</p>
             </a>
         </section>
     </main>
@@ -138,11 +169,10 @@
 @push('scripts')
     <script>
         const grades = @json($grades->values());
-        const userTypes = @json($userTypes->values());
         const curriculumSelect = document.getElementById('curriculum_id');
         const gradeSelect = document.getElementById('grade_id');
-        const userTypeSelect = document.getElementById('user_type_id');
         const highSchoolProfileFields = document.getElementById('high-school-profile-fields');
+        const roleCheckboxes = Array.from(document.querySelectorAll('.role-checkbox'));
         const selectedGradeId = '{{ old('grade_id', $user->grade_id) }}';
 
         const refreshGrades = () => {
@@ -164,8 +194,7 @@
         refreshGrades();
 
         const refreshLearningProfile = () => {
-            const selectedUserType = userTypes.find((userType) => Number(userType.id) === Number(userTypeSelect.value));
-            const isPupil = selectedUserType?.name === 'pupil';
+            const isPupil = roleCheckboxes.some((checkbox) => checkbox.checked && checkbox.value === 'pupil');
 
             highSchoolProfileFields.classList.toggle('hidden', !isPupil);
             highSchoolProfileFields.classList.toggle('contents', isPupil);
@@ -174,7 +203,7 @@
             gradeSelect.disabled = !isPupil;
         };
 
-        userTypeSelect.addEventListener('change', refreshLearningProfile);
+        roleCheckboxes.forEach((checkbox) => checkbox.addEventListener('change', refreshLearningProfile));
         refreshLearningProfile();
     </script>
 @endpush

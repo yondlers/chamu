@@ -16,7 +16,7 @@
             <div>
                 <p class="text-sm font-semibold text-[#01225E]">Funding setup</p>
                 <h1 class="mt-1 text-3xl font-bold">Application profile</h1>
-                <p class="mt-2 max-w-2xl text-neutral-500">Save the details and documents Chamu reuses when you apply for bursaries.</p>
+                <p class="mt-2 max-w-2xl text-neutral-500">Save the details and documents Chamu reuses for bursary applications and tutor onboarding on the same account.</p>
             </div>
             <a href="{{ route('profile.edit') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                 <i data-lucide="user-cog" style="width:16px;height:16px;"></i>

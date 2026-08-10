@@ -10,6 +10,7 @@ use App\Models\BursaryApplicationDocument;
 use App\Models\BursaryDocumentRequirement;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
+use App\Services\SharedApplicationProfile;
 use App\Support\Email\EmailDeliveryLogger;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -172,6 +173,27 @@ class BursaryApplicationController extends Controller
             : (bool) ($applicationProfile?->sassa_recipient ?? false);
 
         $application = DB::transaction(function () use ($bursary, $deliveryType, $profileValue, $providerEmail, $providerPostalAddress, $request, $requirementsByKey, $sassaRecipient, $selectedSavedDocumentsWithFiles, $specialCircumstances, $user): BursaryApplication {
+            $sharedFields = [
+                'applicant_phone' => $profileValue('applicant_phone'),
+                'applicant_postal_address' => $profileValue('applicant_postal_address'),
+                'study_level' => $profileValue('study_level'),
+                'institution' => $profileValue('institution'),
+                'qualification' => $profileValue('qualification'),
+                'current_year' => $profileValue('current_year'),
+                'funding_need' => $profileValue('funding_need'),
+                'household_income' => $profileValue('household_income'),
+                'sassa_recipient' => $sassaRecipient,
+                'special_circumstances' => array_values($specialCircumstances),
+            ];
+
+            $uploadedDocuments = [];
+            foreach ((array) $request->file('documents', []) as $documentKey => $files) {
+                $uploadedDocuments[$documentKey] = $this->normaliseFiles($files);
+            }
+
+            app(SharedApplicationProfile::class)->syncFromBursary($user, $sharedFields, $uploadedDocuments);
+            $user->addRole('student');
+
             $application = BursaryApplication::create([
                 'user_id' => $user->id,
                 'bursary_id' => $bursary->id,
@@ -181,14 +203,14 @@ class BursaryApplicationController extends Controller
                 'provider_postal_address' => $providerPostalAddress,
                 'applicant_name' => $user->name ?: trim($user->first_name.' '.$user->last_name),
                 'applicant_email' => $user->email,
-                'applicant_phone' => $profileValue('applicant_phone'),
-                'applicant_postal_address' => $profileValue('applicant_postal_address'),
-                'study_level' => $profileValue('study_level'),
-                'institution' => $profileValue('institution'),
-                'qualification' => $profileValue('qualification'),
-                'current_year' => $profileValue('current_year'),
-                'funding_need' => $profileValue('funding_need'),
-                'household_income' => $profileValue('household_income'),
+                'applicant_phone' => $sharedFields['applicant_phone'],
+                'applicant_postal_address' => $sharedFields['applicant_postal_address'],
+                'study_level' => $sharedFields['study_level'],
+                'institution' => $sharedFields['institution'],
+                'qualification' => $sharedFields['qualification'],
+                'current_year' => $sharedFields['current_year'],
+                'funding_need' => $sharedFields['funding_need'],
+                'household_income' => $sharedFields['household_income'],
                 'sassa_recipient' => $sassaRecipient,
                 'special_circumstances' => array_values($specialCircumstances),
                 'metadata' => [
@@ -217,12 +239,12 @@ class BursaryApplicationController extends Controller
                 ]);
             }
 
-            foreach ((array) $request->file('documents', []) as $documentKey => $files) {
+            foreach ($uploadedDocuments as $documentKey => $files) {
                 if (! $requirementsByKey->has($documentKey)) {
                     continue;
                 }
 
-                foreach ($this->normaliseFiles($files) as $file) {
+                foreach ($files as $file) {
                     $requirement = $requirementsByKey->get($documentKey);
                     $path = $this->storeDocument($application, $documentKey, $file);
 

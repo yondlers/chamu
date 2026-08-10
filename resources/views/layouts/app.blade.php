@@ -161,13 +161,11 @@
         ];
         $navItems = $isAdminPortal ? $adminNavItems : $studentNavItems;
         $authUser = auth()->user();
-        $authUserType = strtolower((string) ($authUser?->userType?->name ?? ''));
         $tutorApplicationsReady = Illuminate\Support\Facades\Schema::hasTable('tutor_applications');
         $tutorApplication = ($authUser && $tutorApplicationsReady) ? $authUser->tutorApplication : null;
         $showBecomeTutor = $tutorApplicationsReady && ! $isAdminPortal && (
             ! auth()->check()
-            || ($authUserType !== 'tutor' && ! ($tutorApplication?->isSubmitted() ?? false))
-            || ($authUserType === 'tutor' && ($tutorApplication === null || $tutorApplication->isDraft()))
+            || ! ($tutorApplication?->isSubmitted() ?? false)
         );
         $becomeTutorHref = ! auth()->check()
             ? route('register', ['type' => 'tutor'])

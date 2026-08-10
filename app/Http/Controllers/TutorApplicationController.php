@@ -13,7 +13,7 @@ use App\Models\TutorMark;
 use App\Models\TutorStatus;
 use App\Models\University;
 use App\Models\User;
-use App\Models\UserType;
+use App\Services\SharedApplicationProfile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
@@ -147,8 +147,10 @@ class TutorApplicationController extends Controller
 
             $application->save();
 
+            app(SharedApplicationProfile::class)->syncFromTutor($user, $application);
+
             if ($action === 'submit') {
-                $this->promoteUserToTutor($user);
+                $user->addRole('tutor');
             }
 
             AuditLog::query()->create([
@@ -290,7 +292,7 @@ class TutorApplicationController extends Controller
 
     private function findOrCreateDraft(User $user): TutorApplication
     {
-        return TutorApplication::query()->firstOrCreate(
+        $application = TutorApplication::query()->firstOrCreate(
             ['user_id' => $user->id],
             [
                 'status' => TutorApplication::STATUS_DRAFT,
@@ -298,8 +300,11 @@ class TutorApplicationController extends Controller
                 'whatsapp_same_as_phone' => true,
                 'languages' => [],
                 'teaching_modes' => ['online'],
+                'province_id' => $user->province_id,
             ]
         );
+
+        return app(SharedApplicationProfile::class)->prefillTutorDraft($user, $application);
     }
 
     private function validateStep(Request $request, TutorApplication $application, int $step, bool $soft): array
@@ -582,22 +587,6 @@ class TutorApplicationController extends Controller
                     ? filter_var($slot['is_available'], FILTER_VALIDATE_BOOLEAN)
                     : true,
             ]);
-        }
-    }
-
-    private function promoteUserToTutor(User $user): void
-    {
-        $tutorType = UserType::query()->firstOrCreate(
-            ['name' => 'tutor'],
-            ['description' => 'Tutor account for offering subject tutoring to learners.']
-        );
-
-        if ((int) $user->user_type_id !== (int) $tutorType->id) {
-            $user->forceFill([
-                'user_type_id' => $tutorType->id,
-                'curriculum_id' => null,
-                'grade_id' => null,
-            ])->save();
         }
     }
 

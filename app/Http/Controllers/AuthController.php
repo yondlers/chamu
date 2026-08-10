@@ -169,8 +169,8 @@ class AuthController extends Controller
             'user_type_id' => $userType->id,
             'country_id' => $countryId,
             'province_id' => $data['province_id'] ?? null,
-            'curriculum_id' => null,
-            'grade_id' => null,
+            'curriculum_id' => $userType->name === 'pupil' ? ($data['curriculum_id'] ?? null) : null,
+            'grade_id' => $userType->name === 'pupil' ? ($data['grade_id'] ?? null) : null,
             'name' => trim($data['first_name'].' '.($data['last_name'] ?? '')),
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'] ?? null,
@@ -179,6 +179,8 @@ class AuthController extends Controller
             'password' => Hash::make($data['password']),
             'last_login_at' => now(),
         ]);
+
+        $user->addRole($userType->name);
 
         try {
             Mail::to($user->email)->send(new WelcomeToChamu($user->first_name ?: $user->name, $userType->name === 'tutor' ? 'student' : $userType->name));
@@ -198,9 +200,9 @@ class AuthController extends Controller
         };
 
         $status = match ($userType->name) {
-            'pupil' => 'Welcome. Add your latest subjects and marks when you are ready.',
-            'tutor' => 'Welcome. Complete your tutor profile when you are ready — you can save and continue later.',
-            default => 'Your student account is ready for bursary applications.',
+            'pupil' => 'Welcome. Add your latest subjects and marks when you are ready. You can also apply for bursaries or become a tutor later — your details will be reused.',
+            'tutor' => 'Welcome. Complete your tutor profile when you are ready — you can save and continue later. Student and pupil tools stay available on the same account.',
+            default => 'Your student account is ready for bursary applications. You can also look up undergrad studies or become a tutor later — shared details and documents will carry over.',
         };
 
         return redirect()

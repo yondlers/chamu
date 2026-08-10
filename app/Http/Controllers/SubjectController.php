@@ -15,11 +15,7 @@ class SubjectController extends Controller
     public function welcome(Request $request)
     {
         $user = $request->user();
-        $userTypeName = $user->userType?->name;
-
-        if ($userTypeName !== 'pupil') {
-            return redirect()->route('course-match.index');
-        }
+        $user->addRole('pupil');
 
         if ($this->userHasSubjectPreferences($user)) {
             return redirect()->route('subjects.index', ['manage' => 1]);
@@ -35,9 +31,8 @@ class SubjectController extends Controller
         $user = $request->user();
         $manage = $request->boolean('manage');
         $continue = $request->boolean('continue');
-        $userTypeName = $user->userType?->name;
 
-        if ($userTypeName === 'pupil' && ! $manage && ! $continue && ! $this->userHasSubjectPreferences($user)) {
+        if ($user->isPupil() && ! $manage && ! $continue && ! $this->userHasSubjectPreferences($user)) {
             return redirect()->route('subjects.welcome');
         }
 
@@ -204,6 +199,8 @@ class SubjectController extends Controller
                 'curriculum_id' => $data['curriculum_id'],
                 'grade_id' => $data['grade_id'],
             ])->save();
+
+            $user->addRole('pupil');
 
             DB::table('user_subject_preferences')
                 ->where('user_id', $user->id)

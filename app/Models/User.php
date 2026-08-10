@@ -6,10 +6,13 @@ namespace App\Models;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Schema;
 
 class User extends Authenticatable
 {
@@ -160,9 +163,127 @@ class User extends Authenticatable
         return $this->belongsTo(UserType::class, 'user_type_id');
     }
 
+    public function roles(): BelongsToMany
+    {
+        return $this->belongsToMany(UserType::class, 'user_roles', 'user_id', 'user_type_id')
+            ->withTimestamps();
+    }
+
+    public function roleNames(): Collection
+    {
+        if (! Schema::hasTable('user_roles')) {
+            $primary = strtolower((string) ($this->userType?->name ?? ''));
+
+            return collect($primary !== '' ? [$primary] : []);
+        }
+
+        $names = $this->relationLoaded('roles')
+            ? $this->roles->pluck('name')
+            : $this->roles()->pluck('user_types.name');
+
+        $names = $names
+            ->map(fn ($name) => strtolower((string) $name))
+            ->filter()
+            ->unique()
+            ->values();
+
+        $primary = strtolower((string) ($this->userType?->name ?? ''));
+
+        if ($primary !== '' && ! $names->contains($primary)) {
+            $names->push($primary);
+        }
+
+        return $names->values();
+    }
+
+    public function hasRole(string $role): bool
+    {
+        return $this->roleNames()->contains(strtolower(trim($role)));
+    }
+
+    public function addRole(string $role): void
+    {
+        $role = strtolower(trim($role));
+
+        if ($role === '') {
+            return;
+        }
+
+        $userType = UserType::query()->firstOrCreate(
+            ['name' => $role],
+            ['description' => ucfirst($role).' account.']
+        );
+
+        if (Schema::hasTable('user_roles')) {
+            $this->roles()->syncWithoutDetaching([$userType->id]);
+            $this->unsetRelation('roles');
+        }
+
+        if (blank($this->user_type_id)) {
+            $this->forceFill(['user_type_id' => $userType->id])->save();
+        }
+    }
+
+    /**
+     * @param  array<int, string>  $roles
+     */
+    public function syncRoles(array $roles, ?string $primaryRole = null): void
+    {
+        $roles = collect($roles)
+            ->map(fn ($role) => strtolower(trim((string) $role)))
+            ->filter()
+            ->unique()
+            ->values();
+
+        if ($roles->isEmpty()) {
+            return;
+        }
+
+        $allowed = ['pupil', 'student', 'tutor', 'teacher', 'parent'];
+        $roles = $roles->intersect($allowed)->values();
+
+        if ($roles->isEmpty()) {
+            return;
+        }
+
+        $types = UserType::query()
+            ->whereIn('name', $roles->all())
+            ->get(['id', 'name']);
+
+        foreach ($roles as $roleName) {
+            if (! $types->contains(fn (UserType $type) => $type->name === $roleName)) {
+                $types->push(UserType::query()->firstOrCreate(
+                    ['name' => $roleName],
+                    ['description' => ucfirst($roleName).' account.']
+                ));
+            }
+        }
+
+        if (Schema::hasTable('user_roles')) {
+            $this->roles()->sync($types->pluck('id')->all());
+        }
+
+        $primaryRole = strtolower(trim((string) ($primaryRole ?: $roles->first())));
+        $primary = $types->firstWhere('name', $primaryRole) ?? $types->first();
+
+        if ($primary) {
+            $this->forceFill(['user_type_id' => $primary->id])->save();
+        }
+    }
+
     public function isTutor(): bool
     {
-        return strtolower((string) ($this->userType?->name ?? '')) === 'tutor';
+        return $this->hasRole('tutor');
+    }
+
+    public function isPupil(): bool
+    {
+        return $this->hasRole('pupil');
+    }
+
+    public function isStudent(): bool
+    {
+        return $this->hasRole('student');
     }
 
     public function charadeSessions(): HasMany

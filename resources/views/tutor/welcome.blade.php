@@ -24,7 +24,7 @@
                         Welcome{{ $firstName ? ', '.$firstName : '' }}.
                     </h1>
                     <p class="mt-5 max-w-xl text-base font-medium leading-7 text-white/75 sm:text-lg">
-                        Set up your tutor profile next — photo, subjects, hourly rates, and a contact number learners can use. Save anytime and continue later.
+                        Set up your tutor profile next — photo, subjects, hourly rates, and a contact number learners can use. Province, phone, and study details from your bursary pack are reused automatically. Save anytime and continue later.
                     </p>
 
                     <div class="mt-8 flex flex-col gap-3 sm:flex-row">
