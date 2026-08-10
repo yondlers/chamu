@@ -10,11 +10,15 @@ class ProgrammeNotes
         'Programme scope',
         'Programme content',
         'Programme group',
+        'Programme information',
         'Faculty',
+        'Faculty notes',
         'Campus',
         'Presentation',
+        'Duration',
         'Admission requirement',
         'Admission basis',
+        'Admission check',
         'Selection format',
         'Eligibility explanation',
         'Academic requirement',
@@ -53,6 +57,8 @@ class ProgrammeNotes
         'Additional Stellenbosch requirements',
         'Source reviewed',
         'Source confidence',
+        'Programme code',
+        'UP listing title',
     ];
 
     /**
