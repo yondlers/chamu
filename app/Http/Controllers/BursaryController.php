@@ -40,10 +40,54 @@ class BursaryController extends Controller
 {
     public function index(Request $request)
     {
+        $filterTypeCategory = 0;
+        $filterTypeCompany = 1;
         $search = trim((string) $request->query('search', ''));
-        $category = trim((string) $request->query('category', ''));
-        $companyId = $request->integer('company_id') ?: null;
         $today = now()->toDateString();
+
+        $rawFilters = $request->query('filter', []);
+        if (! is_array($rawFilters)) {
+            $rawFilters = filled($rawFilters) ? [$rawFilters] : [];
+        }
+
+        // Legacy single-value params still decode into the indexed filter list.
+        $legacyCategory = trim((string) $request->query('category', ''));
+        $legacyCompanyId = $request->integer('company_id') ?: null;
+        if ($legacyCategory !== '') {
+            $rawFilters[] = $filterTypeCategory.':'.$legacyCategory;
+        }
+        if ($legacyCompanyId !== null) {
+            $rawFilters[] = $filterTypeCompany.':'.$legacyCompanyId;
+        }
+
+        $selectedCategories = [];
+        $selectedCompanyIds = [];
+
+        foreach ($rawFilters as $rawFilter) {
+            if (! is_string($rawFilter) || ! str_contains($rawFilter, ':')) {
+                continue;
+            }
+
+            [$typeIndex, $value] = explode(':', $rawFilter, 2);
+            $typeIndex = (int) $typeIndex;
+            $value = trim($value);
+
+            if ($value === '') {
+                continue;
+            }
+
+            if ($typeIndex === $filterTypeCategory) {
+                $selectedCategories[] = $value;
+                continue;
+            }
+
+            if ($typeIndex === $filterTypeCompany && ctype_digit($value)) {
+                $selectedCompanyIds[] = (int) $value;
+            }
+        }
+
+        $selectedCategories = array_values(array_unique($selectedCategories));
+        $selectedCompanyIds = array_values(array_unique($selectedCompanyIds));
 
         $companies = DB::table('companies')
             ->join('bursaries', 'bursaries.company_id', '=', 'companies.id')
@@ -57,7 +101,6 @@ class BursaryController extends Controller
             ->distinct()
             ->orderBy('category')
             ->pluck('category');
-
         $requirementsByBursary = DB::table('bursary_subject_requirements')
             ->orderBy('id')
             ->get()
@@ -328,8 +371,8 @@ class BursaryController extends Controller
                 'companies.logo as company_logo',
             )
             ->where('bursaries.is_active', true)
-            ->when($companyId !== null, fn ($query) => $query->where('bursaries.company_id', $companyId))
-            ->when($category !== '', fn ($query) => $query->where('bursaries.category', $category))
+            ->when($selectedCompanyIds !== [], fn ($query) => $query->whereIn('bursaries.company_id', $selectedCompanyIds))
+            ->when($selectedCategories !== [], fn ($query) => $query->whereIn('bursaries.category', $selectedCategories))
             ->when($search !== '', function ($query) use ($search) {
                 $query->where(function ($query) use ($search) {
                     $query
@@ -355,15 +398,43 @@ class BursaryController extends Controller
                 return $bursary;
             });
 
+        $selectedFilters = collect($selectedCategories)
+            ->map(fn (string $category) => [
+                'index' => $filterTypeCategory,
+                'type' => 'category',
+                'value' => $category,
+                'label' => $category,
+                'token' => $filterTypeCategory.':'.$category,
+            ])
+            ->concat(
+                collect($selectedCompanyIds)->map(function (int $companyId) use ($companies, $filterTypeCompany) {
+                    $company = $companies->firstWhere('id', $companyId);
+
+                    if ($company === null) {
+                        return null;
+                    }
+
+                    return [
+                        'index' => $filterTypeCompany,
+                        'type' => 'company',
+                        'value' => (string) $companyId,
+                        'label' => $company->name,
+                        'token' => $filterTypeCompany.':'.$companyId,
+                    ];
+                })->filter()->values()
+            )
+            ->values();
+
         return view('bursaries.index', [
             'bursaries' => $bursaries,
             'companies' => $companies,
             'categories' => $categories,
             'search' => $search,
-            'filters' => [
-                'category' => $category,
-                'company_id' => $companyId,
-            ],
+            'selectedFilters' => $selectedFilters,
+            'selectedCategories' => $selectedCategories,
+            'selectedCompanyIds' => $selectedCompanyIds,
+            'filterTypeCategory' => $filterTypeCategory,
+            'filterTypeCompany' => $filterTypeCompany,
             'hasMarks' => $latestResults->isNotEmpty(),
         ]);
     }

@@ -12,17 +12,31 @@
 
 @section('content')
     @php
-        $activeFilterCount = collect([$search, $filters['category'], $filters['company_id']])
-            ->filter(fn ($value) => filled($value))
-            ->count();
-        $selectedCompany = $filters['company_id'] ? $companies->firstWhere('id', (int) $filters['company_id']) : null;
+        $activeFilterCount = $selectedFilters->count() + (filled($search) ? 1 : 0);
         $featuredCategories = $categories->take(8);
         $heroImage = asset('images/bursaries/graduates-celebrating.png');
         $bursaryNoun = Str::plural('bursary', $bursaries->total());
         $opportunityNoun = Str::plural('funding opportunity', $bursaries->total());
         $filterSummary = $activeFilterCount > 0
-            ? trim(collect([$search ? '"'.$search.'"' : null, $filters['category'], $selectedCompany?->name])->filter()->implode(' · '))
+            ? trim(collect([
+                $search ? '"'.$search.'"' : null,
+                ...$selectedFilters->pluck('label')->all(),
+            ])->filter()->implode(' · '))
             : 'All funding opportunities';
+
+        $filterQuery = function (array $tokens, ?string $searchValue = null) use ($search): array {
+            $query = [];
+
+            if (filled($searchValue ?? $search)) {
+                $query['search'] = $searchValue ?? $search;
+            }
+
+            if ($tokens !== []) {
+                $query['filter'] = array_values($tokens);
+            }
+
+            return $query;
+        };
     @endphp
 
     <main class="bg-[#f5f7fb] text-neutral-950">
@@ -86,44 +100,110 @@
                     </div>
                 </div>
 
-                <form method="GET" action="{{ route('bursaries.index') }}" class="mt-8 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)]">
-                    <div class="grid gap-2 lg:grid-cols-[1.35fr_1fr_1fr_auto]">
-                        <div class="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
-                            <label for="search" class="flex items-center gap-1.5 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">
+                <form method="GET" action="{{ route('bursaries.index') }}" class="mt-8 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)]" data-bursary-filter-form>
+                    <div class="grid gap-2 lg:grid-cols-[minmax(0,1fr)_auto]">
+                        <div class="relative rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3" data-bursary-filter>
+                            <label for="bursary-filter-input" class="flex items-center gap-1.5 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">
                                 <i data-lucide="search" style="width:14px;height:14px;"></i>
                                 Search
                             </label>
-                            <input id="search" name="search" type="search" value="{{ $search }}" placeholder="Bursary, company, field" class="mt-2 w-full bg-transparent text-base font-bold outline-none placeholder:text-neutral-400">
+
+                            <div class="mt-2 flex min-h-[28px] flex-wrap items-center gap-2" data-bursary-filter-control>
+                                <div class="contents" data-bursary-filter-tags>
+                                    @foreach ($selectedFilters as $selectedFilter)
+                                        <span class="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-2.5 py-1 text-xs font-black text-neutral-800" data-bursary-filter-tag data-token="{{ $selectedFilter['token'] }}">
+                                            <span class="rounded-full px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] {{ $selectedFilter['type'] === 'company' ? 'bg-sky-100 text-sky-800' : 'bg-emerald-100 text-emerald-800' }}">
+                                                {{ $selectedFilter['type'] === 'company' ? 'Company' : 'Category' }}
+                                            </span>
+                                            <span>{{ $selectedFilter['label'] }}</span>
+                                            <button type="button" class="grid h-4 w-4 place-items-center rounded-full text-neutral-400 hover:bg-neutral-100 hover:text-neutral-700" data-bursary-filter-remove aria-label="Remove {{ $selectedFilter['label'] }}">
+                                                <i data-lucide="x" style="width:12px;height:12px;"></i>
+                                            </button>
+                                            <input type="hidden" name="filter[]" value="{{ $selectedFilter['token'] }}">
+                                        </span>
+                                    @endforeach
+                                </div>
+
+                                <input
+                                    id="bursary-filter-input"
+                                    name="search"
+                                    type="search"
+                                    value="{{ $search }}"
+                                    autocomplete="off"
+                                    placeholder="{{ $selectedFilters->isEmpty() ? 'Search category or company' : 'Add another…' }}"
+                                    class="min-w-[12rem] flex-1 bg-transparent text-base font-bold outline-none placeholder:text-neutral-400"
+                                    data-bursary-filter-input
+                                    aria-expanded="false"
+                                    aria-controls="bursary-filter-panel"
+                                    role="combobox"
+                                >
+                            </div>
+
+                            <div id="bursary-filter-panel" class="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-50 hidden overflow-hidden rounded-lg border border-neutral-200 bg-white text-neutral-950 shadow-2xl" data-bursary-filter-panel>
+                                <div class="max-h-80 overflow-y-auto p-2">
+                                    <div data-bursary-filter-group data-group="category">
+                                        <p class="px-3 py-2 text-[11px] font-black uppercase tracking-[0.16em] text-neutral-400">Categories</p>
+                                        @foreach ($categories as $category)
+                                            @php
+                                                $token = $filterTypeCategory.':'.$category;
+                                                $isSelected = in_array($category, $selectedCategories, true);
+                                            @endphp
+                                            <button
+                                                type="button"
+                                                class="flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50 {{ $isSelected ? 'bg-emerald-50' : '' }}"
+                                                data-bursary-filter-option
+                                                data-index="{{ $filterTypeCategory }}"
+                                                data-type="category"
+                                                data-value="{{ $category }}"
+                                                data-label="{{ $category }}"
+                                                data-token="{{ $token }}"
+                                                data-search="{{ $category }}"
+                                                data-selected="{{ $isSelected ? 'true' : 'false' }}"
+                                            >
+                                                <span class="min-w-0">
+                                                    <span class="block truncate text-neutral-950">{{ $category }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-emerald-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-emerald-800">Category · {{ $filterTypeCategory }}</span>
+                                                </span>
+                                                <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-emerald-600" style="width:16px;height:16px;" data-bursary-filter-check></i>
+                                            </button>
+                                        @endforeach
+                                    </div>
+
+                                    <div class="mt-1 border-t border-neutral-100 pt-1" data-bursary-filter-group data-group="company">
+                                        <p class="px-3 py-2 text-[11px] font-black uppercase tracking-[0.16em] text-neutral-400">Companies</p>
+                                        @foreach ($companies as $company)
+                                            @php
+                                                $token = $filterTypeCompany.':'.$company->id;
+                                                $isSelected = in_array((int) $company->id, $selectedCompanyIds, true);
+                                            @endphp
+                                            <button
+                                                type="button"
+                                                class="flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold hover:bg-neutral-50 {{ $isSelected ? 'bg-sky-50' : '' }}"
+                                                data-bursary-filter-option
+                                                data-index="{{ $filterTypeCompany }}"
+                                                data-type="company"
+                                                data-value="{{ $company->id }}"
+                                                data-label="{{ $company->name }}"
+                                                data-token="{{ $token }}"
+                                                data-search="{{ $company->name }}"
+                                                data-selected="{{ $isSelected ? 'true' : 'false' }}"
+                                            >
+                                                <span class="min-w-0">
+                                                    <span class="block truncate text-neutral-950">{{ $company->name }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-sky-800">Company · {{ $filterTypeCompany }}</span>
+                                                </span>
+                                                <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-sky-700" style="width:16px;height:16px;" data-bursary-filter-check></i>
+                                            </button>
+                                        @endforeach
+                                    </div>
+
+                                    <p class="hidden px-3 py-2 text-sm font-semibold text-neutral-500" data-bursary-filter-empty>No matches</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
-                            <label for="category" class="flex items-center gap-1.5 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">
-                                <i data-lucide="tags" style="width:14px;height:14px;"></i>
-                                Category
-                            </label>
-                            <select id="category" name="category" class="mt-2 w-full bg-transparent text-base font-bold outline-none">
-                                <option value="">All categories</option>
-                                @foreach ($categories as $category)
-                                    <option value="{{ $category }}" @selected($filters['category'] === $category)>{{ $category }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-
-                        <div class="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
-                            <label for="company_id" class="flex items-center gap-1.5 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">
-                                <i data-lucide="building-2" style="width:14px;height:14px;"></i>
-                                Company
-                            </label>
-                            <select id="company_id" name="company_id" class="mt-2 w-full bg-transparent text-base font-bold outline-none">
-                                <option value="">All companies</option>
-                                @foreach ($companies as $company)
-                                    <option value="{{ $company->id }}" @selected((int) $filters['company_id'] === $company->id)>{{ $company->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-
-                        <button class="inline-flex min-h-[76px] items-center justify-center gap-2 rounded-lg bg-[#01225E] px-6 text-base font-black text-white shadow-[0_12px_28px_rgba(1,34,94,0.28)] hover:bg-[#001A48]">
-                            Filter <i data-lucide="sliders-horizontal" style="width:18px;height:18px;"></i>
+                        <button type="submit" class="inline-flex min-h-[76px] items-center justify-center gap-2 rounded-lg bg-[#01225E] px-6 text-base font-black text-white shadow-[0_12px_28px_rgba(1,34,94,0.28)] hover:bg-[#001A48]">
+                            Search <i data-lucide="search" style="width:18px;height:18px;"></i>
                         </button>
                     </div>
 
@@ -136,14 +216,27 @@
                 </form>
 
                 @if ($featuredCategories->isNotEmpty())
-                    <div class="no-scrollbar mt-4 flex gap-2 overflow-x-auto pb-1">
+                    <div class="no-scrollbar mt-4 flex gap-2 overflow-x-auto pb-1" data-bursary-filter-pills>
                         @foreach ($featuredCategories as $category)
+                            @php
+                                $categoryToken = $filterTypeCategory.':'.$category;
+                                $isSelectedCategory = in_array($category, $selectedCategories, true);
+                                $pillTokens = $isSelectedCategory
+                                    ? $selectedFilters->pluck('token')->reject(fn ($token) => $token === $categoryToken)->values()->all()
+                                    : $selectedFilters->pluck('token')->push($categoryToken)->unique()->values()->all();
+                            @endphp
                             <a
-                                href="{{ route('bursaries.index', ['search' => $search ?: null, 'category' => $category, 'company_id' => $filters['company_id']]) }}"
+                                href="{{ route('bursaries.index', $filterQuery($pillTokens)) }}"
+                                data-bursary-filter-pill
+                                data-token="{{ $categoryToken }}"
+                                data-index="{{ $filterTypeCategory }}"
+                                data-type="category"
+                                data-value="{{ $category }}"
+                                data-label="{{ $category }}"
                                 @class([
                                     'inline-flex shrink-0 items-center rounded-full border px-3 py-1.5 text-xs font-black transition',
-                                    'border-emerald-300 bg-emerald-300 text-[#07111f]' => $filters['category'] === $category,
-                                    'border-white/20 bg-white/10 text-white/80 hover:bg-white/20' => $filters['category'] !== $category,
+                                    'border-emerald-300 bg-emerald-300 text-[#07111f]' => $isSelectedCategory,
+                                    'border-white/20 bg-white/10 text-white/80 hover:bg-white/20' => ! $isSelectedCategory,
                                 ])
                             >
                                 {{ $category }}
@@ -311,3 +404,237 @@
         </section>
     </main>
 @endsection
+
+@push('scripts')
+    <script>
+        (() => {
+            const root = document.querySelector('[data-bursary-filter]');
+            const form = document.querySelector('[data-bursary-filter-form]');
+            if (! root || ! form) return;
+
+            const input = root.querySelector('[data-bursary-filter-input]');
+            const panel = root.querySelector('[data-bursary-filter-panel]');
+            const tags = root.querySelector('[data-bursary-filter-tags]');
+            const empty = root.querySelector('[data-bursary-filter-empty]');
+            const options = Array.from(root.querySelectorAll('[data-bursary-filter-option]'));
+            const groups = Array.from(root.querySelectorAll('[data-bursary-filter-group]'));
+            const pills = Array.from(document.querySelectorAll('[data-bursary-filter-pill]'));
+
+            const normalise = (value) => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+            const refreshIcons = () => {
+                if (window.lucide) window.lucide.createIcons();
+            };
+
+            const selectedTokens = () => Array.from(tags.querySelectorAll('[data-bursary-filter-tag]')).map((tag) => tag.dataset.token);
+
+            const open = () => {
+                panel.classList.remove('hidden');
+                input.setAttribute('aria-expanded', 'true');
+                filterOptions();
+            };
+
+            const close = () => {
+                panel.classList.add('hidden');
+                input.setAttribute('aria-expanded', 'false');
+            };
+
+            const syncOptionState = (token, selected) => {
+                const option = options.find((item) => item.dataset.token === token);
+                if (! option) return;
+
+                option.dataset.selected = selected ? 'true' : 'false';
+                option.classList.toggle('bg-emerald-50', selected && option.dataset.type === 'category');
+                option.classList.toggle('bg-sky-50', selected && option.dataset.type === 'company');
+                option.querySelector('[data-bursary-filter-check]')?.classList.toggle('hidden', ! selected);
+            };
+
+            const syncPillState = (token, selected) => {
+                const pill = pills.find((item) => item.dataset.token === token);
+                if (! pill) return;
+
+                pill.classList.toggle('border-emerald-300', selected);
+                pill.classList.toggle('bg-emerald-300', selected);
+                pill.classList.toggle('text-[#07111f]', selected);
+                pill.classList.toggle('border-white/20', ! selected);
+                pill.classList.toggle('bg-white/10', ! selected);
+                pill.classList.toggle('text-white/80', ! selected);
+                pill.classList.toggle('hover:bg-white/20', ! selected);
+            };
+
+            const updatePlaceholder = () => {
+                input.placeholder = selectedTokens().length === 0
+                    ? 'Search category or company'
+                    : 'Add another…';
+            };
+
+            const addTag = (option) => {
+                const token = option.dataset.token;
+                if (! token || selectedTokens().includes(token)) return;
+
+                const typeLabel = option.dataset.type === 'company' ? 'Company' : 'Category';
+                const typeClass = option.dataset.type === 'company'
+                    ? 'bg-sky-100 text-sky-800'
+                    : 'bg-emerald-100 text-emerald-800';
+
+                const tag = document.createElement('span');
+                tag.className = 'inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-2.5 py-1 text-xs font-black text-neutral-800';
+                tag.dataset.bursaryFilterTag = '';
+                tag.dataset.token = token;
+                tag.innerHTML = `
+                    <span class="rounded-full px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] ${typeClass}">${typeLabel}</span>
+                    <span></span>
+                    <button type="button" class="grid h-4 w-4 place-items-center rounded-full text-neutral-400 hover:bg-neutral-100 hover:text-neutral-700" data-bursary-filter-remove aria-label="Remove filter">
+                        <i data-lucide="x" style="width:12px;height:12px;"></i>
+                    </button>
+                    <input type="hidden" name="filter[]" value="">
+                `;
+                tag.querySelector('span:nth-child(2)').textContent = option.dataset.label || '';
+                tag.querySelector('input[type="hidden"]').value = token;
+                tags.appendChild(tag);
+
+                syncOptionState(token, true);
+                syncPillState(token, true);
+                updatePlaceholder();
+                refreshIcons();
+            };
+
+            const removeTag = (token) => {
+                Array.from(tags.querySelectorAll('[data-bursary-filter-tag]'))
+                    .find((tag) => tag.dataset.token === token)
+                    ?.remove();
+                syncOptionState(token, false);
+                syncPillState(token, false);
+                updatePlaceholder();
+            };
+
+            const toggleOption = (option) => {
+                const token = option.dataset.token;
+                if (! token) return;
+
+                if (selectedTokens().includes(token)) {
+                    removeTag(token);
+                    return;
+                }
+
+                addTag(option);
+            };
+
+            const filterOptions = () => {
+                const query = normalise(input.value);
+                let visibleCount = 0;
+
+                options.forEach((option) => {
+                    const haystack = normalise(option.dataset.search || option.dataset.label);
+                    const isVisible = query === '' || haystack.includes(query);
+                    option.classList.toggle('hidden', ! isVisible);
+                    if (isVisible) visibleCount += 1;
+                });
+
+                groups.forEach((group) => {
+                    const hasVisible = Array.from(group.querySelectorAll('[data-bursary-filter-option]'))
+                        .some((option) => ! option.classList.contains('hidden'));
+                    group.classList.toggle('hidden', ! hasVisible);
+                });
+
+                empty.classList.toggle('hidden', visibleCount > 0);
+            };
+
+            const firstVisibleOption = () => options.find((option) => ! option.classList.contains('hidden'));
+
+            root.querySelector('[data-bursary-filter-control]')?.addEventListener('click', (event) => {
+                if (event.target.closest('[data-bursary-filter-remove]')) return;
+                open();
+                input.focus();
+            });
+
+            input.addEventListener('focus', open);
+            input.addEventListener('input', () => {
+                open();
+                filterOptions();
+            });
+
+            input.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    close();
+                    return;
+                }
+
+                if (event.key === 'Backspace' && input.value === '') {
+                    const current = selectedTokens();
+                    const last = current[current.length - 1];
+                    if (last) {
+                        event.preventDefault();
+                        removeTag(last);
+                    }
+                    return;
+                }
+
+                if (event.key === 'Enter') {
+                    const option = firstVisibleOption();
+                    if (option && ! panel.classList.contains('hidden') && normalise(input.value) !== '') {
+                        event.preventDefault();
+                        toggleOption(option);
+                        input.value = '';
+                        filterOptions();
+                        return;
+                    }
+                    // Let the form submit when Search / Enter applies the current tags + text.
+                }
+            });
+
+            options.forEach((option) => {
+                option.addEventListener('click', () => {
+                    toggleOption(option);
+                    input.value = '';
+                    filterOptions();
+                    input.focus();
+                });
+            });
+
+            tags.addEventListener('click', (event) => {
+                const button = event.target.closest('[data-bursary-filter-remove]');
+                if (! button) return;
+
+                const tag = button.closest('[data-bursary-filter-tag]');
+                if (! tag) return;
+
+                event.preventDefault();
+                removeTag(tag.dataset.token);
+                input.focus();
+            });
+
+            pills.forEach((pill) => {
+                pill.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    const option = options.find((item) => item.dataset.token === pill.dataset.token);
+                    if (option) {
+                        toggleOption(option);
+                    } else if (selectedTokens().includes(pill.dataset.token)) {
+                        removeTag(pill.dataset.token);
+                    } else {
+                        addTag({
+                            dataset: {
+                                token: pill.dataset.token,
+                                type: pill.dataset.type,
+                                label: pill.dataset.label,
+                            },
+                        });
+                    }
+
+                    input.value = '';
+                    form.requestSubmit();
+                });
+            });
+
+            document.addEventListener('click', (event) => {
+                if (! root.contains(event.target)) {
+                    close();
+                }
+            });
+
+            updatePlaceholder();
+        })();
+    </script>
+@endpush
