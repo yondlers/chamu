@@ -12,19 +12,17 @@
 
 @section('content')
     @php
-        $activeFilterCount = $selectedFilters->count() + (filled($search) ? 1 : 0);
         $featuredCategories = $categories->take(8);
         $heroImage = asset('images/bursaries/graduates-celebrating.png');
         $bursaryNoun = Str::plural('bursary', $bursaries->total());
-        $opportunityNoun = Str::plural('funding opportunity', $bursaries->total());
-        $filterSummary = $activeFilterCount > 0
-            ? trim(collect([
-                $search ? '"'.$search.'"' : null,
-                ...$selectedFilters->pluck('label')->all(),
-            ])->filter()->implode(' · '))
-            : 'All funding opportunities';
+        $sortOptions = [
+            'default' => 'Default',
+            'closing' => 'Closing date',
+            'az' => 'A-Z',
+        ];
+        $sortLabel = $sortOptions[$sort] ?? 'Default';
 
-        $filterQuery = function (array $tokens, ?string $searchValue = null) use ($search): array {
+        $filterQuery = function (array $tokens, ?string $searchValue = null, ?string $sortValue = null) use ($search, $sort): array {
             $query = [];
 
             if (filled($searchValue ?? $search)) {
@@ -33,6 +31,11 @@
 
             if ($tokens !== []) {
                 $query['filter'] = array_values($tokens);
+            }
+
+            $resolvedSort = $sortValue ?? $sort;
+            if (filled($resolvedSort) && $resolvedSort !== 'default') {
+                $query['sort'] = $resolvedSort;
             }
 
             return $query;
@@ -48,59 +51,20 @@
             </div>
 
             <div class="mx-auto max-w-7xl px-5 pb-12 pt-12 sm:pb-16 sm:pt-16 lg:px-8 lg:pb-20 lg:pt-20">
-                <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-end">
-                    <div class="max-w-3xl">
-                        <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-white/85 backdrop-blur">
-                            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-                            Funding match
-                        </div>
-                        <h1 class="mt-5 max-w-3xl text-4xl font-black leading-[1.02] text-white sm:text-6xl">
-                            Find a bursary that fits your marks and your future.
-                        </h1>
-                        <p class="mt-5 max-w-2xl text-base font-medium leading-7 text-white/75 sm:text-lg">
-                            Browse {{ number_format($bursaries->total()) }} {{ $opportunityNoun }}, compare academic requirements, then open details before applying or visiting a provider link.
-                        </p>
-
-                        <div class="mt-8 grid max-w-2xl grid-cols-3 divide-x divide-white/15 border-y border-white/15 py-4">
-                            <div class="pr-4">
-                                <p class="text-2xl font-black">{{ number_format($bursaries->total()) }}</p>
-                                <p class="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/55">Bursaries</p>
-                            </div>
-                            <div class="px-4">
-                                <p class="text-2xl font-black">{{ number_format($categories->count()) }}</p>
-                                <p class="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/55">Fields</p>
-                            </div>
-                            <div class="pl-4">
-                                <p class="text-2xl font-black">{{ number_format($companies->count()) }}</p>
-                                <p class="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-white/55">Providers</p>
-                            </div>
-                        </div>
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-white/85 backdrop-blur">
+                        <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+                        Funding match
                     </div>
-
-                    <div class="hidden rounded-lg border border-white/15 bg-white/10 p-5 shadow-2xl backdrop-blur lg:block">
-                        <div class="flex items-center justify-between gap-4">
-                            <div>
-                                <p class="text-xs font-bold uppercase tracking-[0.16em] text-white/55">Current view</p>
-                                <p class="mt-2 text-lg font-black">{{ $filterSummary }}</p>
-                            </div>
-                            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-emerald-400 text-[#07111f]">
-                                <i data-lucide="badge-dollar-sign" style="width:22px;height:22px;"></i>
-                            </span>
-                        </div>
-                        <div class="mt-5 space-y-3 border-t border-white/15 pt-5">
-                            <div class="flex items-center justify-between gap-4 text-sm">
-                                <span class="font-semibold text-white/65">Academic match</span>
-                                <span class="font-black">{{ auth()->check() ? 'Enabled' : 'Sign in' }}</span>
-                            </div>
-                            <div class="flex items-center justify-between gap-4 text-sm">
-                                <span class="font-semibold text-white/65">Active filters</span>
-                                <span class="font-black">{{ $activeFilterCount }}</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 class="mt-5 max-w-3xl text-4xl font-black leading-[1.02] text-white sm:text-6xl">
+                        Find Your Bursary.
+                    </h1>
                 </div>
 
                 <form method="GET" action="{{ route('bursaries.index') }}" class="mt-8 rounded-lg border border-white/15 bg-white p-3 text-neutral-950 shadow-[0_24px_70px_rgba(0,0,0,0.22)]" data-bursary-filter-form>
+                    @if ($sort !== 'default')
+                        <input type="hidden" name="sort" value="{{ $sort }}">
+                    @endif
                     <div class="grid gap-2 lg:grid-cols-[minmax(0,1fr)_auto]">
                         <div class="relative rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3" data-bursary-filter>
                             <label for="bursary-filter-input" class="flex items-center gap-1.5 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">
@@ -258,20 +222,58 @@
                 @endunless
             @endauth
 
-            <div class="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                <div>
-                    <p class="text-xs font-black uppercase tracking-[0.18em] text-emerald-700">Funding shortlist</p>
-                    <h2 class="mt-1 text-2xl font-black text-neutral-950">Best matches to explore</h2>
+            <div class="mb-5 flex flex-col gap-3 rounded-lg border border-neutral-200 bg-white px-4 py-3 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-neutral-700">
+                    <p class="inline-flex items-center gap-1.5 font-semibold">
+                        <span class="font-black text-neutral-950">{{ number_format($bursaries->total()) }}</span>
+                        results
+                        <i data-lucide="info" class="text-neutral-400" style="width:14px;height:14px;" title="{{ number_format($bursaries->total()) }} {{ $bursaryNoun }} match your current search"></i>
+                    </p>
+                    <span class="hidden h-4 w-px bg-neutral-200 sm:block" aria-hidden="true"></span>
+                    <p class="font-semibold">
+                        <span class="font-black text-neutral-950">{{ number_format($categories->count()) }}</span>
+                        fields
+                    </p>
+                    <span class="hidden h-4 w-px bg-neutral-200 sm:block" aria-hidden="true"></span>
+                    <p class="font-semibold">
+                        <span class="font-black text-neutral-950">{{ number_format($companies->count()) }}</span>
+                        providers
+                    </p>
                 </div>
-                @auth
-                    <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="inline-flex items-center justify-center gap-2 rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-sm font-black text-neutral-950 shadow-sm hover:bg-neutral-50">
-                        Marks <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
-                    </a>
-                @else
-                    <a href="{{ route('login') }}" class="inline-flex items-center justify-center gap-2 rounded-lg bg-[#01225E] px-4 py-2.5 text-sm font-black text-white shadow-sm hover:bg-[#001A48]">
-                        Match with marks <i data-lucide="log-in" style="width:16px;height:16px;"></i>
-                    </a>
-                @endauth
+
+                <div class="relative shrink-0" data-bursary-sort>
+                    <button
+                        type="button"
+                        class="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm font-semibold text-neutral-800 hover:bg-neutral-100 sm:w-auto"
+                        data-bursary-sort-trigger
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                    >
+                        <span>
+                            <span class="font-black text-neutral-950">Sort by:</span>
+                            <span data-bursary-sort-label>{{ $sortLabel }}</span>
+                        </span>
+                        <i data-lucide="chevron-down" class="text-neutral-400" style="width:16px;height:16px;"></i>
+                    </button>
+
+                    <div class="absolute right-0 z-20 mt-2 hidden min-w-[11rem] overflow-hidden rounded-lg border border-neutral-200 bg-white py-1 shadow-xl" data-bursary-sort-panel role="listbox">
+                        @foreach ($sortOptions as $value => $label)
+                            <a
+                                href="{{ route('bursaries.index', $filterQuery($selectedFilters->pluck('token')->all(), $search ?: null, $value)) }}"
+                                class="flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold hover:bg-neutral-50 {{ $sort === $value ? 'bg-neutral-50 text-[#01225E]' : 'text-neutral-700' }}"
+                                data-bursary-sort-option
+                                data-value="{{ $value }}"
+                                role="option"
+                                aria-selected="{{ $sort === $value ? 'true' : 'false' }}"
+                            >
+                                <span>{{ $label }}</span>
+                                @if ($sort === $value)
+                                    <i data-lucide="check" style="width:14px;height:14px;"></i>
+                                @endif
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
             </div>
 
             <section class="grid gap-4">
@@ -635,6 +637,39 @@
             });
 
             updatePlaceholder();
+        })();
+
+        (() => {
+            const sort = document.querySelector('[data-bursary-sort]');
+            if (! sort) return;
+
+            const trigger = sort.querySelector('[data-bursary-sort-trigger]');
+            const panel = sort.querySelector('[data-bursary-sort-panel]');
+            if (! trigger || ! panel) return;
+
+            const open = () => {
+                panel.classList.remove('hidden');
+                trigger.setAttribute('aria-expanded', 'true');
+            };
+            const close = () => {
+                panel.classList.add('hidden');
+                trigger.setAttribute('aria-expanded', 'false');
+            };
+
+            trigger.addEventListener('click', () => {
+                const isOpen = ! panel.classList.contains('hidden');
+                if (isOpen) {
+                    close();
+                    return;
+                }
+                open();
+            });
+
+            document.addEventListener('click', (event) => {
+                if (! sort.contains(event.target)) {
+                    close();
+                }
+            });
         })();
     </script>
 @endpush

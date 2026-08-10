@@ -43,6 +43,10 @@ class BursaryController extends Controller
         $filterTypeCategory = 0;
         $filterTypeCompany = 1;
         $search = trim((string) $request->query('search', ''));
+        $sort = strtolower(trim((string) $request->query('sort', 'default')));
+        if (! in_array($sort, ['default', 'closing', 'az'], true)) {
+            $sort = 'default';
+        }
         $today = now()->toDateString();
 
         $rawFilters = $request->query('filter', []);
@@ -383,12 +387,27 @@ class BursaryController extends Controller
                         ->orWhere('companies.name', 'like', '%'.$search.'%');
                 });
             })
-            ->orderByRaw(
-                'case when bursaries.closing_date >= ? then 0 when bursaries.closing_date is null then 1 else 2 end',
-                [$today],
-            )
-            ->orderByDesc('bursaries.closing_date')
-            ->orderBy('bursaries.title')
+            ->when($sort === 'az', function ($query) {
+                $query->orderBy('bursaries.title');
+            })
+            ->when($sort === 'closing', function ($query) use ($today) {
+                $query
+                    ->orderByRaw(
+                        'case when bursaries.closing_date is null then 1 when bursaries.closing_date < ? then 2 else 0 end',
+                        [$today],
+                    )
+                    ->orderBy('bursaries.closing_date')
+                    ->orderBy('bursaries.title');
+            })
+            ->when($sort === 'default', function ($query) use ($today) {
+                $query
+                    ->orderByRaw(
+                        'case when bursaries.closing_date >= ? then 0 when bursaries.closing_date is null then 1 else 2 end',
+                        [$today],
+                    )
+                    ->orderByDesc('bursaries.closing_date')
+                    ->orderBy('bursaries.title');
+            })
             ->paginate(12)
             ->withQueryString()
             ->through(function ($bursary) use ($matchBursary) {
@@ -430,6 +449,7 @@ class BursaryController extends Controller
             'companies' => $companies,
             'categories' => $categories,
             'search' => $search,
+            'sort' => $sort,
             'selectedFilters' => $selectedFilters,
             'selectedCategories' => $selectedCategories,
             'selectedCompanyIds' => $selectedCompanyIds,
