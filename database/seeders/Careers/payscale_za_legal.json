@@ -1,0 +1,356 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "Legal & law",
+    "collected_at": "2026-08-10",
+    "careers": [
+        {
+            "name": "Attorney / Lawyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Attorney_%2F_Lawyer/Salary",
+            "salary_expectation": "R29k – R789k / year (avg R251,737)",
+            "description": "Attorneys apply the law to specific situations and advise their clients on a course of action based on legal rights and responsibilities. Some attorneys work in the business world, providing counsel to corporate clients on business transactions."
+        },
+        {
+            "name": "Legal Advisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Advisor/Salary",
+            "salary_expectation": "R210k – R943k / year (avg R491,466)",
+            "description": "A legal advisor provides advice to clients on legal issues, documents, and decisions. These advisors usually specialize in a particular area of law, remaining within that field for most or all of their career."
+        },
+        {
+            "name": "Legal Counsel",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Counsel/Salary",
+            "salary_expectation": "R270k – R1.3m / year (avg R610,049)",
+            "description": "Legal counsels, also called general counsels, are the chief lawyers of large corporations or government agencies. They advise departments on legal ramifications, ensure that the business is working in accordance with the law, and may represent the company or government agency in the case that a law suit is filed."
+        },
+        {
+            "name": "Associate Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Associate_Attorney/Salary",
+            "salary_expectation": "R179k – R679k / year (avg R373,634)",
+            "description": "Associate attorneys are lawyers who usually have a minimal amount of experience in the field. Many are just out of law school and developing their careers."
+        },
+        {
+            "name": "Paralegal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Paralegal/Salary",
+            "salary_expectation": "R73k – R418k / year (avg R171,851)",
+            "description": "Paralegals perform legal-, regulatory- and business-related research for lawyers working at their organization. Most of the time, paralegals work for law offices, corporations’ legal departments or courts."
+        },
+        {
+            "name": "Corporate Lawyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Corporate_Lawyer/Salary",
+            "salary_expectation": "R20k – R1.1m / year (avg R297,004)",
+            "description": "Corporate lawyers are responsible for all aspects of corporate law practice. This includes all legal processes related to the formation, operation, and governance of a corporation or corporation-like entity such as a limited liability company (LLC), partnership, or alliance."
+        },
+        {
+            "name": "Conveyancer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Conveyancer/Salary",
+            "salary_expectation": "R84k – R592k / year (avg R308,555)",
+            "description": "A conveyancer deals with the transfer of legal property titles. Often, conveyancers are involved in overseeing transactions in real estate and ensure the legality of the transactions."
+        },
+        {
+            "name": "Paralegal / Legal Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Paralegal_%2F_Legal_Assistant/Salary",
+            "salary_expectation": "R61k – R309k / year (avg R175,615)",
+            "description": "A paralegal (also known as a legal assistant) works in a law office for one or more attorneys to assist them in the execution of their practice. Many times a paralegal will be called upon to type written notes or transcribe recordings of meetings or telephone calls."
+        },
+        {
+            "name": "Legal Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Assistant/Salary",
+            "salary_expectation": "R60k – R476k / year (avg R200,664)",
+            "description": "A legal assistant, also called a paralegal, works either with individual lawyers at a firm or with legal teams. He or she helps lawyers with their caseloads by performing research, searching through documents and evidence, facilitating interviews, preparing memos and providing any other assistance before and during trial proceedings."
+        },
+        {
+            "name": "Entry-Level Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Entry-Level_Attorney/Salary",
+            "salary_expectation": "R87k – R365k / year (avg R165,083)",
+            "description": "Entry-level attorneys are normally employed in larger law firms for work that must be performed by persons with legal training. As the most inexperienced lawyers at a firm, entry-level attorneys may not be asked to present a casein a courtroom."
+        },
+        {
+            "name": "Attorney / Lawyer, (Law Firm)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Attorney_%2F_Lawyer%2C_(Law_Firm)/Salary",
+            "salary_expectation": "R15k – R740k / year (avg R204,127)",
+            "description": "The position of a criminal attorney, or lawyer for a law firm, requires a great deal of mental capability and the ability to work well with others, as these attorneys represent their clients in a court of law to present the best case possible for the client's benefit. These include court cases, pretrial hearings, conferences for settlements, and more."
+        },
+        {
+            "name": "Criminal Defense Lawyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Criminal_Defense_Lawyer/Salary",
+            "salary_expectation": "R60k – R690k / year (avg R259,024)",
+            "description": "Criminal defense lawyers are tasked with representing their clients in court. After conducting legal research, they must argue their client's case in front of a judge, prosecutors, and/or jury, and aspiring criminal defense lawyers must be members of the Bar in their states of employment."
+        },
+        {
+            "name": "Law Clerk",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Law_Clerk/Salary",
+            "salary_expectation": "R80k – R327k / year (avg R107,075)",
+            "description": "A law clerk's primary function is to perform research for a judge pertaining to legal issues before their court; they may work at the federal, state or municipal levels. Specific tasks performed by law clerks include drafting memoranda and opinions, preparing files for hearings and providing other support to judges as hearings are underway."
+        },
+        {
+            "name": "Legal Services Head",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Services_Head/Salary",
+            "salary_expectation": "R546k – R1.3m / year (avg R950,000)",
+            "description": null
+        },
+        {
+            "name": "Associate Attorney (Law Firm)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Associate_Attorney_(Law_Firm)/Salary",
+            "salary_expectation": "R182k – R890k / year (avg R451,430)",
+            "description": "Associate attorneys at law firms are responsible for completing legal tasks for their firm. They conduct research for current legal cases, attend court proceedings, and provide accurate analysis and advice on future legal actions."
+        },
+        {
+            "name": "Prosecutor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Prosecutor/Salary",
+            "salary_expectation": "R2 – R840k / year (avg R308,065)",
+            "description": "Prosecutors, or prosecuting attorneys, are licensed lawyers who appear in courts of law on behalf of the government. They may represent the United States or work at a state or local level, and their cases are usually against people accused of illegal activity."
+        },
+        {
+            "name": "Corporate Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Corporate_Attorney/Salary",
+            "salary_expectation": "R26k – R979k / year (avg R375,000)",
+            "description": "Corporate lawyers can serve as advisers to business executives, or they may represent a corporation in court. They draft business contracts and amendments."
+        },
+        {
+            "name": "General Counsel",
+            "source_url": "https://www.payscale.com/research/ZA/Job=General_Counsel/Salary",
+            "salary_expectation": "R4k – R2.3m / year (avg R950,930)",
+            "description": "General counselors work in the business world as the main legal advisers for their respective companies. If a company specializes in a particular type of industry, such as manufacturing, their general counsel will likely be a specialist or have prior experience in the types of law that may be especially applicable to that company."
+        },
+        {
+            "name": "Judge, Magistrate Judge, or Magistrate",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Judge%2C_Magistrate_Judge%2C_or_Magistrate/Salary",
+            "salary_expectation": "R39k – R1.1m / year (avg R656,433)",
+            "description": "The positions of judge, magistrate judge, and magistrate vary in the types of court proceedings they oversee. Judges tend to work with criminal and corporate law, while magistrates usually preside over cases involving municipal law, pre-trial hearings, small claims cases, and misdemeanor trials."
+        },
+        {
+            "name": "Law Firm Partner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Law_Firm_Partner/Salary",
+            "salary_expectation": "R151k – R3m / year (avg R633,000)",
+            "description": "A law firm partner is a joint owner of their firm and helps oversee its day-to-day operations. They directly supervise the firm’s legal and technical support teams, coordinate logistics for new cases, and manage budgets and vendor relationships."
+        },
+        {
+            "name": "Title Clerk",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Title_Clerk/Salary",
+            "salary_expectation": "R56 – R197k / year (avg R71,500)",
+            "description": "Title clerk handles titles - written contracts - for the sale, transfer, and purchase of property. The exact field in which the title clerk works define the employee's tasks the employee is responsible for."
+        },
+        {
+            "name": "Legal Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Administrator/Salary",
+            "salary_expectation": "R72k – R444k / year (avg R182,035)",
+            "description": "A legal administrator works in a law office to help all operations run smoothly, and this job has a variety of duties and requires significant multitasking. Team work is important in this position, but many of the tasks are done independently and require a self-driven individual."
+        },
+        {
+            "name": "Immigration Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Immigration_Consultant/Salary",
+            "salary_expectation": "R33k – R366k / year (avg R209,524)",
+            "description": "Immigration consultants are tasked with assisting individuals or companies that are planning on moving overseas and ensuring that they do not encounter any unnecessary legal difficulties. Strong communication and interpersonal skills are important in this position, as these consultants are required to interview each client to provide any relevant information and determine whether they are eligible to move in the first place."
+        },
+        {
+            "name": "Junior Associate Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Associate_Attorney/Salary",
+            "salary_expectation": "R36k – R267k / year (avg R180,000)",
+            "description": "Junior associate attorneys are responsible for gathering information for legal cases and assisting senior attorneys in forming arguments. They are in charge of facilitating the research process and interviewing key individuals before proceeding in court."
+        },
+        {
+            "name": "Senior Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Attorney/Salary",
+            "salary_expectation": "R249k – R978k / year (avg R646,334)",
+            "description": "A great deal of legal work, including both civil and criminal litigation, is done with teams of lawyers. A senior attorney is the person who helps to manage such teams."
+        },
+        {
+            "name": "Litigation Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Litigation_Attorney/Salary",
+            "salary_expectation": "R118k – R912k / year (avg R245,805)",
+            "description": "A litigation attorney is a lawyer who specializes in dealing with lawsuits and representing either plaintiffs or defendants in cases. Often simply called a litigator, they oversee the entire process of taking a lawsuit to court."
+        },
+        {
+            "name": "Attorney / Lawyer (Corporate, in-house)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Attorney_%2F_Lawyer_(Corporate%2C_in-house)/Salary",
+            "salary_expectation": "R58k – R942k / year (avg R420,000)",
+            "description": "Positions as an attorney/lawyer (corporate, in-house) are available in a wide variety of industries and companies, as almost any company that is large enough to warrant in-house counsel will hire these attorneys. The exact duties performed by these attorneys vary based on the company’s industry and needs, but typical tasks include handling brokerage agreements, non-disclosure agreements, contract reviews, and transactional support."
+        },
+        {
+            "name": "Legal Executive /General Counsel",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Executive_%2FGeneral_Counsel/Salary",
+            "salary_expectation": "R128k – R2.3m / year (avg R859,571)",
+            "description": "The legal executive/general counsel is an attorney who offers advice on legal strategies and logistics for the company. They usually head a legal department, and that department advises and and oversees company compliance with current laws regarding labor and commercial operation."
+        },
+        {
+            "name": "Legal Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Specialist/Salary",
+            "salary_expectation": "R282k – R965k / year (avg R618,005)",
+            "description": "Legal specialists assist supervising attorneys and provide support in a wide range of tasks, and may work on commercial litigation, lawsuits filed by customers, contract disputes, class actions, and more. These specialists may also draft legal communications and make general files, as well as gather documents and respond to clients' requests and legal inquiries."
+        },
+        {
+            "name": "Litigation Paralegal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Litigation_Paralegal/Salary",
+            "salary_expectation": "R98k – R587k / year (avg R196,000)",
+            "description": "The litigation paralegal performs several important duties in the litigation process. One of their primary tasks is document handling; on a day-to-day basis, they must organize, coordinate, and file necessary documents for the attorney to access."
+        },
+        {
+            "name": "Real Estate Paralegal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Real_Estate_Paralegal/Salary",
+            "salary_expectation": "R20k – R552k / year (avg R218,782)",
+            "description": "A real estate paralegal reports to an attorney, prepares/reviews real estate documents, and ensures that communication always flows smoothly between lawyers and buyers, sellers, lenders and real estate agents. A real estate paralegal can work for various parties in the real estate field, be they buyers or sellers, but the ability to adhere to deadlines is essential for ensuring that properties are closed on time."
+        },
+        {
+            "name": "Tax Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tax_Attorney/Salary",
+            "salary_expectation": "R110k – R1.4m / year (avg R518,597)",
+            "description": null
+        },
+        {
+            "name": "Senior Paralegal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Paralegal/Salary",
+            "salary_expectation": "R368 – R705k / year (avg R282,478)",
+            "description": "A senior paralegal position normally exists either within larger legal practices or the legal department of large corporations. It is distinguished from entry-level paralegal work by the amount of expertise within the field necessary to hold the position, as well as a proven ability to manage a wide variety of tasks beyond those present at the entry level."
+        },
+        {
+            "name": "Family Law Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Family_Law_Attorney/Hourly_Rate",
+            "salary_expectation": "R2 – R646k / year (avg R200,000)",
+            "description": "The field of family law is expansive, including areas such as custody, divorce, and adoption. The family law attorney is the professional hired to help guide clients through their cases and help achieve an optimal resolution through a settlement process or as their representative in court as they argue the case before a family court judge."
+        },
+        {
+            "name": "Patent Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Patent_Attorney/Salary",
+            "salary_expectation": "R66k – R972k / year (avg R480,000)",
+            "description": "A patent attorney works in a company to ensure that its patents adhere to standard protocols and are defended against infringements. The position requires the candidate to have a law degree and to have passed the bar exam in the state in which the company is located."
+        },
+        {
+            "name": "Senior Corporate Counsel",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Corporate_Counsel/Salary",
+            "salary_expectation": "R119 – R1.5m / year (avg R1,220,838)",
+            "description": "A senior corporate counsel position is part of an organization’s executive legal team. Responsibilities include negotiating and drafting various business contracts and service agreements, such as finance agreements, acquisition agreements, and joint venture agreements."
+        },
+        {
+            "name": "Senior Counsel",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Counsel/Salary",
+            "salary_expectation": "R105 – R1.7m / year (avg R797,500)",
+            "description": "A senior counsel is responsible for handling various legal matters inside a law firm or, in some cases, in businesses. Their specific tasks may vary depending on the needs of their organization and their specialty."
+        },
+        {
+            "name": "Divorce Lawyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Divorce_Lawyer/Salary",
+            "salary_expectation": "R112,000 / year",
+            "description": "Divorce lawyers are specialized attorneys that deal with the dissolution of a marital union. They represent their client in legal filings, the division of assets, and child-custody decisions, working to guarantee their client's rights are secured and ensure they receive an optimal settlement."
+        },
+        {
+            "name": "Intellectual Property (IP) Lawyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Intellectual_Property_(IP)_Lawyer/Salary",
+            "salary_expectation": "R487,957 / year",
+            "description": null
+        },
+        {
+            "name": "Legal Intern",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Intern/Salary",
+            "salary_expectation": "R12k – R175k / year (avg R70,000)",
+            "description": "Legal interns generally work in offices for law firms, though they may also work within legal departments of various businesses. These interns may work full-time if they have recently graduated from a law school, or part-time if they are still attending law school."
+        },
+        {
+            "name": "Corporate Counsel",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Corporate_Counsel/Salary",
+            "salary_expectation": "R929,221 / year",
+            "description": "Corporate counsel work with sales, marketing, and operations by offering appropriate legal and non-legal advice. These professionals are generally retained to work as a legal agent for the business entity."
+        },
+        {
+            "name": "Legal Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Analyst/Salary",
+            "salary_expectation": "R270,000 / year",
+            "description": "A legal analyst is essentially the assistant and aid who provides vital services and aid to layers and legal teams. This person can sometimes be referred to as a litigation analyst or a paralegal."
+        },
+        {
+            "name": "Mediator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mediator/Hourly_Rate",
+            "salary_expectation": "R750 / hour",
+            "description": "Mediators are responsible for resolving legal disputes between two or more parties. In a typical scenario, they act as a third party, not representing any one side of the dispute."
+        },
+        {
+            "name": "Barrister",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Barrister/Hourly_Rate",
+            "salary_expectation": "R22.27 / hour",
+            "description": "While the term \"barrister\" is often used interchangeably with \"lawyer\" or \"attorney\" in the United States, there remains a specialization (in other English-speaking countries, such as the U.K.) in the function and work of a barrister. In these countries, the barrister is typically the lawyer who presents evidence in a court in front of a judge and/or jury and assists in negotiating settlements and plea bargains."
+        },
+        {
+            "name": "Clerk, Legal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clerk%2C_Legal/Salary",
+            "salary_expectation": "R96,744 / year",
+            "description": "A legal clerk is a person who works within a law office and is responsible for researching, compiling, and organizing legal documents for both judges and lawyers. This person will work primarily in an indoor environment, and some light travel may be required."
+        },
+        {
+            "name": "Managing Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Managing_Attorney/Salary",
+            "salary_expectation": "R601,000 / year",
+            "description": "Managing attorneys are the backbone of any law firm and oversee all office operations. Their basic duty is to coordinate and operate the firm as a business while maintaining and promoting relationships with clients and associates."
+        },
+        {
+            "name": "Senior Attorney / Lawyer (Corporate, in-house)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Attorney_%2F_Lawyer_(Corporate%2C_in-house)/Salary",
+            "salary_expectation": "R930,000 / year",
+            "description": "Corporate, in-house senior attorneys/lawyers (corporate, in-house) typically work for a specific company rather than work for or operate their own law firm, though they usually have an office in the same building as the rest of the company’s administration. These senior attorneys must be available for whenever the company needs legal advice on a product or encounters legal trouble, and they also advise on most projects to explain the legalities of important tasks."
+        },
+        {
+            "name": "Trial Lawyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Trial_Lawyer/Salary",
+            "salary_expectation": "R127,500 / year",
+            "description": "Trial lawyers handle many of the functions of an attorney, and although they do argue cases in court, this is only a small percentage of their work on a daily basis. Due to ever-rising costs and court fees, trial lawyers should expect to do the majority of their work outside of the courtroom, fill out a variety of court-related documents, spend weeks and months reviewing potential clients and witnesses to interview, and meeting with other attorneys to discuss potential settlements for cases."
+        },
+        {
+            "name": "Associate Attorney / Lawyer (Corporate, in-house)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Associate_Attorney_%2F_Lawyer_(Corporate%2C_in-house)/Salary",
+            "salary_expectation": "R360,000 / year",
+            "description": "An associate in-house corporate attorney works with a specific company to see to all of its legal needs, including guiding clients in business transactions, claim liability, and on the advisability of prosecuting or defending lawsuits or legal rights and obligations. Associate in-house attorneys/lawyers analyze and interpret laws, rulings, and regulations with probable case outcomes for their business and gather evidence to formulate a defense for the company or initiate legal actions against an outside defendant."
+        },
+        {
+            "name": "Attorney, Government",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Attorney%2C_Government/Salary",
+            "salary_expectation": "R360,969 / year",
+            "description": "Attorneys of the government work within specialized areas of law to represent the interests of local, state, or federal government bodies, and may be associated with those who assist in creating or enforcing legislation and/or regulations. Government attorneys may also serve as aides who help craft legislative language or create legally presentable reports for government agencies or the general public."
+        },
+        {
+            "name": "Legal Administrative Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Legal_Administrative_Assistant/Salary",
+            "salary_expectation": "R100,800 / year",
+            "description": "A legal administrative assistant works with lawyers and paralegals, providing them with support on research, correspondence, filing, and other essential duties. An administrative assistant in this field needs a solid working knowledge of various legal principles and terms, and they must feel comfortable drafting documents and correspondence related to complicated legal concepts."
+        },
+        {
+            "name": "Corporate Paralegal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Corporate_Paralegal/Salary",
+            "salary_expectation": "R350,000 / year",
+            "description": "Many large companies have a legal department staffed by attorneys who help ensure that the organization’s business, selling, and hiring practices all adhere to laws. These departments also represent the company in the event of any legal actions."
+        },
+        {
+            "name": "Foreign Service Officer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Foreign_Service_Officer/Salary",
+            "salary_expectation": "R345,000 / year",
+            "description": "Most foreign service officers are diplomats who work for the State Department to propose and implement a variety of policies and resolutions, and prior experience and a bachelor's degree or higher in law, international relations, political science, economics, or a related field are generally required for this position. Foreign service officers may be able to tele-commute, but approvals are needed to work outside of their office environment."
+        },
+        {
+            "name": "General Counsel & Secretary",
+            "source_url": "https://www.payscale.com/research/ZA/Job=General_Counsel_%26_Secretary/Salary",
+            "salary_expectation": "R540,000 / year",
+            "description": null
+        },
+        {
+            "name": "Ombudsman",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Ombudsman/Hourly_Rate",
+            "salary_expectation": "R1,884 / hour",
+            "description": "Ombudsmen work primarily in situations in which a power struggle exists among different parties. It is common in the United Kingdom and some surrounding areas for ombudsmen to settle disputes between businesses and consumers of products; when there is a complaint against a large company, for example, an ombudsman must mend the difference in power (large corporation versus an individual with a problem or complaint) to reach a peaceful agreement between both parties."
+        },
+        {
+            "name": "Paralegal Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Paralegal_Assistant/Salary",
+            "salary_expectation": "R258,500 / year",
+            "description": "Paralegal assistants help lawyers prepare for meetings and trials. Paralegal assistants will ensure that all of the correct paperwork is filled out before a trial or hearing is going to happen."
+        },
+        {
+            "name": "Real Estate Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Real_Estate_Attorney/Salary",
+            "salary_expectation": "R250,000 / year",
+            "description": "Few business transactions can be as complicated, or symbolic of the risks of financial resources, as those involving real estate. Real estate attorneys are lawyers who specialize in this area."
+        },
+        {
+            "name": "Staff Attorney",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Staff_Attorney/Salary",
+            "salary_expectation": "R97,959 / year",
+            "description": "Staff attorneys are legal employees who work for a variety of organizations, often as full-time employees. Staff attorneys use their legal expertise to help deal with the day-to-day legal issues with which their organization needs regular assistance."
+        }
+    ]
+}

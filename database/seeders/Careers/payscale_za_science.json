@@ -1,0 +1,608 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "Science, research & analytics",
+    "collected_at": "2026-08-10",
+    "careers": [
+        {
+            "name": "Marketing Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marketing_Specialist/Salary",
+            "salary_expectation": "R99k – R577k / year (avg R308,838)",
+            "description": "A marketing specialist helps their company advertise its products and services. The specialist's role may vary depending on the company."
+        },
+        {
+            "name": "Laboratory Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Laboratory_Assistant/Salary",
+            "salary_expectation": "R81k – R274k / year (avg R149,426)",
+            "description": "A laboratory assistant generally holds is an entry-level support position requiring a high school diploma (or equivalent) and some college-level lab experience. Laboratory assistants aid the lab director in a variety of tasks, and their specific duties generally depend on the nature of the lab."
+        },
+        {
+            "name": "Environmental Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Consultant/Salary",
+            "salary_expectation": "R102k – R501k / year (avg R269,055)",
+            "description": "Environmental consultants largely work in a wide range of industries, from the private sector to corporate or government contracts. Their job duties vary largely depending on the industry in which they work."
+        },
+        {
+            "name": "Environmental Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Scientist/Salary",
+            "salary_expectation": "R48k – R562k / year (avg R256,250)",
+            "description": "An environmental scientist is a scientist who is usually employed by a government department or consulting firm to a conduct research on environmental issues. They seek to develop, implement, and enforce state, local, or federal regulations designed to preserve and protect the environment."
+        },
+        {
+            "name": "Food Technologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Food_Technologist/Salary",
+            "salary_expectation": "R20k – R485k / year (avg R237,794)",
+            "description": "A food technologist usually works for a company that produces food. The technologist may be tasked with coming up with new types of foods or flavors."
+        },
+        {
+            "name": "Research Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_Scientist/Salary",
+            "salary_expectation": "R35k – R695k / year (avg R366,653)",
+            "description": "A research scientist is a scientist who works primarily with gathering knowledge and understanding research. While many scientists are employed in applied scientific fields that involve development and design work, a research scientist typically can be found in academic settings or similar areas."
+        },
+        {
+            "name": "Economist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Economist/Salary",
+            "salary_expectation": "R113k – R1m / year (avg R363,477)",
+            "description": "Economists advise businesses and/or government organizations in different aspects of economics. Topics vary greatly, and they can include tax rates, health statistics, energy facts, transportation, international trade, and development."
+        },
+        {
+            "name": "Microbiologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Microbiologist/Salary",
+            "salary_expectation": "R76k – R385k / year (avg R183,112)",
+            "description": "Microbiologists study the biology of microorganisms such as viruses, bacteria, fungi, protozoa and algae; examples of microbiologists include bacteriologists, virologists, immunologists and clinical microbiologists. They often work in research and development, although they may also instruct students in microbiology if they hold a position at colleges and universities."
+        },
+        {
+            "name": "Chemical Laboratory Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chemical_Laboratory_Technician/Salary",
+            "salary_expectation": "R20k – R330k / year (avg R190,458)",
+            "description": "A chemical laboratory technician holds a general scientific position whose tasks vary greatly by organization type; this position is typically found at organizations that conduct scientific research or testing. Chemical laboratory technicians typically are responsible for the day-to-day operations performed by the company."
+        },
+        {
+            "name": "Laboratory Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Laboratory_Manager/Salary",
+            "salary_expectation": "R213k – R859k / year (avg R492,459)",
+            "description": "Laboratory managers oversee the day-to-day operations of laboratories. They develop procedures and maintain quality standards for specific lab procedures."
+        },
+        {
+            "name": "Clinical Psychologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clinical_Psychologist/Salary",
+            "salary_expectation": "R21k – R790k / year (avg R378,234)",
+            "description": "Clinical psychologists carry out patient evaluations and treatment in order to diagnose and relieve psychological issues; these issues may be due to the mental state of the patient or the environment and situations he/she has been facing. Objective evaluations should be carried out in order to determine the problems and what sort of care should be provided."
+        },
+        {
+            "name": "Social Media Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Social_Media_Specialist/Salary",
+            "salary_expectation": "R18k – R470k / year (avg R198,778)",
+            "description": "A social media expert is responsible for developing and implementing marketing and customer care strategies through the use of social media. They are also usually responsible for maintaining the employer's public image on the Internet through mediums such as Facebook and Twitter, reaching out to their current/potential customer base and opening a dialogue to better understand public feeling about the company."
+        },
+        {
+            "name": "Industrial-Organizational Psychologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Industrial-Organizational_Psychologist/Salary",
+            "salary_expectation": "R99k – R664k / year (avg R297,690)",
+            "description": "Industrial/organizational psychologists assist in research design, assessment exercises, interviews, and survey work for organizations. Their goal is to analyze human behavior and interactions in a workplace environment."
+        },
+        {
+            "name": "Environmental Health & Safety (EHS) Officer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Health_%26_Safety_(EHS)_Officer/Salary",
+            "salary_expectation": "R20k – R412k / year (avg R245,731)",
+            "description": "Environmental health and safety (EHS) officers are responsible for all aspects of an organizations compliance with occupational and environmental laws and regulations. This responsibility encompasses a wide array of activities."
+        },
+        {
+            "name": "Geologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Geologist/Salary",
+            "salary_expectation": "R114k – R819k / year (avg R308,772)",
+            "description": "Geologists have both theoretical and scientific duties, as well as many practical responsibilities, so wide-ranging knowledge in different areas is important in this position. A bachelor's degree in geology is generally required, and knowledge of mathematics, geology, chemistry, and physics is also necessary."
+        },
+        {
+            "name": "Research Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_Analyst/Salary",
+            "salary_expectation": "R116k – R524k / year (avg R300,303)",
+            "description": "Research analysts must carefully examine data and produce meaningful information for their employer. This can involve not only drawing meaning from the data, but also checking to make sure the data is correct and using it to validate ideas and theories."
+        },
+        {
+            "name": "Researcher (General/Unknown Type)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Researcher_(General%2FUnknown_Type)/Salary",
+            "salary_expectation": "R63k – R588k / year (avg R265,000)",
+            "description": "General researchers' job descriptions can vary greatly depending on the employer and location, though they are tasked primarily with researching online to gather information about a certain topic to benefit a business or other organization. This research can range from libraries and hospitals to social media and housing developments to obtain information that can benefit a business and help it grow."
+        },
+        {
+            "name": "Town Planner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Town_Planner/Salary",
+            "salary_expectation": "R122k – R452k / year (avg R235,671)",
+            "description": "Town planners specialize in short- and long-term decisions involving community development. Their aim to oversee the development of aspects such as agriculture, tourism, and transportation to optimize the town's growth."
+        },
+        {
+            "name": "Agronomist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Agronomist/Salary",
+            "salary_expectation": "R35k – R644k / year (avg R309,057)",
+            "description": "An agronomist helps select the correct nutrients for the crop(s) being grown and manage nutrient distribution. On a day-to-day basis, an agronomist may be required to develop budgets for facilities and available land, conducting inventory tracking of manure, and making sure that plans meet regulatory requirements."
+        },
+        {
+            "name": "Marketing Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marketing_Consultant/Salary",
+            "salary_expectation": "R7k – R475k / year (avg R182,400)",
+            "description": "A marketing consultant works to further the brand, image, and market share of the company for which they work. This can include a wide variety of activities."
+        },
+        {
+            "name": "Medical Laboratory Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Medical_Laboratory_Scientist/Salary",
+            "salary_expectation": "R20k – R357k / year (avg R203,473)",
+            "description": "Medical laboratory scientists are responsible for performing laboratory tasks related to the medical field for their organization. They are in charge of completing routine medical analysis, quality control testing, and other research activities."
+        },
+        {
+            "name": "Forensic Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Forensic_Scientist/Salary",
+            "salary_expectation": "R20k – R387k / year (avg R221,959)",
+            "description": "Forensic scientists use the scientific method to gather and analyze material to be used as evidence by law enforcement and in court proceedings. Forensic scientists work both in the field, where they are trained to recover potential evidence, and in the forensic laboratory, where they examine that evidence and make determinations regarding its provenance."
+        },
+        {
+            "name": "Food Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Food_Scientist/Salary",
+            "salary_expectation": "R25k – R420k / year (avg R210,900)",
+            "description": "Food scientists perform a variety of tasks related to the production, testing and consumption of food. They may work in quality assurance within a production facility, testing for levels of various nutrients and the presence or absence of microbes (which are essential to proper nutritional labeling and food safety)."
+        },
+        {
+            "name": "Hydrogeologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Hydrogeologist/Salary",
+            "salary_expectation": "R28k – R534k / year (avg R259,885)",
+            "description": "Hydrogeology deals with distribution and movement of groundwater in the soil and rocks of the earth’s crust. Hydrogeologists usually support technical staff on environmental projects, and their tasks consist of engineering design support, flow and transport modeling support, 3-D hydrogeology visualization, GIS analysis, data entry, and database analysis."
+        },
+        {
+            "name": "Laboratory Analyst, Chemical",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Laboratory_Analyst%2C_Chemical/Salary",
+            "salary_expectation": "R97k – R403k / year (avg R214,320)",
+            "description": "Chemical laboratory analyst positions exist in a wide variety of fields and companies, ranging from pharmaceutical companies to government agencies. Their daily tasks may include receiving and maintaining lab samples, performing maintenance and calibration for various lab equipment, and recording and analyzing results."
+        },
+        {
+            "name": "Psychometrist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Psychometrist/Salary",
+            "salary_expectation": "R110k – R436k / year (avg R251,287)",
+            "description": "A psychometrist uses their training and/or experience in psychology to specialize in tests and measurements. They may administer and score tests that evaluate the cognitive, behavioral, academic, neuropsychological, or emotional status of a patient."
+        },
+        {
+            "name": "Chemist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chemist/Salary",
+            "salary_expectation": "R144k – R507k / year (avg R283,000)",
+            "description": "Chemists most often work in a lab setting of some sort. They maintain, troubleshoot, and use various instruments, equipment, and software tools utilized for chemical analysis and processing."
+        },
+        {
+            "name": "Environmental Health Practitioner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Health_Practitioner/Salary",
+            "salary_expectation": "R249k – R438k / year (avg R323,322)",
+            "description": "Environmental health practitioners generally work for the government and help to regulate the impacts of people and businesses on the environment. There are many subjects in which they may operate, and some may be in charge of regulating one or multiple areas, such as controlling pollution and noise, environmental protection, waste control, and living/working conditions."
+        },
+        {
+            "name": "Analytical Chemist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Analytical_Chemist/Salary",
+            "salary_expectation": "R93k – R401k / year (avg R270,228)",
+            "description": "Analytical chemists are specialized scientists who work to determine the chemical makeup of a variety of substances, both organic and inorganic. They must not only determine what chemical compounds and molecules are contained in a piece of matter, but also the quantities of those chemicals relative to others to discover chemical impurities, analyze unknown samples, and maintain quality control for specific chemical substances and medicines."
+        },
+        {
+            "name": "Psychologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Psychologist/Salary",
+            "salary_expectation": "R29k – R818k / year (avg R303,333)",
+            "description": "Psychologists employ their education and knowledge of the Diagnostic and Statistical Manual of Mental Disorders (DSM-V) to provide diagnostic interviews, psychological testing, and individual and group psychotherapy. They may work as part of a multidisciplinary team, and consult with other professionals regarding patient care."
+        },
+        {
+            "name": "Research & Development (R&D) Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_%26_Development_(R%26D)_Manager/Salary",
+            "salary_expectation": "R124k – R1.1m / year (avg R535,920)",
+            "description": "Research and development managers lead a team of employees in conducting research and development for an organization. This may include investigating technology development, concept development, and new product development, among other areas."
+        },
+        {
+            "name": "Researcher, Scientific",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Researcher%2C_Scientific/Salary",
+            "salary_expectation": "R141k – R567k / year (avg R356,884)",
+            "description": "Most of the time, scientific researchers work in scientific laboratories. They may work for universities, private organizations such as pharmaceutical companies, or government agencies."
+        },
+        {
+            "name": "Food Safety Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Food_Safety_Manager/Salary",
+            "salary_expectation": "R18k – R629k / year (avg R243,480)",
+            "description": "Food safety managers work in dedicated food production operations to ensure that all consumable food items under his/her responsibility are prepared, stored, and packaged in a safe manner. They are employed primarily by food processing plants and similar large-scale food operations, but also by schools and large hospitals, to ensure that proper procedures are followed."
+        },
+        {
+            "name": "Criminologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Criminologist/Salary",
+            "salary_expectation": "R2 – R263k / year (avg R100,841)",
+            "description": "A criminologist is a specialized analyst or scientist who is particularly interested in learning about what causes criminal behavior in society. Typically, these persons work for large law enforcement entities, government agencies, or social psychology labs at universities or similar institutions."
+        },
+        {
+            "name": "Sustainability Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sustainability_Consultant/Salary",
+            "salary_expectation": "R202k – R634k / year (avg R317,795)",
+            "description": "A sustainability consultant's job is to work with companies to help them to become more environmentally friendly. The consultant can help a corporation become more well-liked in its community and also help it save money in the long-term."
+        },
+        {
+            "name": "Clinical Research Associate (CRA)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clinical_Research_Associate_(CRA)/Salary",
+            "salary_expectation": "R28k – R624k / year (avg R275,000)",
+            "description": "Clinical research associates (CRA) are responsible for assisting in the clinical research process, providing advanced technical expertise in steps such as handling supplies, ordering tests, and collecting results, presenting specific research information to the public, and a variety of administrative tasks. CRAs must follow strict privacy and safety regulations to prevent problems with subjects and ethical concerns; they must also be organized and pay close attention to detail when conducting research using investigative methods in clinical or healthcare settings."
+        },
+        {
+            "name": "Product Specialist, (Unspecified Type)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Specialist%2C_(Unspecified_Type)/Salary",
+            "salary_expectation": "R201k – R675k / year (avg R372,482)",
+            "description": "Product specialists work in a wide variety of fields and their duties may vary widely depending on their industry and employer. However, they typically work to develop products for their respective organizations."
+        },
+        {
+            "name": "Quality Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Analyst/Salary",
+            "salary_expectation": "R90k – R391k / year (avg R167,867)",
+            "description": null
+        },
+        {
+            "name": "Environmental Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Manager/Salary",
+            "salary_expectation": "R30k – R1.4m / year (avg R440,000)",
+            "description": "As companies seek to address environmental concerns related to their business operations, environmental managers are increasingly important, particularly in large corporations. Environmental managers are tasked with oversight of companies’ overall environmental friendliness."
+        },
+        {
+            "name": "Marketing Communications Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marketing_Communications_Specialist/Salary",
+            "salary_expectation": "R49k – R608k / year (avg R315,310)",
+            "description": "A marketing communications specialist helps serve as the \"voice of the organization\" to the outside world, advancing the business’ interests and presenting it in the best possible light. Their duties include writing, developing and designing visuals, and creating presentations."
+        },
+        {
+            "name": "Medical Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Medical_Scientist/Salary",
+            "salary_expectation": "R154k – R623k / year (avg R297,958)",
+            "description": "A medical scientist is someone who works to try to gain a better understanding of human anatomical processes, diseases, and related biological research. Universities, pharmaceutical and biomedical companies, and research hospitals may employ medical scientists."
+        },
+        {
+            "name": "Pricing Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Pricing_Analyst/Salary",
+            "salary_expectation": "R209k – R631k / year (avg R308,602)",
+            "description": "Pricing analysts study pricing to determine the best target price for their business. While many businesses hire a full-time pricing analyst, some are hired as consultants to work on a single project or for a short amount of time."
+        },
+        {
+            "name": "Environmental Health & Safety (EHS) Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Health_%26_Safety_(EHS)_Specialist/Salary",
+            "salary_expectation": "R237k – R649k / year (avg R354,930)",
+            "description": "An environmental health and safety specialist observes and chronicles individuals' typical behaviors and procedures to determine if these practices are safe for the individual and for the company as a whole. This position is especially important in manufacturing and production fields, as a great deal of safety concerns may arise for those working on heavy machinery or directly with raw materials."
+        },
+        {
+            "name": "Research Scientist, Biotechnology",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_Scientist%2C_Biotechnology/Salary",
+            "salary_expectation": "R27k – R538k / year (avg R240,000)",
+            "description": "Most biotechnology research scientists work in a laboratory conducting experiments in the field of biotechnology, which looks to incorporate the unique characteristics of nature to invent or propose a product that can (for example) further crop growth, preserve food with greater safety, and possibly create a better pharmaceutical drug. Biotechnology researchers normally work for large industries, although positions do exist in governmental and nonprofit sectors."
+        },
+        {
+            "name": "Marketing Strategist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marketing_Strategist/Salary",
+            "salary_expectation": "R30k – R486k / year (avg R247,478)",
+            "description": null
+        },
+        {
+            "name": "Biotechnologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Biotechnologist/Salary",
+            "salary_expectation": "R24k – R410k / year (avg R130,000)",
+            "description": "Biotechnologists perform innovative work in areas such as quality control, quality certification, and data innovation. There are three areas of biotechnology: environmental, industrial, and medical; examples of their work include performing live animal studies and utilizing investigative learning of plants, organisms, organic chemistry, and hereditary qualities to answer questions and solve problems."
+        },
+        {
+            "name": "Business Development Associate",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Development_Associate/Salary",
+            "salary_expectation": "R77k – R854k / year (avg R350,000)",
+            "description": "Business development associates help increase growth and sales for their company. The field in which they work may vary, including everything from information technology (IT) to marketing to engineering."
+        },
+        {
+            "name": "Biomedical Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Biomedical_Scientist/Salary",
+            "salary_expectation": "R3k – R765k / year (avg R154,421)",
+            "description": "Biomedical scientists work in laboratories where they perform various scientific experiments. They are often the ones who design the experiments, but sometimes perform experiments designed by the head of the lab, also known as the \"primary investigator.\" A bachelor's degree in biology or a biomedical field is generally required for this position, as well as some experience working in a basic science lab, either in college or the field."
+        },
+        {
+            "name": "Research and Development (R&D) Lab Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_and_Development_(R%26D)_Lab_Technician/Salary",
+            "salary_expectation": "R99k – R333k / year (avg R196,389)",
+            "description": "Research and development (R&D) lab technicians generally work in a laboratory setting, conducting tests to ensure that products are being tested correctly. They are in charge of gathering data, keeping accurate records, and making sure records are filed correctly."
+        },
+        {
+            "name": "Environmental Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Specialist/Salary",
+            "salary_expectation": "R218k – R986k / year (avg R605,000)",
+            "description": "An environmental specialist is in charge of enforcing and regulating the containment and disposal of hazardous materials.They help ensure that federal, state, and local regulations are followed, as well as perform environmental studies to determine the effects of pollution on the local environment. If a violation occurs, the environmental specialist must perform follow-up interviews and studies to ensure that the offending party corrects the situation and assess the effects on the environment."
+        },
+        {
+            "name": "Horticulturist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Horticulturist/Salary",
+            "salary_expectation": "R68k – R542k / year (avg R292,144)",
+            "description": "Horticulturists have a variety of duties which revolve around the growing, breeding, and landscaping of plants. They are employed in a range of industries, including landscaping, nursery production, and plant science."
+        },
+        {
+            "name": "Product Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Analyst/Salary",
+            "salary_expectation": "R139k – R844k / year (avg R473,693)",
+            "description": "A product analyst is a specific type of business analyst involved in their employer's strategic review and planning process, analyzing existing products and potential new products the firm may wish to bring to market. The product analyst generally works for a single firm, though they may sometimes be hired on as independent consultants or contractors by companies seeking the viewpoint of an outsider."
+        },
+        {
+            "name": "Neuropsychologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Neuropsychologist/Salary",
+            "salary_expectation": "R38 – R773k / year (avg R294,791)",
+            "description": "A neuropsychologist is a psychologist specializing in the physical structure of the brain and how behaviors, mental abilities, and emotions relate to the brain and its systems. They are generally called upon to evaluate brain function when brain injury is obvious (as in physical trauma) or impairment is suspected due to aging, illness, or as a result of treatment."
+        },
+        {
+            "name": "Research Chemist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_Chemist/Salary",
+            "salary_expectation": "R142k – R423k / year (avg R288,000)",
+            "description": "A research chemist uses their background of chemistry and research techniques to discover new knowledge or develop new technologies. Chemistry is the study of matter and energy, and, thus, the discipline is applicable to expand a wide variety of fields."
+        },
+        {
+            "name": "Urban and Regional Planner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Urban_and_Regional_Planner/Salary",
+            "salary_expectation": "R26k – R809k / year (avg R306,251)",
+            "description": "An urban regional planner works in the urban planning field. They create plans for the purpose of optimizing efficiency and effectiveness of a community’s land and infrastructure."
+        },
+        {
+            "name": "Animal Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Animal_Scientist/Salary",
+            "salary_expectation": "R20k – R357k / year (avg R246,517)",
+            "description": "An animal scientist is a person who studies and researches the health, social patterns, and behavior of non-human animal species. Many animal scientists work within the field of agriculture, where the science is typically of an applied variety."
+        },
+        {
+            "name": "Research Intern",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_Intern/Salary",
+            "salary_expectation": "R49k – R235k / year (avg R98,547)",
+            "description": "Research interns are often college students who work on research projects for companies, and many positions require that the intern is currently working toward a bachelor's or master's degree. This may be a paid or non-paid position depending on the company."
+        },
+        {
+            "name": "Urban Planner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Urban_Planner/Salary",
+            "salary_expectation": "R85k – R789k / year (avg R302,260)",
+            "description": "Urban planners map out the most effective use of a community’s land and infrastructure. They analyze economic, environmental, and social trends that help in the development of a plan for the land use."
+        },
+        {
+            "name": "Consultant, Marketing Communications",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Consultant%2C_Marketing_Communications/Salary",
+            "salary_expectation": "R91k – R512k / year (avg R201,980)",
+            "description": "Marketing communications consultants help market a company to increase its marketplace visibility and sales. Strategic maneuvers implemented by skilled consultants may add to a company's profits and reputation while building a recurring sales base."
+        },
+        {
+            "name": "Hydrologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Hydrologist/Salary",
+            "salary_expectation": "R20k – R447k / year (avg R208,118)",
+            "description": "A hydrologist works for a government agency or a company and studies water itself, water availability, and the water cycle. When relevant problems occur, the hydrologist helps to solve these issues."
+        },
+        {
+            "name": "Clinical Research Coordinator (CRC)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clinical_Research_Coordinator_(CRC)/Salary",
+            "salary_expectation": "R29k – R551k / year (avg R216,000)",
+            "description": "Clinical research coordinators (CRC) are in charge of coordinating clinical and administrative tasks in the research process on behalf of their organization. They attend to participants' questions and respond with details related to clinical steps as needed."
+        },
+        {
+            "name": "Counseling Psychologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Counseling_Psychologist/Salary",
+            "salary_expectation": "R15k – R980k / year (avg R330,000)",
+            "description": "A counseling psychologist is a mental health professional who works with patients to improve their mental, behavioral and emotional health. They use psychological techniques in their therapy sessions to help patients with issues such as anxiety, depression and interpersonal conflicts."
+        },
+        {
+            "name": "Marketing Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marketing_Analyst/Salary",
+            "salary_expectation": "R20k – R520k / year (avg R259,999)",
+            "description": "A market analyst helps businesses gain more insight into their products from a marketing perspective. Clients have certain unique marketing goals, and the market analyst creates a plan, analyzes the available data, and comes up with multiple potential solutions for the client."
+        },
+        {
+            "name": "Metrologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Metrologist/Hourly_Rate",
+            "salary_expectation": "R144 / hour",
+            "description": "Science relies on the ability of scientists to make precise measurements, but just as one can use a calculator without a thorough understanding of how mathematics work, scientists are not generally tasked with having a thorough understanding of the underpinning principles of the instruments they use. The equipment a scientist uses requires precise voltages to work, for example, but the user need not understand electrical theory to use it as intended."
+        },
+        {
+            "name": "Senior Research Scientist (Unspecified Type)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Research_Scientist_(Unspecified_Type)/Salary",
+            "salary_expectation": "R423k – R1.3m / year (avg R755,889)",
+            "description": "Senior research scientists (unspecified type) typically work in a laboratory environment, conducting research and experiments for academic, industrial or commercial ends. They may help develop new products for their company, for example, or help contribute to scientific understanding within their field."
+        },
+        {
+            "name": "Senior Researcher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Researcher/Salary",
+            "salary_expectation": "R247k – R812k / year (avg R450,454)",
+            "description": null
+        },
+        {
+            "name": "Transportation Planner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Transportation_Planner/Salary",
+            "salary_expectation": "R165k – R433k / year (avg R313,977)",
+            "description": "Transportation planners design, maintain, and improve community infrastructure such as bridges, highway roads, and interstate expressways so that drivers can safely and easily travel from one place to another. These professionals may work with or for city, local, and state governments."
+        },
+        {
+            "name": "Chemical Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chemical_Analyst/Salary",
+            "salary_expectation": "R129 / hour",
+            "description": "A chemical analyst works on an analysis and research team in a company to gather and analyze chemical samples. This may involve manipulating materials so that they can be objectively analyzed."
+        },
+        {
+            "name": "Food Safety Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Food_Safety_Specialist/Salary",
+            "salary_expectation": "R9k – R824k / year (avg R222,836)",
+            "description": "A food safety specialist, commonly known as a \"food inspector,\" is responsible for assessing and monitoring food quality and safety for the public. These specialists may work in a variety of environments, including food labs, offices, restaurants, grocery stores, and places where food is manufactured."
+        },
+        {
+            "name": "Marketing Research Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marketing_Research_Analyst/Salary",
+            "salary_expectation": "R159k – R670k / year (avg R249,138)",
+            "description": "A marketing research analyst is mainly responsible for interpreting information from department reports, as well as presenting recommendations based on those analyses. The marketing team works on high impact, strategic projects to attract and maintain a steady base of customers to the company."
+        },
+        {
+            "name": "Postdoctoral Research Associate",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Postdoctoral_Research_Associate/Salary",
+            "salary_expectation": "R197k – R515k / year (avg R294,791)",
+            "description": "Postdoctoral research associates generally assist tenured professors and/or senior researchers and work in a university environment or laboratory, though they also work independently. They often assist principal investigators in performing experimental investigations; on behalf of principal investigators, they may provide guidance to laboratory technicians and/or support staff."
+        },
+        {
+            "name": "Sr. Geologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sr._Geologist/Salary",
+            "salary_expectation": "R503k – R1.1m / year (avg R800,362)",
+            "description": "A senior geologist is a high-level professional who is responsible for overseeing geological operations for a company. There are a wide variety of fields that employ geologists, ranging from petroleum to mining to specialized construction, and a senior geologist is (or several senior geologists are) employed to coordinate geology-related tasks."
+        },
+        {
+            "name": "Biochemist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Biochemist/Salary",
+            "salary_expectation": "R194k – R604k / year (avg R240,522)",
+            "description": "A biochemist is a scientist who works with molecules and compounds, often at a cellular level. They study the way that cells across a variety of biological compounds interact, using this information in association with goals such as creating more effective medications, diagnosing diseases and producing healthier food."
+        },
+        {
+            "name": "Clinical Project Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clinical_Project_Manager/Salary",
+            "salary_expectation": "R197k – R1.1m / year (avg R645,279)",
+            "description": "Clinical project managers conduct and supervise clinical trials. They are responsible for managing a group of clinical professionals during the trial phases and create progress reports based on the team's findings."
+        },
+        {
+            "name": "Content Strategist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Content_Strategist/Salary",
+            "salary_expectation": "R157k – R777k / year (avg R420,000)",
+            "description": "Content strategists typically develop a plan for content and oversee how that plan is carried out. Because content strategists are responsible for creating a unified message for their organization, they must be able to work well with others to determine their company's - and individual departments' - needs."
+        },
+        {
+            "name": "Research Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_Director/Salary",
+            "salary_expectation": "R472k – R1.2m / year (avg R824,917)",
+            "description": "A research director oversees an organization's research and development department. The research director drives team members to use the scientific method to push the boundaries of human knowledge and develop new technologies that expand the frontier of an industry."
+        },
+        {
+            "name": "Astrophysicist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Astrophysicist/Salary",
+            "salary_expectation": "R20k – R1m / year (avg R262,000)",
+            "description": "Astrophysicists are scientists involved in researching and hypothesizing the nature of the universe. They do this by observing stars, planets, and astronomical phenomena in order to gain a better understanding of life outside of the Earth's solar system."
+        },
+        {
+            "name": "Food Safety Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Food_Safety_Coordinator/Salary",
+            "salary_expectation": "R19k – R405k / year (avg R181,266)",
+            "description": "A food safety coordinator job is responsible for ensuring that the company they are working for are following health and safety guidelines relevant to the food industry. They assist the manager in making sure that the organization is on track to be an incident-free workplace."
+        },
+        {
+            "name": "Senior Environmental Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Environmental_Consultant/Salary",
+            "salary_expectation": "R297k – R670k / year (avg R427,657)",
+            "description": "Senior environmental consultants are responsible for all aspects of site-specific compliance with environmental laws, rules, and regulations from state and federal agencies. These consultants provide assistance to subcontractors and other outside clients and are responsible for maintaining and developing their organization’s relationships with these clients to ensure future consulting work."
+        },
+        {
+            "name": "Senior Research Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Research_Analyst/Salary",
+            "salary_expectation": "R226k – R604k / year (avg R391,833)",
+            "description": "A senior technical analyst is a versatile technical problem solver that can be found in many different industries. The core responsibilities of a senior technical analyst are to collect, analyze, and present data, and then make a recommendation based upon that data."
+        },
+        {
+            "name": "Biological Science Laboratory Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Biological_Science_Laboratory_Technician/Salary",
+            "salary_expectation": "R153 – R311k / year (avg R154,000)",
+            "description": "Biological science laboratory technicians can perform a wide range of tasks depending on the type of biological laboratory in which they are employed. A botany lab, for example, will require that the laboratory technician properly care for and manage the plants being studied at the laboratory."
+        },
+        {
+            "name": "Clinical Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clinical_Coordinator/Salary",
+            "salary_expectation": "R232k – R584k / year (avg R384,726)",
+            "description": "Clinical coordinators are responsible for organizing and overseeing the administrative aspects of health services and hospital departments. They work in hospitals, clinics, academic medical programs, and other patient care environments."
+        },
+        {
+            "name": "Forensic Psychologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Forensic_Psychologist/Salary",
+            "salary_expectation": "R20k – R789k / year (avg R125,000)",
+            "description": "Forensic psychologists are often licensed psychologists that have chosen to specialize in the forensic concentration. They often have a doctorate in counseling or forensic psychology."
+        },
+        {
+            "name": "Market Researcher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Market_Researcher/Salary",
+            "salary_expectation": "R60k – R397k / year (avg R253,000)",
+            "description": "Market researchers are in charge of researching all aspects of the market on behalf of their organization. They are responsible for completing different research tasks and analyzing raw data, conducting assessments, surveys, and other research to obtain valuable information on the market in which their company operates."
+        },
+        {
+            "name": "Senior Product Development Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Product_Development_Scientist/Salary",
+            "salary_expectation": "R459,873 / year",
+            "description": "A senior product development scientist oversees the development of a product from start to finish, ensuring that the product is able to pass through every step of the process from the drawing table until shipment. Senior product development scientists are usually responsible for leading development teams, designing new products or developments, maintaining quality standards with testing, and compiling and organizing data necessary for product release."
+        },
+        {
+            "name": "Economic Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Economic_Analyst/Salary",
+            "salary_expectation": "R117k – R618k / year (avg R207,656)",
+            "description": "An economic analyst is someone who is hired to research relevant trends in business. The economic analyst then offers forecasts, suggestions, and advice to a company, public body, or elected official."
+        },
+        {
+            "name": "Forensic Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Forensic_Analyst/Salary",
+            "salary_expectation": "R92k – R497k / year (avg R309,407)",
+            "description": "A forensic analyst uses a variety of scientific and analytical approaches to aid in criminal investigations. An analyst may be assigned to teams who arrive at crime scenes shortly after they are discovered."
+        },
+        {
+            "name": "Forester",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Forester/Salary",
+            "salary_expectation": "R82k – R582k / year (avg R298,124)",
+            "description": "Foresters are responsible for maintaining, studying, and gathering data on natural habitats. This is not strictly limited to forests, and may also include lakes, mountains, and grasslands."
+        },
+        {
+            "name": "Marketing Data Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marketing_Data_Analyst/Salary",
+            "salary_expectation": "R184k – R979k / year (avg R255,000)",
+            "description": "The main responsibility of a marketing data analyst is supporting marketing strategies and executing them in alignment with their company's goals. They are also in charge of collecting, analyzing, and reporting on data that has been collected on existing and new products."
+        },
+        {
+            "name": "Principal Scientist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Principal_Scientist/Salary",
+            "salary_expectation": "R389k – R1.3m / year (avg R850,000)",
+            "description": "Principal scientists lead scientific teams, conducting research and analyzing results. The goals of this research vary according to the field and industry in which the principal scientists are employed."
+        },
+        {
+            "name": "Quality Control Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Control_Analyst/Salary",
+            "salary_expectation": "R50.00 / hour",
+            "description": "Quality control analysts are responsible for analyzing and proposing effective solutions for quality-control issues in their organization. One of their main responsibilities include overseeing a production environment, including conducting quality-control testing, creating reports that specify issues that need to be fixed, and making recommendations for increasing quality output while reducing the use of company resources."
+        },
+        {
+            "name": "Research Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_Coordinator/Salary",
+            "salary_expectation": "R15k – R473k / year (avg R315,745)",
+            "description": null
+        },
+        {
+            "name": "Sales Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sales_Analyst/Salary",
+            "salary_expectation": "R107k – R490k / year (avg R279,000)",
+            "description": "The sales analyst is tasked with a variety of efforts relating to increasing overall sales. This primarily involves analyzing past sales data and market trends, and then using those analyses to produce sales forecasts and strategies."
+        },
+        {
+            "name": "Search Engine Marketing (SEM) Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Search_Engine_Marketing_(SEM)_Specialist/Salary",
+            "salary_expectation": "R213,192 / year",
+            "description": "Search engine marketing (SEM) specialists work in a variety of settings, ranging from smaller websites to large firms. Job duties include planning strategies and goals for optimization results, conducting keyword research, and producing marketing campaigns."
+        },
+        {
+            "name": "Social Media Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Social_Media_Analyst/Salary",
+            "salary_expectation": "R81k – R414k / year (avg R202,492)",
+            "description": "Companies today have to carefully craft and maintain their online brand presence, and this kind of work usually is performed by a social media analyst who is highly skilled in online communication. This job requires a person who is adept at search engine optimization (SEO) and able to maintain a consistent, positive image across the spectrum of current and emerging social media platforms."
+        },
+        {
+            "name": "Astronomer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Astronomer/Salary",
+            "salary_expectation": "R50k – R1.3m / year (avg R225,000)",
+            "description": "Astronomy is the science of examining the cosmos and using applied physics and mathematical formulas to attempt to explain, classify, discuss, and offer explanations about the universe. Astronomers use a variety of high-tech, sensitive instruments to measure the location and movements of objects in the sky."
+        },
+        {
+            "name": "Crime Scene Investigator (CSI)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Crime_Scene_Investigator_(CSI)/Salary",
+            "salary_expectation": "R204k – R636k / year (avg R416,434)",
+            "description": "A crime scene investigator (CSI) is responsible for securing and examining details left at the scene of a crime. They are responsible for sorting through evidence and details to assist prosecutors in building a case."
+        },
+        {
+            "name": "Digital Marketing Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Digital_Marketing_Analyst/Salary",
+            "salary_expectation": "R264,000 / year",
+            "description": null
+        },
+        {
+            "name": "Environmental Health & Safety (EHS) Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Health_%26_Safety_(EHS)_Coordinator/Salary",
+            "salary_expectation": "R31k – R601k / year (avg R264,138)",
+            "description": "Environmental health and safety (EHS) coordinators work to create and enforce a culture of safety within their organizations. They implement programs, policies, and assessments to ensure their company is in compliance with all federal and internal health and safety rules."
+        },
+        {
+            "name": "Epidemiologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Epidemiologist/Salary",
+            "salary_expectation": "R51k – R1m / year (avg R576,923)",
+            "description": "An epidemiologist is a research scientist who studies the relationship between the spread of communicable diseases and the cultures and vectors in which these illnesses spread. The epidemiologist collects data to cover a variety of cultural factors and then helps to find ways for populations and cultural groups to stop, or at least impede, the spread of the disease."
+        }
+    ]
+}

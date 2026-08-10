@@ -1,0 +1,608 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "Education, teaching & academic",
+    "collected_at": "2026-08-10",
+    "careers": [
+        {
+            "name": "High School Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=High_School_Teacher/Salary",
+            "salary_expectation": "R29k – R374k / year (avg R243,845)",
+            "description": "High school teachers, also called secondary school teachers, provide instruction to students in one or more areas of study within a public or private high school. They may also supervise extracurricular activities, proctor state testing exams, assist with college preparation (such as by writing letters of recommendation), organize field trips, and supervise study hall and/or detention, among other duties."
+        },
+        {
+            "name": "Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Teacher/Salary",
+            "salary_expectation": "R18k – R305k / year (avg R206,058)",
+            "description": "Teachers work primarily at schools and universities to administer courses according to the standards of the state and institution, as well as create a syllabus and daily lessons. The necessary materials are often ordered by the teacher, and they may also be allocated budgets to be met."
+        },
+        {
+            "name": "Primary School Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Primary_School_Teacher/Salary",
+            "salary_expectation": "R23k – R308k / year (avg R206,295)",
+            "description": "Primary school teachers instruct children who are typically in grades one through five or six and between six and eleven years old. The goal of educating pupils at this age is to lay the firm foundations of reading comprehension, writing, and math, and primary school teachers also use these fundamentals to teach broader foundation knowledge in subjects like science and social studies."
+        },
+        {
+            "name": "Elementary School Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Elementary_School_Teacher/Salary",
+            "salary_expectation": "R12k – R341k / year (avg R182,318)",
+            "description": "An elementary school teacher is a person whose career involves educating students, typically those in grades one through six. Teachers at this level normally do not specialize in particular branches of education."
+        },
+        {
+            "name": "Tutor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tutor/Hourly_Rate",
+            "salary_expectation": "R41.37 – R212 / hour (avg R102.07)",
+            "description": "A tutor is a wide-ranging teaching position in which an instructor usually works one-on-one or in a small group setting with a pupil, in order to learn an academic subject or a specific skill. The study or training sessions are usually conducted in person, although tutors can also work remotely via video, live chat, or email."
+        },
+        {
+            "name": "Lecturer / Speaker",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lecturer_%2F_Speaker/Salary",
+            "salary_expectation": "R48k – R668k / year (avg R299,666)",
+            "description": "Being a lecturer/speaker means more than just talking. A lecturer/speaker has a responsibility to his or her student, as any professor would, as well as to his or her fellow instructors."
+        },
+        {
+            "name": "Preschool Teacher, (but not Special Education)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Preschool_Teacher%2C_(but_not_Special_Education)/Salary",
+            "salary_expectation": "R5k – R183k / year (avg R50,400)",
+            "description": "A preschool teacher, in a general classroom setting, is expected to work with children younger than school age, usually between the ages of three and five. A preschool teacher must engage these small children in activities that are not too challenging but still have educational merit, including, but not limited to finger painting, putting on short plays, singing songs, and reading to them."
+        },
+        {
+            "name": "Lecturer, Postsecondary / Higher Education",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lecturer%2C_Postsecondary_%2F_Higher_Education/Salary",
+            "salary_expectation": "R126k – R618k / year (avg R321,338)",
+            "description": "Posetsecondary/higher education lecturers perform a number of tasks in postsecondary institutions. They are responsible for delivering lectures and seminars, developing and implementing teaching methods, and constructing exams and assessments."
+        },
+        {
+            "name": "Mathematics Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mathematics_Teacher/Salary",
+            "salary_expectation": "R93k – R415k / year (avg R259,789)",
+            "description": null
+        },
+        {
+            "name": "Head Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Head_Teacher/Salary",
+            "salary_expectation": "R153k – R425k / year (avg R304,174)",
+            "description": "\"Head teacher\" is a job title typically used by private and boarding schools to designate a position similar to a school principal. The head teacher is responsible for the school's administration on a number of levels, from ensuring a designated curriculum is taught throughout the institution to setting and enforcing regulations for conduct."
+        },
+        {
+            "name": "Teacher Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Teacher_Assistant/Salary",
+            "salary_expectation": "R9k – R121k / year (avg R57,300)",
+            "description": "Teacher assistants can range from a wide group of people in the education field. They can consist of high school seniors, college undergraduates, teachers with previous experience but who are looking to work in a different area, and many others."
+        },
+        {
+            "name": "Instructional Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instructional_Designer/Salary",
+            "salary_expectation": "R176k – R499k / year (avg R357,417)",
+            "description": "An instructional designer is responsible for developing instructional material, such as customer training courses, that help support the company's technical products. For that purpose, an instructional designer is tasked with creating material that helps all types of users understand the product better."
+        },
+        {
+            "name": "Daycare Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Daycare_Teacher/Salary",
+            "salary_expectation": "R3k – R78k / year (avg R27,000)",
+            "description": "Daycare teachers work daily with children of toddler age during the day. They must incorporate physical and mental awareness to assist the children with their daily activities, plan new activities and projects for them to do each day, and be mindful and aware of their safety at all times."
+        },
+        {
+            "name": "Middle School Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Middle_School_Teacher/Salary",
+            "salary_expectation": "R26k – R343k / year (avg R206,697)",
+            "description": "A middle school teacher usually teaches children who are between 11 and 14 years old. Sometimes, the teacher may be expected to oversee 30 children or more."
+        },
+        {
+            "name": "Secondary School Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Secondary_School_Teacher/Salary",
+            "salary_expectation": "R21k – R350k / year (avg R233,428)",
+            "description": "Secondary school teachers generally work in a middle school or high school environment and administer lessons to students. This often involves teaching large classes of students, so it is important to show authority and be able to control a large group of people."
+        },
+        {
+            "name": "Toddler Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Toddler_Teacher/Salary",
+            "salary_expectation": "R3k – R89k / year (avg R40,976)",
+            "description": "Toddler teachers work closely with the child - generally in a daycare or preschool setting - and instruct them different subjects. In addition to teaching, toddler teachers are also responsible for the general care of the child (for example, ensuring the child's safety)."
+        },
+        {
+            "name": "Senior Lecturer, Postsecondary / Higher Education",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Lecturer%2C_Postsecondary_%2F_Higher_Education/Salary",
+            "salary_expectation": "R295k – R964k / year (avg R645,018)",
+            "description": "Senior lecturers at a postsecondary (or higher education) level have many different roles and titles. They serve as educators for postsecondary students, and they may also hold a research position in their institution or a relevant job within their field (lecturing on a part-time basis)."
+        },
+        {
+            "name": "Librarian",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Librarian/Salary",
+            "salary_expectation": "R50k – R403k / year (avg R246,825)",
+            "description": "A librarian can work at a public library, a school library, a university library, or a government library. Some large companies may also maintain a librarian, in order to organize documents and literature related to the company."
+        },
+        {
+            "name": "Principal / Headmaster",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Principal_%2F_Headmaster/Salary",
+            "salary_expectation": "R20k – R866k / year (avg R515,000)",
+            "description": "School principals and headmasters serve as the head of their school and are ultimately responsible for the performance of teachers, students, and other employees. To perform the job successfully, principals must have teaching, managerial, and planning skills, as well as the ability to communicate the school’s performance and needs to school board members and other leaders within the school district."
+        },
+        {
+            "name": "Early Childhood Educator (ECE)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Early_Childhood_Educator_(ECE)/Salary",
+            "salary_expectation": "R4k – R307k / year (avg R84,136)",
+            "description": "Children who receive the proper attention early on in life will do better during their educational years. That’s what early childhood educators do; they provide all the important skills a child needs to be successful."
+        },
+        {
+            "name": "Education Facilitator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Education_Facilitator/Salary",
+            "salary_expectation": "R23k – R524k / year (avg R120,000)",
+            "description": "An education facilitator is similar to a teacher, but their work certainly differs. While teachers often lecture and read from textbooks to convey knowledge to the class, a facilitator will work in many different ways."
+        },
+        {
+            "name": "Health Promotion Officer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Health_Promotion_Officer/Salary",
+            "salary_expectation": "R400 – R330k / year (avg R77,870)",
+            "description": "Health promotion officers are responsible for promoting good health practices, often within the contexts of community groups, governmental health policies, educational health programs, or for the public in general. At the governmental level, health promotion officers may lobby state or federal governments for funding for particular health areas, such as domestic violence or depression."
+        },
+        {
+            "name": "English as a Second Language (ESL) Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=English_as_a_Second_Language_(ESL)_Teacher/Hourly_Rate",
+            "salary_expectation": "R15.78 – R417 / hour (avg R90)",
+            "description": "An ESL (English as a Second Language) teacher’s primary function is to teach English to students who are not native speakers. They help students to understand common customs and expectations within American culture In addition, depending on a student's English-language skills and the teacher's institution, the ESL teacher’s job may extend into helping students understand their coursework in other subjects (such as math and science) or even teaching those subjects directly."
+        },
+        {
+            "name": "Learning Facilitator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Learning_Facilitator/Salary",
+            "salary_expectation": "R24k – R558k / year (avg R168,000)",
+            "description": "Learning facilitators are responsible for facilitating learning tasks and implementing effective learning strategies for difficult concepts. They use different technological devices to interact with students, and must also create effective tools to be used in learning settings."
+        },
+        {
+            "name": "Driving Instructor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Driving_Instructor/Salary",
+            "salary_expectation": "R20.61 – R339 / hour (avg R50.11)",
+            "description": "Driving instructors train people of different skill levels on how to correctly and safely operate vehicles. Instructors mainly work in vehicles with people who are either earning their license for the first time or those who have decided to make a career out of commercial driving (such as commercial truck drivers)."
+        },
+        {
+            "name": "Primary School Principal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Primary_School_Principal/Salary",
+            "salary_expectation": "R31k – R716k / year (avg R451,856)",
+            "description": null
+        },
+        {
+            "name": "Education Program Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Education_Program_Manager/Salary",
+            "salary_expectation": "R158k – R560k / year (avg R351,112)",
+            "description": "The primary role of the education program manager is to collaborate with clients to deliver the smooth, effective educational experiences. This is achieved primarily through actively gathering and analyzing client feedback to determine which aspects of the relationship can be enhanced and improved."
+        },
+        {
+            "name": "High School Principal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=High_School_Principal/Salary",
+            "salary_expectation": "R32k – R910k / year (avg R488,431)",
+            "description": null
+        },
+        {
+            "name": "Special Education Teacher, Preschool, Kindergarten, or Elementary School",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Special_Education_Teacher%2C_Preschool%2C_Kindergarten%2C_or_Elementary_School/Salary",
+            "salary_expectation": "R6k – R315k / year (avg R113,195)",
+            "description": "Special education teachers in elementary school work with young students who face various learning disabilities. They may aim to help students transition into regular classes, or simply help them improve functionality."
+        },
+        {
+            "name": "Assessment and Education Researcher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assessment_and_Education_Researcher/Salary",
+            "salary_expectation": "R103,846 / year",
+            "description": "Assessment and education researchers are responsible for studying academic departments at an educational facility and analyzing the effectiveness of their curriculum. Their main objective is to ensure their institution is operating at the most efficient and effectual state possible."
+        },
+        {
+            "name": "Physical Education Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Physical_Education_Teacher/Salary",
+            "salary_expectation": "R986 – R293k / year (avg R73,250)",
+            "description": "A physical education teacher is responsible for developing instructional plans that encourage physical activity in students ranging from kindergarten through college. These typically include organized games and sports."
+        },
+        {
+            "name": "Art Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Art_Teacher/Salary",
+            "salary_expectation": "R22k – R318k / year (avg R197,739)",
+            "description": "An art teacher works in a school environment, and the ages of students taught can vary from pre-school up to adults. A bachelor’s degree or higher in the arts is often required for this position, and extensive knowledge of art history and techniques is also necessary to teach a variety of topics to students."
+        },
+        {
+            "name": "Graduate Research Assistant (GRA)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graduate_Research_Assistant_(GRA)/Salary",
+            "salary_expectation": "R99k – R314k / year (avg R201,980)",
+            "description": "Graduate research assistants (GRAs) are in charge of conducting research efforts at a graduate level, analyzing information, aggregating data, running calculations using spreadsheet software, and assisting professors, professionals, and other individuals in carrying out research and administrative tasks as needed. Those in this position must be organized and pay close attention to detail to prepare extensive reports based on research results, and they must be proficient in computer and research software to prepare papers with their findings."
+        },
+        {
+            "name": "Special Education Teacher, Secondary School",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Special_Education_Teacher%2C_Secondary_School/Salary",
+            "salary_expectation": "R67k – R396k / year (avg R215,504)",
+            "description": "Special education teachers in secondary schools help instruct and guide children with mild or moderate disabilities. They adapt a general curriculum so that it meets the specific needs of these individuals and ensure it helps students acquire vital basic skills they will need in the future."
+        },
+        {
+            "name": "Admissions Officer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Admissions_Officer/Salary",
+            "salary_expectation": "R6k – R587k / year (avg R220,000)",
+            "description": "Admissions officers are responsible for coordinating admissions-related efforts for their organization. They are in charge of student recruitment activities, and one of their main responsibilities is responding to prospect student inquiries in a prompt and professional manner."
+        },
+        {
+            "name": "Education Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Education_Manager/Salary",
+            "salary_expectation": "R152k – R986k / year (avg R415,751)",
+            "description": "Education managers work at many types of learning institutions, and their jobs focus primarily on the administration process, which includes supervising staff, organizing programs, and obtaining funding for their institutions. Education managers spend much of their time preparing schedules for instructors and evaluating their performances."
+        },
+        {
+            "name": "English Teacher/Tutor (Vocational)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=English_Teacher%2FTutor_(Vocational)/Hourly_Rate",
+            "salary_expectation": "R3.99 – R383 / hour (avg R90)",
+            "description": "Vocational English teachers/tutors usually teach English as a second language and many teach abroad, while others teach native English speakers to improve their communication and business writing skills. The aim of a vocational English teacher/tutor is to improve students’ English communication skills to be used in a business setting."
+        },
+        {
+            "name": "Teacher College/University (Unknown Type)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Teacher_College%2FUniversity_(Unknown_Type)/Salary",
+            "salary_expectation": "R10k – R366k / year (avg R249,459)",
+            "description": "Teachers at colleges and universities (unknown type) serve as leaders and instructors for a wide variety of students. They must develop lesson plans and deliver lectures and lessons to their students."
+        },
+        {
+            "name": "Curriculum Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Curriculum_Developer/Salary",
+            "salary_expectation": "R59k – R456k / year (avg R239,842)",
+            "description": "Curriculum developers' duties include authoring academic training material and developing programs of instruction. The area in which they may be employed is not limited to education, however, and there are many research, academic, and government roles that require their own curricula."
+        },
+        {
+            "name": "Associate Professor, Postsecondary / Higher Education",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Associate_Professor%2C_Postsecondary_%2F_Higher_Education/Salary",
+            "salary_expectation": "R747k – R1.2m / year (avg R908,178)",
+            "description": null
+        },
+        {
+            "name": "Wellness Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Wellness_Manager/Salary",
+            "salary_expectation": "R755 – R888k / year (avg R339,379)",
+            "description": "A wellness manager helps individuals achieve and/or maintain a healthy lifestyle through modifications to diet and exercise, as well as through other health-related programming such as smoking cessation programs. These professionals work in a variety of environments, such as nursing homes, private practices, hospitals and corporations."
+        },
+        {
+            "name": "Flight Instructor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Flight_Instructor/Hourly_Rate",
+            "salary_expectation": "R59.23 – R328 / hour (avg R200)",
+            "description": "A flight instructor is a person who helps educate and instruct individuals in the safe operation of aircraft. The flight instructor will begin working with students by teaching ground safety rules and flight basics."
+        },
+        {
+            "name": "Educational Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Educational_Specialist/Salary",
+            "salary_expectation": "R31k – R608k / year (avg R411,108)",
+            "description": "The main responsibility of an education specialist is to make positive changes to how students learn in particular institutions and programs. These specialists often work closely with program directors and teachers, and must make sure that the curricula and activities offered will work well with the particular age range of students."
+        },
+        {
+            "name": "Archivist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Archivist/Salary",
+            "salary_expectation": "R30k – R391k / year (avg R161,313)",
+            "description": "Archivists organize items such as documents, manuscripts, books, and artifacts, and are often employed by organizations which work with historical documents. The archivist may have to take note of the conditions of various items and put them in storage systems to prevent damage or decay."
+        },
+        {
+            "name": "Sr. Instructional Designer (Training & Development)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sr._Instructional_Designer_(Training_%26_Development)/Salary",
+            "salary_expectation": "R284k – R727k / year (avg R454,167)",
+            "description": "A senior instructional designer for training and development is tasked with designing a learning process to pass on information to a class of students. Senior instructional designers often head a team of instructional designers trying to develop a program that makes teaching more efficient and effective."
+        },
+        {
+            "name": "Swimming Instructor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Swimming_Instructor/Hourly_Rate",
+            "salary_expectation": "R62.63 – R198 / hour (avg R130)",
+            "description": "A swimming instructor teaches students how to swim or how to improve their swimming skills. The swimming instructor will help students gain confidence in the water, so that swimming skills can be utilized."
+        },
+        {
+            "name": "Teaching Assistant (TA)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Teaching_Assistant_(TA)/Salary",
+            "salary_expectation": "R25k – R237k / year (avg R101,736)",
+            "description": "Teaching assistants work at a range of academic levels, from preschool to university. Their duties vary by position, but they usually assist with both academic and administrative tasks."
+        },
+        {
+            "name": "Biological Science Teacher, Postsecondary",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Biological_Science_Teacher%2C_Postsecondary/Salary",
+            "salary_expectation": "R300,000 / year",
+            "description": "A postsecondary biological science teacher can be required to teach various biology and science classes at a college or university. Also known as a professor of biology, the postsecondary biological science teacher is tasked with coordinating a lesson plan for students, giving them the necessary instruction, and testing them on their knowledge."
+        },
+        {
+            "name": "Professor, Postsecondary / Higher Education",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Professor%2C_Postsecondary_%2F_Higher_Education/Salary",
+            "salary_expectation": "R172k – R1.4m / year (avg R813,509)",
+            "description": "The job of a professor at the postsecondary or higher education level involves not only lecturing and teaching students in the classroom, but working with them to develop research, dissertations, or thesis-based papers as well. A professor also must be able to perform research, collect and analyze data, and examine original documents, literature, and other source material."
+        },
+        {
+            "name": "Academic Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Academic_Coordinator/Salary",
+            "salary_expectation": "R15k – R484k / year (avg R228,395)",
+            "description": null
+        },
+        {
+            "name": "Assistant Principal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Principal/Salary",
+            "salary_expectation": "R28k – R480k / year (avg R399,661)",
+            "description": "An assistant principal holds a supervisory, management-level position in a school. They help ensure that standards related to curriculum, discipline, and organization are met across all areas of the institution; related to this, they ensure that standards and guidelines set by the principal are enforced."
+        },
+        {
+            "name": "Department Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Department_Administrator/Salary",
+            "salary_expectation": "R32k – R420k / year (avg R256,028)",
+            "description": "Department administrators perform a variety of administrative duties for their companies’ management teams by coordinating departmental activities and events. Their duties differ depending on the industry and position, and department administrators positions can be clerical or managerial."
+        },
+        {
+            "name": "Swimming Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Swimming_Teacher/Hourly_Rate",
+            "salary_expectation": "R80.00 / hour",
+            "description": "A swimming teacher is typically employed by a community pool, municipal park, or recreation department, or may even work at a fitness center which operates its own pool facility. Most swimming teachers work with young children, adult swimming education has also become prominent."
+        },
+        {
+            "name": "Dance Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Dance_Teacher/Hourly_Rate",
+            "salary_expectation": "R180 / hour",
+            "description": "Dance teachers are responsible for teaching the art of dance to students. Their tasks include carefully observing students, planning routines and activities, providing instruction, and offering advice as needed."
+        },
+        {
+            "name": "Elementary School Principal",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Elementary_School_Principal/Salary",
+            "salary_expectation": "R309k – R1.3m / year (avg R500,249)",
+            "description": "Elementary school principals must almost always have a master’s degree in education or a related field. Some employers prefer that candidates possess a PhD in Education or Educational Leadership."
+        },
+        {
+            "name": "Graduate Teaching Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graduate_Teaching_Assistant/Salary",
+            "salary_expectation": "R1 – R397k / year (avg R140,000)",
+            "description": "Graduate teaching assistants are responsible for teaching-related duties and assisting other faculty members, such as professors and heads of academic departments. They often assist in developing exams, grading homework and tests, assigning study materials to students, and recording grades."
+        },
+        {
+            "name": "Nurse Educator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Nurse_Educator/Salary",
+            "salary_expectation": "R82k – R608k / year (avg R467,400)",
+            "description": "A nurse educator oversees the continuing education and evaluation of the nursing staff and caregivers. They normally work with hospital administrators to develop continuing education programs and evaluations for the staff at their institution, as well as help set policies and create systems related to patient care."
+        },
+        {
+            "name": "Pre-Kindergarten Teacher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Pre-Kindergarten_Teacher/Salary",
+            "salary_expectation": "R97,000 / year",
+            "description": null
+        },
+        {
+            "name": "Records Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Records_Manager/Salary",
+            "salary_expectation": "R50 – R894k / year (avg R500,214)",
+            "description": "The records manager is responsible for maintaining their organization's records and files. They store the records and ensure they are easily accessible."
+        },
+        {
+            "name": "Undergraduate Teaching Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Undergraduate_Teaching_Assistant/Salary",
+            "salary_expectation": "R556 – R1.2m / year (avg R100,240)",
+            "description": null
+        },
+        {
+            "name": "Curator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Curator/Salary",
+            "salary_expectation": "R293,878 / year",
+            "description": "Curators are professionals who oversee and manage a collection of some kind, typically related to art or science. They are often employed by museums, galleries, and universities but may be employed by any organization that has a valuable collection requiring care by someone with expertise in a particular field."
+        },
+        {
+            "name": "Multimedia Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Multimedia_Specialist/Salary",
+            "salary_expectation": "R25k – R402k / year (avg R253,014)",
+            "description": "Multimedia specialists use creativity and technological skills to design a wide range of projects for audiences and target-markets. These projects range from web pages and videos to virtual gaming and much more."
+        },
+        {
+            "name": "Education Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Education_Coordinator/Salary",
+            "salary_expectation": "R192k – R506k / year (avg R353,400)",
+            "description": "Education coordinators are responsible for the development and improvement of the education curriculum. They use constituent feedback and their knowledge of teaching to develop a curriculum that is both effective and in line with the latest educational standards and developments."
+        },
+        {
+            "name": "Instructional Designer (Training & Development)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instructional_Designer_(Training_%26_Development)/Salary",
+            "salary_expectation": "R351,150 / year",
+            "description": "Instructional designers of training and development are responsible for the creation and development of instructional material, such as working curricula for a companies, schools, and other organizations. These \"designers\" focus on the efficiency of the programs and lesson plans and are also tasked with the analysis of instructional methodology."
+        },
+        {
+            "name": "School Librarian",
+            "source_url": "https://www.payscale.com/research/ZA/Job=School_Librarian/Salary",
+            "salary_expectation": "R7k – R284k / year (avg R151,195)",
+            "description": "School librarians generally oversee all the happenings within a library at a school. Depending on the type of school, anyone from young children to adults may use the library’s facilities."
+        },
+        {
+            "name": "Campus Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Campus_Director/Salary",
+            "salary_expectation": "R578 – R927k / year (avg R491,318)",
+            "description": "The campus director is responsible for most non-academic goals and events on campus. They are in charge of hiring non-academic personnel on campus, as well as overseeing activities planning and budgeting, preservation of the campus, and recruitment and retention."
+        },
+        {
+            "name": "Curator, Art Gallery",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Curator%2C_Art_Gallery/Salary",
+            "salary_expectation": "R198,000 / year",
+            "description": "Works of visual art—paintings, drawings, photos, and sculpture—are typically displayed and sold through art galleries. One of the key managers in such an operation is the curator, art gallery."
+        },
+        {
+            "name": "Multimedia Production Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Multimedia_Production_Coordinator/Salary",
+            "salary_expectation": "R14k – R348k / year (avg R198,995)",
+            "description": "Multimedia production coordinators typically oversee projects to plan, produce, and broadcast audio/video creations like television and radio advertisements, online animated advertisements, and digital signage. These coordinators may schedule the timelines of projects and meetings with employees and outside contractors, such as graphic designers and multimedia experts, and also delegate tasks to other employees."
+        },
+        {
+            "name": "Special Education Teacher, Middle School",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Special_Education_Teacher%2C_Middle_School/Salary",
+            "salary_expectation": "R150,000 / year",
+            "description": "A middle school special education teacher typically educates students with disabilities in sixth to eighth grade. These students, normally about 10 to 14 years of age, have mental and/or physical disabilities that make special education outside regular classrooms (for part or all of the day) optimal for their development."
+        },
+        {
+            "name": "Academic Dean",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Academic_Dean/Salary",
+            "salary_expectation": "R636,000 / year",
+            "description": "Academic deans are responsible for all aspects of managing and developing faculty and academic staff at an educational institution. Their primary responsibility is to set and meet academic goals, which includes developing an understanding of academic needs, working with faculty and other campus management to create a plan of action, and executing and evaluating results."
+        },
+        {
+            "name": "Art, Drama, or Music Teacher, Postsecondary",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Art%2C_Drama%2C_or_Music_Teacher%2C_Postsecondary/Salary",
+            "salary_expectation": "R152,941 / year",
+            "description": "Postsecondary art, drama, and music teachers educate postsecondary students in their field. Individuals in this position must be able to teach, coach, and lead students so they are able to reach their potential within the discipline."
+        },
+        {
+            "name": "Graduate Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graduate_Assistant/Salary",
+            "salary_expectation": "R8k – R298k / year (avg R141,972)",
+            "description": "Graduate assistants provide support for research projects, often in university settings, and are usually given financial support through a stipend or tuition reimbursement. Graduate assistant positions usually fall under the categories of teaching assistants or research assistants, as they often help university faculty members prepare course materials, post grades, and conduct research."
+        },
+        {
+            "name": "Registrar, College Or University",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Registrar%2C_College_Or_University/Salary",
+            "salary_expectation": "R480,000 / year",
+            "description": null
+        },
+        {
+            "name": "Senior Learning Facilitator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Learning_Facilitator/Salary",
+            "salary_expectation": "R376,000 / year",
+            "description": null
+        },
+        {
+            "name": "Special Education Paraprofessional",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Special_Education_Paraprofessional/Salary",
+            "salary_expectation": "R245,126 / year",
+            "description": "Special education paraeducators act as assistants for the special education teacher, helping them achieve educational goals and helping maintain supervision and care for special needs students. The special education paraeducator acts in a subordinate role to the teacher and is responsible for carrying out curriculum plans according to guidelines constructed and implemented by the teacher."
+        },
+        {
+            "name": "Assistant Librarian",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Librarian/Salary",
+            "salary_expectation": "R202,000 / year",
+            "description": "Assistant librarians are tasked with assisting a chief or head librarian and help individuals throughout the library to find books or other reading and research materials. They must be knowledgeable of the library's book coding and filing systems, and some also assist teachers and professors when employed in a school or university setting."
+        },
+        {
+            "name": "Curriculum Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Curriculum_Specialist/Salary",
+            "salary_expectation": "R384,000 / year",
+            "description": "A curriculum specialist is someone who helps to analyze the effectiveness of current class frameworks that form a curriculum. He or she helps to design adjustments and new initiatives to constantly improve the way an educational institution serves its students."
+        },
+        {
+            "name": "Dance Instructor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Dance_Instructor/Hourly_Rate",
+            "salary_expectation": "R120 / hour",
+            "description": "Dance instructors are teachers who help others learn essential elements and various styles of dance. Some work with groups of children and teens to help them acquire the balance and skills needed for higher-level ballet and modern dance disciplines, while others specialize in teaching older students, in groups or individually, in proper techniques for ballroom, jazz, Latin, and other popular dance styles."
+        },
+        {
+            "name": "Instructor, Postsecondary / Higher Education",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instructor%2C_Postsecondary_%2F_Higher_Education/Salary",
+            "salary_expectation": "R159,445 / year",
+            "description": "Postsecondary/higher education teachers work in colleges, technical schools, and universities to administer lectures, coursework, homework, tests, and other work to students. They may need to be available outside of class hours to help struggling students, and they may also craft a curriculum and lessons for the class based on local and national standards and those set by the school."
+        },
+        {
+            "name": "Mathematical Science Teacher, Postsecondary",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mathematical_Science_Teacher%2C_Postsecondary/Salary",
+            "salary_expectation": "R225,000 / year",
+            "description": "Postsecondary mathematical science teachers provide instruction to students in higher education on subjects such as statistics and the actuarial sciences. These instructors are responsible for developing a curriculum and lesson plans for all of their classes."
+        },
+        {
+            "name": "Program Management Director, Education",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Program_Management_Director%2C_Education/Salary",
+            "salary_expectation": "R500,499 / year",
+            "description": "An education program director is responsible for regularly overseeing one or more school programs and coordinating all faculty, students, organizations, and materials needed for the success of the program or programs. The basic background most desirable for an education program director job is threefold: experience in teaching in any type of classroom, superior organizational skills, and a basic knowledge of marketing, fundraising, networking and event planning."
+        },
+        {
+            "name": "Education Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Education_Director/Salary",
+            "salary_expectation": "R414,940 / year",
+            "description": "Education directors may have a variety of roles and responsibilities depending on the institution for which they work. For example, if they work for a large network of early childhood education outlets, they would interact with small children and their family on a daily basis."
+        },
+        {
+            "name": "Head Librarian",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Head_Librarian/Salary",
+            "salary_expectation": "R256,000 / year",
+            "description": "Head librarians can work for public libraries, university libraries, the Library of Congress, or school libraries. Head librarians are responsible for the daily operation of their library."
+        },
+        {
+            "name": "Health/Wellness Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Health%2FWellness_Coordinator/Salary",
+            "salary_expectation": "R309,784 / year",
+            "description": "Health/wellness coordinators design programs to help groups of people live healthier lifestyles. They also provide guidance on diet and exercise for physical health and counseling information for improving the mental health of group members."
+        },
+        {
+            "name": "Music Librarian",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Music_Librarian/Salary",
+            "salary_expectation": "R180,000 / year",
+            "description": null
+        },
+        {
+            "name": "Preschool Teacher Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Preschool_Teacher_Assistant/Salary",
+            "salary_expectation": "R51,000 / year",
+            "description": "Preschool teacher assistants work in early childhood education and care, typically alongside one or more teachers to provide assistance and help in preparing classroom activities and offering basic supervision and care for young children. The role of the preschool assistant may vary by employer, but typically involves a variety of duties that incorporate both education and child care."
+        },
+        {
+            "name": "Wellness Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Wellness_Specialist/Salary",
+            "salary_expectation": "R565 / hour",
+            "description": "Wellness specialists typically work in settings such as medical clinics, gyms, spas, community centers, and corporate settings to perform screenings for client wellness and then assign wellness/exercise programs to these clients based on their health needs and preferences. Progress is usually determined by conducting standard tests on participants and monitoring their vital signs and performance from then on."
+        },
+        {
+            "name": "Deputy Headmaster",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Deputy_Headmaster/Salary",
+            "salary_expectation": "R458,271 / year",
+            "description": null
+        },
+        {
+            "name": "Substitute Teacher, K-12",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Substitute_Teacher%2C_K-12/Salary",
+            "salary_expectation": "R100.00 / hour",
+            "description": "A substitute teacher (K-12) plays a key roll in helping any school or school district function properly. Schools must always have adult supervision for the students in their classrooms, and there will always be times when teachers are sidelined due to illness or emergencies."
+        },
+        {
+            "name": "Welding Instructor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Welding_Instructor/Hourly_Rate",
+            "salary_expectation": "R70.00 / hour",
+            "description": "A welding instructor is a teacher and trainer who specializes in teaching welding techniques and proper procedures for joining metals. They typically work in technical or trade school programs to provide training to prospective metalworkers, pipe-fitters, machinists, and other skilled laborers who need a proper foundation in welding work for their careers."
+        },
+        {
+            "name": "Wellness Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Wellness_Coordinator/Salary",
+            "salary_expectation": "R196,527 / year",
+            "description": "Wellness coordinators work in a variety of settings to promote healthy work environments and improve the lives of others through exercise and nutrition. They are often employed in health care settings and by colleges and universities to promote healthy living and meet a variety of employee health needs."
+        },
+        {
+            "name": "Adult Literacy, Remedial Education, Ged Teacher / Instructor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Adult_Literacy%2C_Remedial_Education%2C_Ged_Teacher_%2F_Instructor/Salary",
+            "salary_expectation": "R215 / hour",
+            "description": null
+        },
+        {
+            "name": "Assistant Curator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Curator/Salary",
+            "salary_expectation": "R160,004 / year",
+            "description": "Assistant curators help to create and maintain collections of work in museums and perform tasks assigned by a main curator. They often serve as liaisons to other departments within the museum, as well as other museums, galleries, artists, trustees, and collectors, and may also locate potential loans and connect directly with owners to secure them."
+        },
+        {
+            "name": "Assistant Lecturer, Postsecondary / Higher Education",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Lecturer%2C_Postsecondary_%2F_Higher_Education/Salary",
+            "salary_expectation": "R225,000 / year",
+            "description": "The main responsibility of an assistant lecturer is to assist the lecturer with anything they need help with in the classroom. The assistant lecturer usually reports to the lecturer and the department that they are assigned to."
+        },
+        {
+            "name": "Dean of Students",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Dean_of_Students/Salary",
+            "salary_expectation": "R700,000 / year",
+            "description": "The dean of students works with students, parents, and teachers to ensure students have the best possible learning experience. The dean of students also observes teachers in action, performs evaluations, and provides suggestions for improvement."
+        },
+        {
+            "name": "Department Chair (College / University)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Department_Chair_(College_%2F_University)/Salary",
+            "salary_expectation": "R425,000 / year",
+            "description": "Colleges and universities comprise many departments, each with its own area of focus. Department chairs hold a leadership role over their department, working to implement the university's vision by shaping the department's curriculum and goals."
+        },
+        {
+            "name": "Director, Child Care",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Director%2C_Child_Care/Salary",
+            "salary_expectation": "R60,000 / year",
+            "description": "Directors of child care oversee child care facilities and supervise any teachers, teaching assistants, and child care associates working in the facility. They also oversee the hiring of new employees and train new hires for their appointed positions."
+        },
+        {
+            "name": "Education Coordinator, Non-Profit Organization",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Education_Coordinator%2C_Non-Profit_Organization/Salary",
+            "salary_expectation": "R271,000 / year",
+            "description": "Education coordinators of non-profit organizations are responsible for coordinating educational efforts on behalf of their organization, developing and leading educational programs that meet project requirements, and building community relationships with individuals and families. These coordinators must have strong interpersonal skills to communicate with both education professionals and educational suppliers."
+        },
+        {
+            "name": "Instructional Designer / Trainer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instructional_Designer_%2F_Trainer/Salary",
+            "salary_expectation": "R432,523 / year",
+            "description": "Instructional designers or trainers work within education systems or businesses to design and develop learning experiences; these designers must ensure these experiences are efficient, effective, and appealing to students. Instructional designers must be forward thinkers with the creativity, abstract thinking, and intuition to create active learning opportunities that also promote lifelong learning."
+        },
+        {
+            "name": "Instructor, Gymnastics",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instructor%2C_Gymnastics/Salary",
+            "salary_expectation": "R90.00 / hour",
+            "description": "Gymnastics instructors coach gymnasts of all ages in a variety of environments. They may work for a variety of organizations, from health clubs and universities to schools, gyms, and with individuals."
+        }
+    ]
+}

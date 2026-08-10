@@ -1,0 +1,608 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "Business, operations & consulting",
+    "collected_at": "2026-08-10",
+    "careers": [
+        {
+            "name": "Service Delivery Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Service_Delivery_Manager/Salary",
+            "salary_expectation": "R251k – R874k / year (avg R509,576)",
+            "description": "Service delivery mangers often are the first and only contact for a client who needs answers regarding information systems and their account. These managers must have the skills to conduct recovery exercises and be able to document every step and progress during the recovery."
+        },
+        {
+            "name": "Project Manager, (Unspecified Type / General)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Project_Manager%2C_(Unspecified_Type_%2F_General)/Salary",
+            "salary_expectation": "R117k – R950k / year (avg R398,137)",
+            "description": "A project manager (unspecified type/general) oversees designated projects for the company. The position requires planning and developing strategy, including defining the goals and timeline for the project(s) they supervise."
+        },
+        {
+            "name": "Quantity Surveyor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quantity_Surveyor/Salary",
+            "salary_expectation": "R120k – R601k / year (avg R300,357)",
+            "description": "Most engineering and construction projects are large-scale operations, and completing them involves the investment of considerable amounts of money. Naturally, a client or contractor wants the maximum quality for the minimum cost; for this purpose, they hire people called quantity surveyors."
+        },
+        {
+            "name": "Buyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Buyer/Salary",
+            "salary_expectation": "R119k – R520k / year (avg R269,272)",
+            "description": "Buyers, also known as purchasing agents, work in many different fields. Some common businesses that hire buyers are retail stores, grocery stores, car dealerships, and many others."
+        },
+        {
+            "name": "Senior Business Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Business_Analyst/Salary",
+            "salary_expectation": "R526k – R1.1m / year (avg R757,546)",
+            "description": "Senior business analysts have a variety of responsibilities that can often be very complex depending on a myriad of issues. They are required to do several things that require a great business mind and the ability to comprehend and process a vast amount of information related to the needs of their organization."
+        },
+        {
+            "name": "Management Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Management_Consultant/Salary",
+            "salary_expectation": "R58k – R1m / year (avg R476,831)",
+            "description": "A management consultant helps a company improve aspects of business, such as productivity, management, and company image. The management consultant will identify current problems and potential risks and help the company to overcome them."
+        },
+        {
+            "name": "Logistics Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Logistics_Manager/Salary",
+            "salary_expectation": "R51k – R809k / year (avg R375,760)",
+            "description": "Companies which ship goods, parts, and commodities from location to location as part of their regular operations define this transportation aspect of the business as logistics. A logistics manager is typically a middle manager in charge of discrete teams or regions within a larger logistics operation of a business, and they typically have supervisory duties, make employment decisions, and create and work within approved budgets."
+        },
+        {
+            "name": "Supply Chain Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Manager/Salary",
+            "salary_expectation": "R44k – R940k / year (avg R393,611)",
+            "description": "A supply chain manager oversees and coordinates key parts of the franchise supply chain. The three main job responsibilities of a supply chain manager include promoting teamwork between the sales team and customer service team, developing and maintaining policies on general logistics and procedures, and maintaining overall inventory based on demand."
+        },
+        {
+            "name": "Procurement Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Procurement_Manager/Salary",
+            "salary_expectation": "R157k – R951k / year (avg R495,430)",
+            "description": "A procurement manager is the primary point of contact between a business and its suppliers. Using superb analytical skills, a procurement manager identifies potential suppliers, screens them, and negotiates favorable payment terms with selected suppliers."
+        },
+        {
+            "name": "Procurement Officer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Procurement_Officer/Salary",
+            "salary_expectation": "R147k – R483k / year (avg R264,405)",
+            "description": "The procurement officer ensures the things purchased for the company provide the best possible value and outcomes, whether they be goods for resale, equipment, services, or materials. The procurement officer must be adept at analyzing the needs of the company and possible choices for purchase to meet these needs at the best prices possible while taking into account quality."
+        },
+        {
+            "name": "Business Analyst (Unspecified Type)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Analyst_(Unspecified_Type)/Salary",
+            "salary_expectation": "R119k – R631k / year (avg R389,267)",
+            "description": "A business analyst (unspecified type) examines sets of data and documents to make informed conclusions. Among other duties, a business analyst acts as a facilitator within an organization to make internal departments more efficient."
+        },
+        {
+            "name": "Property Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Property_Manager/Salary",
+            "salary_expectation": "R61k – R581k / year (avg R260,814)",
+            "description": "A property manager oversees the operation of a commercial or residential property. The property manager can oversee a variety of employees, such an accounting department, sales department, maintenance department, and grounds-keeping department."
+        },
+        {
+            "name": "Contracts Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Contracts_Manager/Salary",
+            "salary_expectation": "R42k – R1.1m / year (avg R552,973)",
+            "description": "Contracts managers can work in a variety of industries, including non-profit and government agencies. They act as the liaisons between companies and clients for contractual matters."
+        },
+        {
+            "name": "Assistant Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Manager/Salary",
+            "salary_expectation": "R59k – R519k / year (avg R149,825)",
+            "description": "The assistant manager position is utilized in nearly every type of business, and assistant managers may be employed in a variety of industries, including food service, offices, medical clinics, hospitality services, and retail. They should possess a variety of skills, including leadership, organization, recruiting and training, attention to detail, customer service, and good verbal and written communication."
+        },
+        {
+            "name": "Senior Buyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Buyer/Salary",
+            "salary_expectation": "R181k – R712k / year (avg R454,677)",
+            "description": "The senior buyer is responsible for negotiating long-term and short-term transactions with vendors. This position also plans and incorporates strategic purchasing plans company-wide."
+        },
+        {
+            "name": "Business Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Consultant/Salary",
+            "salary_expectation": "R197k – R933k / year (avg R360,273)",
+            "description": "Problem-solving expertise plays an important part in how successful the company is or can be. Though a business consultant can specialize in many different areas, their duties typically are somewhat similar."
+        },
+        {
+            "name": "Procurement Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Procurement_Specialist/Salary",
+            "salary_expectation": "R158k – R818k / year (avg R440,630)",
+            "description": "Procurement specialists specialize in finding goods and services for businesses at the best price to ensure the businesses' continued functionality. This can include office supplies, inventory, and large scale purchases like real estate."
+        },
+        {
+            "name": "Senior Quantity Surveyor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Quantity_Surveyor/Salary",
+            "salary_expectation": "R339k – R1m / year (avg R589,091)",
+            "description": "Senior quantity surveyors decide what materials needed to be ordered to determine the cost of constructing a building. They are generally employed through the entire construction process, in which they source materials, control construction costs, and act as a liaison among parties such as the engineers who designed the project and the suppliers of the various materials being purchased."
+        },
+        {
+            "name": "Learning and Development Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Learning_and_Development_Specialist/Salary",
+            "salary_expectation": "R198k – R897k / year (avg R478,112)",
+            "description": "A learning and development specialist typically focuses on instructional design, building on learning and development materials and consulting with experts to support employee development. This position generally exists within a company interested in continuous employee growth and development."
+        },
+        {
+            "name": "Event Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Event_Coordinator/Salary",
+            "salary_expectation": "R120k – R409k / year (avg R184,248)",
+            "description": "Event coordinators oversee every aspect of an event. The events can range from parties to meetings, and they can be for businesses or for personal occasions."
+        },
+        {
+            "name": "Managing Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Managing_Director/Salary",
+            "salary_expectation": "R249k – R1.8m / year (avg R1,025,981)",
+            "description": "Managing directors are high-level executives in companies and corporations and are responsible for directing the company's operations, as well as providing strategic recommendations to its board members; they also manage other employees to ensure that business goals are met. There is some overlap between the work of CEOs and managing directors, and some businesses use the terms interchangeably."
+        },
+        {
+            "name": "Cyber Security Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Cyber_Security_Engineer/Salary",
+            "salary_expectation": "R30k – R981k / year (avg R298,326)",
+            "description": null
+        },
+        {
+            "name": "Commercial Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Commercial_Manager/Salary",
+            "salary_expectation": "R336k – R1.3m / year (avg R733,580)",
+            "description": "A commercial manager fills a non-technical, business-oriented position within a company. Their main function is to oversee revenue and expenses used to create financial returns."
+        },
+        {
+            "name": "Business Development Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Development_Consultant/Salary",
+            "salary_expectation": "R106k – R464k / year (avg R236,978)",
+            "description": "Business development consultants work with businesses to help them open and function successfully. In most cases, a business development consultant works with new companies to assist them in finding successful, effective initial strategies; often, the consultant works with them before opening to develop a foundation for their business and create a plan to help them succeed."
+        },
+        {
+            "name": "Security Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Security_Manager/Salary",
+            "salary_expectation": "R20k – R814k / year (avg R254,615)",
+            "description": "Security managers are employed in a range of industries, from retail to computer technology. Because the work can vary greatly, some employers require that applicants have a bachelor's degree in management, while others prefer work experience over education; this is a managerial position, so most employers require anywhere between three and ten years of experience."
+        },
+        {
+            "name": "Merchandise Planner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Merchandise_Planner/Salary",
+            "salary_expectation": "R233k – R594k / year (avg R369,841)",
+            "description": "Merchandise planners are in charge of developing effective merchandise strategies for their company. They are responsible for creating sound financial plans that reduce company spending, and increase overall profit."
+        },
+        {
+            "name": "Social Media Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Social_Media_Coordinator/Salary",
+            "salary_expectation": "R13k – R299k / year (avg R167,323)",
+            "description": "Social media coordinators are responsible for creating effective communication and relationships between their company and customers, mainly through social media platforms such as Twitter and Facebook. They oversee client correspondence and resolve customer inquiries through social media platforms in a timely manner."
+        },
+        {
+            "name": "Chief Estimator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chief_Estimator/Salary",
+            "salary_expectation": "R438,000 / year",
+            "description": "Chief estimator positions are classified as construction management jobs. Individuals in this position are responsible for managing and directing the organization's estimating functions."
+        },
+        {
+            "name": "Program Project Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Program_Project_Manager/Salary",
+            "salary_expectation": "R313k – R1.1m / year (avg R657,347)",
+            "description": "The program project manager is a title held by higher-level staff in various industries, although the title is most commonly found in the finance and information technology sectors. Depending on the field a manager is in, the title is usually an appointment for a project that has a specific time limit."
+        },
+        {
+            "name": "ERP Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=ERP_Consultant/Salary",
+            "salary_expectation": "R116k – R735k / year (avg R345,823)",
+            "description": "An ERP consultant generally provides support related to a company's enterprise resource planning. ERP consultants help bring a client’s ERP-related ideas to fruition, as well as assist the company in resource-planning decisions."
+        },
+        {
+            "name": "Estate Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Estate_Manager/Salary",
+            "salary_expectation": "R136k – R693k / year (avg R313,827)",
+            "description": "Estate managers are top-level executives who manage households and work with property owners to plan, manage, and oversee the service and estate. When an owner has multiple properties for an estate manager to oversee, the estate manager serves as the CEO of organization and helps execute the wishes and demands of each location."
+        },
+        {
+            "name": "Business Process / Management Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Process_%2F_Management_Consultant/Salary",
+            "salary_expectation": "R201k – R1m / year (avg R479,401)",
+            "description": null
+        },
+        {
+            "name": "Junior Business Analyst (Unspecified Type)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Business_Analyst_(Unspecified_Type)/Salary",
+            "salary_expectation": "R145k – R353k / year (avg R251,249)",
+            "description": "A junior business analyst is responsible for attending client meetings, recording important details, collecting all relevant client data, and filling out reports necessary for database tracking. They must be capable of managing their own work and delivering assignments on deadline, as well as maintaining regular reports that can be used in investor relations."
+        },
+        {
+            "name": "Insurance Claims Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Insurance_Claims_Specialist/Salary",
+            "salary_expectation": "R132k – R544k / year (avg R340,753)",
+            "description": "An insurance claim specialist’s job is to facilitate the processing of claims. They must make sure that all regulations are followed and must be very detail-oriented."
+        },
+        {
+            "name": "Event Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Event_Manager/Salary",
+            "salary_expectation": "R49k – R643k / year (avg R358,468)",
+            "description": "Event managers create, schedule, and bring to life events like conferences and parties. They usually work with clients in order to determine their preferences and plan the event based on their needs, such as deciding on a venue and what sort of atmosphere is desired."
+        },
+        {
+            "name": "Security Supervisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Security_Supervisor/Hourly_Rate",
+            "salary_expectation": "R21.17 – R37.53 / hour (avg R26.81)",
+            "description": "The security supervisor oversees the security practices of a company by managing the security staff. This includes ensuring that individual personnel comply with company security standards and fulfill their duties, as well as examining the practices of the team as a whole to maximize effectiveness."
+        },
+        {
+            "name": "Senior SAP Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_SAP_Consultant/Salary",
+            "salary_expectation": "R428k – R1.3m / year (avg R750,684)",
+            "description": "Senior SAP (systems, applications, and products) consultants sell business software and hardware products from the SAP company. These consultants must establish and maintain relationships with clients, so marketing and customer service skills are important in this position, and they also meet with clients to discuss their needs and problems and determine which products will best address these issues."
+        },
+        {
+            "name": "Claims Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Claims_Administrator/Salary",
+            "salary_expectation": "R97k – R342k / year (avg R193,545)",
+            "description": "A claims administrator is responsible for working with insurance claims in the medical/healthcare field, as well as property insurance. These administrators are employed by a variety of organizations, but generally work within office environments and keep traditional weekly business hours, although overtime may occasionally be necessary."
+        },
+        {
+            "name": "Junior Buyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Buyer/Salary",
+            "salary_expectation": "R70k – R355k / year (avg R155,254)",
+            "description": "Junior buyers are responsible for administrative and financial related tasks for their organization. They manage different aspects of supplier products, inspecting quality and arranging shipping costs."
+        },
+        {
+            "name": "Technical Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Specialist/Salary",
+            "salary_expectation": "R182k – R991k / year (avg R414,823)",
+            "description": "A technical specialist coordinates an organization's technology use. They recognize the company's composition and procedures, assesses its technology and technological processes, and attempts to streamline these processes to make them more effective."
+        },
+        {
+            "name": "Call Center Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Call_Center_Manager/Salary",
+            "salary_expectation": "R68k – R593k / year (avg R299,871)",
+            "description": "A call center manager is responsible for ensuring their organization's call center operates effectively and efficiently at all times. They must maintain a high level of customer satisfaction, and the ability to maintain a positive, professional attitude with customers and colleagues is essential."
+        },
+        {
+            "name": "Senior Estimator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Estimator/Salary",
+            "salary_expectation": "R49k – R1m / year (avg R420,672)",
+            "description": "A senior estimator is responsible for predicting the cost of a construction project. To accomplish this, a senior estimator must gather all the data regarding materials, equipment, utilities and manpower required for a given project, figure out how long the project will take, adjust for economic conditions and perform a cost analysis to produce an accurate estimate."
+        },
+        {
+            "name": "Senior Product Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Product_Manager/Salary",
+            "salary_expectation": "R259k – R1m / year (avg R644,316)",
+            "description": "A senior product manager handles many of the oversight duties involved in getting a product from the concept stage to the production stage; they also work to maximize product by foreseeing customer and market demands. Depending on their business' needs, this can include a number of different tasks."
+        },
+        {
+            "name": "Import/Export Clerk",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Import%2FExport_Clerk/Salary",
+            "salary_expectation": "R101k – R344k / year (avg R217,111)",
+            "description": "An import/export clerk typically receives orders, documents the order’s requirements, gathers and packs merchandise, and then arranges for shipping or freight. An import/export clerk may work internationally or domestically, and they must be familiar with the shipping requirements relevant to their work."
+        },
+        {
+            "name": "Claims Adjuster / Examiner / Investigator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Claims_Adjuster_%2F_Examiner_%2F_Investigator/Salary",
+            "salary_expectation": "R107k – R608k / year (avg R303,813)",
+            "description": "Claim Adjuster/Examiner/Investigators are an extremely important piece to the many businesses where citizens make claims to receive financial compensation or other benefits. Without a claims investigator in an insurance company, people could just make false claims and receive money fraudulently."
+        },
+        {
+            "name": "Manager, Change Management",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Manager%2C_Change_Management/Salary",
+            "salary_expectation": "R82k – R1.2m / year (avg R794,265)",
+            "description": "Change management managers coordinate and help facilitate changes to and transitions for essential business process and/or technical systems within an organization. They are the single point of contact for all issues/questions related to changes within an organization."
+        },
+        {
+            "name": "Supply Chain Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Supply_Chain_Coordinator/Salary",
+            "salary_expectation": "R138k – R515k / year (avg R256,072)",
+            "description": "Supply chain coordinator jobs are classified as operations, supply chain, or logistics positions. They are responsible for overseeing and supervising the supply chain staff, providing guidance and ensuring that all staff are performing high-quality work that meets company standards."
+        },
+        {
+            "name": "Property Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Property_Administrator/Salary",
+            "salary_expectation": "R72k – R352k / year (avg R174,812)",
+            "description": "A property administrator normally is employed with a large-scale commercial real estate organization. Their job is to ensure that commercial and residential buildings leased by the company are well maintained, updated, and remodeled as necessary, and that all aspects of billing and accounts are taken care of in a timely manner."
+        },
+        {
+            "name": "Estimating Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Estimating_Manager/Salary",
+            "salary_expectation": "R432,000 / year",
+            "description": "The primary duty of estimating managers is to provide estimates for costs and time frames for projects' milestones and their eventual completion. Daily tasks include collecting information from involved parties, generating accurate estimates, and then communicating this information with relevant individuals and teams."
+        },
+        {
+            "name": "Import Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Import_Coordinator/Salary",
+            "salary_expectation": "R119k – R351k / year (avg R256,780)",
+            "description": "Import coordinators are employed primarily by logistics companies, such as shipping and freight companies. Although many companies require a Bachelor's or Associate's degree, some do not require any formal education and instead hire based on other criteria."
+        },
+        {
+            "name": "Implementation Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Implementation_Consultant/Salary",
+            "salary_expectation": "R175k – R518k / year (avg R318,617)",
+            "description": "An implementation consultant's duties may vary widely across fields, but they most often travel to various job sites, and help with installation of various software or hardware solutions. Most implementation consultants are employed by large corporations, though some are hired by smaller firms as their client base grows and becomes more distributed."
+        },
+        {
+            "name": "Manager Trainee",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Manager_Trainee/Salary",
+            "salary_expectation": "R79k – R291k / year (avg R176,243)",
+            "description": "A manager trainee learns leadership skills, works with supervisors, and finds out how to run daily operations. Sometimes, manager trainees don't have to have any formal education, but in certain industries, it helps to have at least a bachelor's degree related to the field they are managing."
+        },
+        {
+            "name": "Quality Assurance Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Assurance_Coordinator/Salary",
+            "salary_expectation": "R137k – R418k / year (avg R240,912)",
+            "description": "Quality assurance coordinators work in a variety of industries to ensure that their company's quality-assurance standards and procedures are met. They review standards, policies, and procedures, as well as carry out programs to evaluate the effectiveness of existing programs."
+        },
+        {
+            "name": "Business Intelligence Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Intelligence_Manager/Salary",
+            "salary_expectation": "R282k – R1.7m / year (avg R900,493)",
+            "description": "Business intelligence managers are responsible for providing data solutions related to business strategies in their organization. They are in charge of a group of analysts that use a variety of statistical methodologies to solve quantitative business issues and increase profitability."
+        },
+        {
+            "name": "Insurance Claims Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Insurance_Claims_Consultant/Salary",
+            "salary_expectation": "R48k – R348k / year (avg R199,325)",
+            "description": "Insurance claims consultant perform a specialized role in the insurance industry. In addition to performing all the common duties of an insurance claims adjuster, they must also analyze complex insurance cases to assist their employers with preventing fraud, as well as provide expert testimony in a court of law as needed."
+        },
+        {
+            "name": "Junior Project Manager (Unspecified Type / General)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Project_Manager_(Unspecified_Type_%2F_General)/Salary",
+            "salary_expectation": "R73k – R367k / year (avg R209,027)",
+            "description": "Junior project managers are responsible for planning, organizing, and directing operations related to ongoing projects in the company. They lead team members in the project development department and oversee company projects to make sure they are running as planned."
+        },
+        {
+            "name": "Application Support Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Application_Support_Specialist/Salary",
+            "salary_expectation": "R182k – R568k / year (avg R360,000)",
+            "description": "An application support specialist works in a company's information technology (IT) department to help end users with the operation and functionality of software applications purchased from their company. The specialist may work with individual end users or corporate accounts in professional applications."
+        },
+        {
+            "name": "Business Intelligence Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Intelligence_Consultant/Salary",
+            "salary_expectation": "R47k – R760k / year (avg R346,207)",
+            "description": "A business intelligence consultant assists businesses with the collection, organization, and use of computerized data. They evaluate existing systems and install new software when needed to better assess the company's acquired data."
+        },
+        {
+            "name": "Assistant Buyer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Buyer/Salary",
+            "salary_expectation": "R75k – R254k / year (avg R203,075)",
+            "description": "An assistant buyer works closely with vendors, maintaining positive relationships while negotiating specs, pricing, and deadlines. They must be able to work independently and prioritize job duties, as well as prepare cost analyses and competitive retail strategies."
+        },
+        {
+            "name": "Design Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Design_Manager/Salary",
+            "salary_expectation": "R225k – R1.2m / year (avg R574,092)",
+            "description": "Design managers can work in a variety of fields. They could, for example, work for a web design company or an interior decorator."
+        },
+        {
+            "name": "Information Security Officer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Security_Officer/Salary",
+            "salary_expectation": "R304k – R1.1m / year (avg R605,096)",
+            "description": "Information security officers are primarily responsible for ensuring data security within their organization. They are in charge of implementing effective technology solutions that prevent internal and external malicious users from compromising data integrity."
+        },
+        {
+            "name": "Cost Estimator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Cost_Estimator/Salary",
+            "salary_expectation": "R112k – R613k / year (avg R227,115)",
+            "description": "Whether the final product is a skyscraper or a tube of toothpaste, most companies need a professional to estimate the production costs for their products. A cost estimator predicts manufacturing price of a product using their analytical and technical skills."
+        },
+        {
+            "name": "Pricing Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Pricing_Specialist/Salary",
+            "salary_expectation": "R227k – R699k / year (avg R340,000)",
+            "description": "Pricing specialists are tasked with estimating costs and gains for businesses, including maximizing potential gains while spending the least amount of money. They may work with word documents or spreadsheets to communicate with clients, and should have interpersonal and negotiation skills to make good business deals and ensure that both the client and employer can make the most profits in a proper business relationship."
+        },
+        {
+            "name": "Product Development Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Development_Specialist/Salary",
+            "salary_expectation": "R203k – R819k / year (avg R457,729)",
+            "description": "A product development specialist's main job is to develop products, strategies, and business plans for upcoming products within their company. They watch the market trends to develop plans that will increase sales, establish deadlines, and ensure the product development teams are on schedule."
+        },
+        {
+            "name": "Purchasing Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Purchasing_Manager/Salary",
+            "salary_expectation": "R192k – R959k / year (avg R550,000)",
+            "description": "Purchasing managers are involved in all aspects of the company’s business, from development to finding costs savings to corporate strategy to production. A successful purchasing manager must be able to review proposals for new projects in a timely manner, and they must maintain frequent interaction with marketing teams to discuss sales proposals and marketing strategies."
+        },
+        {
+            "name": "Technical Advisor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Advisor/Salary",
+            "salary_expectation": "R198k – R776k / year (avg R318,000)",
+            "description": "When an organization needs specific expertise on a complex subject matter that lies outside their normal area of work, they typically hire a technical advisor. This person assists the organization in understanding and performing tasks in their area of expertise in compliance with best practice."
+        },
+        {
+            "name": "Investment Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Investment_Manager/Salary",
+            "salary_expectation": "R155k – R1.1m / year (avg R609,984)",
+            "description": "An investment manager manages the money invested by individual investors, institutions that are investing a portion of the company’s assets, and/or funds related to the company's pension plan. The investment manager must protect the current value of those investments, strategically choose the best manner in which to grow them, be on guard for changes in the climates of the various investment options available, and adjust their client’s investment positions as needed."
+        },
+        {
+            "name": "Strategy Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Strategy_Consultant/Salary",
+            "salary_expectation": "R318k – R1.1m / year (avg R515,500)",
+            "description": "Strategy consultants provide research, statistics, and logistics that may be applied to their business' strategy and issues. There are many areas in which strategy consultants must develop strategies to sustain long-term growth."
+        },
+        {
+            "name": "Building Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Building_Manager/Salary",
+            "salary_expectation": "R27k – R365k / year (avg R211,937)",
+            "description": "The building manager ensures the building they supervise (including any surrounding grounds) are maintained, ensuring a safe and pleasant environment. They work with tenants, the public, and contractors on a number of tasks, such as move-ins, maintenance issues, construction, and move-outs."
+        },
+        {
+            "name": "Product Manager, Healthcare",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Manager%2C_Healthcare/Salary",
+            "salary_expectation": "R342k – R828k / year (avg R491,318)",
+            "description": "Healthcare product managers are responsible for maintaining and managing products throughout their life cycle, from the launch of the product until its retirement. Product managers perform a variety of tasks, including overseeing sales staff to ensure that they have the expertise and materials to sell a product; they also salespeople and clients have promotional materials, training on how to use the products, and clinical papers, as needed."
+        },
+        {
+            "name": "Commercial Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Commercial_Analyst/Salary",
+            "salary_expectation": "R135k – R793k / year (avg R393,000)",
+            "description": "The successful operation of a business is largely contingent upon optimizing efficiency in financial operations, fixing problem areas, and taking advantage of opportunities for growth. The role of the commercial analyst is to conduct close examinations - using mathematical models and predictive economic research - of a company's revenue, operations, expenses and competition; they must find relevant patterns and discrepancies, and use this analysis to determine policy changes that improve the business' functioning and/or profits."
+        },
+        {
+            "name": "Information Security Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Security_Analyst/Salary",
+            "salary_expectation": "R98k – R574k / year (avg R360,612)",
+            "description": "Information security analysts are responsible for providing security solutions for their companies. Their main duties include doing research, collecting data, developing secure strategies and maximizing productivity."
+        },
+        {
+            "name": "Reporting Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Reporting_Analyst/Salary",
+            "salary_expectation": "R256k – R730k / year (avg R476,870)",
+            "description": "Reporting analysts design and develop metrics, reports and analyses to drive key business decisions. They provide a link between raw enterprise data and management, so data extraction, analysis and transformation are key job responsibilities."
+        },
+        {
+            "name": "Workforce Management Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Workforce_Management_Analyst/Salary",
+            "salary_expectation": "R71k – R507k / year (avg R244,266)",
+            "description": "A workforce management analyst's position includes elements of human resources and operations. On the operations side, a work force management analyst collects metrics on the workforce, analyzes this data to determine what trends exist, and then formulates plans to further the operational goals of the business."
+        },
+        {
+            "name": "Real Estate Development Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Real_Estate_Development_Manager/Salary",
+            "salary_expectation": "R247k – R1m / year (avg R593,218)",
+            "description": "The real estate development manager oversees the day-to-day operations for a real estate development. Additionally, they are responsible for the continued growth and development of the company."
+        },
+        {
+            "name": "Junior Brand Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Brand_Manager/Salary",
+            "salary_expectation": "R31k – R391k / year (avg R240,000)",
+            "description": "Junior brand managers are responsible for creating and implementing brand marketing strategies. They are in charge of executing plans that will increase customer satisfaction, brand loyalty, and recognition in the community."
+        },
+        {
+            "name": "Senior Management Consultant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Management_Consultant/Salary",
+            "salary_expectation": "R362k – R1.5m / year (avg R802,933)",
+            "description": null
+        },
+        {
+            "name": "Security Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Security_Analyst/Salary",
+            "salary_expectation": "R86k – R979k / year (avg R353,898)",
+            "description": "Aspiring security analysts should be experienced in cybersecurity and able to succeed in a fast-paced, constantly-changing work environment, as security analysts work to maintain the integrity of company networks, as well as diagnose and quickly resolve network problems as they arise. They must be able to proactively identify risks to the network and promptly address and neutralize these threats, and knowledge of security log fundamentals is essential."
+        },
+        {
+            "name": "Business Process Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Business_Process_Manager/Salary",
+            "salary_expectation": "R362k – R876k / year (avg R584,115)",
+            "description": "A business process manager ensures optimal productivity for his or her employer by developing, overseeing, and regulating various work procedures. They may supervise individuals and/or manage computer systems, networking strategies, or quantity-control measures."
+        },
+        {
+            "name": "Claims Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Claims_Manager/Salary",
+            "salary_expectation": "R260k – R902k / year (avg R540,000)",
+            "description": "A claims manager works in the insurance industry to coordinate and expedite the processing of customers' claims. The claims manager usually holds a management position with oversight for claims processes, helping ensure that any instances of misappropriation or fraud do not occur."
+        },
+        {
+            "name": "Insurance Claims Adjuster",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Insurance_Claims_Adjuster/Salary",
+            "salary_expectation": "R115k – R646k / year (avg R288,583)",
+            "description": "Insurance claims adjusters are responsible for investigating accidents to determine liability. They do this by having phone conversations with customers, obtaining police reports, and negotiating damage settlements."
+        },
+        {
+            "name": "SAP Business Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=SAP_Business_Analyst/Salary",
+            "salary_expectation": "R206k – R914k / year (avg R420,000)",
+            "description": "A SAP business analyst holds a highly specialized information technology (IT) job. These employees are not only highly trained and certified in the many modules of SAP software, but they also have a deep understanding of the company's inner workings and the industry in which that company operates."
+        },
+        {
+            "name": "Shopping Centre Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Shopping_Centre_Manager/Salary",
+            "salary_expectation": "R106k – R412k / year (avg R293,284)",
+            "description": "A shopping center manager is responsible for running places like malls, mini-malls, shopping strips, and other commercial venues. Your job is to ensure that all the store owners and renters are happy and that problems are handled in a timely manner."
+        },
+        {
+            "name": "Site Acquisition / Leasing Manager, Telecommunications",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Site_Acquisition_%2F_Leasing_Manager%2C_Telecommunications/Salary",
+            "salary_expectation": "R15k – R850k / year (avg R211,612)",
+            "description": "Site acquisition/leasing managers (telecommunications) are responsible for coordinating telecommunications site acquisition and leasing activities on behalf of their organization. They are in charge of completing site candidate identification packages, as well as lease and zoning audits."
+        },
+        {
+            "name": "Energy Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Energy_Manager/Salary",
+            "salary_expectation": "R441k – R1.2m / year (avg R957,789)",
+            "description": "An energy manager is primarily responsible for planning, regulating, and monitoring general energy use within a facility or organization. While the need for a related degree is not always imperative, this position does typically require experience within the energy field."
+        },
+        {
+            "name": "Senior Learning and Development Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Learning_and_Development_Specialist/Salary",
+            "salary_expectation": "R249k – R1.1m / year (avg R649,901)",
+            "description": "Senior learning and development specialists are responsible for coordinating learning and development activities for their organizations, as well as developing learning strategies based on clients' needs and conducting assessments of individuals to gather information about family backgrounds, development skills, and learning abilities. These senior specialists must provide a pleasant environment of acceptance that results in better development, and interpersonal skills are beneficial to explain to families and other community leaders how to improve their training using a variety of tools."
+        },
+        {
+            "name": "Client Service Executive",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Client_Service_Executive/Salary",
+            "salary_expectation": "R140k – R618k / year (avg R282,688)",
+            "description": "Client service executives act as a liaison between external customers and internal departments for their organization. They interact with clients through email, telephone, and in-person meetings, as well as interact with other employees to resolve customer concerns."
+        },
+        {
+            "name": "Customs Broker",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Customs_Broker/Salary",
+            "salary_expectation": "R20k – R529k / year (avg R250,408)",
+            "description": "Customs brokers are responsible for managing customs clearance for imports and exports within their organization. They work with local and/or foreign governments' regulatory agencies to ensure their company meets all necessary documentary and regulatory requirements when shipping goods in or out of the country."
+        },
+        {
+            "name": "Information Security Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Information_Security_Manager/Salary",
+            "salary_expectation": "R403k – R1.2m / year (avg R741,966)",
+            "description": "Information security managers are in charge of maintaining security protocols throughout their organizations. They are responsible for creating strategies to increase network and internet security related to different projects."
+        },
+        {
+            "name": "Lead Business Analyst",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lead_Business_Analyst/Salary",
+            "salary_expectation": "R522k – R1m / year (avg R759,777)",
+            "description": "The lead business analyst uses analytic techniques to develop solutions for organizational issues. These analysts identifies metrics that can be used to measure departments' or projects' status and performance."
+        },
+        {
+            "name": "Leasing Manager/Property",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Leasing_Manager%2FProperty/Salary",
+            "salary_expectation": "R164k – R570k / year (avg R354,930)",
+            "description": "Real estate companies that manage properties use a leasing manager/property to handle a wide variety of necessary tasks. For residential leasing, the manager is normally assigned to either apartment complexes or a series of leased individual homes."
+        },
+        {
+            "name": "Merchandise Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Merchandise_Manager/Salary",
+            "salary_expectation": "R248k – R811k / year (avg R457,504)",
+            "description": "Merchandise managers work in retail environments and strive to provide products that are enticing to customers and ensure they are in stock. The goal is to increase sales and profits for the location, and it's also important to ensure that the merchandise is arranged in ways that are attractive to customers."
+        },
+        {
+            "name": "Technical Operations Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Operations_Manager/Salary",
+            "salary_expectation": "R199k – R1.3m / year (avg R505,652)",
+            "description": "A technical operations manager is a leadership position in the technical department of an organization. These individuals are responsible for planning, coordinating, and executing organizational technical processes from start to finish."
+        },
+        {
+            "name": "Claims Manager, Insurance",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Claims_Manager%2C_Insurance/Salary",
+            "salary_expectation": "R231k – R831k / year (avg R537,390)",
+            "description": "An insurance claims manager work with the claims adjusters to ensure that the all insurance claims are handled correctly. They review each adjuster's work periodically and check to make sure the final adjustment before the claim has been completed correctly."
+        },
+        {
+            "name": "Lead Generator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lead_Generator/Salary",
+            "salary_expectation": "R36k – R324k / year (avg R65,000)",
+            "description": "Lead generators generally work with or within the customer service and sales departments of organizations and are responsible for recruiting customers; they work in office settings either independently or on lead-generation teams. Most employers do not have formal education requirements, but many require a high school diploma and experience within sales or customer relations."
+        },
+        {
+            "name": "Lease Administrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lease_Administrator/Salary",
+            "salary_expectation": "R23k – R372k / year (avg R247,947)",
+            "description": "Lease administrators generally work at a large real estate firm with a rental portfolio or even a property management company, and their job is to oversee (and keep up-to-date) all contracts pertaining to rental of the properties owned or managed by the company and ensure that any necessary documentation is communicated. They also keep track of all related payments and obligations which may be part of those contracts, such as homeowner's association dues."
+        },
+        {
+            "name": "Materials Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Materials_Manager/Salary",
+            "salary_expectation": "R18k – R874k / year (avg R544,587)",
+            "description": "The materials manager oversees the intake and distribution of all components and materials used by organizations. They are responsible for delegating tasks to subordinates and overseeing the completion of these tasks."
+        },
+        {
+            "name": "Operations Support Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Operations_Support_Coordinator/Salary",
+            "salary_expectation": "R17k – R462k / year (avg R184,000)",
+            "description": "Operations support coordinators are responsible for coordinating support tasks related to operations in their organization. They oversee tasks to completion and report their progress to the operations manager in their company."
+        },
+        {
+            "name": "Regulatory Affairs Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Regulatory_Affairs_Manager/Salary",
+            "salary_expectation": "R525k – R1.1m / year (avg R772,303)",
+            "description": "The regulatory affairs manager is tasked with reviewing internal policies that usually relating to the manufacture, testing, marketing, and reliability of products to ensure that they are safe to use and work as intended. The regulatory affairs manager must keep abreast of legislative developments in the countries or regions in which a company distributes its products or services."
+        },
+        {
+            "name": "Regulatory Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Regulatory_Specialist/Salary",
+            "salary_expectation": "R180k – R780k / year (avg R440,668)",
+            "description": "Regulatory specialists work with regulatory procedures and bodies, with day-to-day functions including writing and auditing reports and applications, as well as verifying and recording the company's progress. In addition to producing reports, the regulatory specialist must contribute to analyzing company policies and protocols, which requires regular communication with management and other departments."
+        }
+    ]
+}

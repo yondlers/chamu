@@ -1,0 +1,608 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "Engineering, architecture & technical",
+    "collected_at": "2026-08-10",
+    "careers": [
+        {
+            "name": "Mechanical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mechanical_Engineer/Salary",
+            "salary_expectation": "R102k – R753k / year (avg R360,026)",
+            "description": "Mechanical engineers participate in the planning and manufacturing of new products by performing engineering duties and developing, designing and testing mechanical devices. Job requirements include either a bachelor of science in mechanical engineering, a master of science in engineering, or a related degree."
+        },
+        {
+            "name": "Civil Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Civil_Engineer/Salary",
+            "salary_expectation": "R138k – R811k / year (avg R388,453)",
+            "description": "Most of the time, civil engineers design, plan, and/or manage construction projects. Their job ranges from small-scale projects, such as building or bridge repairs, to very large-scale, such as building large stadiums."
+        },
+        {
+            "name": "Electrical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Electrical_Engineer/Salary",
+            "salary_expectation": "R83k – R892k / year (avg R392,168)",
+            "description": "Electrical engineers are responsible for implementing and designing components for any device that uses electricity, as well as the devices themselves. Engineers have to focus on the generation of power to the device or product."
+        },
+        {
+            "name": "Draughtsman",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Draughtsman/Salary",
+            "salary_expectation": "R100k – R482k / year (avg R235,101)",
+            "description": "The draughtsman (draftsman) is responsible for transforming others' ideas into specific “maps” used to guild the physical construction of entities such as buildings, machines, computer chips, and roads; this can be done freehand, although it is now common to use computer-aided design (CAD) software. These maps or plans are also used by others to determine the feasibility of a building or item."
+        },
+        {
+            "name": "Safety Officer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Safety_Officer/Salary",
+            "salary_expectation": "R26k – R458k / year (avg R236,010)",
+            "description": "Safety officers are responsible for monitoring activities in the workplace and ensuring that nobody is violating safety regulations. The essential aim of their job is to minimize occupational injuries, accidents, and health problems."
+        },
+        {
+            "name": "Process Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Process_Engineer/Salary",
+            "salary_expectation": "R186k – R784k / year (avg R429,718)",
+            "description": "Every manufactured product undergoes certain processes before reaching the consumers, and process engineers are in charge of studying these processes within the context of chemical engineering. They evaluate efficiency, quality and safety of the process, and they make suggestions on how to improve the process when needed."
+        },
+        {
+            "name": "Civil Engineering Technologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Civil_Engineering_Technologist/Salary",
+            "salary_expectation": "R178k – R590k / year (avg R326,214)",
+            "description": "A civil engineering technologist performs many of the tasks necessary to start, make progress on, and complete a civil project. The first responsibility of the civil engineering technologist is to gather field data on the site of the project by surveying, hand-measuring, taking photos of, and sketching the site."
+        },
+        {
+            "name": "Project Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Project_Engineer/Salary",
+            "salary_expectation": "R237k – R844k / year (avg R456,914)",
+            "description": "Project engineers oversee technical staff on engineering projects within their company, ensuring that projects are completed on schedule, within budget and within project specifications. They coordinate efforts among staff and ensure that effective communication exists among the various divisions or staffs involved in projects, as well as ensure resource allocation is effective, efficient and sufficient to complete the project."
+        },
+        {
+            "name": "Industrial Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Industrial_Engineer/Salary",
+            "salary_expectation": "R60k – R593k / year (avg R304,946)",
+            "description": "An industrial engineer primarily works to improve and manage manufacturing processes for their company. He or she is primarily concerned with finding ways to better utilize employees, machinery and other assets to improve operations within a plant or similar facility."
+        },
+        {
+            "name": "Civil Engineering Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Civil_Engineering_Technician/Salary",
+            "salary_expectation": "R88k – R415k / year (avg R213,225)",
+            "description": "Civil engineering technicians are responsible for assisting and providing support to civil engineers who are working on building and construction projects. Their role is generally that of an assistant who performs tasks such as creating plans, surveying sites, and inspecting projects."
+        },
+        {
+            "name": "Field Service Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Field_Service_Technician/Salary",
+            "salary_expectation": "R19k – R392k / year (avg R192,697)",
+            "description": "The field service technician performs different types of support at the customer’s location, such as troubleshooting, setup, and installation of systems and equipment. Daily work logs and service tickets must be filled out and accurate, and there is an element of end user and owner training to the position."
+        },
+        {
+            "name": "Architectural Technologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Architectural_Technologist/Salary",
+            "salary_expectation": "R89k – R373k / year (avg R173,668)",
+            "description": "Architectural technologists do work related to the technical/functional aspects of building design. They must be familiar with the processes of conceptualization, design and implementation of buildings as well as the technology aspects of building design from an engineering and construction standpoint."
+        },
+        {
+            "name": "Junior Quantity Surveyor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Quantity_Surveyor/Salary",
+            "salary_expectation": "R58k – R302k / year (avg R159,629)",
+            "description": "A junior quantity surveyor is an entry level position that would shadow a more experienced surveyor. The goal of the junior quantity surveyor is to learn the proper way of managing project budgets and schedules."
+        },
+        {
+            "name": "Structural Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Structural_Engineer/Salary",
+            "salary_expectation": "R229k – R894k / year (avg R406,876)",
+            "description": "Structural engineers are individuals who design and create various forms of infrastructures that play a key role in the development of a community. Structural engineers work closely with the construction sector."
+        },
+        {
+            "name": "Building Information Modeling (BIM) Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Building_Information_Modeling_(BIM)_Coordinator/Salary",
+            "salary_expectation": "R431,391 / year",
+            "description": "A building information modeling (BIM) coordinator coordinates the process of generating and managing digital models of places; building information models are virtual files that help with decision-making during the building process. The building information modeling coordinator must be well-educated in not only the industry in which they works, but in architecture generally as well."
+        },
+        {
+            "name": "Chemical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chemical_Engineer/Salary",
+            "salary_expectation": "R52k – R729k / year (avg R320,445)",
+            "description": "Chemical engineers apply their knowledge of various chemical properties to develop new chemical substances (such as fuels, lubricants, or cleaning solvents) or improve and existing ones. They may also serve as troubleshooters by helping to examine and improve industrial processes using the application of better chemical systems."
+        },
+        {
+            "name": "Engineering Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Engineering_Technician/Salary",
+            "salary_expectation": "R80k – R515k / year (avg R218,603)",
+            "description": "An engineering technician's primary task is assisting engineers or scientists, with specific duties usually depending on the technician's field of specialization. Engineering technicians primarily play three roles: support, diagnostics, and maintenance."
+        },
+        {
+            "name": "Electronics Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Electronics_Technician/Salary",
+            "salary_expectation": "R99k – R511k / year (avg R214,184)",
+            "description": "Electronic technicians repair, conduct, and test a variety of electrical systems and products. When an electrical system is malfunctioning, these technicians must troubleshoot the system and repair it to a safe and working order."
+        },
+        {
+            "name": "Mechanical Design Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mechanical_Design_Engineer/Salary",
+            "salary_expectation": "R192k – R603k / year (avg R369,824)",
+            "description": "Mechanical design engineers work in a wide range of industry-based companies which manufacture goods, including the automotive, construction, railway, and electronics industries. These design engineers are tasked with developing drawings which coordinate with industry guidelines and state building laws, as well as analyzing mechanical systems to ensure they are functioning properly, researching design proposals, manuals, and other valuable information to understand the feasible costs of construction on projects, and modifying products to ensure they comply with engineering designs and perfo..."
+        },
+        {
+            "name": "Design Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Design_Engineer/Salary",
+            "salary_expectation": "R215k – R683k / year (avg R407,150)",
+            "description": "Design engineers are in charge of creating blueprints and schematics for systems, machines, and equipment. They usually work with a team that includes several members, including mechanical engineers."
+        },
+        {
+            "name": "Project Manager, Engineering",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Project_Manager%2C_Engineering/Salary",
+            "salary_expectation": "R284k – R1.2m / year (avg R682,584)",
+            "description": "Project managers in engineering are responsible for leading and directing specialized engineers in specific projects. Strong communication skills and the ability to think quickly to resolve problems in real time are essential in this position, and organizational skills and close attention to detail are also important."
+        },
+        {
+            "name": "Design Architect",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Design_Architect/Salary",
+            "salary_expectation": "R33k – R759k / year (avg R293,410)",
+            "description": "Design architects generally design buildings or other structures such as statues and water fountains for their employer. They work on design projects from start to finish, consulting with clients, creating and editing draft designs, and monitoring project progress throughout construction."
+        },
+        {
+            "name": "Environmental Health & Safety (EHS) Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Health_%26_Safety_(EHS)_Manager/Salary",
+            "salary_expectation": "R67k – R781k / year (avg R471,343)",
+            "description": "An environmental health and safety manager helps a company to realize risks and to prevent them from coming to realization. The manager will take objective evaluations of the various departments within the company to make sure that employees are adhering to safety standards."
+        },
+        {
+            "name": "Draughtsperson",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Draughtsperson/Salary",
+            "salary_expectation": "R97k – R491k / year (avg R244,035)",
+            "description": "A draughtsperson is responsible for producing technical plans and drawings in order to construct buildings and/or equipment. Although they typically work for factories and plants, their work generally stays within an office."
+        },
+        {
+            "name": "Electrical Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Electrical_Technician/Salary",
+            "salary_expectation": "R101k – R495k / year (avg R257,316)",
+            "description": "Electrical technicians install, repair, and maintain electrical equipment. They must have a working knowledge of federal and state regulations as they apply to electrical equipment, and they must stay current on safety practices."
+        },
+        {
+            "name": "Graduate Civil Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graduate_Civil_Engineer/Salary",
+            "salary_expectation": "R112k – R312k / year (avg R233,600)",
+            "description": "Working for a company as a graduate civil engineer requires not only extensive education and training in the field of civil engineering but also the ability to be highly adaptable to the needs of the employer. It requires having critical thinking skills and the confidence to work independently that require creative solutions to problems that arise."
+        },
+        {
+            "name": "Senior Mechanical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Mechanical_Engineer/Salary",
+            "salary_expectation": "R204k – R1.2m / year (avg R753,590)",
+            "description": "A senior mechanical engineer creates and improves mechanical and electrical systems for products. The engineer will be present for the planning, design, and development processes until the product is produced."
+        },
+        {
+            "name": "Junior Mechanical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Mechanical_Engineer/Salary",
+            "salary_expectation": "R100k – R397k / year (avg R254,073)",
+            "description": "A junior mechanical engineer holds an entry-level position on the path to becoming a senior mechanical engineer. Generally, a junior mechanical engineer works under the supervision of a senior mechanical engineer and reports to the company's director of engineering."
+        },
+        {
+            "name": "Architectural Draftsman",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Architectural_Draftsman/Salary",
+            "salary_expectation": "R74k – R319k / year (avg R172,019)",
+            "description": "Architectural draftsmen are responsible for creating architectural construction documents and drawings for their projects. They develop construction-related files that effectively encompass of aspects of the design process."
+        },
+        {
+            "name": "Field Service Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Field_Service_Engineer/Salary",
+            "salary_expectation": "R97k – R539k / year (avg R304,707)",
+            "description": "Field service engineers work with their hands to fix what is broken, primarily in electronic installation and scheduling maintenance and malfunctions, and most days are spent traveling from one work-site to another to resolve the electrical problems or situations that arise. They work with several types of tools and machinery in these situations, both indoors and outdoors, and most work alone or in small teams with two to three others depending on the employer."
+        },
+        {
+            "name": "Electronics Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Electronics_Engineer/Salary",
+            "salary_expectation": "R155k – R729k / year (avg R396,749)",
+            "description": "From the toaster and radio to the cellular phone and GPS satellite, the use of electronics has permeated every facet of the developed world. The ongoing operation of the modern society requires that electronic devices be continually designed, redesigned, maintained and comprehended."
+        },
+        {
+            "name": "Quality Control (QC) Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Control_(QC)_Technician/Salary",
+            "salary_expectation": "R12k – R357k / year (avg R175,068)",
+            "description": "Quality control (QC) technicians are a crucial part of almost all manufacturing operations. Contrary to what some believe, they are not only involved as a final check before a product goes out the door; they are also responsible for verifying the quality of the basic materials received (as using a flawed material in the production process will inevitably result in a flawed end product) as well as every step in the manufacturing process."
+        },
+        {
+            "name": "Civil Engineer in Training",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Civil_Engineer_in_Training/Salary",
+            "salary_expectation": "R10k – R312k / year (avg R152,941)",
+            "description": "A civil engineer in training, also called an engineer trainee or civil engineering intern, is someone who may work on, design, build, or repair public works. Civil engineers may be asked to work on bridges, public buildings, waterways, roads, railroads, or any publicly funded structure."
+        },
+        {
+            "name": "Health and Safety Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Health_and_Safety_Manager/Salary",
+            "salary_expectation": "R68k – R783k / year (avg R384,000)",
+            "description": "A health and safety manager is responsible for maintaining organizational standards of health and safety; they also may oversee a health and safety department. A health and safety manager must make sure that all codes and regulations are followed."
+        },
+        {
+            "name": "Mechanical Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mechanical_Technician/Salary",
+            "salary_expectation": "R30k – R492k / year (avg R245,461)",
+            "description": "Mechanical technicians (also referred to as simply \"mechanics\") are responsible for preventative maintenance for their company’s machines and equipment They also inspect equipment to verify that it is safe to use, as well as make repairs as needed. When a breakdown occurs, mechanical technicians inspect and diagnose the underlying problem; they then determine if it is necessary to replace parts and/or how to repair the equipment as quickly and safely as possible."
+        },
+        {
+            "name": "Architectural Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Architectural_Designer/Salary",
+            "salary_expectation": "R10k – R575k / year (avg R197,384)",
+            "description": "Architectural designers design such projects as buildings, urban landscapes, and parks. In some cases, designers will work as a part of a company or studio, although they can also work independently."
+        },
+        {
+            "name": "Senior Electrical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Electrical_Engineer/Salary",
+            "salary_expectation": "R365k – R1.1m / year (avg R835,901)",
+            "description": "Senior electrical engineers design, develop, implement, and test new electrical equipment and machinery, such as electric cars and electrical appliances. They may also be involved in customizing existing equipment or machinery."
+        },
+        {
+            "name": "Senior Civil Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Civil_Engineer/Salary",
+            "salary_expectation": "R460k – R1.2m / year (avg R737,063)",
+            "description": "A senior civil engineer handles the design, construction, and maintenance of public structures such as dams, bridges, buildings, and roads. It’s their job to ensure that each structure is able to withstand the wear and tear of constant use."
+        },
+        {
+            "name": "Desktop Support Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Desktop_Support_Engineer/Salary",
+            "salary_expectation": "R131k – R278k / year (avg R212,604)",
+            "description": "A desktop engineer maintains and troubleshoots the existing computers, laptops, security, and servers within their organization's network. They install, configure, and troubleshoot the computers, as well as all other applications and printers, to keep them at optimum performance."
+        },
+        {
+            "name": "Computer Aided Design (CAD) Drafter",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Computer_Aided_Design_(CAD)_Drafter/Salary",
+            "salary_expectation": "R139k – R400k / year (avg R243,250)",
+            "description": "Computer aided design (CAD) drafters use computer aided design systems to created drawings for building construction or product creation, filling design drawings with codes and specifications for the design. CAD drafters work directly with the company needing the design, and drafters must be able to take directions and use them to deliver a high-quality design."
+        },
+        {
+            "name": "Production Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Production_Technician/Salary",
+            "salary_expectation": "R21k – R399k / year (avg R257,074)",
+            "description": "In an assembly or manufacturing plant, the individuals who work with items and prepare them for further production/assembly are production technicians. The production technician usually holds an entry-level job in a company; however, a manufacturing company needs production personnel to exercise quality control, operate machinery efficiently and safely, and possess basic math and manual manufacturing abilities."
+        },
+        {
+            "name": "Instrument Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instrument_Technician/Salary",
+            "salary_expectation": "R30k – R587k / year (avg R320,308)",
+            "description": "Most instrument technician jobs fall mainly into two fields: medical and electrical. While there is a wee bit of overlap between the two fields (for example, both usually require the ability to operate in fast-paced environments), in most respects, the two are very different jobs indeed."
+        },
+        {
+            "name": "Automation Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Automation_Engineer/Salary",
+            "salary_expectation": "R249k – R966k / year (avg R434,593)",
+            "description": "Automation engineers are in charge of creating an effective production workflow in their organization. They implement complex electrical and mechanical installation support to ensure efficient equipment output and strict compliance with safety regulations."
+        },
+        {
+            "name": "Fiber Optic Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fiber_Optic_Technician/Salary",
+            "salary_expectation": "R11k – R316k / year (avg R164,336)",
+            "description": "A fiber optic technician generally works in the telecommunications industry. They install fiber optic cables, which are used to carry Internet, telephone, and television connections/services."
+        },
+        {
+            "name": "Service Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Service_Engineer/Salary",
+            "salary_expectation": "R214k – R705k / year (avg R361,922)",
+            "description": "Service engineers are responsible for numerous areas within and outside of facilities, including the design, installation, and monitoring of mechanical, electrical, and public health safety systems. Individuals in this position can hold many different titles, such as building services engineers, service engineers, architectural engineers, building engineers, or facilities planners."
+        },
+        {
+            "name": "Senior Quality Assurance (QA) / Test Automation Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Quality_Assurance_(QA)_%2F_Test_Automation_Engineer/Salary",
+            "salary_expectation": "R385k – R1m / year (avg R688,107)",
+            "description": "Senior quality assurance and test automation engineers design applications that will convert manual test preparation into automated test preparation. They design, create, test and implement these solutions in order to automate as much of the manual test preparation as possible by using codes and scripts."
+        },
+        {
+            "name": "Land Surveyor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Land_Surveyor/Salary",
+            "salary_expectation": "R21k – R608k / year (avg R254,129)",
+            "description": "Most of the time land surveyors work for engineering, land development or construction companies. They perform boundary surveys, primary surveys, construction staking and other relevant tasks."
+        },
+        {
+            "name": "Test Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Test_Engineer/Salary",
+            "salary_expectation": "R67k – R669k / year (avg R346,893)",
+            "description": "Test engineers are involved in creating and designing processes or experiments to test the quality of a product to be manufactured. Test engineers mainly deal with the inner workings of computer hardware and software; however, many test engineers work with a variety of different fields and test a wide range of equipment and products, from medical equipment such as X-ray machines to commercial transportation vehicles like airplanes."
+        },
+        {
+            "name": "Electrical Technologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Electrical_Technologist/Salary",
+            "salary_expectation": "R152k – R828k / year (avg R340,646)",
+            "description": "Electrical technologists assist in the design, production, and testing of various components within electrical systems. These technologists generally work during traditional business hours, though this may depend on the operating hours of their organization."
+        },
+        {
+            "name": "Mining Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mining_Engineer/Salary",
+            "salary_expectation": "R20k – R763k / year (avg R353,188)",
+            "description": "Mine engineers work primarily for mining companies and provide technical support and directions for their operations. They also provide estimates relevant to mining construction and are involved with capital/expense projects and equipment selection for the company's mining operations."
+        },
+        {
+            "name": "Electrical Design Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Electrical_Design_Engineer/Salary",
+            "salary_expectation": "R108k – R650k / year (avg R305,209)",
+            "description": "The electrical design engineer creates new design projects, as well as analyzes and improves on existing design from an engineering perspective. This position is found in a variety of industries; several that include high demand for electrical design engineers include the semiconductor industry and electronics manufacturers."
+        },
+        {
+            "name": "Engineer, Hydraulic",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Engineer%2C_Hydraulic/Hourly_Rate",
+            "salary_expectation": "R37.53 – R176 / hour (avg R77.47)",
+            "description": "A hydraulic engineer is a specialized civil engineer who works with issues concerning the flow of water and other liquids. They are employed primarily to work on bridges and dams and at hydraulic power plants, and there are also mechanical engineering applications, including heavy machinery, cooling systems, and turbines, which require their expertise."
+        },
+        {
+            "name": "Safety Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Safety_Coordinator/Salary",
+            "salary_expectation": "R92k – R506k / year (avg R310,602)",
+            "description": "A safety coordinator supervises the safety of a company’s workers. Their role is a combination of understanding legal safety requirements and setting standards for the company's workforce."
+        },
+        {
+            "name": "Health and Safety Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Health_and_Safety_Coordinator/Salary",
+            "salary_expectation": "R21k – R421k / year (avg R230,000)",
+            "description": "A health and safety coordinator spends much of their time observing and auditing the procedures and activities within a company to ensure that they meet company guidelines, and, possibly, state and federal requirements. They may complete inspections to ensure compliance, conduct in-services to educate employees, and maintain documentation of those activities."
+        },
+        {
+            "name": "Electrical Engineering Technologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Electrical_Engineering_Technologist/Salary",
+            "salary_expectation": "R121k – R570k / year (avg R302,644)",
+            "description": "The primary role of an electrical engineering technologist is to aid the electrical engineers with electrical power distribution, process control, and instrumentation design. Duties of this position include conducting statistical studies and analyzing costs of production for non-sustainable and sustainable designs."
+        },
+        {
+            "name": "Instrumentation & Controls (I&C) Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instrumentation_%26_Controls_(I%26C)_Technician/Salary",
+            "salary_expectation": "R88k – R721k / year (avg R446,780)",
+            "description": "An instrumentation and controls (I&C) technician generally works at a manufacturing plant and is in charge of repairing and maintaining the instrumentation, robotic controllers, other equipment, and sensory readouts. The I&C technician works to ensure that manufacturing devices - which are often remotely controlled - work efficiently and in a manner that ensures maximum safety for all workers."
+        },
+        {
+            "name": "Computer Aided Design (CAD) Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Computer_Aided_Design_(CAD)_Designer/Salary",
+            "salary_expectation": "R98k – R444k / year (avg R246,000)",
+            "description": "A computer aided design, or CAD, designer's responsibilities revolve around taking blueprints and designs from engineers, and reformatting and representing them in a digital form. Rough product designs, building schematics, or additional product add-ons or modifications are examples of designs and documents that CAD designers are asked to reproduce on computers."
+        },
+        {
+            "name": "Metallurgical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Metallurgical_Engineer/Salary",
+            "salary_expectation": "R43k – R794k / year (avg R431,152)",
+            "description": "Metallurgical engineering covers a wide area of responsibility; for example, those working in this field may be designing metal parts, studying the properties of metals, or solving problems in manufacturing. Extractive metallurgy deals with the separation of metals from ores, which involves multiple steps to successfully extract ores."
+        },
+        {
+            "name": "Integration Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Integration_Engineer/Salary",
+            "salary_expectation": "R21k – R843k / year (avg R465,825)",
+            "description": "Integration engineers are responsible for developing individual solutions for particular company needs, such as creating custom software. The products created by these engineers may automate tasks or make tasks more efficient for personnel; this occasionally involves creating a centralized system for employees for tasks which were previously performed individually."
+        },
+        {
+            "name": "Senior Engineering Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Engineering_Manager/Salary",
+            "salary_expectation": "R653k – R1.7m / year (avg R985,608)",
+            "description": "Senior engineering managers are responsible for managing projects to ensure that they stay on schedule and budget, and may also lead a team to ensure that all deadlines are met. They are often responsible for training both new and current employees, as well as implementing processes and procedures to keep the team running efficiently, and must be able to interact with a variety of personalities regarding clients and the team members they support."
+        },
+        {
+            "name": "Senior Structural Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Structural_Engineer/Salary",
+            "salary_expectation": "R590k – R1.1m / year (avg R846,654)",
+            "description": "Senior structural engineers use their engineering experience in the development and maintenance of architectural structures. These engineers are needed in many fields to design buildings and devices that can withstand current usage loads and future demands."
+        },
+        {
+            "name": "Structural Drafter",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Structural_Drafter/Salary",
+            "salary_expectation": "R121k – R538k / year (avg R236,051)",
+            "description": "Structural drafters produce technical drawings based on rough specifications, sketches, and calculations from various personnel in the field. They must verify this rough work, making modifications to their drawings when necessary to ensure they conform to specifications."
+        },
+        {
+            "name": "Technical Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Manager/Salary",
+            "salary_expectation": "R10k – R778k / year (avg R392,887)",
+            "description": null
+        },
+        {
+            "name": "Engineering Intern",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Engineering_Intern/Salary",
+            "salary_expectation": "R60k – R320k / year (avg R104,059)",
+            "description": "An engineering intern is either a student or recent graduate in an engineering discipline at a university. As part of a temporary employment agreement, companies hire interns in engineering and place them in departments that typically require engineering degrees and experience."
+        },
+        {
+            "name": "Quality Assurance (QA) Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Assurance_(QA)_Technician/Salary",
+            "salary_expectation": "R137k – R359k / year (avg R233,663)",
+            "description": null
+        },
+        {
+            "name": "Mechanical Engineering Technologist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mechanical_Engineering_Technologist/Salary",
+            "salary_expectation": "R202k – R641k / year (avg R431,005)",
+            "description": null
+        },
+        {
+            "name": "Architect (but not Landscape or Naval)",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Architect_(but_not_Landscape_or_Naval)/Salary",
+            "salary_expectation": "R101k – R490k / year (avg R272,967)",
+            "description": "An architect will be involved with the earliest stages of designing and developing a structure such as a house or building. An architect will be directly responsible for working with the client to draw and draft the design of their desired structure."
+        },
+        {
+            "name": "Geotechnical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Geotechnical_Engineer/Salary",
+            "salary_expectation": "R204k – R979k / year (avg R366,343)",
+            "description": null
+        },
+        {
+            "name": "Interior Architect",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Interior_Architect/Salary",
+            "salary_expectation": "R177k – R588k / year (avg R239,903)",
+            "description": "Interior architects are responsible for designing and overseeing interior construction on behalf of their organization. They are in charge of managing all details related to interior architecture and construction materials, and they must follow client-approved designs."
+        },
+        {
+            "name": "Aerospace Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Aerospace_Engineer/Salary",
+            "salary_expectation": "R124k – R1.3m / year (avg R400,000)",
+            "description": "Aerospace engineers design aircraft, spacecraft, missiles, and satellites. They receive proposals for projects and evaluate them for a variety of factors."
+        },
+        {
+            "name": "Biomedical Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Biomedical_Engineer/Salary",
+            "salary_expectation": "R20k – R522k / year (avg R335,000)",
+            "description": "Biomedical engineering represents new areas of medical research and product development; biomedical engineers' work helps pave the way for new ways to help treat injuries and diseases. As medicine is a field with vast numbers of specific disciplines, there are many different sub-fields in which biomedical engineers work."
+        },
+        {
+            "name": "Manufacturing Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Manufacturing_Engineer/Salary",
+            "salary_expectation": "R61k – R740k / year (avg R375,100)",
+            "description": "A manufacturing engineer is an expert in industrial production, who is in charge of researching and developing methods to design, build, and ship various items. They determine the best way to use a piece of machinery and how the assembly line workers can maximize efficiency."
+        },
+        {
+            "name": "Senior Project Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Project_Engineer/Salary",
+            "salary_expectation": "R386k – R1.1m / year (avg R709,859)",
+            "description": "Also known as a lead project engineer, a senior project engineer oversees operating processes. These processes are used by companies making products and completing projects of various types, including construction, industrial, and environmental."
+        },
+        {
+            "name": "Chief Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chief_Engineer/Salary",
+            "salary_expectation": "R409k – R2.1m / year (avg R1,146,086)",
+            "description": "The chief engineer is generally in charge of building, maintenance, and repairs needed on-site. This position is often a supervisory role, in which the chief engineer works with maintenance subordinates and delegates tasks."
+        },
+        {
+            "name": "Design Engineering Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Design_Engineering_Manager/Salary",
+            "salary_expectation": "R517k – R1.4m / year (avg R770,342)",
+            "description": "Design engineering managers are employed in a number of fields, including architecture, manufacturing, and research/development, to lead a team of engineers and ensure that projects are completed on-budget and in a timely manner. The size of the team may range from just one or two people to twenty or more."
+        },
+        {
+            "name": "Production Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Production_Engineer/Salary",
+            "salary_expectation": "R176k – R719k / year (avg R395,000)",
+            "description": "A product engineer is responsible for overseeing the production of a product, typically in an indoor factory setting. They are responsible for ensuring that production demands are met efficiently and cost effectively."
+        },
+        {
+            "name": "Radio Frequency (RF) Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Radio_Frequency_(RF)_Engineer/Salary",
+            "salary_expectation": "R181k – R970k / year (avg R480,000)",
+            "description": "Radio frequency (RF) engineers are responsible for performing research that furthers the success of intelligence sensors and surveillance radars, including research in the fields of bistatic, passive and active multiple inputs, multiple outputs, monostatic, and over-the-horizon radar. RF engineers must expand their current knowledge about radio frequency sensor components, data collection, and analysis to improve radar designing, testing, and evaluation."
+        },
+        {
+            "name": "Architectural Technician",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Architectural_Technician/Salary",
+            "salary_expectation": "R129k – R501k / year (avg R239,903)",
+            "description": "Architectural technicians hold a sort of hybrid role in the field of planning and drafting building schematics. Generally speaking, these technicians are concerned with the technical and scientific areas which affect architectural design."
+        },
+        {
+            "name": "Senior Mechanical Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Mechanical_Designer/Salary",
+            "salary_expectation": "R368k – R894k / year (avg R495,244)",
+            "description": "Senior mechanical designers are in charge of creating effective mechanical designs for their company and developing mechanical concepts and drawings to meet project requirements. They utilize complex software tools to make technical designs that fulfill mechanical specifications, and these individuals must possess strong communication skills to facilitate the design process and reach project completion."
+        },
+        {
+            "name": "Architectural Intern",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Architectural_Intern/Salary",
+            "salary_expectation": "R40k – R252k / year (avg R91,550)",
+            "description": "An architectural intern is normally the entry-level position for an individual trained to be an architect. These internships are normally paid positions for individuals who have completed formal training and basic certification in the field."
+        },
+        {
+            "name": "Computer Aided Design (CAD) Operator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Computer_Aided_Design_(CAD)_Operator/Salary",
+            "salary_expectation": "R118k – R358k / year (avg R202,113)",
+            "description": "CAD operators use computer-aided design (CAD) systems to draft and draw blueprints which will guide the creation of high-quality products by a company. They also develop plans for architecture, especially building foundations and interior room layouts and planning."
+        },
+        {
+            "name": "Project Management Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Project_Management_Director/Salary",
+            "salary_expectation": "R685k – R1.9m / year (avg R1,213,564)",
+            "description": "Project management directors lead a project delivery team comprising project management professionals. They manage a project's scope, budget, and schedule to ensure the project meets the organization's needs."
+        },
+        {
+            "name": "Clinical Engineer, Medical Devices",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clinical_Engineer%2C_Medical_Devices/Salary",
+            "salary_expectation": "R24k – R613k / year (avg R305,209)",
+            "description": "Clinical engineers in the medical device industry must have a four-year college degree in a field relating to electrical, clinical, or biomedical studies, and applicants should have at least a few years of working experience, as well. Master's degrees are generally preferred by employers."
+        },
+        {
+            "name": "Engineering Technician, Electrical",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Engineering_Technician%2C_Electrical/Salary",
+            "salary_expectation": "R70k – R715k / year (avg R225,000)",
+            "description": "An electrical engineer technician helps engineers to design and develop communications equipment, computers, medical devices, navigational equipment, and other electronic equipment in numerous areas of technology. An electrical engineer technician often works in product development, evaluation, and testing while using specific measuring tools and diagnostic knowledge to test and repair equipment."
+        },
+        {
+            "name": "Mechanical Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mechanical_Designer/Salary",
+            "salary_expectation": "R235k – R654k / year (avg R329,000)",
+            "description": "Mechanical designers, sometimes called drafters, create designs for mechanical devices such as machines. They are involved in the entire process, from sketching an idea through the manufacturing and testing of the finished product."
+        },
+        {
+            "name": "Steel Detailer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Steel_Detailer/Salary",
+            "salary_expectation": "R18k – R495k / year (avg R318,617)",
+            "description": "Steel detailers prepare detailed drawings of steel for various structures, meeting specifications established by architect. They must be able to detail structural metal projects of various sizes from start to finish, as well as possess the ability to maintain working relationships with project managers."
+        },
+        {
+            "name": "Marine Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Marine_Engineer/Salary",
+            "salary_expectation": "R20k – R979k / year (avg R305,319)",
+            "description": "Most of the time, marine engineers work for private organizations or the military, or they work as as consultants. A Marine engineer’s job is to research, design, develop, and construct new marine vessels and their component parts."
+        },
+        {
+            "name": "Quality Assurance (QA) / Quality Control (QC) Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Quality_Assurance_(QA)_%2F_Quality_Control_(QC)_Engineer/Salary",
+            "salary_expectation": "R38k – R404k / year (avg R244,898)",
+            "description": "Quality assurance (QA)/quality control (QC) engineers are responsible for ensuring the quality of products and services produced by their company. They oversee the manufacturing of products and they are involved in every stage of making a product--from development and manufacturing to packaging."
+        },
+        {
+            "name": "Senior Mechanical Design Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Mechanical_Design_Engineer/Salary",
+            "salary_expectation": "R388k – R1.2m / year (avg R642,917)",
+            "description": "Senior mechanical design engineers are involved in the development and creation of mechanical parts, machine tools, and equipment or components and may also work on existing equipment and mechanical processes, usually to improve existing designs or correct recurring faults. Because this job carries a senior-level designation, they are typically team or group leaders who direct the work of other members of a mechanical design team."
+        },
+        {
+            "name": "Research and Development Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Research_and_Development_Engineer/Salary",
+            "salary_expectation": "R290k – R681k / year (avg R337,360)",
+            "description": "Research and development engineers create new business opportunities by researching and inventing new engineering and manufacturing methods, as well as applying new knowledge and technology to improve existing methods. In this way, they help enable greater efficiency in manufacturing and in bringing new ideas to fruition in the marketplace."
+        },
+        {
+            "name": "Chemical Process Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Chemical_Process_Engineer/Salary",
+            "salary_expectation": "R180k – R1.2m / year (avg R253,076)",
+            "description": "Today, the average home or workplace is filled with items and equipment made from thousands of constituent materials. Chemical process engineers are one of the driving forces behind the creation of many of these modern items."
+        },
+        {
+            "name": "Mechanical Drafter",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Mechanical_Drafter/Salary",
+            "salary_expectation": "R130k – R587k / year (avg R311,538)",
+            "description": "Mechanical drafters prepare technical drawings of machinery, robotics, and other mechanical devices in industries such as manufacturing. This usually involves the use of computer aided design (CAD) software."
+        },
+        {
+            "name": "Petroleum Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Petroleum_Engineer/Salary",
+            "salary_expectation": "R39k – R990k / year (avg R250,252)",
+            "description": "Petroleum engineers design and oversee the production and methods for retrieving oil and natural gas from various depths beneath the earth's surface. Most petroleum engineers work for oil companies."
+        },
+        {
+            "name": "Structural Design Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Structural_Design_Engineer/Salary",
+            "salary_expectation": "R292k – R755k / year (avg R383,625)",
+            "description": "Structural design engineers create the details, drawings, and schematics for the building of larger structures, such as buildings, bridges, and other public works. The engineer applies sound engineering principles to design structures that are functional, safe, and aesthetically pleasing."
+        },
+        {
+            "name": "Draftsperson",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Draftsperson/Salary",
+            "salary_expectation": "R106k – R851k / year (avg R201,000)",
+            "description": "A draftsperson primarily works in the field of building design and architecture. (In many job listings, the term is used interchangeably with architect.) The work revolves around the conception, drawing, design, and schematics for residential and commercial buildings."
+        },
+        {
+            "name": "Intern Architect",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Intern_Architect/Salary",
+            "salary_expectation": "R61k – R257k / year (avg R145,107)",
+            "description": "Intern architects are recent college graduates who are preparing for their architecture license. They have just finished a university architecture program and are enrolled in an internship program in which they work under the guidance of one or more established architects."
+        },
+        {
+            "name": "Control Systems Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Control_Systems_Engineer/Salary",
+            "salary_expectation": "R396k – R1.1m / year (avg R650,899)",
+            "description": "Control system engineers are responsible for a number of tasks such as designing and analyzing control systems, verifying and implementing code, fixing malfunctions, explaining and providing information, and analyzing and researching designs. This job can take place either indoors or outdoors depending on the company."
+        },
+        {
+            "name": "Environmental Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Environmental_Engineer/Salary",
+            "salary_expectation": "R25k – R872k / year (avg R450,000)",
+            "description": "Environmental engineers are technological advisers who help with the growing challenges of land use, pollution, resource regulation and environmental laws. They use technology to help meet these challenges and develop sound solutions."
+        },
+        {
+            "name": "Field Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Field_Engineer/Salary",
+            "salary_expectation": "R31k – R600k / year (avg R306,034)",
+            "description": "A field engineer's responsibilities are highly specialized to the profession. They must have a comprehensive understanding of technological services and the specific machines and mechanisms of the company, as much of the position requires installing, replacing, or providing maintenance on these machines."
+        },
+        {
+            "name": "Instrumentation Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Instrumentation_Engineer/Salary",
+            "salary_expectation": "R69k – R993k / year (avg R370,000)",
+            "description": "Instrumentation engineers are responsible for tasks relating to the creation and upkeep of instrumentation, usually in a factory or plant environment. This instrumentation helps to monitor and regulate processes so they work efficiently and accurately, and these engineers may also set up instrumentation to function for particular tasks; this is done by creating specifications and configuring the instrumentation so that it operates as necessary."
+        }
+    ]
+}
