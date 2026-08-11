@@ -89,6 +89,8 @@ class UniversitySeeder extends Seeder
             UfhRequirementSeeder::class,
             UniversityLogoSeeder::class,
             UniversityContactSeeder::class,
+            TvetCollegeAssetsSeeder::class,
+            TvetCatalogueSeeder::class,
         ]);
     }
 }
