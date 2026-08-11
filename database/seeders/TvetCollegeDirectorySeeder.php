@@ -92,8 +92,9 @@ class TvetCollegeDirectorySeeder extends Seeder
                 $values['latitude'] = $college['latitude'];
                 $values['longitude'] = $college['longitude'];
                 $values['contact_source_url'] = TvetColleges::SOURCE_URL;
-                $values['physical_address'] = $existing?->physical_address
-                    ?: $college['province'].', South Africa';
+                $values['physical_address'] = $college['physical_address']
+                    ?? $existing?->physical_address
+                    ?? ($college['province'].', South Africa');
             }
 
             DB::table('universities')->updateOrInsert(

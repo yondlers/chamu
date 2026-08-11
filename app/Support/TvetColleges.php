@@ -51,6 +51,7 @@ final class TvetColleges
      *     province: string,
      *     website: ?string,
      *     phone: ?string,
+     *     physical_address?: string,
      *     latitude: float,
      *     longitude: float
      * }>
@@ -204,8 +205,9 @@ final class TvetColleges
                 'province' => 'Gauteng',
                 'website' => 'https://www.tnc4fet.co.za',
                 'phone' => '012 401 1950',
-                'latitude' => -26.2141067,
-                'longitude' => 27.8745633,
+                'physical_address' => '420 Helen Joseph St, Arcadia, Pretoria, 0007',
+                'latitude' => -25.7460129,
+                'longitude' => 28.1980681,
             ],
             'TSC' => [
                 'name' => 'Tshwane South TVET College',
