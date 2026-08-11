@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 class UniversityLogoSeeder extends Seeder
 {
     private const LOGOS = [
+        'BCC' => 'https://bccollege.co.za/wp-content/uploads/2026/03/bcc-logo-e1772658171904.png',
         'BOLAND' => 'https://bolandcollege.com/wp-content/uploads/2022/11/Boland-Logo.png',
         'CPUT' => 'images/universities/cput.png',
         'CUT' => 'https://www.cut.ac.za/Images/Site/cut-u-logo.png',

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders\Universities\BCC;
 
+use Database\Seeders\UniversityLogoSeeder;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -121,6 +122,7 @@ class RequirementSeeder extends Seeder
                 'name' => $name,
                 'slug' => $existing?->slug ?: $this->uniqueUniversitySlug(Str::slug($name) ?: 'buffalo-city-tvet-college'),
                 'website' => self::WEBSITE,
+                'logo' => UniversityLogoSeeder::logoFor($abbreviation, $existing?->logo),
                 'updated_at' => now(),
                 'created_at' => now(),
             ],
