@@ -9,6 +9,9 @@ use App\Models\QualificationType;
 use App\Models\University;
 use App\Models\UniversityAdmissionRule;
 use App\Services\Algorithm\MostAppliedQualificationAlgorithm;
+use App\Services\Aps\ApsResultsSummaryService;
+use App\Services\Aps\ApsSearchEntityResolver;
+use App\Services\Aps\ApsSearchInterpretationService;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
@@ -17,16 +20,32 @@ use Illuminate\Support\Facades\Schema;
 
 class ApsController extends Controller
 {
-    public function index(Request $request, MostAppliedQualificationAlgorithm $mostAppliedQualificationAlgorithm)
-    {
+    public function index(
+        Request $request,
+        MostAppliedQualificationAlgorithm $mostAppliedQualificationAlgorithm,
+        ApsSearchInterpretationService $apsSearchInterpretationService,
+        ApsSearchEntityResolver $apsSearchEntityResolver,
+        ApsResultsSummaryService $apsResultsSummaryService,
+    ) {
         $filterTypeUniversity = 0;
         $filterTypeFaculty = 1;
         $filterTypeQualification = 2;
         $search = trim((string) $request->query('search', ''));
+        $textSearch = $search;
         $sort = strtolower(trim((string) $request->query('sort', 'default')));
         if (! in_array($sort, ['default', 'closing', 'score', 'level', 'duration'], true)) {
             $sort = 'default';
         }
+
+        $apsExplicit = $request->exists('aps') || $request->exists('aps_score');
+        $aps = $request->query('aps', $request->query('aps_score'));
+        $aps = is_numeric($aps) ? (int) $aps : null;
+        if ($aps !== null && ($aps < 0 || $aps > 100)) {
+            $aps = null;
+        }
+        $aiAssisted = false;
+        $aiSummary = null;
+        $aiSubjects = [];
 
         $rawFilters = $request->query('filter', []);
         if (! is_array($rawFilters)) {
@@ -107,7 +126,7 @@ class ApsController extends Controller
 
         $qualificationTypes = QualificationType::query()
             ->orderBy('name')
-            ->get(['id', 'name']);
+            ->get(['id', 'name', 'abbreviation']);
 
         $qualificationTypeFacultyIds = DB::table('qualifications')
             ->whereNotNull('qualification_type_id')
@@ -124,6 +143,84 @@ class ApsController extends Controller
                 ->all());
 
         $facultiesById = $faculties->keyBy('id');
+        $universitiesById = $universities->keyBy('id');
+        $qualificationTypesById = $qualificationTypes->keyBy('id');
+
+        if (
+            $search !== ''
+            && ! $apsSearchEntityResolver->matchesIndexedOption($search, $universities, $faculties, $qualificationTypes)
+        ) {
+            $tagContext = collect($selectedUniversityIds)
+                ->map(function (int $universityId) use ($universitiesById) {
+                    $university = $universitiesById->get($universityId);
+
+                    return $university === null ? null : [
+                        'type' => 'university',
+                        'label' => $university->abbreviation ?: $university->name,
+                    ];
+                })
+                ->filter()
+                ->concat(
+                    collect($selectedFacultyIds)->map(function (int $facultyId) use ($facultiesById) {
+                        $faculty = $facultiesById->get($facultyId);
+
+                        return $faculty === null ? null : [
+                            'type' => 'faculty',
+                            'label' => $faculty->name,
+                        ];
+                    })->filter()->values()
+                )
+                ->concat(
+                    collect($selectedQualificationTypeIds)->map(function (int $typeId) use ($qualificationTypesById) {
+                        $type = $qualificationTypesById->get($typeId);
+
+                        return $type === null ? null : [
+                            'type' => 'qualification',
+                            'label' => $type->name,
+                        ];
+                    })->filter()->values()
+                )
+                ->values()
+                ->all();
+
+            $interpretation = $apsSearchInterpretationService->interpret($search, $tagContext);
+            $resolved = $apsSearchEntityResolver->resolve(
+                $interpretation,
+                $universities,
+                $faculties,
+                $qualificationTypes,
+            );
+
+            $hasUsefulInterpretation = $resolved['university_ids'] !== []
+                || $resolved['faculty_ids'] !== []
+                || $resolved['qualification_type_ids'] !== []
+                || $resolved['aps'] !== null
+                || ($resolved['query'] ?? null) !== null
+                || $resolved['subjects'] !== [];
+
+            if ($hasUsefulInterpretation) {
+                $selectedUniversityIds = array_values(array_unique(array_merge(
+                    $selectedUniversityIds,
+                    $resolved['university_ids'],
+                )));
+                $selectedFacultyIds = array_values(array_unique(array_merge(
+                    $selectedFacultyIds,
+                    $resolved['faculty_ids'],
+                )));
+                $selectedQualificationTypeIds = array_values(array_unique(array_merge(
+                    $selectedQualificationTypeIds,
+                    $resolved['qualification_type_ids'],
+                )));
+
+                if (! $apsExplicit && $aps === null && $resolved['aps'] !== null) {
+                    $aps = $resolved['aps'];
+                }
+
+                $aiSubjects = $resolved['subjects'];
+                $textSearch = $resolved['query'] ?? '';
+                $aiAssisted = true;
+            }
+        }
 
         // Faculty selections imply their parent universities so cascading filters stay valid.
         foreach ($selectedFacultyIds as $facultyId) {
@@ -169,7 +266,7 @@ class ApsController extends Controller
         $bursaryCount = Schema::hasTable('bursaries') ? Bursary::query()->count() : 0;
         $isInitialApsLoad = count($request->query()) === 0;
 
-        $qualificationQuery = function () use ($selectedUniversityIds, $selectedFacultyIds, $selectedQualificationTypeIds, $search) {
+        $qualificationQuery = function () use ($selectedUniversityIds, $selectedFacultyIds, $selectedQualificationTypeIds, $textSearch, $aps) {
             return Qualification::query()
                 ->with([
                     'faculty:id,name',
@@ -180,16 +277,37 @@ class ApsController extends Controller
                 ->when($selectedUniversityIds->isNotEmpty(), fn ($query) => $query->whereIn('university_id', $selectedUniversityIds->all()))
                 ->when($selectedFacultyIds->isNotEmpty(), fn ($query) => $query->whereIn('faculty_id', $selectedFacultyIds->all()))
                 ->when($selectedQualificationTypeIds->isNotEmpty(), fn ($query) => $query->whereIn('qualification_type_id', $selectedQualificationTypeIds->all()))
-                ->when($search !== '', function ($query) use ($search) {
-                    $query->where(function ($query) use ($search) {
+                ->when($aps !== null, function ($query) use ($aps) {
+                    $query->where(function ($query) use ($aps) {
                         $query
-                            ->where('name', 'like', '%'.$search.'%')
-                            ->orWhereHas('faculty', fn ($query) => $query->where('name', 'like', '%'.$search.'%'))
-                            ->orWhereHas('qualificationType', fn ($query) => $query->where('name', 'like', '%'.$search.'%'))
-                            ->orWhereHas('university', function ($query) use ($search) {
+                            ->where(function ($query) use ($aps) {
                                 $query
-                                    ->where('name', 'like', '%'.$search.'%')
-                                    ->orWhere('abbreviation', 'like', '%'.$search.'%');
+                                    ->whereNotNull('aps_required')
+                                    ->where('aps_required', '<=', $aps);
+                            })
+                            ->orWhere(function ($query) use ($aps) {
+                                $query
+                                    ->whereNull('aps_required')
+                                    ->whereNotNull('admission_score_required')
+                                    ->where('admission_score_required', '<=', $aps);
+                            })
+                            ->orWhere(function ($query) {
+                                $query
+                                    ->whereNull('aps_required')
+                                    ->whereNull('admission_score_required');
+                            });
+                    });
+                })
+                ->when($textSearch !== '', function ($query) use ($textSearch) {
+                    $query->where(function ($query) use ($textSearch) {
+                        $query
+                            ->where('name', 'like', '%'.$textSearch.'%')
+                            ->orWhereHas('faculty', fn ($query) => $query->where('name', 'like', '%'.$textSearch.'%'))
+                            ->orWhereHas('qualificationType', fn ($query) => $query->where('name', 'like', '%'.$textSearch.'%'))
+                            ->orWhereHas('university', function ($query) use ($textSearch) {
+                                $query
+                                    ->where('name', 'like', '%'.$textSearch.'%')
+                                    ->orWhere('abbreviation', 'like', '%'.$textSearch.'%');
                             });
                     });
                 });
@@ -207,8 +325,34 @@ class ApsController extends Controller
             $sortedCourses,
             $request,
             total: $isInitialApsLoad ? $allCourses->count() : null,
+            aps: $aps,
         );
         $courseItems = $courses->getCollection();
+
+        if ($aiAssisted) {
+            $aiSummary = $apsResultsSummaryService->summarise($courseItems, [
+                'search' => $search,
+                'aps' => $aps,
+                'university_labels' => $selectedUniversityIds
+                    ->map(function (int $id) use ($universitiesById) {
+                        $university = $universitiesById->get($id);
+
+                        return $university?->name;
+                    })
+                    ->filter()
+                    ->values()
+                    ->all(),
+                'faculty_labels' => $selectedFacultyIds
+                    ->map(function (int $id) use ($facultiesById) {
+                        return $facultiesById->get($id)?->name;
+                    })
+                    ->filter()
+                    ->values()
+                    ->all(),
+                'result_count' => $courses->total(),
+            ]);
+        }
+
         $admissionRuleAssignments = UniversityAdmissionRule::query()
             ->with('admissionRule')
             ->whereIn('university_id', $courseItems->pluck('university_id')->unique()->values()->all())
@@ -293,9 +437,6 @@ class ApsController extends Controller
             return $course;
         });
 
-        $universitiesById = $universities->keyBy('id');
-        $qualificationTypesById = $qualificationTypes->keyBy('id');
-
         $selectedFilters = $selectedUniversityIds
             ->map(function (int $universityId) use ($universitiesById, $filterTypeUniversity) {
                 $university = $universitiesById->get($universityId);
@@ -364,6 +505,10 @@ class ApsController extends Controller
         return view('aps.index', [
             'search' => $search,
             'sort' => $sort,
+            'aps' => $aps,
+            'aiAssisted' => $aiAssisted,
+            'aiSummary' => $aiSummary,
+            'aiSubjects' => $aiSubjects,
             'universities' => $universities,
             'faculties' => $faculties,
             'qualificationTypes' => $qualificationTypes,
@@ -383,6 +528,8 @@ class ApsController extends Controller
                 'university_ids' => $selectedUniversityIds->all(),
                 'faculty_ids' => $selectedFacultyIds->all(),
                 'qualification_type_ids' => $selectedQualificationTypeIds->all(),
+                'aps' => $aps,
+                'subjects' => $aiSubjects,
             ],
         ]);
     }
@@ -530,16 +677,30 @@ class ApsController extends Controller
     /**
      * @param  Collection<int, Qualification>  $courses
      */
-    private function paginateCourseCollection(Collection $courses, Request $request, int $perPage = 25, ?int $total = null): LengthAwarePaginator
-    {
+    private function paginateCourseCollection(
+        Collection $courses,
+        Request $request,
+        int $perPage = 25,
+        ?int $total = null,
+        ?int $aps = null,
+    ): LengthAwarePaginator {
         $page = max(1, LengthAwarePaginator::resolveCurrentPage());
         $items = $courses
             ->slice(($page - 1) * $perPage, $perPage)
             ->values();
 
+        $query = $request->except(['page', 'aps_score']);
+
+        // Keep AI-populated or explicit APS on pagination links.
+        if ($aps !== null) {
+            $query['aps'] = $aps;
+        } elseif ($request->filled('aps_score') && ! $request->filled('aps')) {
+            $query['aps'] = (int) $request->query('aps_score');
+        }
+
         return new LengthAwarePaginator($items, $total ?? $courses->count(), $perPage, $page, [
             'path' => $request->url(),
-            'query' => $request->except(['aps_score', 'page']),
+            'query' => $query,
         ]);
     }
 }

@@ -69,6 +69,9 @@
     $featuredUniversities = $selectedUniversities->isNotEmpty()
         ? $selectedUniversities
         : $universities->take(8);
+    $aps = isset($aps) && is_numeric($aps) ? (int) $aps : null;
+    $aiAssisted = (bool) ($aiAssisted ?? false);
+    $aiSummary = filled($aiSummary ?? null) ? (string) $aiSummary : null;
     $sortOptions = [
         'default' => 'Default',
         'closing' => 'Closing date',
@@ -87,7 +90,7 @@
         'faculty' => 'Faculty',
         'qualification' => 'Qualification',
     ];
-    $courseQuery = function (?array $tokens = null, ?string $searchValue = null, ?string $sortValue = null) use ($selectedFilters, $search, $sort): array {
+    $courseQuery = function (?array $tokens = null, ?string $searchValue = null, ?string $sortValue = null, mixed $apsValue = '__keep') use ($selectedFilters, $search, $sort, $aps): array {
         $query = [];
         $resolvedTokens = $tokens ?? $selectedFilters->pluck('token')->all();
 
@@ -102,6 +105,11 @@
         $resolvedSort = $sortValue ?? $sort;
         if (filled($resolvedSort) && $resolvedSort !== 'default') {
             $query['sort'] = $resolvedSort;
+        }
+
+        $resolvedAps = $apsValue === '__keep' ? $aps : $apsValue;
+        if ($resolvedAps !== null && $resolvedAps !== '') {
+            $query['aps'] = (int) $resolvedAps;
         }
 
         return $query;
@@ -191,6 +199,9 @@
                     @if ($sort !== 'default')
                         <input type="hidden" name="sort" value="{{ $sort }}">
                     @endif
+                    @if ($aps !== null)
+                        <input type="hidden" name="aps" value="{{ $aps }}" data-course-aps-preserve>
+                    @endif
                     <div class="grid gap-2 lg:grid-cols-[minmax(0,1fr)_auto]">
                         <div class="relative rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3" data-course-filter>
                             <label for="course-filter-input" class="flex items-center gap-1.5 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">
@@ -228,7 +239,7 @@
                                     type="search"
                                     value="{{ $search }}"
                                     autocomplete="off"
-                                    placeholder="{{ $selectedFilters->isEmpty() ? 'Search university, faculty, qualification' : 'Add another…' }}"
+                                    placeholder="{{ $selectedFilters->isEmpty() ? 'University, faculty, or describe what you want to study' : 'Add a filter or describe your marks…' }}"
                                     class="min-w-[12rem] flex-1 bg-transparent text-base font-bold outline-none placeholder:text-neutral-400"
                                     data-course-filter-input
                                     aria-expanded="false"
@@ -422,7 +433,7 @@
         </section>
 
         <section id="search-results" tabindex="-1" class="mx-auto mt-8 scroll-mt-24 max-w-7xl px-5 focus:outline-none lg:px-8">
-            <div class="mb-5 flex flex-col gap-3 rounded-lg border border-neutral-200 bg-white px-4 py-3 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+            <div class="mb-5 flex flex-col gap-3 rounded-lg border border-neutral-200 bg-white px-4 py-3 shadow-sm lg:flex-row lg:items-center lg:justify-between">
                 <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-neutral-700">
                     <p class="inline-flex items-center gap-1.5 font-semibold">
                         <span class="font-black text-neutral-950">{{ number_format($totalCourses) }}</span>
@@ -441,40 +452,89 @@
                     </p>
                 </div>
 
-                <div class="relative shrink-0" data-course-sort>
-                    <button
-                        type="button"
-                        class="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm font-semibold text-neutral-800 hover:bg-neutral-100 sm:w-auto"
-                        data-course-sort-trigger
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                    >
-                        <span>
-                            <span class="font-black text-neutral-950">Sort by:</span>
-                            <span data-course-sort-label>{{ $sortLabel }}</span>
-                        </span>
-                        <i data-lucide="chevron-down" class="text-neutral-400" style="width:16px;height:16px;"></i>
-                    </button>
-
-                    <div class="absolute right-0 z-20 mt-2 hidden min-w-[14rem] overflow-hidden rounded-lg border border-neutral-200 bg-white py-1 shadow-xl" data-course-sort-panel role="listbox">
-                        @foreach ($sortOptions as $value => $label)
-                            <a
-                                href="{{ route('aps.index', $courseQuery(null, $search ?: null, $value)) }}#search-results"
-                                class="flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold hover:bg-neutral-50 {{ $sort === $value ? 'bg-neutral-50 text-[#01225E]' : 'text-neutral-700' }}"
-                                data-course-sort-option
-                                data-value="{{ $value }}"
-                                role="option"
-                                aria-selected="{{ $sort === $value ? 'true' : 'false' }}"
-                            >
-                                <span>{{ $label }}</span>
-                                @if ($sort === $value)
-                                    <i data-lucide="check" style="width:14px;height:14px;"></i>
-                                @endif
-                            </a>
+                <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-end">
+                    <form method="GET" action="{{ route('aps.index') }}#search-results" class="flex flex-wrap items-center gap-2" data-course-aps-filter>
+                        @foreach ($selectedFilters as $selectedFilter)
+                            <input type="hidden" name="filter[]" value="{{ $selectedFilter['token'] }}">
                         @endforeach
+                        @if (filled($search))
+                            <input type="hidden" name="search" value="{{ $search }}">
+                        @endif
+                        @if ($sort !== 'default')
+                            <input type="hidden" name="sort" value="{{ $sort }}">
+                        @endif
+                        <label for="course-aps-input" class="text-sm font-black text-neutral-950">APS / Marks</label>
+                        <input
+                            id="course-aps-input"
+                            type="number"
+                            name="aps"
+                            min="0"
+                            max="100"
+                            step="1"
+                            value="{{ $aps }}"
+                            placeholder="e.g. 28"
+                            class="w-24 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm font-semibold text-neutral-800 outline-none focus:border-[#01225E]"
+                            data-course-aps-input
+                        >
+                        <button type="submit" class="rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm font-semibold text-neutral-800 hover:bg-neutral-100">
+                            Apply
+                        </button>
+                        @if ($aps !== null)
+                            <a href="{{ route('aps.index', array_merge($courseQuery(null, $search ?: null, $sort, null), ['aps' => ''])) }}#search-results" class="text-sm font-semibold text-[#01225E] hover:text-[#001A48]">
+                                Clear
+                            </a>
+                        @endif
+                    </form>
+
+                    <div class="relative shrink-0" data-course-sort>
+                        <button
+                            type="button"
+                            class="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm font-semibold text-neutral-800 hover:bg-neutral-100 sm:w-auto"
+                            data-course-sort-trigger
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                        >
+                            <span>
+                                <span class="font-black text-neutral-950">Sort by:</span>
+                                <span data-course-sort-label>{{ $sortLabel }}</span>
+                            </span>
+                            <i data-lucide="chevron-down" class="text-neutral-400" style="width:16px;height:16px;"></i>
+                        </button>
+
+                        <div class="absolute right-0 z-20 mt-2 hidden min-w-[14rem] overflow-hidden rounded-lg border border-neutral-200 bg-white py-1 shadow-xl" data-course-sort-panel role="listbox">
+                            @foreach ($sortOptions as $value => $label)
+                                <a
+                                    href="{{ route('aps.index', $courseQuery(null, $search ?: null, $value)) }}#search-results"
+                                    class="flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold hover:bg-neutral-50 {{ $sort === $value ? 'bg-neutral-50 text-[#01225E]' : 'text-neutral-700' }}"
+                                    data-course-sort-option
+                                    data-value="{{ $value }}"
+                                    role="option"
+                                    aria-selected="{{ $sort === $value ? 'true' : 'false' }}"
+                                >
+                                    <span>{{ $label }}</span>
+                                    @if ($sort === $value)
+                                        <i data-lucide="check" style="width:14px;height:14px;"></i>
+                                    @endif
+                                </a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
+
+            @if ($aiSummary)
+                <aside class="mb-5 rounded-lg border border-sky-200 bg-gradient-to-br from-sky-50 to-white px-4 py-4 shadow-sm sm:px-5" data-ai-search-summary>
+                    <div class="flex items-start gap-3">
+                        <span class="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[#01225E] text-white">
+                            <i data-lucide="sparkles" style="width:18px;height:18px;"></i>
+                        </span>
+                        <div class="min-w-0">
+                            <p class="text-xs font-black uppercase tracking-[0.14em] text-[#01225E]">AI search assistance</p>
+                            <p class="mt-1 text-sm font-semibold leading-relaxed text-neutral-700">{{ $aiSummary }}</p>
+                        </div>
+                    </div>
+                </aside>
+            @endif
 
             <section class="grid gap-4">
                 @forelse ($courses as $course)
@@ -704,8 +764,38 @@
 
             const updatePlaceholder = () => {
                 input.placeholder = selectedTokens().length === 0
-                    ? 'Search university, faculty, qualification'
-                    : 'Add another…';
+                    ? 'University, faculty, or describe what you want to study'
+                    : 'Add a filter or describe your marks…';
+            };
+
+            const isExactIndexedMatch = (option, query) => {
+                if (! query) return false;
+
+                const label = normalise(option.dataset.label);
+                const searchText = normalise(option.dataset.search);
+
+                if (label === query || searchText === query) {
+                    return true;
+                }
+
+                // Full multi-word name match against the start of data-search.
+                if (
+                    query.includes(' ')
+                    && searchText.startsWith(query)
+                    && (searchText.length === query.length || searchText.charAt(query.length) === ' ')
+                ) {
+                    return true;
+                }
+
+                // Short abbreviation-style tokens must equal the option label (e.g. "up").
+                return query.length <= 6 && label === query;
+            };
+
+            const findExactOption = () => {
+                const query = normalise(input.value);
+                if (! query) return null;
+
+                return options.find((option) => ! option.classList.contains('hidden') && isExactIndexedMatch(option, query));
             };
 
             const pruneDependentTags = () => {
@@ -873,8 +963,6 @@
                 }));
             };
 
-            const firstVisibleOption = () => options.find((option) => ! option.classList.contains('hidden'));
-
             root.querySelector('[data-course-filter-control]')?.addEventListener('click', (event) => {
                 if (event.target.closest('[data-course-filter-remove]')) return;
                 open();
@@ -905,8 +993,10 @@
                 }
 
                 if (event.key === 'Enter') {
-                    const option = firstVisibleOption();
-                    if (option && ! panel.classList.contains('hidden') && normalise(input.value) !== '') {
+                    // Only auto-select indexed options on exact matches.
+                    // Free-text / natural-language queries must submit for Laravel (and AI when needed).
+                    const option = findExactOption();
+                    if (option && ! panel.classList.contains('hidden')) {
                         event.preventDefault();
                         toggleOption(option);
                         input.value = '';
