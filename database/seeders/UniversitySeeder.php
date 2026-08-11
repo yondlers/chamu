@@ -79,6 +79,7 @@ class UniversitySeeder extends Seeder
             UctRequirementSeeder::class,
             UfhRequirementSeeder::class,
             UniversityLogoSeeder::class,
+            UniversityContactSeeder::class,
         ]);
     }
 }

@@ -659,6 +659,12 @@
             </div>
         </section>
 
+        @include('partials.university-contact', [
+            'university' => $university,
+            'qualification' => $qualification,
+            'sectionClass' => 'mx-auto max-w-7xl px-4 pb-6 sm:px-5 lg:px-8',
+        ])
+
         <section class="mx-auto max-w-7xl px-4 pb-10 sm:px-5 lg:px-8" aria-labelledby="source-heading">
             <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
                 <h2 id="source-heading" class="text-2xl font-bold text-neutral-950">Source and review</h2>

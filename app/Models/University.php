@@ -21,9 +21,36 @@ class University extends Model
         'abbreviation',
         'logo',
         'website',
+        'postal_address',
+        'physical_address',
+        'contact_email',
+        'contact_phone',
+        'contact_fax',
+        'latitude',
+        'longitude',
+        'contact_source_url',
         'default_closing_month',
         'default_closing_day',
     ];
+
+    protected $casts = [
+        'latitude' => 'float',
+        'longitude' => 'float',
+    ];
+
+    public function hasContactDetails(): bool
+    {
+        return filled($this->physical_address)
+            || filled($this->postal_address)
+            || filled($this->contact_email)
+            || filled($this->contact_phone)
+            || ($this->latitude !== null && $this->longitude !== null);
+    }
+
+    public function hasMapCoordinates(): bool
+    {
+        return $this->latitude !== null && $this->longitude !== null;
+    }
 
     protected static function booted(): void
     {

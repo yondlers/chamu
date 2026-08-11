@@ -210,28 +210,24 @@ class RequirementSeeder extends Seeder
     private function subjectRequirementsFor(array $programme): array
     {
         return match ($programme['id'] ?? null) {
-            'tnc-ncv-mechatronics' => [
-                $this->required('Mathematics'),
-                $this->required('Physical Sciences', null, 'The TNC programmes page lists Mathematics and Physical Science for Mechatronics.'),
-            ],
             'tnc-nated-management-assistant' => [
-                $this->required('English', 40),
+                $this->englishRequirement(40),
             ],
             'tnc-nated-financial-management' => [
-                $this->required('English', 40),
+                $this->englishRequirement(40),
                 $this->required('Accounting', 30),
             ],
             'tnc-nated-art-and-design' => [
-                $this->required('English', 50),
+                $this->englishRequirement(50),
             ],
             'tnc-nated-public-relations' => [
-                $this->required('English', 50),
+                $this->englishRequirement(50),
             ],
             'tnc-nated-clothing-production' => [
-                $this->required('English', 50),
+                $this->englishRequirement(50),
             ],
             'tnc-nated-tourism' => [
-                $this->required('English', 50),
+                $this->englishRequirement(50),
                 $this->required('Tourism', 50),
                 $this->oneOf([
                     ['subject' => 'Accounting', 'minimum_mark' => 30],
@@ -240,7 +236,7 @@ class RequirementSeeder extends Seeder
                 ], 'Accounting, Mathematics or Mathematical Literacy'),
             ],
             'tnc-nated-hospitality-and-catering-services' => [
-                $this->required('English', 40),
+                $this->englishRequirement(40),
                 $this->oneOf([
                     ['subject' => 'Consumer Studies', 'minimum_mark' => 40],
                     ['subject' => 'Home Economics', 'minimum_mark' => 40],
@@ -248,13 +244,13 @@ class RequirementSeeder extends Seeder
                 ], 'Consumer Studies, Home Economics or Hospitality Studies'),
             ],
             'tnc-nated-public-management' => [
-                $this->required('English', 40),
+                $this->englishRequirement(40),
             ],
             'tnc-nated-legal-secretary' => [
-                $this->required('English', 40),
+                $this->englishRequirement(40),
             ],
             'tnc-nated-business-management' => [
-                $this->required('English', 40),
+                $this->englishRequirement(40),
                 $this->required('Accounting', 30),
             ],
             'tnc-nated-civil-engineering',
@@ -284,18 +280,40 @@ class RequirementSeeder extends Seeder
                 continue;
             }
 
-            $requirements[] = $this->required($this->normalisedSubjectName((string) $subject));
+            $subjectName = $this->normalisedSubjectName((string) $subject);
+
+            if ($this->isEnglishSubject($subjectName)) {
+                $requirements[] = $this->englishRequirement();
+
+                continue;
+            }
+
+            $requirements[] = $this->required($subjectName);
         }
 
         foreach (($programme['entry_points'][0]['required_subjects'] ?? []) as $subjectRequirement) {
-            $requirements[] = $this->required(
-                $this->normalisedSubjectName((string) ($subjectRequirement['subject'] ?? '')),
-                $subjectRequirement['minimum_percentage'] ?? null,
-            );
+            $subjectName = $this->normalisedSubjectName((string) ($subjectRequirement['subject'] ?? ''));
+            $minimumMark = $subjectRequirement['minimum_percentage'] ?? null;
+
+            if ($this->isEnglishSubject($subjectName)) {
+                $requirements[] = $this->englishRequirement($minimumMark);
+
+                continue;
+            }
+
+            $requirements[] = $this->required($subjectName, $minimumMark);
         }
 
         foreach (($programme['entry_requirements']['required_subjects'] ?? []) as $subject) {
-            $requirements[] = $this->required($this->normalisedSubjectName((string) $subject));
+            $subjectName = $this->normalisedSubjectName((string) $subject);
+
+            if ($this->isEnglishSubject($subjectName)) {
+                $requirements[] = $this->englishRequirement();
+
+                continue;
+            }
+
+            $requirements[] = $this->required($subjectName);
         }
 
         $entryText = strtolower(implode(' ', array_filter([
@@ -348,6 +366,25 @@ class RequirementSeeder extends Seeder
             'minimum_mark' => $minimumMark,
             'note' => $note,
         ];
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function englishRequirement(null|int|float $minimumMark = null): array
+    {
+        return $this->oneOf([
+            ['subject' => 'English Home Language', 'minimum_mark' => $minimumMark],
+            ['subject' => 'English First Additional Language', 'minimum_mark' => $minimumMark],
+        ], 'English Home Language or English First Additional Language');
+    }
+
+    private function isEnglishSubject(string $subject): bool
+    {
+        $normalised = strtolower(trim($subject));
+
+        return $normalised === 'english'
+            || str_starts_with($normalised, 'english ');
     }
 
     /**
@@ -561,6 +598,19 @@ class RequirementSeeder extends Seeder
      */
     private function requiredGradeName(array $programme): ?string
     {
+        // NC(V) Level 2 entry on the TNC programmes page is Grade 9 or higher / NQF 1 / AET 4.
+        if (($programme['qualification_type'] ?? null) === 'NC(V)') {
+            return 'Grade 9';
+        }
+
+        if (($programme['qualification_type'] ?? null) === 'NATED') {
+            return 'Grade 12';
+        }
+
+        if (($programme['qualification_type'] ?? null) === 'PLP') {
+            return 'Grade 9';
+        }
+
         $entryTextParts = [];
 
         foreach (($programme['entry_points'] ?? []) as $entryPoint) {

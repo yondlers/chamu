@@ -612,10 +612,11 @@
           ],
           "required_school_subjects": [
             "Mathematics",
-            "English"
+            "Physical Science"
           ],
           "minimum_percentages": null,
-          "college_selection_criteria_apply": true
+          "college_selection_criteria_apply": true,
+          "source_selection_criteria": "Specific college requirements Apply, Passed Grade 9 or Higher with Mathematics & Physical Science"
         },
         {
           "target_level": 3,
