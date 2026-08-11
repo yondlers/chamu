@@ -1,0 +1,2813 @@
+[
+  {
+    "abbreviation": "CAPRICORN",
+    "college": "Capricorn TVET College",
+    "source_url": "https://capricorncollege.edu.za/programs/",
+    "extraction_notes": "Extracted from college programmes page (also prospectus PDF available at download-view-prospectus). NC(V) Grade 9+; NATED Business/Utility Grade 12/N3/NC(V) L4; Engineering N1 typically Grade 12 Maths/Science.",
+    "programmes": [
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Process Plant Operations",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Drawing Office Practice",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Mechatronics",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Laboratory Assistant / Chemical Plant Operations",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Educare",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "ESAYIDI",
+    "college": "Esayidi TVET College",
+    "source_url": "https://esayiditvet.co.za/",
+    "extraction_notes": "Aggregated and deduplicated from campus programme pages (Port Shepstone, Gamalakhe, Enyenyezi, Kokstad, uMzimkhulu, Clydesdale). Port Shepstone labels one NC(V) table as Civil Engineering but subjects are Transport & Logistics — recorded as Transport and Logistics. OccCert 2026 offerings included where named.",
+    "programmes": [
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Listed under Port Shepstone campus; table header incorrectly says Civil Engineering"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Kokstad campus"
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Art and Design (Introductory)",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Gamalakhe campus"
+      },
+      {
+        "name": "Popular Music",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Gamalakhe campus"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering (Motor Mechanics)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": ""
+      },
+      {
+        "name": "Diesel Mechanic",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+; programme-specific requirements",
+        "notes": "Occupational Certificate; 3 years"
+      },
+      {
+        "name": "Electrician",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+; programme-specific requirements",
+        "notes": "Occupational Certificate; 3 years"
+      },
+      {
+        "name": "Bricklayer",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+; programme-specific requirements",
+        "notes": "Occupational Certificate; 3 years"
+      },
+      {
+        "name": "Tourist Information Officer",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+; programme-specific requirements",
+        "notes": "Occupational Certificate; 2 years"
+      },
+      {
+        "name": "Hairdresser",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+; programme-specific requirements",
+        "notes": "Occupational Certificate; 3 years"
+      },
+      {
+        "name": "Chef",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+; programme-specific requirements",
+        "notes": "Occupational Certificate; 3 years"
+      },
+      {
+        "name": "Cook",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+; programme-specific requirements",
+        "notes": "Occupational Certificate; 1 year"
+      }
+    ]
+  },
+  {
+    "abbreviation": "GOLDFIELDS",
+    "college": "Goldfields TVET College",
+    "source_url": "https://goldfieldstvet.edu.za/campuses/welkom/",
+    "extraction_notes": "NC(V) from Welkom and Tosa campus pages; NATED Engineering from Tosa campus page. Welkom page did not publish a discrete NATED business programme list. PLP page linked from site.",
+    "programmes": [
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Drawing Office Practice",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "N4–N6; Tosa campus"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "N4–N6; Tosa campus"
+      },
+      {
+        "name": "Pre-Vocational Learning Programme",
+        "type": "PLP",
+        "field": "General",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Foundational/bridging programme"
+      }
+    ]
+  },
+  {
+    "abbreviation": "GSC",
+    "college": "Gert Sibande TVET College",
+    "source_url": "https://gscollege.edu.za/",
+    "extraction_notes": "Extracted from homepage Study Programmes sections (Business, Engineering, Services). NATED Engineering listed as Mechanical/Civil/Electrical subject streams N1–N6.",
+    "programmes": [
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Specialisations: Automotive / Fitting & Turning / Welding"
+      },
+      {
+        "name": "Mechatronics",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N6"
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N6"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N6"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "KSD",
+    "college": "King Sabata Dalindyebo TVET College",
+    "source_url": "https://www.ksdcollege.edu.za/node/27",
+    "extraction_notes": "Aggregated from campus programme listings (Mthatha, Zimbane, Mapuzi, Ntabozuko, Ngcobo, Mngazi, Libode) plus Business Management programme page node/27.",
+    "programmes": [
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Travel and Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Relations Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Diploma stream / Hospitality NATED"
+      },
+      {
+        "name": "Tourism Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "LEPHALALE",
+    "college": "Lephalale TVET College",
+    "source_url": "https://lephalale.coltech.co.za/Student/Brochure",
+    "extraction_notes": "Official leptvetcol.edu.za site was down for maintenance; ColTech brochure showed no available courses. Programme list compiled from college 2026 application Facebook notice (NCV L2 + N4 Engineering) and cross-checked secondary course listings. Prefer verification when brochure reopens.",
+    "programmes": [
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Modimolle & Lephalale campuses (per 2026 intake notice)"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Fitting & Fabrication specialisation noted in 2026 intake"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Listed on secondary catalogues; confirm on ColTech"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "N4+ noted on 2026 intake; typically N1–N6"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "N4+ noted on 2026 intake; typically N1–N6"
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Secondary listings"
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Secondary listings"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Secondary listings"
+      },
+      {
+        "name": "Multi-Disciplinary Drawing Office Practice",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Secondary listings"
+      }
+    ]
+  },
+  {
+    "abbreviation": "LETABA",
+    "college": "Letaba TVET College",
+    "source_url": "https://www.letcol.co.za/COLLEGE_COURSE_INFO?course=1",
+    "extraction_notes": "Course titles from COLLEGE_COURSE_INFO?course=1..20 (official course detail pages). NC(V)/NATED typing inferred from standard TVET naming and careersportal campus breakdowns.",
+    "programmes": [
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Pre-Vocational Learning Programme",
+        "type": "PLP",
+        "field": "General",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Motor Body Repairs",
+        "type": "Other",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Listed as COLLEGE_COURSE; likely skills/occupational — confirm type"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Generic Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Also called Management"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "MALUTI",
+    "college": "Maluti TVET College",
+    "source_url": "https://www.malutitvet.co.za/programmes/",
+    "extraction_notes": "NC(V) programme names from official programmes page. NATED section only published faculty headings (Engineering/Business/Utility Studies) without discrete programme titles in HTML — NATED titles not inventable; left out pending prospectus detail.",
+    "programmes": [
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Listed as Information Technology Level 2 on site"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Listed Level 2 on site"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Health",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "MNAMBITHI",
+    "college": "Mnambithi TVET College",
+    "source_url": "https://www.mnambithicollege.co.za/index.php/programmes",
+    "extraction_notes": "From official programmes-per-campus table. Prospectus PDF linked from media page but download URL not exposed as direct .pdf href. Short skills courses skipped.",
+    "programmes": [
+      {
+        "name": "Pre-Vocational Learning Programme",
+        "type": "PLP",
+        "field": "General",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N3 and N4–N6 listed"
+      },
+      {
+        "name": "Civil Engineering (Plumbing)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N3"
+      },
+      {
+        "name": "Civil Engineering (Bricklaying)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N3"
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "MOPANI",
+    "college": "Mopani TVET College",
+    "source_url": "https://mopanicollege.edu.za/wp-content/uploads/2026/06/0Mopani-TVET-College-Students-Prospectus-2026-1.pdf",
+    "extraction_notes": "From official 2026 student prospectus PDF + NATED web page. Prefer NC(V)/NATED/PLP; major OccCert also included from prospectus TOC.",
+    "programmes": [
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Pre-Vocational Learning Programme",
+        "type": "PLP",
+        "field": "General",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Sir Val Duncan campus; for Grade 9 not meeting NC(V) entry"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science (Programming and Robotics)",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Hairdressing",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Bookkeeper",
+        "type": "OccCert",
+        "field": "Business",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Office Administrator",
+        "type": "OccCert",
+        "field": "Business",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Tourism Information Officer",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Supply Chain Practitioner",
+        "type": "OccCert",
+        "field": "Business",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Early Childhood Development Practitioner",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Cook",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Chef",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      }
+    ]
+  },
+  {
+    "abbreviation": "MOTHEO",
+    "college": "Motheo TVET College",
+    "source_url": "https://www.motheotvet.edu.za/wp-content/uploads/2024/02/PROSPECTUS-CONTENT-2024.pdf",
+    "extraction_notes": "From Motheo Prospectus Content 2024 PDF (official). NC(V) and NATED Business/Utility/Engineering listed; selected OccCert trades from site overview.",
+    "programmes": [
+      {
+        "name": "Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Maths 50% noted for Finance stream"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Fitness test noted"
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Prospectus: Civil Engineering Construction"
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Clothing Production",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Graphic Design",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Jewellery Design",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering (Heavy Current)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering (Light Current)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Multi-Disciplinary Drawing Office Practice",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "N4–N5"
+      },
+      {
+        "name": "Bricklayer",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Carpenter",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Plumber",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      },
+      {
+        "name": "Boilermaker",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Occupational Certificate"
+      }
+    ]
+  },
+  {
+    "abbreviation": "NCR",
+    "college": "Northern Cape Rural TVET College",
+    "source_url": "https://ncrtvet.com/programmes",
+    "extraction_notes": "Programme catalogue is JS-rendered; extracted named streams from campus tags and stream descriptions on ncrtvet.com (NCV/NATED/QCTO). Discrete NC(V) titles not fully enumerated as cards in static HTML — used campus-published programme tags and calendar notes (Hospitality, Engineering, Office Admin).",
+    "programmes": [
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Upington/Kuruman/De Aar tags; NCV calendar notes Office Admin"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering Studies",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Kathu campus NCV Engineering tag — confirm exact NC(V) titles on application portal"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "NATED Engineering trimester stream"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "NATED Engineering trimester stream"
+      },
+      {
+        "name": "Public Administration",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Kuruman/De Aar; NATED Business calendar notes Public Admin"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "De Aar campus tag"
+      },
+      {
+        "name": "Bookkeeping",
+        "type": "OccCert",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "QCTO / Bookkeeper pathway (Upington)"
+      },
+      {
+        "name": "Chef",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "QCTO"
+      },
+      {
+        "name": "Boilermaker",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "QCTO trade; Namaqualand"
+      },
+      {
+        "name": "Fitter and Turner",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "QCTO trade"
+      },
+      {
+        "name": "Electrician",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "QCTO trade"
+      },
+      {
+        "name": "Welder",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "QCTO trade"
+      },
+      {
+        "name": "Millwright",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Kathu campus tag"
+      },
+      {
+        "name": "Automotive Repair",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Kathu campus tag"
+      },
+      {
+        "name": "Early Childhood Development",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Kuruman ECD tag"
+      },
+      {
+        "name": "Road Transport Management",
+        "type": "OccCert",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Kuruman tag"
+      }
+    ]
+  },
+  {
+    "abbreviation": "SEKHUKHUNE",
+    "college": "Sekhukhune TVET College",
+    "source_url": "https://www.sekhukhunetvet.edu.za/uploads/Sekhukhune%20TVET%202025%20Prospectus.pdf",
+    "extraction_notes": "From official 2025 prospectus PDF (2-page brochure) linked from prospectus page.",
+    "programmes": [
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Programming & Robotics noted"
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Fabrication, Fitting & Turning, Automotive"
+      },
+      {
+        "name": "Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Carpenter",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Programme-specific",
+        "notes": "CoS - Carpenter"
+      },
+      {
+        "name": "Electrician",
+        "type": "OccCert",
+        "field": "Engineering",
+        "required_grade_guess": "Programme-specific",
+        "notes": "CoS - Electrician"
+      },
+      {
+        "name": "Hairdresser",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Programme-specific",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "SWGC",
+    "college": "South West Gauteng TVET College",
+    "source_url": "https://www.swgc.co.za/wp-content/uploads/2024/09/SWGC-Prospectus-2025-Web.pdf",
+    "extraction_notes": "From official SWGC Prospectus 2024/2025 PDF and /ncv/ page. Prefer NC(V)/NATED; Popular Music and Clothing Production included as NATED utility.",
+    "programmes": [
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Mechanical stream noted"
+      },
+      {
+        "name": "Pre-Vocational Learning Programme",
+        "type": "PLP",
+        "field": "General",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Health",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N2–N6"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N2–N6"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N2–N6"
+      },
+      {
+        "name": "Water and Waste-Water Treatment Practice",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N2–N3"
+      },
+      {
+        "name": "Chemical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "N4–N6"
+      },
+      {
+        "name": "Multi-Disciplinary Drawing Office Practice",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "N4–N5"
+      },
+      {
+        "name": "Educare",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "N5–N6"
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Popular Music",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Composition, Performance and Studio Works"
+      },
+      {
+        "name": "Clothing Production",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "THEKWINI",
+    "college": "Thekwini TVET College",
+    "source_url": "https://www.thekwini.edu.za/campuses/",
+    "extraction_notes": "Aggregated from campus offerings page (Asherville, Cato Manor, Centec, Melbourne, Springfield, Umbilo). Trade-test/skills short courses skipped except where framed as OccCert.",
+    "programmes": [
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Pre-Vocational Learning Programme",
+        "type": "PLP",
+        "field": "General",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hairdresser",
+        "type": "OccCert",
+        "field": "Services",
+        "required_grade_guess": "Programme-specific",
+        "notes": "Cato Manor occupational certificate"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Travel and Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Travel and Tourism NC(V)"
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Includes Robotics stream at Melbourne"
+      },
+      {
+        "name": "Public Relations Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Part-time noted"
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Automotive / Fitting & Turning / Fabrication"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": "N4–N6"
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "UMFOLOZI",
+    "college": "uMfolozi TVET College",
+    "source_url": "https://southafricaportal.com/wp-content/uploads/2020/05/UMFOLOZI-PROSPECTUS-2020.pdf",
+    "extraction_notes": "Official umfolozicollege.co.za application site account suspended. Extracted from publicly archived 2020 prospectus PDF (NC(V) + NATED tables). Confirm current offerings when site returns.",
+    "programmes": [
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Automotive / Fabrication / Fitting & Machining / Welding"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Process Plant Operations",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Clothing Production",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "Motor mechanics / Welding streams"
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "UMGUNGUNDLOVU",
+    "college": "uMgungundlovu TVET College",
+    "source_url": "https://umgungundlovu.coltech.co.za/",
+    "extraction_notes": "ColTech brochure timed out / no course list returned. Programme names from CareersPortal college course listing (widely cited public summary of Umgungundlovu offerings). Prefer re-check on ColTech when brochure populates.",
+    "programmes": [
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Education and Development",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Mechatronics",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Process Plant Operations",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Listed as Plant Processing Operations"
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Technology and Computer Science / Robotics"
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Legal Secretary",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Clothing Production",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": "Farming Management & Mechanisation"
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Electrical Engineering (Heavy Current)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Mathematics/Physical Science (or N3); or relevant N-level",
+        "notes": ""
+      }
+    ]
+  },
+  {
+    "abbreviation": "WATERBERG",
+    "college": "Waterberg TVET College",
+    "source_url": "https://waterbergcollege.co.za/",
+    "extraction_notes": "Official courses.php returns 404; programme fees PDF is image-only (no extractable text). Catalogue taken from secondary prospectus summary (tvet-college.co.za) describing Waterberg centres — mark for official verification.",
+    "programmes": [
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Health",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Automotive/Welding"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Plumbing specialisation noted"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": ""
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / NSC or NC(V) Level 4",
+        "notes": ""
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N3 noted"
+      },
+      {
+        "name": "Water and Waste-Water Treatment Practice",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent) for N1; Grade 12/N3 for N4",
+        "notes": "N1–N3 noted"
+      }
+    ]
+  }
+]

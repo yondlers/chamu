@@ -13,11 +13,11 @@ use Illuminate\Support\Str;
  */
 class TvetCatalogueSeeder extends Seeder
 {
-    private const PDF_PATH = __DIR__.'/../../storage/app/tvet-prospectuses/programmes_extracted.json';
+    private const PDF_PATH = __DIR__.'/Tvet/programmes_extracted.json';
 
-    private const WEB_PATH = __DIR__.'/../../storage/app/tvet-prospectuses/programmes_web_extracted.json';
+    private const WEB_PATH = __DIR__.'/Tvet/programmes_web_extracted.json';
 
-    private const REMAINING_PATH = __DIR__.'/../../storage/app/tvet-prospectuses/programmes_remaining_extracted.json';
+    private const REMAINING_PATH = __DIR__.'/Tvet/programmes_remaining_extracted.json';
 
     public function run(): void
     {

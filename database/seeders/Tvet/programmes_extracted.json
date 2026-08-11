@@ -1,0 +1,1455 @@
+[
+  {
+    "abbreviation": "ELANGENI",
+    "college": "Elangeni TVET College",
+    "source_pdf": "ELANGENI.pdf",
+    "extraction_notes": "Downloaded OK. Native text mostly garbled (custom font encoding); programmes extracted via OCR. Campus×programme matrix OCR incomplete — programmes are campus-specific (campuses include Pinetown, KwaMashu, Ntuzuma, Qadi, Ndwedwe, KwaDabeka, Inanda, Mpumalanga).",
+    "programmes": [
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 (or equivalent); placement test",
+        "notes": "Campus-specific; confirm with campus before enrolment"
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ for N1–N3 path (prospectus: latest report from Grade 9 for NCV/N1–N3)",
+        "notes": "N1–N3 trimester; also distance learning for Civil/Electrical/Mechanical"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ for N1–N3 path (prospectus: latest report from Grade 9 for NCV/N1–N3)",
+        "notes": "N1–N3 trimester; also distance learning for Civil/Electrical/Mechanical"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ for N1–N3 path (prospectus: latest report from Grade 9 for NCV/N1–N3)",
+        "notes": "N1–N3 trimester; also distance learning for Civil/Electrical/Mechanical"
+      },
+      {
+        "name": "Water and Waste Water Treatment Practice",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ for N1–N3 path (prospectus: latest report from Grade 9 for NCV/N1–N3)",
+        "notes": "N1–N3 trimester; also distance learning for Civil/Electrical/Mechanical"
+      },
+      {
+        "name": "Civil Engineering (N4–N6)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Maths, Science and two technical subjects OR relevant N3",
+        "notes": "N4–N6 trimester; National N Diploma after 24 months in-service"
+      },
+      {
+        "name": "Electrical Engineering (N4–N6)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Maths, Science and two technical subjects OR relevant N3",
+        "notes": "N4–N6 trimester; National N Diploma after 24 months in-service"
+      },
+      {
+        "name": "Mechanical Engineering (N4–N6)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Maths, Science and two technical subjects OR relevant N3",
+        "notes": "N4–N6 trimester; National N Diploma after 24 months in-service"
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / Senior Certificate / N3 or equivalent",
+        "notes": "N4–N6 semester; National Diploma after 18 months in-service; also distance for most business programmes"
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / Senior Certificate / N3 or equivalent",
+        "notes": "N4–N6 semester; National Diploma after 18 months in-service; also distance for most business programmes"
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / Senior Certificate / N3 or equivalent",
+        "notes": "N4–N6 semester; National Diploma after 18 months in-service; also distance for most business programmes"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / Senior Certificate / N3 or equivalent",
+        "notes": "N4–N6 semester; National Diploma after 18 months in-service; also distance for most business programmes"
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 / Senior Certificate / N3 or equivalent",
+        "notes": "N4–N6 semester; National Diploma after 18 months in-service; also distance for most business programmes"
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / Senior Certificate / N3 or equivalent",
+        "notes": "N4–N6 semester; National Diploma after 18 months in-service; also distance for most business programmes"
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 / Senior Certificate / N3 or equivalent",
+        "notes": "N4–N6 semester; National Diploma after 18 months in-service; also distance for most business programmes"
+      },
+      {
+        "name": "Air Conditioner Refrigeration and Ventilation",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Varies / programme-specific",
+        "notes": "Occupational skills programme"
+      },
+      {
+        "name": "Automotive Repair and Maintenance L2",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Varies / programme-specific",
+        "notes": "Occupational skills programme"
+      },
+      {
+        "name": "Automotive Spray-painting L2",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Varies / programme-specific",
+        "notes": "Occupational skills programme"
+      },
+      {
+        "name": "Building and Civil Construction L3",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Varies / programme-specific",
+        "notes": "Occupational skills programme"
+      },
+      {
+        "name": "Furniture Making L4",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Varies / programme-specific",
+        "notes": "Occupational skills programme"
+      },
+      {
+        "name": "Welding Application and Practice",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Varies / programme-specific",
+        "notes": "Occupational skills programme"
+      },
+      {
+        "name": "Hospitality (NQF 4 & 5)",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 pass or equivalent; interview",
+        "notes": "Certificate/Diploma pathway; toolkit/uniforms required"
+      },
+      {
+        "name": "Travel and Tourism (NQF 4 & 5)",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 pass or equivalent; interview",
+        "notes": "Certificate/Diploma pathway"
+      }
+    ]
+  },
+  {
+    "abbreviation": "FLAVIUS",
+    "college": "Flavius Mareka TVET College",
+    "source_pdf": "FLAVIUS.pdf",
+    "extraction_notes": "Downloaded OK. Image-based PDF; extracted via OCR. Campuses: Sasolburg, Kroonstad, Mphohadi.",
+    "programmes": [
+      {
+        "name": "Pre-Vocational Learning Programme (PLP)",
+        "type": "PLP",
+        "field": "Foundation",
+        "required_grade_guess": "Grade 9, 10 or 11",
+        "notes": "Bridging to NC(V)/NATED; Mphohadi Campus",
+        "campus": "Mphohadi"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 or higher (preference Grade 11); placement test",
+        "notes": "NQF L2–L4",
+        "campus": "Sasolburg; Kroonstad"
+      },
+      {
+        "name": "Generic Management (Management)",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9 or higher; placement test",
+        "notes": "NQF L2–L4",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9 or better for L2",
+        "notes": "Offered at L2 only in 2024 prospectus",
+        "campus": "Kroonstad"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+; Maths preferred for engineering NCV",
+        "notes": "NQF L2–L4",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+",
+        "notes": "NQF L2–L4; plumbing/roads electives",
+        "campus": "Kroonstad"
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+; Maths",
+        "notes": "Fitting & Turning / Welding electives",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Sasolburg; Kroonstad"
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Human Resources Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Sasolburg; Kroonstad"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Kroonstad"
+      },
+      {
+        "name": "Farming Management and Mechanisation",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Kroonstad"
+      },
+      {
+        "name": "Educare",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6; campus not listed on campus summary page"
+      },
+      {
+        "name": "Introductory Certificate N4: Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Below direct N4 entry / UPP pathway",
+        "notes": "Bridging/introductory N4"
+      },
+      {
+        "name": "Chemical Process Control",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 Maths & Physical Science (often ≥40–50%); N3 path",
+        "notes": "N3–N6; Sasolburg; N1–N3 phasing out 2024",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 Maths/Science or N-level progression; N1–N3 phasing out 2024",
+        "notes": "N1–N6",
+        "campus": "Sasolburg; Mphohadi"
+      },
+      {
+        "name": "Instrument Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 / N-level path",
+        "notes": "N3–N6 (N2 mentioned); Sasolburg",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 Maths/Science or N progression",
+        "notes": "N1/N4–N6 offerings by campus; N1–N3 phasing out",
+        "campus": "Sasolburg; Mphohadi"
+      },
+      {
+        "name": "Boiler Making Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 Maths & Science path / N progression",
+        "notes": "N1–N3",
+        "campus": "Sasolburg; Mphohadi"
+      },
+      {
+        "name": "Building and Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 / N3 / NCV L4 with Maths",
+        "notes": "N3/N4–N6",
+        "campus": "Mphohadi; Civil also Kroonstad NCV context"
+      },
+      {
+        "name": "Chemical Plant Operator",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "See notes",
+        "notes": "Industry co-op; Grade 12 Maths, Physical Science, English ≥40%",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Welder (special programme)",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "See notes",
+        "notes": "Industry co-op; Grade 12 Maths & Physical Science ≥40%",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Electrician (special programme)",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "See notes",
+        "notes": "Industry co-op with Report 191 electrician subjects",
+        "campus": "Sasolburg"
+      },
+      {
+        "name": "Hair Dressing NQF 2–4",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "See notes",
+        "notes": "Skills/learnership"
+      },
+      {
+        "name": "AAT",
+        "type": "Occupational",
+        "field": "Business",
+        "required_grade_guess": "See notes",
+        "notes": "Skills programme"
+      },
+      {
+        "name": "Basic Computer Skills",
+        "type": "Occupational",
+        "field": "Business",
+        "required_grade_guess": "See notes",
+        "notes": "Skills programme"
+      },
+      {
+        "name": "Plumber Trade Test / ARPL",
+        "type": "Occupational",
+        "field": "Occupational",
+        "required_grade_guess": "See notes",
+        "notes": "Trade Test Centre ARPL",
+        "campus": "Kroonstad"
+      },
+      {
+        "name": "National Diploma: Early Childhood Development (ECD)",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "See prospectus",
+        "notes": "",
+        "campus": "Services"
+      },
+      {
+        "name": "National Certificate: Water & Waste Water Reticulation Services",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "See notes",
+        "notes": "",
+        "campus": "Engineering"
+      },
+      {
+        "name": "FET Certificate: Real Estate",
+        "type": "Occupational",
+        "field": "Business",
+        "required_grade_guess": "See notes",
+        "notes": "",
+        "campus": "Business"
+      }
+    ]
+  },
+  {
+    "abbreviation": "KHC",
+    "college": "King Hintsa TVET College",
+    "source_pdf": "KHC.pdf",
+    "extraction_notes": "Downloaded OK. Image/tagged PDF with little native text; extracted via OCR. Campuses: Dutywa, Willowvale, Centane, Msobomvu, Teko.",
+    "programmes": [
+      {
+        "name": "Pre-Vocational Learning Programme (PLP)",
+        "type": "PLP",
+        "field": "Foundation",
+        "required_grade_guess": "Below minimum for NATED/NC(V)",
+        "notes": "Bridging prior to enrolment"
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9–12 fail; Agriculture & Maths Literacy min level 3",
+        "notes": "Likely Teko campus cluster",
+        "campus": "Teko (confirm; listed with Teko farming cluster)"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 fail; Maths & Physical Science min level 3",
+        "notes": "",
+        "campus": "Teko (confirm; listed with Teko farming cluster)"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 fail; Maths & Physical Science min level 3",
+        "notes": "",
+        "campus": "Teko (confirm; listed with Teko farming cluster)"
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 fail; Maths & Physical Science min level 3",
+        "notes": "",
+        "campus": "Teko (confirm; listed with Teko farming cluster)"
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12; Agriculture & Maths min level 3",
+        "notes": "N4–N6 / Farming Management & Mechanisation",
+        "campus": "Teko"
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or NCV L4; Business Studies 40%",
+        "notes": "N4–N6",
+        "campus": "Dutywa"
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or NCV L4; Business Studies 40%",
+        "notes": "N4–N6",
+        "campus": "Dutywa"
+      },
+      {
+        "name": "Public Relations",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or NCV L4; Business Studies 40%",
+        "notes": "N4–N6",
+        "campus": "Dutywa"
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9; Business Studies & Mathematical Literacy",
+        "notes": "L2–L4",
+        "campus": "Dutywa"
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9; Mathematics 40%, English 40%",
+        "notes": "L2–L4",
+        "campus": "Dutywa"
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or NCV L4; Life Science 40%",
+        "notes": "N4–N6",
+        "campus": "Willowvale"
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or NCV L4; Accounting 45%",
+        "notes": "N4–N6",
+        "campus": "Willowvale"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or NCV L4; Consumer Studies 40%",
+        "notes": "N4–N6",
+        "campus": "Willowvale"
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or NCV L4; Accounting 40%",
+        "notes": "N4–N6",
+        "campus": "Willowvale"
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9; Accounting 40%, Maths Literacy 40%",
+        "notes": "L2–L4",
+        "campus": "Willowvale"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9; Maths 40%, Life Orientation 50%",
+        "notes": "L2–L4",
+        "campus": "Willowvale"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 or NCV L4; Business Studies 40%",
+        "notes": "N4–N6",
+        "campus": "Centane"
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 or NCV L4; Commercial Studies 40%",
+        "notes": "N4–N6",
+        "campus": "Centane"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9; Maths Literacy 30%, Life Science 40%",
+        "notes": "L2–L4",
+        "campus": "Centane"
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9; Maths Literacy 30%, Business Studies 50%",
+        "notes": "L2–L4",
+        "campus": "Centane"
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 Technical or Grade 12 Maths & Physical Science 40%; or N3/NQF4 vocational",
+        "notes": "N4–N6",
+        "campus": "Msobomvu"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Maths & Physical Science ≥45%",
+        "notes": "N4–N6",
+        "campus": "Msobomvu"
+      }
+    ]
+  },
+  {
+    "abbreviation": "MAJUBA",
+    "college": "Majuba TVET College",
+    "source_pdf": "MAJUBA.pdf",
+    "extraction_notes": "Downloaded OK. Text extractable. Campuses: Majuba Technology Centre (MTC), Newcastle Technology Centre (Newtech), Centre for People Development (CPD), Dundee Technology Centre (DTC), IT and Business Campus (ITB), Open Learning Unit (OLU).",
+    "programmes": [
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 year-end report or NQF1; APS",
+        "notes": "Fitting & Turning / Boilermaking / Motor Mechanics / Welding electives",
+        "campus": "Majuba Technology Centre; Newcastle Technology Centre"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 or NQF1; APS",
+        "notes": "Light/Heavy current",
+        "campus": "Majuba Technology Centre; Newcastle Technology Centre"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 or NQF1; APS",
+        "notes": "Carpentry & Roof Work / Masonry",
+        "campus": "Majuba Technology Centre; Dundee Technology Centre"
+      },
+      {
+        "name": "Primary Agriculture",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9–12 or NQF1; APS",
+        "notes": "",
+        "campus": "Majuba Technology Centre"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9–12 or NQF1; APS",
+        "notes": "",
+        "campus": "CPD; IT & Business; Dundee Technology Centre"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9–12 or NQF1; APS",
+        "notes": "",
+        "campus": "CPD; IT & Business"
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Grade 9–12 or NQF1; APS",
+        "notes": "",
+        "campus": "CPD; Dundee Technology Centre"
+      },
+      {
+        "name": "Mechanical Engineering (Fitting & Turning / Boilermaking / Motor Mechanic / MDDOP)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "higher for N2/N3/N4",
+        "notes": "N1–N6; N1 Grade 11 Maths; higher for N2/N3/N4",
+        "campus": "MTC; Newtech; OLU; DTC"
+      },
+      {
+        "name": "Mechanical Engineering (Welder / Rigger / Diesel Mechanic)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "See notes",
+        "notes": "N1–N6",
+        "campus": "MTC; Newtech; OLU"
+      },
+      {
+        "name": "Electrical Engineering (Heavy/Light Current / Instrument / Millwright)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 11 Maths for N1",
+        "notes": "N1–N6; Grade 11 Maths for N1",
+        "campus": "MTC; Newtech; DTC; OLU"
+      },
+      {
+        "name": "Civil Engineering (Plumbing / Bricklaying / Plastering)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "See notes",
+        "notes": "N1–N6",
+        "campus": "MTC; DTC; OLU"
+      },
+      {
+        "name": "Chemical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 Maths & Science ≥60% or S1",
+        "notes": "N4–N6; Grade 12 Maths & Science ≥60% or S1",
+        "campus": "MTC; OLU (Chemical Process Control)"
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12; APS",
+        "notes": "N4–N6",
+        "campus": "CPD; ITB; OLU; DTC"
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12; APS",
+        "notes": "N4–N6",
+        "campus": "CPD; ITB; DTC; OLU"
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 English ≥50%; APS",
+        "notes": "N4–N6",
+        "campus": "CPD; ITB; DTC; OLU"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 with computer subject or NCV L4 computer; APS",
+        "notes": "N4–N6; Intro course if requirements not met",
+        "campus": "ITB; CPD; DTC; OLU"
+      },
+      {
+        "name": "Farming Management",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 Agricultural Science ≥40% or NCV L4 Primary Agriculture",
+        "notes": "N4–N6",
+        "campus": "ITB; DTC; OLU"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12 Consumer/Hospitality/Home Economics or NCV L4 Hospitality",
+        "notes": "N4–N6",
+        "campus": "ITB"
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 English ≥50% or NCV L4 English ≥50%",
+        "notes": "N4–N6",
+        "campus": "ITB; CPD; OLU"
+      }
+    ]
+  },
+  {
+    "abbreviation": "NORTHLINK",
+    "college": "Northlink TVET College",
+    "source_pdf": "NORTHLINK.pdf",
+    "extraction_notes": "Downloaded OK (Jan 2026 Programme Offerings). Text extractable (letter-spaced). No traditional full NATED Business N4–N6 suite in this brochure — focus is NC(V), QCTO/Legacy occupational, short skills, artisan/trade testing. Campuses referenced include Bellville, Wingfield, Protea, Parow, Goodwood, Belhar, Tygerberg, West Coast, Mitchells Plain.",
+    "programmes": [
+      {
+        "name": "Engineering and Related Design: Automotive",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4; UMALUSI",
+        "campus": "Bellville"
+      },
+      {
+        "name": "Engineering and Related Design: Fabrication",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4",
+        "campus": "Bellville"
+      },
+      {
+        "name": "Engineering and Related Design: Fitting and Turning",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4",
+        "campus": "Wingfield"
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4",
+        "campus": "Protea"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4",
+        "campus": "Protea"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4",
+        "campus": "Protea"
+      },
+      {
+        "name": "Primary Health",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4",
+        "campus": "Parow"
+      },
+      {
+        "name": "Safety in Society",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Minimum Grade 9; clear criminal record; fitness & substance screening",
+        "notes": "L2–L4",
+        "campus": "Parow"
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Minimum Grade 9",
+        "notes": "L2–L4",
+        "campus": "Protea"
+      },
+      {
+        "name": "Automotive Motor Mechanic",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Boilermaker",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Bricklayer",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Carpenter",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Diesel Mechanic",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Electrician",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Electronic Equipment Mechanician (Phase 1–4)",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Fitting & Turning (Phase 1–4)",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Fitter & Turner",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Hairdresser",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "ITEC Beauty Therapist",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Mechanical Fitter",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational",
+        "campus": "Wingfield"
+      },
+      {
+        "name": "Millwright",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "PC Technician and Network+",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Plumber",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Sport Administrator",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Sport Management",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "FET Certificate: Performing Arts",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Performing Arts Higher National Diploma",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 9+ typical for QCTO trades",
+        "notes": "QCTO/Legacy occupational"
+      },
+      {
+        "name": "Engineering Studies N2",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Maths 40% or Maths Lit 50%; or Grade 10 with experience; or N1",
+        "notes": "Listed under Short Skills (Legacy); Online Goodwood",
+        "campus": "Goodwood"
+      },
+      {
+        "name": "Engineering Studies N3",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "As for N2 / prior N level",
+        "notes": "Short Skills (Legacy); Online",
+        "campus": "Goodwood"
+      }
+    ]
+  },
+  {
+    "abbreviation": "ORBIT",
+    "college": "ORBIT TVET College",
+    "source_pdf": "ORBIT.pdf",
+    "extraction_notes": "Downloaded OK. Text extractable. Campuses: Brits, Mankwe, Rustenburg. Exact campus ticks per programme in prospectus legend (B/M/R); listed as multi-campus where markers present across programmes.",
+    "programmes": [
+      {
+        "name": "Pre-Vocational Learning Programme (PLP)",
+        "type": "PLP",
+        "field": "Foundation",
+        "required_grade_guess": "Below NC(V) APS",
+        "notes": "English, Maths, Science, Life Skills; 1 year"
+      },
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Min Grade 9 with Mathematics (not Maths Literacy); or NQF1/PLP; placement",
+        "notes": "Fitting & Turning / Fabrication / Automotive (Automotive only Mankwe)",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Min Grade 9 with Mathematics; placement",
+        "notes": "L2–L4",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Min Grade 9 with Mathematics; placement",
+        "notes": "Masonry / Carpentry & Roof Work",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Information Communication Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Min Grade 9 with Mathematics; placement",
+        "notes": "L2–L4",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Min Grade 9; placement",
+        "notes": "L2–L4",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Management",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Min Grade 9; placement",
+        "notes": "L2–L4",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Min Grade 9; placement",
+        "notes": "L2–L4",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Transport and Logistics",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Min Grade 9; placement",
+        "notes": "L2–L4",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Tourism",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Min Grade 9; placement",
+        "notes": "L2–L4",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Hospitality",
+        "type": "NC(V)",
+        "field": "Services",
+        "required_grade_guess": "Min Grade 9; placement",
+        "notes": "Accommodation, Catering & Event Services",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Electrical (N1–N3)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Preferably Grade 12 with Maths & Physical Science (not Maths Literacy)",
+        "notes": "Artisan pathway; being phased out",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Fitting and Turning (N1–N3)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Preferably Grade 12 with Maths & Physical Science (not Maths Literacy)",
+        "notes": "Artisan pathway; being phased out",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Boilermaking (N1–N3)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Preferably Grade 12 with Maths & Physical Science (not Maths Literacy)",
+        "notes": "Artisan pathway; being phased out",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Mechanic (Automotive) (N1–N3)",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Preferably Grade 12 with Maths & Physical Science (not Maths Literacy)",
+        "notes": "Artisan pathway; being phased out",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Maths & Physical Science (not Maths Literacy)",
+        "notes": "N4–N6 trimester",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 12 with Maths & Physical Science (not Maths Literacy)",
+        "notes": "N4–N6 trimester",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 with relevant subjects",
+        "notes": "N4–N6; online only at Rustenburg; note 'No N4 intake in 2023' in prospectus",
+        "campus": "Rustenburg (online)"
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6 semester",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6; Information Processing N6 required for N Diploma",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Business Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Medical Secretary",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Legal Secretary",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Hospitality and Catering Services",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Tourism",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Art and Design (Jewellery)",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Educare",
+        "type": "NATED",
+        "field": "Services",
+        "required_grade_guess": "Grade 12",
+        "notes": "N4–N6 educational studies",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Hairdressing NQF 2–4",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 9",
+        "notes": "Services SETA",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Beauty & Nail Technology NQF 4",
+        "type": "Occupational",
+        "field": "Services",
+        "required_grade_guess": "Grade 12",
+        "notes": "Services SETA; City & Guilds",
+        "campus": "Brits; Mankwe; Rustenburg"
+      },
+      {
+        "name": "Centre of Specialisation: Electrician",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Employer/SETA project-based",
+        "notes": "Brits"
+      },
+      {
+        "name": "Centre of Specialisation: Diesel Mechanic",
+        "type": "Occupational",
+        "field": "Engineering",
+        "required_grade_guess": "Employer/SETA project-based",
+        "notes": "Mankwe"
+      }
+    ]
+  },
+  {
+    "abbreviation": "INGWE",
+    "college": "Ingwe TVET College",
+    "source_pdf": "INGWE.pdf",
+    "extraction_notes": "Downloaded OK. Image-heavy; extracted via OCR. Prospectus claims 8 NC(V) programmes but only 7 are detailed in OCR text. Campuses: Maluti, Mount Frere, Mount Fletcher, Ngqungqushe, Siteto.",
+    "programmes": [
+      {
+        "name": "Engineering and Related Design",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 / NQF1 / bridging / RPL",
+        "notes": "L2–L4",
+        "campus": "Mount Frere; Ngqungqushe"
+      },
+      {
+        "name": "Electrical Infrastructure Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 / NQF1 / bridging / RPL",
+        "notes": "L2–L4",
+        "campus": "Siteto; Ngqungqushe"
+      },
+      {
+        "name": "Civil Engineering and Building Construction",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 / NQF1 / bridging / RPL",
+        "notes": "L2–L4",
+        "campus": "Siteto; Ngqungqushe"
+      },
+      {
+        "name": "Information Technology and Computer Science",
+        "type": "NC(V)",
+        "field": "Engineering",
+        "required_grade_guess": "Grade 9–12 / NQF1 / bridging / RPL",
+        "notes": "L2–L4",
+        "campus": "Mount Fletcher"
+      },
+      {
+        "name": "Finance, Economics and Accounting",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9–12 / NQF1 / bridging / RPL",
+        "notes": "L2–L4",
+        "campus": "Maluti; Mount Frere; Ngqungqushe"
+      },
+      {
+        "name": "Marketing",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9–12 / NQF1 / bridging / RPL",
+        "notes": "L2–L4",
+        "campus": "Maluti; Mount Frere"
+      },
+      {
+        "name": "Office Administration",
+        "type": "NC(V)",
+        "field": "Business",
+        "required_grade_guess": "Grade 9–12 / NQF1 / bridging / RPL",
+        "notes": "L2–L4",
+        "campus": "Maluti; Mount Frere; Mount Fletcher; Ngqungqushe; Siteto"
+      },
+      {
+        "name": "Electrical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "N1: Grade 9/10+; N4: N3 or Grade 12",
+        "notes": "N1–N6",
+        "campus": "Ngqungqushe; Siteto"
+      },
+      {
+        "name": "Civil Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "N1: Grade 10+ / Grade 12; N4: N3 or Grade 12",
+        "notes": "N1–N6",
+        "campus": "(campus detail sparse in OCR; engineering campuses)"
+      },
+      {
+        "name": "Mechanical Engineering",
+        "type": "NATED",
+        "field": "Engineering",
+        "required_grade_guess": "N1: Grade 10+ / Grade 12; N4: N3 or Grade 12",
+        "notes": "N1–N6",
+        "campus": "Mount Frere; Ngqungqushe; Siteto"
+      },
+      {
+        "name": "Financial Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Maluti; Mount Frere (business campuses)"
+      },
+      {
+        "name": "Human Resource Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Maluti; Mount Frere"
+      },
+      {
+        "name": "Management Assistant",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Maluti; Mount Frere; Siteto"
+      },
+      {
+        "name": "Marketing Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Mount Frere; Maluti"
+      },
+      {
+        "name": "Public Management",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Ngqungqushe"
+      },
+      {
+        "name": "Legal Secretary",
+        "type": "NATED",
+        "field": "Business",
+        "required_grade_guess": "Grade 12 or equivalent",
+        "notes": "N4–N6",
+        "campus": "Mount Fletcher"
+      }
+    ]
+  }
+]
