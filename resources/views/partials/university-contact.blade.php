@@ -153,20 +153,31 @@
                             </a>
                         @endif
                         @if (! empty($qualification?->slug) && ! empty($contactUniversity->slug))
+                            @php
+                                $contactEntityLabel = $contactUniversity->isTvetCollege() ? 'College page' : 'University page';
+                            @endphp
                             <a
                                 href="{{ route('public.universities.show', $contactUniversity) }}"
                                 class="inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-3 text-sm font-bold text-neutral-950 hover:bg-neutral-50"
                             >
-                                University page <i data-lucide="building-2" style="width:15px;height:15px;"></i>
+                                {{ $contactEntityLabel }} <i data-lucide="building-2" style="width:15px;height:15px;"></i>
                             </a>
                         @endif
                     </div>
 
                     @if ($contactUniversity->contact_source_url)
+                        @php
+                            $contactSourceHost = parse_url((string) $contactUniversity->contact_source_url, PHP_URL_HOST) ?: 'official directory';
+                            $contactSourceLabel = str_contains(strtolower((string) $contactSourceHost), 'dhet.gov.za')
+                                ? 'DHET TVET college directory'
+                                : (str_contains(strtolower((string) $contactSourceHost), 'education.gov.za')
+                                    ? 'education.gov.za universities list'
+                                    : $contactSourceHost);
+                        @endphp
                         <p class="text-xs font-semibold leading-5 text-neutral-500">
                             Contact directory sourced from
                             <a href="{{ $contactUniversity->contact_source_url }}" target="_blank" rel="noopener noreferrer" class="underline hover:text-neutral-800">
-                                education.gov.za universities list
+                                {{ $contactSourceLabel }}
                             </a>
                             · Map tiles © OpenStreetMap
                         </p>

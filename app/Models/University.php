@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Support\TvetColleges;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -50,6 +51,11 @@ class University extends Model
     public function hasMapCoordinates(): bool
     {
         return $this->latitude !== null && $this->longitude !== null;
+    }
+
+    public function isTvetCollege(): bool
+    {
+        return TvetColleges::isTvet($this->abbreviation, $this->name);
     }
 
     protected static function booted(): void

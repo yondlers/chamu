@@ -45,6 +45,7 @@ class UniversitySeeder extends Seeder
     public function run(): void
     {
         $this->call([
+            TvetCollegeDirectorySeeder::class,
             UpRequirementSeeder::class,
             BolandRequirementSeeder::class,
             CjcRequirementSeeder::class,

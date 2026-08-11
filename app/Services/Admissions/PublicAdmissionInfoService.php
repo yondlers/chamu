@@ -7,6 +7,7 @@ use App\Models\Qualification;
 use App\Models\QualificationSubjectRequirement;
 use App\Models\UniversityAdmissionRule;
 use App\Models\User;
+use App\Support\TvetColleges;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -96,13 +97,11 @@ class PublicAdmissionInfoService
     public function isTvetCollegeQualification(Qualification $qualification): bool
     {
         $university = $qualification->university;
-        $abbreviation = strtoupper(trim((string) $university?->abbreviation));
 
-        if (in_array($abbreviation, ['BOLAND', 'CJC', 'SCC', 'TNC', 'TSC', 'WESTCOL'], true)) {
-            return true;
-        }
-
-        return str_contains(strtolower((string) $university?->name), 'tvet college');
+        return TvetColleges::isTvet(
+            $university?->abbreviation,
+            $university?->name,
+        );
     }
 
     /**

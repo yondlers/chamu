@@ -16,6 +16,11 @@ class RequirementSeeder extends UniversityRequirementSeeder
         return 'University of Zululand';
     }
 
+    protected function website(): ?string
+    {
+        return 'https://www.unizulu.ac.za';
+    }
+
     protected function requirementsPath(): string
     {
         return 'seeders/Universities/UNIZULU/Requirements/*.json';
