@@ -13,6 +13,9 @@ use App\Models\User;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
 use App\Models\UserSubjectResult;
+use App\Services\Bursary\BursaryResultsSummaryService;
+use App\Services\Bursary\BursarySearchEntityResolver;
+use App\Services\Bursary\BursarySearchInterpretationService;
 use App\Support\SourceMeta;
 use App\Support\Social\FacebookGraph;
 use App\Support\Social\InstagramGraph;
@@ -38,15 +41,22 @@ use Throwable;
 
 class BursaryController extends Controller
 {
-    public function index(Request $request)
-    {
+    public function index(
+        Request $request,
+        BursarySearchInterpretationService $bursarySearchInterpretationService,
+        BursarySearchEntityResolver $bursarySearchEntityResolver,
+        BursaryResultsSummaryService $bursaryResultsSummaryService,
+    ) {
         $filterTypeCategory = 0;
         $filterTypeCompany = 1;
         $search = trim((string) $request->query('search', ''));
+        $textSearch = $search;
         $sort = strtolower(trim((string) $request->query('sort', 'default')));
         if (! in_array($sort, ['default', 'closing', 'az'], true)) {
             $sort = 'default';
         }
+        $aiAssisted = false;
+        $aiSummary = null;
         $today = now()->toDateString();
 
         $rawFilters = $request->query('filter', []);
@@ -105,6 +115,51 @@ class BursaryController extends Controller
             ->distinct()
             ->orderBy('category')
             ->pluck('category');
+
+        if (
+            $search !== ''
+            && ! $bursarySearchEntityResolver->matchesIndexedOption($search, $categories, $companies)
+        ) {
+            $companiesById = $companies->keyBy('id');
+            $tagContext = collect($selectedCategories)
+                ->map(fn (string $category) => [
+                    'type' => 'category',
+                    'label' => $category,
+                ])
+                ->concat(
+                    collect($selectedCompanyIds)->map(function (int $companyId) use ($companiesById) {
+                        $company = $companiesById->get($companyId);
+
+                        return $company === null ? null : [
+                            'type' => 'company',
+                            'label' => $company->name,
+                        ];
+                    })->filter()->values()
+                )
+                ->values()
+                ->all();
+
+            $interpretation = $bursarySearchInterpretationService->interpret($search, $tagContext);
+            $resolved = $bursarySearchEntityResolver->resolve($interpretation, $categories, $companies);
+
+            $hasUsefulInterpretation = $resolved['categories'] !== []
+                || $resolved['company_ids'] !== []
+                || ($resolved['query'] ?? null) !== null;
+
+            if ($hasUsefulInterpretation) {
+                $selectedCategories = array_values(array_unique(array_merge(
+                    $selectedCategories,
+                    $resolved['categories'],
+                )));
+                $selectedCompanyIds = array_values(array_unique(array_merge(
+                    $selectedCompanyIds,
+                    $resolved['company_ids'],
+                )));
+                $textSearch = $resolved['query'] ?? '';
+                $aiAssisted = true;
+            }
+        }
+
         $requirementsByBursary = DB::table('bursary_subject_requirements')
             ->orderBy('id')
             ->get()
@@ -377,14 +432,14 @@ class BursaryController extends Controller
             ->where('bursaries.is_active', true)
             ->when($selectedCompanyIds !== [], fn ($query) => $query->whereIn('bursaries.company_id', $selectedCompanyIds))
             ->when($selectedCategories !== [], fn ($query) => $query->whereIn('bursaries.category', $selectedCategories))
-            ->when($search !== '', function ($query) use ($search) {
-                $query->where(function ($query) use ($search) {
+            ->when($textSearch !== '', function ($query) use ($textSearch) {
+                $query->where(function ($query) use ($textSearch) {
                     $query
-                        ->where('bursaries.title', 'like', '%'.$search.'%')
-                        ->orWhere('bursaries.category', 'like', '%'.$search.'%')
-                        ->orWhere('bursaries.fields_covered', 'like', '%'.$search.'%')
-                        ->orWhere('bursaries.summary', 'like', '%'.$search.'%')
-                        ->orWhere('companies.name', 'like', '%'.$search.'%');
+                        ->where('bursaries.title', 'like', '%'.$textSearch.'%')
+                        ->orWhere('bursaries.category', 'like', '%'.$textSearch.'%')
+                        ->orWhere('bursaries.fields_covered', 'like', '%'.$textSearch.'%')
+                        ->orWhere('bursaries.summary', 'like', '%'.$textSearch.'%')
+                        ->orWhere('companies.name', 'like', '%'.$textSearch.'%');
                 });
             })
             ->when($sort === 'az', function ($query) {
@@ -444,12 +499,29 @@ class BursaryController extends Controller
             )
             ->values();
 
+        if ($aiAssisted) {
+            $aiSummary = $bursaryResultsSummaryService->summarise($bursaries->getCollection(), [
+                'search' => $search,
+                'category_labels' => $selectedCategories,
+                'company_labels' => collect($selectedCompanyIds)
+                    ->map(function (int $companyId) use ($companies) {
+                        return $companies->firstWhere('id', $companyId)?->name;
+                    })
+                    ->filter()
+                    ->values()
+                    ->all(),
+                'result_count' => $bursaries->total(),
+            ]);
+        }
+
         return view('bursaries.index', [
             'bursaries' => $bursaries,
             'companies' => $companies,
             'categories' => $categories,
             'search' => $search,
             'sort' => $sort,
+            'aiAssisted' => $aiAssisted,
+            'aiSummary' => $aiSummary,
             'selectedFilters' => $selectedFilters,
             'selectedCategories' => $selectedCategories,
             'selectedCompanyIds' => $selectedCompanyIds,

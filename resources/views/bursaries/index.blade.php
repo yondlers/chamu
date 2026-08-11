@@ -15,6 +15,8 @@
         $featuredCategories = $categories->take(8);
         $heroImage = asset('images/bursaries/graduates-celebrating.png');
         $bursaryNoun = Str::plural('bursary', $bursaries->total());
+        $aiAssisted = (bool) ($aiAssisted ?? false);
+        $aiSummary = filled($aiSummary ?? null) ? (string) $aiSummary : null;
         $sortOptions = [
             'default' => 'Default',
             'closing' => 'Closing date',
@@ -52,9 +54,9 @@
 
             <div class="mx-auto max-w-7xl px-5 pb-12 pt-12 sm:pb-16 sm:pt-16 lg:px-8 lg:pb-20 lg:pt-20">
                 <div class="max-w-3xl">
-                    <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-white/85 backdrop-blur">
-                        <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-                        Funding match
+                    <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-white/85 backdrop-blur">
+                        <i data-lucide="sparkles" style="width:14px;height:14px;"></i>
+                        AI Assisted Search
                     </div>
                     <h1 class="mt-5 max-w-3xl text-4xl font-black leading-[1.02] text-white sm:text-6xl">
                         Find Your Bursary.
@@ -94,7 +96,7 @@
                                     type="search"
                                     value="{{ $search }}"
                                     autocomplete="off"
-                                    placeholder="{{ $selectedFilters->isEmpty() ? 'Search category or company' : 'Add another…' }}"
+                                    placeholder="{{ $selectedFilters->isEmpty() ? 'Category, company, or describe the funding you need' : 'Add a filter or describe what you need…' }}"
                                     class="min-w-[12rem] flex-1 bg-transparent text-base font-bold outline-none placeholder:text-neutral-400"
                                     data-bursary-filter-input
                                     aria-expanded="false"
@@ -275,6 +277,20 @@
                     </div>
                 </div>
             </div>
+
+            @if ($aiSummary)
+                <aside class="mb-5 rounded-lg border border-sky-200 bg-gradient-to-br from-sky-50 to-white px-4 py-4 shadow-sm sm:px-5" data-ai-search-summary>
+                    <div class="flex items-start gap-3">
+                        <span class="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[#01225E] text-white">
+                            <i data-lucide="sparkles" style="width:18px;height:18px;"></i>
+                        </span>
+                        <div class="min-w-0">
+                            <p class="text-xs font-black uppercase tracking-[0.14em] text-[#01225E]">AI search assistance</p>
+                            <p class="mt-1 text-sm font-semibold leading-relaxed text-neutral-700">{{ $aiSummary }}</p>
+                        </div>
+                    </div>
+                </aside>
+            @endif
 
             <section class="grid gap-4">
                 @forelse ($bursaries as $bursary)
@@ -466,8 +482,36 @@
 
             const updatePlaceholder = () => {
                 input.placeholder = selectedTokens().length === 0
-                    ? 'Search category or company'
-                    : 'Add another…';
+                    ? 'Category, company, or describe the funding you need'
+                    : 'Add a filter or describe what you need…';
+            };
+
+            const isExactIndexedMatch = (option, query) => {
+                if (! query) return false;
+
+                const label = normalise(option.dataset.label);
+                const searchText = normalise(option.dataset.search);
+
+                if (label === query || searchText === query) {
+                    return true;
+                }
+
+                if (
+                    query.includes(' ')
+                    && searchText.startsWith(query)
+                    && (searchText.length === query.length || searchText.charAt(query.length) === ' ')
+                ) {
+                    return true;
+                }
+
+                return query.length <= 6 && label === query;
+            };
+
+            const findExactOption = () => {
+                const query = normalise(input.value);
+                if (! query) return null;
+
+                return options.find((option) => ! option.classList.contains('hidden') && isExactIndexedMatch(option, query));
             };
 
             const addTag = (option) => {
@@ -542,8 +586,6 @@
                 empty.classList.toggle('hidden', visibleCount > 0);
             };
 
-            const firstVisibleOption = () => options.find((option) => ! option.classList.contains('hidden'));
-
             root.querySelector('[data-bursary-filter-control]')?.addEventListener('click', (event) => {
                 if (event.target.closest('[data-bursary-filter-remove]')) return;
                 open();
@@ -573,15 +615,15 @@
                 }
 
                 if (event.key === 'Enter') {
-                    const option = firstVisibleOption();
-                    if (option && ! panel.classList.contains('hidden') && normalise(input.value) !== '') {
+                    // Only auto-select indexed options on exact matches.
+                    // Free-text / natural-language queries must submit for Laravel (and AI when needed).
+                    const option = findExactOption();
+                    if (option && ! panel.classList.contains('hidden')) {
                         event.preventDefault();
                         toggleOption(option);
                         input.value = '';
                         filterOptions();
-                        return;
                     }
-                    // Let the form submit when Search / Enter applies the current tags + text.
                 }
             });
 
