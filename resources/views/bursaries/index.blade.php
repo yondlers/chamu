@@ -128,7 +128,7 @@
                                             >
                                                 <span class="min-w-0">
                                                     <span class="block truncate text-neutral-950">{{ $category }}</span>
-                                                    <span class="mt-0.5 inline-flex rounded-full bg-emerald-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-emerald-800">Category · {{ $filterTypeCategory }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-emerald-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-emerald-800">Category</span>
                                                 </span>
                                                 <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-emerald-600" style="width:16px;height:16px;" data-bursary-filter-check></i>
                                             </button>
@@ -156,7 +156,7 @@
                                             >
                                                 <span class="min-w-0">
                                                     <span class="block truncate text-neutral-950">{{ $company->name }}</span>
-                                                    <span class="mt-0.5 inline-flex rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-sky-800">Company · {{ $filterTypeCompany }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-sky-800">Company</span>
                                                 </span>
                                                 <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-sky-700" style="width:16px;height:16px;" data-bursary-filter-check></i>
                                             </button>

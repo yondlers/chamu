@@ -274,7 +274,7 @@
                                                 <span class="min-w-0">
                                                     <span class="block truncate text-neutral-950">{{ $label }}</span>
                                                     <span class="mt-0.5 block truncate text-xs font-semibold text-neutral-500">{{ $university->name }}</span>
-                                                    <span class="mt-0.5 inline-flex rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-sky-800">University · {{ $filterTypeUniversity }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-sky-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-sky-800">University</span>
                                                 </span>
                                                 <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-sky-700" style="width:16px;height:16px;" data-course-filter-check></i>
                                             </button>
@@ -309,7 +309,7 @@
                                             >
                                                 <span class="min-w-0">
                                                     <span class="block truncate text-neutral-950">{{ $label }}</span>
-                                                    <span class="mt-0.5 inline-flex rounded-full bg-violet-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-violet-800">Faculty · {{ $filterTypeFaculty }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-violet-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-violet-800">Faculty</span>
                                                 </span>
                                                 <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-violet-700" style="width:16px;height:16px;" data-course-filter-check></i>
                                             </button>
@@ -344,7 +344,7 @@
                                             >
                                                 <span class="min-w-0">
                                                     <span class="block truncate text-neutral-950">{{ $type->name }}</span>
-                                                    <span class="mt-0.5 inline-flex rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-amber-800">Qualification · {{ $filterTypeQualification }}</span>
+                                                    <span class="mt-0.5 inline-flex rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-[0.12em] text-amber-800">Qualification</span>
                                                 </span>
                                                 <i data-lucide="check" class="{{ $isSelected ? '' : 'hidden' }} shrink-0 text-amber-700" style="width:16px;height:16px;" data-course-filter-check></i>
                                             </button>
