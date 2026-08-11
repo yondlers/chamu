@@ -1,0 +1,488 @@
+{
+  "institution": {
+    "name": "Ekurhuleni East TVET College",
+    "abbreviation": "EEC",
+    "institution_type": "Public TVET College",
+    "country": "South Africa",
+    "province": "Gauteng",
+    "website": "https://eec.edu.za/",
+    "programmes_page": "https://eec.edu.za/wp-content/uploads/2024/04/Ekurhuleni-TVET-PROSPECTUS-2024.pdf",
+    "contact_email": "info@eec.edu.za",
+    "contact_phone": "011 730 6600",
+    "physical_address": "Sam Ngema Road, Kwa-Thema, Springs\nPrivate Bag X52, Springs 1560",
+    "campuses": [
+      "Benoni Campus",
+      "Brakpan Campus",
+      "Daveyton Campus",
+      "Kwa-Thema Campus",
+      "Springs Campus",
+      "Artisan and Skills Development Centre"
+    ]
+  },
+  "dataset": {
+    "academic_year": 2024,
+    "source_url": "https://eec.edu.za/wp-content/uploads/2024/04/Ekurhuleni-TVET-PROSPECTUS-2024.pdf",
+    "source_retrieved": "2026-08-11",
+    "schema_version": "1.0"
+  },
+  "shared_qualification_notes": [
+    "Application method: All prospective students must undergo a compulsory selection and placement / assessment test. No student will be accepted or admitted into EEC without undergoing the placement test process. Visit www.eec.edu.za for placement test access.",
+    "Eligibility explanation: Published minimum requirements do not guarantee admission. The College may also conduct interviews as part of recruitment and selection.",
+    "Source note: Official Ekurhuleni East TVET College Prospectus 2024."
+  ],
+  "programmes": [
+    {
+      "id": "eec-ncv-finance-economics-and-accounting",
+      "name": "Finance, Economics and Accounting",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Springs Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {
+          "type": "one_of",
+          "label": "Mathematics 40% or Mathematical Literacy 50%",
+          "subjects": [
+            {"subject": "Mathematics", "minimum_mark": 40},
+            {"subject": "Mathematical Literacy", "minimum_mark": 50}
+          ]
+        },
+        {"subject": "Economic and Management Sciences", "minimum_mark": 40, "note": "EMS is listed with Mathematics / Mathematical Literacy for FEA."}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Springs Campus.",
+        "Admission requirement: Grade 9 / AET Level 4 / PLP / GETC Level 4, plus FEA subject requirements."
+      ]
+    },
+    {
+      "id": "eec-ncv-management-wholesale-and-retail",
+      "name": "Management (Wholesale & Retail)",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Benoni Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {
+          "type": "one_of",
+          "label": "Mathematics 40% or Mathematical Literacy 50%",
+          "subjects": [
+            {"subject": "Mathematics", "minimum_mark": 40},
+            {"subject": "Mathematical Literacy", "minimum_mark": 50}
+          ]
+        },
+        {"subject": "Economic and Management Sciences", "minimum_mark": 40, "note": "EMS is listed with Mathematics / Mathematical Literacy for Management."}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Benoni Campus."
+      ]
+    },
+    {
+      "id": "eec-ncv-marketing",
+      "name": "Marketing",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Springs Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Springs Campus.",
+        "Admission requirement: Grade 9 / AET Level 4 / PLP / GETC Level 4 with published NC(V) minimums."
+      ]
+    },
+    {
+      "id": "eec-ncv-office-administration",
+      "name": "Office Administration",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Benoni Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Benoni Campus."
+      ]
+    },
+    {
+      "id": "eec-ncv-safety-in-society",
+      "name": "Safety In Society",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Benoni Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Benoni Campus.",
+        "Selection format: No visible tattoos; no criminal record; applicant should not be over the age of 30 by enrolment due to SAPS recruitment age restriction; applicant should not be overweight due to physical fitness requirements; no chronic ailments such as heart failure or asthma that restrict physical fitness participation."
+      ]
+    },
+    {
+      "id": "eec-ncv-information-and-communication-technology",
+      "name": "Information and Communication Technology",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "ict_engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Springs Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {"subject": "Mathematics", "minimum_mark": 60},
+        {"subject": "Physical Sciences", "minimum_mark": 60, "note": "Prospectus lists Science for ICT / Engineering NC(V) access."}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Springs Campus.",
+        "Academic requirement: ICT NC(V) uses the higher PLP / Grade 9 access thresholds for English, Mathematics and Science."
+      ]
+    },
+    {
+      "id": "eec-ncv-tourism",
+      "name": "Tourism",
+      "qualification_type": "NC(V)",
+      "field": "Creative & Social Services",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Springs Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Springs Campus.",
+        "Academic requirement: Social Studies is listed as an added advantage at 50%."
+      ]
+    },
+    {
+      "id": "eec-ncv-hospitality",
+      "name": "Hospitality",
+      "qualification_type": "NC(V)",
+      "field": "Creative & Social Services",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Springs Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Springs Campus.",
+        "Academic requirement: Consumer Studies is listed as an added advantage at 50%."
+      ]
+    },
+    {
+      "id": "eec-ncv-civil-engineering-and-building-construction",
+      "name": "Civil Engineering and Building Construction",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "ict_engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Kwa-Thema Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {"subject": "Mathematics", "minimum_mark": 60},
+        {"subject": "Physical Sciences", "minimum_mark": 60, "note": "Prospectus lists Science for Engineering NC(V) access."}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Kwa-Thema Campus.",
+        "Academic requirement: Engineering NC(V) uses Mathematics (not Mathematical Literacy) as the fundamental maths stream."
+      ]
+    },
+    {
+      "id": "eec-ncv-electrical-infrastructure-construction",
+      "name": "Electrical Infrastructure Construction",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "ict_engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Kwa-Thema Campus", "Daveyton Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {"subject": "Mathematics", "minimum_mark": 60},
+        {"subject": "Physical Sciences", "minimum_mark": 60}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Kwa-Thema Campus and Daveyton Campus."
+      ]
+    },
+    {
+      "id": "eec-ncv-engineering-and-related-design",
+      "name": "Engineering and Related Design",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "ict_engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Kwa-Thema Campus", "Daveyton Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {"subject": "Mathematics", "minimum_mark": 60},
+        {"subject": "Physical Sciences", "minimum_mark": 60}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Kwa-Thema Campus and Daveyton Campus."
+      ]
+    },
+    {
+      "id": "eec-ncv-process-plant-operations",
+      "name": "Process Plant Operations",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "ict_engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "campuses": ["Kwa-Thema Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {"subject": "Mathematics", "minimum_mark": 60},
+        {"subject": "Physical Sciences", "minimum_mark": 60}
+      ],
+      "notes": [
+        "Duration: 1 year per NC(V) level (Levels 2–4).",
+        "Campus: Kwa-Thema Campus."
+      ]
+    },
+    {
+      "id": "eec-nated-financial-management",
+      "name": "Financial Management",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "campuses": ["Benoni Campus", "Brakpan Campus", "Springs Campus"],
+      "subject_requirements": [
+        {
+          "type": "one_of",
+          "label": "Accounting 40%, Mathematics 40% or Mathematical Literacy 50%",
+          "subjects": [
+            {"subject": "Accounting", "minimum_mark": 40},
+            {"subject": "Mathematics", "minimum_mark": 40},
+            {"subject": "Mathematical Literacy", "minimum_mark": 50}
+          ]
+        }
+      ],
+      "notes": [
+        "Duration: 6 months per N-level (N4–N6).",
+        "Campus: Benoni, Brakpan and Springs campuses.",
+        "Admission requirement: Grade 12 / NC(V) Level 4, plus Financial Management subject requirements."
+      ]
+    },
+    {
+      "id": "eec-nated-human-resource-management",
+      "name": "Human Resource Management",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "campuses": ["Benoni Campus"],
+      "subject_requirements": [],
+      "notes": [
+        "Duration: 6 months per N-level (N4–N6).",
+        "Campus: Benoni Campus.",
+        "Admission requirement: Grade 12 / NC(V) Level 4."
+      ]
+    },
+    {
+      "id": "eec-nated-management-assistant",
+      "name": "Management Assistant",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "campuses": ["Benoni Campus", "Brakpan Campus"],
+      "subject_requirements": [],
+      "notes": [
+        "Duration: 6 months per N-level (N4–N6).",
+        "Campus: Benoni and Brakpan campuses.",
+        "Academic requirement: Computer Applications Technology is listed as an additional advantage at 40%.",
+        "Admission requirement: Grade 12 / NC(V) Level 4."
+      ]
+    },
+    {
+      "id": "eec-nated-marketing-management",
+      "name": "Marketing Management",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "campuses": ["Benoni Campus", "Brakpan Campus", "Springs Campus"],
+      "subject_requirements": [],
+      "notes": [
+        "Duration: 6 months per N-level (N4–N6).",
+        "Campus: Benoni, Brakpan and Springs campuses.",
+        "Admission requirement: Grade 12 / NC(V) Level 4."
+      ]
+    },
+    {
+      "id": "eec-nated-tourism",
+      "name": "Tourism (NATED)",
+      "qualification_type": "NATED",
+      "field": "Creative & Social Services",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "campuses": ["Springs Campus"],
+      "subject_requirements": [],
+      "notes": [
+        "Duration: 6 months per N-level (N4–N6).",
+        "Campus: Springs Campus.",
+        "Admission requirement: Grade 12 / NC(V) Level 4."
+      ]
+    },
+    {
+      "id": "eec-nated-hospitality",
+      "name": "Hospitality (NATED)",
+      "qualification_type": "NATED",
+      "field": "Creative & Social Services",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "campuses": ["Springs Campus"],
+      "subject_requirements": [
+        {
+          "type": "one_of",
+          "label": "Consumer Studies, Hospitality Studies or two elective subjects at 40%",
+          "subjects": [
+            {"subject": "Consumer Studies", "minimum_mark": 40},
+            {"subject": "Hospitality Studies", "minimum_mark": 40}
+          ]
+        }
+      ],
+      "notes": [
+        "Duration: 6 months per N-level (N4–N6).",
+        "Campus: Springs Campus.",
+        "Admission requirement: Grade 12 / NC(V) Level 4. Prospectus also allows two elective subjects at 40% as an alternative to Consumer / Hospitality Studies."
+      ]
+    },
+    {
+      "id": "eec-nated-electrical-engineering-n1-n3",
+      "name": "Electrical Engineering (N1–N3)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N1", "N2", "N3"],
+      "required_grade": "Grade 9",
+      "duration_years": 0.8,
+      "campuses": ["Benoni Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {"subject": "Mathematics", "minimum_mark": 60},
+        {"subject": "Physical Sciences", "minimum_mark": 60}
+      ],
+      "notes": [
+        "Duration: 3 months per N-level (N1–N3).",
+        "Campus: Benoni Campus.",
+        "Admission requirement: Grade 9 / PLP / AET Level 4 / GETC / NSC Engineering Studies with English 50%, Mathematics 60%, Science 60% and average 55%.",
+        "Progression: N2 requires pass N1 (minimum of 3 subjects) or Technical Grade 12 / NC(V) Level 4 Engineering."
+      ]
+    },
+    {
+      "id": "eec-nated-mechanical-engineering-n1-n3",
+      "name": "Mechanical Engineering (N1–N3)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N1", "N2", "N3"],
+      "required_grade": "Grade 9",
+      "duration_years": 0.8,
+      "campuses": ["Benoni Campus"],
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 50},
+        {"subject": "Mathematics", "minimum_mark": 60},
+        {"subject": "Physical Sciences", "minimum_mark": 60}
+      ],
+      "notes": [
+        "Duration: 3 months per N-level (N1–N3).",
+        "Campus: Benoni Campus.",
+        "Admission requirement: Grade 9 / PLP / AET Level 4 / GETC / NSC Engineering Studies with English 50%, Mathematics 60%, Science 60% and average 55%."
+      ]
+    },
+    {
+      "id": "eec-nated-electrical-engineering-n4-n6",
+      "name": "Electrical Engineering (N4–N6)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 0.8,
+      "campuses": ["Kwa-Thema Campus", "Daveyton Campus"],
+      "subject_requirements": [
+        {"subject": "Mathematics", "minimum_mark": 40},
+        {"subject": "Physical Sciences", "minimum_mark": 40}
+      ],
+      "notes": [
+        "Duration: 3 months per N-level (N4–N6).",
+        "Campus: Kwa-Thema Campus and Daveyton Campus.",
+        "Admission requirement: Passed N3 (4 subjects) / Technical Grade 12 / NC(V) Level 4 Engineering. Post-matric Engineering Studies require Mathematics 40% and Physical Science 40%."
+      ]
+    },
+    {
+      "id": "eec-nated-civil-engineering-n4-n6",
+      "name": "Civil Engineering (N4–N6)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 0.8,
+      "campuses": ["Kwa-Thema Campus"],
+      "subject_requirements": [
+        {"subject": "Mathematics", "minimum_mark": 40},
+        {"subject": "Physical Sciences", "minimum_mark": 40}
+      ],
+      "notes": [
+        "Duration: 3 months per N-level (N4–N6).",
+        "Campus: Kwa-Thema Campus.",
+        "Admission requirement: Passed N3 (4 subjects) / Technical Grade 12 / NC(V) Level 4 Engineering. Post-matric Engineering Studies require Mathematics 40% and Physical Science 40%."
+      ]
+    },
+    {
+      "id": "eec-nated-mechanical-engineering-n4-n6",
+      "name": "Mechanical Engineering (N4–N6)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 0.8,
+      "campuses": ["Kwa-Thema Campus", "Daveyton Campus"],
+      "subject_requirements": [
+        {"subject": "Mathematics", "minimum_mark": 40},
+        {"subject": "Physical Sciences", "minimum_mark": 40}
+      ],
+      "notes": [
+        "Duration: 3 months per N-level (N4–N6).",
+        "Campus: Kwa-Thema Campus and Daveyton Campus.",
+        "Admission requirement: Passed N3 (4 subjects) / Technical Grade 12 / NC(V) Level 4 Engineering. Post-matric Engineering Studies require Mathematics 40% and Physical Science 40%."
+      ]
+    }
+  ]
+}

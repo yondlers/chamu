@@ -1,0 +1,338 @@
+{
+  "institution": {
+    "name": "Ehlanzeni TVET College",
+    "abbreviation": "EHLANZENI",
+    "institution_type": "Public TVET College",
+    "country": "South Africa",
+    "province": "Mpumalanga",
+    "website": "https://www.ehlanzenicollege.co.za/",
+    "programmes_page": "https://www.ehlanzenicollege.co.za/courses",
+    "contact_email": "info@ehlanzenicollege.co.za",
+    "contact_phone": "013 752 7105",
+    "physical_address": "29 Bell Street, Nelspruit / Mbombela",
+    "campuses": [
+      "Barberton Campus",
+      "KaNyamazane Campus",
+      "Mapulaneng Campus",
+      "Mashishing Campus",
+      "Mlumati Campus",
+      "Mthimba Campus",
+      "Mbombela Campus"
+    ]
+  },
+  "dataset": {
+    "source_url": "https://www.ehlanzenicollege.co.za/courses",
+    "source_retrieved": "2026-08-11",
+    "schema_version": "1.0"
+  },
+  "shared_qualification_notes": [
+    "Application method: A pre-entry placement assessment is compulsory for new students and must be completed by the applicant personally. Visit https://www.ehlanzenicollege.co.za/courses for programme details.",
+    "Eligibility explanation: NC(V) Level 2 entry is Grade 9 year-end results with Mathematics passed, or an NQF Level 1 qualification, plus the placement assessment. Report 191 N1 requires Grade 9. Report 191 N4 requires a National Senior Certificate (Grade 12) or N3.",
+    "Document checklist: Bring certified IDs, latest results, next-of-kin contact details and supporting documents as listed by the college during application.",
+    "Source note: Official Ehlanzeni TVET College courses page and published admission guidance."
+  ],
+  "programmes": [
+    {
+      "id": "ehlanzeni-ncv-civil-engineering-and-building-construction",
+      "name": "Civil Engineering and Building Construction",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed. Engineering NC(V) uses Mathematics as the fundamental maths stream."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level.",
+        "Admission requirement: Grade 9 with Mathematics passed / NQF Level 1, plus placement assessment."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-electrical-infrastructure-construction",
+      "name": "Electrical Infrastructure Construction",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-engineering-and-related-design",
+      "name": "Engineering and Related Design",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level.",
+        "Programme information: Specialisations may include Fitting and Turning, Fabrication, Automotive Repair and Maintenance, or Welding."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-finance-economics-and-accounting",
+      "name": "Finance, Economics and Accounting",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-office-administration-and-management",
+      "name": "Office Administration & Management",
+      "qualification_type": "NC(V)",
+      "field": "Business Studies",
+      "track": "business",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-information-technology-and-computer-science",
+      "name": "Information Technology & Computer Science",
+      "qualification_type": "NC(V)",
+      "field": "School of Engineering",
+      "track": "engineering",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "ICT NC(V) uses Mathematics as the fundamental maths stream. Grade 9 Mathematics pass is required for Level 2 entry."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-hospitality",
+      "name": "Hospitality",
+      "qualification_type": "NC(V)",
+      "field": "Creative & Social Services",
+      "track": "services",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-tourism",
+      "name": "Tourism",
+      "qualification_type": "NC(V)",
+      "field": "Creative & Social Services",
+      "track": "services",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level."
+      ]
+    },
+    {
+      "id": "ehlanzeni-ncv-primary-agriculture",
+      "name": "Primary Agriculture",
+      "qualification_type": "NC(V)",
+      "field": "Creative & Social Services",
+      "track": "services",
+      "required_grade": "Grade 9",
+      "duration_years": 3,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null},
+        {"subject": "Mathematics", "minimum_mark": null, "note": "NC(V) Level 2 entry requires Grade 9 with Mathematics passed."}
+      ],
+      "notes": [
+        "Duration: NQF Levels 2–4 · one year per level."
+      ]
+    },
+    {
+      "id": "ehlanzeni-plp",
+      "name": "Pre-Vocational Learning Programme",
+      "qualification_type": "PLP",
+      "field": "Bridging Programmes",
+      "track": "bridging",
+      "required_grade": "Grade 9",
+      "duration_years": 1,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": null}
+      ],
+      "notes": [
+        "Duration: One year.",
+        "Eligibility explanation: PLP is designed to assist candidates who need to improve subject achievement levels before NC(V) entry.",
+        "Programme content: English, Mathematics, Science and Life Skills (including Technology)."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-civil-engineering",
+      "name": "Civil Engineering (N1–N6)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N1", "N2", "N3", "N4", "N5", "N6"],
+      "required_grade": "Grade 9",
+      "duration_years": 1.5,
+      "subject_requirements": [
+        {"subject": "Mathematics", "minimum_mark": 50},
+        {"subject": "Physical Sciences", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: One trimester (3 months) per N-level.",
+        "Admission requirement: N1 requires Grade 9 with 50% in Mathematics and Physical Science. Higher levels require the previous N certificate.",
+        "Campus: Offered across campuses such as Mapulaneng; confirm campus availability on the college website."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-electrical-engineering",
+      "name": "Electrical Engineering (N1–N6)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N1", "N2", "N3", "N4", "N5", "N6"],
+      "required_grade": "Grade 9",
+      "duration_years": 1.5,
+      "subject_requirements": [
+        {"subject": "Mathematics", "minimum_mark": 50},
+        {"subject": "Physical Sciences", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: One trimester (3 months) per N-level.",
+        "Admission requirement: N1 requires Grade 9 with 50% in Mathematics and Physical Science.",
+        "Campus: Offered at campuses such as Barberton, Mashishing, Mapulaneng, Mlumati and Nelspruit / Mbombela."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-mechanical-engineering",
+      "name": "Mechanical Engineering (N1–N6)",
+      "qualification_type": "NATED",
+      "field": "School of Engineering",
+      "levels": ["N1", "N2", "N3", "N4", "N5", "N6"],
+      "required_grade": "Grade 9",
+      "duration_years": 1.5,
+      "subject_requirements": [
+        {"subject": "Mathematics", "minimum_mark": 50},
+        {"subject": "Physical Sciences", "minimum_mark": 50}
+      ],
+      "notes": [
+        "Duration: One trimester (3 months) per N-level.",
+        "Admission requirement: N1 requires Grade 9 with 50% in Mathematics and Physical Science.",
+        "Campus: Offered at campuses such as Mashishing, Mapulaneng, KaNyamazane and Mlumati."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-business-management",
+      "name": "Business Management",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "subject_requirements": [],
+      "notes": [
+        "Duration: One semester (6 months) per N-level (N4–N6).",
+        "Admission requirement: N4 requires Grade 12 / National Senior Certificate or N3 with relevant subjects."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-financial-management",
+      "name": "Financial Management",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "subject_requirements": [],
+      "notes": [
+        "Duration: One semester (6 months) per N-level (N4–N6).",
+        "Admission requirement: N4 requires Grade 12 / National Senior Certificate or N3 with relevant subjects."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-management-assistant",
+      "name": "Management Assistant",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "subject_requirements": [],
+      "notes": [
+        "Duration: One semester (6 months) per N-level (N4–N6).",
+        "Admission requirement: N4 requires Grade 12 / National Senior Certificate or N3 with relevant subjects."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-hospitality",
+      "name": "Hospitality (NATED)",
+      "qualification_type": "NATED",
+      "field": "Creative & Social Services",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "subject_requirements": [],
+      "notes": [
+        "Duration: One semester (6 months) per N-level (N4–N6).",
+        "Admission requirement: N4 requires Grade 12 / National Senior Certificate or N3 with relevant subjects."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-tourism",
+      "name": "Tourism (NATED)",
+      "qualification_type": "NATED",
+      "field": "Creative & Social Services",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "subject_requirements": [],
+      "notes": [
+        "Duration: One semester (6 months) per N-level (N4–N6).",
+        "Admission requirement: N4 requires Grade 12 / National Senior Certificate or N3 with relevant subjects."
+      ]
+    },
+    {
+      "id": "ehlanzeni-nated-farming-management",
+      "name": "Farming Management and Mechanics",
+      "qualification_type": "NATED",
+      "field": "Business Studies",
+      "levels": ["N4", "N5", "N6"],
+      "required_grade": "Grade 12",
+      "duration_years": 1.5,
+      "subject_requirements": [],
+      "notes": [
+        "Duration: One semester (6 months) per N-level (N4–N6).",
+        "Admission requirement: N4 requires Grade 12 / National Senior Certificate or N3 with relevant subjects.",
+        "Campus: Listed with Mthimba campus offerings; confirm current campus availability online."
+      ]
+    }
+  ]
+}

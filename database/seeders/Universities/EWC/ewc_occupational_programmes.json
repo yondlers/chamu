@@ -1,0 +1,144 @@
+{
+  "institution": {
+    "name": "Ekurhuleni West TVET College",
+    "abbreviation": "EWC",
+    "institution_type": "Public TVET College",
+    "country": "South Africa",
+    "province": "Gauteng",
+    "website": "https://www.ewc.edu.za/",
+    "programmes_page": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+  },
+  "dataset": {
+    "document_title": "Occupational Ministerial Programmes Admission Requirements",
+    "document_date": "7 November 2025",
+    "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf",
+    "source_retrieved": "2026-08-11",
+    "schema_version": "1.0",
+    "programme_count": 7
+  },
+  "shared_qualification_notes": [
+    "Eligibility explanation: These are Ekurhuleni West TVET College Occupational Ministerial Programmes. Published entry grades and subjects are minimum requirements and do not guarantee admission.",
+    "Academic requirement: Where Mathematics is listed as a requirement, Mathematical Literacy applicants are placed on a waiting list and may only be considered with a higher mark after all qualifying Mathematics applicants have been evaluated.",
+    "Academic requirement: For Grade 9 / NQF Level 1 programmes that require Mathematics and Science, Science is not a separate Grade 9 subject, so the published requirement is Mathematics and Technology. Grade 10 and Grade 11 applicants for those programmes are assessed on Mathematics and Science.",
+    "Academic requirement: Minimum Mathematics / Mathematical Literacy marks: NQF Level 1 / Grade 9 Mathematics 30%; NQF Level 2 / Grade 10 Mathematics 30% and Mathematical Literacy 40%; NQF Level 3 / Grade 11 Mathematics 30% and Mathematical Literacy 40%; NQF Level 4 / Grade 12 Mathematics 40% and Mathematical Literacy 50%.",
+    "Academic requirement: The minimum mark for English on all NQF levels / grades is 40%.",
+    "Source note: Official EWC Occupational Ministerial Programmes Admission Requirements (7 November 2025)."
+  ],
+  "programmes": [
+    {
+      "id": "ewc-occupational-automotive-motor-mechanic",
+      "name": "Automotive Motor Mechanic",
+      "qualification_type": "Occupational Certificate",
+      "field": "Occupational Ministerial Programmes",
+      "entry_nqf_level": 1,
+      "required_grade": "Grade 9",
+      "entry_summary": "NQF Level 1 / Grade 9",
+      "mathematics_policy": "mathematics_only",
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 40},
+        {"subject": "Mathematics", "minimum_mark": 30, "note": "Mathematical Literacy is not the listed requirement; Mathematical Literacy applicants are placed on a waiting list."}
+      ],
+      "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+    },
+    {
+      "id": "ewc-occupational-early-childhood-development",
+      "name": "Early Childhood Development",
+      "qualification_type": "Occupational Certificate",
+      "field": "Occupational Ministerial Programmes",
+      "entry_nqf_level": 3,
+      "required_grade": "Grade 11",
+      "entry_summary": "NQF Level 3 / Grade 11 or NC(V) Level 3",
+      "accepted_equivalents": ["NC(V) Level 3"],
+      "mathematics_policy": null,
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 40}
+      ],
+      "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+    },
+    {
+      "id": "ewc-occupational-carpenter",
+      "name": "Carpenter",
+      "qualification_type": "Occupational Certificate",
+      "field": "Occupational Ministerial Programmes",
+      "entry_nqf_level": 3,
+      "required_grade": "Grade 11",
+      "entry_summary": "NQF Level 3 / Grade 11 or NC(V) Level 3",
+      "accepted_equivalents": ["NC(V) Level 3"],
+      "mathematics_policy": "mathematics_preferred",
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 40},
+        {"subject": "Mathematics", "minimum_mark": 30, "note": "Mathematical Literacy applicants are placed on a waiting list and may be considered with a higher mark after Mathematics applicants."}
+      ],
+      "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+    },
+    {
+      "id": "ewc-occupational-boilermaker",
+      "name": "Boilermaker",
+      "qualification_type": "Occupational Certificate",
+      "field": "Occupational Ministerial Programmes",
+      "entry_nqf_level": 1,
+      "required_grade": "Grade 9",
+      "entry_summary": "NQF Level 1 / Grade 9",
+      "mathematics_policy": "mathematics_and_technology",
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 40},
+        {"subject": "Mathematics", "minimum_mark": 30, "note": "Mathematical Literacy applicants are placed on a waiting list and may be considered with a higher mark after Mathematics applicants."},
+        {"subject": "Technology", "minimum_mark": null, "note": "Grade 9 requirement is Mathematics and Technology. Grade 10/11 applicants are assessed on Mathematics and Science."}
+      ],
+      "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+    },
+    {
+      "id": "ewc-occupational-computer-technician",
+      "name": "Computer Technician",
+      "qualification_type": "Occupational Certificate",
+      "field": "Occupational Ministerial Programmes",
+      "entry_nqf_level": 4,
+      "required_grade": "Grade 12",
+      "entry_summary": "NQF Level 4 / Grade 12",
+      "mathematics_policy": "mathematics_preferred",
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 40},
+        {"subject": "Mathematics", "minimum_mark": 40, "note": "Mathematical Literacy applicants are placed on a waiting list; Mathematical Literacy minimum is 50% if considered after Mathematics applicants."}
+      ],
+      "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+    },
+    {
+      "id": "ewc-occupational-chef",
+      "name": "Chef",
+      "qualification_type": "Occupational Certificate",
+      "field": "Occupational Ministerial Programmes",
+      "entry_nqf_level": 2,
+      "required_grade": "Grade 10",
+      "entry_summary": "NQF Level 2 / Grade 10",
+      "mathematics_policy": "mathematics_or_mathematical_literacy",
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 40},
+        {
+          "type": "one_of",
+          "label": "Mathematics 30% or Mathematical Literacy 40%",
+          "subjects": [
+            {"subject": "Mathematics", "minimum_mark": 30},
+            {"subject": "Mathematical Literacy", "minimum_mark": 40}
+          ]
+        }
+      ],
+      "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+    },
+    {
+      "id": "ewc-occupational-electrician",
+      "name": "Electrician",
+      "qualification_type": "Occupational Certificate",
+      "field": "Occupational Ministerial Programmes",
+      "entry_nqf_level": 1,
+      "required_grade": "Grade 9",
+      "entry_summary": "NQF Level 1 / Grade 9",
+      "mathematics_policy": "mathematics_and_technology",
+      "subject_requirements": [
+        {"subject": "English", "minimum_mark": 40},
+        {"subject": "Mathematics", "minimum_mark": 30, "note": "Mathematical Literacy applicants are placed on a waiting list and may be considered with a higher mark after Mathematics applicants."},
+        {"subject": "Technology", "minimum_mark": null, "note": "Grade 9 requirement is Mathematics and Technology. Grade 10/11 applicants are assessed on Mathematics and Science."}
+      ],
+      "source_url": "https://www.ewc.edu.za/docs/Occupational%20Ministerial%20Programmes%20Admission%20Requirements.pdf"
+    }
+  ]
+}

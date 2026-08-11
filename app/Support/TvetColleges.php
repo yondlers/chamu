@@ -63,7 +63,7 @@ final class TvetColleges
             'BCC' => [
                 'name' => 'Buffalo City TVET College',
                 'province' => 'Eastern Cape',
-                'website' => 'https://www.bccollege.co.za',
+                'website' => 'https://bccollege.co.za/',
                 'phone' => '043 704 9201',
                 'latitude' => -32.9962200,
                 'longitude' => 27.8992500,
@@ -171,8 +171,9 @@ final class TvetColleges
             'EEC' => [
                 'name' => 'Ekurhuleni East TVET College',
                 'province' => 'Gauteng',
-                'website' => 'https://www.eec.edu.za',
-                'phone' => '011 736 4400',
+                'website' => 'https://eec.edu.za/',
+                'phone' => '011 730 6600',
+                'physical_address' => "Sam Ngema Road, Kwa-Thema, Springs\nPrivate Bag X52, Springs 1560",
                 'latitude' => -26.2889400,
                 'longitude' => 28.4090800,
             ],
@@ -363,8 +364,9 @@ final class TvetColleges
             'EHLANZENI' => [
                 'name' => 'Ehlanzeni TVET College',
                 'province' => 'Mpumalanga',
-                'website' => 'https://www.ehlanzenicollege.co.za',
+                'website' => 'https://www.ehlanzenicollege.co.za/',
                 'phone' => '013 752 7105',
+                'physical_address' => '29 Bell Street, Nelspruit / Mbombela',
                 'latitude' => -25.4731300,
                 'longitude' => 30.9792600,
             ],

@@ -32,8 +32,12 @@ class TvetCollegeDirectorySeeder extends Seeder
      * @var array<string, true>
      */
     private const PRESERVE_WEBSITES = [
+        'BCC' => true,
         'BOLAND' => true,
         'CJC' => true,
+        'EEC' => true,
+        'EHLANZENI' => true,
+        'EWC' => true,
         'SCC' => true,
         'TNC' => true,
         'TSC' => true,

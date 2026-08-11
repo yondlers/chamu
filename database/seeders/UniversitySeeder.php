@@ -3,11 +3,15 @@
 namespace Database\Seeders;
 
 use Database\Seeders\Universities\BOLAND\RequirementSeeder as BolandRequirementSeeder;
+use Database\Seeders\Universities\BCC\RequirementSeeder as BccRequirementSeeder;
 use Database\Seeders\Universities\CJC\RequirementSeeder as CjcRequirementSeeder;
 use Database\Seeders\Universities\CPUT\RequirementSeeder as CputRequirementSeeder;
 use Database\Seeders\Universities\CUT\RequirementSeeder as CutRequirementSeeder;
 use Database\Seeders\Universities\DUT\RequirementSeeder as DutRequirementSeeder;
 use Database\Seeders\Universities\EDUVOS\RequirementSeeder as EduvosRequirementSeeder;
+use Database\Seeders\Universities\EEC\RequirementSeeder as EecRequirementSeeder;
+use Database\Seeders\Universities\EHLANZENI\RequirementSeeder as EhlanzeniRequirementSeeder;
+use Database\Seeders\Universities\EWC\RequirementSeeder as EwcRequirementSeeder;
 use Database\Seeders\Universities\NMU\RequirementSeeder as NmuRequirementSeeder;
 use Database\Seeders\Universities\NWU\RequirementSeeder as NwuRequirementSeeder;
 use Database\Seeders\Universities\RU\RequirementSeeder as RuRequirementSeeder;
@@ -48,7 +52,11 @@ class UniversitySeeder extends Seeder
             TvetCollegeDirectorySeeder::class,
             UpRequirementSeeder::class,
             BolandRequirementSeeder::class,
+            BccRequirementSeeder::class,
             CjcRequirementSeeder::class,
+            EecRequirementSeeder::class,
+            EhlanzeniRequirementSeeder::class,
+            EwcRequirementSeeder::class,
             TncRequirementSeeder::class,
             TscRequirementSeeder::class,
             WestcolRequirementSeeder::class,
