@@ -243,6 +243,10 @@
             </div>
         </section>
 
+        <div class="mx-auto max-w-7xl px-4 pt-6 sm:px-5 lg:px-8">
+            @include('partials.adsterra-feed-banner')
+        </div>
+
         <div class="mx-auto max-w-7xl px-4 py-8 sm:px-5 lg:px-8">
             <div class="grid gap-6">
                 @if ($qualificationMatch)
@@ -465,6 +469,8 @@
                     </div>
                 </section>
 
+                @include('partials.adsterra-feed-banner')
+
                 @if ($qualificationNotes->isNotEmpty())
                     <section class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm" aria-labelledby="qualification-notes-heading">
                         <h2 id="qualification-notes-heading" class="text-2xl font-bold text-neutral-950">Qualification Notes</h2>
@@ -634,6 +640,10 @@
                 </div>
             </section>
         @endunless
+
+        <div class="mx-auto max-w-7xl px-4 pb-6 sm:px-5 lg:px-8">
+            @include('partials.adsterra-feed-banner')
+        </div>
 
         <section class="mx-auto max-w-7xl px-4 pb-6 sm:px-5 lg:px-8" aria-labelledby="related-heading">
             <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">

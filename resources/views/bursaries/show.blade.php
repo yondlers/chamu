@@ -227,6 +227,8 @@
                     </dl>
                 </article>
 
+                @include('partials.adsterra-feed-banner')
+
                 <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
                     <h2 class="text-xl font-black">Funding details</h2>
                     @if ($fundingRows->isEmpty())
@@ -335,6 +337,8 @@
                         @endif
                     </article>
                 </section>
+
+                @include('partials.adsterra-feed-banner')
 
                 <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
                     <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -489,6 +493,10 @@
 
             </aside>
         </section>
+
+        <div class="mx-auto max-w-7xl px-5 pb-6 lg:px-8">
+            @include('partials.adsterra-feed-banner')
+        </div>
 
         @if ($relatedBursaries->isNotEmpty())
             <section class="mx-auto max-w-7xl px-5 pb-10 lg:px-8" aria-labelledby="related-bursaries-heading">

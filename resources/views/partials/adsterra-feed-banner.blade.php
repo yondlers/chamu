@@ -58,7 +58,7 @@
                     };
 
                     const script = document.createElement('script');
-                    script.src = `https://www.highperformanceformat.com/${banner.key}/invoke.js`;
+                    script.src = `https://www.highperformanceformat.com/${banner.key}/invoke.js?slot=${Math.random().toString(36).slice(2)}`;
                     script.onload = () => resolve();
                     script.onerror = () => resolve();
                     mount.appendChild(script);
