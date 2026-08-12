@@ -409,6 +409,9 @@
                             </dl>
                         </div>
                     </article>
+                    @if ($loop->iteration % 5 === 0)
+                        @include('partials.adsterra-feed-banner')
+                    @endif
                 @empty
                     <section class="rounded-lg border border-dashed border-neutral-300 bg-white p-10 text-center shadow-sm">
                         <div class="mx-auto grid h-12 w-12 place-items-center rounded-lg bg-neutral-100 text-neutral-500">

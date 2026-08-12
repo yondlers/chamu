@@ -84,7 +84,6 @@
         }
     </style>
     @stack('styles')
-    <script src="https://pl30817114.effectivecpmnetwork.com/ca/ba/88/caba8855cb7dd708e56ef942815125ed.js"></script>
 </head>
 <body class="min-h-screen text-neutral-900 bg-white">
     @php
