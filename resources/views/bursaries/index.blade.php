@@ -381,7 +381,16 @@
                                         <i data-lucide="calendar-days" style="width:14px;height:14px;"></i>
                                         Closes
                                     </dt>
-                                    <dd class="max-w-[160px] text-right text-sm font-black text-neutral-950">{{ $bursary->closing_date_label ?? 'Not listed' }}</dd>
+                                    @php
+                                        $indexClosingDate = $bursary->closing_date ? \Illuminate\Support\Carbon::parse($bursary->closing_date)->startOfDay() : null;
+                                        $indexApplicationsClosed = $indexClosingDate !== null && $indexClosingDate->lt(now()->startOfDay());
+                                        $indexClosingLabel = $indexApplicationsClosed
+                                            ? (filled($bursary->closing_date_label) && str_starts_with(strtolower((string) $bursary->closing_date_label), 'closed')
+                                                ? $bursary->closing_date_label
+                                                : 'Closed — '.$indexClosingDate->format('j F Y'))
+                                            : ($bursary->closing_date_label ?? 'Not listed');
+                                    @endphp
+                                    <dd class="max-w-[160px] text-right text-sm font-black {{ $indexApplicationsClosed ? 'text-rose-700' : 'text-neutral-950' }}">{{ $indexClosingLabel }}</dd>
                                 </div>
                                 <div class="flex items-start justify-between gap-4 py-3">
                                     <dt class="flex items-center gap-2 text-xs font-black uppercase tracking-[0.14em] text-neutral-500">

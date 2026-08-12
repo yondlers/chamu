@@ -137,4 +137,18 @@ class Bursary extends Model
         return (bool) ($this->chamu_apply_enabled ?? false)
             && ($this->isEmailSubmission() || $this->isPostalSubmission());
     }
+
+    public function applicationsAreOpen(): bool
+    {
+        if ($this->closing_date === null) {
+            return true;
+        }
+
+        return $this->closing_date->copy()->startOfDay()->gte(now()->startOfDay());
+    }
+
+    public function applicationsAreClosed(): bool
+    {
+        return ! $this->applicationsAreOpen();
+    }
 }

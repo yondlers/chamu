@@ -21,7 +21,6 @@
         $isChamuHandled = $isChamuHandled ?? false;
         $isPostalSubmission = $isPostalSubmission ?? $applicationDeliveryType === 'postal';
         $applicationTablesReady = $applicationTablesReady ?? true;
-        $canApplyWithChamu = $isChamuHandled && $documentRequirements->isNotEmpty();
         $applicationDeliveryLabel = $isPostalSubmission ? 'postal submission' : 'email submission';
         $latestDeliveryType = $latestApplication->delivery_type ?? ($isPostalSubmission ? 'postal' : 'email');
         $applicationActionLabel = $isPostalSubmission ? 'Apply with Postal' : 'Apply with Chamu';
@@ -40,6 +39,12 @@
         $profileSpecialCircumstances = $applicationProfile->special_circumstances ?? [];
         $closingDate = $bursary->closing_date ? \Illuminate\Support\Carbon::parse($bursary->closing_date)->startOfDay() : null;
         $today = now()->startOfDay();
+        $applicationsClosed = $closingDate !== null && $closingDate->lt($today);
+        $closingDateDisplay = $applicationsClosed
+            ? (filled($bursary->closing_date_label) && str_starts_with(strtolower((string) $bursary->closing_date_label), 'closed')
+                ? $bursary->closing_date_label
+                : 'Closed — '.$closingDate->format('j F Y'))
+            : ($bursary->closing_date_label ?? 'Closing date not listed');
         $closingContext = match (true) {
             $closingDate === null => [
                 'label' => 'Closing date to confirm',
@@ -51,9 +56,9 @@
                 'body' => 'Submit only if the provider still accepts applications today and you can meet every document requirement.',
                 'tone' => 'amber',
             ],
-            $closingDate->isPast() => [
-                'label' => 'Closing date has passed',
-                'body' => 'The captured closing date is in the past. Check the provider source for a reopened, extended, or next-cycle application window.',
+            $applicationsClosed => [
+                'label' => 'Applications closed',
+                'body' => 'Do not apply. This bursary closed on '.$closingDate->format('j F Y').'. The provider is not accepting applications for this cycle. Browse related open bursaries below, or check the source only for a future cycle.',
                 'tone' => 'rose',
             ],
             default => [
@@ -62,6 +67,7 @@
                 'tone' => 'emerald',
             ],
         };
+        $canApplyWithChamu = $isChamuHandled && $documentRequirements->isNotEmpty() && ! $applicationsClosed;
         $closingContextClasses = [
             'emerald' => 'border-emerald-200 bg-emerald-50 text-emerald-900',
             'amber' => 'border-amber-200 bg-amber-50 text-amber-950',
@@ -159,6 +165,21 @@
             </section>
         @endif
 
+        @if ($applicationsClosed)
+            <section class="border-b border-rose-200 bg-rose-50">
+                <div class="mx-auto max-w-7xl px-5 py-4 lg:px-8">
+                    <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                        <p class="text-sm font-black text-rose-950">
+                            Applications closed — this bursary closed on {{ $closingDate->format('j F Y') }}. Do not apply for this cycle.
+                        </p>
+                        <a href="{{ route('bursaries.index', ['category' => $bursary->category]) }}" class="inline-flex w-fit items-center gap-2 text-sm font-black text-rose-900 underline">
+                            Browse open bursaries <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        @endif
+
         <section class="mx-auto grid max-w-7xl gap-6 px-5 py-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:px-8">
             <div class="min-w-0 space-y-5">
                 <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
@@ -170,10 +191,14 @@
                                 <span class="inline-flex items-center gap-1.5 rounded-full bg-neutral-100 px-3 py-1">
                                     <i data-lucide="tag" style="width:14px;height:14px;"></i>{{ $bursary->category ?? 'Bursary' }}
                                 </span>
-                                <span class="inline-flex items-center gap-1.5 rounded-full bg-neutral-100 px-3 py-1">
-                                    <i data-lucide="calendar-days" style="width:14px;height:14px;"></i>{{ $bursary->closing_date_label ?? 'Closing date not listed' }}
+                                <span class="inline-flex items-center gap-1.5 rounded-full px-3 py-1 {{ $applicationsClosed ? 'bg-rose-50 text-rose-800' : 'bg-neutral-100' }}">
+                                    <i data-lucide="{{ $applicationsClosed ? 'circle-x' : 'calendar-days' }}" style="width:14px;height:14px;"></i>{{ $closingDateDisplay }}
                                 </span>
-                                @if ($isChamuHandled)
+                                @if ($applicationsClosed)
+                                    <span class="inline-flex items-center gap-1.5 rounded-full bg-rose-600 px-3 py-1 text-white">
+                                        <i data-lucide="ban" style="width:14px;height:14px;"></i>Applications closed
+                                    </span>
+                                @elseif ($isChamuHandled)
                                     <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-emerald-800">
                                         <i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'shield-check' }}" style="width:14px;height:14px;"></i>{{ $applicationBadgeLabel }}
                                     </span>
@@ -187,9 +212,9 @@
                     @endif
 
                     <dl class="mt-6 grid gap-3 sm:grid-cols-3">
-                        <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                            <dt class="text-xs font-black uppercase tracking-[0.14em] text-neutral-500">Closes</dt>
-                            <dd class="mt-1 text-sm font-black">{{ $bursary->closing_date_label ?? 'Not listed' }}</dd>
+                        <div class="rounded-xl border p-4 {{ $applicationsClosed ? 'border-rose-200 bg-rose-50' : 'border-neutral-200 bg-neutral-50' }}">
+                            <dt class="text-xs font-black uppercase tracking-[0.14em] {{ $applicationsClosed ? 'text-rose-700' : 'text-neutral-500' }}">Closes</dt>
+                            <dd class="mt-1 text-sm font-black {{ $applicationsClosed ? 'text-rose-950' : '' }}">{{ $closingDateDisplay }}</dd>
                         </div>
                         <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                             <dt class="text-xs font-black uppercase tracking-[0.14em] text-neutral-500">Academic reqs</dt>
@@ -197,7 +222,7 @@
                         </div>
                         <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                             <dt class="text-xs font-black uppercase tracking-[0.14em] text-neutral-500">Application</dt>
-                            <dd class="mt-1 text-sm font-black">{{ $applicationPanelLabel }}</dd>
+                            <dd class="mt-1 text-sm font-black">{{ $applicationsClosed ? 'Not accepting applications' : $applicationPanelLabel }}</dd>
                         </div>
                     </dl>
                 </article>
@@ -229,7 +254,9 @@
                     <article class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
                         <h2 class="text-xl font-black">Application method</h2>
                         <p class="mt-3 text-sm font-semibold leading-6 text-neutral-700">
-                            @if ($isChamuHandled)
+                            @if ($applicationsClosed)
+                                Applications for this bursary are closed. Chamu will not prepare or send an application for this opportunity.
+                            @elseif ($isChamuHandled)
                                 {{ $isPostalSubmission ? 'Chamu can help prepare a printable postal pack, but you still need to post or hand-deliver it according to the provider instructions.' : 'Chamu can help prepare and send this application using the captured provider email route.' }}
                             @elseif ($bursary->application_method)
                                 {{ $bursary->application_method }}
@@ -239,7 +266,7 @@
                                 Chamu has not captured a complete application method yet. Use the source page to confirm whether the provider accepts online, email, postal, or hand-delivery submissions.
                             @endif
                         </p>
-                        @if ($bursary->apply_url)
+                        @if (! $applicationsClosed && $bursary->apply_url)
                             <a href="{{ $bursary->apply_url }}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 rounded-lg border border-neutral-300 px-4 py-2 text-sm font-black hover:bg-neutral-50">
                                 Open application route <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                             </a>
@@ -365,12 +392,25 @@
                     <p class="mt-1 text-sm font-bold text-neutral-600">{{ $companyName }}</p>
 
                     <div class="mt-5 space-y-3 border-y border-neutral-200 py-5 text-sm font-semibold text-neutral-700">
-                        <p class="flex items-center gap-2"><i data-lucide="calendar-days" style="width:16px;height:16px;"></i>{{ $bursary->closing_date_label ?? 'Closing date not listed' }}</p>
+                        <p class="flex items-center gap-2"><i data-lucide="calendar-days" style="width:16px;height:16px;"></i>{{ $closingDateDisplay }}</p>
                         <p class="flex items-center gap-2"><i data-lucide="folder-check" style="width:16px;height:16px;"></i>{{ $documentRequirements->count() }} document checks</p>
-                        <p class="flex items-center gap-2"><i data-lucide="{{ $isPostalSubmission ? 'package-check' : 'mail-check' }}" style="width:16px;height:16px;"></i>{{ $applicationPanelLabel }}</p>
+                        <p class="flex items-center gap-2"><i data-lucide="{{ $applicationsClosed ? 'ban' : ($isPostalSubmission ? 'package-check' : 'mail-check') }}" style="width:16px;height:16px;"></i>{{ $applicationsClosed ? 'Not accepting applications' : $applicationPanelLabel }}</p>
                     </div>
 
-                    @if ($canApplyWithChamu)
+                    @if ($applicationsClosed)
+                        <div class="mt-5 rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm font-bold leading-6 text-rose-950">
+                            <p class="inline-flex items-center gap-2 font-black"><i data-lucide="circle-x" style="width:16px;height:16px;"></i>Applications closed</p>
+                            <p class="mt-2 font-semibold">This bursary is not open. Do not prepare or submit an application for this cycle.</p>
+                        </div>
+                        @if ($bursary->source_url)
+                            <a href="{{ $bursary->source_url }}" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-5 py-3 text-sm font-black hover:bg-neutral-50">
+                                Check source for future cycles <i data-lucide="external-link" style="width:18px;height:18px;"></i>
+                            </a>
+                        @endif
+                        <a href="{{ route('bursaries.index', ['category' => $bursary->category]) }}" class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 text-sm font-black text-white hover:bg-[#001A48]">
+                            Browse open bursaries <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+                        </a>
+                    @elseif ($canApplyWithChamu)
                         @auth
                             <button type="button" data-open-apply-modal class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3.5 text-sm font-black text-white shadow-[0_14px_30px_rgba(1,34,94,0.22)] hover:bg-[#001A48]">
                                 {{ $applicationActionLabel }} <i data-lucide="{{ $applicationActionIcon }}" style="width:18px;height:18px;"></i>

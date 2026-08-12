@@ -11,6 +11,10 @@ class BursarySeeder extends Seeder
     public function run(): void
     {
         $now = now();
+        $closingDateOverridesPath = database_path('seeders/data/zabursaries-closing-dates.json');
+        $closingDateOverrides = is_file($closingDateOverridesPath)
+            ? (json_decode((string) file_get_contents($closingDateOverridesPath), true) ?: [])
+            : [];
         $grade12Id = DB::table('grades')->where('name', 'Grade 12')->value('id');
         $subjectIds = DB::table('subjects')
             ->join('grades', 'grades.id', '=', 'subjects.grade_id')
@@ -858,7 +862,7 @@ class BursarySeeder extends Seeder
             'https://www.internationalscholarships.dhet.gov.za/index.php/scholarships/undergraduate-scholarships/332-ireland-kader-asmal-fellowship-programme-2027' => 'https://www.gapgrants.com/bslgap/DseatFFX.jsp?formset=canon&formid=18',
         ];
 
-        $bursary = function (array $data) use ($emailApplicationSources, $postalApplicationSources, $applyUrlOverrides): array {
+        $bursary = function (array $data) use ($emailApplicationSources, $postalApplicationSources, $applyUrlOverrides, $closingDateOverrides): array {
             $bursary = array_merge([
                 'service_contract' => null,
                 'renewal' => null,
@@ -874,6 +878,16 @@ class BursarySeeder extends Seeder
             ], $data);
 
             $sourceUrl = $bursary['source_url'] ?? '';
+            $override = $closingDateOverrides[$sourceUrl] ?? null;
+            if (is_array($override)) {
+                if (array_key_exists('closing_date', $override)) {
+                    $bursary['closing_date'] = $override['closing_date'];
+                }
+                if (array_key_exists('closing_date_label', $override)) {
+                    $bursary['closing_date_label'] = $override['closing_date_label'];
+                }
+            }
+
             $email = $emailApplicationSources[$sourceUrl] ?? null;
             $postalAddress = $postalApplicationSources[$sourceUrl] ?? null;
             $applyUrl = $applyUrlOverrides[$sourceUrl] ?? null;
@@ -903,6 +917,11 @@ class BursarySeeder extends Seeder
                 }
             } elseif ($applyUrl !== null) {
                 $bursary['apply_url'] = $applyUrl;
+            }
+
+            $closingDate = $bursary['closing_date'] ?? null;
+            if (is_string($closingDate) && $closingDate !== '' && $closingDate < now()->toDateString()) {
+                $bursary['chamu_apply_enabled'] = false;
             }
 
             return $bursary;
@@ -5432,7 +5451,7 @@ class BursarySeeder extends Seeder
         }
 
         $postgraduateSourceEntries = [
-            ['Africa Wetu Foundation (AWF) Bursary', 'https://www.zabursaries.co.za/mba-postgraduate/africa-wetu-foundation-awf-bursary/'],
+            ['Africa Wetu Foundation (AWF) Bursary', 'https://www.zabursaries.co.za/mba-postgraduate/africa-wetu-foundation-awf-bursary/', '2025-04-30', 'Closed — 30 April 2025'],
             ['Agricultural Economics Association of South Africa (AEASA) Bursary', 'https://www.zabursaries.co.za/mba-postgraduate/agricultural-economics-association-of-south-africa-aeasa-bursary/'],
             ['Agricultural Research Council (ARC) Bursary', 'https://www.zabursaries.co.za/mba-postgraduate/agricultural-research-council-arc-bursary/'],
             ['AIMS Google DeepMind Scholarship', 'https://www.zabursaries.co.za/mba-postgraduate/aims-google-deepmind-scholarship/'],
@@ -5511,7 +5530,11 @@ class BursarySeeder extends Seeder
             ['WENOSA Scholarship', 'https://www.zabursaries.co.za/mba-postgraduate/wenosa-scholarship/'],
         ];
 
-        foreach ($postgraduateSourceEntries as [$postgraduateTitle, $sourceUrl]) {
+        foreach ($postgraduateSourceEntries as $postgraduateEntry) {
+            [$postgraduateTitle, $sourceUrl] = $postgraduateEntry;
+            $postgraduateClosingDate = $postgraduateEntry[2] ?? null;
+            $postgraduateClosingDateLabel = $postgraduateEntry[3] ?? 'See source page';
+
             if (isset($existingBursarySourceUrls[$sourceUrl])) {
                 continue;
             }
@@ -5540,8 +5563,8 @@ class BursarySeeder extends Seeder
                     'supporting_documents' => [
                         'See source page for required supporting documents.',
                     ],
-                    'closing_date' => null,
-                    'closing_date_label' => 'See source page',
+                    'closing_date' => $postgraduateClosingDate,
+                    'closing_date_label' => $postgraduateClosingDateLabel,
                     'source_url' => $sourceUrl,
                 ]),
             );
@@ -7312,7 +7335,7 @@ class BursarySeeder extends Seeder
             ['SIOC Community Development Trust (SIOC-cdt) Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/sioc-cdt-bursary/'],
             ['Mediclinic / ER24 Bursary', 'https://www.zabursaries.co.za/medical-bursaries-south-africa/mediclinic-er24-bursary/'],
             ['AbbVie and SASA Scholarship', 'https://www.zabursaries.co.za/medical-bursaries-south-africa/abbvie-and-sasa-scholarship/'],
-            ['Bridgestone Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/bridgestone-bursary/'],
+            ['Bridgestone Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/bridgestone-bursary/', '2021-04-12', 'Closed — 12 April 2021'],
             ['ISFAP Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/isfap-bursary/'],
             ['Islamic Relief Bursary', 'https://www.zabursaries.co.za/general-bursaries-south-africa/islamic-relief-bursary/'],
             ['Limpopo Department of Health Bursary', 'https://www.zabursaries.co.za/government-bursaries-south-africa/limpopo-department-of-health-bursary/'],
@@ -8240,7 +8263,11 @@ class BursarySeeder extends Seeder
             $seededSourceUrls[$sourceUrl] = true;
         }
 
-        foreach ($additionalPostgraduateSourceEntries as [$postgraduateTitle, $sourceUrl]) {
+        foreach ($additionalPostgraduateSourceEntries as $postgraduateEntry) {
+            [$postgraduateTitle, $sourceUrl] = $postgraduateEntry;
+            $postgraduateClosingDate = $postgraduateEntry[2] ?? null;
+            $postgraduateClosingDateLabel = $postgraduateEntry[3] ?? 'See source page';
+
             if (isset($seededSourceUrls[$sourceUrl])) {
                 continue;
             }
@@ -8269,8 +8296,8 @@ class BursarySeeder extends Seeder
                     'supporting_documents' => [
                         'See source page for required supporting documents.',
                     ],
-                    'closing_date' => null,
-                    'closing_date_label' => 'See source page',
+                    'closing_date' => $postgraduateClosingDate,
+                    'closing_date_label' => $postgraduateClosingDateLabel,
                     'source_url' => $sourceUrl,
                 ]),
             );
@@ -8317,7 +8344,11 @@ class BursarySeeder extends Seeder
         }
 
 
-        foreach ($additionalMedicalHealthSourceEntries as [$medicalTitle, $sourceUrl]) {
+        foreach ($additionalMedicalHealthSourceEntries as $medicalEntry) {
+            [$medicalTitle, $sourceUrl] = $medicalEntry;
+            $medicalClosingDate = $medicalEntry[2] ?? null;
+            $medicalClosingDateLabel = $medicalEntry[3] ?? 'See source page';
+
             if (isset($seededSourceUrls[$sourceUrl])) {
                 continue;
             }
@@ -8346,8 +8377,8 @@ class BursarySeeder extends Seeder
                     'supporting_documents' => [
                         'See source page for required supporting documents.',
                     ],
-                    'closing_date' => null,
-                    'closing_date_label' => 'See source page',
+                    'closing_date' => $medicalClosingDate,
+                    'closing_date_label' => $medicalClosingDateLabel,
                     'source_url' => $sourceUrl,
                 ]),
             );

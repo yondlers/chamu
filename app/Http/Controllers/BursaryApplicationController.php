@@ -52,6 +52,12 @@ class BursaryApplicationController extends Controller
             ]);
         }
 
+        if ($bursary->applicationsAreClosed()) {
+            return back()->withErrors([
+                'application' => 'Applications for this bursary are closed. The provider deadline has passed.',
+            ]);
+        }
+
         if (! $isEmailSubmission && ! $isPostalSubmission) {
             return back()->withErrors([
                 'application' => 'This bursary is not ready for Chamu applications yet.',
