@@ -30,12 +30,14 @@
     @if ($adsenseEnabled)
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4352231193802470"
             crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            var infolinks_pid = 3447035;
-            var infolinks_wsid = 0;
-        </script>
-        <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+        
     @endif
+    <script type="text/javascript">
+        var infolinks_pid = 3447035;
+        var infolinks_wsid = 0;
+    </script>
+    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+    
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
