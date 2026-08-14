@@ -45,6 +45,8 @@ class ReportController extends Controller
                 ->withErrors(['course_report' => 'Upload subject marks before pulling a Course Matcher report.']);
         }
 
+        $this->prepareLargeReportRuntime();
+
         $pdf = Pdf::loadView('reports.course-pdf', [
             'user' => $user,
             'courseMatch' => $courseMatch,
@@ -53,7 +55,13 @@ class ReportController extends Controller
             'brandLogoPath' => public_path('images/brand/chamu-logo.png'),
         ])
             ->setPaper('a4')
-            ->setOption(['isRemoteEnabled' => true, 'isHtml5ParserEnabled' => true]);
+            ->setOption([
+                'defaultFont' => 'DejaVu Sans',
+                'dpi' => 96,
+                'isFontSubsettingEnabled' => true,
+                'isHtml5ParserEnabled' => true,
+                'isRemoteEnabled' => true,
+            ]);
 
         return $pdf->download($this->filename($user, 'course-matcher'));
     }
@@ -86,5 +94,11 @@ class ReportController extends Controller
         $name = Str::slug((string) ($user->name ?: $user->email ?: 'student'));
 
         return 'chamu-'.$type.'-'.$name.'-'.now()->format('Ymd').'.pdf';
+    }
+
+    private function prepareLargeReportRuntime(): void
+    {
+        @ini_set('memory_limit', '512M');
+        @set_time_limit(120);
     }
 }

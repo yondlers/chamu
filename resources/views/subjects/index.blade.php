@@ -141,7 +141,7 @@
                             $excludeFromAggregate = $subjectCode === 'LO' || strcasecmp($subject->name, 'Life Orientation') === 0;
                             $isSelected = in_array((int) $subject->id, $selectedSubjectIds, true);
                         @endphp
-                        <div class="subject-row rounded-xl border border-transparent px-4 py-3 transition hover:border-neutral-200 hover:bg-neutral-50" data-selected="{{ $isSelected ? '1' : '0' }}">
+                        <div class="subject-row rounded-xl border border-transparent px-4 py-3 transition hover:border-neutral-200 hover:bg-neutral-50" data-selected="{{ $isSelected ? '1' : '0' }}" data-original-index="{{ $loop->index }}">
                             <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                                 <label class="flex min-w-0 cursor-pointer items-center gap-3">
                                     <input
@@ -219,6 +219,7 @@
             const searchClear = document.getElementById('subject-search-clear');
             const searchCount = document.getElementById('subject-search-count');
             const searchEmpty = document.getElementById('subject-search-empty');
+            const subjectList = document.getElementById('subject-list');
             const apsTotal = document.getElementById('aps-total');
             const aggregateAverage = document.getElementById('aggregate-average');
 
@@ -239,7 +240,24 @@
                 row: checkbox.closest('.subject-row'),
                 text: `${checkbox.dataset.name ?? ''} ${checkbox.dataset.code ?? ''}`.toLowerCase(),
                 markInput: checkbox.closest('.subject-row')?.querySelector('.mark-input'),
+                originalIndex: Number(checkbox.closest('.subject-row')?.dataset.originalIndex ?? 0),
             }));
+
+            const sortSubjectRows = () => {
+                subjectRows
+                    .slice()
+                    .sort((first, second) => {
+                        const selectedDifference = Number(second.checkbox.checked) - Number(first.checkbox.checked);
+
+                        return selectedDifference || first.originalIndex - second.originalIndex;
+                    })
+                    .forEach(({ row, checkbox }) => {
+                        if (!row || !subjectList) return;
+
+                        row.dataset.selected = checkbox.checked ? '1' : '0';
+                        subjectList.appendChild(row);
+                    });
+            };
 
             const refreshGrades = () => {
                 const curriculumId = Number(curriculumSelect.value);
@@ -319,7 +337,7 @@
                     item.append(name, mark, remove);
                     item.addEventListener('click', () => {
                         checkbox.checked = false;
-                        renderSelectedSubjects();
+                        checkbox.dispatchEvent(new Event('change', { bubbles: true }));
                     });
                     selectedList.appendChild(item);
                 });
@@ -365,7 +383,13 @@
                 searchEmpty?.classList.toggle('hidden', visibleCount > 0 || query === '');
             };
 
-            checkboxes.forEach((checkbox) => checkbox.addEventListener('change', renderSelectedSubjects));
+            checkboxes.forEach((checkbox) => {
+                checkbox.addEventListener('change', () => {
+                    sortSubjectRows();
+                    renderSelectedSubjects();
+                    renderSubjectSearch();
+                });
+            });
             subjectRows.forEach(({ markInput }) => {
                 markInput?.addEventListener('input', () => {
                     const apsTarget = document.getElementById(markInput.dataset.apsTarget);
@@ -406,6 +430,7 @@
             });
 
             refreshGrades();
+            sortSubjectRows();
             renderSelectedSubjects();
             renderSubjectSearch();
         })();
