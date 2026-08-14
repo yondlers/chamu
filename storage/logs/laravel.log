@@ -4335,3 +4335,4 @@ Stack trace:
 #22 /Users/slx/Code/chamu/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
 #23 {main}
 "} 
+#11 /Users/slx/Code/chamu/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))

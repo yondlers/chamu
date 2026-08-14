@@ -48,6 +48,7 @@ class DashboardController extends Controller
         $results = collect();
         $courseMatch = null;
         $dashboardReview = null;
+        $reviewReadiness = null;
         $pendingQuizzes = collect();
         $recentAttempts = collect();
         $recentBursaryApplications = collect();
@@ -89,6 +90,7 @@ class DashboardController extends Controller
         }
 
         $courseMatch = $courseMatcher->forUser($user, null, 2);
+        $reviewReadiness = $studentReview->requirements($user, $courseMatch);
 
         if ($courseMatch['has_marks']) {
             $term = $courseMatch['term'];
@@ -97,7 +99,11 @@ class DashboardController extends Controller
                 'name' => $term->label ?? $term->term_name ?? 'Latest marks',
             ];
             $results = $courseMatch['results'];
-            $dashboardReview = $studentReview->review($user, $courseMatch);
+            $dashboardReview = $studentReview->savedReviewText($user, $courseMatch);
+
+            if ($dashboardReview === null) {
+                $studentReview->ensureReviewAfterResponse($user, $courseMatch);
+            }
         }
 
         $isLifeOrientation = function (object $result): bool {
@@ -230,6 +236,7 @@ class DashboardController extends Controller
             'apsProgress' => $apsProgress,
             'courseMatch' => $courseMatch,
             'dashboardReview' => $dashboardReview,
+            'reviewReadiness' => $reviewReadiness,
             'pendingQuizzes' => $pendingQuizzes,
             'recentAttempts' => $recentAttempts,
             'applicationSummary' => $applicationSummary,

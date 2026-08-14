@@ -61,14 +61,22 @@
         </section>
 
         <section class="mt-6 rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-5 text-white shadow-sm">
+            @php
+                $reviewReady = (bool) ($reviewReadiness['ready'] ?? false);
+                $minimumReviewSubjects = (int) ($reviewReadiness['minimum_subjects'] ?? 7);
+                $selectedReviewSubjects = (int) ($reviewReadiness['selected_subject_count'] ?? $selectedSubjects->count());
+                $markedReviewSubjects = (int) ($reviewReadiness['marked_subject_count'] ?? $results->count());
+            @endphp
             <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                 <div class="max-w-3xl">
                     <span class="inline-flex rounded-full bg-white px-3 py-1 text-xs font-black text-[#01225E]">AI Review</span>
                     <h2 class="mt-3 text-xl font-bold">Course match review</h2>
-                    @if (($courseMatch['has_marks'] ?? false) && $dashboardReview)
+                    @if ($reviewReady && $dashboardReview)
                         <p class="mt-3 text-sm leading-6 text-white/85">{{ $dashboardReview }}</p>
+                    @elseif ($reviewReady)
+                        <p class="mt-3 text-sm leading-6 text-white/85">Your subjects and marks meet the AI review requirements. Your saved review is being prepared and will appear here after the marks save finishes.</p>
                     @else
-                        <p class="mt-3 text-sm leading-6 text-white/85">Add your subjects and marks to unlock a personal review, course-match count, and report download.</p>
+                        <p class="mt-3 text-sm leading-6 text-white/85">Select at least {{ $minimumReviewSubjects }} subjects and enter marks for {{ $minimumReviewSubjects }} subjects to unlock your saved AI review.</p>
                     @endif
                 </div>
                 <div class="grid gap-2 sm:grid-cols-2 lg:w-80">
@@ -82,6 +90,19 @@
                     </div>
                 </div>
             </div>
+
+            @unless ($reviewReady)
+                <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                    <div class="rounded-xl bg-white/10 p-4">
+                        <p class="text-xs font-black uppercase text-white/70">Subjects selected</p>
+                        <p class="mt-1 text-2xl font-black">{{ $selectedReviewSubjects }} / {{ $minimumReviewSubjects }}</p>
+                    </div>
+                    <div class="rounded-xl bg-white/10 p-4">
+                        <p class="text-xs font-black uppercase text-white/70">Marks uploaded</p>
+                        <p class="mt-1 text-2xl font-black">{{ $markedReviewSubjects }} / {{ $minimumReviewSubjects }}</p>
+                    </div>
+                </div>
+            @endunless
 
             @if (($courseMatch['preview'] ?? collect())->isNotEmpty())
                 <div class="mt-5 grid gap-3 lg:grid-cols-2">
@@ -100,7 +121,7 @@
                     Reports <i data-lucide="file-text" style="width:16px;height:16px;"></i>
                 </a>
                 <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="inline-flex items-center gap-2 rounded-xl border border-white/25 px-4 py-2 text-sm font-bold text-white hover:bg-white/10">
-                    Update marks <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
+                    {{ $reviewReady ? 'Update marks' : 'Enter subjects & marks' }} <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
                 </a>
             </div>
         </section>

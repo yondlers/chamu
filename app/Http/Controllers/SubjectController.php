@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AuditLog;
 use App\Models\User;
 use App\Models\UserSubjectResult;
+use App\Services\Reports\StudentReviewService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -119,16 +120,21 @@ class SubjectController extends Controller
         ]);
     }
 
-    public function update(Request $request)
+    public function update(Request $request, StudentReviewService $studentReview)
     {
         $user = $request->user();
         $manage = $request->boolean('manage');
+        $isAutosave = $request->boolean('autosave') || $request->expectsJson();
 
         $data = $request->validate([
             'curriculum_id' => ['required', 'exists:curriculums,id'],
             'grade_id' => ['required', 'exists:grades,id'],
             'term_id' => ['required', 'exists:terms,id'],
-            'subjects' => ['required', 'array', 'min:7'],
+            'subjects' => array_filter([
+                $isAutosave ? 'nullable' : 'required',
+                'array',
+                $isAutosave ? null : 'min:7',
+            ]),
             'subjects.*' => ['integer', 'exists:subjects,id'],
             'marks' => ['nullable', 'array'],
             'marks.*' => ['nullable', 'integer', 'min:0', 'max:100'],
@@ -176,7 +182,7 @@ class SubjectController extends Controller
             ->pluck('id')
             ->map(fn ($id) => (int) $id);
 
-        if ($allowedSubjectIds->count() < 7) {
+        if (! $isAutosave && $allowedSubjectIds->count() < 7) {
             return back()
                 ->withInput()
                 ->withErrors(['subjects' => 'Select at least 7 subjects from your grade and curriculum.']);
@@ -194,7 +200,7 @@ class SubjectController extends Controller
             };
         };
 
-        DB::transaction(function () use ($user, $data, $allowedSubjectIds, $aps) {
+        DB::transaction(function () use ($user, $data, $allowedSubjectIds, $aps, $isAutosave) {
             $user->forceFill([
                 'curriculum_id' => $data['curriculum_id'],
                 'grade_id' => $data['grade_id'],
@@ -223,6 +229,28 @@ class SubjectController extends Controller
             $removedMarks = [];
             $submittedSubjectCount = 0;
             $selectedSubjectIds = $allowedSubjectIds->all();
+
+            $resultsForRemovedSubjects = UserSubjectResult::query()
+                ->where('user_id', $user->id)
+                ->where('grade_id', $data['grade_id'])
+                ->when(
+                    count($selectedSubjectIds) > 0,
+                    fn ($query) => $query->whereNotIn('subject_id', $selectedSubjectIds),
+                )
+                ->get(['id', 'subject_id', 'term_id', 'mark', 'aps_score']);
+
+            foreach ($resultsForRemovedSubjects as $removedResult) {
+                $removedMarks[] = [
+                    'subject_id' => (int) $removedResult->subject_id,
+                    'term_id' => (int) $removedResult->term_id,
+                    'previous_mark' => $removedResult->mark,
+                    'previous_aps_score' => $removedResult->aps_score,
+                ];
+            }
+
+            UserSubjectResult::query()
+                ->whereIn('id', $resultsForRemovedSubjects->pluck('id')->all())
+                ->delete();
 
             foreach (($data['marks'] ?? []) as $subjectId => $mark) {
                 $subjectId = (int) $subjectId;
@@ -281,26 +309,40 @@ class SubjectController extends Controller
                 ];
             }
 
-            AuditLog::create([
-                'name' => 'Subjects and marks updated',
-                'description' => $user->name.' saved subjects and term marks.',
-                'user_id' => $user->id,
-                'event' => 'subjects.marks.updated',
-                'auditable_type' => User::class,
-                'auditable_id' => $user->id,
-                'ip_address' => request()->ip(),
-                'user_agent' => Str::limit((string) request()->userAgent(), 250, ''),
-                'url' => request()->fullUrl(),
-                'metadata' => [
-                    'grade_id' => (int) $data['grade_id'],
-                    'term_id' => (int) $data['term_id'],
-                    'selected_subject_count' => count($selectedSubjectIds),
-                    'submitted_subject_count' => $submittedSubjectCount,
-                    'changed_marks' => $changedMarks,
-                    'removed_marks' => $removedMarks,
-                ],
-            ]);
+            if (! $isAutosave) {
+                AuditLog::create([
+                    'name' => 'Subjects and marks updated',
+                    'description' => $user->name.' saved subjects and term marks.',
+                    'user_id' => $user->id,
+                    'event' => 'subjects.marks.updated',
+                    'auditable_type' => User::class,
+                    'auditable_id' => $user->id,
+                    'ip_address' => request()->ip(),
+                    'user_agent' => Str::limit((string) request()->userAgent(), 250, ''),
+                    'url' => request()->fullUrl(),
+                    'metadata' => [
+                        'grade_id' => (int) $data['grade_id'],
+                        'term_id' => (int) $data['term_id'],
+                        'selected_subject_count' => count($selectedSubjectIds),
+                        'submitted_subject_count' => $submittedSubjectCount,
+                        'changed_marks' => $changedMarks,
+                        'removed_marks' => $removedMarks,
+                    ],
+                ]);
+            }
         });
+
+        $markedSubjectCount = collect($data['marks'] ?? [])
+            ->filter(fn ($mark, $subjectId): bool => $mark !== null
+                && $mark !== ''
+                && $allowedSubjectIds->contains((int) $subjectId))
+            ->count();
+        $shouldGenerateReview = $allowedSubjectIds->count() >= StudentReviewService::MINIMUM_SUBJECTS
+            && $markedSubjectCount >= StudentReviewService::MINIMUM_SUBJECTS;
+
+        if ($shouldGenerateReview) {
+            $studentReview->ensureReviewAfterResponse($user);
+        }
 
         $redirectParams = [
             'manage' => $manage ? 1 : null,
@@ -308,6 +350,15 @@ class SubjectController extends Controller
             'grade_id' => $data['grade_id'],
             'term_id' => $data['term_id'],
         ];
+
+        if ($isAutosave) {
+            return response()->json([
+                'message' => 'Subjects and marks saved.',
+                'selected_subject_count' => $allowedSubjectIds->count(),
+                'marked_subject_count' => $markedSubjectCount,
+                'ai_review_status' => $shouldGenerateReview ? 'queued' : 'waiting_for_subjects_and_marks',
+            ]);
+        }
 
         if (! $manage) {
             return redirect()
@@ -317,7 +368,9 @@ class SubjectController extends Controller
 
         return redirect()
             ->route('subjects.index', array_filter($redirectParams))
-            ->with('status', 'Subjects and marks updated.');
+            ->with('status', $shouldGenerateReview
+                ? 'Subjects and marks updated. Your saved AI review is being prepared.'
+                : 'Subjects and marks updated.');
     }
 
     private function userHasSubjectPreferences(User $user): bool

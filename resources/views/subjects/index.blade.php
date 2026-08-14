@@ -99,6 +99,7 @@
                         <p id="subjects-count" class="text-sm font-semibold text-neutral-500">0 selected · 7 minimum</p>
                     </div>
                     <div class="flex flex-wrap items-center gap-2">
+                        <span id="autosave-status" class="inline-flex w-fit items-center rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-500">Saved automatically</span>
                         <span id="subjects-minimum-badge" class="inline-flex w-fit items-center rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-700">Need 7</span>
                         <span class="inline-flex items-center rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-600">APS <span id="aps-total" class="ml-1">0</span></span>
                         <span class="inline-flex items-center rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-600">Avg <span id="aggregate-average" class="ml-1">0%</span></span>
@@ -192,9 +193,6 @@
 
             <div class="flex justify-end gap-3">
                 <a href="{{ route('aps.index') }}" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">Browse courses</a>
-                <button id="save-subjects-button" class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#01225E] px-5 py-3 font-semibold text-white hover:bg-[#001A48] disabled:cursor-not-allowed disabled:bg-neutral-300 disabled:text-neutral-500">
-                    Save subjects & marks <i data-lucide="save" style="width:18px;height:18px;"></i>
-                </button>
             </div>
         </form>
     </main>
@@ -214,7 +212,7 @@
             const selectedEmpty = document.getElementById('selected-subjects-empty');
             const countText = document.getElementById('subjects-count');
             const badge = document.getElementById('subjects-minimum-badge');
-            const saveButton = document.getElementById('save-subjects-button');
+            const autosaveStatus = document.getElementById('autosave-status');
             const searchInput = document.getElementById('subject-search');
             const searchClear = document.getElementById('subject-search-clear');
             const searchCount = document.getElementById('subject-search-count');
@@ -257,6 +255,95 @@
                         row.dataset.selected = checkbox.checked ? '1' : '0';
                         subjectList.appendChild(row);
                     });
+            };
+
+            let autosaveTimer = null;
+            let autosaveRequestId = 0;
+            let lastSavedSnapshot = null;
+
+            const setAutosaveStatus = (message, tone = 'idle') => {
+                if (!autosaveStatus) return;
+
+                const classes = {
+                    idle: 'inline-flex w-fit items-center rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold text-neutral-500',
+                    saving: 'inline-flex w-fit items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700',
+                    saved: 'inline-flex w-fit items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700',
+                    error: 'inline-flex w-fit items-center rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-700',
+                };
+
+                autosaveStatus.textContent = message;
+                autosaveStatus.className = classes[tone] ?? classes.idle;
+            };
+
+            const subjectStateSnapshot = () => JSON.stringify({
+                curriculum_id: form.querySelector('[name="curriculum_id"]')?.value ?? '',
+                grade_id: form.querySelector('[name="grade_id"]')?.value ?? '',
+                term_id: form.querySelector('[name="term_id"]')?.value ?? '',
+                subjects: checkboxes.filter((checkbox) => checkbox.checked).map((checkbox) => checkbox.value),
+                marks: subjectRows
+                    .filter(({ checkbox }) => checkbox.checked)
+                    .map(({ checkbox, markInput }) => [checkbox.value, markInput?.value ?? '']),
+            });
+
+            const selectedMarkInputsAreValid = () => subjectRows.every(({ checkbox, markInput }) => {
+                if (!checkbox.checked || !markInput) return true;
+
+                return markInput.checkValidity();
+            });
+
+            const saveSubjects = async () => {
+                clearTimeout(autosaveTimer);
+
+                if (!selectedMarkInputsAreValid()) {
+                    setAutosaveStatus('Marks must be 0-100', 'error');
+                    return;
+                }
+
+                const snapshot = subjectStateSnapshot();
+
+                if (snapshot === lastSavedSnapshot) {
+                    setAutosaveStatus('Saved', 'saved');
+                    return;
+                }
+
+                const requestId = ++autosaveRequestId;
+                const body = new FormData(form);
+                body.set('autosave', '1');
+
+                setAutosaveStatus('Saving...', 'saving');
+
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        headers: {
+                            Accept: 'application/json',
+                            'X-Requested-With': 'XMLHttpRequest',
+                        },
+                        body,
+                    });
+
+                    if (!response.ok) {
+                        const errorPayload = await response.json().catch(() => ({}));
+                        const firstError = Object.values(errorPayload.errors ?? {})?.[0]?.[0];
+
+                        throw new Error(firstError || 'Could not save changes.');
+                    }
+
+                    if (requestId === autosaveRequestId && subjectStateSnapshot() === snapshot) {
+                        lastSavedSnapshot = snapshot;
+                        setAutosaveStatus('Saved', 'saved');
+                    }
+                } catch (error) {
+                    if (requestId === autosaveRequestId && subjectStateSnapshot() === snapshot) {
+                        setAutosaveStatus(error.message || 'Save failed', 'error');
+                    }
+                }
+            };
+
+            const scheduleAutosave = (delay = 700) => {
+                clearTimeout(autosaveTimer);
+                setAutosaveStatus('Saving soon...', 'saving');
+                autosaveTimer = setTimeout(saveSubjects, delay);
             };
 
             const refreshGrades = () => {
@@ -345,7 +432,6 @@
                 const remaining = Math.max(minimumSubjects - selected.length, 0);
                 selectedEmpty.classList.toggle('hidden', selected.length > 0);
                 countText.textContent = `${selected.length} selected · ${minimumSubjects} minimum`;
-                saveButton.disabled = selected.length < minimumSubjects;
 
                 if (remaining > 0) {
                     badge.textContent = `Need ${remaining} more`;
@@ -388,6 +474,7 @@
                     sortSubjectRows();
                     renderSelectedSubjects();
                     renderSubjectSearch();
+                    saveSubjects();
                 });
             });
             subjectRows.forEach(({ markInput }) => {
@@ -397,6 +484,7 @@
                         apsTarget.value = apsFor(markInput.value);
                     }
                     renderSelectedSubjects();
+                    scheduleAutosave();
                 });
                 if (markInput) {
                     const apsTarget = document.getElementById(markInput.dataset.apsTarget);
@@ -414,11 +502,8 @@
             });
 
             form.addEventListener('submit', (event) => {
-                const selectedCount = checkboxes.filter((checkbox) => checkbox.checked).length;
-                if (selectedCount < minimumSubjects) {
-                    event.preventDefault();
-                    showToast(`Select at least ${minimumSubjects} subjects before saving.`);
-                }
+                event.preventDefault();
+                saveSubjects();
             });
 
             curriculumSelect.addEventListener('change', () => {
@@ -433,6 +518,8 @@
             sortSubjectRows();
             renderSelectedSubjects();
             renderSubjectSearch();
+            lastSavedSnapshot = subjectStateSnapshot();
+            setAutosaveStatus('Saved', 'saved');
         })();
     </script>
 @endpush

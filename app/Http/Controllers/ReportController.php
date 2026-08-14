@@ -25,7 +25,7 @@ class ReportController extends Controller
         return view('reports.index', [
             'user' => $user,
             'courseMatch' => $courseMatch,
-            'courseReview' => $courseMatch['has_marks'] ? $reviewService->review($user, $courseMatch) : null,
+            'courseReview' => $courseMatch['has_marks'] ? $reviewService->savedOrTemplateReview($user, $courseMatch) : null,
             'bursaryReadiness' => $bursaryReadiness,
             'openBursaryCount' => $bursaryReadiness['ready'] ? $bursaryReport->openBursaries()->count() : 0,
         ]);
@@ -50,7 +50,7 @@ class ReportController extends Controller
         $pdf = Pdf::loadView('reports.course-pdf', [
             'user' => $user,
             'courseMatch' => $courseMatch,
-            'courseReview' => $reviewService->review($user, $courseMatch),
+            'courseReview' => $reviewService->savedOrTemplateReview($user, $courseMatch),
             'generatedAt' => now(),
             'brandLogoPath' => public_path('images/brand/chamu-logo.png'),
         ])

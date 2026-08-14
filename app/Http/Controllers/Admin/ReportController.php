@@ -67,7 +67,7 @@ class ReportController extends Controller
         $pdf = Pdf::loadView('reports.course-pdf', [
             'user' => $user,
             'courseMatch' => $courseMatch,
-            'courseReview' => $reviewService->review($user, $courseMatch),
+            'courseReview' => $reviewService->savedOrTemplateReview($user, $courseMatch),
             'generatedAt' => now(),
             'brandLogoPath' => public_path('images/brand/chamu-logo.png'),
         ])

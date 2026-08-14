@@ -325,4 +325,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(UserSubjectResult::class, 'user_id');
     }
+
+    public function studentReviews(): HasMany
+    {
+        return $this->hasMany(UserStudentReview::class, 'user_id');
+    }
 }
