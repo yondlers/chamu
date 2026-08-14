@@ -60,6 +60,51 @@
             </div>
         </section>
 
+        <section class="mt-6 rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-5 text-white shadow-sm">
+            <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div class="max-w-3xl">
+                    <span class="inline-flex rounded-full bg-white px-3 py-1 text-xs font-black text-[#01225E]">AI Review</span>
+                    <h2 class="mt-3 text-xl font-bold">Course match review</h2>
+                    @if (($courseMatch['has_marks'] ?? false) && $dashboardReview)
+                        <p class="mt-3 text-sm leading-6 text-white/85">{{ $dashboardReview }}</p>
+                    @else
+                        <p class="mt-3 text-sm leading-6 text-white/85">Add your subjects and marks to unlock a personal review, course-match count, and report download.</p>
+                    @endif
+                </div>
+                <div class="grid gap-2 sm:grid-cols-2 lg:w-80">
+                    <div class="rounded-xl bg-white p-4 text-neutral-950">
+                        <p class="text-xs font-black uppercase text-neutral-500">Qualified matches</p>
+                        <p class="mt-1 text-2xl font-black">{{ number_format((int) ($courseMatch['qualified_count'] ?? 0)) }}</p>
+                    </div>
+                    <div class="rounded-xl bg-white p-4 text-neutral-950">
+                        <p class="text-xs font-black uppercase text-neutral-500">Compared terms</p>
+                        <p class="mt-1 text-2xl font-black">{{ number_format(($courseMatch['progress'] ?? collect())->count()) }}</p>
+                    </div>
+                </div>
+            </div>
+
+            @if (($courseMatch['preview'] ?? collect())->isNotEmpty())
+                <div class="mt-5 grid gap-3 lg:grid-cols-2">
+                    @foreach ($courseMatch['preview'] as $match)
+                        <a href="{{ $match['url'] }}" class="rounded-xl bg-white p-4 text-neutral-950 hover:bg-blue-50">
+                            <p class="text-xs font-black uppercase text-neutral-500">{{ $match['university_abbreviation'] ?: $match['university_name'] }}</p>
+                            <p class="mt-1 font-black">{{ $match['qualification_name'] }}</p>
+                            <p class="mt-2 text-xs font-bold text-neutral-500">{{ $match['score_label'] }} {{ $match['actual_score'] }} / required {{ $match['required_score'] }}</p>
+                        </a>
+                    @endforeach
+                </div>
+            @endif
+
+            <div class="mt-5 flex flex-wrap gap-2">
+                <a href="{{ route('reports.index') }}" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-[#01225E] hover:bg-blue-50">
+                    Reports <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+                </a>
+                <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="inline-flex items-center gap-2 rounded-xl border border-white/25 px-4 py-2 text-sm font-bold text-white hover:bg-white/10">
+                    Update marks <i data-lucide="line-chart" style="width:16px;height:16px;"></i>
+                </a>
+            </div>
+        </section>
+
         <section class="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 soft-card">
             <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                 <div>

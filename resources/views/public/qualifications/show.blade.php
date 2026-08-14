@@ -259,13 +259,43 @@
                         ][$qualificationMatch['status_tone']] ?? 'bg-white text-[#01225E]';
                     @endphp
                     <section class="rounded-2xl border border-[#01225E]/20 bg-[#01225E] p-6 text-white shadow-sm" aria-labelledby="saved-mark-heading">
-                        <span class="inline-flex rounded-full px-3 py-1 text-xs font-bold {{ $statusBadgeClasses }}">
-                            {{ $qualificationMatch['status_label'] }}
-                        </span>
-                        <h2 id="saved-mark-heading" class="mt-3 text-2xl font-bold">Your saved-mark check</h2>
-                        <p class="mt-3 max-w-3xl text-sm leading-6 text-white/80">
-                            Compared with your saved subjects and marks{{ $qualificationMatch['term_label'] ? ' from '.$qualificationMatch['term_label'] : '' }}.
-                        </p>
+                        <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                            <div>
+                                <span class="inline-flex rounded-full px-3 py-1 text-xs font-bold {{ $statusBadgeClasses }}">
+                                    {{ $qualificationMatch['status_label'] }}
+                                </span>
+                                <h2 id="saved-mark-heading" class="mt-3 text-2xl font-bold">Your saved-mark check</h2>
+                                <p class="mt-3 max-w-3xl text-sm leading-6 text-white/80">
+                                    Compared with your saved subjects and marks{{ $qualificationMatch['term_label'] ? ' from '.$qualificationMatch['term_label'] : '' }}.
+                                </p>
+                            </div>
+
+                            @if (($matchTermOptions ?? collect())->count() > 1)
+                                <form method="GET" action="{{ url()->current() }}" class="w-full rounded-xl border border-white/10 bg-white/10 p-3 lg:w-80">
+                                    @foreach (request()->query() as $key => $value)
+                                        @continue($key === 'term_id')
+                                        @if (is_array($value))
+                                            @foreach ($value as $item)
+                                                <input type="hidden" name="{{ $key }}[]" value="{{ $item }}">
+                                            @endforeach
+                                        @else
+                                            <input type="hidden" name="{{ $key }}" value="{{ $value }}">
+                                        @endif
+                                    @endforeach
+                                    <label for="eligibility-term-id" class="block text-xs font-bold uppercase text-white/70">Eligibility term</label>
+                                    <div class="mt-2 flex gap-2">
+                                        <select id="eligibility-term-id" name="term_id" class="min-w-0 flex-1 rounded-lg border border-white/20 bg-white px-3 py-2 text-sm font-bold text-neutral-950 outline-none focus:ring-2 focus:ring-white/40">
+                                            @foreach ($matchTermOptions as $option)
+                                                <option value="{{ $option->id }}" @selected((int) ($qualificationMatch['term_id'] ?? 0) === (int) $option->id)>
+                                                    {{ $option->label }} · {{ $option->marks_count }} {{ \Illuminate\Support\Str::plural('mark', (int) $option->marks_count) }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                        <button class="rounded-lg bg-white px-4 py-2 text-sm font-bold text-[#01225E] hover:bg-blue-50">Load</button>
+                                    </div>
+                                </form>
+                            @endif
+                        </div>
 
                         <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                             <div class="rounded-xl border border-white/10 bg-white p-4 text-neutral-950">

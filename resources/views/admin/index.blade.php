@@ -26,6 +26,9 @@
                 <a href="{{ route('admin.lemo-ai.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                     Lemo AI <i data-lucide="bot" style="width:16px;height:16px;"></i>
                 </a>
+                <a href="{{ route('admin.reports.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
+                    Reports <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+                </a>
                 <a href="{{ route('aps.index') }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 font-semibold hover:bg-neutral-50">
                     APS <i data-lucide="target" style="width:16px;height:16px;"></i>
                 </a>

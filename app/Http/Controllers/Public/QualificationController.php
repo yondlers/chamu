@@ -39,6 +39,9 @@ class QualificationController extends Controller
             ->groupBy(fn ($requirement) => $requirement->requirement_group ?: 'requirement_'.$requirement->id);
         $originBreadcrumb = $this->originBreadcrumb($request);
         $user = $request->user();
+        $matchTermOptions = $user === null
+            ? collect()
+            : $admissionInfo->userMarkTermOptions($user);
         $qualificationMatch = $user === null
             ? null
             : $admissionInfo->qualificationMatchSummary($qualification, $user, $this->matchTermId($request));
@@ -89,6 +92,7 @@ class QualificationController extends Controller
             'usesPassTypeAdmission' => $usesPassTypeAdmission,
             'qualificationAction' => $qualificationAction,
             'qualificationMatch' => $qualificationMatch,
+            'matchTermOptions' => $matchTermOptions,
             'originBreadcrumb' => $originBreadcrumb,
             'sourceInfo' => SourceMeta::make(
                 $qualification->source_url,

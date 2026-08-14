@@ -183,6 +183,7 @@ class PublicAdmissionInfoService
 
     /**
      * @return array{
+     *     term_id: int|null,
      *     term_label: string|null,
      *     status_label: string,
      *     status_tone: string,
@@ -203,18 +204,9 @@ class PublicAdmissionInfoService
      */
     public function qualificationMatchSummary(Qualification $qualification, User $user, ?int $termId = null): ?array
     {
-        if ($user->grade_id === null) {
-            return null;
-        }
+        $defaultTermId = $this->userMarkTermOptions($user)->first()?->id;
 
-        $latestTermId = DB::table('user_subject_results')
-            ->where('user_id', $user->id)
-            ->where('grade_id', $user->grade_id)
-            ->whereNotNull('mark')
-            ->orderByDesc('term_id')
-            ->value('term_id');
-
-        $selectedTermId = $termId ?: $latestTermId;
+        $selectedTermId = $termId ?: $defaultTermId;
 
         if ($selectedTermId === null) {
             return null;
@@ -222,11 +214,42 @@ class PublicAdmissionInfoService
 
         $results = $this->userResultsForTerm($user, (int) $selectedTermId);
 
-        if ($results->isEmpty() && $termId !== null && $latestTermId !== null && (int) $termId !== (int) $latestTermId) {
-            $selectedTermId = (int) $latestTermId;
+        if ($results->isEmpty() && $termId !== null && $defaultTermId !== null && (int) $termId !== (int) $defaultTermId) {
+            $selectedTermId = (int) $defaultTermId;
             $results = $this->userResultsForTerm($user, $selectedTermId);
         }
 
+        if ($results->isEmpty()) {
+            return null;
+        }
+
+        return $this->qualificationMatchSummaryForResults($qualification, $results, (int) $selectedTermId);
+    }
+
+    /**
+     * @param  Collection<int, object>  $results
+     * @return array{
+     *     term_id: int|null,
+     *     term_label: string|null,
+     *     status_label: string,
+     *     status_tone: string,
+     *     is_match: bool,
+     *     is_almost_there: bool,
+     *     requires_manual_review: bool,
+     *     admission_score_type: string,
+     *     admission_score_label: string,
+     *     admission_score_required_display: string,
+     *     admission_score_actual_display: string,
+     *     admission_score_gap_display: string,
+     *     admission_score_gap: float,
+     *     closing_label: string,
+     *     met_requirements: array<int, string>,
+     *     missing_requirements: array<int, string>,
+     *     missing_score_components: array<int, string>
+     * }|null
+     */
+    public function qualificationMatchSummaryForResults(Qualification $qualification, Collection $results, int $selectedTermId, ?Collection $rules = null): ?array
+    {
         if ($results->isEmpty()) {
             return null;
         }
@@ -382,7 +405,7 @@ class PublicAdmissionInfoService
             }
         }
 
-        $ruleAssignment = $this->relevantAdmissionRules($qualification)->first();
+        $ruleAssignment = ($rules ?? $this->relevantAdmissionRules($qualification))->first();
         $admissionRule = $ruleAssignment?->admissionRule;
         $ruleConfig = array_replace_recursive(
             $admissionRule?->config ?? [],
@@ -454,7 +477,8 @@ class PublicAdmissionInfoService
         $actualPassTypeDisplay = $this->passTypeLabel($score['pass_type'] ?? 'none');
 
         return [
-            'term_label' => $results->first()->term_name ?? null,
+            'term_id' => (int) $selectedTermId,
+            'term_label' => $results->first()->term_label ?? $results->first()->term_name ?? null,
             'status_label' => match (true) {
                 $isMatch => 'You meet the listed requirements',
                 $requiresManualReview => 'Review the published notes',
@@ -490,6 +514,44 @@ class PublicAdmissionInfoService
             'missing_requirements' => $missing,
             'missing_score_components' => $score['missing_components'],
         ];
+    }
+
+    /**
+     * @return Collection<int, object>
+     */
+    public function userMarkTermOptions(User $user): Collection
+    {
+        $termOrderSql = $this->termOrderSql();
+
+        return DB::table('user_subject_results')
+            ->join('terms', 'terms.id', '=', 'user_subject_results.term_id')
+            ->join('grades', 'grades.id', '=', 'user_subject_results.grade_id')
+            ->where('user_subject_results.user_id', $user->id)
+            ->whereNotNull('user_subject_results.mark')
+            ->select(
+                'terms.id',
+                'terms.name as term_name',
+                'grades.id as grade_id',
+                'grades.name as grade_name',
+                'grades.sort_order as grade_sort_order',
+            )
+            ->selectRaw('count(user_subject_results.id) as marks_count')
+            ->groupBy(
+                'terms.id',
+                'terms.name',
+                'grades.id',
+                'grades.name',
+                'grades.sort_order',
+            )
+            ->orderByDesc('grades.sort_order')
+            ->orderByRaw($termOrderSql.' desc')
+            ->orderByDesc('terms.id')
+            ->get()
+            ->map(function (object $term): object {
+                $term->label = trim(($term->grade_name ?? 'Grade').' '.($term->term_name ?? 'Term'));
+
+                return $term;
+            });
     }
 
     public function requirementLabel(QualificationSubjectRequirement $requirement): string
@@ -612,13 +674,13 @@ class PublicAdmissionInfoService
     /**
      * @return Collection<int, object>
      */
-    private function userResultsForTerm(User $user, int $termId): Collection
+    public function userResultsForTerm(User $user, int $termId): Collection
     {
         return DB::table('user_subject_results')
             ->join('subjects', 'subjects.id', '=', 'user_subject_results.subject_id')
             ->leftJoin('terms', 'terms.id', '=', 'user_subject_results.term_id')
+            ->leftJoin('grades', 'grades.id', '=', 'user_subject_results.grade_id')
             ->where('user_subject_results.user_id', $user->id)
-            ->where('user_subject_results.grade_id', $user->grade_id)
             ->where('user_subject_results.term_id', $termId)
             ->whereNotNull('user_subject_results.mark')
             ->select(
@@ -629,8 +691,19 @@ class PublicAdmissionInfoService
                 'subjects.code',
                 'subjects.abbreviation',
                 'terms.name as term_name',
+                'grades.name as grade_name',
             )
-            ->get();
+            ->get()
+            ->map(function (object $result): object {
+                $result->term_label = trim(($result->grade_name ?? 'Grade').' '.($result->term_name ?? 'Term'));
+
+                return $result;
+            });
+    }
+
+    private function termOrderSql(): string
+    {
+        return "case terms.name when 'Term 1' then 1 when 'Term 2' then 2 when 'Term 3' then 3 when 'Term 4' then 4 when 'NSC' then 4 else 0 end";
     }
 
     /**

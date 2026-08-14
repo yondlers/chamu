@@ -25,6 +25,9 @@
                     <span class="inline-flex items-center rounded-full bg-[#01225E] px-3 py-1.5 text-xs font-bold text-white">Super admin</span>
                 @endif
                 <span class="inline-flex items-center rounded-full bg-neutral-100 px-3 py-1.5 text-xs font-bold capitalize text-neutral-700">{{ $account->userType?->name ?? 'Unknown type' }}</span>
+                <a href="{{ route('admin.reports.index', ['account_search' => $account->email]) }}" class="inline-flex items-center gap-2 rounded-xl border border-neutral-300 px-4 py-2 text-sm font-bold hover:bg-neutral-50">
+                    Reports <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+                </a>
             </div>
         </div>
 

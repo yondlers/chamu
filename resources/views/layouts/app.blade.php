@@ -117,6 +117,7 @@
                 ['label' => 'Audit', 'href' => route('admin.audit-logs.index'), 'icon' => 'file-search', 'active' => request()->routeIs('admin.audit-logs.*')],
                 ['label' => 'Emails', 'href' => route('admin.emails.index'), 'icon' => 'mail-check', 'active' => request()->routeIs('admin.emails.*')],
                 ['label' => 'Accounts', 'href' => route('admin.accounts.index'), 'icon' => 'users', 'active' => request()->routeIs('admin.accounts.*')],
+                ['label' => 'Reports', 'href' => route('admin.reports.index'), 'icon' => 'file-text', 'active' => request()->routeIs('admin.reports.*')],
                 ['label' => 'Visits', 'href' => route('admin.site-visits.index'), 'icon' => 'mouse-pointer-click', 'active' => request()->routeIs('admin.site-visits.*')],
             ]
             : (
@@ -126,6 +127,7 @@
                         ['label' => 'Funding', 'href' => route('funding.index'), 'icon' => 'badge-dollar-sign', 'active' => request()->routeIs('funding.*') || request()->routeIs('bursaries.*')],
                         ['label' => 'Lemo AI', 'href' => route('lemo-ai.index'), 'icon' => 'sparkles', 'active' => request()->routeIs('lemo-ai.*')],
                         ['label' => 'Dashboard', 'href' => route('dashboard.index'), 'icon' => 'home', 'active' => request()->routeIs('dashboard.index')],
+                        ['label' => 'Reports', 'href' => route('reports.index'), 'icon' => 'file-text', 'active' => request()->routeIs('reports.*')],
                         ['label' => 'Applications', 'href' => route('applications.index'), 'icon' => 'folder-check', 'active' => request()->routeIs('applications.*')],
                     ]
                     : [

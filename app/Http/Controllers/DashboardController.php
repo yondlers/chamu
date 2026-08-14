@@ -13,6 +13,8 @@ use App\Models\User;
 use App\Models\UserApplicationDocument;
 use App\Models\UserApplicationProfile;
 use App\Models\UserSubjectResult;
+use App\Services\Matching\CourseMatcher;
+use App\Services\Reports\StudentReviewService;
 use App\Support\Social\FacebookGraph;
 use App\Support\Social\InstagramGraph;
 use App\Support\Social\LinkedInGraph;
@@ -37,13 +39,15 @@ use Throwable;
 
 class DashboardController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, CourseMatcher $courseMatcher, StudentReviewService $studentReview)
     {
         $user = $request->user();
 
         $selectedSubjects = collect();
         $latestTerm = null;
         $results = collect();
+        $courseMatch = null;
+        $dashboardReview = null;
         $pendingQuizzes = collect();
         $recentAttempts = collect();
         $recentBursaryApplications = collect();
@@ -82,6 +86,18 @@ class DashboardController extends Controller
                     ->orderBy('subjects.name')
                     ->get();
             }
+        }
+
+        $courseMatch = $courseMatcher->forUser($user, null, 2);
+
+        if ($courseMatch['has_marks']) {
+            $term = $courseMatch['term'];
+            $latestTerm = $term === null ? null : (object) [
+                'id' => $term->id,
+                'name' => $term->label ?? $term->term_name ?? 'Latest marks',
+            ];
+            $results = $courseMatch['results'];
+            $dashboardReview = $studentReview->review($user, $courseMatch);
         }
 
         $isLifeOrientation = function (object $result): bool {
@@ -139,6 +155,10 @@ class DashboardController extends Controller
                     'reported_subjects' => (int) $progress->reported_subjects,
                 ];
             });
+
+        if ($courseMatch !== null) {
+            $apsProgress = $courseMatch['progress'];
+        }
 
         $pendingQuizzes = DB::table('exam_sessions')
             ->leftJoin('subjects', 'subjects.id', '=', 'exam_sessions.subject_id')
@@ -208,6 +228,8 @@ class DashboardController extends Controller
             'apsTotal' => $apsTotal,
             'averageMark' => $averageMark,
             'apsProgress' => $apsProgress,
+            'courseMatch' => $courseMatch,
+            'dashboardReview' => $dashboardReview,
             'pendingQuizzes' => $pendingQuizzes,
             'recentAttempts' => $recentAttempts,
             'applicationSummary' => $applicationSummary,
