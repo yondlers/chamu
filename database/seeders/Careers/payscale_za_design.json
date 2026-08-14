@@ -1,0 +1,566 @@
+{
+    "source": "PayScale South Africa job salary research pages",
+    "source_host": "https://www.payscale.com",
+    "category": "Design, creative & visual arts",
+    "collected_at": "2026-08-14",
+    "careers": [
+        {
+            "name": "Graphic Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Designer/Salary",
+            "salary_expectation": "R73k – R384k / year (avg R196,025)",
+            "description": null
+        },
+        {
+            "name": "Senior Graphic Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Graphic_Designer/Salary",
+            "salary_expectation": "R144k – R494k / year (avg R315,164)",
+            "description": null
+        },
+        {
+            "name": "Merchandiser",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Merchandiser/Hourly_Rate",
+            "salary_expectation": "R20.63 – R38.96 / hour (avg R25.65)",
+            "description": null
+        },
+        {
+            "name": "Interior Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Interior_Designer/Salary",
+            "salary_expectation": "R119k – R458k / year (avg R203,491)",
+            "description": null
+        },
+        {
+            "name": "UX Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=UX_Designer/Salary",
+            "salary_expectation": "R147k – R549k / year (avg R300,932)",
+            "description": null
+        },
+        {
+            "name": "3D Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=3D_Artist/Salary",
+            "salary_expectation": "R119k – R489k / year (avg R217,686)",
+            "description": null
+        },
+        {
+            "name": "Junior Graphic Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Graphic_Designer/Salary",
+            "salary_expectation": "R59k – R191k / year (avg R121,444)",
+            "description": null
+        },
+        {
+            "name": "Multimedia Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Multimedia_Designer/Salary",
+            "salary_expectation": "R98k – R452k / year (avg R218,104)",
+            "description": null
+        },
+        {
+            "name": "Product Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Designer/Salary",
+            "salary_expectation": "R23k – R744k / year (avg R358,778)",
+            "description": null
+        },
+        {
+            "name": "Creative Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Creative_Director/Salary",
+            "salary_expectation": "R159k – R894k / year (avg R506,798)",
+            "description": null
+        },
+        {
+            "name": "Motion Graphic Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Motion_Graphic_Designer/Salary",
+            "salary_expectation": "R15k – R415k / year (avg R211,162)",
+            "description": null
+        },
+        {
+            "name": "Senior Interior Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Interior_Designer/Salary",
+            "salary_expectation": "R233k – R605k / year (avg R382,726)",
+            "description": null
+        },
+        {
+            "name": "Graphic Artist / Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Artist_%2F_Designer/Hourly_Rate",
+            "salary_expectation": "R21k – R444k / year (avg R214,772)",
+            "description": null
+        },
+        {
+            "name": "Industrial Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Industrial_Designer/Salary",
+            "salary_expectation": "R150k – R597k / year (avg R271,696)",
+            "description": null
+        },
+        {
+            "name": "Digital Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Digital_Designer/Salary",
+            "salary_expectation": "R107k – R428k / year (avg R244,405)",
+            "description": null
+        },
+        {
+            "name": "Fashion Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fashion_Designer/Salary",
+            "salary_expectation": "R29k – R511k / year (avg R208,380)",
+            "description": null
+        },
+        {
+            "name": "Art Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Art_Director/Salary",
+            "salary_expectation": "R205k – R651k / year (avg R366,077)",
+            "description": null
+        },
+        {
+            "name": "Web Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Web_Designer/Salary",
+            "salary_expectation": "R18k – R414k / year (avg R178,800)",
+            "description": null
+        },
+        {
+            "name": "Retail Merchandiser",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Retail_Merchandiser/Hourly_Rate",
+            "salary_expectation": "R20.24 – R36.24 / hour (avg R25.13)",
+            "description": null
+        },
+        {
+            "name": "Freelance Graphic Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Freelance_Graphic_Designer/Hourly_Rate",
+            "salary_expectation": "R29.59 – R501.33 / hour (avg R243.03)",
+            "description": null
+        },
+        {
+            "name": "Senior UX Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_UX_Designer/Salary",
+            "salary_expectation": "R61k – R869k / year (avg R592,794)",
+            "description": null
+        },
+        {
+            "name": "User Experience Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=User_Experience_Designer/Salary",
+            "salary_expectation": "R185k – R693k / year (avg R441,439)",
+            "description": null
+        },
+        {
+            "name": "Animator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Animator/Salary",
+            "salary_expectation": "R103k – R475k / year (avg R184,099)",
+            "description": null
+        },
+        {
+            "name": "Illustrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Illustrator/Hourly_Rate",
+            "salary_expectation": "R15.21 – R394.98 / hour (avg R190)",
+            "description": null
+        },
+        {
+            "name": "Graphic Designer, Web",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Designer%2C_Web/Salary",
+            "salary_expectation": "R90k – R401k / year (avg R162,000)",
+            "description": null
+        },
+        {
+            "name": "Product Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Engineer/Salary",
+            "salary_expectation": "R23k – R860k / year (avg R464,294)",
+            "description": null
+        },
+        {
+            "name": "Junior Interior Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Interior_Designer/Salary",
+            "salary_expectation": "R50k – R238k / year (avg R142,875)",
+            "description": null
+        },
+        {
+            "name": "Visual Merchandiser",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Visual_Merchandiser/Hourly_Rate",
+            "salary_expectation": "R78k – R325k / year (avg R163,902)",
+            "description": null
+        },
+        {
+            "name": "Product Developer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Developer/Salary",
+            "salary_expectation": "R143k – R670k / year (avg R279,447)",
+            "description": null
+        },
+        {
+            "name": "Animator, 2D",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Animator%2C_2D/Salary",
+            "salary_expectation": "R15k – R304k / year (avg R152,024)",
+            "description": null
+        },
+        {
+            "name": "Sr. Art Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Sr._Art_Director/Salary",
+            "salary_expectation": "R360k – R720k / year (avg R414,144)",
+            "description": null
+        },
+        {
+            "name": "Visual Merchandising Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Visual_Merchandising_Manager/Salary",
+            "salary_expectation": "R236k – R591k / year (avg R303,105)",
+            "description": null
+        },
+        {
+            "name": "Exhibit Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Exhibit_Designer/Salary",
+            "salary_expectation": "R228,300 / year",
+            "description": null
+        },
+        {
+            "name": "Graphic Design Intern",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Design_Intern/Salary",
+            "salary_expectation": "R5k – R102k / year (avg R65,000)",
+            "description": null
+        },
+        {
+            "name": "Fine Artist, Including Painter, Sculptor, or Illustrator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fine_Artist%2C_Including_Painter%2C_Sculptor%2C_or_Illustrator/Hourly_Rate",
+            "salary_expectation": "R51.06 – R402.68 / hour (avg R101.74)",
+            "description": null
+        },
+        {
+            "name": "Lead UX Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lead_UX_Designer/Salary",
+            "salary_expectation": "R43k – R1.5m / year (avg R546,496)",
+            "description": null
+        },
+        {
+            "name": "Senior Product Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Product_Designer/Salary",
+            "salary_expectation": "R376k – R980k / year (avg R656,400)",
+            "description": null
+        },
+        {
+            "name": "Animator, 3D",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Animator%2C_3D/Salary",
+            "salary_expectation": "R95k – R582k / year (avg R170,000)",
+            "description": null
+        },
+        {
+            "name": "Interior Decorator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Interior_Decorator/Hourly_Rate",
+            "salary_expectation": "R114,000 / year",
+            "description": null
+        },
+        {
+            "name": "Layout Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Layout_Artist/Salary",
+            "salary_expectation": "R10k – R519k / year (avg R191,729)",
+            "description": null
+        },
+        {
+            "name": "Textile Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Textile_Designer/Salary",
+            "salary_expectation": "R18k – R444k / year (avg R198,995)",
+            "description": null
+        },
+        {
+            "name": "Florist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Florist/Hourly_Rate",
+            "salary_expectation": "R80 / hour",
+            "description": null
+        },
+        {
+            "name": "Graphic Artist / Animator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Artist_%2F_Animator/Salary",
+            "salary_expectation": "R166,162 / year",
+            "description": null
+        },
+        {
+            "name": "Junior Art Director",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Junior_Art_Director/Salary",
+            "salary_expectation": "R20k – R266k / year (avg R150,250)",
+            "description": null
+        },
+        {
+            "name": "Project Manager, Interior Design",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Project_Manager%2C_Interior_Design/Salary",
+            "salary_expectation": "R186,000 / year",
+            "description": null
+        },
+        {
+            "name": "Senior Animator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Animator/Salary",
+            "salary_expectation": "R26k – R646k / year (avg R349,954)",
+            "description": null
+        },
+        {
+            "name": "Concept Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Concept_Artist/Salary",
+            "salary_expectation": "R210,000 / year",
+            "description": null
+        },
+        {
+            "name": "Fashion Stylist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fashion_Stylist/Hourly_Rate",
+            "salary_expectation": "R300,000 / year",
+            "description": null
+        },
+        {
+            "name": "Senior User Experience Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_User_Experience_Designer/Salary",
+            "salary_expectation": "R20k – R766k / year (avg R489,904)",
+            "description": null
+        },
+        {
+            "name": "Design Intern",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Design_Intern/Hourly_Rate",
+            "salary_expectation": "R77.08 / hour",
+            "description": null
+        },
+        {
+            "name": "Post Production Manager, Television, Video, or Motion Picture",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Post_Production_Manager%2C_Television%2C_Video%2C_or_Motion_Picture/Salary",
+            "salary_expectation": "R145k – R715k / year (avg R456,887)",
+            "description": null
+        },
+        {
+            "name": "Product Development Coordinator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Development_Coordinator/Salary",
+            "salary_expectation": "R191,729 / year",
+            "description": null
+        },
+        {
+            "name": "Senior Merchandiser",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Merchandiser/Salary",
+            "salary_expectation": "R220,000 / year",
+            "description": null
+        },
+        {
+            "name": "Visual Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Visual_Designer/Salary",
+            "salary_expectation": "R375,000 / year",
+            "description": null
+        },
+        {
+            "name": "Designer, Kitchen",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Designer%2C_Kitchen/Salary",
+            "salary_expectation": "R14k – R473k / year (avg R167,527)",
+            "description": null
+        },
+        {
+            "name": "Lead Graphic Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Lead_Graphic_Designer/Salary",
+            "salary_expectation": "R32k – R348k / year (avg R255,000)",
+            "description": null
+        },
+        {
+            "name": "Production Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Production_Artist/Hourly_Rate",
+            "salary_expectation": "R89.79 / hour",
+            "description": null
+        },
+        {
+            "name": "Retoucher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Retoucher/Salary",
+            "salary_expectation": "R247,000 / year",
+            "description": null
+        },
+        {
+            "name": "Visual Merchandising Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Visual_Merchandising_Specialist/Hourly_Rate",
+            "salary_expectation": "R74k – R358k / year (avg R130,000)",
+            "description": null
+        },
+        {
+            "name": "Photo Retoucher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Photo_Retoucher/Hourly_Rate",
+            "salary_expectation": "R180,000 / year",
+            "description": null
+        },
+        {
+            "name": "Graphic Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Artist/Salary",
+            "salary_expectation": "R144,000 / year",
+            "description": null
+        },
+        {
+            "name": "Product Development Engineer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Development_Engineer/Salary",
+            "salary_expectation": "R350,000 / year",
+            "description": null
+        },
+        {
+            "name": "Senior Fashion Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Fashion_Designer/Salary",
+            "salary_expectation": "R480,000 / year",
+            "description": null
+        },
+        {
+            "name": "Visual Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Visual_Manager/Salary",
+            "salary_expectation": "R193,918 / year",
+            "description": null
+        },
+        {
+            "name": "Product Design Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Product_Design_Manager/Salary",
+            "salary_expectation": "R720,000 / year",
+            "description": null
+        },
+        {
+            "name": "Regional Visual Merchandising Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Regional_Visual_Merchandising_Manager/Salary",
+            "salary_expectation": "R263,864 / year",
+            "description": null
+        },
+        {
+            "name": "Wardrobe Fashion Stylist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Wardrobe_Fashion_Stylist/Hourly_Rate",
+            "salary_expectation": "R294 / hour",
+            "description": null
+        },
+        {
+            "name": "Assistant Fashion Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Fashion_Designer/Salary",
+            "salary_expectation": "R66,000 / year",
+            "description": null
+        },
+        {
+            "name": "Assistant Interior Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Assistant_Interior_Designer/Salary",
+            "salary_expectation": "R152.6 / hour",
+            "description": null
+        },
+        {
+            "name": "Compositor",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Compositor/Salary",
+            "salary_expectation": "R241,418 / year",
+            "description": null
+        },
+        {
+            "name": "Fire Sprinkler Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Fire_Sprinkler_Designer/Salary",
+            "salary_expectation": "R244,500 / year",
+            "description": null
+        },
+        {
+            "name": "Merchandise Displayer / Window Trimmer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Merchandise_Displayer_%2F_Window_Trimmer/Salary",
+            "salary_expectation": "R105,230 / year",
+            "description": null
+        },
+        {
+            "name": "Merchandising Assistant",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Merchandising_Assistant/Salary",
+            "salary_expectation": "R100,000 / year",
+            "description": null
+        },
+        {
+            "name": "Production Manager, Theater",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Production_Manager%2C_Theater/Salary",
+            "salary_expectation": "R138,000 / year",
+            "description": null
+        },
+        {
+            "name": "Store Planner",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Store_Planner/Salary",
+            "salary_expectation": "R254,639 / year",
+            "description": null
+        },
+        {
+            "name": "Tattoo Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tattoo_Artist/Hourly_Rate",
+            "salary_expectation": "R10,174 / year",
+            "description": null
+        },
+        {
+            "name": "VFX Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=VFX_Artist/Salary",
+            "salary_expectation": "R222,000 / year",
+            "description": null
+        },
+        {
+            "name": "Creative Services Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Creative_Services_Manager/Salary",
+            "salary_expectation": "R417,500 / year",
+            "description": null
+        },
+        {
+            "name": "Design Director, Interior Design",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Design_Director%2C_Interior_Design/Salary",
+            "salary_expectation": "R720,133 / year",
+            "description": null
+        },
+        {
+            "name": "Designer, Kitchen & Bath",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Designer%2C_Kitchen_%26_Bath/Hourly_Rate",
+            "salary_expectation": "R50 / hour",
+            "description": null
+        },
+        {
+            "name": "User Experience Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=User_Experience_Manager/Salary",
+            "salary_expectation": "R979,592 / year",
+            "description": null
+        },
+        {
+            "name": "Visual Effects Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Visual_Effects_Artist/Salary",
+            "salary_expectation": "R500 / hour",
+            "description": null
+        },
+        {
+            "name": "Clothing Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Clothing_Designer/Salary",
+            "salary_expectation": "R334,600 / year",
+            "description": null
+        },
+        {
+            "name": "Graphic Design Specialist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Design_Specialist/Salary",
+            "salary_expectation": "R276,000 / year",
+            "description": null
+        },
+        {
+            "name": "Graphic Designer, Commercial Art",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Graphic_Designer%2C_Commercial_Art/Hourly_Rate",
+            "salary_expectation": "R125 / hour",
+            "description": null
+        },
+        {
+            "name": "Image Retoucher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Image_Retoucher/Hourly_Rate",
+            "salary_expectation": "R183,099 / year",
+            "description": null
+        },
+        {
+            "name": "Multi-Media Artist or Animator",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Multi-Media_Artist_or_Animator/Salary",
+            "salary_expectation": "R216,000 / year",
+            "description": null
+        },
+        {
+            "name": "Production Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Production_Designer/Salary",
+            "salary_expectation": "R55 / hour",
+            "description": null
+        },
+        {
+            "name": "Senior Industrial Designer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Industrial_Designer/Salary",
+            "salary_expectation": "R354,000 / year",
+            "description": null
+        },
+        {
+            "name": "Senior Retoucher",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Senior_Retoucher/Salary",
+            "salary_expectation": "R305,460 / year",
+            "description": null
+        },
+        {
+            "name": "Tattoo Artist / Body Piercer",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Tattoo_Artist_%2F_Body_Piercer/Salary",
+            "salary_expectation": "R78,500 / year",
+            "description": null
+        },
+        {
+            "name": "Technical Artist",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Technical_Artist/Salary",
+            "salary_expectation": "R336,000 / year",
+            "description": null
+        },
+        {
+            "name": "Visual Merchandise Manager",
+            "source_url": "https://www.payscale.com/research/ZA/Job=Visual_Merchandise_Manager/Salary",
+            "salary_expectation": "R540,139 / year",
+            "description": null
+        }
+    ]
+}

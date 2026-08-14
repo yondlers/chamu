@@ -88,6 +88,14 @@
 <body class="min-h-screen text-neutral-900 bg-white">
     @php
         $isAdminPortal = auth()->check() && auth()->user()->is_super_admin && request()->routeIs('admin.*');
+        $portalBadgeLabel = null;
+        if ($isAdminPortal) {
+            $portalBadgeLabel = 'Admin';
+        } elseif (request()->routeIs('aps.*')) {
+            $portalBadgeLabel = 'Course';
+        } elseif (request()->routeIs('funding.*') || request()->routeIs('bursaries.*')) {
+            $portalBadgeLabel = 'Funding';
+        }
         $authUser = auth()->user();
         $tutorApplicationsReady = Illuminate\Support\Facades\Schema::hasTable('tutor_applications');
         $tutorApplication = ($authUser && $tutorApplicationsReady) ? $authUser->tutorApplication : null;
@@ -173,8 +181,8 @@
                 <a href="{{ $isAdminPortal ? route('admin.index') : url('/') }}" class="flex shrink-0 items-center gap-2">
                     <img src="{{ asset('images/brand/chamu-logo.png') }}" alt="Chamu logo" class="h-9 w-9 rounded-xl object-contain">
                     <span class="font-bold text-lg">Chamu</span>
-                    @if ($isAdminPortal)
-                        <span class="hidden rounded-full bg-[#F3F7FC] px-2.5 py-1 text-xs font-bold text-[#01225E] sm:inline-flex">Admin</span>
+                    @if ($portalBadgeLabel)
+                        <span class="hidden rounded-full bg-[#F3F7FC] px-2.5 py-1 text-xs font-bold text-[#01225E] sm:inline-flex">{{ $portalBadgeLabel }}</span>
                     @endif
                 </a>
 
