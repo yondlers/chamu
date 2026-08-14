@@ -4,6 +4,8 @@
 
 @section('content')
     @php
+        $showTutorEntryPoints = $showTutorEntryPoints ?? false;
+        $visibleProfileRoleNames = $visibleProfileRoleNames ?? ($showTutorEntryPoints ? ['pupil', 'student', 'tutor'] : ['pupil', 'student']);
         $userTypeLabels = [
             'pupil' => 'Pupil (High School)',
             'student' => 'Student (University/College)',
@@ -15,6 +17,11 @@
             ->map(fn ($role) => strtolower((string) $role))
             ->values()
             ->all();
+        $hiddenSelectedRoles = $user->roleNames()
+            ->intersect(['tutor'])
+            ->reject(fn ($role) => in_array($role, $visibleProfileRoleNames, true))
+            ->values()
+            ->all();
     @endphp
 
     <main class="max-w-5xl mx-auto px-5 lg:px-8 py-10">
@@ -22,7 +29,11 @@
             <div>
                 <p class="text-sm font-semibold text-[#01225E]">Account</p>
                 <h1 class="text-3xl font-bold mt-1">Profile details</h1>
-                <p class="mt-2 text-neutral-500">You can be a Pupil, Student, and Tutor on one account. Shared details and documents carry across bursary and tutor applications.</p>
+                <p class="mt-2 text-neutral-500">
+                    {{ $showTutorEntryPoints
+                        ? 'You can be a Pupil, Student, and Tutor on one account. Shared details and documents carry across bursary and tutor applications.'
+                        : 'You can be a Pupil and Student on one account. Shared details and documents carry across bursary applications.' }}
+                </p>
             </div>
             @if (session('status'))
                 <p class="rounded-xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700">{{ session('status') }}</p>
@@ -38,6 +49,9 @@
         <form method="POST" action="{{ route('profile.update') }}" class="space-y-8">
             @csrf
             @method('PUT')
+            @foreach ($hiddenSelectedRoles as $hiddenRole)
+                <input type="hidden" name="roles[]" value="{{ $hiddenRole }}">
+            @endforeach
 
             <section class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card">
                 <h2 class="font-bold text-xl mb-5">Personal information</h2>
@@ -68,11 +82,18 @@
 
             <section class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card">
                 <h2 class="font-bold text-xl mb-2">Account roles</h2>
-                <p class="mb-5 text-sm text-neutral-500">Select every path you use. Province, contact details, institution info, and saved documents are shared across them.</p>
+                <p class="mb-5 text-sm text-neutral-500">
+                    {{ $showTutorEntryPoints
+                        ? 'Select every path you use. Province, contact details, institution info, and saved documents are shared across them.'
+                        : 'Select every path you use. Province, contact details, institution info, and saved documents are shared across pupil and student tools.' }}
+                </p>
 
-                <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <div @class([
+                    'grid gap-3 sm:grid-cols-2',
+                    'lg:grid-cols-3' => $showTutorEntryPoints,
+                ])>
                     @foreach ($userTypes as $userType)
-                        @if (in_array($userType->name, ['pupil', 'student', 'tutor'], true))
+                        @if (in_array($userType->name, $visibleProfileRoleNames, true))
                             <label class="flex cursor-pointer items-start gap-3 rounded-xl border border-neutral-200 px-4 py-3 hover:border-[#01225E]">
                                 <input
                                     type="checkbox"
@@ -140,28 +161,42 @@
             </div>
         </form>
 
-        <section class="mt-8 grid gap-5 md:grid-cols-3">
+        <section @class([
+            'mt-8 grid gap-5',
+            'md:grid-cols-3' => $showTutorEntryPoints,
+            'md:grid-cols-2' => ! $showTutorEntryPoints,
+        ])>
             <a href="{{ route('subjects.index', ['manage' => 1]) }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
                 <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
                     <i data-lucide="list-checks" style="width:22px;height:22px;"></i>
                 </span>
                 <h2 class="font-bold text-xl">Subjects & marks</h2>
-                <p class="mt-2 text-sm text-neutral-500">Pupil path: update grade, subjects, and marks. Used for APS and tutor mark prefill.</p>
+                <p class="mt-2 text-sm text-neutral-500">
+                    {{ $showTutorEntryPoints
+                        ? 'Pupil path: update grade, subjects, and marks. Used for APS and tutor mark prefill.'
+                        : 'Pupil path: update grade, subjects, and marks. Used for APS and course matching.' }}
+                </p>
             </a>
             <a href="{{ route('profile.application') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
                 <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
                     <i data-lucide="folder-check" style="width:22px;height:22px;"></i>
                 </span>
                 <h2 class="font-bold text-xl">Shared application pack</h2>
-                <p class="mt-2 text-sm text-neutral-500">Phone, address, institution, and documents reused for bursaries and tutoring.</p>
+                <p class="mt-2 text-sm text-neutral-500">
+                    {{ $showTutorEntryPoints
+                        ? 'Phone, address, institution, and documents reused for bursaries and tutoring.'
+                        : 'Phone, address, institution, and documents reused for bursaries.' }}
+                </p>
             </a>
-            <a href="{{ route('tutor.application.welcome') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
-                <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
-                    <i data-lucide="presentation" style="width:22px;height:22px;"></i>
-                </span>
-                <h2 class="font-bold text-xl">Become a tutor</h2>
-                <p class="mt-2 text-sm text-neutral-500">Start or continue your tutor application with province and contact details already filled in.</p>
-            </a>
+            @if ($showTutorEntryPoints)
+                <a href="{{ route('tutor.application.welcome') }}" class="rounded-2xl border border-neutral-200 bg-white p-6 soft-card hover:border-[#01225E]">
+                    <span class="inline-flex w-11 h-11 items-center justify-center rounded-xl bg-blue-50 text-[#01225E] mb-4">
+                        <i data-lucide="presentation" style="width:22px;height:22px;"></i>
+                    </span>
+                    <h2 class="font-bold text-xl">Become a tutor</h2>
+                    <p class="mt-2 text-sm text-neutral-500">Start or continue your tutor application with province and contact details already filled in.</p>
+                </a>
+            @endif
         </section>
     </main>
 @endsection

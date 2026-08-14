@@ -4,8 +4,12 @@
 
 @section('content')
     @php
+        $showTutorEntryPoints = $showTutorEntryPoints ?? false;
         $defaultUserType = $defaultUserType ?? ($userTypes->firstWhere('name', 'pupil') ?? $userTypes->first());
         $selectedUserTypeId = (int) old('user_type_id', optional($defaultUserType)->id);
+        $accountTypeChoiceCopy = $showTutorEntryPoints
+            ? 'Pick pupil, student, or tutor, then finish in under a minute.'
+            : 'Pick pupil or student, then finish in under a minute.';
         $accountTypes = [
             'pupil' => [
                 'label' => 'Pupil',
@@ -28,8 +32,12 @@
     <main class="min-h-screen grid lg:grid-cols-[1fr_520px] bg-white">
         @include('auth.partials.campus-carousel', [
             'eyebrow' => 'Quick sign up',
-            'heading' => 'Create your account first. Choose pupil, student, or tutor.',
-            'copy' => 'Basic details on this screen. Tutors continue with a guided application after sign up.',
+            'heading' => $showTutorEntryPoints
+                ? 'Create your account first. Choose pupil, student, or tutor.'
+                : 'Create your account first. Choose pupil or student.',
+            'copy' => $showTutorEntryPoints
+                ? 'Basic details on this screen. Tutors continue with a guided application after sign up.'
+                : 'Basic details on this screen. Start with learning tools or bursary planning after sign up.',
         ])
 
         <section class="flex items-center justify-center px-5 py-10">
@@ -40,7 +48,7 @@
                 </a>
 
                 <h1 class="text-3xl font-bold">Create account</h1>
-                <p class="mt-2 text-neutral-500">Pick pupil, student, or tutor, then finish in under a minute.</p>
+                <p class="mt-2 text-neutral-500">{{ $accountTypeChoiceCopy }}</p>
 
                 <form method="POST" action="{{ route('register.store') }}" class="mt-8 space-y-5">
                     @csrf

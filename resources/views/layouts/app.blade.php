@@ -96,20 +96,25 @@
         } elseif (request()->routeIs('funding.*') || request()->routeIs('bursaries.*')) {
             $portalBadgeLabel = 'Funding';
         }
+        $showTutorEntryPoints = (bool) config('features.show_tutor_entry_points', false);
         $authUser = auth()->user();
-        $tutorApplicationsReady = Illuminate\Support\Facades\Schema::hasTable('tutor_applications');
+        $tutorApplicationsReady = $showTutorEntryPoints && Illuminate\Support\Facades\Schema::hasTable('tutor_applications');
         $tutorApplication = ($authUser && $tutorApplicationsReady) ? $authUser->tutorApplication : null;
         $showBecomeTutor = $tutorApplicationsReady && ! $isAdminPortal && (
             ! auth()->check()
             || ! ($tutorApplication?->isSubmitted() ?? false)
         );
-        $becomeTutorHref = ! auth()->check()
-            ? route('register', ['type' => 'tutor'])
-            : (
-                ($tutorApplication?->isSubmitted() ?? false)
-                    ? route('tutor.application.coming-soon')
-                    : route('tutor.application.welcome')
-            );
+        $becomeTutorHref = $showBecomeTutor
+            ? (
+                ! auth()->check()
+                    ? route('register', ['type' => 'tutor'])
+                    : (
+                        ($tutorApplication?->isSubmitted() ?? false)
+                            ? route('tutor.application.coming-soon')
+                            : route('tutor.application.welcome')
+                    )
+            )
+            : null;
         $becomeTutorLabel = auth()->check() && $tutorApplication && $tutorApplication->isDraft() && filled($tutorApplication->headline)
             ? 'Continue Tutor App'
             : 'Become Tutor';

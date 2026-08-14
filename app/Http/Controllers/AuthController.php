@@ -3,36 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Mail\WelcomeToChamu;
-use App\Models\AuditLog;
-use App\Models\Bursary;
-use App\Models\BursaryDocumentRequirement;
-use App\Models\SiteVisit;
-use App\Models\SocialPost;
-use App\Models\SocialPostResponse;
 use App\Models\User;
-use App\Models\UserApplicationDocument;
-use App\Models\UserApplicationProfile;
-use App\Models\UserSubjectResult;
 use App\Support\Email\EmailDeliveryLogger;
-use App\Support\Social\FacebookGraph;
-use App\Support\Social\InstagramGraph;
-use App\Support\Social\LinkedInGraph;
-use App\Support\Social\SocialImageStorage;
-use App\Support\Social\SocialMediaConfig;
-use App\Support\Social\ThreadsGraph;
 use Illuminate\Http\Request;
-use Illuminate\Http\UploadedFile;
-use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Str;
-use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
 use Throwable;
 
@@ -41,7 +19,7 @@ class AuthController extends Controller
     public function showLogin()
     {
         return view('auth.login');
-            
+
     }
 
     public function login(Request $request)
@@ -69,16 +47,22 @@ class AuthController extends Controller
         ])->save();
 
         return redirect()->intended(route('aps.index'));
-            
+
     }
 
     public function showRegister(Request $request)
     {
+        $showTutorEntryPoints = (bool) config('features.show_tutor_entry_points', false);
         $publicUserTypes = [
             'pupil' => 'High school learner account for studying, practice, notes, and exams.',
             'student' => 'University or college student account for funding and study planning.',
             'tutor' => 'Tutor account for offering subject tutoring to learners across South Africa.',
         ];
+        $visibleUserTypeNames = array_keys($publicUserTypes);
+
+        if (! $showTutorEntryPoints) {
+            $visibleUserTypeNames = array_values(array_diff($visibleUserTypeNames, ['tutor']));
+        }
 
         if (Schema::hasTable('user_types')) {
             foreach ($publicUserTypes as $name => $description) {
@@ -96,7 +80,7 @@ class AuthController extends Controller
         $userTypes = Schema::hasTable('user_types')
             ? DB::table('user_types')
                 ->select('id', 'name')
-                ->whereIn('name', array_keys($publicUserTypes))
+                ->whereIn('name', $visibleUserTypeNames)
                 ->orderByRaw("case name when 'pupil' then 1 when 'student' then 2 when 'tutor' then 3 else 4 end")
                 ->get()
             : collect();
@@ -124,6 +108,7 @@ class AuthController extends Controller
             : collect();
 
         $preferredType = strtolower((string) $request->query('type', ''));
+        $preferredType = in_array($preferredType, $visibleUserTypeNames, true) ? $preferredType : '';
         $defaultUserType = $userTypes->firstWhere('name', $preferredType)
             ?? $userTypes->firstWhere('name', 'pupil')
             ?? $userTypes->first();
@@ -135,12 +120,18 @@ class AuthController extends Controller
             'provinces' => $provinces,
             'defaultCurriculum' => $curriculums->firstWhere('abbreviation', 'CAPS') ?? $curriculums->first(),
             'defaultUserType' => $defaultUserType,
+            'showTutorEntryPoints' => $showTutorEntryPoints,
         ]);
-            
+
     }
 
     public function register(Request $request)
     {
+        $showTutorEntryPoints = (bool) config('features.show_tutor_entry_points', false);
+        $publicRegistrationRoles = $showTutorEntryPoints
+            ? ['pupil', 'student', 'tutor']
+            : ['pupil', 'student'];
+
         $data = $request->validate([
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['nullable', 'string', 'max:255'],
@@ -155,11 +146,17 @@ class AuthController extends Controller
 
         $userType = DB::table('user_types')
             ->where('id', $data['user_type_id'])
-            ->whereIn('name', ['pupil', 'student', 'tutor'])
+            ->whereIn('name', $publicRegistrationRoles)
             ->first(['id', 'name']);
         $countryId = DB::table('countries')->where('name', 'South Africa')->value('id') ?? DB::table('countries')->value('id');
 
-        if ($userType === null || $countryId === null) {
+        if ($userType === null) {
+            return back()
+                ->withErrors(['user_type_id' => 'Choose a valid account type.'])
+                ->withInput($request->except('password', 'password_confirmation'));
+        }
+
+        if ($countryId === null) {
             return back()
                 ->withErrors(['email' => 'Please run the database seeders before creating an account.'])
                 ->withInput($request->except('password', 'password_confirmation'));
@@ -199,10 +196,16 @@ class AuthController extends Controller
             default => 'bursaries.index',
         };
 
+        $pupilStatus = $showTutorEntryPoints
+            ? 'Welcome. Add your latest subjects and marks when you are ready. You can also apply for bursaries or become a tutor later — your details will be reused.'
+            : 'Welcome. Add your latest subjects and marks when you are ready. You can also apply for bursaries when you are ready — your details will be reused.';
+        $studentStatus = $showTutorEntryPoints
+            ? 'Your student account is ready for bursary applications. You can also look up undergrad studies or become a tutor later — shared details and documents will carry over.'
+            : 'Your student account is ready for bursary applications. You can also look up undergrad studies — shared details and documents will carry over.';
         $status = match ($userType->name) {
-            'pupil' => 'Welcome. Add your latest subjects and marks when you are ready. You can also apply for bursaries or become a tutor later — your details will be reused.',
+            'pupil' => $pupilStatus,
             'tutor' => 'Welcome. Complete your tutor profile when you are ready — you can save and continue later. Student and pupil tools stay available on the same account.',
-            default => 'Your student account is ready for bursary applications. You can also look up undergrad studies or become a tutor later — shared details and documents will carry over.',
+            default => $studentStatus,
         };
 
         return redirect()
