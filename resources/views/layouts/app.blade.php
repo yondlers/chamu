@@ -12,6 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="monetag" content="324f1ec96f9f66591bf36f4b2f566c4a">
     <title>@yield('title', 'Chamu')</title>
     @php
         $adsenseEnabled = request()->routeIs(
