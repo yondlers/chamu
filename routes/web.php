@@ -37,7 +37,7 @@ use App\Http\Controllers\TutorBookingController;
 use App\Http\Controllers\UniversityProgrammeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ApsController::class, 'index'])->name('home');
+Route::redirect('/', '/aps')->name('home');
 
 Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
 
