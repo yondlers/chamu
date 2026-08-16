@@ -17,6 +17,7 @@
     @php
         $adsenseEnabled = request()->routeIs(
             'aps.index',
+            'home',
             'aps-calculator.index',
             'bursaries.index',
             'bursaries.show',
