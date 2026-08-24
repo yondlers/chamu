@@ -50,8 +50,9 @@
                 <h1 class="text-3xl font-bold">Create account</h1>
                 <p class="mt-2 text-neutral-500">{{ $accountTypeChoiceCopy }}</p>
 
-                <form method="POST" action="{{ route('register.store') }}" class="mt-8 space-y-5">
+                <form method="POST" action="{{ route('register.store') }}" class="relative mt-8 space-y-5">
                     @csrf
+                    <x-honeypot />
 
                     <div>
                         <label class="block text-sm font-semibold mb-2">I am a</label>

@@ -20,8 +20,9 @@
                 <h1 class="text-3xl font-bold">Log in</h1>
                 <p class="mt-2 text-neutral-500">Track streaks, points, and your saved learning path.</p>
 
-                <form method="POST" action="{{ route('login.store') }}" class="mt-8 space-y-5">
+                <form method="POST" action="{{ route('login.store') }}" class="relative mt-8 space-y-5">
                     @csrf
+                    <x-honeypot />
 
                     <div>
                         <label for="username" class="block text-sm font-semibold mb-2">Email or username</label>

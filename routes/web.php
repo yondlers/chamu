@@ -26,15 +26,16 @@ use App\Http\Controllers\MarkController;
 use App\Http\Controllers\PracticeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgressController;
-use App\Http\Controllers\ReportController;
 use App\Http\Controllers\Public\QualificationController as PublicQualificationController;
 use App\Http\Controllers\Public\UniversityController as PublicUniversityController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\ToolController;
 use App\Http\Controllers\TutorApplicationController;
 use App\Http\Controllers\TutorBookingController;
 use App\Http\Controllers\UniversityProgrammeController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/aps')->name('home');
@@ -66,9 +67,13 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
-    Route::post('/login', [AuthController::class, 'login'])->name('login.store');
+    Route::post('/login', [AuthController::class, 'login'])
+        ->middleware(['throttle:login', 'protect.bots:login'])
+        ->name('login.store');
     Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
-    Route::post('/register', [AuthController::class, 'register'])->name('register.store');
+    Route::post('/register', [AuthController::class, 'register'])
+        ->middleware(['throttle:register', 'protect.bots:register'])
+        ->name('register.store');
 });
 
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth')->name('logout');
@@ -137,7 +142,7 @@ Route::scopeBindings()->group(function () {
 });
 
 Route::get('/aps', [ApsController::class, 'index'])->name('aps.index');
-Route::get('/course-match', function (\Illuminate\Http\Request $request) {
+Route::get('/course-match', function (Request $request) {
     return redirect()->route('aps.index', $request->query(), 301);
 });
 Route::get('/bursaries', [BursaryController::class, 'index'])->name('bursaries.index');
@@ -148,8 +153,12 @@ Route::post('/bursaries/{bursary}/apply', [BursaryApplicationController::class, 
 
 Route::get('/lemo-ai', [LemoAiController::class, 'index'])->name('lemo-ai.index');
 Route::get('/lemo-ai/{chat}', [LemoAiController::class, 'show'])->name('lemo-ai.show');
-Route::post('/lemo-ai/chats', [LemoAiController::class, 'store'])->name('lemo-ai.chats.store');
-Route::post('/lemo-ai/messages', [LemoAiController::class, 'storeMessage'])->name('lemo-ai.messages.store');
+Route::post('/lemo-ai/chats', [LemoAiController::class, 'store'])
+    ->middleware('throttle:lemo-ai')
+    ->name('lemo-ai.chats.store');
+Route::post('/lemo-ai/messages', [LemoAiController::class, 'storeMessage'])
+    ->middleware('throttle:lemo-ai')
+    ->name('lemo-ai.messages.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/tools', [ToolController::class, 'index'])->name('tools.index');
